@@ -506,28 +506,21 @@ namespace Menu {
                                                 }
                                                 if (SDK::UKismetSystemLibrary::IsValid(OPPWorld))
                                                     if (SDK::UKismetSystemLibrary::IsValid(World->PersistentLevel)) {
-                                                       // UC::TArray<SDK::UObject*> Actorss = Engine->GObjects;
-                                                        for (int i = 0; i < Engine->GObjects->Num(); i++) {
-                                                            // Actorss[i];
+                                                        UC::TArray<SDK::AActor*> Actorss = OPPWorld->AllStateATraps;
+                                                        for (int i = 0; i < Actorss.Num(); i++) {
+                                                            SDK::AActor* Obj = Actorss[i];
                                                            // SDK::UObject* Obj = Engine->GObjects[i];
-                                                            if (!Engine->GObjects->GetByIndex(i))
+                                                            if (!Obj)
                                                                 continue;
-                                                            SDK::UObject* Obj2 = Engine->GObjects->GetByIndex(i);
-                                                            if (!Obj2->IsA(SDK::URBValvePanelComponent::StaticClass( )))
-                                                                continue;
-                                                            if (!SDK::UKismetSystemLibrary::IsValid(Obj2))
+                                                            if (!SDK::UKismetSystemLibrary::IsValid(Obj))
                                                                 continue;
                                                             //if (!Obj->IsInteractible.CurrentValue)
                                                                // continue;
-                                                            SDK::URBValvePanelComponent* Obj = static_cast<SDK::URBValvePanelComponent*>(Obj2);
-                                                            //if (Obj->K2_GetComponentLocation( ).GetDistanceTo(World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn->K2_GetActorLocation( )) > 500)
-                                                              //  continue;
-                                                                ;
-                                                            SDK::FVector Location = Obj->K2_GetComponentLocation( );
+                                                            SDK::FVector Location = Obj->K2_GetActorLocation( );
                                                             std::string PawnName = Obj->GetName( );
                                                             SDK::FVector2D Location2D;
                                                             bool LocationNotZero = World->OwningGameInstance->LocalPlayers[0]->PlayerController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                                                            float SizeLocation = Obj->K2_GetComponentLocation( ).GetDistanceTo(World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn->K2_GetActorLocation( ));
+                                                            float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn->K2_GetActorLocation( ));
                                                             if (LocationNotZero)
                                                                 ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X, Location2D.Y - 50), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), PawnName.append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ));
                                                             // ig::GetBackgroundDrawList()->AddText(ImVec2(Location2D.X, Location2D.Y - 32), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), );
