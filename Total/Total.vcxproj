@@ -205,6 +205,8 @@
     <ClCompile Include="src\hooks\backend\vulkan\hook_vulkan.cpp" />
     <ClCompile Include="src\hooks\hooks.cpp" />
     <ClCompile Include="src\menu\menu.cpp" />
+    <ClCompile Include="src\sdk\ArmWreslingPanelComponent_BP_functions.cpp" />
+    <ClCompile Include="src\sdk\ArmWreslingPanel_BP_functions.cpp" />
     <ClCompile Include="src\sdk\Basic.cpp" />
     <ClCompile Include="src\sdk\CoreUObject_functions.cpp" />
     <ClCompile Include="src\sdk\Engine_functions.cpp" />
@@ -212,6 +214,7 @@
     <ClCompile Include="src\utils\utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="resource.h" />
     <ClInclude Include="src\backend.hpp" />
     <ClInclude Include="src\console\console.hpp" />
     <ClInclude Include="src\dependencies\imgui\imconfig.h" />
@@ -244,6 +247,10 @@
     <ClInclude Include="src\hooks\hooks.hpp" />
     <ClInclude Include="src\menu\menu.hpp" />
     <ClInclude Include="src\PropertyFixup.hpp" />
+    <ClInclude Include="src\sdk\ArmWreslingPanelComponent_BP_classes.hpp" />
+    <ClInclude Include="src\sdk\ArmWreslingPanelComponent_BP_parameters.hpp" />
+    <ClInclude Include="src\sdk\ArmWreslingPanel_BP_classes.hpp" />
+    <ClInclude Include="src\sdk\ArmWreslingPanel_BP_parameters.hpp" />
     <ClInclude Include="src\sdk\Basic.hpp" />
     <ClInclude Include="src\sdk\CoreUObject_classes.hpp" />
     <ClInclude Include="src\sdk\CoreUObject_parameters.hpp" />
@@ -255,10 +262,19 @@
     <ClInclude Include="src\sdk\OPP_parameters.hpp" />
     <ClInclude Include="src\sdk\OPP_structs.hpp" />
     <ClInclude Include="src\UnrealContainers.hpp" />
+    <ClInclude Include="src\utils\DDSTextureLoader.h" />
+    <ClInclude Include="src\utils\stb_image.h" />
     <ClInclude Include="src\utils\utils.hpp" />
+    <ClInclude Include="src\utils\WICTextureLoader.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\NameCollisions.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\icons\inventory\key.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
