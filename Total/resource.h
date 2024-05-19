@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Включаемый файл, созданный в Microsoft Visual C++.
-// Используется resources.rc
+// Используется Resource.rc
 //
 #define IDB_PNG1                        101
 

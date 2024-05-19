@@ -164,6 +164,7 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -262,19 +263,17 @@
     <ClInclude Include="src\sdk\OPP_parameters.hpp" />
     <ClInclude Include="src\sdk\OPP_structs.hpp" />
     <ClInclude Include="src\UnrealContainers.hpp" />
-    <ClInclude Include="src\utils\DDSTextureLoader.h" />
     <ClInclude Include="src\utils\stb_image.h" />
     <ClInclude Include="src\utils\utils.hpp" />
-    <ClInclude Include="src\utils\WICTextureLoader.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\NameCollisions.inl" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="resources.rc" />
+    <Image Include="src\icons\inventory\key.png" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="src\icons\inventory\key.png" />
+    <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

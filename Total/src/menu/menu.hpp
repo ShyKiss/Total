@@ -26,6 +26,20 @@ namespace Menu {
     string utf8_encode(const wstring& wstr);
 
     inline bool bShowMenu = false;
+    inline bool bShowItems = false;
+    inline bool bShowValves = false;
+    inline bool bShowProjectors = false;
+    inline bool bShowGenerators = false;
+    inline bool bShowRadio = false;
+    inline bool bShowPlayers = false;
+
+    inline float fShowItems = 150;
+    inline float fShowValves = 150;
+    inline float fShowProjectors = 150;
+    inline float fShowGenerators = 150;
+    inline float fShowRadio = 150;
+    inline float fShowPlayers = 150;
+
     inline bool bIsLoading = false;
     inline bool bTotalPlayerIsRunning;
     inline ImVec4 NVColor = ImVec4(1,1,1,1);

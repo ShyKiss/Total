@@ -31,6 +31,8 @@
 #include "../../../SDK/OPP_classes.hpp"
 #include "../../../SDK/CoreUObject_classes.hpp"
 
+#include "../../../../resource.h"
+
 // Data
 static int const NUM_BACK_BUFFERS = 3;
 
@@ -59,9 +61,11 @@ static bool LoadTextureFromFile(const char* filename, ID3D12Device* d3d_device, 
     // Load from disk into a raw RGBA buffer
     int image_width = 0;
     int image_height = 0;
+    auto Image = LoadImage(GetModuleHandle(0), MAKEINTRESOURCE(IDB_PNG1), IMAGE_ICON, 0, 0, LR_LOADTRANSPARENT);
     unsigned char* image_data = stbi_load(filename, &image_width, &image_height, NULL, 4);
     if (image_data == NULL)
         return false;
+
 
     // Create texture resource
     D3D12_HEAP_PROPERTIES props;
@@ -560,12 +564,19 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
         UINT handle_increment = g_pd3dDevice->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV);
         int descriptor_index = 1; // The descriptor table index to use (not normally a hard-coded constant, but in this case we'll assume we have slot 1 reserved for us)
         DX12::my_texture_srv_cpu_handle = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::my_texture_srv_cpu_handle.ptr += (handle_increment * descriptor_index);
+        DX12::my_texture_srv_cpu_handle.ptr += (handle_increment * 1);
         DX12::my_texture_srv_gpu_handle = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::my_texture_srv_gpu_handle.ptr += (handle_increment * descriptor_index);
+        DX12::my_texture_srv_gpu_handle.ptr += (handle_increment * 1);
 
-        bool ret = LoadTextureFromFile("C:\\Users\\Beerymaid\\source\\repos\\Total\\Total\\src\\icons\\inventory\\key.png", g_pd3dDevice, DX12::my_texture_srv_cpu_handle, &DX12::my_texture, &DX12::my_image_width, &DX12::my_image_height);
+        DX12::my_texture_srv_cpu_handle1 = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        DX12::my_texture_srv_cpu_handle1.ptr += (handle_increment * 2);
+        DX12::my_texture_srv_gpu_handle1 = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        DX12::my_texture_srv_gpu_handle1.ptr += (handle_increment * 2);
+
+        bool ret = LoadTextureFromFile("icons\\inventory\\key.png", g_pd3dDevice, DX12::my_texture_srv_cpu_handle, &DX12::my_texture, &DX12::my_image_width, &DX12::my_image_height);
+        bool ddt = LoadTextureFromFile("icons\\inventory\\item_bottle.png", g_pd3dDevice, DX12::my_texture_srv_cpu_handle1, &DX12::my_texture1, &DX12::my_image_width1, &DX12::my_image_height1);
         IM_ASSERT(ret);
+        IM_ASSERT(ddt);
     }
 
     if (!H::bShuttingDown) {
@@ -579,6 +590,8 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
             ImGui::NewFrame( );
 
             Menu::Render( );
+
+            //LoadFromResourceName( )
 
             ImGui::Render( );
 

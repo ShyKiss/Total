@@ -302,16 +302,16 @@ namespace Menu {
 
             // Shows
 
-            Total_ShowItems(OPPWorld->GetRBPickups());
-            Total_ShowLargeItems(OPPWorld->GetRBLargePickups());
+            if(bShowItems) Total_ShowItems(OPPWorld->GetRBPickups());
+            if (bShowItems) Total_ShowLargeItems(OPPWorld->GetRBLargePickups( ));
 
-            Total_ShowPlayers(OPPWorld->GetRBPlayers());
+            if (bShowPlayers) Total_ShowPlayers(OPPWorld->GetRBPlayers( ));
             //Total_ShowDoorTraps(OPPWorld->GetDoors( ));
 
-            Total_ShowGenerators(OPPWorld->Generators);
-            Total_ShowRadio(ObjectiveCoordinators);
-            Total_ShowValves(ObjectiveCoordinators);
-            Total_ShowProjectors(ObjectiveCoordinators);
+            if(bShowGenerators) Total_ShowGenerators(OPPWorld->Generators);
+            if(bShowRadio) Total_ShowRadio(ObjectiveCoordinators);
+            if(bShowValves) Total_ShowValves(ObjectiveCoordinators);
+            if(bShowProjectors) Total_ShowProjectors(ObjectiveCoordinators);
 
         }
 
@@ -345,8 +345,40 @@ namespace Menu {
                 Utils::UnloadDLL( );
             }
             if (ig::Button("Get CheatManager (Maybe Crash)")) {
-                 bFail = true;
+                bFail = true;
             }
+
+            if(ig::TreeNode("Shows"))
+            {
+                ig::Checkbox("Show Quest Items", &bShowItems);
+                ig::SameLine( );
+                ig::SliderFloat("##Distance1:", &fShowItems, 1.0f, 300.0f);
+
+                ig::Checkbox("Show Generators", &bShowGenerators);
+                ig::SameLine( );
+                ig::SliderFloat("##Distance2:", &fShowGenerators, 1.0f, 300.0f);
+
+                ig::Checkbox("Show Radio", &bShowRadio);
+                ig::SameLine( );
+                ig::SliderFloat("##Distance3:", &fShowRadio, 1.0f, 300.0f);
+
+                ig::Checkbox("Show Valves", &bShowValves);
+                ig::SameLine( );
+                ig::SliderFloat("##Distance4:", &fShowValves, 1.0f, 300.0f);
+
+                ig::Checkbox("Show Projectors", &bShowProjectors);
+                ig::SameLine( );
+                ig::SliderFloat("##Distance5:", &fShowProjectors, 1.0f, 300.0f);
+
+                ig::Checkbox("Show Players", &bShowPlayers);
+                ig::SameLine( );
+                ig::SliderFloat("##Distance6:", &fShowPlayers, 1.0f, 300.0f);
+
+                ImGui::Spacing( );
+                ig::TreePop( );
+            }
+            ig::Separator( );
+
             ig::Checkbox("Show Actors", &bShow);
             ig::Checkbox("Light?", &lightBool);
             ig::SliderFloat("Icon Size", &IconSize, 1.0f, 128.0f);
@@ -466,7 +498,7 @@ namespace Menu {
             if (!(Generator->bIsCompleted) && Generator->bIsInteractible) {
                 bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
                 float SizeLocation = Generator->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                if (LocationNotZero)
+                if (LocationNotZero && SizeLocation <= fShowGenerators * 100)
                     ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X, Location2D.Y - 50), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), PawnName.append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ));
             }
         }
@@ -486,7 +518,7 @@ namespace Menu {
                     SDK::FVector2D Location2D;
                     bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
                     float SizeLocation = ObjAct->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                    if (LocationNotZero)
+                    if (LocationNotZero && SizeLocation <= fShowRadio * 100)
                         ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X, Location2D.Y), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), PawnName.append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ));
                 }
             }
@@ -507,7 +539,7 @@ namespace Menu {
                     SDK::FVector2D Location2D;
                     bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
                     float SizeLocation = ObjAct->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                    if (LocationNotZero)
+                    if (LocationNotZero && SizeLocation <= fShowValves * 100)
                         ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X, Location2D.Y), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), PawnName.append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ));
                 }
             }
@@ -528,7 +560,7 @@ namespace Menu {
                     SDK::FVector2D Location2D;
                     bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
                     float SizeLocation = ObjAct->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                    if (LocationNotZero)
+                    if (LocationNotZero && SizeLocation <= fShowProjectors * 100)
                         ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X, Location2D.Y), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), PawnName.append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ));
                 }
             }
@@ -550,7 +582,7 @@ namespace Menu {
             SDK::FVector2D Location2D;
             bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
             float SizeLocation = Player->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-            if (LocationNotZero)
+            if (LocationNotZero && SizeLocation <= fShowPlayers * 100)
                 ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X, Location2D.Y - 50), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), PawnName.append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ));
         }
     }
@@ -590,8 +622,19 @@ namespace Menu {
                 uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
                 SDK::FVector2D Location2D;
                 bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero) {
+                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
                     ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::my_texture_srv_gpu_handle.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
+                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ImGui::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
+                }
+            }
+            if (Obj->ItemDefinition.ItemType == SDK::EItemType::Bottle) {
+                SDK::FVector Location = Obj->K2_GetActorLocation( );
+                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
+                SDK::FVector2D Location2D;
+                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::my_texture_srv_gpu_handle1.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
                     ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ImGui::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
                 }
             }
@@ -612,7 +655,7 @@ namespace Menu {
                 uint8_t PawnName = static_cast<uint8_t>(Obj->LargeObjectType);
                 SDK::FVector2D Location2D;
                 bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero) {
+                if (LocationNotZero && SizeLocation <= fShowItems * 100) {
                     ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X, Location2D.Y), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)LargeObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).c_str( )).append("m").append(")").c_str( )));
                 }
             }
