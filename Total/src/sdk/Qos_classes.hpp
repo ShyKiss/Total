@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // Class Qos.QosBeaconClient
-// 0x0038 (0x0310 - 0x02D8)
+// 0x0038 (0x02F8 - 0x02C0)
 class AQosBeaconClient final : public AOnlineBeaconClient
 {
 public:
-	uint8                                         Pad_29EC[0x38];                                    // 0x02D8(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A8C[0x38];                                    // 0x02C0(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientQosResponse(EQosResponseType Response);
@@ -41,14 +41,14 @@ public:
 	}
 };
 static_assert(alignof(AQosBeaconClient) == 0x000008, "Wrong alignment on AQosBeaconClient");
-static_assert(sizeof(AQosBeaconClient) == 0x000310, "Wrong size on AQosBeaconClient");
+static_assert(sizeof(AQosBeaconClient) == 0x0002F8, "Wrong size on AQosBeaconClient");
 
 // Class Qos.QosBeaconHost
-// 0x0010 (0x0280 - 0x0270)
+// 0x0010 (0x0268 - 0x0258)
 class AQosBeaconHost final : public AOnlineBeaconHostObject
 {
 public:
-	uint8                                         Pad_29ED[0x10];                                    // 0x0270(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A8D[0x10];                                    // 0x0258(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -61,19 +61,19 @@ public:
 	}
 };
 static_assert(alignof(AQosBeaconHost) == 0x000008, "Wrong alignment on AQosBeaconHost");
-static_assert(sizeof(AQosBeaconHost) == 0x000280, "Wrong size on AQosBeaconHost");
+static_assert(sizeof(AQosBeaconHost) == 0x000268, "Wrong size on AQosBeaconHost");
 
 // Class Qos.QosEvaluator
 // 0x0058 (0x0080 - 0x0028)
 class UQosEvaluator final : public UObject
 {
 public:
-	uint8                                         Pad_29EE[0x20];                                    // 0x0028(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A8E[0x20];                                    // 0x0028(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bInProgress;                                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bCancelOperation;                                  // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_29EF[0x6];                                     // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A8F[0x6];                                     // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDatacenterQosInstance>         Datacenters;                                       // 0x0050(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_29F0[0x20];                                    // 0x0060(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A90[0x20];                                    // 0x0060(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -103,13 +103,13 @@ public:
 	struct FDateTime                              LastCheckTimestamp;                                // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UQosEvaluator*                          Evaluator;                                         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	EQosCompletionResult                          QosEvalResult;                                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_29F1[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A91[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRegionQosInstance>             RegionOptions;                                     // 0x0068(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	class FString                                 ForceRegionId;                                     // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bRegionForcedViaCommandline;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_29F2[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A92[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 SelectedRegionId;                                  // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_29F3[0x20];                                    // 0x00A0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A93[0x20];                                    // 0x00A0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

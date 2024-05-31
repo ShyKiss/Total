@@ -34,8 +34,9 @@ struct SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E75[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_CustomEvent_Left;                           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D2A[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,7 +48,8 @@ public:
 static_assert(alignof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption) == 0x000004, "Wrong alignment on SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption");
 static_assert(sizeof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption) == 0x000024, "Wrong size on SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption");
 static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, EntryPoint) == 0x000000, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, K2Node_Event_IsDesignTime) == 0x000004, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, K2Node_CustomEvent_Left) == 0x000004, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::K2Node_CustomEvent_Left' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, K2Node_Event_IsDesignTime) == 0x000005, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, CallFunc_Array_Length_ReturnValue) == 0x000008, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -55,6 +57,17 @@ static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_Part
 static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, CallFunc_Percent_IntInt_ReturnValue) == 0x000018, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, CallFunc_Array_Length_ReturnValue_1) == 0x00001C, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption, CallFunc_Percent_IntInt_ReturnValue_1) == 0x000020, "Member 'SocialMenu_PartyOption_C_ExecuteUbergraph_SocialMenu_PartyOption::CallFunc_Percent_IntInt_ReturnValue_1' has a wrong offset!");
+
+// Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.Cycle
+// 0x0001 (0x0001 - 0x0000)
+struct SocialMenu_PartyOption_C_Cycle final
+{
+public:
+	bool                                          Left;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(SocialMenu_PartyOption_C_Cycle) == 0x000001, "Wrong alignment on SocialMenu_PartyOption_C_Cycle");
+static_assert(sizeof(SocialMenu_PartyOption_C_Cycle) == 0x000001, "Wrong size on SocialMenu_PartyOption_C_Cycle");
+static_assert(offsetof(SocialMenu_PartyOption_C_Cycle, Left) == 0x000000, "Member 'SocialMenu_PartyOption_C_Cycle::Left' has a wrong offset!");
 
 // Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -68,22 +81,22 @@ static_assert(sizeof(SocialMenu_PartyOption_C_PreConstruct) == 0x000001, "Wrong 
 static_assert(offsetof(SocialMenu_PartyOption_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'SocialMenu_PartyOption_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.Setup
-// 0x0080 (0x0080 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct SocialMenu_PartyOption_C_Setup final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E76[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0030(0x0028)()
-	struct FSlateColor                            K2Node_Select_Default;                             // 0x0058(0x0028)()
+	uint8                                         Pad_2D2B[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SocialMenu_PartyOption_C_Setup) == 0x000008, "Wrong alignment on SocialMenu_PartyOption_C_Setup");
-static_assert(sizeof(SocialMenu_PartyOption_C_Setup) == 0x000080, "Wrong size on SocialMenu_PartyOption_C_Setup");
+static_assert(sizeof(SocialMenu_PartyOption_C_Setup) == 0x000020, "Wrong size on SocialMenu_PartyOption_C_Setup");
 static_assert(offsetof(SocialMenu_PartyOption_C_Setup, Temp_bool_Variable) == 0x000000, "Member 'SocialMenu_PartyOption_C_Setup::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyOption_C_Setup, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'SocialMenu_PartyOption_C_Setup::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyOption_C_Setup, K2Node_MakeStruct_SlateColor_1) == 0x000030, "Member 'SocialMenu_PartyOption_C_Setup::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyOption_C_Setup, K2Node_Select_Default) == 0x000058, "Member 'SocialMenu_PartyOption_C_Setup::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyOption_C_Setup, Temp_object_Variable) == 0x000008, "Member 'SocialMenu_PartyOption_C_Setup::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyOption_C_Setup, Temp_object_Variable_1) == 0x000010, "Member 'SocialMenu_PartyOption_C_Setup::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyOption_C_Setup, K2Node_Select_Default) == 0x000018, "Member 'SocialMenu_PartyOption_C_Setup::K2Node_Select_Default' has a wrong offset!");
 
 // Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.SetEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -113,7 +126,7 @@ struct SocialMenu_PartyOption_C_SetHovered final
 {
 public:
 	bool                                          bInHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E77[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D2C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0018)()
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -145,6 +158,19 @@ static_assert(offsetof(SocialMenu_PartyOption_C_OnFocusReceived, ReturnValue) ==
 static_assert(offsetof(SocialMenu_PartyOption_C_OnFocusReceived, CallFunc_GetMenuManager_ReturnValue) == 0x0000F8, "Member 'SocialMenu_PartyOption_C_OnFocusReceived::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SocialMenu_PartyOption_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x000100, "Member 'SocialMenu_PartyOption_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SocialMenu_PartyOption_C_OnFocusReceived, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x0001B8, "Member 'SocialMenu_PartyOption_C_OnFocusReceived::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+
+// Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.HandleLeftRightNavigation
+// 0x0002 (0x0002 - 0x0000)
+struct SocialMenu_PartyOption_C_HandleLeftRightNavigation final
+{
+public:
+	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(SocialMenu_PartyOption_C_HandleLeftRightNavigation) == 0x000001, "Wrong alignment on SocialMenu_PartyOption_C_HandleLeftRightNavigation");
+static_assert(sizeof(SocialMenu_PartyOption_C_HandleLeftRightNavigation) == 0x000002, "Wrong size on SocialMenu_PartyOption_C_HandleLeftRightNavigation");
+static_assert(offsetof(SocialMenu_PartyOption_C_HandleLeftRightNavigation, Param_Navigation) == 0x000000, "Member 'SocialMenu_PartyOption_C_HandleLeftRightNavigation::Param_Navigation' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyOption_C_HandleLeftRightNavigation, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'SocialMenu_PartyOption_C_HandleLeftRightNavigation::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 }
 

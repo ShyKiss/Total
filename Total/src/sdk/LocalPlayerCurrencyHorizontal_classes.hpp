@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LocalPlayerCurrencyHorizontal.LocalPlayerCurrencyHorizontal_C
-// 0x0050 (0x02B0 - 0x0260)
+// 0x0058 (0x02B8 - 0x0260)
 class ULocalPlayerCurrencyHorizontal_C final : public UUserWidget
 {
 public:
@@ -34,8 +34,9 @@ public:
 	ECurrencyType                                 CurrencyType;                                      // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowPickedUpCurrency;                              // 0x02A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IsPreviewing;                                      // 0x02A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3038[0x5];                                     // 0x02A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1163[0x5];                                     // 0x02A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         RBPlayerState;                                     // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasOverrideValue;                                 // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_LocalPlayerCurrencyHorizontal(int32 EntryPoint);
@@ -63,7 +64,7 @@ public:
 	}
 };
 static_assert(alignof(ULocalPlayerCurrencyHorizontal_C) == 0x000008, "Wrong alignment on ULocalPlayerCurrencyHorizontal_C");
-static_assert(sizeof(ULocalPlayerCurrencyHorizontal_C) == 0x0002B0, "Wrong size on ULocalPlayerCurrencyHorizontal_C");
+static_assert(sizeof(ULocalPlayerCurrencyHorizontal_C) == 0x0002B8, "Wrong size on ULocalPlayerCurrencyHorizontal_C");
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, UberGraphFrame) == 0x000260, "Member 'ULocalPlayerCurrencyHorizontal_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, PreShopAnim) == 0x000268, "Member 'ULocalPlayerCurrencyHorizontal_C::PreShopAnim' has a wrong offset!");
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, Icon) == 0x000270, "Member 'ULocalPlayerCurrencyHorizontal_C::Icon' has a wrong offset!");
@@ -76,6 +77,7 @@ static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, CurrencyType) == 0x0002
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, ShowPickedUpCurrency) == 0x0002A1, "Member 'ULocalPlayerCurrencyHorizontal_C::ShowPickedUpCurrency' has a wrong offset!");
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, IsPreviewing) == 0x0002A2, "Member 'ULocalPlayerCurrencyHorizontal_C::IsPreviewing' has a wrong offset!");
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, RBPlayerState) == 0x0002A8, "Member 'ULocalPlayerCurrencyHorizontal_C::RBPlayerState' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, bHasOverrideValue) == 0x0002B0, "Member 'ULocalPlayerCurrencyHorizontal_C::bHasOverrideValue' has a wrong offset!");
 
 }
 

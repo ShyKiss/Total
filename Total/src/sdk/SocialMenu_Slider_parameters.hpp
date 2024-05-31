@@ -31,7 +31,7 @@ static_assert(sizeof(SocialMenu_Slider_C_OnValueUpdated__DelegateSignature) == 0
 static_assert(offsetof(SocialMenu_Slider_C_OnValueUpdated__DelegateSignature, Param_Value) == 0x000000, "Member 'SocialMenu_Slider_C_OnValueUpdated__DelegateSignature::Param_Value' has a wrong offset!");
 
 // Function SocialMenu_Slider.SocialMenu_Slider_C.ExecuteUbergraph_SocialMenu_Slider
-// 0x0038 (0x0038 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider final
 {
 public:
@@ -39,22 +39,24 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F9B[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EE7[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_ComponentBoundEvent_value;                  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9C[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EE8[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0010(0x0008)(NoDestructor)
 	float                                         CallFunc_GetValue_ReturnValue;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsGamepad;                           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9D[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMin_ReturnValue;                         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsGamepad;                           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2EE9[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider) == 0x000008, "Wrong alignment on SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider");
-static_assert(sizeof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider) == 0x000038, "Wrong size on SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider");
+static_assert(sizeof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider) == 0x000040, "Wrong size on SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider");
 static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, EntryPoint) == 0x000000, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, Temp_bool_Variable) == 0x000004, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, Temp_byte_Variable) == 0x000005, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::Temp_byte_Variable' has a wrong offset!");
@@ -64,11 +66,13 @@ static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, K
 static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, K2Node_Event_InFocusEvent) == 0x000010, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::K2Node_Event_InFocusEvent' has a wrong offset!");
 static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_GetValue_ReturnValue) == 0x000018, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_GetValue_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_Add_FloatFloat_ReturnValue) == 0x00001C, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000020, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, K2Node_Event_bIsGamepad) == 0x000024, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::K2Node_Event_bIsGamepad' has a wrong offset!");
-static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_GetMenuManager_ReturnValue) == 0x000028, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000030, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, K2Node_Select_Default) == 0x000031, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_FMin_ReturnValue) == 0x000020, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_FMin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000024, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_FMax_ReturnValue) == 0x000028, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, K2Node_Event_bIsGamepad) == 0x00002C, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::K2Node_Event_bIsGamepad' has a wrong offset!");
+static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_GetMenuManager_ReturnValue) == 0x000030, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000038, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider, K2Node_Select_Default) == 0x000039, "Member 'SocialMenu_Slider_C_ExecuteUbergraph_SocialMenu_Slider::K2Node_Select_Default' has a wrong offset!");
 
 // Function SocialMenu_Slider.SocialMenu_Slider_C.Event_InputSourceChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -197,7 +201,7 @@ struct SocialMenu_Slider_C_SetHovered final
 public:
 	bool                                          bInHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bWasConsideredHovered;                             // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9E[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EEA[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0018)()
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -216,11 +220,11 @@ struct SocialMenu_Slider_C_RefreshDisplay final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9F[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EEB[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Temp_struct_Variable;                              // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA0[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EEC[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_2;                              // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -232,7 +236,7 @@ public:
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x006C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x007C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FA1[0x3];                                     // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EED[0x3];                                     // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default_3;                           // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00A0(0x0028)()
 };
@@ -267,22 +271,22 @@ public:
 	bool                                          bCanRepeatInput;                                   // 0x0130(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bIsRepeatInput;                                    // 0x0131(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bLeftPressed;                                      // 0x0132(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA2[0x5];                                     // 0x0133(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EEE[0x5];                                     // 0x0133(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKeyEvent                              CallFunc_GetKeyEventFromAnalogInputEvent_ReturnValue; // 0x0138(0x0038)()
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA3[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EEF[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0178(0x0018)(HasGetValueTypeHash)
 	class UArrowButton_C*                         CallFunc_GetArrowButton_NewParam;                  // 0x0190(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA4[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF0[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UArrowButton_C*                         CallFunc_GetArrowButton_NewParam_1;                // 0x01A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetAnalogValue_ReturnValue;               // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA5[0x2];                                     // 0x01AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF1[0x2];                                     // 0x01AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Abs_ReturnValue;                          // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA6[0x3];                                     // 0x01B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF2[0x3];                                     // 0x01B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetAnalogValue_ReturnValue_1;             // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetElapsedTime_ReturnValue;               // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -290,23 +294,23 @@ public:
 	float                                         CallFunc_Abs_ReturnValue_1;                        // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Max_ReturnValue;                          // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA7[0x3];                                     // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF3[0x3];                                     // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetGameTime_ReturnValue;                  // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTime_ReturnValue_1;                // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetElapsedTime_ReturnValue_1;             // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA8[0x3];                                     // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF4[0x3];                                     // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetElapsedTime_ReturnValue_2;             // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Abs_ReturnValue_2;                        // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue_2;            // 0x01ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x01EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA9[0x1];                                     // 0x01EF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF5[0x1];                                     // 0x01EF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x01F0(0x00B8)()
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue_1;                  // 0x02A8(0x00B8)()
 	float                                         CallFunc_Abs_ReturnValue_3;                        // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_3;         // 0x0364(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FAA[0x3];                                     // 0x0365(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF6[0x3];                                     // 0x0365(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue_2;                  // 0x0368(0x00B8)()
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0420(0x00B8)()
 };
@@ -361,24 +365,24 @@ public:
 	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
 	bool                                          LeftPressed;                                       // 0x0128(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FAB[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF7[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputEvent                            CallFunc_GetInputEventFromKeyEvent_ReturnValue;    // 0x0130(0x0018)()
 	class UArrowButton_C*                         CallFunc_GetArrowButton_NewParam;                  // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_InputEvent_IsRepeat_ReturnValue;          // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FAC[0x5];                                     // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF8[0x5];                                     // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UArrowButton_C*                         CallFunc_GetArrowButton_NewParam_1;                // 0x0158(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
 	EUINavigation                                 CallFunc_Key_GetNavigationDirectionFromKey_ReturnValue; // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FAD[0x6];                                     // 0x021A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EF9[0x6];                                     // 0x021A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputEvent                            CallFunc_GetInputEventFromKeyEvent_ReturnValue_1;  // 0x0220(0x0018)()
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_InputEvent_IsRepeat_ReturnValue_1;        // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x023A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x023B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FAE[0x4];                                     // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EFA[0x4];                                     // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0240(0x00B8)()
 	struct FEventReply                            CallFunc_Handled_ReturnValue_1;                    // 0x02F8(0x00B8)()
 };
@@ -417,7 +421,7 @@ public:
 	EUINavigation                                 CallFunc_Key_GetNavigationDirectionFromKey_ReturnValue; // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x01E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FAF[0x5];                                     // 0x01E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EFB[0x5];                                     // 0x01E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x01E8(0x00B8)()
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -441,10 +445,10 @@ struct SocialMenu_Slider_C_HandleSliderOnInput final
 {
 public:
 	bool                                          bLeftPressed;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FB0[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EFC[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TimeBasedMultiplier;                               // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FB1[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EFD[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetValue_ReturnValue;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -472,10 +476,10 @@ struct SocialMenu_Slider_C_GetArrowButton final
 {
 public:
 	bool                                          Left;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FB2[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EFE[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UArrowButton_C*                         NewParam;                                          // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FB3[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EFF[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UArrowButton_C*                         K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SocialMenu_Slider_C_GetArrowButton) == 0x000008, "Wrong alignment on SocialMenu_Slider_C_GetArrowButton");

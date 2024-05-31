@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SpectatorPawn_BP.SpectatorPawn_BP_C
-// 0x0000 (0x0318 - 0x0318)
+// 0x0000 (0x0300 - 0x0300)
 class ASpectatorPawn_BP_C final : public ARBSpectatorPawn
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ASpectatorPawn_BP_C) == 0x000008, "Wrong alignment on ASpectatorPawn_BP_C");
-static_assert(sizeof(ASpectatorPawn_BP_C) == 0x000318, "Wrong size on ASpectatorPawn_BP_C");
+static_assert(sizeof(ASpectatorPawn_BP_C) == 0x000300, "Wrong size on ASpectatorPawn_BP_C");
 
 }
 

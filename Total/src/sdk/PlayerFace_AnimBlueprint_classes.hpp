@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Shared_Face_BaseEmotion_Enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Player_Face_States_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
+#include "Shared_Face_BaseEmotion_Enum_structs.hpp"
 
 
 namespace SDK
@@ -23,7 +23,7 @@ namespace SDK
 
 // AnimBlueprintGeneratedClass PlayerFace_AnimBlueprint.PlayerFace_AnimBlueprint_C
 // 0x1EB0 (0x2230 - 0x0380)
-class UPlayerFace_AnimBlueprint_C : public URBFaceAnimInstancePlayer
+class UPlayerFace_AnimBlueprint_C final : public URBFaceAnimInstancePlayer
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -94,7 +94,7 @@ public:
 	class UAnimSequence*                          LipSyncAnim;                                       // 0x2208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasPoses;                                          // 0x2210(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsExpressing;                                      // 0x2211(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AF9[0x6];                                     // 0x2212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2BE8[0x6];                                     // 0x2212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          ScriptedFaceAnim;                                  // 0x2218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDead;                                            // 0x2220(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsSleeping;                                        // 0x2221(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)

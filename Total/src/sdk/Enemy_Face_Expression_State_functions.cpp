@@ -17,53 +17,19 @@
 namespace SDK
 {
 
-// Function Enemy_Face_Expression_State.Enemy_Face_Expression_State_C.ExpressionOverride
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// class USkeletalMeshComponent*           Mesh_Comp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ENPCSpecificGesture                     Which_Anim                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsExpressing                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UEnemy_Face_Expression_State_C::ExpressionOverride(class USkeletalMeshComponent* Mesh_Comp, ENPCSpecificGesture Which_Anim, bool IsExpressing) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Enemy_Face_Expression_State_C", "ExpressionOverride");
-
-	Params::Enemy_Face_Expression_State_C_ExpressionOverride Parms{};
-
-	Parms.Mesh_Comp = Mesh_Comp;
-	Parms.Which_Anim = Which_Anim;
-	Parms.IsExpressing = IsExpressing;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Enemy_Face_Expression_State.Enemy_Face_Expression_State_C.Received_NotifyEnd
+// Function Enemy_Face_Expression_State.Enemy_Face_Expression_State_C.GetNotifyName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class USkeletalMeshComponent*           MeshComp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimSequenceBase*                Animation                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   AnimDeltaTime                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 
-bool UEnemy_Face_Expression_State_C::Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float AnimDeltaTime) const
+class FString UEnemy_Face_Expression_State_C::GetNotifyName() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Enemy_Face_Expression_State_C", "Received_NotifyEnd");
+		Func = Class->GetFunction("Enemy_Face_Expression_State_C", "GetNotifyName");
 
-	Params::Enemy_Face_Expression_State_C_Received_NotifyEnd Parms{};
-
-	Parms.MeshComp = MeshComp;
-	Parms.Animation = Animation;
-	Parms.AnimDeltaTime = AnimDeltaTime;
+	Params::Enemy_Face_Expression_State_C_GetNotifyName Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -100,19 +66,53 @@ bool UEnemy_Face_Expression_State_C::Received_NotifyBegin(class USkeletalMeshCom
 }
 
 
-// Function Enemy_Face_Expression_State.Enemy_Face_Expression_State_C.GetNotifyName
+// Function Enemy_Face_Expression_State.Enemy_Face_Expression_State_C.Received_NotifyEnd
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+// class USkeletalMeshComponent*           MeshComp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimSequenceBase*                Animation                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   AnimDeltaTime                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
-class FString UEnemy_Face_Expression_State_C::GetNotifyName() const
+bool UEnemy_Face_Expression_State_C::Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float AnimDeltaTime) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Enemy_Face_Expression_State_C", "GetNotifyName");
+		Func = Class->GetFunction("Enemy_Face_Expression_State_C", "Received_NotifyEnd");
 
-	Params::Enemy_Face_Expression_State_C_GetNotifyName Parms{};
+	Params::Enemy_Face_Expression_State_C_Received_NotifyEnd Parms{};
+
+	Parms.MeshComp = MeshComp;
+	Parms.Animation = Animation;
+	Parms.AnimDeltaTime = AnimDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Enemy_Face_Expression_State.Enemy_Face_Expression_State_C.ExpressionOverride
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class USkeletalMeshComponent*           Mesh_Comp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ENPCSpecificGesture                     Which_Anim                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsExpressing                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UEnemy_Face_Expression_State_C::ExpressionOverride(class USkeletalMeshComponent* Mesh_Comp, ENPCSpecificGesture Which_Anim, bool IsExpressing) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Enemy_Face_Expression_State_C", "ExpressionOverride");
+
+	Params::Enemy_Face_Expression_State_C_ExpressionOverride Parms{};
+
+	Parms.Mesh_Comp = Mesh_Comp;
+	Parms.Which_Anim = Which_Anim;
+	Parms.IsExpressing = IsExpressing;
 
 	UObject::ProcessEvent(Func, &Parms);
 

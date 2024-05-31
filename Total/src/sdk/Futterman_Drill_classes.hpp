@@ -24,10 +24,10 @@ public:
 	bool                                          DrillManual;                                       // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	class FString GetNotifyName() const;
-	void TryToSetFuttermanDrillVariable(class USkeletalMeshComponent* Mesh_Comp, bool Drill_Value, bool Param_DrillManual, bool* Result) const;
-	bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float AnimDeltaTime) const;
 	bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float AnimDeltaTime, float TotalDuration) const;
+	bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float AnimDeltaTime) const;
+	void TryToSetFuttermanDrillVariable(class USkeletalMeshComponent* Mesh_Comp, bool Drill_Value, bool Param_DrillManual, bool* Result) const;
+	class FString GetNotifyName() const;
 
 public:
 	static class UClass* StaticClass()

@@ -35,21 +35,23 @@ struct OptionsTab_C_ExecuteUbergraph_OptionsTab final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_306A[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FBE[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuOptionsEntry*                    K2Node_Event_entry;                                // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bIsGamepad;                           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(OptionsTab_C_ExecuteUbergraph_OptionsTab) == 0x000008, "Wrong alignment on OptionsTab_C_ExecuteUbergraph_OptionsTab");
 static_assert(sizeof(OptionsTab_C_ExecuteUbergraph_OptionsTab) == 0x000020, "Wrong size on OptionsTab_C_ExecuteUbergraph_OptionsTab");
 static_assert(offsetof(OptionsTab_C_ExecuteUbergraph_OptionsTab, EntryPoint) == 0x000000, "Member 'OptionsTab_C_ExecuteUbergraph_OptionsTab::EntryPoint' has a wrong offset!");
-static_assert(offsetof(OptionsTab_C_ExecuteUbergraph_OptionsTab, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000004, "Member 'OptionsTab_C_ExecuteUbergraph_OptionsTab::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsTab_C_ExecuteUbergraph_OptionsTab, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'OptionsTab_C_ExecuteUbergraph_OptionsTab::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsTab_C_ExecuteUbergraph_OptionsTab, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'OptionsTab_C_ExecuteUbergraph_OptionsTab::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsTab_C_ExecuteUbergraph_OptionsTab, K2Node_Event_entry) == 0x000008, "Member 'OptionsTab_C_ExecuteUbergraph_OptionsTab::K2Node_Event_entry' has a wrong offset!");
 static_assert(offsetof(OptionsTab_C_ExecuteUbergraph_OptionsTab, CallFunc_AddChild_ReturnValue) == 0x000010, "Member 'OptionsTab_C_ExecuteUbergraph_OptionsTab::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsTab_C_ExecuteUbergraph_OptionsTab, K2Node_Event_bIsGamepad) == 0x000018, "Member 'OptionsTab_C_ExecuteUbergraph_OptionsTab::K2Node_Event_bIsGamepad' has a wrong offset!");
+static_assert(offsetof(OptionsTab_C_ExecuteUbergraph_OptionsTab, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000019, "Member 'OptionsTab_C_ExecuteUbergraph_OptionsTab::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsTab_C_ExecuteUbergraph_OptionsTab, CallFunc_IsValid_ReturnValue_1) == 0x00001A, "Member 'OptionsTab_C_ExecuteUbergraph_OptionsTab::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function OptionsTab.OptionsTab_C.Event_InputSourceChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -114,17 +116,21 @@ static_assert(offsetof(OptionsTab_C_Get_DLSSEntry_Visibility_0, CallFunc_IsDLSSS
 static_assert(offsetof(OptionsTab_C_Get_DLSSEntry_Visibility_0, K2Node_Select_Default) == 0x000005, "Member 'OptionsTab_C_Get_DLSSEntry_Visibility_0::K2Node_Select_Default' has a wrong offset!");
 
 // Function OptionsTab.OptionsTab_C.OnSubButtonClicked
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct OptionsTab_C_OnSubButtonClicked final
 {
 public:
 	class URBMenuOptionsEntry*                    Entry;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UOptionsEntry_C*                        K2Node_DynamicCast_AsOptions_Entry;                // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(OptionsTab_C_OnSubButtonClicked) == 0x000008, "Wrong alignment on OptionsTab_C_OnSubButtonClicked");
-static_assert(sizeof(OptionsTab_C_OnSubButtonClicked) == 0x000010, "Wrong size on OptionsTab_C_OnSubButtonClicked");
+static_assert(sizeof(OptionsTab_C_OnSubButtonClicked) == 0x000018, "Wrong size on OptionsTab_C_OnSubButtonClicked");
 static_assert(offsetof(OptionsTab_C_OnSubButtonClicked, Entry) == 0x000000, "Member 'OptionsTab_C_OnSubButtonClicked::Entry' has a wrong offset!");
-static_assert(offsetof(OptionsTab_C_OnSubButtonClicked, K2Node_SwitchEnum_CmpSuccess) == 0x000008, "Member 'OptionsTab_C_OnSubButtonClicked::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(OptionsTab_C_OnSubButtonClicked, K2Node_DynamicCast_AsOptions_Entry) == 0x000008, "Member 'OptionsTab_C_OnSubButtonClicked::K2Node_DynamicCast_AsOptions_Entry' has a wrong offset!");
+static_assert(offsetof(OptionsTab_C_OnSubButtonClicked, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'OptionsTab_C_OnSubButtonClicked::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(OptionsTab_C_OnSubButtonClicked, K2Node_SwitchEnum_CmpSuccess) == 0x000011, "Member 'OptionsTab_C_OnSubButtonClicked::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function OptionsTab.OptionsTab_C.OnInputSourceChanged
 // 0x0009 (0x0009 - 0x0000)
@@ -165,17 +171,17 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_306B[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FBF[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_306C[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FC0[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_306D[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FC1[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOptionsCategory_C*                     K2Node_DynamicCast_AsOptions_Category;             // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_306E[0x6];                                     // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FC2[0x6];                                     // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOptionsEntry_C*                        K2Node_DynamicCast_AsOptions_Entry;                // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CanBeDisplayed_ReturnValue;               // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

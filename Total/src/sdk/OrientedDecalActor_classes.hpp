@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass OrientedDecalActor.OrientedDecalActor_C
-// 0x0018 (0x0270 - 0x0258)
+// 0x0018 (0x0258 - 0x0240)
 class AOrientedDecalActor_C : public ADecalActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMaterialInterface*                     OrientedDecalMaterial;                             // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               DynamicMaterial;                                   // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMaterialInterface*                     OrientedDecalMaterial;                             // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               DynamicMaterial;                                   // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_OrientedDecalActor(int32 EntryPoint);
@@ -50,10 +50,10 @@ public:
 	}
 };
 static_assert(alignof(AOrientedDecalActor_C) == 0x000008, "Wrong alignment on AOrientedDecalActor_C");
-static_assert(sizeof(AOrientedDecalActor_C) == 0x000270, "Wrong size on AOrientedDecalActor_C");
-static_assert(offsetof(AOrientedDecalActor_C, UberGraphFrame) == 0x000258, "Member 'AOrientedDecalActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AOrientedDecalActor_C, OrientedDecalMaterial) == 0x000260, "Member 'AOrientedDecalActor_C::OrientedDecalMaterial' has a wrong offset!");
-static_assert(offsetof(AOrientedDecalActor_C, DynamicMaterial) == 0x000268, "Member 'AOrientedDecalActor_C::DynamicMaterial' has a wrong offset!");
+static_assert(sizeof(AOrientedDecalActor_C) == 0x000258, "Wrong size on AOrientedDecalActor_C");
+static_assert(offsetof(AOrientedDecalActor_C, UberGraphFrame) == 0x000240, "Member 'AOrientedDecalActor_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AOrientedDecalActor_C, OrientedDecalMaterial) == 0x000248, "Member 'AOrientedDecalActor_C::OrientedDecalMaterial' has a wrong offset!");
+static_assert(offsetof(AOrientedDecalActor_C, DynamicMaterial) == 0x000250, "Member 'AOrientedDecalActor_C::DynamicMaterial' has a wrong offset!");
 
 }
 

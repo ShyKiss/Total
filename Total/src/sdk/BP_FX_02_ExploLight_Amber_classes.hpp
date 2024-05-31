@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_FX_02_ExploLight_Amber.BP_FX_02_ExploLight_Amber_C
-// 0x0000 (0x0270 - 0x0270)
+// 0x0000 (0x0258 - 0x0258)
 class ABP_FX_02_ExploLight_Amber_C final : public ABP_FX_01_SpawnExploLight_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_FX_02_ExploLight_Amber_C) == 0x000008, "Wrong alignment on ABP_FX_02_ExploLight_Amber_C");
-static_assert(sizeof(ABP_FX_02_ExploLight_Amber_C) == 0x000270, "Wrong size on ABP_FX_02_ExploLight_Amber_C");
+static_assert(sizeof(ABP_FX_02_ExploLight_Amber_C) == 0x000258, "Wrong size on ABP_FX_02_ExploLight_Amber_C");
 
 }
 

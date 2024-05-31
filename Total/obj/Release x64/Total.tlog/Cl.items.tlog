@@ -24,8 +24,6 @@ C:\Users\Beerymaid\source\repos\Total\Total\src\hooks\backend\opengl\hook_opengl
 C:\Users\Beerymaid\source\repos\Total\Total\src\hooks\backend\vulkan\hook_vulkan.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\hook_vulkan.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\hooks\hooks.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\hooks.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\menu\menu.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\menu.obj
-C:\Users\Beerymaid\source\repos\Total\Total\src\sdk\ArmWreslingPanelComponent_BP_functions.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\ArmWreslingPanelComponent_BP_functions.obj
-C:\Users\Beerymaid\source\repos\Total\Total\src\sdk\ArmWreslingPanel_BP_functions.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\ArmWreslingPanel_BP_functions.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\sdk\Basic.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\Basic.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\sdk\CoreUObject_functions.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\CoreUObject_functions.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\sdk\Engine_functions.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\Engine_functions.obj

@@ -57,6 +57,20 @@ void UOptionsTab_C::ExecuteUbergraph_OptionsTab(int32 EntryPoint)
 }
 
 
+// Function OptionsTab.OptionsTab_C.OnHardwareBenchmarkEnded
+// (Event, Public, BlueprintEvent)
+
+void UOptionsTab_C::OnHardwareBenchmarkEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsTab_C", "OnHardwareBenchmarkEnded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function OptionsTab.OptionsTab_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 

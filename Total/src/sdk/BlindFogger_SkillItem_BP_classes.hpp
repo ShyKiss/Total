@@ -28,6 +28,7 @@ public:
 
 public:
 	void ExecuteUbergraph_BlindFogger_SkillItem_BP(int32 EntryPoint);
+	void Toto();
 	void On_Skill_Deactivate_FX(bool IsInZone);
 	void Event_AudioDistractionTriggered();
 	void Event_OnActivate();

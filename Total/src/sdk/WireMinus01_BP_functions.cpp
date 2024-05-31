@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function Wire-01_BP.Wire-01_BP_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AWireMinus01_BP_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Wire-01_BP_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Wire-01_BP.Wire-01_BP_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AWireMinus01_BP_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Wire-01_BP_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Wire-01_BP.Wire-01_BP_C.ExecuteUbergraph_Wire-01_BP
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void AWireMinus01_BP_C::ExecuteUbergraph_WireMinus01_BP(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Wire-01_BP.Wire-01_BP_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AWireMinus01_BP_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Wire-01_BP_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Wire-01_BP.Wire-01_BP_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AWireMinus01_BP_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Wire-01_BP_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

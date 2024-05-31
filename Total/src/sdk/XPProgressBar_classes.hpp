@@ -36,13 +36,13 @@ public:
 	int32                                         CurrentXp;                                         // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Update(int32 Param_PlayerLevel, int32 Param_StartXp, int32 Param_CurrentXp);
-	void InitProgressBar(class UProgressBar* ProgressBar, int32 Xp);
-	void Refresh();
-	void Init(int32 Param_PlayerLevel, int32 Param_StartXp, int32 Param_CurrentXp);
-	void Finished_9C6F7CD84E0F470B1412B4BAA721AA7E();
-	void RefreshWithAnimation();
 	void ExecuteUbergraph_XPProgressBar(int32 EntryPoint);
+	void RefreshWithAnimation();
+	void Finished_9C6F7CD84E0F470B1412B4BAA721AA7E();
+	void Init(int32 Param_PlayerLevel, int32 Param_StartXp, int32 Param_CurrentXp);
+	void Refresh();
+	void InitProgressBar(class UProgressBar* ProgressBar, int32 Xp);
+	void Update(int32 Param_PlayerLevel, int32 Param_StartXp, int32 Param_CurrentXp);
 
 public:
 	static class UClass* StaticClass()

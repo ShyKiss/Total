@@ -37,6 +37,7 @@ public:
 
 public:
 	void ExecuteUbergraph_Error_ConfirmPopup(int32 EntryPoint);
+	void Event_InputSourceChanged(bool bIsGamepad);
 	void Event_OnFocusMenu();
 	void BndEvt__ConfirmMenuButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
 	void Event_InitializePopup(const class FText& TitleText, const class FText& MainText, const class FText& ConfirmText);

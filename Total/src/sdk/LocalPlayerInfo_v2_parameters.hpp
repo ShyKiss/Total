@@ -25,127 +25,138 @@ struct LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2 final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	class UTexture2D*                             Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_2;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_3;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EEC[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Temp_object_Variable_4;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EED[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0050(0x0028)()
-	int32                                         Temp_int_Variable_1;                               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EEE[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0080(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_2;                    // 0x00A8(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_3;                    // 0x00D0(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_4;                    // 0x00F8(0x0028)()
-	bool                                          Temp_bool_Variable_2;                              // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_3;                              // 0x0123(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0125(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_4;                              // 0x0126(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x0127(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_5;                              // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x012B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EEF[0x4];                                     // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_5;                            // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EF0[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EF1[0x3];                                     // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetPlayerLevel_ReturnValue;               // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBPlayerIconCustomizationOption*       CallFunc_GetPlayerIconCustomizationOption_ReturnValue; // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_FormatPlayerName_ReturnValue;             // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue_1;        // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0190(0x0018)()
-	int32                                         CallFunc_GetReleaseCount_ReturnValue;              // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EF2[0x4];                                     // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Select_Default;                             // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_Select_Default_1;                           // 0x01B8(0x0028)()
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EF3[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Select_Default_2;                           // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_Select_Default_3;                           // 0x01F0(0x0028)()
-	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue;           // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue_1;         // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_4;                           // 0x021A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_5;                           // 0x021B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue_2;         // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue_3;         // 0x021D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_6;                           // 0x021E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_7;                           // 0x021F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBPlayerIconCustomizationOption*       K2Node_CustomEvent_PlayerIcon;                     // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_3;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2EA1[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable_4;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2EA2[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0040(0x0028)()
+	int32                                         Temp_int_Variable_1;                               // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2EA3[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0070(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_2;                    // 0x0098(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_3;                    // 0x00C0(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_4;                    // 0x00E8(0x0028)()
+	bool                                          Temp_bool_Variable_2;                              // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_3;                              // 0x0113(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0115(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_4;                              // 0x0116(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x0117(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_5;                              // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x011B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2EA4[0x4];                                     // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_5;                            // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_6;                              // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_8;                              // 0x013A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_9;                              // 0x013B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2EA5[0x4];                                     // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2EA6[0x3];                                     // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetPlayerLevel_ReturnValue;               // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBPlayerIconCustomizationOption*       CallFunc_GetPlayerIconCustomizationOption_ReturnValue; // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_FormatPlayerName_ReturnValue;             // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue_1;        // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0180(0x0018)()
+	int32                                         CallFunc_GetReleaseCount_ReturnValue;              // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2EA7[0x4];                                     // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default;                             // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_Select_Default_1;                           // 0x01A8(0x0028)()
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2EA8[0x7];                                     // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default_2;                           // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_Select_Default_3;                           // 0x01E0(0x0028)()
+	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue;           // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue_1;         // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_4;                           // 0x020A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_5;                           // 0x020B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue_2;         // 0x020C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue_3;         // 0x020D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_6;                           // 0x020E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_7;                           // 0x020F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBPlayerIconCustomizationOption*       K2Node_CustomEvent_PlayerIcon;                     // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue_4;         // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2EA9[0x2];                                     // 0x021A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x021C(0x0010)(ZeroConstructor, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_8;                           // 0x022C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2) == 0x000008, "Wrong alignment on LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2");
 static_assert(sizeof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2) == 0x000230, "Wrong size on LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2");
 static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, EntryPoint) == 0x000000, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::EntryPoint' has a wrong offset!");
 static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_int_Variable) == 0x000004, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable) == 0x000018, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_1) == 0x000020, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_2) == 0x000028, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_3) == 0x000030, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable) == 0x000038, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_4) == 0x000040, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_1) == 0x000048, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor) == 0x000050, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_int_Variable_1) == 0x000078, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor_1) == 0x000080, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor_2) == 0x0000A8, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor_3) == 0x0000D0, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor_3' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor_4) == 0x0000F8, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor_4' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_2) == 0x000120, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable) == 0x000121, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_1) == 0x000122, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_3) == 0x000123, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_2) == 0x000124, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_3) == 0x000125, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_4) == 0x000126, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_4) == 0x000127, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_5) == 0x000128, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_5) == 0x000129, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_6) == 0x00012A, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_7) == 0x00012B, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_CustomEvent_Loaded) == 0x000130, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_5) == 0x000138, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_DynamicCast_AsTexture_2D) == 0x000140, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_DynamicCast_bSuccess) == 0x000148, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetLocalPlayerState_ReturnValue) == 0x000150, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetLocalPlayerState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_IsValid_ReturnValue) == 0x000158, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetPlayerLevel_ReturnValue) == 0x00015C, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetPlayerLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetPlayerIconCustomizationOption_ReturnValue) == 0x000160, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetPlayerIconCustomizationOption_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetPlayerName_ReturnValue) == 0x000168, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_FormatPlayerName_ReturnValue) == 0x000178, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_FormatPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetLocalPlayerState_ReturnValue_1) == 0x000188, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetLocalPlayerState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_Conv_StringToText_ReturnValue) == 0x000190, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetReleaseCount_ReturnValue) == 0x0001A8, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetReleaseCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default) == 0x0001B0, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_1) == 0x0001B8, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0001E0, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_2) == 0x0001E8, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_3) == 0x0001F0, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_CheckFeatureSwitch_ReturnValue) == 0x000218, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_CheckFeatureSwitch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_CheckFeatureSwitch_ReturnValue_1) == 0x000219, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_CheckFeatureSwitch_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_4) == 0x00021A, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_5) == 0x00021B, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_CheckFeatureSwitch_ReturnValue_2) == 0x00021C, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_CheckFeatureSwitch_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_CheckFeatureSwitch_ReturnValue_3) == 0x00021D, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_CheckFeatureSwitch_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_6) == 0x00021E, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_7) == 0x00021F, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_CustomEvent_PlayerIcon) == 0x000220, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_CustomEvent_PlayerIcon' has a wrong offset!");
-static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_IsValid_ReturnValue_1) == 0x000228, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable) == 0x000008, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_1) == 0x000010, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_2) == 0x000018, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_2' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_3) == 0x000020, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_3' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable) == 0x000028, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_4) == 0x000030, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_4' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_1) == 0x000038, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor) == 0x000040, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_int_Variable_1) == 0x000068, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor_1) == 0x000070, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor_2) == 0x000098, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor_3) == 0x0000C0, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor_3' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_MakeStruct_SlateColor_4) == 0x0000E8, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_MakeStruct_SlateColor_4' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_2) == 0x000110, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable) == 0x000111, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_1) == 0x000112, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_3) == 0x000113, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_3' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_2) == 0x000114, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_3) == 0x000115, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_4) == 0x000116, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_4' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_4) == 0x000117, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_5) == 0x000118, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_5) == 0x000119, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_5' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_6) == 0x00011A, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_6' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_7) == 0x00011B, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_7' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_CustomEvent_Loaded) == 0x000120, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_CustomEvent_Loaded' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_object_Variable_5) == 0x000128, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_object_Variable_5' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_DynamicCast_AsTexture_2D) == 0x000130, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_DynamicCast_bSuccess) == 0x000138, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_bool_Variable_6) == 0x000139, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_bool_Variable_6' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_8) == 0x00013A, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_8' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, Temp_byte_Variable_9) == 0x00013B, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::Temp_byte_Variable_9' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetLocalPlayerState_ReturnValue) == 0x000140, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetLocalPlayerState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_IsValid_ReturnValue) == 0x000148, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetPlayerLevel_ReturnValue) == 0x00014C, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetPlayerLevel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetPlayerIconCustomizationOption_ReturnValue) == 0x000150, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetPlayerIconCustomizationOption_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetPlayerName_ReturnValue) == 0x000158, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_FormatPlayerName_ReturnValue) == 0x000168, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_FormatPlayerName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetLocalPlayerState_ReturnValue_1) == 0x000178, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetLocalPlayerState_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_Conv_StringToText_ReturnValue) == 0x000180, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GetReleaseCount_ReturnValue) == 0x000198, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GetReleaseCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default) == 0x0001A0, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_1) == 0x0001A8, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0001D0, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_2) == 0x0001D8, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_3) == 0x0001E0, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_CheckFeatureSwitch_ReturnValue) == 0x000208, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_CheckFeatureSwitch_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_CheckFeatureSwitch_ReturnValue_1) == 0x000209, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_CheckFeatureSwitch_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_4) == 0x00020A, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_4' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_5) == 0x00020B, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_5' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_CheckFeatureSwitch_ReturnValue_2) == 0x00020C, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_CheckFeatureSwitch_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_CheckFeatureSwitch_ReturnValue_3) == 0x00020D, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_CheckFeatureSwitch_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_6) == 0x00020E, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_6' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_7) == 0x00020F, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_7' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_CustomEvent_PlayerIcon) == 0x000210, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_CustomEvent_PlayerIcon' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_IsValid_ReturnValue_1) == 0x000218, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, CallFunc_CheckFeatureSwitch_ReturnValue_4) == 0x000219, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::CallFunc_CheckFeatureSwitch_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_CreateDelegate_OutputDelegate) == 0x00021C, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2, K2Node_Select_Default_8) == 0x00022C, "Member 'LocalPlayerInfo_v2_C_ExecuteUbergraph_LocalPlayerInfo_v2::K2Node_Select_Default_8' has a wrong offset!");
 
 // Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.LoadAndApplyPlayerIcon
 // 0x0008 (0x0008 - 0x0000)
@@ -181,38 +192,50 @@ static_assert(sizeof(LocalPlayerInfo_v2_C_SetText) == 0x000018, "Wrong size on L
 static_assert(offsetof(LocalPlayerInfo_v2_C_SetText, Text) == 0x000000, "Member 'LocalPlayerInfo_v2_C_SetText::Text' has a wrong offset!");
 
 // Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.PreviewCost
-// 0x0088 (0x0088 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct LocalPlayerInfo_v2_C_PreviewCost final
 {
 public:
 	TMap<ECurrencyType, int32>                    Costs;                                             // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 	ECurrencyType                                 Temp_byte_Variable;                                // 0x0050(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECurrencyType                                 Temp_byte_Variable_1;                              // 0x0051(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EF4[0x2];                                     // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EAA[0x2];                                     // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Map_Find_Value;                           // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EF5[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EAB[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Map_Find_Value_1;                         // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ECurrencyType                                 Temp_byte_Variable_2;                              // 0x0061(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECurrencyType                                 Temp_byte_Variable_3;                              // 0x0062(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EF6[0x1];                                     // 0x0063(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EAC[0x1];                                     // 0x0063(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Map_Find_Value_2;                         // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EF7[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EAD[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Map_Find_Value_3;                         // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_3;                   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ECurrencyType                                 Temp_byte_Variable_4;                              // 0x0071(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECurrencyType                                 Temp_byte_Variable_5;                              // 0x0072(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EF8[0x1];                                     // 0x0073(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EAE[0x1];                                     // 0x0073(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Map_Find_Value_4;                         // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_4;                   // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EF9[0x3];                                     // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EAF[0x3];                                     // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Map_Find_Value_5;                         // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_5;                   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ECurrencyType                                 Temp_byte_Variable_6;                              // 0x0081(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECurrencyType                                 Temp_byte_Variable_7;                              // 0x0082(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2EB0[0x1];                                     // 0x0083(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Map_Find_Value_6;                         // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_6;                   // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2EB1[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Map_Find_Value_7;                         // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_7;                   // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ECurrencyType                                 Temp_byte_Variable_8;                              // 0x0091(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2EB2[0x2];                                     // 0x0092(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Map_Find_Value_8;                         // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_8;                   // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(LocalPlayerInfo_v2_C_PreviewCost) == 0x000008, "Wrong alignment on LocalPlayerInfo_v2_C_PreviewCost");
-static_assert(sizeof(LocalPlayerInfo_v2_C_PreviewCost) == 0x000088, "Wrong size on LocalPlayerInfo_v2_C_PreviewCost");
+static_assert(sizeof(LocalPlayerInfo_v2_C_PreviewCost) == 0x0000A0, "Wrong size on LocalPlayerInfo_v2_C_PreviewCost");
 static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, Costs) == 0x000000, "Member 'LocalPlayerInfo_v2_C_PreviewCost::Costs' has a wrong offset!");
 static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, Temp_byte_Variable) == 0x000050, "Member 'LocalPlayerInfo_v2_C_PreviewCost::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, Temp_byte_Variable_1) == 0x000051, "Member 'LocalPlayerInfo_v2_C_PreviewCost::Temp_byte_Variable_1' has a wrong offset!");
@@ -232,6 +255,32 @@ static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_Value
 static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_ReturnValue_4) == 0x000078, "Member 'LocalPlayerInfo_v2_C_PreviewCost::CallFunc_Map_Find_ReturnValue_4' has a wrong offset!");
 static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_Value_5) == 0x00007C, "Member 'LocalPlayerInfo_v2_C_PreviewCost::CallFunc_Map_Find_Value_5' has a wrong offset!");
 static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_ReturnValue_5) == 0x000080, "Member 'LocalPlayerInfo_v2_C_PreviewCost::CallFunc_Map_Find_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, Temp_byte_Variable_6) == 0x000081, "Member 'LocalPlayerInfo_v2_C_PreviewCost::Temp_byte_Variable_6' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, Temp_byte_Variable_7) == 0x000082, "Member 'LocalPlayerInfo_v2_C_PreviewCost::Temp_byte_Variable_7' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_Value_6) == 0x000084, "Member 'LocalPlayerInfo_v2_C_PreviewCost::CallFunc_Map_Find_Value_6' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_ReturnValue_6) == 0x000088, "Member 'LocalPlayerInfo_v2_C_PreviewCost::CallFunc_Map_Find_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_Value_7) == 0x00008C, "Member 'LocalPlayerInfo_v2_C_PreviewCost::CallFunc_Map_Find_Value_7' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_ReturnValue_7) == 0x000090, "Member 'LocalPlayerInfo_v2_C_PreviewCost::CallFunc_Map_Find_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, Temp_byte_Variable_8) == 0x000091, "Member 'LocalPlayerInfo_v2_C_PreviewCost::Temp_byte_Variable_8' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_Value_8) == 0x000094, "Member 'LocalPlayerInfo_v2_C_PreviewCost::CallFunc_Map_Find_Value_8' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewCost, CallFunc_Map_Find_ReturnValue_8) == 0x000098, "Member 'LocalPlayerInfo_v2_C_PreviewCost::CallFunc_Map_Find_ReturnValue_8' has a wrong offset!");
+
+// Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.PreviewSingleCost
+// 0x0008 (0x0008 - 0x0000)
+struct LocalPlayerInfo_v2_C_PreviewSingleCost final
+{
+public:
+	int32                                         Cost;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECurrencyType                                 CurrencyType;                                      // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LocalPlayerInfo_v2_C_PreviewSingleCost) == 0x000004, "Wrong alignment on LocalPlayerInfo_v2_C_PreviewSingleCost");
+static_assert(sizeof(LocalPlayerInfo_v2_C_PreviewSingleCost) == 0x000008, "Wrong size on LocalPlayerInfo_v2_C_PreviewSingleCost");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewSingleCost, Cost) == 0x000000, "Member 'LocalPlayerInfo_v2_C_PreviewSingleCost::Cost' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewSingleCost, CurrencyType) == 0x000004, "Member 'LocalPlayerInfo_v2_C_PreviewSingleCost::CurrencyType' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewSingleCost, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'LocalPlayerInfo_v2_C_PreviewSingleCost::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(LocalPlayerInfo_v2_C_PreviewSingleCost, CallFunc_Greater_IntInt_ReturnValue) == 0x000006, "Member 'LocalPlayerInfo_v2_C_PreviewSingleCost::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.UpdateCurrencies
 // 0x00A8 (0x00A8 - 0x0000)
@@ -240,24 +289,24 @@ struct LocalPlayerInfo_v2_C_UpdateCurrencies final
 public:
 	TMap<ECurrencyType, int32>                    Currencies;                                        // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                          Temp_bool_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EFA[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EB3[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EFB[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EB4[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0068(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EFC[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EB5[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EFD[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EB6[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULocalPlayerCurrencyHorizontal_C*       K2Node_DynamicCast_AsLocal_Player_Currency_Horizontal; // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EFE[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EB7[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Map_Find_Value;                           // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EFF[0x3];                                     // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EB8[0x3];                                     // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(LocalPlayerInfo_v2_C_UpdateCurrencies) == 0x000008, "Wrong alignment on LocalPlayerInfo_v2_C_UpdateCurrencies");
@@ -284,7 +333,7 @@ struct LocalPlayerInfo_v2_C_SetLevel final
 {
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F00[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EB9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
 };
 static_assert(alignof(LocalPlayerInfo_v2_C_SetLevel) == 0x000008, "Wrong alignment on LocalPlayerInfo_v2_C_SetLevel");

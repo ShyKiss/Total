@@ -301,6 +301,40 @@ void UPlayerHud_C::Event_HideBadgeProgress()
 }
 
 
+// Function PlayerHud.PlayerHud_C.Event_ShowTaskProgress
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FRBTaskHudProgressDisplayDetails Progress                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void UPlayerHud_C::Event_ShowTaskProgress(const struct FRBTaskHudProgressDisplayDetails& Progress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerHud_C", "Event_ShowTaskProgress");
+
+	Params::PlayerHud_C_Event_ShowTaskProgress Parms{};
+
+	Parms.Progress = std::move(Progress);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PlayerHud.PlayerHud_C.Event_HideTaskProgress
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UPlayerHud_C::Event_HideTaskProgress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerHud_C", "Event_HideTaskProgress");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function PlayerHud.PlayerHud_C.SequenceEvent__ENTRYPOINTPlayerHud_0
 // (Public, BlueprintCallable, BlueprintEvent)
 

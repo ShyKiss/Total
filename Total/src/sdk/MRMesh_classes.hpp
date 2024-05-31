@@ -47,23 +47,23 @@ static_assert(alignof(UMeshReconstructorBase) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UMeshReconstructorBase) == 0x000028, "Wrong size on UMeshReconstructorBase");
 
 // Class MRMesh.MockDataMeshTrackerComponent
-// 0x0070 (0x0290 - 0x0220)
+// 0x0070 (0x0280 - 0x0210)
 class UMockDataMeshTrackerComponent final : public USceneComponent
 {
 public:
-	FMulticastInlineDelegateProperty_             OnMeshTrackerUpdated;                              // 0x0218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	bool                                          ScanWorld;                                         // 0x0228(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          RequestNormals;                                    // 0x0229(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          RequestVertexConfidence;                           // 0x022A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMeshTrackerVertexColorMode                   VertexColorMode;                                   // 0x022B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2625[0x4];                                     // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FColor>                         BlockVertexColors;                                 // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FLinearColor                           VertexColorFromConfidenceZero;                     // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           VertexColorFromConfidenceOne;                      // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpdateInterval;                                    // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2626[0x4];                                     // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMRMeshComponent*                       MRMesh;                                            // 0x0268(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2627[0x20];                                    // 0x0270(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnMeshTrackerUpdated;                              // 0x0208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	bool                                          ScanWorld;                                         // 0x0218(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          RequestNormals;                                    // 0x0219(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          RequestVertexConfidence;                           // 0x021A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMeshTrackerVertexColorMode                   VertexColorMode;                                   // 0x021B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_26EE[0x4];                                     // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FColor>                         BlockVertexColors;                                 // 0x0220(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FLinearColor                           VertexColorFromConfidenceZero;                     // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           VertexColorFromConfidenceOne;                      // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpdateInterval;                                    // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_26EF[0x4];                                     // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMRMeshComponent*                       MRMesh;                                            // 0x0258(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_26F0[0x20];                                    // 0x0260(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
@@ -81,33 +81,33 @@ public:
 	}
 };
 static_assert(alignof(UMockDataMeshTrackerComponent) == 0x000010, "Wrong alignment on UMockDataMeshTrackerComponent");
-static_assert(sizeof(UMockDataMeshTrackerComponent) == 0x000290, "Wrong size on UMockDataMeshTrackerComponent");
-static_assert(offsetof(UMockDataMeshTrackerComponent, OnMeshTrackerUpdated) == 0x000218, "Member 'UMockDataMeshTrackerComponent::OnMeshTrackerUpdated' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, ScanWorld) == 0x000228, "Member 'UMockDataMeshTrackerComponent::ScanWorld' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, RequestNormals) == 0x000229, "Member 'UMockDataMeshTrackerComponent::RequestNormals' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, RequestVertexConfidence) == 0x00022A, "Member 'UMockDataMeshTrackerComponent::RequestVertexConfidence' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorMode) == 0x00022B, "Member 'UMockDataMeshTrackerComponent::VertexColorMode' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, BlockVertexColors) == 0x000230, "Member 'UMockDataMeshTrackerComponent::BlockVertexColors' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorFromConfidenceZero) == 0x000240, "Member 'UMockDataMeshTrackerComponent::VertexColorFromConfidenceZero' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorFromConfidenceOne) == 0x000250, "Member 'UMockDataMeshTrackerComponent::VertexColorFromConfidenceOne' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, UpdateInterval) == 0x000260, "Member 'UMockDataMeshTrackerComponent::UpdateInterval' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, MRMesh) == 0x000268, "Member 'UMockDataMeshTrackerComponent::MRMesh' has a wrong offset!");
+static_assert(sizeof(UMockDataMeshTrackerComponent) == 0x000280, "Wrong size on UMockDataMeshTrackerComponent");
+static_assert(offsetof(UMockDataMeshTrackerComponent, OnMeshTrackerUpdated) == 0x000208, "Member 'UMockDataMeshTrackerComponent::OnMeshTrackerUpdated' has a wrong offset!");
+static_assert(offsetof(UMockDataMeshTrackerComponent, ScanWorld) == 0x000218, "Member 'UMockDataMeshTrackerComponent::ScanWorld' has a wrong offset!");
+static_assert(offsetof(UMockDataMeshTrackerComponent, RequestNormals) == 0x000219, "Member 'UMockDataMeshTrackerComponent::RequestNormals' has a wrong offset!");
+static_assert(offsetof(UMockDataMeshTrackerComponent, RequestVertexConfidence) == 0x00021A, "Member 'UMockDataMeshTrackerComponent::RequestVertexConfidence' has a wrong offset!");
+static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorMode) == 0x00021B, "Member 'UMockDataMeshTrackerComponent::VertexColorMode' has a wrong offset!");
+static_assert(offsetof(UMockDataMeshTrackerComponent, BlockVertexColors) == 0x000220, "Member 'UMockDataMeshTrackerComponent::BlockVertexColors' has a wrong offset!");
+static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorFromConfidenceZero) == 0x000230, "Member 'UMockDataMeshTrackerComponent::VertexColorFromConfidenceZero' has a wrong offset!");
+static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorFromConfidenceOne) == 0x000240, "Member 'UMockDataMeshTrackerComponent::VertexColorFromConfidenceOne' has a wrong offset!");
+static_assert(offsetof(UMockDataMeshTrackerComponent, UpdateInterval) == 0x000250, "Member 'UMockDataMeshTrackerComponent::UpdateInterval' has a wrong offset!");
+static_assert(offsetof(UMockDataMeshTrackerComponent, MRMesh) == 0x000258, "Member 'UMockDataMeshTrackerComponent::MRMesh' has a wrong offset!");
 
 // Class MRMesh.MRMeshComponent
-// 0x00C0 (0x0550 - 0x0490)
+// 0x00C0 (0x0540 - 0x0480)
 class UMRMeshComponent final : public UPrimitiveComponent
 {
 public:
-	uint8                                         Pad_2629[0x10];                                    // 0x0490(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Material;                                          // 0x04A0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMaterialInterface*                     WireframeMaterial;                                 // 0x04A8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bCreateMeshProxySections;                          // 0x04B0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bUpdateNavMeshOnMeshUpdate;                        // 0x04B1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bNeverCreateCollisionMesh;                         // 0x04B2(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_262A[0x5];                                     // 0x04B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBodySetup*                             CachedBodySetup;                                   // 0x04B8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UBodySetup*>                     BodySetups;                                        // 0x04C0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_262B[0x80];                                    // 0x04D0(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_26F2[0x10];                                    // 0x0480(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Material;                                          // 0x0490(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMaterialInterface*                     WireframeMaterial;                                 // 0x0498(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bCreateMeshProxySections;                          // 0x04A0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bUpdateNavMeshOnMeshUpdate;                        // 0x04A1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bNeverCreateCollisionMesh;                         // 0x04A2(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_26F3[0x5];                                     // 0x04A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBodySetup*                             CachedBodySetup;                                   // 0x04A8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<class UBodySetup*>                     BodySetups;                                        // 0x04B0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_26F4[0x80];                                    // 0x04C0(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Clear();
@@ -133,14 +133,14 @@ public:
 	}
 };
 static_assert(alignof(UMRMeshComponent) == 0x000010, "Wrong alignment on UMRMeshComponent");
-static_assert(sizeof(UMRMeshComponent) == 0x000550, "Wrong size on UMRMeshComponent");
-static_assert(offsetof(UMRMeshComponent, Material) == 0x0004A0, "Member 'UMRMeshComponent::Material' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, WireframeMaterial) == 0x0004A8, "Member 'UMRMeshComponent::WireframeMaterial' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bCreateMeshProxySections) == 0x0004B0, "Member 'UMRMeshComponent::bCreateMeshProxySections' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bUpdateNavMeshOnMeshUpdate) == 0x0004B1, "Member 'UMRMeshComponent::bUpdateNavMeshOnMeshUpdate' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bNeverCreateCollisionMesh) == 0x0004B2, "Member 'UMRMeshComponent::bNeverCreateCollisionMesh' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, CachedBodySetup) == 0x0004B8, "Member 'UMRMeshComponent::CachedBodySetup' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, BodySetups) == 0x0004C0, "Member 'UMRMeshComponent::BodySetups' has a wrong offset!");
+static_assert(sizeof(UMRMeshComponent) == 0x000540, "Wrong size on UMRMeshComponent");
+static_assert(offsetof(UMRMeshComponent, Material) == 0x000490, "Member 'UMRMeshComponent::Material' has a wrong offset!");
+static_assert(offsetof(UMRMeshComponent, WireframeMaterial) == 0x000498, "Member 'UMRMeshComponent::WireframeMaterial' has a wrong offset!");
+static_assert(offsetof(UMRMeshComponent, bCreateMeshProxySections) == 0x0004A0, "Member 'UMRMeshComponent::bCreateMeshProxySections' has a wrong offset!");
+static_assert(offsetof(UMRMeshComponent, bUpdateNavMeshOnMeshUpdate) == 0x0004A1, "Member 'UMRMeshComponent::bUpdateNavMeshOnMeshUpdate' has a wrong offset!");
+static_assert(offsetof(UMRMeshComponent, bNeverCreateCollisionMesh) == 0x0004A2, "Member 'UMRMeshComponent::bNeverCreateCollisionMesh' has a wrong offset!");
+static_assert(offsetof(UMRMeshComponent, CachedBodySetup) == 0x0004A8, "Member 'UMRMeshComponent::CachedBodySetup' has a wrong offset!");
+static_assert(offsetof(UMRMeshComponent, BodySetups) == 0x0004B0, "Member 'UMRMeshComponent::BodySetups' has a wrong offset!");
 
 }
 

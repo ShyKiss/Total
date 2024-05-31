@@ -20,24 +20,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LocalPlayerInfo_v2.LocalPlayerInfo_v2_C
-// 0x0070 (0x02D0 - 0x0260)
+// 0x0088 (0x02E8 - 0x0260)
 class ULocalPlayerInfo_v2_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class ULocalPlayerCurrencyHorizontal_C*       ChristmasEventTokenCurrencyWidget;                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULocalPlayerCurrencyHorizontal_C*       CreditsCurrencyWidget;                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         CurrenciesBox;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULocalPlayerCurrencyHorizontal_C*       EventTokenCurrencyWidget;                          // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image;                                             // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_71;                                          // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PlayerIcon;                                        // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PlayerIconBackground;                              // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             PlayerLevelText;                                   // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             PlayerName;                                        // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULocalPlayerCurrencyHorizontal_C*       PrimeEventTokenCurrencyWidget;                     // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULocalPlayerCurrencyHorizontal_C*       ToxicEventTokenCurrencyWidget;                     // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULocalPlayerCurrencyHorizontal_C*       VouchersCurrencyWidget;                            // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULocalPlayerCurrencyHorizontal_C*       BPPTokenCurrencyWidget;                            // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULocalPlayerCurrencyHorizontal_C*       BPTokenCurrencyWidget;                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULocalPlayerCurrencyHorizontal_C*       ChristmasEventTokenCurrencyWidget;                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULocalPlayerCurrencyHorizontal_C*       CreditsCurrencyWidget;                             // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         CurrenciesBox;                                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULocalPlayerCurrencyHorizontal_C*       EventTokenCurrencyWidget;                          // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image;                                             // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_71;                                          // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PlayerIcon;                                        // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PlayerIconBackground;                              // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             PlayerLevelText;                                   // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             PlayerName;                                        // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULocalPlayerCurrencyHorizontal_C*       PrimeEventTokenCurrencyWidget;                     // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULocalPlayerCurrencyHorizontal_C*       ReleaseTokenCurrencyWidget;                        // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULocalPlayerCurrencyHorizontal_C*       ToxicEventTokenCurrencyWidget;                     // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULocalPlayerCurrencyHorizontal_C*       VouchersCurrencyWidget;                            // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_LocalPlayerInfo_v2(int32 EntryPoint);
@@ -46,6 +49,7 @@ public:
 	void OnLoaded_20B346D14A61CABECF42C889D247854D(class UObject* Loaded);
 	void SetText(const class FText& Text);
 	void PreviewCost(const TMap<ECurrencyType, int32>& Costs);
+	void PreviewSingleCost(int32 Cost, ECurrencyType CurrencyType);
 	void StopPreviewingCosts();
 	void UpdateCurrencies(const TMap<ECurrencyType, int32>& Currencies);
 	void SetLevel(int32 Value);
@@ -61,21 +65,24 @@ public:
 	}
 };
 static_assert(alignof(ULocalPlayerInfo_v2_C) == 0x000008, "Wrong alignment on ULocalPlayerInfo_v2_C");
-static_assert(sizeof(ULocalPlayerInfo_v2_C) == 0x0002D0, "Wrong size on ULocalPlayerInfo_v2_C");
+static_assert(sizeof(ULocalPlayerInfo_v2_C) == 0x0002E8, "Wrong size on ULocalPlayerInfo_v2_C");
 static_assert(offsetof(ULocalPlayerInfo_v2_C, UberGraphFrame) == 0x000260, "Member 'ULocalPlayerInfo_v2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, ChristmasEventTokenCurrencyWidget) == 0x000268, "Member 'ULocalPlayerInfo_v2_C::ChristmasEventTokenCurrencyWidget' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, CreditsCurrencyWidget) == 0x000270, "Member 'ULocalPlayerInfo_v2_C::CreditsCurrencyWidget' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, CurrenciesBox) == 0x000278, "Member 'ULocalPlayerInfo_v2_C::CurrenciesBox' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, EventTokenCurrencyWidget) == 0x000280, "Member 'ULocalPlayerInfo_v2_C::EventTokenCurrencyWidget' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, Image) == 0x000288, "Member 'ULocalPlayerInfo_v2_C::Image' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, Image_71) == 0x000290, "Member 'ULocalPlayerInfo_v2_C::Image_71' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, PlayerIcon) == 0x000298, "Member 'ULocalPlayerInfo_v2_C::PlayerIcon' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, PlayerIconBackground) == 0x0002A0, "Member 'ULocalPlayerInfo_v2_C::PlayerIconBackground' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, PlayerLevelText) == 0x0002A8, "Member 'ULocalPlayerInfo_v2_C::PlayerLevelText' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, PlayerName) == 0x0002B0, "Member 'ULocalPlayerInfo_v2_C::PlayerName' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, PrimeEventTokenCurrencyWidget) == 0x0002B8, "Member 'ULocalPlayerInfo_v2_C::PrimeEventTokenCurrencyWidget' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, ToxicEventTokenCurrencyWidget) == 0x0002C0, "Member 'ULocalPlayerInfo_v2_C::ToxicEventTokenCurrencyWidget' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerInfo_v2_C, VouchersCurrencyWidget) == 0x0002C8, "Member 'ULocalPlayerInfo_v2_C::VouchersCurrencyWidget' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, BPPTokenCurrencyWidget) == 0x000268, "Member 'ULocalPlayerInfo_v2_C::BPPTokenCurrencyWidget' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, BPTokenCurrencyWidget) == 0x000270, "Member 'ULocalPlayerInfo_v2_C::BPTokenCurrencyWidget' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, ChristmasEventTokenCurrencyWidget) == 0x000278, "Member 'ULocalPlayerInfo_v2_C::ChristmasEventTokenCurrencyWidget' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, CreditsCurrencyWidget) == 0x000280, "Member 'ULocalPlayerInfo_v2_C::CreditsCurrencyWidget' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, CurrenciesBox) == 0x000288, "Member 'ULocalPlayerInfo_v2_C::CurrenciesBox' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, EventTokenCurrencyWidget) == 0x000290, "Member 'ULocalPlayerInfo_v2_C::EventTokenCurrencyWidget' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, Image) == 0x000298, "Member 'ULocalPlayerInfo_v2_C::Image' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, Image_71) == 0x0002A0, "Member 'ULocalPlayerInfo_v2_C::Image_71' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, PlayerIcon) == 0x0002A8, "Member 'ULocalPlayerInfo_v2_C::PlayerIcon' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, PlayerIconBackground) == 0x0002B0, "Member 'ULocalPlayerInfo_v2_C::PlayerIconBackground' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, PlayerLevelText) == 0x0002B8, "Member 'ULocalPlayerInfo_v2_C::PlayerLevelText' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, PlayerName) == 0x0002C0, "Member 'ULocalPlayerInfo_v2_C::PlayerName' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, PrimeEventTokenCurrencyWidget) == 0x0002C8, "Member 'ULocalPlayerInfo_v2_C::PrimeEventTokenCurrencyWidget' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, ReleaseTokenCurrencyWidget) == 0x0002D0, "Member 'ULocalPlayerInfo_v2_C::ReleaseTokenCurrencyWidget' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, ToxicEventTokenCurrencyWidget) == 0x0002D8, "Member 'ULocalPlayerInfo_v2_C::ToxicEventTokenCurrencyWidget' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerInfo_v2_C, VouchersCurrencyWidget) == 0x0002E0, "Member 'ULocalPlayerInfo_v2_C::VouchersCurrencyWidget' has a wrong offset!");
 
 }
 

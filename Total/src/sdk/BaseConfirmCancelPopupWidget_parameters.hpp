@@ -23,7 +23,7 @@ struct BaseConfirmCancelPopupWidget_C_ExecuteUbergraph_BaseConfirmCancelPopupWid
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E7B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E04[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Event_TitleText;                            // 0x0008(0x0018)(ConstParm)
 	class FText                                   K2Node_Event_MainText;                             // 0x0020(0x0018)(ConstParm)
 	class FText                                   K2Node_Event_ConfirmText;                          // 0x0038(0x0018)(ConstParm)
@@ -32,12 +32,12 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue_1;                // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue_2;                // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E7C[0x5];                                     // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E05[0x5];                                     // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue_1;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E7D[0x3];                                     // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E06[0x3];                                     // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0094(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(BaseConfirmCancelPopupWidget_C_ExecuteUbergraph_BaseConfirmCancelPopupWidget) == 0x000008, "Wrong alignment on BaseConfirmCancelPopupWidget_C_ExecuteUbergraph_BaseConfirmCancelPopupWidget");
@@ -139,7 +139,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
 	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E7E[0x7];                                     // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E07[0x7];                                     // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0220(0x00B8)()
 };
 static_assert(alignof(BaseConfirmCancelPopupWidget_C_OnPreviewMouseButtonDown) == 0x000008, "Wrong alignment on BaseConfirmCancelPopupWidget_C_OnPreviewMouseButtonDown");

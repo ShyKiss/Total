@@ -16,93 +16,71 @@
 namespace SDK::Params
 {
 
-// Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct EnemyFace_AnimBlueprint_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              Param_AnimGraph;                                   // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(EnemyFace_AnimBlueprint_C_AnimGraph) == 0x000008, "Wrong alignment on EnemyFace_AnimBlueprint_C_AnimGraph");
-static_assert(sizeof(EnemyFace_AnimBlueprint_C_AnimGraph) == 0x000010, "Wrong size on EnemyFace_AnimBlueprint_C_AnimGraph");
-static_assert(offsetof(EnemyFace_AnimBlueprint_C_AnimGraph, Param_AnimGraph) == 0x000000, "Member 'EnemyFace_AnimBlueprint_C_AnimGraph::Param_AnimGraph' has a wrong offset!");
-
-// Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation");
-static_assert(sizeof(EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation");
-static_assert(offsetof(EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
-
 // Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.ExecuteUbergraph_enemyFace_AnimBlueprint
 // 0x0170 (0x0170 - 0x0000)
 struct EnemyFace_AnimBlueprint_C_ExecuteUbergraph_enemyFace_AnimBlueprint final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3CE5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30FE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value;                           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CE6[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30FF[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_1;                         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CE7[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3100[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_2;                         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CE8[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3101[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_3;                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_3;                   // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CE9[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3102[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_4;                         // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_4;                   // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CEA[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3103[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_5;                         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_5;                   // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CEB[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3104[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_6;                         // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_6;                   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CEC[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3105[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_7;                         // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_7;                   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CED[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3106[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_8;                         // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_8;                   // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CEE[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3107[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_9;                         // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_9;                   // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CEF[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3108[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_10;                        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_10;                  // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CF0[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3109[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_TryGetPawnOwner_ReturnValue;              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTimeX;                           // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3CF1[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_310A[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPawn*                                K2Node_DynamicCast_AsRB_Pawn;                      // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CF2[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_310B[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPoseAsset*                             CallFunc_GetFacePoseAsset_ReturnValue;             // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CF3[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_310C[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           CallFunc_PlaySlotAnimationAsDynamicMontage_ReturnValue; // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequence*                          CallFunc_Map_Find_Value_11;                        // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_11;                  // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CF4[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_310D[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_12;                        // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_12;                  // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CF5[0x7];                                     // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_310E[0x7];                                     // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_13;                        // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_13;                  // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CF6[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_310F[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_14;                        // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_14;                  // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CF7[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3110[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          CallFunc_Map_Find_Value_15;                        // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_15;                  // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CF8[0x7];                                     // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3111[0x7];                                     // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           CallFunc_PlaySlotAnimationAsDynamicMontage_ReturnValue_1; // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwningActor_ReturnValue;               // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBNPC*                                 K2Node_DynamicCast_AsRB_NPC;                       // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -110,7 +88,7 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x015A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x015B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CF9[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3112[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           CallFunc_PlaySlotAnimationAsDynamicMontage_ReturnValue_2; // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -165,6 +143,28 @@ static_assert(offsetof(EnemyFace_AnimBlueprint_C_ExecuteUbergraph_enemyFace_Anim
 static_assert(offsetof(EnemyFace_AnimBlueprint_C_ExecuteUbergraph_enemyFace_AnimBlueprint, Temp_bool_Has_Been_Initd_Variable) == 0x00015B, "Member 'EnemyFace_AnimBlueprint_C_ExecuteUbergraph_enemyFace_AnimBlueprint::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
 static_assert(offsetof(EnemyFace_AnimBlueprint_C_ExecuteUbergraph_enemyFace_AnimBlueprint, CallFunc_PlaySlotAnimationAsDynamicMontage_ReturnValue_2) == 0x000160, "Member 'EnemyFace_AnimBlueprint_C_ExecuteUbergraph_enemyFace_AnimBlueprint::CallFunc_PlaySlotAnimationAsDynamicMontage_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(EnemyFace_AnimBlueprint_C_ExecuteUbergraph_enemyFace_AnimBlueprint, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000168, "Member 'EnemyFace_AnimBlueprint_C_ExecuteUbergraph_enemyFace_AnimBlueprint::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+
+// Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation");
+static_assert(sizeof(EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation");
+static_assert(offsetof(EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'EnemyFace_AnimBlueprint_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+
+// Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct EnemyFace_AnimBlueprint_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              Param_AnimGraph;                                   // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(EnemyFace_AnimBlueprint_C_AnimGraph) == 0x000008, "Wrong alignment on EnemyFace_AnimBlueprint_C_AnimGraph");
+static_assert(sizeof(EnemyFace_AnimBlueprint_C_AnimGraph) == 0x000010, "Wrong size on EnemyFace_AnimBlueprint_C_AnimGraph");
+static_assert(offsetof(EnemyFace_AnimBlueprint_C_AnimGraph, Param_AnimGraph) == 0x000000, "Member 'EnemyFace_AnimBlueprint_C_AnimGraph::Param_AnimGraph' has a wrong offset!");
 
 }
 

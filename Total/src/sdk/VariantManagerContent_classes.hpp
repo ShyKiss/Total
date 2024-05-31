@@ -26,7 +26,7 @@ class ULevelVariantSets final : public UObject
 public:
 	class UClass*                                 DirectorClass;                                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UVariantSet*>                    VariantSets;                                       // 0x0030(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1288[0x50];                                    // 0x0040(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12EA[0x50];                                    // 0x0040(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	int32 GetNumVariantSets();
@@ -49,12 +49,12 @@ static_assert(offsetof(ULevelVariantSets, DirectorClass) == 0x000028, "Member 'U
 static_assert(offsetof(ULevelVariantSets, VariantSets) == 0x000030, "Member 'ULevelVariantSets::VariantSets' has a wrong offset!");
 
 // Class VariantManagerContent.LevelVariantSetsActor
-// 0x0068 (0x02B0 - 0x0248)
+// 0x0068 (0x0298 - 0x0230)
 class ALevelVariantSetsActor final : public AActor
 {
 public:
-	struct FSoftObjectPath                        LevelVariantSets;                                  // 0x0248(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class UClass*, class ULevelVariantSetsFunctionDirector*> DirectorInstances;                                 // 0x0260(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	struct FSoftObjectPath                        LevelVariantSets;                                  // 0x0230(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class UClass*, class ULevelVariantSetsFunctionDirector*> DirectorInstances;                                 // 0x0248(0x0050)(Transient, NativeAccessSpecifierPrivate)
 
 public:
 	class ULevelVariantSets* GetLevelVariantSets(bool bLoad);
@@ -73,16 +73,16 @@ public:
 	}
 };
 static_assert(alignof(ALevelVariantSetsActor) == 0x000008, "Wrong alignment on ALevelVariantSetsActor");
-static_assert(sizeof(ALevelVariantSetsActor) == 0x0002B0, "Wrong size on ALevelVariantSetsActor");
-static_assert(offsetof(ALevelVariantSetsActor, LevelVariantSets) == 0x000248, "Member 'ALevelVariantSetsActor::LevelVariantSets' has a wrong offset!");
-static_assert(offsetof(ALevelVariantSetsActor, DirectorInstances) == 0x000260, "Member 'ALevelVariantSetsActor::DirectorInstances' has a wrong offset!");
+static_assert(sizeof(ALevelVariantSetsActor) == 0x000298, "Wrong size on ALevelVariantSetsActor");
+static_assert(offsetof(ALevelVariantSetsActor, LevelVariantSets) == 0x000230, "Member 'ALevelVariantSetsActor::LevelVariantSets' has a wrong offset!");
+static_assert(offsetof(ALevelVariantSetsActor, DirectorInstances) == 0x000248, "Member 'ALevelVariantSetsActor::DirectorInstances' has a wrong offset!");
 
 // Class VariantManagerContent.LevelVariantSetsFunctionDirector
 // 0x0018 (0x0040 - 0x0028)
 class ULevelVariantSetsFunctionDirector final : public UObject
 {
 public:
-	uint8                                         Pad_128D[0x18];                                    // 0x0028(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12EF[0x18];                                    // 0x0028(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -102,7 +102,7 @@ static_assert(sizeof(ULevelVariantSetsFunctionDirector) == 0x000040, "Wrong size
 class UPropertyValue : public UObject
 {
 public:
-	uint8                                         Pad_128E[0x60];                                    // 0x0028(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12F0[0x60];                                    // 0x0028(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TFieldPath<struct FProperty>>          Properties;                                        // 0x0088(0x0010)(ZeroConstructor, Deprecated, Protected, NativeAccessSpecifierProtected)
 	TArray<int32>                                 PropertyIndices;                                   // 0x0098(0x0010)(ZeroConstructor, Deprecated, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FCapturedPropSegment>           CapturedPropSegments;                              // 0x00A8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
@@ -110,12 +110,12 @@ public:
 	class FName                                   PropertySetterName;                                // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TMap<class FString, class FString>            PropertySetterParameterDefaults;                   // 0x00D0(0x0050)(Protected, NativeAccessSpecifierProtected)
 	bool                                          bHasRecordedData;                                  // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_128F[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12F1[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 LeafPropertyClass;                                 // 0x0128(0x0008)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1290[0x8];                                     // 0x0130(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12F2[0x8];                                     // 0x0130(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 ValueBytes;                                        // 0x0138(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	EPropertyValueCategory                        PropCategory;                                      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1291[0x6F];                                    // 0x0149(0x006F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12F3[0x6F];                                    // 0x0149(0x006F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class FString GetFullDisplayString() const;
@@ -248,14 +248,14 @@ static_assert(alignof(UPropertyValueSoftObject) == 0x000008, "Wrong alignment on
 static_assert(sizeof(UPropertyValueSoftObject) == 0x0001B8, "Wrong size on UPropertyValueSoftObject");
 
 // Class VariantManagerContent.SwitchActor
-// 0x0028 (0x0270 - 0x0248)
+// 0x0028 (0x0258 - 0x0230)
 class ASwitchActor final : public AActor
 {
 public:
-	uint8                                         Pad_1292[0x18];                                    // 0x0248(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        SceneComponent;                                    // 0x0260(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         LastSelectedOption;                                // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1293[0x4];                                     // 0x026C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12F4[0x18];                                    // 0x0230(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        SceneComponent;                                    // 0x0248(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         LastSelectedOption;                                // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_12F5[0x4];                                     // 0x0254(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SelectOption(int32 OptionIndex);
@@ -274,9 +274,9 @@ public:
 	}
 };
 static_assert(alignof(ASwitchActor) == 0x000008, "Wrong alignment on ASwitchActor");
-static_assert(sizeof(ASwitchActor) == 0x000270, "Wrong size on ASwitchActor");
-static_assert(offsetof(ASwitchActor, SceneComponent) == 0x000260, "Member 'ASwitchActor::SceneComponent' has a wrong offset!");
-static_assert(offsetof(ASwitchActor, LastSelectedOption) == 0x000268, "Member 'ASwitchActor::LastSelectedOption' has a wrong offset!");
+static_assert(sizeof(ASwitchActor) == 0x000258, "Wrong size on ASwitchActor");
+static_assert(offsetof(ASwitchActor, SceneComponent) == 0x000248, "Member 'ASwitchActor::SceneComponent' has a wrong offset!");
+static_assert(offsetof(ASwitchActor, LastSelectedOption) == 0x000250, "Member 'ASwitchActor::LastSelectedOption' has a wrong offset!");
 
 // Class VariantManagerContent.Variant
 // 0x0058 (0x0080 - 0x0028)
@@ -285,7 +285,7 @@ class UVariant final : public UObject
 public:
 	TArray<struct FVariantDependency>             Dependencies;                                      // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	class FText                                   DisplayText;                                       // 0x0038(0x0018)(Deprecated, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1294[0x18];                                    // 0x0050(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12F6[0x18];                                    // 0x0050(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UVariantObjectBinding*>          ObjectBindings;                                    // 0x0068(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	class UTexture2D*                             Thumbnail;                                         // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -335,7 +335,7 @@ public:
 	class FString                                 CachedActorLabel;                                  // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FSoftObjectPath                        ObjectPtr;                                         // 0x0038(0x0018)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TLazyObjectPtr<class UObject>                 LazyObjectPtr;                                     // 0x0050(0x001C)(IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_129C[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12FE[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPropertyValue*>                 CapturedProperties;                                // 0x0070(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<struct FFunctionCaller>                FunctionCallers;                                   // 0x0080(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 
@@ -363,9 +363,9 @@ class UVariantSet final : public UObject
 {
 public:
 	class FText                                   DisplayText;                                       // 0x0028(0x0018)(Deprecated, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_129D[0x18];                                    // 0x0040(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12FF[0x18];                                    // 0x0040(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bExpanded;                                         // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_129E[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1300[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UVariant*>                       Variants;                                          // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	class UTexture2D*                             Thumbnail;                                         // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 

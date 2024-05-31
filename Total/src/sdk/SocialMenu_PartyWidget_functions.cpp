@@ -37,6 +37,20 @@ void USocialMenu_PartyWidget_C::ExecuteUbergraph_SocialMenu_PartyWidget(int32 En
 }
 
 
+// Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.OnLeaveGroupConfirmed
+// (BlueprintCallable, BlueprintEvent)
+
+void USocialMenu_PartyWidget_C::OnLeaveGroupConfirmed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SocialMenu_PartyWidget_C", "OnLeaveGroupConfirmed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.Event_EntriesUpdated
 // (Event, Public, BlueprintEvent)
 
@@ -382,23 +396,77 @@ void USocialMenu_PartyWidget_C::SlotHasFocus(int32 Column, int32 Row, bool* bHas
 }
 
 
-// Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.GetLeavePartyBtnVisibility
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.UpdateLeavePartyBtnVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
 
-ESlateVisibility USocialMenu_PartyWidget_C::GetLeavePartyBtnVisibility()
+void USocialMenu_PartyWidget_C::UpdateLeavePartyBtnVisibility()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SocialMenu_PartyWidget_C", "GetLeavePartyBtnVisibility");
+		Func = Class->GetFunction("SocialMenu_PartyWidget_C", "UpdateLeavePartyBtnVisibility");
 
-	Params::SocialMenu_PartyWidget_C_GetLeavePartyBtnVisibility Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.OnPrivacyValueUpdated
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USocialMenu_PartyWidget_C::OnPrivacyValueUpdated(int32 NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SocialMenu_PartyWidget_C", "OnPrivacyValueUpdated");
+
+	Params::SocialMenu_PartyWidget_C_OnPrivacyValueUpdated Parms{};
+
+	Parms.NewValue = NewValue;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	return Parms.ReturnValue;
+
+// Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.OnPartyMembersCanInviteValueUpdated
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USocialMenu_PartyWidget_C::OnPartyMembersCanInviteValueUpdated(int32 NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SocialMenu_PartyWidget_C", "OnPartyMembersCanInviteValueUpdated");
+
+	Params::SocialMenu_PartyWidget_C_OnPartyMembersCanInviteValueUpdated Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.OnPartyInviteFilterUpdated
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USocialMenu_PartyWidget_C::OnPartyInviteFilterUpdated(int32 NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SocialMenu_PartyWidget_C", "OnPartyInviteFilterUpdated");
+
+	Params::SocialMenu_PartyWidget_C_OnPartyInviteFilterUpdated Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

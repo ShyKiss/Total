@@ -37,6 +37,142 @@ void UClient_InGameMenu_C::ExecuteUbergraph_Client_InGameMenu(int32 EntryPoint)
 }
 
 
+// Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__Client_InGameMenu_GroupOptionsBtn_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class URBMenuButton_C*                  Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UClient_InGameMenu_C::BndEvt__Client_InGameMenu_GroupOptionsBtn_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature(class URBMenuButton_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__Client_InGameMenu_GroupOptionsBtn_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature");
+
+	Params::Client_InGameMenu_C_BndEvt__Client_InGameMenu_GroupOptionsBtn_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__Client_InGameMenu_TasksBtn_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UClient_InGameMenu_C::BndEvt__Client_InGameMenu_TasksBtn_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__Client_InGameMenu_TasksBtn_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.Event_InputSourceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGamepad                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UClient_InGameMenu_C::Event_InputSourceChanged(bool bIsGamepad)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "Event_InputSourceChanged");
+
+	Params::Client_InGameMenu_C_Event_InputSourceChanged Parms{};
+
+	Parms.bIsGamepad = bIsGamepad;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.HandleNavigationBack
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UClient_InGameMenu_C::HandleNavigationBack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "HandleNavigationBack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__Client_InGameMenu_ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class URBMenuButton_C*                  Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UClient_InGameMenu_C::BndEvt__Client_InGameMenu_ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature(class URBMenuButton_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__Client_InGameMenu_ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
+
+	Params::Client_InGameMenu_C_BndEvt__Client_InGameMenu_ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.ShowSocialSettings
+// (BlueprintCallable, BlueprintEvent)
+
+void UClient_InGameMenu_C::ShowSocialSettings()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "ShowSocialSettings");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.Event_OnUnfocusMenu
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bShouldHide                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UClient_InGameMenu_C::Event_OnUnfocusMenu(bool bShouldHide)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "Event_OnUnfocusMenu");
+
+	Params::Client_InGameMenu_C_Event_OnUnfocusMenu Parms{};
+
+	Parms.bShouldHide = bShouldHide;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.Event_OnFocusMenu
+// (Event, Public, BlueprintEvent)
+
+void UClient_InGameMenu_C::Event_OnFocusMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "Event_OnFocusMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Client_InGameMenu.Client_InGameMenu_C.OnConfirm
 // (BlueprintCallable, BlueprintEvent)
 
@@ -102,6 +238,34 @@ void UClient_InGameMenu_C::Event_MenuTabLeft_Pressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Client_InGameMenu_C", "Event_MenuTabLeft_Pressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__ResumeBtn_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UClient_InGameMenu_C::BndEvt__ResumeBtn_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__ResumeBtn_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__DebugBtn_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UClient_InGameMenu_C::BndEvt__DebugBtn_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__DebugBtn_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,26 +359,6 @@ void UClient_InGameMenu_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__Client_InGameMenu_ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class URBMenuButton_C*                  Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UClient_InGameMenu_C::BndEvt__Client_InGameMenu_ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature(class URBMenuButton_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__Client_InGameMenu_ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
-
-	Params::Client_InGameMenu_C_BndEvt__Client_InGameMenu_ExitButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function Client_InGameMenu.Client_InGameMenu_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -266,34 +410,6 @@ void UClient_InGameMenu_C::BndEvt__QuitBtn_K2Node_ComponentBoundEvent_13_OnClick
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__QuitBtn_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__DebugBtn_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UClient_InGameMenu_C::BndEvt__DebugBtn_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__DebugBtn_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__ResumeBtn_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UClient_InGameMenu_C::BndEvt__ResumeBtn_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__ResumeBtn_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -496,6 +612,41 @@ struct FEventReply UClient_InGameMenu_C::OnFocusReceived(const struct FGeometry&
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.GetCurrentFocusedWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class URBUserWidget*                    FocusedWidget                                          (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UClient_InGameMenu_C::GetCurrentFocusedWidget(class URBUserWidget** FocusedWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "GetCurrentFocusedWidget");
+
+	Params::Client_InGameMenu_C_GetCurrentFocusedWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (FocusedWidget != nullptr)
+		*FocusedWidget = Parms.FocusedWidget;
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.ShowTasksMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UClient_InGameMenu_C::ShowTasksMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "ShowTasksMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

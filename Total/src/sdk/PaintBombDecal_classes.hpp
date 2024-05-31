@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PaintBombDecal.PaintBombDecal_C
-// 0x0000 (0x0270 - 0x0270)
+// 0x0000 (0x0258 - 0x0258)
 class APaintBombDecal_C final : public AOrientedDecalActor_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(APaintBombDecal_C) == 0x000008, "Wrong alignment on APaintBombDecal_C");
-static_assert(sizeof(APaintBombDecal_C) == 0x000270, "Wrong size on APaintBombDecal_C");
+static_assert(sizeof(APaintBombDecal_C) == 0x000258, "Wrong size on APaintBombDecal_C");
 
 }
 

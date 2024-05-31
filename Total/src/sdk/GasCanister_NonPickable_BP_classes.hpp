@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Base_NonPickable_RBPickup_BP_classes.hpp"
 
 
@@ -44,7 +44,7 @@ public:
 	bool                                          bBackwardClear;                                    // 0x0A6F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bUpTested;                                         // 0x0A70(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bUpClear;                                          // 0x0A71(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C6E[0x2];                                     // 0x0A72(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1396[0x2];                                     // 0x0A72(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                GasClearanceTestOffset;                            // 0x0A74(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bTriggered;                                        // 0x0A80(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 

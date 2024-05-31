@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Face_AllList_Enum_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Shared_Face_Expression_Struct_structs.hpp"
+#include "Engine_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "Face_AllList_Enum_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
-#include "Shared_Face_Expression_Struct_structs.hpp"
 #include "Shared_Face_BaseEmotion_Struct_structs.hpp"
 
 
@@ -85,41 +85,41 @@ public:
 	class UAnimSequence*                          LipSyncAnim;                                       // 0x1FF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasPoses;                                          // 0x1FF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsExpressing;                                      // 0x1FF9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CE2[0x6];                                     // 0x1FFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30FB[0x6];                                     // 0x1FFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          ScriptedFaceAnim;                                  // 0x2000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFace_AllList_Enum                            WhichFace;                                         // 0x2008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ENPCSpecificGesture                           WhichExpression;                                   // 0x2009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3CE3[0x6];                                     // 0x200A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30FC[0x6];                                     // 0x200A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FShared_Face_Expression_Struct         ExpressionList;                                    // 0x2010(0x04B0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FShared_Face_BaseEmotion_Struct        BaseEmotionList;                                   // 0x24C0(0x0320)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          IsFuttermanSpeaking;                               // 0x27E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsGooseberry;                                      // 0x27E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CE4[0x2];                                     // 0x27E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30FD[0x2];                                     // 0x27E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         JawOpen;                                           // 0x27E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_5FDC01394575B0B712B52D8599B65DA0();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_7BA8356F4CAA360D2E147EB1AF54E07D();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_83D7CAB442B5DBE52A4EF1AEC23A40DA();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_DAE32BA248BF00ED3FB7EA8D9208FDF1();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_4D74B86946B86E83ED2456A3EA612ACB();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_C58603274E72EDA13918909B7BB686C2();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_C263638840A23B89AE11FD86591B306D();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_54B2B95F49C4F5A37F499A89A5CF9615();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_24A3EAC04A0EAD142478AC80D7F3ADBC();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_AE1D636A412F0F8EB39B778ACA0FA3B1();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_173AF8964E040233FCB6DEB2A65A65C7();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_BFF6704D4578BFE7AA400C9B66E1768A();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_A5A1839645B48F07545C729D438D6A67();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_DF05CE0A4249C05B35D36CB7AEF0F8B9();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_20C7AFF042DEC0F98E2F0B8645490843();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_509C11384A45F62C640DE5A87E6766FC();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void PlayFace();
-	void LipSyncFeed();
-	void ScriptedFaceFeed();
 	void ExecuteUbergraph_enemyFace_AnimBlueprint(int32 EntryPoint);
+	void ScriptedFaceFeed();
+	void LipSyncFeed();
+	void PlayFace();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_509C11384A45F62C640DE5A87E6766FC();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_20C7AFF042DEC0F98E2F0B8645490843();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_DF05CE0A4249C05B35D36CB7AEF0F8B9();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_A5A1839645B48F07545C729D438D6A67();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_BFF6704D4578BFE7AA400C9B66E1768A();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_173AF8964E040233FCB6DEB2A65A65C7();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_AE1D636A412F0F8EB39B778ACA0FA3B1();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_24A3EAC04A0EAD142478AC80D7F3ADBC();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_54B2B95F49C4F5A37F499A89A5CF9615();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_C263638840A23B89AE11FD86591B306D();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_C58603274E72EDA13918909B7BB686C2();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_4D74B86946B86E83ED2456A3EA612ACB();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_DAE32BA248BF00ED3FB7EA8D9208FDF1();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_83D7CAB442B5DBE52A4EF1AEC23A40DA();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_7BA8356F4CAA360D2E147EB1AF54E07D();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_enemyFace_AnimBlueprint_AnimGraphNode_SequencePlayer_5FDC01394575B0B712B52D8599B65DA0();
+	void AnimGraph(struct FPoseLink* Param_AnimGraph);
 
 public:
 	static class UClass* StaticClass()

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function ControllerMappingMenu.ControllerMappingMenu_C.ExecuteUbergraph_ControllerMappingMenu
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -32,6 +32,26 @@ void UControllerMappingMenu_C::ExecuteUbergraph_ControllerMappingMenu(int32 Entr
 	Params::ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ControllerMappingMenu.ControllerMappingMenu_C.OnRemovedFromFocusPath
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// struct FFocusEvent                      InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UControllerMappingMenu_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControllerMappingMenu_C", "OnRemovedFromFocusPath");
+
+	Params::ControllerMappingMenu_C_OnRemovedFromFocusPath Parms{};
+
+	Parms.InFocusEvent = std::move(InFocusEvent);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

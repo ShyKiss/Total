@@ -27,7 +27,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       ItemReady;                                         // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Highlight;                                         // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Bgd;                                               // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 bgd;                                               // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInvalidationBox*                       InvalidationBox_LinearInventoryEntry;              // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ItemIcon;                                          // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ItemReadyCue;                                      // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -38,7 +38,7 @@ public:
 	bool                                          IsSpecialSlot;                                     // 0x0340(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IconStartsCollapsed;                               // 0x0341(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShouldAlwaysShowText;                              // 0x0342(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D17[0x5];                                     // 0x0343(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DF8[0x5];                                     // 0x0343(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             DefaultIcon;                                       // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   PromptActionName;                                  // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FUILinearInventoryItem                 ItemInfo;                                          // 0x0358(0x0080)(Edit, BlueprintVisible, ExposeOnSpawn)
@@ -74,7 +74,7 @@ static_assert(sizeof(ULinearInventoryEntry_C) == 0x0003E0, "Wrong size on ULinea
 static_assert(offsetof(ULinearInventoryEntry_C, UberGraphFrame) == 0x0002E8, "Member 'ULinearInventoryEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULinearInventoryEntry_C, ItemReady) == 0x0002F0, "Member 'ULinearInventoryEntry_C::ItemReady' has a wrong offset!");
 static_assert(offsetof(ULinearInventoryEntry_C, Highlight) == 0x0002F8, "Member 'ULinearInventoryEntry_C::Highlight' has a wrong offset!");
-static_assert(offsetof(ULinearInventoryEntry_C, Bgd) == 0x000300, "Member 'ULinearInventoryEntry_C::Bgd' has a wrong offset!");
+static_assert(offsetof(ULinearInventoryEntry_C, bgd) == 0x000300, "Member 'ULinearInventoryEntry_C::bgd' has a wrong offset!");
 static_assert(offsetof(ULinearInventoryEntry_C, InvalidationBox_LinearInventoryEntry) == 0x000308, "Member 'ULinearInventoryEntry_C::InvalidationBox_LinearInventoryEntry' has a wrong offset!");
 static_assert(offsetof(ULinearInventoryEntry_C, ItemIcon) == 0x000310, "Member 'ULinearInventoryEntry_C::ItemIcon' has a wrong offset!");
 static_assert(offsetof(ULinearInventoryEntry_C, ItemReadyCue) == 0x000318, "Member 'ULinearInventoryEntry_C::ItemReadyCue' has a wrong offset!");

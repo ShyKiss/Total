@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OptionsTab.OptionsTab_C
-// 0x00E0 (0x03E0 - 0x0300)
+// 0x00E8 (0x03E8 - 0x0300)
 class UOptionsTab_C final : public URBMenuOptionsTab
 {
 public:
@@ -52,10 +52,12 @@ public:
 	class UOptionsEntry_C*                        WindowModeEntry;                                   // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnEntrySubButtonClicked;                           // 0x03C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UMicTestOptionsWidget_C*                MicTestEntry;                                      // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        BenchmarkOptionsEntry;                             // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void OnEntrySubButtonClicked__DelegateSignature(class URBMenuOptionsEntry* Entry);
 	void ExecuteUbergraph_OptionsTab(int32 EntryPoint);
+	void OnHardwareBenchmarkEnded();
 	void Construct();
 	void Event_InputSourceChanged(bool bIsGamepad);
 	void BndEvt__OptionsTab_ScrollDown_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
@@ -82,7 +84,7 @@ public:
 	}
 };
 static_assert(alignof(UOptionsTab_C) == 0x000008, "Wrong alignment on UOptionsTab_C");
-static_assert(sizeof(UOptionsTab_C) == 0x0003E0, "Wrong size on UOptionsTab_C");
+static_assert(sizeof(UOptionsTab_C) == 0x0003E8, "Wrong size on UOptionsTab_C");
 static_assert(offsetof(UOptionsTab_C, UberGraphFrame) == 0x000300, "Member 'UOptionsTab_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UOptionsTab_C, AntiAliasingEntry) == 0x000308, "Member 'UOptionsTab_C::AntiAliasingEntry' has a wrong offset!");
 static_assert(offsetof(UOptionsTab_C, AutoDetectEntry) == 0x000310, "Member 'UOptionsTab_C::AutoDetectEntry' has a wrong offset!");
@@ -110,6 +112,7 @@ static_assert(offsetof(UOptionsTab_C, VSyncEntry) == 0x0003B8, "Member 'UOptions
 static_assert(offsetof(UOptionsTab_C, WindowModeEntry) == 0x0003C0, "Member 'UOptionsTab_C::WindowModeEntry' has a wrong offset!");
 static_assert(offsetof(UOptionsTab_C, OnEntrySubButtonClicked) == 0x0003C8, "Member 'UOptionsTab_C::OnEntrySubButtonClicked' has a wrong offset!");
 static_assert(offsetof(UOptionsTab_C, MicTestEntry) == 0x0003D8, "Member 'UOptionsTab_C::MicTestEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, BenchmarkOptionsEntry) == 0x0003E0, "Member 'UOptionsTab_C::BenchmarkOptionsEntry' has a wrong offset!");
 
 }
 

@@ -37,6 +37,26 @@ void UError_ConfirmPopup_C::ExecuteUbergraph_Error_ConfirmPopup(int32 EntryPoint
 }
 
 
+// Function Error_ConfirmPopup.Error_ConfirmPopup_C.Event_InputSourceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGamepad                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UError_ConfirmPopup_C::Event_InputSourceChanged(bool bIsGamepad)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Error_ConfirmPopup_C", "Event_InputSourceChanged");
+
+	Params::Error_ConfirmPopup_C_Event_InputSourceChanged Parms{};
+
+	Parms.bIsGamepad = bIsGamepad;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Error_ConfirmPopup.Error_ConfirmPopup_C.Event_OnFocusMenu
 // (Event, Public, BlueprintEvent)
 

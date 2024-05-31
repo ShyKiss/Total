@@ -42,7 +42,7 @@ public:
 	bool                                          bIsGamepad;                                        // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bHovered;                                          // 0x04E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bFocused;                                          // 0x04EA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_301C[0x5];                                     // 0x04EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E35[0x5];                                     // 0x04EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class USocialMenu_ContextualMenu_C*           ContextualMenu;                                    // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

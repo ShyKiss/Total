@@ -26,7 +26,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2CAB[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3040[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,14 +35,14 @@ public:
 	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CAC[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3041[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Event_message;                              // 0x0048(0x0018)(ConstParm)
 	EGameMessageCategory                          K2Node_Event_gameMessageCategory;                  // 0x0060(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2CAD[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3042[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue_1;                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CAE[0x3];                                     // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3043[0x3];                                     // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_Map_Find_Value;                           // 0x007C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_Show;                           // 0x008D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -127,6 +127,17 @@ public:
 static_assert(alignof(PlayerHud_C_Event_ShowBadgeProgress) == 0x000004, "Wrong alignment on PlayerHud_C_Event_ShowBadgeProgress");
 static_assert(sizeof(PlayerHud_C_Event_ShowBadgeProgress) == 0x000008, "Wrong size on PlayerHud_C_Event_ShowBadgeProgress");
 static_assert(offsetof(PlayerHud_C_Event_ShowBadgeProgress, Progress) == 0x000000, "Member 'PlayerHud_C_Event_ShowBadgeProgress::Progress' has a wrong offset!");
+
+// Function PlayerHud.PlayerHud_C.Event_ShowTaskProgress
+// 0x0008 (0x0008 - 0x0000)
+struct PlayerHud_C_Event_ShowTaskProgress final
+{
+public:
+	struct FRBTaskHudProgressDisplayDetails       Progress;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+static_assert(alignof(PlayerHud_C_Event_ShowTaskProgress) == 0x000004, "Wrong alignment on PlayerHud_C_Event_ShowTaskProgress");
+static_assert(sizeof(PlayerHud_C_Event_ShowTaskProgress) == 0x000008, "Wrong size on PlayerHud_C_Event_ShowTaskProgress");
+static_assert(offsetof(PlayerHud_C_Event_ShowTaskProgress, Progress) == 0x000000, "Member 'PlayerHud_C_Event_ShowTaskProgress::Progress' has a wrong offset!");
 
 }
 

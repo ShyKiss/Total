@@ -31,7 +31,7 @@ public:
 	class UVerticalBox*                           VerticalBox_20;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          IsCurrentObjectiveVisible;                         // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bPauseMenu;                                        // 0x0321(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D83[0x6];                                     // 0x0322(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DEF[0x6];                                     // 0x0322(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARBBaseObjectiveCoordinator*>    CoordinatorsWaitingToBeAdded;                      // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	bool                                          RetainObjectives;                                  // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

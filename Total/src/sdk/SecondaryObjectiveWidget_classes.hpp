@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ObjectiveWidgetBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "ObjectiveWidgetBase_classes.hpp"
 
 
 namespace SDK

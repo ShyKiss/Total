@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PaintBomb_Server-01_BP1.PaintBomb_Server-01_BP1_C
-// 0x0028 (0x0270 - 0x0248)
+// 0x0028 (0x0258 - 0x0230)
 class APaintBomb_ServerMinus01_BP1_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USphereComponent*                       Collision;                                         // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<class ARBPawn*>                        OverlappingPawns;                                  // 0x0260(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USphereComponent*                       Collision;                                         // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TArray<class ARBPawn*>                        OverlappingPawns;                                  // 0x0248(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_PaintBomb_ServerMinus01_BP1(int32 EntryPoint);
@@ -46,11 +46,11 @@ public:
 	}
 };
 static_assert(alignof(APaintBomb_ServerMinus01_BP1_C) == 0x000008, "Wrong alignment on APaintBomb_ServerMinus01_BP1_C");
-static_assert(sizeof(APaintBomb_ServerMinus01_BP1_C) == 0x000270, "Wrong size on APaintBomb_ServerMinus01_BP1_C");
-static_assert(offsetof(APaintBomb_ServerMinus01_BP1_C, UberGraphFrame) == 0x000248, "Member 'APaintBomb_ServerMinus01_BP1_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APaintBomb_ServerMinus01_BP1_C, Collision) == 0x000250, "Member 'APaintBomb_ServerMinus01_BP1_C::Collision' has a wrong offset!");
-static_assert(offsetof(APaintBomb_ServerMinus01_BP1_C, DefaultSceneRoot) == 0x000258, "Member 'APaintBomb_ServerMinus01_BP1_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(APaintBomb_ServerMinus01_BP1_C, OverlappingPawns) == 0x000260, "Member 'APaintBomb_ServerMinus01_BP1_C::OverlappingPawns' has a wrong offset!");
+static_assert(sizeof(APaintBomb_ServerMinus01_BP1_C) == 0x000258, "Wrong size on APaintBomb_ServerMinus01_BP1_C");
+static_assert(offsetof(APaintBomb_ServerMinus01_BP1_C, UberGraphFrame) == 0x000230, "Member 'APaintBomb_ServerMinus01_BP1_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(APaintBomb_ServerMinus01_BP1_C, Collision) == 0x000238, "Member 'APaintBomb_ServerMinus01_BP1_C::Collision' has a wrong offset!");
+static_assert(offsetof(APaintBomb_ServerMinus01_BP1_C, DefaultSceneRoot) == 0x000240, "Member 'APaintBomb_ServerMinus01_BP1_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(APaintBomb_ServerMinus01_BP1_C, OverlappingPawns) == 0x000248, "Member 'APaintBomb_ServerMinus01_BP1_C::OverlappingPawns' has a wrong offset!");
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "MagicLeapARPin_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "MagicLeapARPin_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -20,25 +20,25 @@ namespace SDK
 {
 
 // Class MagicLeapARPin.MagicLeapARPinComponent
-// 0x01B0 (0x03D0 - 0x0220)
+// 0x01B0 (0x03C0 - 0x0210)
 class UMagicLeapARPinComponent final : public USceneComponent
 {
 public:
-	class FString                                 ObjectUID;                                         // 0x0218(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UserIndex;                                         // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMagicLeapAutoPinType                         AutoPinType;                                       // 0x022C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShouldPinActor;                                   // 0x022D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1330[0x2];                                     // 0x022E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UMagicLeapARPinSaveGame>    PinDataClass;                                      // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSet<EMagicLeapARPinType>                     SearchPinTypes;                                    // 0x0238(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class USphereComponent*                       SearchVolume;                                      // 0x0288(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_             OnPersistentEntityPinned;                          // 0x0290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_             OnPersistentEntityPinLost;                         // 0x02A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_             OnPinDataLoadAttemptCompleted;                     // 0x02B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FGuid                                  PinnedCFUID;                                       // 0x02C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USceneComponent*                        PinnedSceneComponent;                              // 0x02D0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMagicLeapARPinSaveGame*                PinData;                                           // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1331[0xF0];                                    // 0x02E0(0x00F0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 ObjectUID;                                         // 0x0208(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UserIndex;                                         // 0x0218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMagicLeapAutoPinType                         AutoPinType;                                       // 0x021C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShouldPinActor;                                   // 0x021D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1379[0x2];                                     // 0x021E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UMagicLeapARPinSaveGame>    PinDataClass;                                      // 0x0220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSet<EMagicLeapARPinType>                     SearchPinTypes;                                    // 0x0228(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class USphereComponent*                       SearchVolume;                                      // 0x0278(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_             OnPersistentEntityPinned;                          // 0x0280(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_             OnPersistentEntityPinLost;                         // 0x0290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_             OnPinDataLoadAttemptCompleted;                     // 0x02A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FGuid                                  PinnedCFUID;                                       // 0x02B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USceneComponent*                        PinnedSceneComponent;                              // 0x02C0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMagicLeapARPinSaveGame*                PinData;                                           // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_137A[0xF0];                                    // 0x02D0(0x00F0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool AttemptPinDataRestoration();
@@ -71,20 +71,20 @@ public:
 	}
 };
 static_assert(alignof(UMagicLeapARPinComponent) == 0x000010, "Wrong alignment on UMagicLeapARPinComponent");
-static_assert(sizeof(UMagicLeapARPinComponent) == 0x0003D0, "Wrong size on UMagicLeapARPinComponent");
-static_assert(offsetof(UMagicLeapARPinComponent, ObjectUID) == 0x000218, "Member 'UMagicLeapARPinComponent::ObjectUID' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, UserIndex) == 0x000228, "Member 'UMagicLeapARPinComponent::UserIndex' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, AutoPinType) == 0x00022C, "Member 'UMagicLeapARPinComponent::AutoPinType' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, bShouldPinActor) == 0x00022D, "Member 'UMagicLeapARPinComponent::bShouldPinActor' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, PinDataClass) == 0x000230, "Member 'UMagicLeapARPinComponent::PinDataClass' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, SearchPinTypes) == 0x000238, "Member 'UMagicLeapARPinComponent::SearchPinTypes' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, SearchVolume) == 0x000288, "Member 'UMagicLeapARPinComponent::SearchVolume' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, OnPersistentEntityPinned) == 0x000290, "Member 'UMagicLeapARPinComponent::OnPersistentEntityPinned' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, OnPersistentEntityPinLost) == 0x0002A0, "Member 'UMagicLeapARPinComponent::OnPersistentEntityPinLost' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, OnPinDataLoadAttemptCompleted) == 0x0002B0, "Member 'UMagicLeapARPinComponent::OnPinDataLoadAttemptCompleted' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, PinnedCFUID) == 0x0002C0, "Member 'UMagicLeapARPinComponent::PinnedCFUID' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, PinnedSceneComponent) == 0x0002D0, "Member 'UMagicLeapARPinComponent::PinnedSceneComponent' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, PinData) == 0x0002D8, "Member 'UMagicLeapARPinComponent::PinData' has a wrong offset!");
+static_assert(sizeof(UMagicLeapARPinComponent) == 0x0003C0, "Wrong size on UMagicLeapARPinComponent");
+static_assert(offsetof(UMagicLeapARPinComponent, ObjectUID) == 0x000208, "Member 'UMagicLeapARPinComponent::ObjectUID' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, UserIndex) == 0x000218, "Member 'UMagicLeapARPinComponent::UserIndex' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, AutoPinType) == 0x00021C, "Member 'UMagicLeapARPinComponent::AutoPinType' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, bShouldPinActor) == 0x00021D, "Member 'UMagicLeapARPinComponent::bShouldPinActor' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, PinDataClass) == 0x000220, "Member 'UMagicLeapARPinComponent::PinDataClass' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, SearchPinTypes) == 0x000228, "Member 'UMagicLeapARPinComponent::SearchPinTypes' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, SearchVolume) == 0x000278, "Member 'UMagicLeapARPinComponent::SearchVolume' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, OnPersistentEntityPinned) == 0x000280, "Member 'UMagicLeapARPinComponent::OnPersistentEntityPinned' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, OnPersistentEntityPinLost) == 0x000290, "Member 'UMagicLeapARPinComponent::OnPersistentEntityPinLost' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, OnPinDataLoadAttemptCompleted) == 0x0002A0, "Member 'UMagicLeapARPinComponent::OnPinDataLoadAttemptCompleted' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, PinnedCFUID) == 0x0002B0, "Member 'UMagicLeapARPinComponent::PinnedCFUID' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, PinnedSceneComponent) == 0x0002C0, "Member 'UMagicLeapARPinComponent::PinnedSceneComponent' has a wrong offset!");
+static_assert(offsetof(UMagicLeapARPinComponent, PinData) == 0x0002C8, "Member 'UMagicLeapARPinComponent::PinData' has a wrong offset!");
 
 // Class MagicLeapARPin.MagicLeapARPinFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -127,13 +127,13 @@ static_assert(alignof(UMagicLeapARPinFunctionLibrary) == 0x000008, "Wrong alignm
 static_assert(sizeof(UMagicLeapARPinFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapARPinFunctionLibrary");
 
 // Class MagicLeapARPin.MagicLeapARPinInfoActorBase
-// 0x0018 (0x0260 - 0x0248)
+// 0x0018 (0x0248 - 0x0230)
 class AMagicLeapARPinInfoActorBase : public AActor
 {
 public:
-	struct FGuid                                  PinId;                                             // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bVisibilityOverride;                               // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1344[0x7];                                     // 0x0259(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  PinId;                                             // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bVisibilityOverride;                               // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138D[0x7];                                     // 0x0241(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnUpdateARPinState();
@@ -149,20 +149,20 @@ public:
 	}
 };
 static_assert(alignof(AMagicLeapARPinInfoActorBase) == 0x000008, "Wrong alignment on AMagicLeapARPinInfoActorBase");
-static_assert(sizeof(AMagicLeapARPinInfoActorBase) == 0x000260, "Wrong size on AMagicLeapARPinInfoActorBase");
-static_assert(offsetof(AMagicLeapARPinInfoActorBase, PinId) == 0x000248, "Member 'AMagicLeapARPinInfoActorBase::PinId' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActorBase, bVisibilityOverride) == 0x000258, "Member 'AMagicLeapARPinInfoActorBase::bVisibilityOverride' has a wrong offset!");
+static_assert(sizeof(AMagicLeapARPinInfoActorBase) == 0x000248, "Wrong size on AMagicLeapARPinInfoActorBase");
+static_assert(offsetof(AMagicLeapARPinInfoActorBase, PinId) == 0x000230, "Member 'AMagicLeapARPinInfoActorBase::PinId' has a wrong offset!");
+static_assert(offsetof(AMagicLeapARPinInfoActorBase, bVisibilityOverride) == 0x000240, "Member 'AMagicLeapARPinInfoActorBase::bVisibilityOverride' has a wrong offset!");
 
 // Class MagicLeapARPin.MagicLeapARPinRenderer
-// 0x0068 (0x02B0 - 0x0248)
+// 0x0068 (0x0298 - 0x0230)
 class AMagicLeapARPinRenderer final : public AActor
 {
 public:
-	bool                                          bInfoActorsVisibilityOverride;                     // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1345[0x7];                                     // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGuid, class AMagicLeapARPinInfoActorBase*> AllInfoActors;                                     // 0x0250(0x0050)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1346[0x8];                                     // 0x02A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class AMagicLeapARPinInfoActorBase> ClassToSpawn;                                      // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bInfoActorsVisibilityOverride;                     // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138E[0x7];                                     // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGuid, class AMagicLeapARPinInfoActorBase*> AllInfoActors;                                     // 0x0238(0x0050)(NativeAccessSpecifierPrivate)
+	uint8                                         Pad_138F[0x8];                                     // 0x0288(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class AMagicLeapARPinInfoActorBase> ClassToSpawn;                                      // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void SetVisibilityOverride(const bool InVisibilityOverride);
@@ -178,10 +178,10 @@ public:
 	}
 };
 static_assert(alignof(AMagicLeapARPinRenderer) == 0x000008, "Wrong alignment on AMagicLeapARPinRenderer");
-static_assert(sizeof(AMagicLeapARPinRenderer) == 0x0002B0, "Wrong size on AMagicLeapARPinRenderer");
-static_assert(offsetof(AMagicLeapARPinRenderer, bInfoActorsVisibilityOverride) == 0x000248, "Member 'AMagicLeapARPinRenderer::bInfoActorsVisibilityOverride' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinRenderer, AllInfoActors) == 0x000250, "Member 'AMagicLeapARPinRenderer::AllInfoActors' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinRenderer, ClassToSpawn) == 0x0002A8, "Member 'AMagicLeapARPinRenderer::ClassToSpawn' has a wrong offset!");
+static_assert(sizeof(AMagicLeapARPinRenderer) == 0x000298, "Wrong size on AMagicLeapARPinRenderer");
+static_assert(offsetof(AMagicLeapARPinRenderer, bInfoActorsVisibilityOverride) == 0x000230, "Member 'AMagicLeapARPinRenderer::bInfoActorsVisibilityOverride' has a wrong offset!");
+static_assert(offsetof(AMagicLeapARPinRenderer, AllInfoActors) == 0x000238, "Member 'AMagicLeapARPinRenderer::AllInfoActors' has a wrong offset!");
+static_assert(offsetof(AMagicLeapARPinRenderer, ClassToSpawn) == 0x000290, "Member 'AMagicLeapARPinRenderer::ClassToSpawn' has a wrong offset!");
 
 // Class MagicLeapARPin.MagicLeapARPinSettings
 // 0x0018 (0x0040 - 0x0028)
@@ -212,11 +212,11 @@ class UMagicLeapARPinSaveGame final : public USaveGame
 {
 public:
 	struct FGuid                                  PinnedID;                                          // 0x0028(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1347[0x8];                                     // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1390[0x8];                                     // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ComponentWorldTransform;                           // 0x0040(0x0030)(Edit, EditConst, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FTransform                             PinTransform;                                      // 0x0070(0x0030)(Edit, EditConst, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bShouldPinActor;                                   // 0x00A0(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1348[0xF];                                     // 0x00A1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1391[0xF];                                     // 0x00A1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

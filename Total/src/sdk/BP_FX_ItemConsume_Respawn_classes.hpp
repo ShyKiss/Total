@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_FX_ItemConsume_Respawn.BP_FX_ItemConsume_Respawn_C
-// 0x0028 (0x0270 - 0x0248)
+// 0x0028 (0x0258 - 0x0230)
 class ABP_FX_ItemConsume_Respawn_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         TCV_RespawnSmooth_Depth_E162EDC44F9FB35154170FB4C65BC1A8; // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TCV_RespawnSmooth_StretchDistance_E162EDC44F9FB35154170FB4C65BC1A8; // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TCV_RespawnSmooth_stretchMulti_E162EDC44F9FB35154170FB4C65BC1A8; // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            TCV_RespawnSmooth__Direction_E162EDC44F9FB35154170FB4C65BC1A8; // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29E4[0x3];                                     // 0x0265(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TCV_RespawnSmooth;                                 // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         TCV_RespawnSmooth_Depth_E162EDC44F9FB35154170FB4C65BC1A8; // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TCV_RespawnSmooth_StretchDistance_E162EDC44F9FB35154170FB4C65BC1A8; // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TCV_RespawnSmooth_stretchMulti_E162EDC44F9FB35154170FB4C65BC1A8; // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            TCV_RespawnSmooth__Direction_E162EDC44F9FB35154170FB4C65BC1A8; // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2BA1[0x3];                                     // 0x024D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     TCV_RespawnSmooth;                                 // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_FX_ItemConsume_Respawn(int32 EntryPoint);
@@ -48,14 +48,14 @@ public:
 	}
 };
 static_assert(alignof(ABP_FX_ItemConsume_Respawn_C) == 0x000008, "Wrong alignment on ABP_FX_ItemConsume_Respawn_C");
-static_assert(sizeof(ABP_FX_ItemConsume_Respawn_C) == 0x000270, "Wrong size on ABP_FX_ItemConsume_Respawn_C");
-static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, UberGraphFrame) == 0x000248, "Member 'ABP_FX_ItemConsume_Respawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, DefaultSceneRoot) == 0x000250, "Member 'ABP_FX_ItemConsume_Respawn_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth_Depth_E162EDC44F9FB35154170FB4C65BC1A8) == 0x000258, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth_Depth_E162EDC44F9FB35154170FB4C65BC1A8' has a wrong offset!");
-static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth_StretchDistance_E162EDC44F9FB35154170FB4C65BC1A8) == 0x00025C, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth_StretchDistance_E162EDC44F9FB35154170FB4C65BC1A8' has a wrong offset!");
-static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth_stretchMulti_E162EDC44F9FB35154170FB4C65BC1A8) == 0x000260, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth_stretchMulti_E162EDC44F9FB35154170FB4C65BC1A8' has a wrong offset!");
-static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth__Direction_E162EDC44F9FB35154170FB4C65BC1A8) == 0x000264, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth__Direction_E162EDC44F9FB35154170FB4C65BC1A8' has a wrong offset!");
-static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth) == 0x000268, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth' has a wrong offset!");
+static_assert(sizeof(ABP_FX_ItemConsume_Respawn_C) == 0x000258, "Wrong size on ABP_FX_ItemConsume_Respawn_C");
+static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, UberGraphFrame) == 0x000230, "Member 'ABP_FX_ItemConsume_Respawn_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, DefaultSceneRoot) == 0x000238, "Member 'ABP_FX_ItemConsume_Respawn_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth_Depth_E162EDC44F9FB35154170FB4C65BC1A8) == 0x000240, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth_Depth_E162EDC44F9FB35154170FB4C65BC1A8' has a wrong offset!");
+static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth_StretchDistance_E162EDC44F9FB35154170FB4C65BC1A8) == 0x000244, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth_StretchDistance_E162EDC44F9FB35154170FB4C65BC1A8' has a wrong offset!");
+static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth_stretchMulti_E162EDC44F9FB35154170FB4C65BC1A8) == 0x000248, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth_stretchMulti_E162EDC44F9FB35154170FB4C65BC1A8' has a wrong offset!");
+static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth__Direction_E162EDC44F9FB35154170FB4C65BC1A8) == 0x00024C, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth__Direction_E162EDC44F9FB35154170FB4C65BC1A8' has a wrong offset!");
+static_assert(offsetof(ABP_FX_ItemConsume_Respawn_C, TCV_RespawnSmooth) == 0x000250, "Member 'ABP_FX_ItemConsume_Respawn_C::TCV_RespawnSmooth' has a wrong offset!");
 
 }
 

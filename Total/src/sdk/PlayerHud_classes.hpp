@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PlayerHud.PlayerHud_C
-// 0x00E8 (0x0380 - 0x0298)
+// 0x00F0 (0x0388 - 0x0298)
 class UPlayerHud_C final : public URBHUDWidget
 {
 public:
@@ -49,9 +49,10 @@ public:
 	class UPsychosisBar2_C*                       PsychosisBar2;                                     // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USpectatorInfoHudWidget_C*              SpectatorInfoHudWidget;                            // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTalkWheel_V2_C*                        TalkWheel_V2;                                      // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWaitingForPlayersCountdownWidget_C*    WaitingForPlayersCountdownWidget;                  // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             FadeInCompleted;                                   // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	float                                         blackoutDuration;                                  // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTaskProgressionHudWidget_C*            TaskProgressionHudWidget;                          // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWaitingForPlayersCountdownWidget_C*    WaitingForPlayersCountdownWidget;                  // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             FadeInCompleted;                                   // 0x0370(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	float                                         blackoutDuration;                                  // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void FadeInCompleted__DelegateSignature();
@@ -72,6 +73,8 @@ public:
 	void PlayTransitionFeedback();
 	void Event_ShowBadgeProgress(const struct FRBBadgeHudProgressDisplayDetails& Progress);
 	void Event_HideBadgeProgress();
+	void Event_ShowTaskProgress(const struct FRBTaskHudProgressDisplayDetails& Progress);
+	void Event_HideTaskProgress();
 	void SequenceEvent__ENTRYPOINTPlayerHud_0();
 	void SequenceEvent__ENTRYPOINTPlayerHud_1();
 
@@ -86,7 +89,7 @@ public:
 	}
 };
 static_assert(alignof(UPlayerHud_C) == 0x000008, "Wrong alignment on UPlayerHud_C");
-static_assert(sizeof(UPlayerHud_C) == 0x000380, "Wrong size on UPlayerHud_C");
+static_assert(sizeof(UPlayerHud_C) == 0x000388, "Wrong size on UPlayerHud_C");
 static_assert(offsetof(UPlayerHud_C, UberGraphFrame) == 0x000298, "Member 'UPlayerHud_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPlayerHud_C, InviteFadeIn) == 0x0002A0, "Member 'UPlayerHud_C::InviteFadeIn' has a wrong offset!");
 static_assert(offsetof(UPlayerHud_C, TransitionFadeAnimation) == 0x0002A8, "Member 'UPlayerHud_C::TransitionFadeAnimation' has a wrong offset!");
@@ -112,9 +115,10 @@ static_assert(offsetof(UPlayerHud_C, ObjectivesWidget) == 0x000340, "Member 'UPl
 static_assert(offsetof(UPlayerHud_C, PsychosisBar2) == 0x000348, "Member 'UPlayerHud_C::PsychosisBar2' has a wrong offset!");
 static_assert(offsetof(UPlayerHud_C, SpectatorInfoHudWidget) == 0x000350, "Member 'UPlayerHud_C::SpectatorInfoHudWidget' has a wrong offset!");
 static_assert(offsetof(UPlayerHud_C, TalkWheel_V2) == 0x000358, "Member 'UPlayerHud_C::TalkWheel_V2' has a wrong offset!");
-static_assert(offsetof(UPlayerHud_C, WaitingForPlayersCountdownWidget) == 0x000360, "Member 'UPlayerHud_C::WaitingForPlayersCountdownWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerHud_C, FadeInCompleted) == 0x000368, "Member 'UPlayerHud_C::FadeInCompleted' has a wrong offset!");
-static_assert(offsetof(UPlayerHud_C, blackoutDuration) == 0x000378, "Member 'UPlayerHud_C::blackoutDuration' has a wrong offset!");
+static_assert(offsetof(UPlayerHud_C, TaskProgressionHudWidget) == 0x000360, "Member 'UPlayerHud_C::TaskProgressionHudWidget' has a wrong offset!");
+static_assert(offsetof(UPlayerHud_C, WaitingForPlayersCountdownWidget) == 0x000368, "Member 'UPlayerHud_C::WaitingForPlayersCountdownWidget' has a wrong offset!");
+static_assert(offsetof(UPlayerHud_C, FadeInCompleted) == 0x000370, "Member 'UPlayerHud_C::FadeInCompleted' has a wrong offset!");
+static_assert(offsetof(UPlayerHud_C, blackoutDuration) == 0x000380, "Member 'UPlayerHud_C::blackoutDuration' has a wrong offset!");
 
 }
 

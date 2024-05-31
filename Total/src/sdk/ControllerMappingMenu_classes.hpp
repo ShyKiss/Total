@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ControllerMappingMenu.ControllerMappingMenu_C
-// 0x0050 (0x0368 - 0x0318)
+// 0x0058 (0x0370 - 0x0318)
 class UControllerMappingMenu_C final : public URBMenuGamepadControlScheme
 {
 public:
@@ -31,12 +31,14 @@ public:
 	class UImage*                                 Darkness;                                          // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URBMenuButton_C*                        ExitBtn;                                           // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_143;                                         // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBMenuButton_C*                        ResetDefaultsBtn;                                  // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBPopUpConfirmCancelWidget*            CurrentApplyChangesPopup;                          // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ApplyChanges;                                      // 0x0360(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UMenuFocusActionButtonContainer_C*      MenuFocusActionButtonContainer;                    // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBMenuButton_C*                        ResetDefaultsBtn;                                  // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBPopUpConfirmCancelWidget*            CurrentApplyChangesPopup;                          // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ApplyChanges;                                      // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_ControllerMappingMenu(int32 EntryPoint);
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
 	void Construct();
 	void OnGamepadTypeChanged(EGamepadType NewGamepadType);
 	void PreConstruct(bool IsDesignTime);
@@ -62,7 +64,7 @@ public:
 	}
 };
 static_assert(alignof(UControllerMappingMenu_C) == 0x000008, "Wrong alignment on UControllerMappingMenu_C");
-static_assert(sizeof(UControllerMappingMenu_C) == 0x000368, "Wrong size on UControllerMappingMenu_C");
+static_assert(sizeof(UControllerMappingMenu_C) == 0x000370, "Wrong size on UControllerMappingMenu_C");
 static_assert(offsetof(UControllerMappingMenu_C, UberGraphFrame) == 0x000318, "Member 'UControllerMappingMenu_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UControllerMappingMenu_C, ApplyChangeBtn) == 0x000320, "Member 'UControllerMappingMenu_C::ApplyChangeBtn' has a wrong offset!");
 static_assert(offsetof(UControllerMappingMenu_C, bg) == 0x000328, "Member 'UControllerMappingMenu_C::bg' has a wrong offset!");
@@ -70,9 +72,10 @@ static_assert(offsetof(UControllerMappingMenu_C, Blur) == 0x000330, "Member 'UCo
 static_assert(offsetof(UControllerMappingMenu_C, Darkness) == 0x000338, "Member 'UControllerMappingMenu_C::Darkness' has a wrong offset!");
 static_assert(offsetof(UControllerMappingMenu_C, ExitBtn) == 0x000340, "Member 'UControllerMappingMenu_C::ExitBtn' has a wrong offset!");
 static_assert(offsetof(UControllerMappingMenu_C, Image_143) == 0x000348, "Member 'UControllerMappingMenu_C::Image_143' has a wrong offset!");
-static_assert(offsetof(UControllerMappingMenu_C, ResetDefaultsBtn) == 0x000350, "Member 'UControllerMappingMenu_C::ResetDefaultsBtn' has a wrong offset!");
-static_assert(offsetof(UControllerMappingMenu_C, CurrentApplyChangesPopup) == 0x000358, "Member 'UControllerMappingMenu_C::CurrentApplyChangesPopup' has a wrong offset!");
-static_assert(offsetof(UControllerMappingMenu_C, ApplyChanges) == 0x000360, "Member 'UControllerMappingMenu_C::ApplyChanges' has a wrong offset!");
+static_assert(offsetof(UControllerMappingMenu_C, MenuFocusActionButtonContainer) == 0x000350, "Member 'UControllerMappingMenu_C::MenuFocusActionButtonContainer' has a wrong offset!");
+static_assert(offsetof(UControllerMappingMenu_C, ResetDefaultsBtn) == 0x000358, "Member 'UControllerMappingMenu_C::ResetDefaultsBtn' has a wrong offset!");
+static_assert(offsetof(UControllerMappingMenu_C, CurrentApplyChangesPopup) == 0x000360, "Member 'UControllerMappingMenu_C::CurrentApplyChangesPopup' has a wrong offset!");
+static_assert(offsetof(UControllerMappingMenu_C, ApplyChanges) == 0x000368, "Member 'UControllerMappingMenu_C::ApplyChanges' has a wrong offset!");
 
 }
 

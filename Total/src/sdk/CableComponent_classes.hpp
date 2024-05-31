@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // Class CableComponent.CableActor
-// 0x0008 (0x0250 - 0x0248)
+// 0x0008 (0x0238 - 0x0230)
 class ACableActor final : public AActor
 {
 public:
-	class UCableComponent*                        CableComponent;                                    // 0x0248(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCableComponent*                        CableComponent;                                    // 0x0230(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -37,41 +37,41 @@ public:
 	}
 };
 static_assert(alignof(ACableActor) == 0x000008, "Wrong alignment on ACableActor");
-static_assert(sizeof(ACableActor) == 0x000250, "Wrong size on ACableActor");
-static_assert(offsetof(ACableActor, CableComponent) == 0x000248, "Member 'ACableActor::CableComponent' has a wrong offset!");
+static_assert(sizeof(ACableActor) == 0x000238, "Wrong size on ACableActor");
+static_assert(offsetof(ACableActor, CableComponent) == 0x000230, "Member 'ACableActor::CableComponent' has a wrong offset!");
 
 // Class CableComponent.CableComponent
-// 0x00A0 (0x0560 - 0x04C0)
+// 0x00A0 (0x0550 - 0x04B0)
 class UCableComponent final : public UMeshComponent
 {
 public:
-	bool                                          bAttachStart;                                      // 0x04B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAttachEnd;                                        // 0x04B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseSkinning;                                      // 0x04BA(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bPreSimulateOnSave;                                // 0x04BB(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F09[0x4];                                      // 0x04BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FComponentReference                    AttachEndTo;                                       // 0x04C0(0x0028)(Edit, NativeAccessSpecifierPublic)
-	class FName                                   AttachEndToSocketName;                             // 0x04E8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                EndLocation;                                       // 0x04F0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CableLength;                                       // 0x04FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumSegments;                                       // 0x0500(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SubstepTime;                                       // 0x0504(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SolverIterations;                                  // 0x0508(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableStiffness;                                  // 0x050C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseSubstepping;                                   // 0x050D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSkipCableUpdateWhenNotVisible;                    // 0x050E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSkipCableUpdateWhenNotOwnerRecentlyRendered;      // 0x050F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableCollision;                                  // 0x0510(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F0A[0x3];                                      // 0x0511(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CollisionFriction;                                 // 0x0514(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                CableForce;                                        // 0x0518(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CableGravityScale;                                 // 0x0524(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CableWidth;                                        // 0x0528(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumSides;                                          // 0x052C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TileMaterial;                                      // 0x0530(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F0B[0x4];                                      // 0x0534(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FCableParticle>                 PreSimulatedParticles;                             // 0x0538(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F0C[0x18];                                     // 0x0548(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bAttachStart;                                      // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAttachEnd;                                        // 0x04A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseSkinning;                                      // 0x04AA(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bPreSimulateOnSave;                                // 0x04AB(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F3B[0x4];                                      // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FComponentReference                    AttachEndTo;                                       // 0x04B0(0x0028)(Edit, NativeAccessSpecifierPublic)
+	class FName                                   AttachEndToSocketName;                             // 0x04D8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                EndLocation;                                       // 0x04E0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CableLength;                                       // 0x04EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumSegments;                                       // 0x04F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SubstepTime;                                       // 0x04F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SolverIterations;                                  // 0x04F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableStiffness;                                  // 0x04FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseSubstepping;                                   // 0x04FD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSkipCableUpdateWhenNotVisible;                    // 0x04FE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSkipCableUpdateWhenNotOwnerRecentlyRendered;      // 0x04FF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableCollision;                                  // 0x0500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F3C[0x3];                                      // 0x0501(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CollisionFriction;                                 // 0x0504(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                CableForce;                                        // 0x0508(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CableGravityScale;                                 // 0x0514(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CableWidth;                                        // 0x0518(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumSides;                                          // 0x051C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TileMaterial;                                      // 0x0520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F3D[0x4];                                      // 0x0524(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FCableParticle>                 PreSimulatedParticles;                             // 0x0528(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F3E[0x18];                                     // 0x0538(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetAttachEndTo(class AActor* Actor, class FName ComponentProperty, class FName SocketName);
@@ -92,30 +92,30 @@ public:
 	}
 };
 static_assert(alignof(UCableComponent) == 0x000010, "Wrong alignment on UCableComponent");
-static_assert(sizeof(UCableComponent) == 0x000560, "Wrong size on UCableComponent");
-static_assert(offsetof(UCableComponent, bAttachStart) == 0x0004B8, "Member 'UCableComponent::bAttachStart' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bAttachEnd) == 0x0004B9, "Member 'UCableComponent::bAttachEnd' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bUseSkinning) == 0x0004BA, "Member 'UCableComponent::bUseSkinning' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bPreSimulateOnSave) == 0x0004BB, "Member 'UCableComponent::bPreSimulateOnSave' has a wrong offset!");
-static_assert(offsetof(UCableComponent, AttachEndTo) == 0x0004C0, "Member 'UCableComponent::AttachEndTo' has a wrong offset!");
-static_assert(offsetof(UCableComponent, AttachEndToSocketName) == 0x0004E8, "Member 'UCableComponent::AttachEndToSocketName' has a wrong offset!");
-static_assert(offsetof(UCableComponent, EndLocation) == 0x0004F0, "Member 'UCableComponent::EndLocation' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableLength) == 0x0004FC, "Member 'UCableComponent::CableLength' has a wrong offset!");
-static_assert(offsetof(UCableComponent, NumSegments) == 0x000500, "Member 'UCableComponent::NumSegments' has a wrong offset!");
-static_assert(offsetof(UCableComponent, SubstepTime) == 0x000504, "Member 'UCableComponent::SubstepTime' has a wrong offset!");
-static_assert(offsetof(UCableComponent, SolverIterations) == 0x000508, "Member 'UCableComponent::SolverIterations' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bEnableStiffness) == 0x00050C, "Member 'UCableComponent::bEnableStiffness' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bUseSubstepping) == 0x00050D, "Member 'UCableComponent::bUseSubstepping' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bSkipCableUpdateWhenNotVisible) == 0x00050E, "Member 'UCableComponent::bSkipCableUpdateWhenNotVisible' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bSkipCableUpdateWhenNotOwnerRecentlyRendered) == 0x00050F, "Member 'UCableComponent::bSkipCableUpdateWhenNotOwnerRecentlyRendered' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bEnableCollision) == 0x000510, "Member 'UCableComponent::bEnableCollision' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CollisionFriction) == 0x000514, "Member 'UCableComponent::CollisionFriction' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableForce) == 0x000518, "Member 'UCableComponent::CableForce' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableGravityScale) == 0x000524, "Member 'UCableComponent::CableGravityScale' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableWidth) == 0x000528, "Member 'UCableComponent::CableWidth' has a wrong offset!");
-static_assert(offsetof(UCableComponent, NumSides) == 0x00052C, "Member 'UCableComponent::NumSides' has a wrong offset!");
-static_assert(offsetof(UCableComponent, TileMaterial) == 0x000530, "Member 'UCableComponent::TileMaterial' has a wrong offset!");
-static_assert(offsetof(UCableComponent, PreSimulatedParticles) == 0x000538, "Member 'UCableComponent::PreSimulatedParticles' has a wrong offset!");
+static_assert(sizeof(UCableComponent) == 0x000550, "Wrong size on UCableComponent");
+static_assert(offsetof(UCableComponent, bAttachStart) == 0x0004A8, "Member 'UCableComponent::bAttachStart' has a wrong offset!");
+static_assert(offsetof(UCableComponent, bAttachEnd) == 0x0004A9, "Member 'UCableComponent::bAttachEnd' has a wrong offset!");
+static_assert(offsetof(UCableComponent, bUseSkinning) == 0x0004AA, "Member 'UCableComponent::bUseSkinning' has a wrong offset!");
+static_assert(offsetof(UCableComponent, bPreSimulateOnSave) == 0x0004AB, "Member 'UCableComponent::bPreSimulateOnSave' has a wrong offset!");
+static_assert(offsetof(UCableComponent, AttachEndTo) == 0x0004B0, "Member 'UCableComponent::AttachEndTo' has a wrong offset!");
+static_assert(offsetof(UCableComponent, AttachEndToSocketName) == 0x0004D8, "Member 'UCableComponent::AttachEndToSocketName' has a wrong offset!");
+static_assert(offsetof(UCableComponent, EndLocation) == 0x0004E0, "Member 'UCableComponent::EndLocation' has a wrong offset!");
+static_assert(offsetof(UCableComponent, CableLength) == 0x0004EC, "Member 'UCableComponent::CableLength' has a wrong offset!");
+static_assert(offsetof(UCableComponent, NumSegments) == 0x0004F0, "Member 'UCableComponent::NumSegments' has a wrong offset!");
+static_assert(offsetof(UCableComponent, SubstepTime) == 0x0004F4, "Member 'UCableComponent::SubstepTime' has a wrong offset!");
+static_assert(offsetof(UCableComponent, SolverIterations) == 0x0004F8, "Member 'UCableComponent::SolverIterations' has a wrong offset!");
+static_assert(offsetof(UCableComponent, bEnableStiffness) == 0x0004FC, "Member 'UCableComponent::bEnableStiffness' has a wrong offset!");
+static_assert(offsetof(UCableComponent, bUseSubstepping) == 0x0004FD, "Member 'UCableComponent::bUseSubstepping' has a wrong offset!");
+static_assert(offsetof(UCableComponent, bSkipCableUpdateWhenNotVisible) == 0x0004FE, "Member 'UCableComponent::bSkipCableUpdateWhenNotVisible' has a wrong offset!");
+static_assert(offsetof(UCableComponent, bSkipCableUpdateWhenNotOwnerRecentlyRendered) == 0x0004FF, "Member 'UCableComponent::bSkipCableUpdateWhenNotOwnerRecentlyRendered' has a wrong offset!");
+static_assert(offsetof(UCableComponent, bEnableCollision) == 0x000500, "Member 'UCableComponent::bEnableCollision' has a wrong offset!");
+static_assert(offsetof(UCableComponent, CollisionFriction) == 0x000504, "Member 'UCableComponent::CollisionFriction' has a wrong offset!");
+static_assert(offsetof(UCableComponent, CableForce) == 0x000508, "Member 'UCableComponent::CableForce' has a wrong offset!");
+static_assert(offsetof(UCableComponent, CableGravityScale) == 0x000514, "Member 'UCableComponent::CableGravityScale' has a wrong offset!");
+static_assert(offsetof(UCableComponent, CableWidth) == 0x000518, "Member 'UCableComponent::CableWidth' has a wrong offset!");
+static_assert(offsetof(UCableComponent, NumSides) == 0x00051C, "Member 'UCableComponent::NumSides' has a wrong offset!");
+static_assert(offsetof(UCableComponent, TileMaterial) == 0x000520, "Member 'UCableComponent::TileMaterial' has a wrong offset!");
+static_assert(offsetof(UCableComponent, PreSimulatedParticles) == 0x000528, "Member 'UCableComponent::PreSimulatedParticles' has a wrong offset!");
 
 }
 

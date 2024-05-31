@@ -65,7 +65,7 @@ public:
 	bool                                          ShowOnlyGamepad;                                   // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShowOnlyKBM;                                       // 0x03A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShouldIntersect;                                   // 0x03AA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C27[0x5];                                     // 0x03AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B0A[0x5];                                     // 0x03AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               BorderMaterial_Keyboard;                           // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bShowOnGamepad;                                    // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bShowOnKBM;                                        // 0x03B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)

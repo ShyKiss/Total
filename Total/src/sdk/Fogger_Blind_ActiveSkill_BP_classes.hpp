@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Fogger_Blind_ActiveSkill_BP.Fogger_Blind_ActiveSkill_BP_C
-// 0x0020 (0x0490 - 0x0470)
+// 0x0020 (0x04A8 - 0x0488)
 class AFogger_Blind_ActiveSkill_BP_C final : public ARBItemActiveSkill
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0470(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class URBSoundComponent*                      RBSound;                                           // 0x0478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0488(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class URBSoundComponent*                      RBSound;                                           // 0x0490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0498(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x04A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Fogger_Blind_ActiveSkill_BP(int32 EntryPoint);
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(AFogger_Blind_ActiveSkill_BP_C) == 0x000008, "Wrong alignment on AFogger_Blind_ActiveSkill_BP_C");
-static_assert(sizeof(AFogger_Blind_ActiveSkill_BP_C) == 0x000490, "Wrong size on AFogger_Blind_ActiveSkill_BP_C");
-static_assert(offsetof(AFogger_Blind_ActiveSkill_BP_C, UberGraphFrame) == 0x000470, "Member 'AFogger_Blind_ActiveSkill_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFogger_Blind_ActiveSkill_BP_C, RBSound) == 0x000478, "Member 'AFogger_Blind_ActiveSkill_BP_C::RBSound' has a wrong offset!");
-static_assert(offsetof(AFogger_Blind_ActiveSkill_BP_C, StaticMesh) == 0x000480, "Member 'AFogger_Blind_ActiveSkill_BP_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AFogger_Blind_ActiveSkill_BP_C, DefaultSceneRoot) == 0x000488, "Member 'AFogger_Blind_ActiveSkill_BP_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(AFogger_Blind_ActiveSkill_BP_C) == 0x0004A8, "Wrong size on AFogger_Blind_ActiveSkill_BP_C");
+static_assert(offsetof(AFogger_Blind_ActiveSkill_BP_C, UberGraphFrame) == 0x000488, "Member 'AFogger_Blind_ActiveSkill_BP_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AFogger_Blind_ActiveSkill_BP_C, RBSound) == 0x000490, "Member 'AFogger_Blind_ActiveSkill_BP_C::RBSound' has a wrong offset!");
+static_assert(offsetof(AFogger_Blind_ActiveSkill_BP_C, StaticMesh) == 0x000498, "Member 'AFogger_Blind_ActiveSkill_BP_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(AFogger_Blind_ActiveSkill_BP_C, DefaultSceneRoot) == 0x0004A0, "Member 'AFogger_Blind_ActiveSkill_BP_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

@@ -39,20 +39,23 @@ public:
 	class USizeBox*                               StatusBox;                                         // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHudBarElement_Animated_C*              ThirdBracket;                                      // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ShouldShowEmpty;                                   // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E0E[0x3];                                     // 0x0359(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D7D[0x3];                                     // 0x0359(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CurrentHealth;                                     // 0x035C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PreviousHealth;                                    // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E0F[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D7E[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               HealthBarMaterial;                                 // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UHudBarElement_Animated_C*>      brackets;                                          // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UHudBarElement_Animated_C*>      Brackets;                                          // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class UHudBarElement_Animated_C*              CurrentAnimatedBracket;                            // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Starting_Bracket;                                  // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         FinishingBracket;                                  // 0x038C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          WasDown;                                           // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          OngoingTweens;                                     // 0x0391(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D7F[0x2];                                     // 0x0392(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BleedingLeft;                                      // 0x0394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HealthBar6_Animated(int32 EntryPoint);
+	void OnBleedingLeftChanged(float NewBleedingLeft, float NewHealth);
 	void Destruct();
 	void Construct();
 	void OnMaxHealthChanged(float MaxHealth);
@@ -68,6 +71,8 @@ public:
 	void ProcessPlayerStatusChange(EPlayerIndicatorType NewStatus);
 	void InitHealthBars(bool AnimateShow);
 	void UpdateFifthBarVisibility(bool Show, bool AnimateShow);
+	void UpdateBracketValues();
+	void ProcessBleedingChangedEvent(float NewBleedingLeft, float HealthValue);
 
 	bool ShouldShow() const;
 
@@ -101,12 +106,13 @@ static_assert(offsetof(UHealthBar6_Animated_C, ShouldShowEmpty) == 0x000358, "Me
 static_assert(offsetof(UHealthBar6_Animated_C, CurrentHealth) == 0x00035C, "Member 'UHealthBar6_Animated_C::CurrentHealth' has a wrong offset!");
 static_assert(offsetof(UHealthBar6_Animated_C, PreviousHealth) == 0x000360, "Member 'UHealthBar6_Animated_C::PreviousHealth' has a wrong offset!");
 static_assert(offsetof(UHealthBar6_Animated_C, HealthBarMaterial) == 0x000368, "Member 'UHealthBar6_Animated_C::HealthBarMaterial' has a wrong offset!");
-static_assert(offsetof(UHealthBar6_Animated_C, brackets) == 0x000370, "Member 'UHealthBar6_Animated_C::brackets' has a wrong offset!");
+static_assert(offsetof(UHealthBar6_Animated_C, Brackets) == 0x000370, "Member 'UHealthBar6_Animated_C::Brackets' has a wrong offset!");
 static_assert(offsetof(UHealthBar6_Animated_C, CurrentAnimatedBracket) == 0x000380, "Member 'UHealthBar6_Animated_C::CurrentAnimatedBracket' has a wrong offset!");
 static_assert(offsetof(UHealthBar6_Animated_C, Starting_Bracket) == 0x000388, "Member 'UHealthBar6_Animated_C::Starting_Bracket' has a wrong offset!");
 static_assert(offsetof(UHealthBar6_Animated_C, FinishingBracket) == 0x00038C, "Member 'UHealthBar6_Animated_C::FinishingBracket' has a wrong offset!");
 static_assert(offsetof(UHealthBar6_Animated_C, WasDown) == 0x000390, "Member 'UHealthBar6_Animated_C::WasDown' has a wrong offset!");
 static_assert(offsetof(UHealthBar6_Animated_C, OngoingTweens) == 0x000391, "Member 'UHealthBar6_Animated_C::OngoingTweens' has a wrong offset!");
+static_assert(offsetof(UHealthBar6_Animated_C, BleedingLeft) == 0x000394, "Member 'UHealthBar6_Animated_C::BleedingLeft' has a wrong offset!");
 
 }
 

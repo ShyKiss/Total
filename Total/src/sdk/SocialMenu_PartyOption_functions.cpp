@@ -57,17 +57,23 @@ void USocialMenu_PartyOption_C::ExecuteUbergraph_SocialMenu_PartyOption(int32 En
 }
 
 
-// Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.BndEvt__SocialMenu_PartyOption_InteractionButton_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.Cycle
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Left                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void USocialMenu_PartyOption_C::BndEvt__SocialMenu_PartyOption_InteractionButton_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature()
+void USocialMenu_PartyOption_C::Cycle(bool Left)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SocialMenu_PartyOption_C", "BndEvt__SocialMenu_PartyOption_InteractionButton_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("SocialMenu_PartyOption_C", "Cycle");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::SocialMenu_PartyOption_C_Cycle Parms{};
+
+	Parms.Left = Left;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -176,7 +182,7 @@ void USocialMenu_PartyOption_C::PreConstruct(bool IsDesignTime)
 
 
 // Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.Setup
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Private, BlueprintCallable, BlueprintEvent)
 
 void USocialMenu_PartyOption_C::Setup()
 {
@@ -271,6 +277,26 @@ struct FEventReply USocialMenu_PartyOption_C::OnFocusReceived(const struct FGeom
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.HandleLeftRightNavigation
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USocialMenu_PartyOption_C::HandleLeftRightNavigation(EUINavigation Param_Navigation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SocialMenu_PartyOption_C", "HandleLeftRightNavigation");
+
+	Params::SocialMenu_PartyOption_C_HandleLeftRightNavigation Parms{};
+
+	Parms.Param_Navigation = Param_Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

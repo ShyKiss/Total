@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Spectra_ActiveSkill_BP.Spectra_ActiveSkill_BP_C
-// 0x0030 (0x0518 - 0x04E8)
+// 0x0030 (0x0530 - 0x0500)
 class ASpectra_ActiveSkill_BP_C final : public ARBSpectraSkill
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class URBSoundComponent*                      RBSound;                                           // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URBActiveSkillVisionComponent*          RBActiveSkillVision;                               // 0x04F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   AS_WaveSphere;                                     // 0x0500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   ESOP;                                              // 0x0508(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0510(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0500(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class URBSoundComponent*                      RBSound;                                           // 0x0508(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class URBActiveSkillVisionComponent*          RBActiveSkillVision;                               // 0x0510(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   AS_WaveSphere;                                     // 0x0518(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ESOP;                                              // 0x0520(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0528(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Spectra_ActiveSkill_BP(int32 EntryPoint);
@@ -47,13 +47,13 @@ public:
 	}
 };
 static_assert(alignof(ASpectra_ActiveSkill_BP_C) == 0x000008, "Wrong alignment on ASpectra_ActiveSkill_BP_C");
-static_assert(sizeof(ASpectra_ActiveSkill_BP_C) == 0x000518, "Wrong size on ASpectra_ActiveSkill_BP_C");
-static_assert(offsetof(ASpectra_ActiveSkill_BP_C, UberGraphFrame) == 0x0004E8, "Member 'ASpectra_ActiveSkill_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ASpectra_ActiveSkill_BP_C, RBSound) == 0x0004F0, "Member 'ASpectra_ActiveSkill_BP_C::RBSound' has a wrong offset!");
-static_assert(offsetof(ASpectra_ActiveSkill_BP_C, RBActiveSkillVision) == 0x0004F8, "Member 'ASpectra_ActiveSkill_BP_C::RBActiveSkillVision' has a wrong offset!");
-static_assert(offsetof(ASpectra_ActiveSkill_BP_C, AS_WaveSphere) == 0x000500, "Member 'ASpectra_ActiveSkill_BP_C::AS_WaveSphere' has a wrong offset!");
-static_assert(offsetof(ASpectra_ActiveSkill_BP_C, ESOP) == 0x000508, "Member 'ASpectra_ActiveSkill_BP_C::ESOP' has a wrong offset!");
-static_assert(offsetof(ASpectra_ActiveSkill_BP_C, DefaultSceneRoot) == 0x000510, "Member 'ASpectra_ActiveSkill_BP_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ASpectra_ActiveSkill_BP_C) == 0x000530, "Wrong size on ASpectra_ActiveSkill_BP_C");
+static_assert(offsetof(ASpectra_ActiveSkill_BP_C, UberGraphFrame) == 0x000500, "Member 'ASpectra_ActiveSkill_BP_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ASpectra_ActiveSkill_BP_C, RBSound) == 0x000508, "Member 'ASpectra_ActiveSkill_BP_C::RBSound' has a wrong offset!");
+static_assert(offsetof(ASpectra_ActiveSkill_BP_C, RBActiveSkillVision) == 0x000510, "Member 'ASpectra_ActiveSkill_BP_C::RBActiveSkillVision' has a wrong offset!");
+static_assert(offsetof(ASpectra_ActiveSkill_BP_C, AS_WaveSphere) == 0x000518, "Member 'ASpectra_ActiveSkill_BP_C::AS_WaveSphere' has a wrong offset!");
+static_assert(offsetof(ASpectra_ActiveSkill_BP_C, ESOP) == 0x000520, "Member 'ASpectra_ActiveSkill_BP_C::ESOP' has a wrong offset!");
+static_assert(offsetof(ASpectra_ActiveSkill_BP_C, DefaultSceneRoot) == 0x000528, "Member 'ASpectra_ActiveSkill_BP_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

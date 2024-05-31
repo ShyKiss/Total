@@ -65,34 +65,6 @@ void ARBPlayer_BP_C::ExecuteUbergraph_RBPlayer_BP(int32 EntryPoint)
 }
 
 
-// Function RBPlayer_BP.RBPlayer_BP_C.OnPlayerBleedingEnd
-// (BlueprintCallable, BlueprintEvent)
-
-void ARBPlayer_BP_C::OnPlayerBleedingEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RBPlayer_BP_C", "OnPlayerBleedingEnd");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function RBPlayer_BP.RBPlayer_BP_C.OnPlayerBleedingStart
-// (BlueprintCallable, BlueprintEvent)
-
-void ARBPlayer_BP_C::OnPlayerBleedingStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RBPlayer_BP_C", "OnPlayerBleedingStart");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function RBPlayer_BP.RBPlayer_BP_C.Event_OnActiveSkillRestrictionFinished
 // (Event, Public, BlueprintEvent)
 
@@ -1298,26 +1270,6 @@ void ARBPlayer_BP_C::UpdateReleventComponentsForBloodMaterial()
 		Func = Class->GetFunction("RBPlayer_BP_C", "UpdateReleventComponentsForBloodMaterial");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function RBPlayer_BP.RBPlayer_BP_C.UpdateBleedingCamFX
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Is_Bleeding                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ARBPlayer_BP_C::UpdateBleedingCamFX(bool Is_Bleeding)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RBPlayer_BP_C", "UpdateBleedingCamFX");
-
-	Params::RBPlayer_BP_C_UpdateBleedingCamFX Parms{};
-
-	Parms.Is_Bleeding = Is_Bleeding;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

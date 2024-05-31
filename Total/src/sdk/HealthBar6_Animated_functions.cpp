@@ -37,6 +37,28 @@ void UHealthBar6_Animated_C::ExecuteUbergraph_HealthBar6_Animated(int32 EntryPoi
 }
 
 
+// Function HealthBar6_Animated.HealthBar6_Animated_C.OnBleedingLeftChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewBleedingLeft                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   NewHealth                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHealthBar6_Animated_C::OnBleedingLeftChanged(float NewBleedingLeft, float NewHealth)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HealthBar6_Animated_C", "OnBleedingLeftChanged");
+
+	Params::HealthBar6_Animated_C_OnBleedingLeftChanged Parms{};
+
+	Parms.NewBleedingLeft = NewBleedingLeft;
+	Parms.NewHealth = NewHealth;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function HealthBar6_Animated.HealthBar6_Animated_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -306,6 +328,42 @@ void UHealthBar6_Animated_C::UpdateFifthBarVisibility(bool Show, bool AnimateSho
 
 	Parms.Show = Show;
 	Parms.AnimateShow = AnimateShow;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HealthBar6_Animated.HealthBar6_Animated_C.UpdateBracketValues
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHealthBar6_Animated_C::UpdateBracketValues()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HealthBar6_Animated_C", "UpdateBracketValues");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HealthBar6_Animated.HealthBar6_Animated_C.ProcessBleedingChangedEvent
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewBleedingLeft                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   HealthValue                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHealthBar6_Animated_C::ProcessBleedingChangedEvent(float NewBleedingLeft, float HealthValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HealthBar6_Animated_C", "ProcessBleedingChangedEvent");
+
+	Params::HealthBar6_Animated_C_ProcessBleedingChangedEvent Parms{};
+
+	Parms.NewBleedingLeft = NewBleedingLeft;
+	Parms.HealthValue = HealthValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

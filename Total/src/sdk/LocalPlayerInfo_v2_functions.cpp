@@ -131,6 +131,28 @@ void ULocalPlayerInfo_v2_C::PreviewCost(const TMap<ECurrencyType, int32>& Costs)
 }
 
 
+// Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.PreviewSingleCost
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Cost                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ECurrencyType                           CurrencyType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ULocalPlayerInfo_v2_C::PreviewSingleCost(int32 Cost, ECurrencyType CurrencyType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LocalPlayerInfo_v2_C", "PreviewSingleCost");
+
+	Params::LocalPlayerInfo_v2_C_PreviewSingleCost Parms{};
+
+	Parms.Cost = Cost;
+	Parms.CurrencyType = CurrencyType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.StopPreviewingCosts
 // (Public, BlueprintCallable, BlueprintEvent)
 

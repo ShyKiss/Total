@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass RBWorldSettings_BP.RBWorldSettings_BP_C
-// 0x0000 (0x0710 - 0x0710)
+// 0x0000 (0x06F8 - 0x06F8)
 class ARBWorldSettings_BP_C final : public ARBWorldSettings
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ARBWorldSettings_BP_C) == 0x000008, "Wrong alignment on ARBWorldSettings_BP_C");
-static_assert(sizeof(ARBWorldSettings_BP_C) == 0x000710, "Wrong size on ARBWorldSettings_BP_C");
+static_assert(sizeof(ARBWorldSettings_BP_C) == 0x0006F8, "Wrong size on ARBWorldSettings_BP_C");
 
 }
 

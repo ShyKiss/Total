@@ -126,29 +126,49 @@ enum class ESpectatorReservationResult : uint8
 	ESpectatorReservationResult_MAX          = 16,
 };
 
+// ScriptStruct OnlineSubsystemUtils.InAppPurchaseProductInfo2
+// 0x00F8 (0x00F8 - 0x0000)
+struct FInAppPurchaseProductInfo2 final
+{
+public:
+	class FString                                 Identifier;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 TransactionIdentifier;                             // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DisplayName;                                       // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DisplayDescription;                                // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DisplayPrice;                                      // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RawPrice;                                          // 0x0050(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E96[0x4];                                      // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CurrencyCode;                                      // 0x0058(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CurrencySymbol;                                    // 0x0068(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DecimalSeparator;                                  // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 GroupingSeparator;                                 // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReceiptData;                                       // 0x0098(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, class FString>            DynamicFields;                                     // 0x00A8(0x0050)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FInAppPurchaseProductInfo2) == 0x000008, "Wrong alignment on FInAppPurchaseProductInfo2");
+static_assert(sizeof(FInAppPurchaseProductInfo2) == 0x0000F8, "Wrong size on FInAppPurchaseProductInfo2");
+static_assert(offsetof(FInAppPurchaseProductInfo2, Identifier) == 0x000000, "Member 'FInAppPurchaseProductInfo2::Identifier' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, TransactionIdentifier) == 0x000010, "Member 'FInAppPurchaseProductInfo2::TransactionIdentifier' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, DisplayName) == 0x000020, "Member 'FInAppPurchaseProductInfo2::DisplayName' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, DisplayDescription) == 0x000030, "Member 'FInAppPurchaseProductInfo2::DisplayDescription' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, DisplayPrice) == 0x000040, "Member 'FInAppPurchaseProductInfo2::DisplayPrice' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, RawPrice) == 0x000050, "Member 'FInAppPurchaseProductInfo2::RawPrice' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, CurrencyCode) == 0x000058, "Member 'FInAppPurchaseProductInfo2::CurrencyCode' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, CurrencySymbol) == 0x000068, "Member 'FInAppPurchaseProductInfo2::CurrencySymbol' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, DecimalSeparator) == 0x000078, "Member 'FInAppPurchaseProductInfo2::DecimalSeparator' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, GroupingSeparator) == 0x000088, "Member 'FInAppPurchaseProductInfo2::GroupingSeparator' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, ReceiptData) == 0x000098, "Member 'FInAppPurchaseProductInfo2::ReceiptData' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductInfo2, DynamicFields) == 0x0000A8, "Member 'FInAppPurchaseProductInfo2::DynamicFields' has a wrong offset!");
+
 // ScriptStruct OnlineSubsystemUtils.BlueprintSessionResult
 // 0x0108 (0x0108 - 0x0000)
 struct alignas(0x08) FBlueprintSessionResult final
 {
 public:
-	uint8                                         Pad_E64[0x108];                                    // 0x0000(0x0108)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E97[0x108];                                    // 0x0000(0x0108)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBlueprintSessionResult) == 0x000008, "Wrong alignment on FBlueprintSessionResult");
 static_assert(sizeof(FBlueprintSessionResult) == 0x000108, "Wrong size on FBlueprintSessionResult");
-
-// ScriptStruct OnlineSubsystemUtils.InAppPurchaseProductRequest2
-// 0x0018 (0x0018 - 0x0000)
-struct FInAppPurchaseProductRequest2 final
-{
-public:
-	class FString                                 ProductIdentifier;                                 // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsConsumable;                                     // 0x0010(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E65[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FInAppPurchaseProductRequest2) == 0x000008, "Wrong alignment on FInAppPurchaseProductRequest2");
-static_assert(sizeof(FInAppPurchaseProductRequest2) == 0x000018, "Wrong size on FInAppPurchaseProductRequest2");
-static_assert(offsetof(FInAppPurchaseProductRequest2, ProductIdentifier) == 0x000000, "Member 'FInAppPurchaseProductRequest2::ProductIdentifier' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductRequest2, bIsConsumable) == 0x000010, "Member 'FInAppPurchaseProductRequest2::bIsConsumable' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystemUtils.InAppPurchaseReceiptInfo2
 // 0x0030 (0x0030 - 0x0000)
@@ -165,6 +185,21 @@ static_assert(offsetof(FInAppPurchaseReceiptInfo2, ItemName) == 0x000000, "Membe
 static_assert(offsetof(FInAppPurchaseReceiptInfo2, ItemId) == 0x000010, "Member 'FInAppPurchaseReceiptInfo2::ItemId' has a wrong offset!");
 static_assert(offsetof(FInAppPurchaseReceiptInfo2, ValidationInfo) == 0x000020, "Member 'FInAppPurchaseReceiptInfo2::ValidationInfo' has a wrong offset!");
 
+// ScriptStruct OnlineSubsystemUtils.InAppPurchaseReceiptInfo
+// 0x0030 (0x0030 - 0x0000)
+struct FInAppPurchaseReceiptInfo final
+{
+public:
+	class FString                                 ItemName;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemId;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ValidationInfo;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FInAppPurchaseReceiptInfo) == 0x000008, "Wrong alignment on FInAppPurchaseReceiptInfo");
+static_assert(sizeof(FInAppPurchaseReceiptInfo) == 0x000030, "Wrong size on FInAppPurchaseReceiptInfo");
+static_assert(offsetof(FInAppPurchaseReceiptInfo, ItemName) == 0x000000, "Member 'FInAppPurchaseReceiptInfo::ItemName' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseReceiptInfo, ItemId) == 0x000010, "Member 'FInAppPurchaseReceiptInfo::ItemId' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseReceiptInfo, ValidationInfo) == 0x000020, "Member 'FInAppPurchaseReceiptInfo::ValidationInfo' has a wrong offset!");
+
 // ScriptStruct OnlineSubsystemUtils.OnlineProxyStoreOffer
 // 0x0110 (0x0110 - 0x0000)
 struct FOnlineProxyStoreOffer final
@@ -176,15 +211,15 @@ public:
 	class FText                                   LongDescription;                                   // 0x0040(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	class FText                                   RegularPriceText;                                  // 0x0058(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	int32                                         RegularPrice;                                      // 0x0070(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E66[0x4];                                      // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E98[0x4];                                      // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   PriceText;                                         // 0x0078(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	int32                                         NumericPrice;                                      // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E67[0x4];                                      // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E99[0x4];                                      // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CurrencyCode;                                      // 0x0098(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                              ReleaseDate;                                       // 0x00A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                              ExpirationDate;                                    // 0x00B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EOnlineProxyStoreOfferDiscountType            DiscountType;                                      // 0x00B8(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E68[0x7];                                      // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E9A[0x7];                                      // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, class FString>            DynamicFields;                                     // 0x00C0(0x0050)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FOnlineProxyStoreOffer) == 0x000008, "Wrong alignment on FOnlineProxyStoreOffer");
@@ -218,54 +253,19 @@ static_assert(offsetof(FInAppPurchaseRestoreInfo2, ItemName) == 0x000000, "Membe
 static_assert(offsetof(FInAppPurchaseRestoreInfo2, ItemId) == 0x000010, "Member 'FInAppPurchaseRestoreInfo2::ItemId' has a wrong offset!");
 static_assert(offsetof(FInAppPurchaseRestoreInfo2, ValidationInfo) == 0x000020, "Member 'FInAppPurchaseRestoreInfo2::ValidationInfo' has a wrong offset!");
 
-// ScriptStruct OnlineSubsystemUtils.InAppPurchaseReceiptInfo
-// 0x0030 (0x0030 - 0x0000)
-struct FInAppPurchaseReceiptInfo final
+// ScriptStruct OnlineSubsystemUtils.InAppPurchaseProductRequest2
+// 0x0018 (0x0018 - 0x0000)
+struct FInAppPurchaseProductRequest2 final
 {
 public:
-	class FString                                 ItemName;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemId;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ValidationInfo;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ProductIdentifier;                                 // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsConsumable;                                     // 0x0010(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E9B[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInAppPurchaseReceiptInfo) == 0x000008, "Wrong alignment on FInAppPurchaseReceiptInfo");
-static_assert(sizeof(FInAppPurchaseReceiptInfo) == 0x000030, "Wrong size on FInAppPurchaseReceiptInfo");
-static_assert(offsetof(FInAppPurchaseReceiptInfo, ItemName) == 0x000000, "Member 'FInAppPurchaseReceiptInfo::ItemName' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseReceiptInfo, ItemId) == 0x000010, "Member 'FInAppPurchaseReceiptInfo::ItemId' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseReceiptInfo, ValidationInfo) == 0x000020, "Member 'FInAppPurchaseReceiptInfo::ValidationInfo' has a wrong offset!");
-
-// ScriptStruct OnlineSubsystemUtils.InAppPurchaseProductInfo2
-// 0x00F8 (0x00F8 - 0x0000)
-struct FInAppPurchaseProductInfo2 final
-{
-public:
-	class FString                                 Identifier;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 TransactionIdentifier;                             // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DisplayName;                                       // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DisplayDescription;                                // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DisplayPrice;                                      // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RawPrice;                                          // 0x0050(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E69[0x4];                                      // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CurrencyCode;                                      // 0x0058(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CurrencySymbol;                                    // 0x0068(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DecimalSeparator;                                  // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 GroupingSeparator;                                 // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReceiptData;                                       // 0x0098(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, class FString>            DynamicFields;                                     // 0x00A8(0x0050)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FInAppPurchaseProductInfo2) == 0x000008, "Wrong alignment on FInAppPurchaseProductInfo2");
-static_assert(sizeof(FInAppPurchaseProductInfo2) == 0x0000F8, "Wrong size on FInAppPurchaseProductInfo2");
-static_assert(offsetof(FInAppPurchaseProductInfo2, Identifier) == 0x000000, "Member 'FInAppPurchaseProductInfo2::Identifier' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, TransactionIdentifier) == 0x000010, "Member 'FInAppPurchaseProductInfo2::TransactionIdentifier' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, DisplayName) == 0x000020, "Member 'FInAppPurchaseProductInfo2::DisplayName' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, DisplayDescription) == 0x000030, "Member 'FInAppPurchaseProductInfo2::DisplayDescription' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, DisplayPrice) == 0x000040, "Member 'FInAppPurchaseProductInfo2::DisplayPrice' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, RawPrice) == 0x000050, "Member 'FInAppPurchaseProductInfo2::RawPrice' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, CurrencyCode) == 0x000058, "Member 'FInAppPurchaseProductInfo2::CurrencyCode' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, CurrencySymbol) == 0x000068, "Member 'FInAppPurchaseProductInfo2::CurrencySymbol' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, DecimalSeparator) == 0x000078, "Member 'FInAppPurchaseProductInfo2::DecimalSeparator' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, GroupingSeparator) == 0x000088, "Member 'FInAppPurchaseProductInfo2::GroupingSeparator' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, ReceiptData) == 0x000098, "Member 'FInAppPurchaseProductInfo2::ReceiptData' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseProductInfo2, DynamicFields) == 0x0000A8, "Member 'FInAppPurchaseProductInfo2::DynamicFields' has a wrong offset!");
+static_assert(alignof(FInAppPurchaseProductRequest2) == 0x000008, "Wrong alignment on FInAppPurchaseProductRequest2");
+static_assert(sizeof(FInAppPurchaseProductRequest2) == 0x000018, "Wrong size on FInAppPurchaseProductRequest2");
+static_assert(offsetof(FInAppPurchaseProductRequest2, ProductIdentifier) == 0x000000, "Member 'FInAppPurchaseProductRequest2::ProductIdentifier' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseProductRequest2, bIsConsumable) == 0x000010, "Member 'FInAppPurchaseProductRequest2::bIsConsumable' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystemUtils.PlayerReservation
 // 0x0050 (0x0050 - 0x0000)
@@ -276,7 +276,7 @@ public:
 	class FString                                 ValidationStr;                                     // 0x0028(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Platform;                                          // 0x0038(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowCrossplay;                                   // 0x0048(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E6A[0x3];                                      // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E9C[0x3];                                      // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ElapsedTime;                                       // 0x004C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FPlayerReservation) == 0x000008, "Wrong alignment on FPlayerReservation");
@@ -323,7 +323,7 @@ struct FPartyReservation final
 {
 public:
 	int32                                         TeamNum;                                           // 0x0000(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E6B[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E9D[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUniqueNetIdRepl                       PartyLeader;                                       // 0x0008(0x0028)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPlayerReservation>             PartyMembers;                                      // 0x0030(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	TArray<struct FPlayerReservation>             RemovedPartyMembers;                               // 0x0040(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)

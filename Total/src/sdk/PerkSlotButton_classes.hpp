@@ -29,10 +29,11 @@ public:
 	struct FMenuUpgradeItemInfo                   UpgradeInfo;                                       // 0x0278(0x0128)(Edit, BlueprintVisible)
 	bool                                          DisplayPlus;                                       // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          DisplayTitle;                                      // 0x03A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_3012[0x6];                                     // 0x03A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_305E[0x6];                                     // 0x03A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         RBPlayerState;                                     // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          ShouldUseMenuLoadout;                              // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	EPerkCategory                                 PerkCategory;                                      // 0x03B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLoadout;                                        // 0x03B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
 	void Setup();
@@ -62,6 +63,7 @@ static_assert(offsetof(UPerkSlotButton_C, DisplayTitle) == 0x0003A1, "Member 'UP
 static_assert(offsetof(UPerkSlotButton_C, RBPlayerState) == 0x0003A8, "Member 'UPerkSlotButton_C::RBPlayerState' has a wrong offset!");
 static_assert(offsetof(UPerkSlotButton_C, ShouldUseMenuLoadout) == 0x0003B0, "Member 'UPerkSlotButton_C::ShouldUseMenuLoadout' has a wrong offset!");
 static_assert(offsetof(UPerkSlotButton_C, PerkCategory) == 0x0003B1, "Member 'UPerkSlotButton_C::PerkCategory' has a wrong offset!");
+static_assert(offsetof(UPerkSlotButton_C, bIsLoadout) == 0x0003B2, "Member 'UPerkSlotButton_C::bIsLoadout' has a wrong offset!");
 
 }
 

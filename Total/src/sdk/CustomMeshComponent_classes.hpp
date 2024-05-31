@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // Class CustomMeshComponent.CustomMeshComponent
-// 0x0010 (0x04D0 - 0x04C0)
+// 0x0010 (0x04C0 - 0x04B0)
 class UCustomMeshComponent final : public UMeshComponent
 {
 public:
-	uint8                                         Pad_1363[0x18];                                    // 0x04B8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13B5[0x18];                                    // 0x04A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddCustomMeshTriangles(const TArray<struct FCustomMeshTriangle>& Triangles);
@@ -39,7 +39,7 @@ public:
 	}
 };
 static_assert(alignof(UCustomMeshComponent) == 0x000010, "Wrong alignment on UCustomMeshComponent");
-static_assert(sizeof(UCustomMeshComponent) == 0x0004D0, "Wrong size on UCustomMeshComponent");
+static_assert(sizeof(UCustomMeshComponent) == 0x0004C0, "Wrong size on UCustomMeshComponent");
 
 }
 

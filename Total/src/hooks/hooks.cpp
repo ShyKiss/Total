@@ -75,7 +75,7 @@ static LRESULT WINAPI WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM 
         // return ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam) == 0;
     }
 
-    return CallWindowProc(oWndProc, hWnd, uMsg, wParam, lParam);
+    return Menu::bShowMenu ? Menu::bShowMenu : CallWindowProc(oWndProc, hWnd, uMsg, wParam, lParam);
 }
 
 namespace Hooks {

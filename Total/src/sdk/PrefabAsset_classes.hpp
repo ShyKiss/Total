@@ -42,7 +42,7 @@ static_assert(sizeof(UPrefabExporter) == 0x000078, "Wrong size on UPrefabExporte
 class UPrefabLevelExporter final : public UPrefabExporter
 {
 public:
-	uint8                                         Pad_CAE[0x10];                                     // 0x0078(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CA2[0x10];                                     // 0x0078(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -58,11 +58,11 @@ static_assert(alignof(UPrefabLevelExporter) == 0x000008, "Wrong alignment on UPr
 static_assert(sizeof(UPrefabLevelExporter) == 0x000088, "Wrong size on UPrefabLevelExporter");
 
 // Class PrefabAsset.PrefabActor
-// 0x0008 (0x0250 - 0x0248)
+// 0x0008 (0x0238 - 0x0230)
 class APrefabActor final : public AActor
 {
 public:
-	class UPrefabComponent*                       PrefabComponent;                                   // 0x0248(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPrefabComponent*                       PrefabComponent;                                   // 0x0230(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void DestroyPrefabActor(bool bDestroyAttachedChildren);
@@ -82,8 +82,8 @@ public:
 	}
 };
 static_assert(alignof(APrefabActor) == 0x000008, "Wrong alignment on APrefabActor");
-static_assert(sizeof(APrefabActor) == 0x000250, "Wrong size on APrefabActor");
-static_assert(offsetof(APrefabActor, PrefabComponent) == 0x000248, "Member 'APrefabActor::PrefabComponent' has a wrong offset!");
+static_assert(sizeof(APrefabActor) == 0x000238, "Wrong size on APrefabActor");
+static_assert(offsetof(APrefabActor, PrefabComponent) == 0x000230, "Member 'APrefabActor::PrefabComponent' has a wrong offset!");
 
 // Class PrefabAsset.PrefabObjectExporterT3D
 // 0x0000 (0x0078 - 0x0078)
@@ -141,19 +141,19 @@ static_assert(sizeof(UPrefabVariantAsset) == 0x000030, "Wrong size on UPrefabVar
 static_assert(offsetof(UPrefabVariantAsset, Parent) == 0x000028, "Member 'UPrefabVariantAsset::Parent' has a wrong offset!");
 
 // Class PrefabAsset.PrefabComponent
-// 0x0080 (0x0510 - 0x0490)
+// 0x0080 (0x0500 - 0x0480)
 class UPrefabComponent final : public UPrimitiveComponent
 {
 public:
-	uint8                                         bConnected : 1;                                    // 0x0490(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bLockSelection : 1;                                // 0x0490(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_CB0[0x7];                                      // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrefabAsset*                           Prefab;                                            // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBlueprint*                             GeneratedBlueprint;                                // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FName, class AActor*>              PrefabInstancesMap;                                // 0x04A8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, AdvancedDisplay, NativeAccessSpecifierPublic)
-	TArray<struct FPrefabVariantRule>             VariantRulesOverwrite;                             // 0x04F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         bTransient : 1;                                    // 0x0508(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_CB1[0x7];                                      // 0x0509(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         bConnected : 1;                                    // 0x0480(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bLockSelection : 1;                                // 0x0480(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_CA4[0x7];                                      // 0x0481(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrefabAsset*                           Prefab;                                            // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBlueprint*                             GeneratedBlueprint;                                // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FName, class AActor*>              PrefabInstancesMap;                                // 0x0498(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, AdvancedDisplay, NativeAccessSpecifierPublic)
+	TArray<struct FPrefabVariantRule>             VariantRulesOverwrite;                             // 0x04E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	uint8                                         bTransient : 1;                                    // 0x04F8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_CA5[0x7];                                      // 0x04F9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -166,11 +166,11 @@ public:
 	}
 };
 static_assert(alignof(UPrefabComponent) == 0x000010, "Wrong alignment on UPrefabComponent");
-static_assert(sizeof(UPrefabComponent) == 0x000510, "Wrong size on UPrefabComponent");
-static_assert(offsetof(UPrefabComponent, Prefab) == 0x000498, "Member 'UPrefabComponent::Prefab' has a wrong offset!");
-static_assert(offsetof(UPrefabComponent, GeneratedBlueprint) == 0x0004A0, "Member 'UPrefabComponent::GeneratedBlueprint' has a wrong offset!");
-static_assert(offsetof(UPrefabComponent, PrefabInstancesMap) == 0x0004A8, "Member 'UPrefabComponent::PrefabInstancesMap' has a wrong offset!");
-static_assert(offsetof(UPrefabComponent, VariantRulesOverwrite) == 0x0004F8, "Member 'UPrefabComponent::VariantRulesOverwrite' has a wrong offset!");
+static_assert(sizeof(UPrefabComponent) == 0x000500, "Wrong size on UPrefabComponent");
+static_assert(offsetof(UPrefabComponent, Prefab) == 0x000488, "Member 'UPrefabComponent::Prefab' has a wrong offset!");
+static_assert(offsetof(UPrefabComponent, GeneratedBlueprint) == 0x000490, "Member 'UPrefabComponent::GeneratedBlueprint' has a wrong offset!");
+static_assert(offsetof(UPrefabComponent, PrefabInstancesMap) == 0x000498, "Member 'UPrefabComponent::PrefabInstancesMap' has a wrong offset!");
+static_assert(offsetof(UPrefabComponent, VariantRulesOverwrite) == 0x0004E8, "Member 'UPrefabComponent::VariantRulesOverwrite' has a wrong offset!");
 
 // Class PrefabAsset.PrefabFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -204,7 +204,7 @@ public:
 	bool                                          bCollapseAllPrefabActorsAfterMapOpened;            // 0x002C(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMoveActorsInWorldAfterSetPrefabPivot;             // 0x002D(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDuplicateNoRevertWithOffset;                      // 0x002E(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CB4[0x1];                                      // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CA8[0x1];                                      // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 NewPrefabNamePattern;                              // 0x0030(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPTUITheme                                    UITheme;                                           // 0x0040(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUpdateAllPrefabActorsWhenOpenMap;                 // 0x0044(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -214,12 +214,12 @@ public:
 	bool                                          bEnableApplyFromDisconnectedPrefabActor;           // 0x0048(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTryQuickApplyFirstWhenApply;                      // 0x0049(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAutoAddRemoveVariantActorPrefix;                  // 0x004A(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CB5[0x5];                                      // 0x004B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CA9[0x5];                                      // 0x004B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 VariantActorPrefix;                                // 0x0050(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnablePrefabComponentVisualizer;                  // 0x0060(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPrefabVisualizerType                         PrefabComponentVisualizerType;                     // 0x0061(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisplayPrefabComponentVisualizerEvenNotSelected;  // 0x0062(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CB6[0x1];                                      // 0x0063(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CAA[0x1];                                      // 0x0063(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FColor                                 PrefabViewVisualizerColor;                         // 0x0064(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FColor                                 TargetActorColor;                                  // 0x0068(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FColor                                 UnLockedConnectedColor;                            // 0x006C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -228,22 +228,22 @@ public:
 	struct FColor                                 LockedDisConnectedColor;                           // 0x0078(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FColor                                 UnLockedNoPrefabAssignedColor;                     // 0x007C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FColor                                 LockedNoPrefabAssignedColor;                       // 0x0080(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CB7[0x4];                                      // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CAB[0x4];                                      // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftObjectPath                        PrefabMaterialPath;                                // 0x0088(0x0018)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CB8[0x28];                                     // 0x00A0(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CAC[0x28];                                     // 0x00A0(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bShadedPrefabViewVisualizer;                       // 0x00C8(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLockPrefabSelectionByDefault;                     // 0x00C9(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisableLockPrefabSelectionFeature;                // 0x00CA(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceApplyPerInstanceVertexColor;                 // 0x00CB(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHideChildActorsInPIEIfHiddenInEditor;             // 0x00CC(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanToggleChildActorVisibilityInPIE;               // 0x00CD(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CB9[0x1];                                      // 0x00CE(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CAD[0x1];                                      // 0x00CE(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bIgnoreLayersInPrefab;                             // 0x00CF(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSupportGenerateBlueprint;                         // 0x00D0(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHarvestComponentsWhenGeneratingBlueprint;         // 0x00D1(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseActorNameAsVariableNameWhenGeneratingBlueprint; // 0x00D2(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceMobilityToMovableWhenGeneratingBlueprint;    // 0x00D3(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CBA[0x4];                                      // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CAE[0x4];                                      // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSubclassOf<class AActor>>             IgnoreActorClassesWhenGeneratingBlueprint;         // 0x00D8(0x0010)(Edit, ZeroConstructor, Config, UObjectWrapper, NativeAccessSpecifierPublic)
 	TArray<class FName>                           IgnoreActorTagsWhenGeneratingBlueprint;            // 0x00E8(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	bool                                          bFlashPrefabWindowForTargetPrefabActor;            // 0x00F8(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -252,7 +252,7 @@ public:
 	bool                                          bDisableThumbnailRender;                           // 0x00FB(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowPrefabInstanceTagInPrefabToolWindow;          // 0x00FC(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSkipActorReferenceReplacement;                    // 0x00FD(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CBB[0x2];                                      // 0x00FE(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CAF[0x2];                                      // 0x00FE(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

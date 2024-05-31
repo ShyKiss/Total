@@ -17,15 +17,63 @@
 namespace SDK
 {
 
-// Function LevelIndicatorWidget.LevelIndicatorWidget_C.PlayerLevelUpAnimation
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function LevelIndicatorWidget.LevelIndicatorWidget_C.LevelUpAnimationFinished__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
 
-void ULevelIndicatorWidget_C::PlayerLevelUpAnimation()
+void ULevelIndicatorWidget_C::LevelUpAnimationFinished__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LevelIndicatorWidget_C", "PlayerLevelUpAnimation");
+		Func = Class->GetFunction("LevelIndicatorWidget_C", "LevelUpAnimationFinished__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LevelIndicatorWidget.LevelIndicatorWidget_C.ExecuteUbergraph_LevelIndicatorWidget
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ULevelIndicatorWidget_C::ExecuteUbergraph_LevelIndicatorWidget(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelIndicatorWidget_C", "ExecuteUbergraph_LevelIndicatorWidget");
+
+	Params::LevelIndicatorWidget_C_ExecuteUbergraph_LevelIndicatorWidget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LevelIndicatorWidget.LevelIndicatorWidget_C.LevelAnimationFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void ULevelIndicatorWidget_C::LevelAnimationFinished()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelIndicatorWidget_C", "LevelAnimationFinished");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LevelIndicatorWidget.LevelIndicatorWidget_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void ULevelIndicatorWidget_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelIndicatorWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -53,63 +101,15 @@ void ULevelIndicatorWidget_C::Init(int32 Param_Level, int32 ReleaseCount)
 }
 
 
-// Function LevelIndicatorWidget.LevelIndicatorWidget_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function LevelIndicatorWidget.LevelIndicatorWidget_C.PlayerLevelUpAnimation
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ULevelIndicatorWidget_C::Construct()
+void ULevelIndicatorWidget_C::PlayerLevelUpAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LevelIndicatorWidget_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LevelIndicatorWidget.LevelIndicatorWidget_C.LevelAnimationFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void ULevelIndicatorWidget_C::LevelAnimationFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelIndicatorWidget_C", "LevelAnimationFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LevelIndicatorWidget.LevelIndicatorWidget_C.ExecuteUbergraph_LevelIndicatorWidget
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ULevelIndicatorWidget_C::ExecuteUbergraph_LevelIndicatorWidget(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelIndicatorWidget_C", "ExecuteUbergraph_LevelIndicatorWidget");
-
-	Params::LevelIndicatorWidget_C_ExecuteUbergraph_LevelIndicatorWidget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LevelIndicatorWidget.LevelIndicatorWidget_C.LevelUpAnimationFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void ULevelIndicatorWidget_C::LevelUpAnimationFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelIndicatorWidget_C", "LevelUpAnimationFinished__DelegateSignature");
+		Func = Class->GetFunction("LevelIndicatorWidget_C", "PlayerLevelUpAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -65,6 +65,40 @@ void UHudBarElement_Animated_C::ExecuteUbergraph_HudBarElement_Animated(int32 En
 }
 
 
+// Function HudBarElement_Animated.HudBarElement_Animated_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UHudBarElement_Animated_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HudBarElement_Animated_C", "PreConstruct");
+
+	Params::HudBarElement_Animated_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HudBarElement_Animated.HudBarElement_Animated_C.CreateTextures
+// (BlueprintCallable, BlueprintEvent)
+
+void UHudBarElement_Animated_C::CreateTextures()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HudBarElement_Animated_C", "CreateTextures");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function HudBarElement_Animated.HudBarElement_Animated_C.StartTween
 // (BlueprintCallable, BlueprintEvent)
 
@@ -115,34 +149,14 @@ void UHudBarElement_Animated_C::Construct()
 }
 
 
-// Function HudBarElement_Animated.HudBarElement_Animated_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UHudBarElement_Animated_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HudBarElement_Animated_C", "PreConstruct");
-
-	Params::HudBarElement_Animated_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function HudBarElement_Animated.HudBarElement_Animated_C.Setup Tints
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FLinearColor                     Tint                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     BgdTint                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     GlowTint                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                     GlowTInt                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UHudBarElement_Animated_C::Setup_Tints(const struct FLinearColor& Tint, const struct FLinearColor& BgdTint, const struct FLinearColor& GlowTint)
+void UHudBarElement_Animated_C::Setup_Tints(const struct FLinearColor& Tint, const struct FLinearColor& BgdTint, const struct FLinearColor& GlowTInt)
 {
 	static class UFunction* Func = nullptr;
 
@@ -153,7 +167,7 @@ void UHudBarElement_Animated_C::Setup_Tints(const struct FLinearColor& Tint, con
 
 	Parms.Tint = std::move(Tint);
 	Parms.BgdTint = std::move(BgdTint);
-	Parms.GlowTint = std::move(GlowTint);
+	Parms.GlowTInt = std::move(GlowTInt);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -234,6 +248,66 @@ void UHudBarElement_Animated_C::ForceValue(float NewValue)
 	Parms.NewValue = NewValue;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HudBarElement_Animated.HudBarElement_Animated_C.UpdatePlayervalues
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Health                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   BleedingLeft                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHudBarElement_Animated_C::UpdatePlayervalues(float Health, float BleedingLeft)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HudBarElement_Animated_C", "UpdatePlayervalues");
+
+	Params::HudBarElement_Animated_C_UpdatePlayervalues Parms{};
+
+	Parms.Health = Health;
+	Parms.BleedingLeft = BleedingLeft;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HudBarElement_Animated.HudBarElement_Animated_C.UpdateBleeding
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHudBarElement_Animated_C::UpdateBleeding()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HudBarElement_Animated_C", "UpdateBleeding");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HudBarElement_Animated.HudBarElement_Animated_C.GetRatioForHealthValue
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Ratio                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHudBarElement_Animated_C::GetRatioForHealthValue(float Value, float* Ratio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HudBarElement_Animated_C", "GetRatioForHealthValue");
+
+	Params::HudBarElement_Animated_C_GetRatioForHealthValue Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Ratio != nullptr)
+		*Ratio = Parms.Ratio;
 }
 
 }

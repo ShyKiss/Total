@@ -17,61 +17,49 @@
 namespace SDK
 {
 
-// Function XPProgressBar.XPProgressBar_C.Update
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function XPProgressBar.XPProgressBar_C.ExecuteUbergraph_XPProgressBar
+// (Final, UbergraphFunction)
 // Parameters:
-// int32                                   Param_PlayerLevel                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_StartXp                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_CurrentXp                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UXPProgressBar_C::Update(int32 Param_PlayerLevel, int32 Param_StartXp, int32 Param_CurrentXp)
+void UXPProgressBar_C::ExecuteUbergraph_XPProgressBar(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("XPProgressBar_C", "Update");
+		Func = Class->GetFunction("XPProgressBar_C", "ExecuteUbergraph_XPProgressBar");
 
-	Params::XPProgressBar_C_Update Parms{};
+	Params::XPProgressBar_C_ExecuteUbergraph_XPProgressBar Parms{};
 
-	Parms.Param_PlayerLevel = Param_PlayerLevel;
-	Parms.Param_StartXp = Param_StartXp;
-	Parms.Param_CurrentXp = Param_CurrentXp;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function XPProgressBar.XPProgressBar_C.InitProgressBar
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UProgressBar*                     ProgressBar                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Xp                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function XPProgressBar.XPProgressBar_C.RefreshWithAnimation
+// (BlueprintCallable, BlueprintEvent)
 
-void UXPProgressBar_C::InitProgressBar(class UProgressBar* ProgressBar, int32 Xp)
+void UXPProgressBar_C::RefreshWithAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("XPProgressBar_C", "InitProgressBar");
+		Func = Class->GetFunction("XPProgressBar_C", "RefreshWithAnimation");
 
-	Params::XPProgressBar_C_InitProgressBar Parms{};
-
-	Parms.ProgressBar = ProgressBar;
-	Parms.Xp = Xp;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function XPProgressBar.XPProgressBar_C.Refresh
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function XPProgressBar.XPProgressBar_C.Finished_9C6F7CD84E0F470B1412B4BAA721AA7E
+// (BlueprintCallable, BlueprintEvent)
 
-void UXPProgressBar_C::Refresh()
+void UXPProgressBar_C::Finished_9C6F7CD84E0F470B1412B4BAA721AA7E()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("XPProgressBar_C", "Refresh");
+		Func = Class->GetFunction("XPProgressBar_C", "Finished_9C6F7CD84E0F470B1412B4BAA721AA7E");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -101,49 +89,61 @@ void UXPProgressBar_C::Init(int32 Param_PlayerLevel, int32 Param_StartXp, int32 
 }
 
 
-// Function XPProgressBar.XPProgressBar_C.Finished_9C6F7CD84E0F470B1412B4BAA721AA7E
-// (BlueprintCallable, BlueprintEvent)
+// Function XPProgressBar.XPProgressBar_C.Refresh
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UXPProgressBar_C::Finished_9C6F7CD84E0F470B1412B4BAA721AA7E()
+void UXPProgressBar_C::Refresh()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("XPProgressBar_C", "Finished_9C6F7CD84E0F470B1412B4BAA721AA7E");
+		Func = Class->GetFunction("XPProgressBar_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function XPProgressBar.XPProgressBar_C.RefreshWithAnimation
-// (BlueprintCallable, BlueprintEvent)
-
-void UXPProgressBar_C::RefreshWithAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("XPProgressBar_C", "RefreshWithAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function XPProgressBar.XPProgressBar_C.ExecuteUbergraph_XPProgressBar
-// (Final, UbergraphFunction)
+// Function XPProgressBar.XPProgressBar_C.InitProgressBar
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UProgressBar*                     ProgressBar                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Xp                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UXPProgressBar_C::ExecuteUbergraph_XPProgressBar(int32 EntryPoint)
+void UXPProgressBar_C::InitProgressBar(class UProgressBar* ProgressBar, int32 Xp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("XPProgressBar_C", "ExecuteUbergraph_XPProgressBar");
+		Func = Class->GetFunction("XPProgressBar_C", "InitProgressBar");
 
-	Params::XPProgressBar_C_ExecuteUbergraph_XPProgressBar Parms{};
+	Params::XPProgressBar_C_InitProgressBar Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ProgressBar = ProgressBar;
+	Parms.Xp = Xp;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function XPProgressBar.XPProgressBar_C.Update
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Param_PlayerLevel                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_StartXp                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_CurrentXp                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UXPProgressBar_C::Update(int32 Param_PlayerLevel, int32 Param_StartXp, int32 Param_CurrentXp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("XPProgressBar_C", "Update");
+
+	Params::XPProgressBar_C_Update Parms{};
+
+	Parms.Param_PlayerLevel = Param_PlayerLevel;
+	Parms.Param_StartXp = Param_StartXp;
+	Parms.Param_CurrentXp = Param_CurrentXp;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

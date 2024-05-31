@@ -35,12 +35,12 @@ public:
 	int32                                         Release_Count;                                     // 0x02AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PlayerLevelUpAnimation();
-	void Init(int32 Param_Level, int32 ReleaseCount);
-	void Construct();
-	void LevelAnimationFinished();
-	void ExecuteUbergraph_LevelIndicatorWidget(int32 EntryPoint);
 	void LevelUpAnimationFinished__DelegateSignature();
+	void ExecuteUbergraph_LevelIndicatorWidget(int32 EntryPoint);
+	void LevelAnimationFinished();
+	void Construct();
+	void Init(int32 Param_Level, int32 ReleaseCount);
+	void PlayerLevelUpAnimation();
 
 public:
 	static class UClass* StaticClass()

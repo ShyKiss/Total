@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -33,7 +34,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnValueUpdated;                                    // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bEnabled;                                          // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bHovered;                                          // 0x02B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E74[0x2];                                     // 0x02B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D29[0x2];                                     // 0x02B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CurrentValue;                                      // 0x02B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FText>                           Values;                                            // 0x02B8(0x0010)(Edit, BlueprintVisible)
 	class FText                                   OptionName;                                        // 0x02C8(0x0018)(Edit, BlueprintVisible)
@@ -41,7 +42,7 @@ public:
 public:
 	void OnValueUpdated__DelegateSignature(int32 Value);
 	void ExecuteUbergraph_SocialMenu_PartyOption(int32 EntryPoint);
-	void BndEvt__SocialMenu_PartyOption_InteractionButton_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature();
+	void Cycle(bool Left);
 	void BndEvt__SocialMenu_PartyOption_NextValueButton_K2Node_ComponentBoundEvent_5_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__SocialMenu_PartyOption_PreviousValueButton_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__SocialMenu_PartyOption_InteractionButton_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
@@ -54,6 +55,7 @@ public:
 	void SetValue(int32 Value);
 	void SetHovered(bool bInHovered);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
+	void HandleLeftRightNavigation(EUINavigation Param_Navigation);
 
 public:
 	static class UClass* StaticClass()

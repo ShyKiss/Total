@@ -319,9 +319,10 @@ void UPerkUpgradeButton_C::Initialize_Locked_Slot()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    DisplayPlus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InIsLoadout                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // EPerkCategory                           PerkCategory                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPerkUpgradeButton_C::InitializeEmptySlot(bool DisplayPlus, EPerkCategory PerkCategory)
+void UPerkUpgradeButton_C::InitializeEmptySlot(bool DisplayPlus, bool InIsLoadout, EPerkCategory PerkCategory)
 {
 	static class UFunction* Func = nullptr;
 
@@ -331,6 +332,7 @@ void UPerkUpgradeButton_C::InitializeEmptySlot(bool DisplayPlus, EPerkCategory P
 	Params::PerkUpgradeButton_C_InitializeEmptySlot Parms{};
 
 	Parms.DisplayPlus = DisplayPlus;
+	Parms.InIsLoadout = InIsLoadout;
 	Parms.PerkCategory = PerkCategory;
 
 	UObject::ProcessEvent(Func, &Parms);

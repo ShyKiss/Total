@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // UserDefinedEnum Face_AllList_Enum.Face_AllList_Enum
-// NumValues: 0x0007
+// NumValues: 0x0008
 enum class EFace_AllList_Enum : uint8
 {
 	NewEnumerator13                          = 0,
@@ -24,7 +24,8 @@ enum class EFace_AllList_Enum : uint8
 	NewEnumerator2                           = 3,
 	NewEnumerator6                           = 4,
 	NewEnumerator14                          = 5,
-	Face_AllList_MAX                         = 6,
+	NewEnumerator15                          = 6,
+	Face_AllList_MAX                         = 7,
 };
 
 }

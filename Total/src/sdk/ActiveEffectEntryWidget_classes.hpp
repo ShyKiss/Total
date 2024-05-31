@@ -30,7 +30,7 @@ public:
 	class FName                                   EffectId;                                          // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         UntilServerTime;                                   // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFadeOutPlayed;                                    // 0x0294(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CF4[0x3];                                     // 0x0295(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D41[0x3];                                     // 0x0295(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DisplayValue;                                      // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

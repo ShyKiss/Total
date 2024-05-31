@@ -17,66 +17,67 @@ namespace SDK::Params
 {
 
 // Function HUDObjectives.HUDObjectives_C.ExecuteUbergraph_HUDObjectives
-// 0x00B8 (0x00B8 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct HUDObjectives_C_ExecuteUbergraph_HUDObjectives final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DEA[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBObjectiveManager*                    CallFunc_GetRBObjectiveManager_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator_4;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EObjectiveCoordinatorState                    K2Node_CustomEvent_state;                          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DEB[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2DEC[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue;                       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DED[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class ARBBaseObjectiveCoordinator* Coordinator, EObjectiveCoordinatorState State)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2DEE[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator_3;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_isProgressionInProgress;        // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_isCompletedByLocalPlayer;       // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DEF[0x6];                                     // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator_2;                  // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_progressRatio;                  // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_isPositiveProgress;             // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF0[0x3];                                     // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_CustomEvent_objectiveText;                  // 0x0070(0x0018)(ConstParm)
-	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator_1;                  // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_player;                         // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_objective_1;                    // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator;                    // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_objective;                      // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInValidHudMode_ReturnValue;             // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FFB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBObjectiveManager*                    CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FFC[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator_4;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EObjectiveCoordinatorState                    K2Node_CustomEvent_state;                          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FFD[0x2];                                     // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_2FFE[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FFF[0x3];                                     // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class ARBBaseObjectiveCoordinator* Coordinator, EObjectiveCoordinatorState State)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_3000[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator_3;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_isProgressionInProgress;        // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_isCompletedByLocalPlayer;       // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3001[0x6];                                     // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator_2;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_progressRatio;                  // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_isPositiveProgress;             // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3002[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_CustomEvent_objectiveText;                  // 0x0078(0x0018)(ConstParm)
+	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator_1;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_player;                         // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_objective_1;                    // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBBaseObjectiveCoordinator*            K2Node_CustomEvent_coordinator;                    // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_objective;                      // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInValidHudMode_ReturnValue;             // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives) == 0x000008, "Wrong alignment on HUDObjectives_C_ExecuteUbergraph_HUDObjectives");
-static_assert(sizeof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives) == 0x0000B8, "Wrong size on HUDObjectives_C_ExecuteUbergraph_HUDObjectives");
+static_assert(sizeof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives) == 0x0000C0, "Wrong size on HUDObjectives_C_ExecuteUbergraph_HUDObjectives");
 static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, EntryPoint) == 0x000000, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_GetRBObjectiveManager_ReturnValue) == 0x000008, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_GetRBObjectiveManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator_4) == 0x000010, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator_4' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_state) == 0x000018, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_state' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_SwitchEnum_CmpSuccess) == 0x00001A, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_GetHUD_ReturnValue) == 0x000030, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_GetHUD_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_IsValid_ReturnValue_1) == 0x000038, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CreateDelegate_OutputDelegate_1) == 0x00003C, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator_3) == 0x000050, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator_3' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_isProgressionInProgress) == 0x000058, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_isProgressionInProgress' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_isCompletedByLocalPlayer) == 0x000059, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_isCompletedByLocalPlayer' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator_2) == 0x000060, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator_2' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_progressRatio) == 0x000068, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_progressRatio' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_isPositiveProgress) == 0x00006C, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_isPositiveProgress' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_objectiveText) == 0x000070, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_objectiveText' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator_1) == 0x000088, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator_1' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_player) == 0x000090, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_player' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_objective_1) == 0x000098, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_objective_1' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator) == 0x0000A0, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_objective) == 0x0000A8, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_objective' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_IsInValidHudMode_ReturnValue) == 0x0000B0, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_IsInValidHudMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue) == 0x000008, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator_4) == 0x000018, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator_4' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_state) == 0x000020, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_state' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_SwitchEnum_CmpSuccess) == 0x000021, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CreateDelegate_OutputDelegate) == 0x000024, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_GetHUD_ReturnValue) == 0x000038, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_GetHUD_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CreateDelegate_OutputDelegate_1) == 0x000044, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator_3) == 0x000058, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator_3' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_isProgressionInProgress) == 0x000060, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_isProgressionInProgress' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_isCompletedByLocalPlayer) == 0x000061, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_isCompletedByLocalPlayer' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator_2) == 0x000068, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator_2' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_progressRatio) == 0x000070, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_progressRatio' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_isPositiveProgress) == 0x000074, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_isPositiveProgress' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_objectiveText) == 0x000078, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_objectiveText' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator_1) == 0x000090, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_player) == 0x000098, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_player' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_objective_1) == 0x0000A0, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_objective_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_coordinator) == 0x0000A8, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_coordinator' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, K2Node_CustomEvent_objective) == 0x0000B0, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::K2Node_CustomEvent_objective' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_ExecuteUbergraph_HUDObjectives, CallFunc_IsInValidHudMode_ReturnValue) == 0x0000B8, "Member 'HUDObjectives_C_ExecuteUbergraph_HUDObjectives::CallFunc_IsInValidHudMode_ReturnValue' has a wrong offset!");
 
 // Function HUDObjectives.HUDObjectives_C.OnSingleCompletedObjectiveReverted
 // 0x0010 (0x0010 - 0x0000)
@@ -114,7 +115,7 @@ public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ProgressRatio;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPositiveProgress;                                // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF1[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3003[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ObjectiveText;                                     // 0x0010(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 static_assert(alignof(HUDObjectives_C_OnProgressChanged) == 0x000008, "Wrong alignment on HUDObjectives_C_OnProgressChanged");
@@ -162,7 +163,7 @@ public:
 	class ARBBaseObjectiveCoordinator*            CurrentCoordinator;                                // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUserFacing_ReturnValue;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF2[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3004[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class USecondaryObjectiveWidget_C*            CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class ARBBaseObjectiveCoordinator* Coordinator, bool IsProgressionInProgress, bool IsCompletedByLocalPlayer)> K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class ARBBaseObjectiveCoordinator* Coordinator, class AActor* Objective)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
@@ -209,11 +210,11 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DF3[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3005[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DF4[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3006[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USecondaryObjectiveWidget_C*            K2Node_DynamicCast_AsSecondary_Objective_Widget;   // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -238,34 +239,34 @@ struct HUDObjectives_C_ForceShowObjectives final
 {
 public:
 	float                                         Duration;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DF5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3007[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF6[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3008[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DF7[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3009[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
 	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USecondaryObjectiveWidget_C*            K2Node_DynamicCast_AsSecondary_Objective_Widget;   // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF8[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_300A[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DF9[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_300B[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue_1;             // 0x0058(0x0010)(ReferenceParm, ContainsInstancedReference)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DFA[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_300C[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_Array_Get_Item_1;                         // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USecondaryObjectiveWidget_C*            K2Node_DynamicCast_AsSecondary_Objective_Widget_1; // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DFB[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_300D[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DFC[0x2];                                     // 0x008A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_300E[0x2];                                     // 0x008A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HUDObjectives_C_ForceShowObjectives) == 0x000008, "Wrong alignment on HUDObjectives_C_ForceShowObjectives");
@@ -303,26 +304,25 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBBaseObjectiveCoordinator*            CallFunc_Array_Get_Item;                           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DFD[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBObjectiveManager*                    CallFunc_GetRBObjectiveManager_ReturnValue;        // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ARBBaseObjectiveCoordinator*>    CallFunc_Set_ToArray_Result;                       // 0x0088(0x0010)(ReferenceParm)
-	TArray<class ARBBaseObjectiveCoordinator*>    CallFunc_BP_GetAllObjectiveCoordinators_outCoordinators; // 0x0098(0x0010)(ReferenceParm)
-	class ARBBaseObjectiveCoordinator*            CallFunc_Array_Get_Item_1;                         // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DFE[0x2];                                     // 0x00B6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DFF[0x2];                                     // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class ARBBaseObjectiveCoordinator*>    CallFunc_BP_GetStartedObjectiveCoordinators_outCoordinators; // 0x00C0(0x0010)(ReferenceParm)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E00[0x3];                                     // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_300F[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBObjectiveManager*                    CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ARBBaseObjectiveCoordinator*>    CallFunc_BP_GetAllObjectiveCoordinators_outCoordinators; // 0x0078(0x0010)(ReferenceParm)
+	TArray<class ARBBaseObjectiveCoordinator*>    CallFunc_BP_GetStartedObjectiveCoordinators_outCoordinators; // 0x0088(0x0010)(ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3010[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBBaseObjectiveCoordinator*            CallFunc_Array_Get_Item;                           // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ARBBaseObjectiveCoordinator*>    CallFunc_Set_ToArray_Result;                       // 0x00B0(0x0010)(ReferenceParm)
+	class ARBBaseObjectiveCoordinator*            CallFunc_Array_Get_Item_1;                         // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3011[0x3];                                     // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HUDObjectives_C_Init) == 0x000008, "Wrong alignment on HUDObjectives_C_Init");
@@ -332,22 +332,22 @@ static_assert(offsetof(HUDObjectives_C_Init, NonStartedObjCoord) == 0x000010, "M
 static_assert(offsetof(HUDObjectives_C_Init, Temp_int_Loop_Counter_Variable) == 0x000060, "Member 'HUDObjectives_C_Init::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Add_IntInt_ReturnValue) == 0x000064, "Member 'HUDObjectives_C_Init::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUDObjectives_C_Init, Temp_int_Array_Index_Variable) == 0x000068, "Member 'HUDObjectives_C_Init::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, Temp_int_Array_Index_Variable_1) == 0x00006C, "Member 'HUDObjectives_C_Init::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_Get_Item) == 0x000070, "Member 'HUDObjectives_C_Init::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'HUDObjectives_C_Init::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_GetRBObjectiveManager_ReturnValue) == 0x000080, "Member 'HUDObjectives_C_Init::CallFunc_GetRBObjectiveManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Set_ToArray_Result) == 0x000088, "Member 'HUDObjectives_C_Init::CallFunc_Set_ToArray_Result' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_BP_GetAllObjectiveCoordinators_outCoordinators) == 0x000098, "Member 'HUDObjectives_C_Init::CallFunc_BP_GetAllObjectiveCoordinators_outCoordinators' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_Get_Item_1) == 0x0000A8, "Member 'HUDObjectives_C_Init::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_AddUnique_ReturnValue) == 0x0000B0, "Member 'HUDObjectives_C_Init::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B4, "Member 'HUDObjectives_C_Init::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Not_PreBool_ReturnValue) == 0x0000B5, "Member 'HUDObjectives_C_Init::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_Length_ReturnValue_1) == 0x0000B8, "Member 'HUDObjectives_C_Init::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_BooleanAND_ReturnValue) == 0x0000BC, "Member 'HUDObjectives_C_Init::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Less_IntInt_ReturnValue) == 0x0000BD, "Member 'HUDObjectives_C_Init::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_BP_GetStartedObjectiveCoordinators_outCoordinators) == 0x0000C0, "Member 'HUDObjectives_C_Init::CallFunc_BP_GetStartedObjectiveCoordinators_outCoordinators' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, Temp_int_Loop_Counter_Variable_1) == 0x0000D0, "Member 'HUDObjectives_C_Init::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D4, "Member 'HUDObjectives_C_Init::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue) == 0x000070, "Member 'HUDObjectives_C_Init::CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_BP_GetAllObjectiveCoordinators_outCoordinators) == 0x000078, "Member 'HUDObjectives_C_Init::CallFunc_BP_GetAllObjectiveCoordinators_outCoordinators' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_BP_GetStartedObjectiveCoordinators_outCoordinators) == 0x000088, "Member 'HUDObjectives_C_Init::CallFunc_BP_GetStartedObjectiveCoordinators_outCoordinators' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, Temp_int_Array_Index_Variable_1) == 0x000098, "Member 'HUDObjectives_C_Init::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_Get_Item) == 0x0000A0, "Member 'HUDObjectives_C_Init::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_Length_ReturnValue) == 0x0000A8, "Member 'HUDObjectives_C_Init::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, Temp_int_Loop_Counter_Variable_1) == 0x0000AC, "Member 'HUDObjectives_C_Init::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Set_ToArray_Result) == 0x0000B0, "Member 'HUDObjectives_C_Init::CallFunc_Set_ToArray_Result' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_Get_Item_1) == 0x0000C0, "Member 'HUDObjectives_C_Init::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_Length_ReturnValue_1) == 0x0000C8, "Member 'HUDObjectives_C_Init::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Array_AddUnique_ReturnValue) == 0x0000CC, "Member 'HUDObjectives_C_Init::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Less_IntInt_ReturnValue) == 0x0000D0, "Member 'HUDObjectives_C_Init::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000D1, "Member 'HUDObjectives_C_Init::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D2, "Member 'HUDObjectives_C_Init::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Not_PreBool_ReturnValue) == 0x0000D3, "Member 'HUDObjectives_C_Init::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDObjectives_C_Init, CallFunc_BooleanAND_ReturnValue) == 0x0000D4, "Member 'HUDObjectives_C_Init::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUDObjectives_C_Init, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000D8, "Member 'HUDObjectives_C_Init::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 
 }

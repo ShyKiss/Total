@@ -19,39 +19,50 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HudBarElement_Animated.HudBarElement_Animated_C
-// 0x0068 (0x02C8 - 0x0260)
+// 0x0088 (0x02E8 - 0x0260)
 class UHudBarElement_Animated_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Bracket;                                           // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 FirstDelimiter;                                    // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SecondDelimiter;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               BracketMaterial;                                   // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          TweenInProgress;                                   // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F28[0x3];                                     // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TargetValue;                                       // 0x028C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         OriginalValue;                                     // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F29[0x4];                                     // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             TweenCompleted;                                    // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          Increasing;                                        // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F2A[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             BleedoutCompleted;                                 // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          Is_Start_Bracket;                                  // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UImage*                                 BleedingBracket;                                   // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Bracket;                                           // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FirstDelimiter;                                    // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SecondDelimiter;                                   // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               BracketMaterial;                                   // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TweenInProgress;                                   // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E57[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TargetValue;                                       // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         OriginalValue;                                     // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E58[0x4];                                     // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             TweenCompleted;                                    // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          Increasing;                                        // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E59[0x7];                                     // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             BleedoutCompleted;                                 // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          Is_Start_Bracket;                                  // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E5A[0x7];                                     // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               BleedingMaterial;                                  // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MinHealth;                                         // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MaxHealth;                                         // 0x02DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PlayerHealthValue;                                 // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PlayerBleedingLeft;                                // 0x02E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void TweenCompleted__DelegateSignature();
 	void BleedoutCompleted__DelegateSignature();
 	void ExecuteUbergraph_HudBarElement_Animated(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void CreateTextures();
 	void StartTween();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void Construct();
-	void PreConstruct(bool IsDesignTime);
-	void Setup_Tints(const struct FLinearColor& Tint, const struct FLinearColor& BgdTint, const struct FLinearColor& GlowTint);
+	void Setup_Tints(const struct FLinearColor& Tint, const struct FLinearColor& BgdTint, const struct FLinearColor& GlowTInt);
 	void SetupNewTween(float NewValue, bool IsStartBracket, bool IsFinishBracket);
 	void UpdateTween();
 	void SetEntireBar(bool Fill);
 	void ForceValue(float NewValue);
+	void UpdatePlayervalues(float Health, float BleedingLeft);
+	void UpdateBleeding();
+	void GetRatioForHealthValue(float Value, float* Ratio);
 
 public:
 	static class UClass* StaticClass()
@@ -64,19 +75,25 @@ public:
 	}
 };
 static_assert(alignof(UHudBarElement_Animated_C) == 0x000008, "Wrong alignment on UHudBarElement_Animated_C");
-static_assert(sizeof(UHudBarElement_Animated_C) == 0x0002C8, "Wrong size on UHudBarElement_Animated_C");
+static_assert(sizeof(UHudBarElement_Animated_C) == 0x0002E8, "Wrong size on UHudBarElement_Animated_C");
 static_assert(offsetof(UHudBarElement_Animated_C, UberGraphFrame) == 0x000260, "Member 'UHudBarElement_Animated_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, Bracket) == 0x000268, "Member 'UHudBarElement_Animated_C::Bracket' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, FirstDelimiter) == 0x000270, "Member 'UHudBarElement_Animated_C::FirstDelimiter' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, SecondDelimiter) == 0x000278, "Member 'UHudBarElement_Animated_C::SecondDelimiter' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, BracketMaterial) == 0x000280, "Member 'UHudBarElement_Animated_C::BracketMaterial' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, TweenInProgress) == 0x000288, "Member 'UHudBarElement_Animated_C::TweenInProgress' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, TargetValue) == 0x00028C, "Member 'UHudBarElement_Animated_C::TargetValue' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, OriginalValue) == 0x000290, "Member 'UHudBarElement_Animated_C::OriginalValue' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, TweenCompleted) == 0x000298, "Member 'UHudBarElement_Animated_C::TweenCompleted' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, Increasing) == 0x0002A8, "Member 'UHudBarElement_Animated_C::Increasing' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, BleedoutCompleted) == 0x0002B0, "Member 'UHudBarElement_Animated_C::BleedoutCompleted' has a wrong offset!");
-static_assert(offsetof(UHudBarElement_Animated_C, Is_Start_Bracket) == 0x0002C0, "Member 'UHudBarElement_Animated_C::Is_Start_Bracket' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, BleedingBracket) == 0x000268, "Member 'UHudBarElement_Animated_C::BleedingBracket' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, Bracket) == 0x000270, "Member 'UHudBarElement_Animated_C::Bracket' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, FirstDelimiter) == 0x000278, "Member 'UHudBarElement_Animated_C::FirstDelimiter' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, SecondDelimiter) == 0x000280, "Member 'UHudBarElement_Animated_C::SecondDelimiter' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, BracketMaterial) == 0x000288, "Member 'UHudBarElement_Animated_C::BracketMaterial' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, TweenInProgress) == 0x000290, "Member 'UHudBarElement_Animated_C::TweenInProgress' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, TargetValue) == 0x000294, "Member 'UHudBarElement_Animated_C::TargetValue' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, OriginalValue) == 0x000298, "Member 'UHudBarElement_Animated_C::OriginalValue' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, TweenCompleted) == 0x0002A0, "Member 'UHudBarElement_Animated_C::TweenCompleted' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, Increasing) == 0x0002B0, "Member 'UHudBarElement_Animated_C::Increasing' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, BleedoutCompleted) == 0x0002B8, "Member 'UHudBarElement_Animated_C::BleedoutCompleted' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, Is_Start_Bracket) == 0x0002C8, "Member 'UHudBarElement_Animated_C::Is_Start_Bracket' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, BleedingMaterial) == 0x0002D0, "Member 'UHudBarElement_Animated_C::BleedingMaterial' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, MinHealth) == 0x0002D8, "Member 'UHudBarElement_Animated_C::MinHealth' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, MaxHealth) == 0x0002DC, "Member 'UHudBarElement_Animated_C::MaxHealth' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, PlayerHealthValue) == 0x0002E0, "Member 'UHudBarElement_Animated_C::PlayerHealthValue' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, PlayerBleedingLeft) == 0x0002E4, "Member 'UHudBarElement_Animated_C::PlayerBleedingLeft' has a wrong offset!");
 
 }
 

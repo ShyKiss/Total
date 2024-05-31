@@ -3342,6 +3342,20 @@ void UGetGeoLocationAsyncTaskBlueprintProxy::GetGeoLocationDelegate__DelegateSig
 }
 
 
+// Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady
+// (Event, Public, BlueprintEvent)
+
+void AARSharedWorldGameState::K2_OnARWorldMapIsReady()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameState", "K2_OnARWorldMapIsReady");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // DelegateFunction AugmentedReality.ARLifeCycleComponent.InstanceARActorSpawnedDelegate__DelegateSignature
 // (MulticastDelegate, Public, Delegate, HasDefaults)
 // Parameters:
@@ -4585,20 +4599,6 @@ void AARSharedWorldGameMode::SetPreviewImageData(const TArray<uint8>& ImageData)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady
-// (Event, Public, BlueprintEvent)
-
-void AARSharedWorldGameState::K2_OnARWorldMapIsReady()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameState", "K2_OnARWorldMapIsReady");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PerkUpgradeButton.PerkUpgradeButton_C
-// 0x01C0 (0x0420 - 0x0260)
+// 0x01C8 (0x0428 - 0x0260)
 class UPerkUpgradeButton_C final : public UUserWidget
 {
 public:
@@ -34,7 +34,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnUnhoveredEvent;                                  // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FMenuUpgradeItemInfo                   ItemInfo;                                          // 0x02B8(0x0128)(Edit, BlueprintVisible)
 	bool                                          bIsLoadout;                                        // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FB8[0x7];                                     // 0x03E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_308B[0x7];                                     // 0x03E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPressedEvent;                                    // 0x03E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnReleasedEvent;                                   // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                         SlotIndex;                                         // 0x0408(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,6 +43,7 @@ public:
 	bool                                          bIsEquipped;                                       // 0x040E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bEnableLoadoutHoverEvents;                         // 0x040F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	FMulticastInlineDelegateProperty_             OnBuyAnimationEndedEvent;                          // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          bIsSelf;                                           // 0x0420(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void OnClickedEvent__DelegateSignature(class UPerkUpgradeButton_C* Button);
@@ -62,7 +63,7 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void Initialize(const struct FMenuUpgradeItemInfo& ItemUpgradeInfo, bool InIsLoadout, bool bInIsSlot, class ARBPlayerState* PlayerState);
 	void Initialize_Locked_Slot();
-	void InitializeEmptySlot(bool DisplayPlus, EPerkCategory PerkCategory);
+	void InitializeEmptySlot(bool DisplayPlus, bool InIsLoadout, EPerkCategory PerkCategory);
 	void SetIsEquipped(bool IsEquipped);
 	void GetIsEquipped(bool* IsEquipped);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
@@ -83,7 +84,7 @@ public:
 	}
 };
 static_assert(alignof(UPerkUpgradeButton_C) == 0x000008, "Wrong alignment on UPerkUpgradeButton_C");
-static_assert(sizeof(UPerkUpgradeButton_C) == 0x000420, "Wrong size on UPerkUpgradeButton_C");
+static_assert(sizeof(UPerkUpgradeButton_C) == 0x000428, "Wrong size on UPerkUpgradeButton_C");
 static_assert(offsetof(UPerkUpgradeButton_C, UberGraphFrame) == 0x000260, "Member 'UPerkUpgradeButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPerkUpgradeButton_C, CategoryButtonWidget) == 0x000268, "Member 'UPerkUpgradeButton_C::CategoryButtonWidget' has a wrong offset!");
 static_assert(offsetof(UPerkUpgradeButton_C, CostAmountText) == 0x000270, "Member 'UPerkUpgradeButton_C::CostAmountText' has a wrong offset!");
@@ -102,6 +103,7 @@ static_assert(offsetof(UPerkUpgradeButton_C, bIsLockedSlot) == 0x00040D, "Member
 static_assert(offsetof(UPerkUpgradeButton_C, bIsEquipped) == 0x00040E, "Member 'UPerkUpgradeButton_C::bIsEquipped' has a wrong offset!");
 static_assert(offsetof(UPerkUpgradeButton_C, bEnableLoadoutHoverEvents) == 0x00040F, "Member 'UPerkUpgradeButton_C::bEnableLoadoutHoverEvents' has a wrong offset!");
 static_assert(offsetof(UPerkUpgradeButton_C, OnBuyAnimationEndedEvent) == 0x000410, "Member 'UPerkUpgradeButton_C::OnBuyAnimationEndedEvent' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, bIsSelf) == 0x000420, "Member 'UPerkUpgradeButton_C::bIsSelf' has a wrong offset!");
 
 }
 

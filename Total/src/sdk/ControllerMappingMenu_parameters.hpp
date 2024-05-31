@@ -12,13 +12,14 @@
 
 #include "OPP_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function ControllerMappingMenu.ControllerMappingMenu_C.ExecuteUbergraph_ControllerMappingMenu
-// 0x0070 (0x0070 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu final
 {
 public:
@@ -28,7 +29,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_306F[0x1];                                     // 0x0027(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FC3[0x1];                                     // 0x0027(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button_2;               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,13 +37,18 @@ public:
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button_1;               // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_hasValueChanged;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3070[0x6];                                     // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FC4[0x6];                                     // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EGamepadType                                  K2Node_CustomEvent_newGamepadType;                 // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FC5[0x2];                                     // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x006C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FC6[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0078(0x0018)()
+	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0090(0x0008)(NoDestructor)
 };
 static_assert(alignof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu) == 0x000008, "Wrong alignment on ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu");
-static_assert(sizeof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu) == 0x000070, "Wrong size on ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu");
+static_assert(sizeof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu) == 0x000098, "Wrong size on ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu");
 static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu, EntryPoint) == 0x000000, "Member 'ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
@@ -59,6 +65,20 @@ static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappin
 static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu, K2Node_ComponentBoundEvent_Button) == 0x000060, "Member 'ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu, K2Node_Event_IsDesignTime) == 0x000068, "Member 'ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu, K2Node_CustomEvent_newGamepadType) == 0x000069, "Member 'ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu::K2Node_CustomEvent_newGamepadType' has a wrong offset!");
+static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu, CallFunc_MakeLiteralName_ReturnValue) == 0x00006C, "Member 'ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu, CallFunc_MakeLiteralText_ReturnValue) == 0x000078, "Member 'ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu, K2Node_Event_InFocusEvent) == 0x000090, "Member 'ControllerMappingMenu_C_ExecuteUbergraph_ControllerMappingMenu::K2Node_Event_InFocusEvent' has a wrong offset!");
+
+// Function ControllerMappingMenu.ControllerMappingMenu_C.OnRemovedFromFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct ControllerMappingMenu_C_OnRemovedFromFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+static_assert(alignof(ControllerMappingMenu_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on ControllerMappingMenu_C_OnRemovedFromFocusPath");
+static_assert(sizeof(ControllerMappingMenu_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on ControllerMappingMenu_C_OnRemovedFromFocusPath");
+static_assert(offsetof(ControllerMappingMenu_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'ControllerMappingMenu_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
 
 // Function ControllerMappingMenu.ControllerMappingMenu_C.OnGamepadTypeChanged
 // 0x0001 (0x0001 - 0x0000)

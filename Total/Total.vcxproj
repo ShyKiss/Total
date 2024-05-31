@@ -206,8 +206,6 @@
     <ClCompile Include="src\hooks\backend\vulkan\hook_vulkan.cpp" />
     <ClCompile Include="src\hooks\hooks.cpp" />
     <ClCompile Include="src\menu\menu.cpp" />
-    <ClCompile Include="src\sdk\ArmWreslingPanelComponent_BP_functions.cpp" />
-    <ClCompile Include="src\sdk\ArmWreslingPanel_BP_functions.cpp" />
     <ClCompile Include="src\sdk\Basic.cpp" />
     <ClCompile Include="src\sdk\CoreUObject_functions.cpp" />
     <ClCompile Include="src\sdk\Engine_functions.cpp" />
@@ -248,10 +246,6 @@
     <ClInclude Include="src\hooks\hooks.hpp" />
     <ClInclude Include="src\menu\menu.hpp" />
     <ClInclude Include="src\PropertyFixup.hpp" />
-    <ClInclude Include="src\sdk\ArmWreslingPanelComponent_BP_classes.hpp" />
-    <ClInclude Include="src\sdk\ArmWreslingPanelComponent_BP_parameters.hpp" />
-    <ClInclude Include="src\sdk\ArmWreslingPanel_BP_classes.hpp" />
-    <ClInclude Include="src\sdk\ArmWreslingPanel_BP_parameters.hpp" />
     <ClInclude Include="src\sdk\Basic.hpp" />
     <ClInclude Include="src\sdk\CoreUObject_classes.hpp" />
     <ClInclude Include="src\sdk\CoreUObject_parameters.hpp" />
@@ -270,7 +264,48 @@
     <None Include="src\NameCollisions.inl" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="src\icons\inventory\bloody_heart.png" />
+    <Image Include="src\icons\inventory\bodypart_leg.png" />
+    <Image Include="src\icons\inventory\category_tool.png" />
+    <Image Include="src\icons\inventory\DetectorIcon.png" />
+    <Image Include="src\icons\inventory\item_antidote_psy.png" />
+    <Image Include="src\icons\inventory\item_bandage.png" />
+    <Image Include="src\icons\inventory\item_battery.png" />
+    <Image Include="src\icons\inventory\item_battery_small.png" />
+    <Image Include="src\icons\inventory\item_bottle.png" />
+    <Image Include="src\icons\inventory\item_brick.png" />
+    <Image Include="src\icons\inventory\item_brick_02.png" />
+    <Image Include="src\icons\inventory\item_brick_03.png" />
+    <Image Include="src\icons\inventory\item_heal_drink.png" />
+    <Image Include="src\icons\inventory\item_lockpick.png" />
+    <Image Include="src\icons\inventory\item_masterlockpick.png" />
+    <Image Include="src\icons\inventory\item_maxstamina.png" />
+    <Image Include="src\icons\inventory\item_pill.png" />
+    <Image Include="src\icons\inventory\item_pills.png" />
+    <Image Include="src\icons\inventory\item_skillcharge.png" />
+    <Image Include="src\icons\inventory\item_super_battery.png" />
+    <Image Include="src\icons\inventory\item_super_heal_drink.png" />
+    <Image Include="src\icons\inventory\item_syringe.png" />
+    <Image Include="src\icons\inventory\item_temp_heal_drink.png" />
     <Image Include="src\icons\inventory\key.png" />
+    <Image Include="src\icons\inventory\key_A.png" />
+    <Image Include="src\icons\inventory\key_B.png" />
+    <Image Include="src\icons\inventory\key_bunny.png" />
+    <Image Include="src\icons\inventory\key_C.png" />
+    <Image Include="src\icons\inventory\key_club.png" />
+    <Image Include="src\icons\inventory\key_crown.png" />
+    <Image Include="src\icons\inventory\key_D.png" />
+    <Image Include="src\icons\inventory\key_diamond.png" />
+    <Image Include="src\icons\inventory\key_eye.png" />
+    <Image Include="src\icons\inventory\key_fire.png" />
+    <Image Include="src\icons\inventory\key_heart.png" />
+    <Image Include="src\icons\inventory\key_moon.png" />
+    <Image Include="src\icons\inventory\key_pawn.png" />
+    <Image Include="src\icons\inventory\key_spades.png" />
+    <Image Include="src\icons\inventory\key_star.png" />
+    <Image Include="src\icons\inventory\ticket.png" />
+    <Image Include="src\icons\inventory\transmitter.png" />
+    <Image Include="src\icons\inventory\TriggerIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />
