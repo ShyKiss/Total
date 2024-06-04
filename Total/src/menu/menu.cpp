@@ -273,6 +273,8 @@ namespace Menu {
         if (!IsValid(Engine) || !IsValid(World) || !IsValid(OPPWorld))
             return;
 
+        if (!bConsoleEnabled) Total_EnableConsole( );
+
         bIsLoading = SDK::URBUIBlueprintLibrary::IsShowingLoadingScreen( );
 
         bTotalPlayerAlive = IsValid(SDK::URBBlueprintLibrary::GetControlledPlayer( ));
@@ -300,8 +302,6 @@ namespace Menu {
 #pragma endregion GLOBALS
         //-------------------------------------------------------------------------------------------
 
-        //ig::Image( );
-
         if (!bIsLoading && bTotalPlayerAlive && bTotalControllerAlive && IsValid(SDK::URBBlueprintLibrary::GetRBGameInstance())) {
             SDK::TArray<class ARBBaseObjectiveCoordinator*> ObjectiveCoordinators = SDK::URBBlueprintLibrary::GetRBGameInstance( )->ObjectiveManagers[0]->ObjectiveCoordinators;
 
@@ -320,6 +320,7 @@ namespace Menu {
             if (bShowObjectiveActors) {
                 Total_ShowGenerators(OPPWorld->Generators);
                 Total_ShowRadio(ObjectiveCoordinators);
+                Total_ShowPuzzles(ObjectiveCoordinators);
                 Total_ShowValves(ObjectiveCoordinators);
                 Total_ShowProjectors(ObjectiveCoordinators, OPPWorld->Generators);
             }
@@ -328,11 +329,18 @@ namespace Menu {
 
 
 
-        ig::Begin("Overlay", (bool*)true, ImGuiWindowFlags(197120 | 43));
+        ig::Begin("Overlay", (bool*)true, ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration);
         {
-            ig::SetWindowSize(ImVec2(ig::GetIO( ).DisplaySize.x, ig::GetIO( ).DisplaySize.y), ImGuiCond_Always);
-            ig::SetWindowPos(ImVec2(0, 0));
-            ig::Text("[Total]\n  FPS: %.0f  Random: %s \n  Ping: %.0f ms  IsRunning: %d\n  Seed: %d  Stage Time: %s\n", ig::GetIO( ).Framerate, "None" /*RandomString(rand( ) % (35 - 1 + 1) + 1)*/, fPlayerPing, bTotalPlayerIsRunning, LevelSeed, utf8_encode(SDK::URBBlueprintLibrary::FormatTimeFromFloat(fStageTime).ToWString( )).c_str( ));
+            ig::SetWindowSize(ImVec2(ig::GetIO( ).DisplaySize.x, ig::GetIO( ).DisplaySize.y), ImGuiCond_FirstUseEver);
+            ig::SetWindowPos(ImVec2(0, 0), ImGuiCond_FirstUseEver);
+            ig::Text("[Total]\n  FPS: %.0f  Random: %s \n  Ping: %.0f ms  IsRunning: %d\n  Seed: %d  Stage Time: %s\n  Passcode: %d", ig::GetIO( ).Framerate, "None" /*RandomString(rand( ) % (35 - 1 + 1) + 1)*/, fPlayerPing, bTotalPlayerIsRunning, LevelSeed, utf8_encode(SDK::URBBlueprintLibrary::FormatTimeFromFloat(fStageTime).ToWString( )).c_str( ), Passcode);
+            if (bTotalControllerAlive) {
+                ig::SetCursorPos(ImVec2((ig::GetIO( ).DisplaySize.x / 2) - (ig::CalcTextSize((const char*)(std::to_string(bTotalPlayerAlive ? int(round(TotalPlayer->Stamina)) : 0).c_str( ))).x / 2), ig::GetIO( ).DisplaySize.y / 2 + 20));
+                ig::Text("%.0f", bTotalPlayerAlive ? TotalPlayer->Stamina : 0);
+                ig::SetCursorPos(ImVec2((ig::GetIO( ).DisplaySize.x / 2) - (ig::CalcTextSize((const char*)(std::to_string(int(round(TotalPlayer->Stamina))).c_str( ))).x / 2), ig::GetIO( ).DisplaySize.y / 2 + 30));
+                // std::cout << (float)(double)((bTotalPlayerAlive ? TotalPlayer->Stamina : 0)) / 125 << std::endl;
+                // ig::ProgressBar((float)(double)((bTotalPlayerAlive ? TotalPlayer->Stamina : 0)) / 125, ImVec2(30, 5));
+            }
         }
         ig::End;
 
@@ -367,19 +375,19 @@ namespace Menu {
 
                 ig::Checkbox("Show Large Items", &bShowLargeItems);
                 ig::SameLine( );
-                ig::SliderFloat("##Distance1", &fShowLargeItems, 1.0f, 300.0f);
+                ig::SliderFloat("##Distance2", &fShowLargeItems, 1.0f, 300.0f);
 
                 ig::Checkbox("Show Quest Items", &bShowQuestItems);
                 ig::SameLine( );
-                ig::SliderFloat("##Distance1", &fShowQuestItems, 1.0f, 300.0f);
+                ig::SliderFloat("##Distance3", &fShowQuestItems, 1.0f, 300.0f);
 
                 ig::Checkbox("Show Objective Actors", &bShowObjectiveActors);
                 ig::SameLine( );
-                ig::SliderFloat("##Distance2", &fShowObjectiveActors, 1.0f, 300.0f);
+                ig::SliderFloat("##Distance4", &fShowObjectiveActors, 1.0f, 300.0f);
 
                 ig::Checkbox("Show Players", &bShowPlayers);
                 ig::SameLine( );
-                ig::SliderFloat("##Distance6", &fShowPlayers, 1.0f, 300.0f);
+                ig::SliderFloat("##Distance5", &fShowPlayers, 1.0f, 300.0f);
 
                 ig::Spacing( );
                 ig::TreePop( );
@@ -397,7 +405,7 @@ namespace Menu {
             ig::End( );
 
             colors[ImGuiCol_TableHeaderBg] = ImVec4(0.00f, 0.00f, 0.00f, 0.83f);
-            ig::ShowDemoWindow(&bShowMenu);
+            //ig::ShowDemoWindow(&bShowMenu);
             ig::Begin("Actor Scene", &bShowMenu, 0);
             if (!start_pos_set2) {
                 ig::SetWindowPos(ImVec2(ig::GetIO( ).DisplaySize.x / 5, ig::GetIO( ).DisplaySize.y / 4));
@@ -531,6 +539,42 @@ namespace Menu {
             }
         }
     } // void Total_ShowRadio()
+    void Total_ShowPuzzles(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Puzzles) {
+        /* for (int i = 0; i < Puzzles.Num( ); i++) {
+            SDK::ARBBaseObjectiveCoordinator* Obj = Puzzles[i];
+            if (!Obj)
+                continue;
+            if (!IsValid(Obj))
+                continue;
+            //std::cout << Obj->DebugPasscode.Num( ) << std::endl;
+            //for (int d = 0; d < Obj->DebugPasscode.Num( ); d++) {
+            //Passcode = Obj->GetNumberOfDigitsToUnlock( );
+            //}
+            //Passcode = Obj->Passcode_Server[0];
+            if (Obj->IsA(SDK::ARBPuzzleRoomLargeInteractObjectiveCoordinator::StaticClass( ))) {
+                // Passcode = static_cast<SDK::ARBProjectionCodeCoordinator>(Obj).PasscodeNumberOfDigits.Values1P.;
+                // std::cout << "dsdsddsd" << std::endl;
+                for (int d = 0; d < Obj->ObjectiveActorsInitialized.Num( ); d++) {
+                    SDK::AActor* ObjAct = Obj->ObjectiveActorsInitialized[d];
+                    if (IsValid(ObjAct->GetComponentByClass(SDK::URBSimplePasscodePadComponent::StaticClass( )))) {
+                        // for (int d = 0; d < Code->SpecificCodeProjectors.Num( ); d++) {
+                        // SDK::AActor* ObjAct = Obj->ObjectiveActorsInitialized[d];
+                        // if (ObjAct->IsA(SDK::ARBCodeProjector::StaticClass( ))) {
+                        cout << ObjAct->ObjectiveActors.Num( ) << std::endl;
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        std::string PawnName = (const char*)u8"Прожектор";
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        float SizeLocation = ObjAct->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        if (LocationNotZero && SizeLocation <= fShowObjectiveActors * 100)
+                            ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X, Location2D.Y), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), PawnName.append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ));
+                        //}
+                    }
+                }
+            }
+            
+        }*/
+    } // void Total_ShowRadio()
     void Total_ShowValves(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Valves) {
         for (int i = 0; i < Valves.Num( ); i++) {
             SDK::ARBBaseObjectiveCoordinator* Obj = Valves[i];
@@ -630,126 +674,246 @@ namespace Menu {
             if (Obj->bHasBeenPickedUp)
                 continue;
 
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::Quest && bShowQuestItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::KEY_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
+            //------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+            if (bShowQuestItems) switch (Obj->ItemDefinition.ItemType) {
+                case SDK::EItemType::Quest: // QUEST
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowQuestItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::KEY_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str()).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str());
+                        }
+                    } break;
+
+                case SDK::EItemType::CollectibleDocument: // DOCUMENT
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowQuestItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::KEY_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str()).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str());
+                        }
+                    } break;
+
             }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::CollectibleDocument && bShowQuestItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    //ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::KEY_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
-            }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::Bottle && bShowItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::BOTTLE_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
-            }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::Brick && bShowItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::BRICK_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
-            }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::PsychosisAntidote && bShowItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::ANTIDOTE_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
-            }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::SkillCharge && bShowItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::SKILLCHARGE_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
-            }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::Battery && bShowItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::BATTERY_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
-            }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::SmallBattery && bShowItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::SMALL_BATTERY_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
-            }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::TempHealthGain && bShowItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::HEAL_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
-            }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::GoreThrowable && bShowItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::HEART_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
-            }
-            if (Obj->ItemDefinition.ItemType == SDK::EItemType::StaminaSicknessPill && bShowItems) {
-                SDK::FVector Location = Obj->K2_GetActorLocation( );
-                float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
-                uint8_t PawnName = static_cast<uint8_t>(Obj->ItemDefinition.ItemType);
-                SDK::FVector2D Location2D;
-                bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
-                if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
-                    ig::GetBackgroundDrawList( )->AddImage((ImTextureID)DX12::ADRENALINE_GPU.ptr, ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize), ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-                    ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)(std::string((const char*)ObjectToChar(PawnName)).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( )));
-                }
+
+            //------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+            
+            if (bShowItems) switch (Obj->ItemDefinition.ItemType) {
+                case SDK::EItemType::Bottle: // BOTTLE
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::BOTTLE_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str()).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str( ));
+                        }
+                    } break;
+
+                case SDK::EItemType::Brick: // BRICK
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::BRICK_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str( )).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str( ));
+                        }
+                    } break;
+
+                case SDK::EItemType::PsychosisAntidote: // ANTIDOTE
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::ANTIDOTE_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str( )).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str( ));
+                        }
+                    } break;
+
+                case SDK::EItemType::SkillCharge: // SKILLCHARGE
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::SKILLCHARGE_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str( )).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str( ));
+                        }
+                    } break;
+
+                case SDK::EItemType::Battery: // BATTERY
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::BATTERY_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str( )).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str( ));
+                        }
+                    } break;
+
+                case SDK::EItemType::SmallBattery: // SMALL BATTERY
+                    {
+                            SDK::FVector Location = Obj->K2_GetActorLocation( );
+                            float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                            std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                            SDK::FVector2D Location2D;
+                            bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                            if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                                ig::GetBackgroundDrawList( )->AddImage(
+                                    (ImTextureID)DX12::SMALL_BATTERY_GPU.ptr,
+                                    ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                    ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                    ImVec2(0.0f, 0.0f),
+                                    ImVec2(1.0f, 1.0f));
+                                ig::GetBackgroundDrawList( )->AddText(
+                                    ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str( )).x / 2), Location2D.Y + IconSize + 12),
+                                    ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                    (const char*)Name.c_str( ));
+                            }
+                    } break;
+
+                case SDK::EItemType::TempHealthGain: // HEAL
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::HEAL_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str( )).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str( ));
+                        }
+                    } break;
+
+                case SDK::EItemType::GoreThrowable: // HEART
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::HEART_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str( )).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str( ));
+                        }
+                    } break;
+
+                case SDK::EItemType::StaminaRegen: // ADRENALINE
+                    {
+                        SDK::FVector Location = Obj->K2_GetActorLocation( );
+                        float SizeLocation = Obj->K2_GetActorLocation( ).GetDistanceTo(TotalController->AcknowledgedPawn->K2_GetActorLocation( ));
+                        std::string Name = std::string((const char*)ObjectToChar(static_cast<uint8_t>(Obj->ItemDefinition.ItemType))).append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( );
+                        SDK::FVector2D Location2D;
+                        bool LocationNotZero = TotalController->ProjectWorldLocationToScreen(Location, &Location2D, false);
+                        if (LocationNotZero && int(round(SizeLocation / 100)) <= fShowItems) {
+                            ig::GetBackgroundDrawList( )->AddImage(
+                                (ImTextureID)DX12::ADRENALINE_GPU.ptr,
+                                ImVec2(Location2D.X - IconSize, Location2D.Y - IconSize),
+                                ImVec2(Location2D.X + IconSize, Location2D.Y + IconSize),
+                                ImVec2(0.0f, 0.0f),
+                                ImVec2(1.0f, 1.0f));
+                            ig::GetBackgroundDrawList( )->AddText(
+                                ImVec2(Location2D.X - (ig::CalcTextSize((const char*)Name.c_str()).x / 2), Location2D.Y + IconSize + 12),
+                                ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
+                                (const char*)Name.c_str());
+                        }
+                    } break;
+
             }
         }
     } // void Total_ShowItems()
@@ -773,7 +937,7 @@ namespace Menu {
                 }
             }
         }
-    }
+    } // void Total_ShowLargeItems()
     void Total_PlayerBrightnessBoost() {
         if (lightBool) {
             TotalPlayer->ProximityLight->SetAttenuationRadius(lightRadius);
@@ -794,7 +958,17 @@ namespace Menu {
             static_cast<SDK::URBCheatManager*>(TotalController->CheatManager)->bCheatsEnabled = true;
             std::cout << " -> " << static_cast<SDK::URBCheatManager*>(TotalController->CheatManager)->bCheatsEnabled << std::endl;
         }
-    } // void TotalPlayerBrightnessBoost()
+    } // void Total_PlayerBrightnessBoost()
+
+    void Total_EnableConsole() {
+        SDK::UOPPEngine* Engine = static_cast<SDK::UOPPEngine*>(SDK::UOPPEngine::GetEngine( ));
+        SDK::UWorld* World = SDK::UWorld::GetWorld( );
+        SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(Engine->ConsoleClass, Engine->GameViewport);
+
+        bConsoleEnabled = true;
+        SDK::UInputSettings::GetDefaultObj( )->ConsoleKeys[0].KeyName = SDK::UKismetStringLibrary::Conv_StringToName(L"F2");
+        Engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
+    } // void Total_EnableConsole()
 
     bool IsValid(const SDK::UObject* Object) {
         return SDK::UKismetSystemLibrary::IsValid(Object);
@@ -806,6 +980,9 @@ namespace Menu {
         std::string strTo(size_needed, 0);
         WideCharToMultiByte(CP_UTF8, 0, &wstr[0], (int)wstr.size( ), &strTo[0], size_needed, NULL, NULL);
         return strTo;
+    }
+    ImVec2 CentralText(std::string PawnName, SDK::FVector2D Location2D, float SizeLocation) {
+        return ImVec2(Location2D.X - (ig::CalcTextSize((const char*)(PawnName.append(" (").append(std::to_string(int(round(SizeLocation / 100))).append("m").c_str( )).append(")").c_str( ))).x / 2), Location2D.Y + IconSize + 12);
     }
     const char* RandomString(int Length) {
         int range = 126 - 33 + 1;

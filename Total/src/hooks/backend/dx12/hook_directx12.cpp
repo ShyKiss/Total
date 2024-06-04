@@ -79,7 +79,7 @@ static bool LoadTextureFromFile(const char* filename, ID3D12Device* d3d_device, 
     desc.Width = image_width;
     desc.Height = image_height;
     desc.DepthOrArraySize = 1;
-    desc.MipLevels = 1;
+    desc.MipLevels = 0;
     desc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
     desc.SampleDesc.Count = 1;
     desc.SampleDesc.Quality = 0;
@@ -205,7 +205,7 @@ static bool LoadTextureFromFile(const char* filename, ID3D12Device* d3d_device, 
     d3d_device->CreateShaderResourceView(pTexture, &srvDesc, srv_cpu_handle);
 
     // Return results
-    *out_tex_resource = pTexture;
+    //*out_tex_resource = pTexture;
     *out_width = image_width;
     *out_height = image_height;
     stbi_image_free(image_data);
@@ -385,17 +385,20 @@ namespace DX12 {
 
         //Console::Free( );
 
-        SDK::UOPPEngine* Engine = static_cast<SDK::UOPPEngine*>(SDK::UOPPEngine::GetEngine( ));
-        SDK::UWorld* World = SDK::UWorld::GetWorld( );
+        //SDK::UOPPEngine* Engine = static_cast<SDK::UOPPEngine*>(SDK::UOPPEngine::GetEngine( ));
+       // SDK::UWorld* World = SDK::UWorld::GetWorld( );
 
-        SDK::UInputSettings::GetDefaultObj( )->ConsoleKeys[0].KeyName = SDK::UKismetStringLibrary::Conv_StringToName(L"F2");
+        //while (!SDK::UKismetSystemLibrary::IsValid(Engine) || !SDK::UKismetSystemLibrary::IsValid(World)) {
+        //}
+
+        //SDK::UInputSettings::GetDefaultObj( )->ConsoleKeys[0].KeyName = SDK::UKismetStringLibrary::Conv_StringToName(L"F2");
 
         /* Creates a new UObject of class-type specified by Engine->ConsoleClass */
-        SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(Engine->ConsoleClass, Engine->GameViewport);
+        //SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(Engine->ConsoleClass, Engine->GameViewport);
         // SDK::UObject* NewCheatManager = SDK::UGameplayStatics::SpawnObject(SDK::UCheatManager::StaticClass(), SDK::UCheatManager::StaticClass()->Super);
 
         /* The Object we created is a subclass of UConsole, so this cast is **safe**. */
-        Engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
+        //Engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
         // World->OwningGameInstance->LocalPlayers[0]->PlayerController->CheatManager = static_cast<SDK::UCheatManager*>(NewCheatManager);
 
         if (g_pd3dDevice) {
@@ -514,9 +517,9 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
     if (!ImGui::GetIO( ).BackendRendererUserData) {
         if (SUCCEEDED(pSwapChain->GetDevice(IID_PPV_ARGS(&g_pd3dDevice)))) {
             {
-                ImGui::GetIO( ).WantCaptureMouse || ImGui::GetIO( ).WantTextInput || ImGui::GetIO().WantCaptureKeyboard;
-                ImGui::GetIO().ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
-                ImGui::GetIO( ).Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\Consolab.ttf", 12.0f, NULL, ImGui::GetIO().Fonts->GetGlyphRangesCyrillic( ));
+                ImGui::GetIO( ).WantCaptureMouse || ImGui::GetIO( ).WantTextInput || ImGui::GetIO( ).WantCaptureKeyboard;
+                ImGui::GetIO( ).ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+                ImGui::GetIO( ).Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\Consolab.ttf", 12.0f, NULL, ImGui::GetIO( ).Fonts->GetGlyphRangesCyrillic( ));
 
                 D3D12_DESCRIPTOR_HEAP_DESC desc = { };
                 desc.Type = D3D12_DESCRIPTOR_HEAP_TYPE_RTV;
@@ -532,7 +535,6 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
                     g_mainRenderTargetDescriptor[i] = rtvHandle;
                     rtvHandle.ptr += rtvDescriptorSize;
                 }
-
             }
 
             {
@@ -556,83 +558,178 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
                                 DXGI_FORMAT_R8G8B8A8_UNORM, g_pd3dSrvDescHeap,
                                 g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( ),
                                 g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( ));
+
+            static_assert(sizeof(ImTextureID) >= sizeof(D3D12_CPU_DESCRIPTOR_HANDLE), "D3D12_CPU_DESCRIPTOR_HANDLE is too large to fit in an ImTextureID");
+            UINT handle_increment = g_pd3dDevice->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV);
+
+
+            DX12::BOTTLE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::BOTTLE_CPU.ptr += (handle_increment * 1000);
+            DX12::BOTTLE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::BOTTLE_GPU.ptr += (handle_increment * 1000);
+
+            // bool BOTTLE = LoadTextureFromFile("icons\\inventory\\item_bottle.png", g_pd3dDevice, DX12::BOTTLE_CPU, &DX12::BOTTLE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            // Sleep(8000);
+
+
+            // Sleep(1000);
+
+            DX12::KEY_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::KEY_CPU.ptr += (handle_increment * 2000);
+            DX12::KEY_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::KEY_GPU.ptr += (handle_increment * 2000);
+
+            // bool KEY = LoadTextureFromFile("icons\\inventory\\key.png", g_pd3dDevice, DX12::KEY_CPU, &DX12::KEY_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            // Sleep(1000);
+
+            DX12::BRICK_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::BRICK_CPU.ptr += (handle_increment * 3000);
+            DX12::BRICK_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::BRICK_GPU.ptr += (handle_increment * 3000);
+
+            // bool BRICK = LoadTextureFromFile("icons\\inventory\\item_brick.png", g_pd3dDevice, DX12::BRICK_CPU, &DX12::BRICK_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            // Sleep(1000);
+
+            DX12::ANTIDOTE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::ANTIDOTE_CPU.ptr += (handle_increment * 4000);
+            DX12::ANTIDOTE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::ANTIDOTE_GPU.ptr += (handle_increment * 4000);
+
+            // bool ANTIDOTE = LoadTextureFromFile("icons\\inventory\\item_antidote_psy.png", g_pd3dDevice, DX12::ANTIDOTE_CPU, &DX12::ANTIDOTE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            // Sleep(1000);
+
+            DX12::SKILLCHARGE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::SKILLCHARGE_CPU.ptr += (handle_increment * 5000);
+            DX12::SKILLCHARGE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::SKILLCHARGE_GPU.ptr += (handle_increment * 5000);
+
+            // bool SKILLCHARGE = LoadTextureFromFile("icons\\inventory\\item_skillcharge.png", g_pd3dDevice, DX12::SKILLCHARGE_CPU, &DX12::SKILLCHARGE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            // Sleep(1000);
+
+            DX12::BATTERY_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::BATTERY_CPU.ptr += (handle_increment * 6000);
+            DX12::BATTERY_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::BATTERY_GPU.ptr += (handle_increment * 6000);
+
+            // bool BATTERY = LoadTextureFromFile("icons\\inventory\\item_battery.png", g_pd3dDevice, DX12::BATTERY_CPU, &DX12::BATTERY_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            DX12::SMALL_BATTERY_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::SMALL_BATTERY_CPU.ptr += (handle_increment * 7000);
+            DX12::SMALL_BATTERY_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::SMALL_BATTERY_GPU.ptr += (handle_increment * 7000);
+
+            // bool SMALL_BATTERY = LoadTextureFromFile("icons\\inventory\\item_battery_small.png", g_pd3dDevice, DX12::SMALL_BATTERY_CPU, &DX12::SMALL_BATTERY_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            DX12::HEAL_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::HEAL_CPU.ptr += (handle_increment * 8000);
+            DX12::HEAL_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::HEAL_GPU.ptr += (handle_increment * 8000);
+
+            // bool HEAL = LoadTextureFromFile("icons\\inventory\\item_temp_heal_drink.png", g_pd3dDevice, DX12::HEAL_CPU, &DX12::HEAL_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            DX12::HEART_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::HEART_CPU.ptr += (handle_increment * 9000);
+            DX12::HEART_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::HEART_GPU.ptr += (handle_increment * 9000);
+            //
+            // bool HEART = LoadTextureFromFile("icons\\inventory\\bloody_heart.png", g_pd3dDevice, DX12::HEART_CPU, &DX12::HEART_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            DX12::ADRENALINE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::ADRENALINE_CPU.ptr += (handle_increment * 10000);
+            DX12::ADRENALINE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::ADRENALINE_GPU.ptr += (handle_increment * 10000);
+
+            // bool ADRENALINE = LoadTextureFromFile("icons\\inventory\\item_pill.png", g_pd3dDevice, DX12::ADRENALINE_CPU, &DX12::ADRENALINE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+
+            DX12::TICKET_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::TICKET_CPU.ptr += (handle_increment * 11000);
+            DX12::TICKET_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+            DX12::TICKET_GPU.ptr += (handle_increment * 11000);
+
+            // bool TICKET = LoadTextureFromFile("icons\\inventory\\ticket.png", g_pd3dDevice, DX12::TICKET_CPU, &DX12::TICKET_TEX, &DX12::my_image_width, &DX12::my_image_height);
         }
-        static_assert(sizeof(ImTextureID) >= sizeof(D3D12_CPU_DESCRIPTOR_HANDLE), "D3D12_CPU_DESCRIPTOR_HANDLE is too large to fit in an ImTextureID");
 
-        UINT handle_increment = g_pd3dDevice->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV);
-        std::cout << handle_increment << std::endl;
-        int descriptor_index = 2; // The descriptor table index to use (not normally a hard-coded constant, but in this case we'll assume we have slot 1 reserved for us)
-        DX12::BOTTLE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::BOTTLE_CPU.ptr += (handle_increment * 1);
-        DX12::BOTTLE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::BOTTLE_GPU.ptr += (handle_increment * 1);
-        std::cout << DX12::BOTTLE_CPU.ptr << " and " << DX12::BOTTLE_GPU.ptr << std::endl;
 
-        DX12::KEY_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::KEY_CPU.ptr += (handle_increment * 2);
-        DX12::KEY_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::KEY_GPU.ptr += (handle_increment * 2);
-        std::cout << DX12::KEY_CPU.ptr << " and " << DX12::KEY_GPU.ptr << std::endl;
-        
-        //Sleep(100);
-        
-        DX12::BRICK_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::BRICK_CPU.ptr += (handle_increment * 3);
-        DX12::BRICK_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::BRICK_GPU.ptr += (handle_increment * 3);
-        
-        DX12::ANTIDOTE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::ANTIDOTE_CPU.ptr += (handle_increment * 4);
-        DX12::ANTIDOTE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::ANTIDOTE_GPU.ptr += (handle_increment * 4);
-        
-        DX12::SKILLCHARGE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::SKILLCHARGE_CPU.ptr += (handle_increment * 5);
-        DX12::SKILLCHARGE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::SKILLCHARGE_GPU.ptr += (handle_increment * 5);
-        
-        DX12::BATTERY_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::BATTERY_CPU.ptr += (handle_increment * 6);
-        DX12::BATTERY_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::BATTERY_GPU.ptr += (handle_increment * 6);
-        
-        //Sleep(100);
-        
-        DX12::SMALL_BATTERY_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::SMALL_BATTERY_CPU.ptr += (handle_increment * 7);
-        DX12::SMALL_BATTERY_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::SMALL_BATTERY_GPU.ptr += (handle_increment * 7);
-        
-        DX12::HEAL_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::HEAL_CPU.ptr += (handle_increment * 8);
-        DX12::HEAL_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::HEAL_GPU.ptr += (handle_increment * 8);
-        
-        DX12::HEART_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::HEART_CPU.ptr += (handle_increment * 9);
-        DX12::HEART_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::HEART_GPU.ptr += (handle_increment * 9);
-        
-        DX12::ADRENALINE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::ADRENALINE_CPU.ptr += (handle_increment * 10);
-        DX12::ADRENALINE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::ADRENALINE_GPU.ptr += (handle_increment * 10);
-        
-        DX12::TICKET_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
-        DX12::TICKET_CPU.ptr += (handle_increment * 11);
-        DX12::TICKET_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
-        DX12::TICKET_GPU.ptr += (handle_increment * 11);
 
-        bool BOTTLE = LoadTextureFromFile("icons\\inventory\\item_bottle.png", g_pd3dDevice, DX12::BOTTLE_CPU, &DX12::BOTTLE_TEX, &DX12::my_image_width, &DX12::my_image_height);
-        bool KEY = LoadTextureFromFile("icons\\inventory\\key.png", g_pd3dDevice, DX12::KEY_CPU, &DX12::KEY_TEX, &DX12::my_image_width, &DX12::my_image_height);
-        bool BRICK = LoadTextureFromFile("icons\\inventory\\item_brick.png", g_pd3dDevice, DX12::BRICK_CPU, &DX12::BRICK_TEX, &DX12::my_image_width, &DX12::my_image_height);
-        bool ANTIDOTE = LoadTextureFromFile("icons\\inventory\\item_antidote_psy.png", g_pd3dDevice, DX12::ANTIDOTE_CPU, &DX12::ANTIDOTE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+        //UINT handle_increment = g_pd3dDevice->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV);
+        //std::cout << handle_increment << std::endl;
+        //int descriptor_index = 2; // The descriptor table index to use (not normally a hard-coded constant, but in this case we'll assume we have slot 1 reserved for us)
+        //DX12::BOTTLE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::BOTTLE_CPU.ptr += (handle_increment * 1);
+        //DX12::BOTTLE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::BOTTLE_GPU.ptr += (handle_increment * 1);
+        //std::cout << DX12::BOTTLE_CPU.ptr << " and " << DX12::BOTTLE_GPU.ptr << std::endl;
+        //
+        //DX12::KEY_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::KEY_CPU.ptr += (handle_increment * 2);
+        //DX12::KEY_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::KEY_GPU.ptr += (handle_increment * 2);
+        //std::cout << DX12::KEY_CPU.ptr << " and " << DX12::KEY_GPU.ptr << std::endl;
+        //
+        ////Sleep(100);
+        //
+        //DX12::BRICK_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::BRICK_CPU.ptr += (handle_increment * 3);
+        //DX12::BRICK_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::BRICK_GPU.ptr += (handle_increment * 3);
+        //
+        //DX12::ANTIDOTE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::ANTIDOTE_CPU.ptr += (handle_increment * 4);
+        //DX12::ANTIDOTE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::ANTIDOTE_GPU.ptr += (handle_increment * 4);
+        //
+        //DX12::SKILLCHARGE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::SKILLCHARGE_CPU.ptr += (handle_increment * 5);
+        //DX12::SKILLCHARGE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::SKILLCHARGE_GPU.ptr += (handle_increment * 5);
+        //
+        //DX12::BATTERY_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::BATTERY_CPU.ptr += (handle_increment * 6);
+        //DX12::BATTERY_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::BATTERY_GPU.ptr += (handle_increment * 6);
+        //
+        ////Sleep(100);
+        //
+        //DX12::SMALL_BATTERY_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::SMALL_BATTERY_CPU.ptr += (handle_increment * 7);
+        //DX12::SMALL_BATTERY_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::SMALL_BATTERY_GPU.ptr += (handle_increment * 7);
+        //
+        //DX12::HEAL_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::HEAL_CPU.ptr += (handle_increment * 8);
+        //DX12::HEAL_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::HEAL_GPU.ptr += (handle_increment * 8);
+        //
+        //DX12::HEART_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::HEART_CPU.ptr += (handle_increment * 9);
+        //DX12::HEART_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::HEART_GPU.ptr += (handle_increment * 9);
+        //
+        //DX12::ADRENALINE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::ADRENALINE_CPU.ptr += (handle_increment * 10);
+        //DX12::ADRENALINE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::ADRENALINE_GPU.ptr += (handle_increment * 10);
+        //
+        //DX12::TICKET_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+        //DX12::TICKET_CPU.ptr += (handle_increment * 11);
+        //DX12::TICKET_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
+        //DX12::TICKET_GPU.ptr += (handle_increment * 11);
 
-        if(HalfInt)
+        //bool BOTTLE = LoadTextureFromFile("icons\\inventory\\item_bottle.png", g_pd3dDevice, DX12::BOTTLE_CPU, &DX12::BOTTLE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+        //bool KEY = LoadTextureFromFile("icons\\inventory\\key.png", g_pd3dDevice, DX12::KEY_CPU, &DX12::KEY_TEX, &DX12::my_image_width, &DX12::my_image_height);
+        //bool BRICK = LoadTextureFromFile("icons\\inventory\\item_brick.png", g_pd3dDevice, DX12::BRICK_CPU, &DX12::BRICK_TEX, &DX12::my_image_width, &DX12::my_image_height);
+        //bool ANTIDOTE = LoadTextureFromFile("icons\\inventory\\item_antidote_psy.png", g_pd3dDevice, DX12::ANTIDOTE_CPU, &DX12::ANTIDOTE_TEX, &DX12::my_image_width, &DX12::my_image_height);
 
-        bool SKILLCHARGE = LoadTextureFromFile("icons\\inventory\\item_skillcharge.png", g_pd3dDevice, DX12::SKILLCHARGE_CPU, &DX12::SKILLCHARGE_TEX, &DX12::my_image_width, &DX12::my_image_height);
-        bool BATTERY = LoadTextureFromFile("icons\\inventory\\item_battery.png", g_pd3dDevice, DX12::BATTERY_CPU, &DX12::BATTERY_TEX, &DX12::my_image_width, &DX12::my_image_height);
-        bool SMALL_BATTERY = LoadTextureFromFile("icons\\inventory\\item_battery_small.png", g_pd3dDevice, DX12::SMALL_BATTERY_CPU, &DX12::SMALL_BATTERY_TEX, &DX12::my_image_width, &DX12::my_image_height);
+        //if(HalfInt)
+
+        //bool SKILLCHARGE = LoadTextureFromFile("icons\\inventory\\item_skillcharge.png", g_pd3dDevice, DX12::SKILLCHARGE_CPU, &DX12::SKILLCHARGE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+        //bool BATTERY = LoadTextureFromFile("icons\\inventory\\item_battery.png", g_pd3dDevice, DX12::BATTERY_CPU, &DX12::BATTERY_TEX, &DX12::my_image_width, &DX12::my_image_height);
+        //bool SMALL_BATTERY = LoadTextureFromFile("icons\\inventory\\item_battery_small.png", g_pd3dDevice, DX12::SMALL_BATTERY_CPU, &DX12::SMALL_BATTERY_TEX, &DX12::my_image_width, &DX12::my_image_height);
         //bool HEAL = LoadTextureFromFile("icons\\inventory\\item_temp_heal_drink.png", g_pd3dDevice, DX12::HEAL_CPU, &DX12::HEAL_TEX, &DX12::my_image_width, &DX12::my_image_height);
         //bool HEART = LoadTextureFromFile("icons\\inventory\\bloody_heart.png", g_pd3dDevice, DX12::HEART_CPU, &DX12::HEART_TEX, &DX12::my_image_width, &DX12::my_image_height);
         //bool ADRENALINE = LoadTextureFromFile("icons\\inventory\\item_pill.png", g_pd3dDevice, DX12::ADRENALINE_CPU, &DX12::ADRENALINE_TEX, &DX12::my_image_width, &DX12::my_image_height);
@@ -658,6 +755,47 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
         }
 
         if (ImGui::GetCurrentContext( ) && g_pd3dCommandQueue && g_mainRenderTargetResource[0]) {
+
+            if (HalfInt < 10) {
+                switch (HalfInt) {
+                    case 0:
+                        LoadTextureFromFile("icons\\inventory\\item_bottle.png", g_pd3dDevice, DX12::BOTTLE_CPU, &DX12::BOTTLE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 1:
+                        LoadTextureFromFile("icons\\inventory\\key.png", g_pd3dDevice, DX12::KEY_CPU, &DX12::KEY_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 2:
+                        LoadTextureFromFile("icons\\inventory\\item_brick.png", g_pd3dDevice, DX12::BRICK_CPU, &DX12::BRICK_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 3:
+                        LoadTextureFromFile("icons\\inventory\\item_antidote_psy.png", g_pd3dDevice, DX12::ANTIDOTE_CPU, &DX12::ANTIDOTE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 4:
+                        LoadTextureFromFile("icons\\inventory\\item_skillcharge.png", g_pd3dDevice, DX12::SKILLCHARGE_CPU, &DX12::SKILLCHARGE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 5:
+                        LoadTextureFromFile("icons\\inventory\\item_battery.png", g_pd3dDevice, DX12::BATTERY_CPU, &DX12::BATTERY_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 6:
+                        LoadTextureFromFile("icons\\inventory\\item_battery_small.png", g_pd3dDevice, DX12::SMALL_BATTERY_CPU, &DX12::SMALL_BATTERY_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 7:
+                        LoadTextureFromFile("icons\\inventory\\item_temp_heal_drink.png", g_pd3dDevice, DX12::HEAL_CPU, &DX12::HEAL_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 8:
+                        LoadTextureFromFile("icons\\inventory\\bloody_heart.png", g_pd3dDevice, DX12::HEART_CPU, &DX12::HEART_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 9:
+                        LoadTextureFromFile("icons\\inventory\\item_pill.png", g_pd3dDevice, DX12::ADRENALINE_CPU, &DX12::ADRENALINE_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                    case 10:
+                        LoadTextureFromFile("icons\\inventory\\ticket.png", g_pd3dDevice, DX12::TICKET_CPU, &DX12::TICKET_TEX, &DX12::my_image_width, &DX12::my_image_height);
+                        break;
+                }
+                HalfInt++;
+            }
+                
+
             ImGui_ImplDX12_NewFrame( );
             ImGui_ImplWin32_NewFrame( );
             ImGui::NewFrame( );
@@ -690,9 +828,18 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
             g_pd3dCommandList->ResourceBarrier(1, &barrier);
             g_pd3dCommandList->Close( );
 
+
+            //g_pSwapChain->Present(1, 0);
+
+            //Sleep(3000);
+
             g_pd3dCommandQueue->ExecuteCommandLists(1, reinterpret_cast<ID3D12CommandList* const*>(&g_pd3dCommandList));
         }
     }
+}
+
+bool IsValid(const SDK::UObject* Object) {
+    return SDK::UKismetSystemLibrary::IsValid(Object);
 }
 
 #else

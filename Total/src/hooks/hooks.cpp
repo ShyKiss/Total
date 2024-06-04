@@ -4,13 +4,13 @@
 
 #include "hooks.hpp"
 
-#include "backend/dx10/hook_directx10.hpp"
-#include "backend/dx11/hook_directx11.hpp"
+//#include "backend/dx10/hook_directx10.hpp"
+//#include "backend/dx11/hook_directx11.hpp"
 #include "backend/dx12/hook_directx12.hpp"
-#include "backend/dx9/hook_directx9.hpp"
+//#include "backend/dx9/hook_directx9.hpp"
 
-#include "backend/opengl/hook_opengl.hpp"
-#include "backend/vulkan/hook_vulkan.hpp"
+//#include "backend/opengl/hook_opengl.hpp"
+//#include "backend/vulkan/hook_vulkan.hpp"
 
 #include "../console/console.hpp"
 #include "../menu/menu.hpp"
@@ -92,24 +92,24 @@ namespace Hooks {
 
         RenderingBackend_t eRenderingBackend = U::GetRenderingBackend( );
         switch (eRenderingBackend) {
-            case DIRECTX9:
-                DX9::Hook(g_hWindow);
-                break;
-            case DIRECTX10:
-                DX10::Hook(g_hWindow);
-                break;
-            case DIRECTX11:
-                DX11::Hook(g_hWindow);
-                break;
+            //case DIRECTX9:
+            //    DX9::Hook(g_hWindow);
+            //    break;
+            //case DIRECTX10:
+            //    DX10::Hook(g_hWindow);
+            //    break;
+            //case DIRECTX11:
+            //    DX11::Hook(g_hWindow);
+            //    break;
             case DIRECTX12:
                 DX12::Hook(g_hWindow);
                 break;
-            case OPENGL:
-                GL::Hook(g_hWindow);
-                break;
-            case VULKAN:
-                VK::Hook(g_hWindow);
-                break;
+           // case OPENGL:
+           //     GL::Hook(g_hWindow);
+           //     break;
+           // case VULKAN:
+           //     VK::Hook(g_hWindow);
+           //     break;
         }
 
 #ifdef DISABLE_LOGGING_CONSOLE
@@ -131,24 +131,24 @@ namespace Hooks {
         ;
         RenderingBackend_t eRenderingBackend = U::GetRenderingBackend( );
         switch (eRenderingBackend) {
-            case DIRECTX9:
-                DX9::Unhook( );
-                break;
-            case DIRECTX10:
-                DX10::Unhook( );
-                break;
-            case DIRECTX11:
-                DX11::Unhook( );
-                break;
+            //case DIRECTX9:
+            //    DX9::Unhook( );
+            //    break;
+            //case DIRECTX10:
+            //    DX10::Unhook( );
+            //    break;
+            //case DIRECTX11:
+            //    DX11::Unhook( );
+            //    break;
             case DIRECTX12:
                 DX12::Unhook( );
                 break;
-            case OPENGL:
-                GL::Unhook( );
-                break;
-            case VULKAN:
-                VK::Unhook( );
-                break;
+            //case OPENGL:
+            //    GL::Unhook( );
+            //    break;
+            //case VULKAN:
+            //    VK::Unhook( );
+            //    break;
         }
     }
 } // namespace Hooks

@@ -1,7 +1,9 @@
 ﻿  hook_directx12.cpp
+  hooks.cpp
+  menu.cpp
   Создание кода
-  1 of 3052 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+  0 of 2473 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    109 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   Total.vcxproj -> C:\Users\Beerymaid\source\repos\Total\Total\bin\Total-x64.dll
