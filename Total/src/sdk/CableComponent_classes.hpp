@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "CableComponent_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -49,7 +49,7 @@ public:
 	bool                                          bAttachEnd;                                        // 0x04A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseSkinning;                                      // 0x04AA(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPreSimulateOnSave;                                // 0x04AB(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3B[0x4];                                      // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EEA[0x4];                                      // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FComponentReference                    AttachEndTo;                                       // 0x04B0(0x0028)(Edit, NativeAccessSpecifierPublic)
 	class FName                                   AttachEndToSocketName;                             // 0x04D8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                EndLocation;                                       // 0x04E0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -62,16 +62,16 @@ public:
 	bool                                          bSkipCableUpdateWhenNotVisible;                    // 0x04FE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSkipCableUpdateWhenNotOwnerRecentlyRendered;      // 0x04FF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnableCollision;                                  // 0x0500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3C[0x3];                                      // 0x0501(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EEB[0x3];                                      // 0x0501(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CollisionFriction;                                 // 0x0504(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                CableForce;                                        // 0x0508(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CableGravityScale;                                 // 0x0514(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CableWidth;                                        // 0x0518(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumSides;                                          // 0x051C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TileMaterial;                                      // 0x0520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3D[0x4];                                      // 0x0524(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EEC[0x4];                                      // 0x0524(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FCableParticle>                 PreSimulatedParticles;                             // 0x0528(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3E[0x18];                                     // 0x0538(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EED[0x18];                                     // 0x0538(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetAttachEndTo(class AActor* Actor, class FName ComponentProperty, class FName SocketName);

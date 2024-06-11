@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function Spinner.Spinner_C.ExecuteUbergraph_Spinner
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void USpinner_C::ExecuteUbergraph_Spinner(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Spinner_C", "ExecuteUbergraph_Spinner");
-
-	Params::Spinner_C_ExecuteUbergraph_Spinner Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function Spinner.Spinner_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void USpinner_C::PreConstruct(bool IsDesignTime)
 	Params::Spinner_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Spinner.Spinner_C.ExecuteUbergraph_Spinner
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USpinner_C::ExecuteUbergraph_Spinner(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Spinner_C", "ExecuteUbergraph_Spinner");
+
+	Params::Spinner_C_ExecuteUbergraph_Spinner Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

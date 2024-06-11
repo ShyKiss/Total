@@ -22,7 +22,7 @@ namespace SDK
 class ARBNPC_BP_C : public ARBNPC
 {
 public:
-	uint8                                         Pad_2F02[0x8];                                     // 0x5878(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30BE[0x8];                                     // 0x5878(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x5880(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class URBActiveSkillVisionComponent*          RBActiveSkillVision;                               // 0x5888(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   AS_WaveSphere;                                     // 0x5890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)

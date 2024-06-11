@@ -94,7 +94,7 @@ public:
 	class UAnimSequence*                          LipSyncAnim;                                       // 0x2208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasPoses;                                          // 0x2210(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsExpressing;                                      // 0x2211(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2BE8[0x6];                                     // 0x2212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2AAE[0x6];                                     // 0x2212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          ScriptedFaceAnim;                                  // 0x2218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDead;                                            // 0x2220(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsSleeping;                                        // 0x2221(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)

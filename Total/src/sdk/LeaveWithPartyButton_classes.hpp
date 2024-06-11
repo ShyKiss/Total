@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -29,10 +29,10 @@ public:
 	class UButton*                                SelectButton;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bSelected;                                         // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bHovered;                                          // 0x0281(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E1A[0x6];                                     // 0x0282(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DF0[0x6];                                     // 0x0282(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bEnabled;                                          // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E1B[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DF1[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ButtonTextValue;                                   // 0x02A0(0x0018)(Edit, BlueprintVisible)
 	struct FSlateFontInfo                         ButtonTextFont;                                    // 0x02B8(0x0058)(Edit, BlueprintVisible, HasGetValueTypeHash)
 

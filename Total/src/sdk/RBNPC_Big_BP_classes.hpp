@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "RBNPC_BP_classes.hpp"
 #include "Engine_structs.hpp"
 #include "NPCSkinData_structs.hpp"
 #include "OPP_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "RBNPC_BP_classes.hpp"
 
 
 namespace SDK
@@ -40,11 +40,11 @@ public:
 	TArray<class FString>                         MaleVoices;                                        // 0x5998(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class FString>                         FemaleVoices;                                      // 0x59A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsFemale;                                          // 0x59B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30D1[0x7];                                     // 0x59B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30E8[0x7];                                     // 0x59B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNPCSkinData                           SelectedSkin;                                      // 0x59C0(0x00B8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	int32                                         SelectedMeshIndex;                                 // 0x5A78(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	bool                                          DelayedApplyCustomization;                         // 0x5A7C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30D2[0x3];                                     // 0x5A7D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30E9[0x3];                                     // 0x5A7D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SelectedVoiceIndex_Server;                         // 0x5A80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

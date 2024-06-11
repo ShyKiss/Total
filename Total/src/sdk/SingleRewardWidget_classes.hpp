@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -35,7 +35,7 @@ public:
 	class UImage*                                 Image_163;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 STAMP;                                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Amount;                                            // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EC5[0x4];                                     // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D10[0x4];                                     // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             IconTexture;                                       // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRewardUIData                          Reward_UI_Data;                                    // 0x02B8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FSlateColor                            IconTintColor;                                     // 0x02D8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)

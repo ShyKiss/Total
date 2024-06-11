@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Shared_Face_Expression_Struct_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Shared_Face_BaseEmotion_Struct_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "Shared_Face_Expression_Struct_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Face_AllList_Enum_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
-#include "Shared_Face_BaseEmotion_Struct_structs.hpp"
 
 
 namespace SDK
@@ -85,16 +85,16 @@ public:
 	class UAnimSequence*                          LipSyncAnim;                                       // 0x1FF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasPoses;                                          // 0x1FF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsExpressing;                                      // 0x1FF9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30FB[0x6];                                     // 0x1FFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30D0[0x6];                                     // 0x1FFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          ScriptedFaceAnim;                                  // 0x2000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFace_AllList_Enum                            WhichFace;                                         // 0x2008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ENPCSpecificGesture                           WhichExpression;                                   // 0x2009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30FC[0x6];                                     // 0x200A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30D1[0x6];                                     // 0x200A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FShared_Face_Expression_Struct         ExpressionList;                                    // 0x2010(0x04B0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FShared_Face_BaseEmotion_Struct        BaseEmotionList;                                   // 0x24C0(0x0320)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          IsFuttermanSpeaking;                               // 0x27E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsGooseberry;                                      // 0x27E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30FD[0x2];                                     // 0x27E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30D2[0x2];                                     // 0x27E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         JawOpen;                                           // 0x27E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

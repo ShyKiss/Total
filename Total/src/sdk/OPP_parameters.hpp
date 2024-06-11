@@ -496,7 +496,7 @@ struct RBSASPlayerStartTransitionZone_BP_ExecuteTransitionOnPlayersInside final
 public:
 	class AVolume*                                Volume;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AD7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A39[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSASPlayerStartTransitionZone_BP_ExecuteTransitionOnPlayersInside) == 0x000008, "Wrong alignment on RBSASPlayerStartTransitionZone_BP_ExecuteTransitionOnPlayersInside");
 static_assert(sizeof(RBSASPlayerStartTransitionZone_BP_ExecuteTransitionOnPlayersInside) == 0x000010, "Wrong size on RBSASPlayerStartTransitionZone_BP_ExecuteTransitionOnPlayersInside");
@@ -554,7 +554,7 @@ struct RBPickup_BP_TickItem final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AED[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A4F[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPickup_BP_TickItem) == 0x000004, "Wrong alignment on RBPickup_BP_TickItem");
 static_assert(sizeof(RBPickup_BP_TickItem) == 0x000008, "Wrong size on RBPickup_BP_TickItem");
@@ -600,10 +600,10 @@ struct RBPickup_Multicast_OnDropped final
 {
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AEE[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A50[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0030)(ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bPredicted;                                        // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AEF[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A51[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPickup_Multicast_OnDropped) == 0x000010, "Wrong alignment on RBPickup_Multicast_OnDropped");
 static_assert(sizeof(RBPickup_Multicast_OnDropped) == 0x000050, "Wrong size on RBPickup_Multicast_OnDropped");
@@ -706,7 +706,7 @@ struct RBPickup_BP_GetHoldConsumeActionProgress final
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AF0[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A52[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPickup_BP_GetHoldConsumeActionProgress) == 0x000008, "Wrong alignment on RBPickup_BP_GetHoldConsumeActionProgress");
 static_assert(sizeof(RBPickup_BP_GetHoldConsumeActionProgress) == 0x000010, "Wrong size on RBPickup_BP_GetHoldConsumeActionProgress");
@@ -753,7 +753,7 @@ struct RBPickup_CanSwapBetweenItem final
 public:
 	class ARBPickup*                              OtherItem;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AF1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A53[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPickup_CanSwapBetweenItem) == 0x000008, "Wrong alignment on RBPickup_CanSwapBetweenItem");
 static_assert(sizeof(RBPickup_CanSwapBetweenItem) == 0x000010, "Wrong size on RBPickup_CanSwapBetweenItem");
@@ -903,7 +903,7 @@ struct RBBaseObjectiveCoordinator_Multicast_OnSingleCompletedObjectiveReverted f
 public:
 	class AActor*                                 ObjectiveActor;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bReaddToRemainingList;                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B08[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBaseObjectiveCoordinator_Multicast_OnSingleCompletedObjectiveReverted) == 0x000008, "Wrong alignment on RBBaseObjectiveCoordinator_Multicast_OnSingleCompletedObjectiveReverted");
 static_assert(sizeof(RBBaseObjectiveCoordinator_Multicast_OnSingleCompletedObjectiveReverted) == 0x000010, "Wrong size on RBBaseObjectiveCoordinator_Multicast_OnSingleCompletedObjectiveReverted");
@@ -919,7 +919,7 @@ public:
 	class AActor*                                 ObjectiveActor;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsFinalObjective;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRemoveFromRemainingList;                          // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B09[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6B[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBaseObjectiveCoordinator_Multicast_OnSingleObjectiveCompleted) == 0x000008, "Wrong alignment on RBBaseObjectiveCoordinator_Multicast_OnSingleObjectiveCompleted");
 static_assert(sizeof(RBBaseObjectiveCoordinator_Multicast_OnSingleObjectiveCompleted) == 0x000018, "Wrong size on RBBaseObjectiveCoordinator_Multicast_OnSingleObjectiveCompleted");
@@ -936,7 +936,7 @@ public:
 	struct FRBStageID                             StageID;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRBMissionID                           MissionID;                                         // 0x0028(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          IsRestart;                                         // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B0A[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6C[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBaseObjectiveCoordinator_OnEndOfStage) == 0x000008, "Wrong alignment on RBBaseObjectiveCoordinator_OnEndOfStage");
 static_assert(sizeof(RBBaseObjectiveCoordinator_OnEndOfStage) == 0x000058, "Wrong size on RBBaseObjectiveCoordinator_OnEndOfStage");
@@ -1250,7 +1250,7 @@ struct RBObjectiveCoordinatorGroup_OnConcurrentCoordinatorStateChanged final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EObjectiveCoordinatorState                    State;                                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B0C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBObjectiveCoordinatorGroup_OnConcurrentCoordinatorStateChanged) == 0x000008, "Wrong alignment on RBObjectiveCoordinatorGroup_OnConcurrentCoordinatorStateChanged");
 static_assert(sizeof(RBObjectiveCoordinatorGroup_OnConcurrentCoordinatorStateChanged) == 0x000010, "Wrong size on RBObjectiveCoordinatorGroup_OnConcurrentCoordinatorStateChanged");
@@ -1525,7 +1525,7 @@ public:
 	class AActor*                                 StartSpot;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPlayerSpawnType                              SpawnType;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B1A[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A7C[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameModeBase_RespawnPlayer) == 0x000008, "Wrong alignment on RBGameModeBase_RespawnPlayer");
 static_assert(sizeof(RBGameModeBase_RespawnPlayer) == 0x000018, "Wrong size on RBGameModeBase_RespawnPlayer");
@@ -1588,7 +1588,7 @@ public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  CompletedMove;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInterrupted;                                      // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B22[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A84[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractionZoneComponent_NotifySpecialMoveCompleted) == 0x000008, "Wrong alignment on RBInteractionZoneComponent_NotifySpecialMoveCompleted");
 static_assert(sizeof(RBInteractionZoneComponent_NotifySpecialMoveCompleted) == 0x000010, "Wrong size on RBInteractionZoneComponent_NotifySpecialMoveCompleted");
@@ -1614,7 +1614,7 @@ struct RBInteractionZoneComponent_MeetRequirements final
 public:
 	const class ARBPlayer*                        Interactor;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B23[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A85[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractionZoneComponent_MeetRequirements) == 0x000008, "Wrong alignment on RBInteractionZoneComponent_MeetRequirements");
 static_assert(sizeof(RBInteractionZoneComponent_MeetRequirements) == 0x000010, "Wrong size on RBInteractionZoneComponent_MeetRequirements");
@@ -1661,7 +1661,7 @@ struct RBPlayerCondition_Blueprint_Event_EvaluateCondition final
 public:
 	class ARBPlayer*                              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B35[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A97[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerCondition_Blueprint_Event_EvaluateCondition) == 0x000008, "Wrong alignment on RBPlayerCondition_Blueprint_Event_EvaluateCondition");
 static_assert(sizeof(RBPlayerCondition_Blueprint_Event_EvaluateCondition) == 0x000010, "Wrong size on RBPlayerCondition_Blueprint_Event_EvaluateCondition");
@@ -1708,7 +1708,7 @@ struct RBContainer_BP_ForceSpawnItem final
 public:
 	TSubclassOf<class ARBPickup>                  ItemClass;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSpawnLock;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4B[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AAD[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RandomSeed;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBContainer_BP_ForceSpawnItem) == 0x000008, "Wrong alignment on RBContainer_BP_ForceSpawnItem");
@@ -1724,7 +1724,7 @@ struct RBContainer_Event_ItemAdded final
 public:
 	class ARBPickup*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4C[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AAE[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBContainerSpawnLocationComponent*     Location;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBContainer_Event_ItemAdded) == 0x000008, "Wrong alignment on RBContainer_Event_ItemAdded");
@@ -1753,7 +1753,7 @@ struct RBContainer_Event_ItemRemoved final
 public:
 	class ARBPickup*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4D[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AAF[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBContainerSpawnLocationComponent*     Location;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBContainer_Event_ItemRemoved) == 0x000008, "Wrong alignment on RBContainer_Event_ItemRemoved");
@@ -1772,7 +1772,7 @@ public:
 	struct FVector                                Out_location;                                      // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Out_direction;                                     // 0x001C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4E[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AB0[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBContainer_GetPickupInteractionLocation) == 0x000008, "Wrong alignment on RBContainer_GetPickupInteractionLocation");
 static_assert(sizeof(RBContainer_GetPickupInteractionLocation) == 0x000030, "Wrong size on RBContainer_GetPickupInteractionLocation");
@@ -1979,7 +1979,7 @@ struct RBCustomizationOption_IsAcquired final
 public:
 	const class ARBPlayerState*                   PlayerState;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B5A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ABC[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCustomizationOption_IsAcquired) == 0x000008, "Wrong alignment on RBCustomizationOption_IsAcquired");
 static_assert(sizeof(RBCustomizationOption_IsAcquired) == 0x000010, "Wrong size on RBCustomizationOption_IsAcquired");
@@ -2015,7 +2015,7 @@ struct RBCustomizationOption_IsUnlocked final
 public:
 	const class ARBPlayerState*                   PlayerState;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B5B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ABD[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCustomizationOption_IsUnlocked) == 0x000008, "Wrong alignment on RBCustomizationOption_IsUnlocked");
 static_assert(sizeof(RBCustomizationOption_IsUnlocked) == 0x000010, "Wrong size on RBCustomizationOption_IsUnlocked");
@@ -2040,15 +2040,15 @@ struct RBAIBlueprintLibrary_AttachToScriptedAnimStation final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B5F[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC1[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class ARBScriptedAnimStation*                 Station;                                           // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USkeletalMeshComponent*                 MeshTarget;                                        // 0x0030(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnorePlayers;                                    // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B60[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC2[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBAIConditionSet                      SpecificExitConditions;                            // 0x0040(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	float                                         StartDelay;                                        // 0x0050(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B61[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC3[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_AttachToScriptedAnimStation) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_AttachToScriptedAnimStation");
 static_assert(sizeof(RBAIBlueprintLibrary_AttachToScriptedAnimStation) == 0x000058, "Wrong size on RBAIBlueprintLibrary_AttachToScriptedAnimStation");
@@ -2173,7 +2173,7 @@ struct RBAIBlueprintLibrary_ForceGasGroupAttack final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Direction;                                         // 0x0008(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B62[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC4[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_ForceGasGroupAttack) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_ForceGasGroupAttack");
 static_assert(sizeof(RBAIBlueprintLibrary_ForceGasGroupAttack) == 0x000018, "Wrong size on RBAIBlueprintLibrary_ForceGasGroupAttack");
@@ -2188,7 +2188,7 @@ public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EStartleType                                  StartledType;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EStartleSpeed                                 StartledSpeed;                                     // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B63[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC5[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         WsYaw;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAIBlueprintLibrary_ForcePlayStartleAnimation) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_ForcePlayStartleAnimation");
@@ -2250,7 +2250,7 @@ struct RBAIBlueprintLibrary_GetBotByType final
 {
 public:
 	ENPCType                                      NPCType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B64[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC6[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBBot*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAIBlueprintLibrary_GetBotByType) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_GetBotByType");
@@ -2277,7 +2277,7 @@ struct RBAIBlueprintLibrary_GetBotsByType final
 {
 public:
 	ENPCType                                      NPCType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B65[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC7[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARBBot*>                         bots;                                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAIBlueprintLibrary_GetBotsByType) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_GetBotsByType");
@@ -2304,7 +2304,7 @@ struct RBAIBlueprintLibrary_GetNPCByType final
 {
 public:
 	ENPCType                                      NPCType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B66[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC8[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBNPC*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAIBlueprintLibrary_GetNPCByType) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_GetNPCByType");
@@ -2332,7 +2332,7 @@ public:
 	float                                         Radius;                                            // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ARBPawn*                                ExcludedPawn;                                      // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B67[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC9[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_GetNumberOfBotsAround) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_GetNumberOfBotsAround");
 static_assert(sizeof(RBAIBlueprintLibrary_GetNumberOfBotsAround) == 0x000020, "Wrong size on RBAIBlueprintLibrary_GetNumberOfBotsAround");
@@ -2347,13 +2347,13 @@ struct RBAIBlueprintLibrary_GetNumberOfBotsAroundInActivity final
 {
 public:
 	EAIActivity                                   Activity;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B68[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACA[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Point;                                             // 0x0004(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Radius;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B69[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACB[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPawn*                                ExcludedPawn;                                      // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B6A[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACC[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_GetNumberOfBotsAroundInActivity) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_GetNumberOfBotsAroundInActivity");
 static_assert(sizeof(RBAIBlueprintLibrary_GetNumberOfBotsAroundInActivity) == 0x000028, "Wrong size on RBAIBlueprintLibrary_GetNumberOfBotsAroundInActivity");
@@ -2370,7 +2370,7 @@ struct RBAIBlueprintLibrary_GetNumberOfBotsByType final
 public:
 	ENPCType                                      NPCType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENPCFlavor                                    NPCFlavor;                                         // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B6B[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACD[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAIBlueprintLibrary_GetNumberOfBotsByType) == 0x000004, "Wrong alignment on RBAIBlueprintLibrary_GetNumberOfBotsByType");
@@ -2398,7 +2398,7 @@ public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ARBMonsterCloset*                       Closet;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPriorityOverActiveBehaviors;                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B6C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_GoRetireInCloset) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_GoRetireInCloset");
 static_assert(sizeof(RBAIBlueprintLibrary_GoRetireInCloset) == 0x000018, "Wrong size on RBAIBlueprintLibrary_GoRetireInCloset");
@@ -2414,7 +2414,7 @@ public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 AmbientLocation;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B6D[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACF[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0018(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAIBlueprintLibrary_GotoAmbientMarker) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_GotoAmbientMarker");
@@ -2444,15 +2444,15 @@ struct RBAIBlueprintLibrary_GotoLocation final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B6E[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD0[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class AActor*                                 Destination;                                       // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OverrideSpeed;                                     // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTurnToRotation;                                   // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B6F[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD1[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DistanceBuffer;                                    // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForced;                                           // 0x003C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B70[0x3];                                     // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD2[0x3];                                     // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_GotoLocation) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_GotoLocation");
 static_assert(sizeof(RBAIBlueprintLibrary_GotoLocation) == 0x000040, "Wrong size on RBAIBlueprintLibrary_GotoLocation");
@@ -2485,7 +2485,7 @@ struct RBAIBlueprintLibrary_IgnoreAllPlayers final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bBotIgnoreAllPlayers;                              // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B71[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_IgnoreAllPlayers) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_IgnoreAllPlayers");
 static_assert(sizeof(RBAIBlueprintLibrary_IgnoreAllPlayers) == 0x000010, "Wrong size on RBAIBlueprintLibrary_IgnoreAllPlayers");
@@ -2499,10 +2499,10 @@ struct RBAIBlueprintLibrary_Investigate final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B72[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD4[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bAware;                                            // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B73[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD5[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_Investigate) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_Investigate");
 static_assert(sizeof(RBAIBlueprintLibrary_Investigate) == 0x000030, "Wrong size on RBAIBlueprintLibrary_Investigate");
@@ -2518,12 +2518,12 @@ struct RBAIBlueprintLibrary_InvestigateLocation final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B74[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD6[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                InvestigationLoc;                                  // 0x0028(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAware;                                            // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bContinueInvestigatingWhenDone;                    // 0x0035(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B75[0x2];                                     // 0x0036(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD7[0x2];                                     // 0x0036(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_InvestigateLocation) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_InvestigateLocation");
 static_assert(sizeof(RBAIBlueprintLibrary_InvestigateLocation) == 0x000038, "Wrong size on RBAIBlueprintLibrary_InvestigateLocation");
@@ -2541,12 +2541,12 @@ struct RBAIBlueprintLibrary_InvestigatePoint final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B76[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD8[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class AActor*                                 InvestigationPoint;                                // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAware;                                            // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bContinueInvestigatingWhenDone;                    // 0x0031(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B77[0x6];                                     // 0x0032(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD9[0x6];                                     // 0x0032(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_InvestigatePoint) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_InvestigatePoint");
 static_assert(sizeof(RBAIBlueprintLibrary_InvestigatePoint) == 0x000038, "Wrong size on RBAIBlueprintLibrary_InvestigatePoint");
@@ -2564,16 +2564,16 @@ struct RBAIBlueprintLibrary_InvestigatePoints final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B78[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADA[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<class AActor*>                         PointList;                                         // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	EInvestigationPointSelectionMode              SelectionMode;                                     // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAware;                                            // 0x0039(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bContinueInvestigatingWhenDone;                    // 0x003A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B79[0x1];                                     // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADB[0x1];                                     // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MaxNumberOfPoints;                                 // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOnlySpecifiedPoints;                              // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7A[0x7];                                     // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADC[0x7];                                     // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_InvestigatePoints) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_InvestigatePoints");
 static_assert(sizeof(RBAIBlueprintLibrary_InvestigatePoints) == 0x000048, "Wrong size on RBAIBlueprintLibrary_InvestigatePoints");
@@ -2644,7 +2644,7 @@ struct RBAIBlueprintLibrary_PlayContextualVO final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOContext                                    Context;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADD[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_PlayContextualVO) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_PlayContextualVO");
 static_assert(sizeof(RBAIBlueprintLibrary_PlayContextualVO) == 0x000010, "Wrong size on RBAIBlueprintLibrary_PlayContextualVO");
@@ -2658,10 +2658,10 @@ struct RBAIBlueprintLibrary_PlayHitReaction final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENPCHitReactionType                           ReactionType;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7C[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADE[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ImpactSourceLocation;                              // 0x000C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPlayEffects;                                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADF[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_PlayHitReaction) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_PlayHitReaction");
 static_assert(sizeof(RBAIBlueprintLibrary_PlayHitReaction) == 0x000020, "Wrong size on RBAIBlueprintLibrary_PlayHitReaction");
@@ -2677,11 +2677,11 @@ struct RBAIBlueprintLibrary_PlayLoopingIdle final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7E[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE0[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class UAnimSequence*                          IdleAnim;                                          // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnorePlayers;                                    // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7F[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE1[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBAIConditionSet                      SpecificExitConditions;                            // 0x0038(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	class UAnimSequence*                          SpecificExitAnim;                                  // 0x0048(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -2703,7 +2703,7 @@ public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          AudioEvent;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOPriority                                   VOPriority;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B80[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE2[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_PlayScriptedVO) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_PlayScriptedVO");
 static_assert(sizeof(RBAIBlueprintLibrary_PlayScriptedVO) == 0x000018, "Wrong size on RBAIBlueprintLibrary_PlayScriptedVO");
@@ -2718,7 +2718,7 @@ struct RBAIBlueprintLibrary_PlaySingleShotAnim final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B81[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE3[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class UAnimSequence*                          AnimSeq;                                           // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -2749,10 +2749,10 @@ public:
 	class AActor*                                 Destination;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OverrideSpeed;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTurnToRotation;                                   // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B82[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE4[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DistanceBuffer;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForced;                                           // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B83[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE5[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_RequestGoto) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_RequestGoto");
 static_assert(sizeof(RBAIBlueprintLibrary_RequestGoto) == 0x000020, "Wrong size on RBAIBlueprintLibrary_RequestGoto");
@@ -2783,7 +2783,7 @@ struct RBAIBlueprintLibrary_RequestInvestigate final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAware;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B84[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_RequestInvestigate) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_RequestInvestigate");
 static_assert(sizeof(RBAIBlueprintLibrary_RequestInvestigate) == 0x000010, "Wrong size on RBAIBlueprintLibrary_RequestInvestigate");
@@ -2799,7 +2799,7 @@ public:
 	struct FVector                                InvestigationLoc;                                  // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAware;                                            // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bContinueInvestigatingWhenDone;                    // 0x0015(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B85[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE7[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_RequestInvestigateLocation) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_RequestInvestigateLocation");
 static_assert(sizeof(RBAIBlueprintLibrary_RequestInvestigateLocation) == 0x000018, "Wrong size on RBAIBlueprintLibrary_RequestInvestigateLocation");
@@ -2817,7 +2817,7 @@ public:
 	class AActor*                                 InvestigationPoint;                                // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAware;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bContinueInvestigatingWhenDone;                    // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B86[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE8[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_RequestInvestigatePoint) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_RequestInvestigatePoint");
 static_assert(sizeof(RBAIBlueprintLibrary_RequestInvestigatePoint) == 0x000018, "Wrong size on RBAIBlueprintLibrary_RequestInvestigatePoint");
@@ -2836,10 +2836,10 @@ public:
 	EInvestigationPointSelectionMode              SelectionMode;                                     // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAware;                                            // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bContinueInvestigatingWhenDone;                    // 0x001A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B87[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE9[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MaxNumberOfPoints;                                 // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOnlySpecifiedPoints;                              // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B88[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AEA[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_RequestInvestigatePoints) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_RequestInvestigatePoints");
 static_assert(sizeof(RBAIBlueprintLibrary_RequestInvestigatePoints) == 0x000028, "Wrong size on RBAIBlueprintLibrary_RequestInvestigatePoints");
@@ -2859,10 +2859,10 @@ public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class ARBWaypoint*>                    WaypointList;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	EPatrolWaypointSelectionMode                  Mode;                                              // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B89[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AEB[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         OverrideSpeed;                                     // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForced;                                           // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B8A[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AEC[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_RequestPatrol) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_RequestPatrol");
 static_assert(sizeof(RBAIBlueprintLibrary_RequestPatrol) == 0x000028, "Wrong size on RBAIBlueprintLibrary_RequestPatrol");
@@ -2912,7 +2912,7 @@ struct RBAIBlueprintLibrary_SeekRetirement final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPriorityOverActiveBehaviors;                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B8B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AED[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_SeekRetirement) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_SeekRetirement");
 static_assert(sizeof(RBAIBlueprintLibrary_SeekRetirement) == 0x000010, "Wrong size on RBAIBlueprintLibrary_SeekRetirement");
@@ -2930,7 +2930,7 @@ public:
 	struct FAIConfigData                          ConfigOverrides;                                   // 0x0020(0x137C)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bSetAsDefault;                                     // 0x139C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bResetAwarenessState;                              // 0x139D(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B8C[0x2];                                     // 0x139E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AEE[0x2];                                     // 0x139E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_SetAIConfig) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_SetAIConfig");
 static_assert(sizeof(RBAIBlueprintLibrary_SetAIConfig) == 0x0013A0, "Wrong size on RBAIBlueprintLibrary_SetAIConfig");
@@ -2963,7 +2963,7 @@ public:
 	struct FRBAIConditionSet                      ConditionSet;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FAIConfigData                          ConfigOverrides;                                   // 0x0018(0x137C)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bStayActivated;                                    // 0x1394(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B8D[0x3];                                     // 0x1395(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AEF[0x3];                                     // 0x1395(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_SetConditionalAIConfig) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_SetConditionalAIConfig");
 static_assert(sizeof(RBAIBlueprintLibrary_SetConditionalAIConfig) == 0x001398, "Wrong size on RBAIBlueprintLibrary_SetConditionalAIConfig");
@@ -2980,7 +2980,7 @@ public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAnimSequence*                          AnimToPlay;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AnimTime;                                          // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B8E[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF0[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_SetFixedAnimPose) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_SetFixedAnimPose");
 static_assert(sizeof(RBAIBlueprintLibrary_SetFixedAnimPose) == 0x000018, "Wrong size on RBAIBlueprintLibrary_SetFixedAnimPose");
@@ -2997,7 +2997,7 @@ public:
 	class AActor*                                 GuardAnchor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRBAIConditionSet                      ExitConditions;                                    // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          bCanAttack;                                        // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B8F[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF1[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LateralBlockingDistance;                           // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAIBlueprintLibrary_SetGuard) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_SetGuard");
@@ -3135,7 +3135,7 @@ public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URBHidespotComponent*                   Hidespot;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bImmediate;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B90[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF2[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_SetupAmbush) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_SetupAmbush");
 static_assert(sizeof(RBAIBlueprintLibrary_SetupAmbush) == 0x000018, "Wrong size on RBAIBlueprintLibrary_SetupAmbush");
@@ -3164,7 +3164,7 @@ public:
 	TSubclassOf<class ARBNPC>                     PawnClass;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URBAIConfig*                            ConfigAsset;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAIConfigData                          ConfigOverrides;                                   // 0x0010(0x137C)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B91[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF3[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class URBPartialAIConfig*>             AdditionalConfigs;                                 // 0x1390(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class URBVOMapping*                           VOMappingOverride;                                 // 0x13A0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 SpawnPoint;                                        // 0x13A8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3191,7 +3191,7 @@ struct RBAIBlueprintLibrary_SpawnAIArchetype final
 public:
 	ENPCType                                      NPCType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENPCFlavor                                    Flavor;                                            // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B92[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF4[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAIConfigData                          ConfigOverrides;                                   // 0x0004(0x137C)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<class URBPartialAIConfig*>             AdditionalConfigs;                                 // 0x1380(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class URBVOMapping*                           VOMappingOverride;                                 // 0x1390(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3220,7 +3220,7 @@ public:
 	TSubclassOf<class ARBNPC>                     PawnClass;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URBAIConfig*                            ConfigAsset;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAIConfigData                          ConfigOverrides;                                   // 0x0010(0x137C)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B93[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF5[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class URBPartialAIConfig*>             AdditionalConfigs;                                 // 0x1390(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class URBVOMapping*                           VOMappingOverride;                                 // 0x13A0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 SpawnPoint;                                        // 0x13A8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3283,14 +3283,14 @@ struct RBAIBlueprintLibrary_StartPatrol final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B94[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF6[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<class ARBWaypoint*>                    WaypointList;                                      // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	EPatrolWaypointSelectionMode                  Mode;                                              // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B95[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF7[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         OverrideSpeed;                                     // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForced;                                           // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B96[0x7];                                     // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF8[0x7];                                     // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_StartPatrol) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_StartPatrol");
 static_assert(sizeof(RBAIBlueprintLibrary_StartPatrol) == 0x000048, "Wrong size on RBAIBlueprintLibrary_StartPatrol");
@@ -3309,11 +3309,11 @@ struct RBAIBlueprintLibrary_StartPatrolInvestigate final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B97[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AF9[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<class AVolume*>                        RestrictedVolumes;                                 // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bSetLeashWithVolumes;                              // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B98[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AFA[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_StartPatrolInvestigate) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_StartPatrolInvestigate");
 static_assert(sizeof(RBAIBlueprintLibrary_StartPatrolInvestigate) == 0x000040, "Wrong size on RBAIBlueprintLibrary_StartPatrolInvestigate");
@@ -3330,11 +3330,11 @@ struct RBAIBlueprintLibrary_StartPatrolInvestigateSoft final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B99[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AFB[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<TSoftObjectPtr<class AVolume>>         RestrictedVolumes;                                 // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                          bSetLeashWithVolumes;                              // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B9A[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AFC[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_StartPatrolInvestigateSoft) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_StartPatrolInvestigateSoft");
 static_assert(sizeof(RBAIBlueprintLibrary_StartPatrolInvestigateSoft) == 0x000040, "Wrong size on RBAIBlueprintLibrary_StartPatrolInvestigateSoft");
@@ -3351,11 +3351,11 @@ struct RBAIBlueprintLibrary_StartPatrolInvestigateVolumeGroup final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAICommandResult                              OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B9B[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AFD[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<TSoftObjectPtr<class ARBVolumeGroup>>  RestrictedVolumeGroups;                            // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                          bSetLeashWithVolumes;                              // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B9C[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AFE[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_StartPatrolInvestigateVolumeGroup) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_StartPatrolInvestigateVolumeGroup");
 static_assert(sizeof(RBAIBlueprintLibrary_StartPatrolInvestigateVolumeGroup) == 0x000040, "Wrong size on RBAIBlueprintLibrary_StartPatrolInvestigateVolumeGroup");
@@ -3372,7 +3372,7 @@ struct RBAIBlueprintLibrary_TestAIConditions final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAIBoolCommandResult                          OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B9D[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AFF[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBAIConditionSet                      ConditionSet;                                      // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAIBlueprintLibrary_TestAIConditions) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_TestAIConditions");
@@ -3387,7 +3387,7 @@ struct RBAIBlueprintLibrary_TriggerCustomHighPriorityStimulus final
 {
 public:
 	struct FVector                                NoiseLocation;                                     // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B9E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B00[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Source;                                            // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FullLoudnessRange;                                 // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxBotDistance;                                    // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3420,7 +3420,7 @@ struct RBAIBlueprintLibrary_TriggerDoubleSidedStimulus final
 {
 public:
 	ETriggeringStimulusType                       StimulusType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B9F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B01[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 SourceActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                baseLocation;                                      // 0x0010(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OffsetWS;                                          // 0x001C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3438,7 +3438,7 @@ struct RBAIBlueprintLibrary_TriggerDoubleSidedStimulusFromPlayer final
 {
 public:
 	ETriggeringStimulusType                       StimulusType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA0[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B02[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              Player;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                baseLocation;                                      // 0x0010(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OffsetWS;                                          // 0x001C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3456,7 +3456,7 @@ struct RBAIBlueprintLibrary_TriggerStimulus final
 {
 public:
 	ETriggeringStimulusType                       StimulusType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA1[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B03[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0004(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 SourceActor;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3472,7 +3472,7 @@ struct RBAIBlueprintLibrary_TriggerStimulusFromPlayer final
 {
 public:
 	ETriggeringStimulusType                       StimulusType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA2[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B04[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              Player;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAIBlueprintLibrary_TriggerStimulusFromPlayer) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_TriggerStimulusFromPlayer");
@@ -3487,7 +3487,7 @@ struct RBAIBlueprintLibrary_TryPlayAttackType final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAttackType                                   AttackType;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA3[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B05[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MovementSpeed;                                     // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 TargetActor;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3520,7 +3520,7 @@ struct RBAIBlueprintLibrary_WakeUp final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bScream;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA4[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B06[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_WakeUp) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_WakeUp");
 static_assert(sizeof(RBAIBlueprintLibrary_WakeUp) == 0x000010, "Wrong size on RBAIBlueprintLibrary_WakeUp");
@@ -3538,7 +3538,7 @@ public:
 	class ARBZoneDefenseMarker*                   DefensiveSpline;                                   // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRBAIConditionSet                      ExitConditions;                                    // 0x0028(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          bCanAttack;                                        // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA5[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B07[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAIBlueprintLibrary_ZoneDefense) == 0x000008, "Wrong alignment on RBAIBlueprintLibrary_ZoneDefense");
 static_assert(sizeof(RBAIBlueprintLibrary_ZoneDefense) == 0x000040, "Wrong size on RBAIBlueprintLibrary_ZoneDefense");
@@ -3555,7 +3555,7 @@ struct RBPlayerStatsConfig_GetPlayerStatConfig final
 {
 public:
 	EPlayerStat                                   PlayerStat;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BAA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B0C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBPlayerStatConfig                    ReturnValue;                                       // 0x0008(0x0060)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerStatsConfig_GetPlayerStatConfig) == 0x000008, "Wrong alignment on RBPlayerStatsConfig_GetPlayerStatConfig");
@@ -3660,7 +3660,7 @@ struct RBInteractiblePanelComponent_GetInteractionProgressRatio final
 public:
 	const class ARBPlayer*                        Player;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BC2[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B24[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractiblePanelComponent_GetInteractionProgressRatio) == 0x000008, "Wrong alignment on RBInteractiblePanelComponent_GetInteractionProgressRatio");
 static_assert(sizeof(RBInteractiblePanelComponent_GetInteractionProgressRatio) == 0x000010, "Wrong size on RBInteractiblePanelComponent_GetInteractionProgressRatio");
@@ -3839,10 +3839,10 @@ struct RBAnnouncer_Multicast_PlayVO final
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOBehavior                                   Behavior;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BC8[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B2A[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PrePlayQueueDelay;                                 // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        RandomSeed;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BC9[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B2B[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAnnouncer_Multicast_PlayVO) == 0x000008, "Wrong alignment on RBAnnouncer_Multicast_PlayVO");
 static_assert(sizeof(RBAnnouncer_Multicast_PlayVO) == 0x000018, "Wrong size on RBAnnouncer_Multicast_PlayVO");
@@ -3857,7 +3857,7 @@ struct RBInteractible_BP_GetInteractionMeshRelativeTransform final
 {
 public:
 	TSubclassOf<class ARBInteractible>            InteractibleClass;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BD6[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B38[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0010(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBInteractible_BP_GetInteractionMeshRelativeTransform) == 0x000010, "Wrong alignment on RBInteractible_BP_GetInteractionMeshRelativeTransform");
@@ -3961,7 +3961,7 @@ public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInterrupted;                                      // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BD7[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B39[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractible_NotifySpecialMoveCompletedEvent) == 0x000008, "Wrong alignment on RBInteractible_NotifySpecialMoveCompletedEvent");
 static_assert(sizeof(RBInteractible_NotifySpecialMoveCompletedEvent) == 0x000010, "Wrong size on RBInteractible_NotifySpecialMoveCompletedEvent");
@@ -3976,7 +3976,7 @@ struct RBInteractible_NotifySpecialMoveStartedEvent final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BD8[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B3A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractible_NotifySpecialMoveStartedEvent) == 0x000008, "Wrong alignment on RBInteractible_NotifySpecialMoveStartedEvent");
 static_assert(sizeof(RBInteractible_NotifySpecialMoveStartedEvent) == 0x000010, "Wrong size on RBInteractible_NotifySpecialMoveStartedEvent");
@@ -4012,7 +4012,7 @@ struct RBInteractible_GetAnimForward final
 public:
 	const class ARBPawn*                          InteractorPawn;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BD9[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B3B[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBInteractible_GetAnimForward) == 0x000008, "Wrong alignment on RBInteractible_GetAnimForward");
@@ -4028,7 +4028,7 @@ struct RBInteractible_GetAnimLocation final
 public:
 	const class ARBPawn*                          InteractorPawn;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BDA[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B3C[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBInteractible_GetAnimLocation) == 0x000008, "Wrong alignment on RBInteractible_GetAnimLocation");
@@ -4077,7 +4077,7 @@ struct RBInteractible_ShouldAlignToGround final
 public:
 	const class ARBPawn*                          InteractorPawn;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BDB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B3D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractible_ShouldAlignToGround) == 0x000008, "Wrong alignment on RBInteractible_ShouldAlignToGround");
 static_assert(sizeof(RBInteractible_ShouldAlignToGround) == 0x000010, "Wrong size on RBInteractible_ShouldAlignToGround");
@@ -4239,7 +4239,7 @@ public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Progress;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsPositiveProgress;                                // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BE5[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B47[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ObjectiveText;                                     // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBObjectiveWidgetBase_Event_ProgressChanged) == 0x000008, "Wrong alignment on RBObjectiveWidgetBase_Event_ProgressChanged");
@@ -4257,7 +4257,7 @@ public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsProgressionInProgress;                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsCompletedByLocalPlayer;                          // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BE6[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B48[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBObjectiveWidgetBase_OnCompletionInProgressChanged) == 0x000008, "Wrong alignment on RBObjectiveWidgetBase_OnCompletionInProgressChanged");
 static_assert(sizeof(RBObjectiveWidgetBase_OnCompletionInProgressChanged) == 0x000010, "Wrong size on RBObjectiveWidgetBase_OnCompletionInProgressChanged");
@@ -4272,7 +4272,7 @@ struct RBObjectiveWidgetBase_OnObjectiveCoordinatorStateChanged final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EObjectiveCoordinatorState                    State;                                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BE7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B49[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBObjectiveWidgetBase_OnObjectiveCoordinatorStateChanged) == 0x000008, "Wrong alignment on RBObjectiveWidgetBase_OnObjectiveCoordinatorStateChanged");
 static_assert(sizeof(RBObjectiveWidgetBase_OnObjectiveCoordinatorStateChanged) == 0x000010, "Wrong size on RBObjectiveWidgetBase_OnObjectiveCoordinatorStateChanged");
@@ -4312,7 +4312,7 @@ struct RBAICondition_Blueprint_Event_EvaluateCondition final
 public:
 	class ARBBot*                                 bot;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BEE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B50[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAICondition_Blueprint_Event_EvaluateCondition) == 0x000008, "Wrong alignment on RBAICondition_Blueprint_Event_EvaluateCondition");
 static_assert(sizeof(RBAICondition_Blueprint_Event_EvaluateCondition) == 0x000010, "Wrong size on RBAICondition_Blueprint_Event_EvaluateCondition");
@@ -4460,7 +4460,7 @@ struct RBOperatable_Multicast_ForceState final
 public:
 	float                                         OldProgression;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForcedState;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BFA[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B5C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBOperatable_Multicast_ForceState) == 0x000004, "Wrong alignment on RBOperatable_Multicast_ForceState");
 static_assert(sizeof(RBOperatable_Multicast_ForceState) == 0x000008, "Wrong size on RBOperatable_Multicast_ForceState");
@@ -4473,7 +4473,7 @@ struct RBOperatable_Multicast_OnCompletedOperation final
 {
 public:
 	float                                         OldProgression;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BFB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B5D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARBPawn*>                        CompletedByPawnListValue;                          // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBOperatable_Multicast_OnCompletedOperation) == 0x000008, "Wrong alignment on RBOperatable_Multicast_OnCompletedOperation");
@@ -4488,7 +4488,7 @@ struct RBOperatable_Multicast_OnStopInteractOperatable final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Server_CurrentOperateOnStop;                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BFC[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B5E[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBOperatable_Multicast_OnStopInteractOperatable) == 0x000008, "Wrong alignment on RBOperatable_Multicast_OnStopInteractOperatable");
 static_assert(sizeof(RBOperatable_Multicast_OnStopInteractOperatable) == 0x000010, "Wrong size on RBOperatable_Multicast_OnStopInteractOperatable");
@@ -4513,7 +4513,7 @@ struct RBOperatable_BP_CanOperateWith final
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BFD[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B5F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBOperatable_BP_CanOperateWith) == 0x000008, "Wrong alignment on RBOperatable_BP_CanOperateWith");
 static_assert(sizeof(RBOperatable_BP_CanOperateWith) == 0x000010, "Wrong size on RBOperatable_BP_CanOperateWith");
@@ -4538,7 +4538,7 @@ struct RBOperatable_DefaultTestPhysicsClearance final
 public:
 	const class ARBPawn*                          InteractorPawn;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BFE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B60[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBOperatable_DefaultTestPhysicsClearance) == 0x000008, "Wrong alignment on RBOperatable_DefaultTestPhysicsClearance");
 static_assert(sizeof(RBOperatable_DefaultTestPhysicsClearance) == 0x000010, "Wrong size on RBOperatable_DefaultTestPhysicsClearance");
@@ -4574,10 +4574,10 @@ struct RBDoor_ApplyDoorframeOffsetToTransform final
 public:
 	struct FTransform                             Transform;                                         // 0x0000(0x0030)(Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          IsAddonInFront;                                    // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C19[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B7B[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                OffsetDirection;                                   // 0x0034(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bApplySideOffset;                                  // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C1A[0xF];                                     // 0x0041(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B7C[0xF];                                     // 0x0041(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0050(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBDoor_ApplyDoorframeOffsetToTransform) == 0x000010, "Wrong alignment on RBDoor_ApplyDoorframeOffsetToTransform");
@@ -4619,7 +4619,7 @@ public:
 	bool                                          bSuccess;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bApplyVisualDoorDamage;                            // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBashDoorType                                 bashType;                                          // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C1B[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B7D[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDoor_BP_OnDoorBashEvent) == 0x000008, "Wrong alignment on RBDoor_BP_OnDoorBashEvent");
 static_assert(sizeof(RBDoor_BP_OnDoorBashEvent) == 0x000010, "Wrong size on RBDoor_BP_OnDoorBashEvent");
@@ -4682,7 +4682,7 @@ struct RBDoor_BP_Open final
 {
 public:
 	bool                                          bFrontSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C1C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B7E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SpeedRatio;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBDoor_BP_Open) == 0x000004, "Wrong alignment on RBDoor_BP_Open");
@@ -4708,7 +4708,7 @@ struct RBDoor_BP_SetDynamicReplacement final
 public:
 	TSubclassOf<class AActor>                     ReplacementClass;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShouldRemoveDoorFrame;                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C1D[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B7F[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RandomID;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4727,7 +4727,7 @@ public:
 	TSubclassOf<class AActor>                     ReplacementClass;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShouldRemoveDoorFrame;                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInverseDirection;                                 // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C1E[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B80[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBDoor_BP_SetDynamicReplacementFixed) == 0x000008, "Wrong alignment on RBDoor_BP_SetDynamicReplacementFixed");
@@ -4898,7 +4898,7 @@ struct RBDoor_SlamClosed_Server final
 {
 public:
 	ERepulsionDirectionFlags                      Direction;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C1F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B81[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARBPawn*>                        SpecificPawnsPushed;                               // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBDoor_SlamClosed_Server) == 0x000008, "Wrong alignment on RBDoor_SlamClosed_Server");
@@ -4935,7 +4935,7 @@ struct RBDoor_BP_IsActorInFront final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C20[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B82[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDoor_BP_IsActorInFront) == 0x000008, "Wrong alignment on RBDoor_BP_IsActorInFront");
 static_assert(sizeof(RBDoor_BP_IsActorInFront) == 0x000010, "Wrong size on RBDoor_BP_IsActorInFront");
@@ -5105,7 +5105,7 @@ public:
 	struct FHitResult                             HitResult;                                         // 0x0008(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          OutIsEnabled;                                      // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0091(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C2B[0x6];                                     // 0x0092(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8D[0x6];                                     // 0x0092(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPingableObject_GetPingEnabled) == 0x000008, "Wrong alignment on RBPingableObject_GetPingEnabled");
 static_assert(sizeof(RBPingableObject_GetPingEnabled) == 0x000098, "Wrong size on RBPingableObject_GetPingEnabled");
@@ -5121,7 +5121,7 @@ struct RBPingableObject_GetPingItemName final
 public:
 	class FText                                   OutName;                                           // 0x0000(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C2C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPingableObject_GetPingItemName) == 0x000008, "Wrong alignment on RBPingableObject_GetPingItemName");
 static_assert(sizeof(RBPingableObject_GetPingItemName) == 0x000020, "Wrong size on RBPingableObject_GetPingItemName");
@@ -5137,7 +5137,7 @@ public:
 	struct FHitResult                             HitResult;                                         // 0x0008(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FPlayerPingData                        OutData;                                           // 0x0090(0x0028)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C2D[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8F[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPingableObject_GetPlayerPingData) == 0x000008, "Wrong alignment on RBPingableObject_GetPlayerPingData");
 static_assert(sizeof(RBPingableObject_GetPlayerPingData) == 0x0000C0, "Wrong size on RBPingableObject_GetPlayerPingData");
@@ -5155,7 +5155,7 @@ public:
 	struct FHitResult                             HitResult;                                         // 0x0008(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FVector                                OutLocation;                                       // 0x0090(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x009C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C2E[0x3];                                     // 0x009D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B90[0x3];                                     // 0x009D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPingableObject_GetPlayerPingWorldLocation) == 0x000008, "Wrong alignment on RBPingableObject_GetPlayerPingWorldLocation");
 static_assert(sizeof(RBPingableObject_GetPlayerPingWorldLocation) == 0x0000A0, "Wrong size on RBPingableObject_GetPlayerPingWorldLocation");
@@ -5341,7 +5341,7 @@ struct RBPlayerCell_PreviewCustomization final
 {
 public:
 	ECustomizationMenuCategory                    Slot;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C44[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BA6[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPlayerCellItemDefinition*            ItemDefinition;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCell_PreviewCustomization) == 0x000008, "Wrong alignment on RBPlayerCell_PreviewCustomization");
@@ -5545,7 +5545,7 @@ public:
 	float                                         OldProgress;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CurrentProgress;                                   // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSnap;                                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C4B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BAD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTriggerable_Event_OnOperatableProgressChanged) == 0x000008, "Wrong alignment on RBTriggerable_Event_OnOperatableProgressChanged");
 static_assert(sizeof(RBTriggerable_Event_OnOperatableProgressChanged) == 0x000018, "Wrong size on RBTriggerable_Event_OnOperatableProgressChanged");
@@ -5740,7 +5740,7 @@ struct RBBasePushable_GetLedgeMarkerClosestTo final
 {
 public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C5A[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BBC[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBLedgeMarker*                         ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBasePushable_GetLedgeMarkerClosestTo) == 0x000008, "Wrong alignment on RBBasePushable_GetLedgeMarkerClosestTo");
@@ -5963,7 +5963,7 @@ struct RBBadgesTabWidget_CanClaimBadgeReward final
 public:
 	class FName                                   BadgeId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C74[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BD6[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBadgesTabWidget_CanClaimBadgeReward) == 0x000004, "Wrong alignment on RBBadgesTabWidget_CanClaimBadgeReward");
 static_assert(sizeof(RBBadgesTabWidget_CanClaimBadgeReward) == 0x00000C, "Wrong size on RBBadgesTabWidget_CanClaimBadgeReward");
@@ -6028,7 +6028,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C7A[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BDC[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBHurtVolume_OnPawnOverlap) == 0x000008, "Wrong alignment on RBHurtVolume_OnPawnOverlap");
@@ -6164,11 +6164,11 @@ struct RBInteractable_EndInteraction final
 {
 public:
 	bool                                          bPredicted;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C88[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BEA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPawn*                                InteractorPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInterrupted;                                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C89[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BEB[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_EndInteraction) == 0x000008, "Wrong alignment on RBInteractable_EndInteraction");
 static_assert(sizeof(RBInteractable_EndInteraction) == 0x000018, "Wrong size on RBInteractable_EndInteraction");
@@ -6184,7 +6184,7 @@ struct RBInteractable_OnPawnDoSpecialMoveAction final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C8A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BEC[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_OnPawnDoSpecialMoveAction) == 0x000008, "Wrong alignment on RBInteractable_OnPawnDoSpecialMoveAction");
 static_assert(sizeof(RBInteractable_OnPawnDoSpecialMoveAction) == 0x000010, "Wrong size on RBInteractable_OnPawnDoSpecialMoveAction");
@@ -6198,7 +6198,7 @@ struct RBInteractable_OnPawnPlaySpecialMoveAnimation final
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C8B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BED[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_OnPawnPlaySpecialMoveAnimation) == 0x000008, "Wrong alignment on RBInteractable_OnPawnPlaySpecialMoveAnimation");
 static_assert(sizeof(RBInteractable_OnPawnPlaySpecialMoveAnimation) == 0x000010, "Wrong size on RBInteractable_OnPawnPlaySpecialMoveAnimation");
@@ -6213,7 +6213,7 @@ public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInterrupted;                                      // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C8C[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BEE[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_OnPawnSpecialMoveCompleted) == 0x000008, "Wrong alignment on RBInteractable_OnPawnSpecialMoveCompleted");
 static_assert(sizeof(RBInteractable_OnPawnSpecialMoveCompleted) == 0x000010, "Wrong size on RBInteractable_OnPawnSpecialMoveCompleted");
@@ -6228,7 +6228,7 @@ struct RBInteractable_OnPawnSpecialMoveStarted final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C8D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BEF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_OnPawnSpecialMoveStarted) == 0x000008, "Wrong alignment on RBInteractable_OnPawnSpecialMoveStarted");
 static_assert(sizeof(RBInteractable_OnPawnSpecialMoveStarted) == 0x000010, "Wrong size on RBInteractable_OnPawnSpecialMoveStarted");
@@ -6243,7 +6243,7 @@ public:
 	class ARBPawn*                                InteractorPawn;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C8E[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BF0[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_PlaySpecialMoveAnimation) == 0x000008, "Wrong alignment on RBInteractable_PlaySpecialMoveAnimation");
 static_assert(sizeof(RBInteractable_PlaySpecialMoveAnimation) == 0x000010, "Wrong size on RBInteractable_PlaySpecialMoveAnimation");
@@ -6273,7 +6273,7 @@ struct RBInteractable_StartInteraction final
 public:
 	class ARBPawn*                                InteractorPawn;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C8F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BF1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_StartInteraction) == 0x000008, "Wrong alignment on RBInteractable_StartInteraction");
 static_assert(sizeof(RBInteractable_StartInteraction) == 0x000010, "Wrong size on RBInteractable_StartInteraction");
@@ -6287,11 +6287,11 @@ struct RBInteractable_GetInteractionPawnLocation final
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C90[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BF2[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                OutLocation;                                       // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OutDirection;                                      // 0x0018(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C91[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BF3[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_GetInteractionPawnLocation) == 0x000008, "Wrong alignment on RBInteractable_GetInteractionPawnLocation");
 static_assert(sizeof(RBInteractable_GetInteractionPawnLocation) == 0x000028, "Wrong size on RBInteractable_GetInteractionPawnLocation");
@@ -6308,7 +6308,7 @@ struct RBInteractable_IsInteractionInputTriggered final
 public:
 	const class ARBPlayer*                        Interactor;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C92[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BF4[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_IsInteractionInputTriggered) == 0x000008, "Wrong alignment on RBInteractable_IsInteractionInputTriggered");
 static_assert(sizeof(RBInteractable_IsInteractionInputTriggered) == 0x000010, "Wrong size on RBInteractable_IsInteractionInputTriggered");
@@ -6322,7 +6322,7 @@ struct RBInteractable_IsInteractionPossible final
 public:
 	const class ARBPawn*                          InteractorPawn;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C93[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BF5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_IsInteractionPossible) == 0x000008, "Wrong alignment on RBInteractable_IsInteractionPossible");
 static_assert(sizeof(RBInteractable_IsInteractionPossible) == 0x000010, "Wrong size on RBInteractable_IsInteractionPossible");
@@ -6336,7 +6336,7 @@ struct RBInteractable_TestPhysicsClearance final
 public:
 	const class ARBPawn*                          InteractorPawn;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C94[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BF6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_TestPhysicsClearance) == 0x000008, "Wrong alignment on RBInteractable_TestPhysicsClearance");
 static_assert(sizeof(RBInteractable_TestPhysicsClearance) == 0x000010, "Wrong size on RBInteractable_TestPhysicsClearance");
@@ -6351,7 +6351,7 @@ public:
 	const class ARBPlayer*                        Player;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                InteractionLocation;                               // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C95[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BF7[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBInteractable_ValidateInteractionLocation) == 0x000008, "Wrong alignment on RBInteractable_ValidateInteractionLocation");
 static_assert(sizeof(RBInteractable_ValidateInteractionLocation) == 0x000018, "Wrong size on RBInteractable_ValidateInteractionLocation");
@@ -6410,7 +6410,7 @@ struct RBQuestGiver_GetNextStorylineVO final
 public:
 	int32                                         LevelPlayed;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFallbackVO;                                     // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C99[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BFB[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FeatureSwitchPlayed;                               // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -6428,7 +6428,7 @@ struct RBQuestGiver_OnVOEnded final
 public:
 	class AActor*                                 RbTalker;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayingId;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C9A[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BFC[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBQuestGiver_OnVOEnded) == 0x000008, "Wrong alignment on RBQuestGiver_OnVOEnded");
 static_assert(sizeof(RBQuestGiver_OnVOEnded) == 0x000010, "Wrong size on RBQuestGiver_OnVOEnded");
@@ -6443,7 +6443,7 @@ public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOContext                                    VOContext;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOPriority                                   VOPriority;                                        // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C9B[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BFD[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBQuestGiver_PlayAkEvent) == 0x000008, "Wrong alignment on RBQuestGiver_PlayAkEvent");
@@ -6508,7 +6508,7 @@ struct RBLevelScriptActor_OnCoordinatorCompleted final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsApplyingCheats;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C9D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BFF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLevelScriptActor_OnCoordinatorCompleted) == 0x000008, "Wrong alignment on RBLevelScriptActor_OnCoordinatorCompleted");
 static_assert(sizeof(RBLevelScriptActor_OnCoordinatorCompleted) == 0x000010, "Wrong size on RBLevelScriptActor_OnCoordinatorCompleted");
@@ -6522,7 +6522,7 @@ struct RBLevelScriptActor_OnCoordinatorStarted final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsApplyingCheats;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C9E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C00[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLevelScriptActor_OnCoordinatorStarted) == 0x000008, "Wrong alignment on RBLevelScriptActor_OnCoordinatorStarted");
 static_assert(sizeof(RBLevelScriptActor_OnCoordinatorStarted) == 0x000010, "Wrong size on RBLevelScriptActor_OnCoordinatorStarted");
@@ -6536,7 +6536,7 @@ struct RBLevelScriptActor_OnObjectiveCoordinatorStateChanged final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EObjectiveCoordinatorState                    State;                                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C9F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C01[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLevelScriptActor_OnObjectiveCoordinatorStateChanged) == 0x000008, "Wrong alignment on RBLevelScriptActor_OnObjectiveCoordinatorStateChanged");
 static_assert(sizeof(RBLevelScriptActor_OnObjectiveCoordinatorStateChanged) == 0x000010, "Wrong size on RBLevelScriptActor_OnObjectiveCoordinatorStateChanged");
@@ -6551,7 +6551,7 @@ public:
 	struct FRBStageID                             StageID;                                           // 0x0000(0x0028)(Parm, NativeAccessSpecifierPublic)
 	struct FRBMissionID                           MissionID;                                         // 0x0028(0x0028)(Parm, NativeAccessSpecifierPublic)
 	bool                                          bIsFail;                                           // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CA0[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C02[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLevelScriptActor_OnStageEnded) == 0x000008, "Wrong alignment on RBLevelScriptActor_OnStageEnded");
 static_assert(sizeof(RBLevelScriptActor_OnStageEnded) == 0x000058, "Wrong size on RBLevelScriptActor_OnStageEnded");
@@ -6567,7 +6567,7 @@ public:
 	struct FRBStageID                             StageID;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRBMissionID                           MissionID;                                         // 0x0028(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bIsFail;                                           // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CA1[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C03[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLevelScriptActor_OnStageEndedCallback) == 0x000008, "Wrong alignment on RBLevelScriptActor_OnStageEndedCallback");
 static_assert(sizeof(RBLevelScriptActor_OnStageEndedCallback) == 0x000058, "Wrong size on RBLevelScriptActor_OnStageEndedCallback");
@@ -6701,7 +6701,7 @@ struct RBMinigameRoomComponent_OnOperatableCompleted_Server final
 {
 public:
 	bool                                          bIsOn;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C2C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBOperatable*                          Operatable;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBMinigameRoomComponent_OnOperatableCompleted_Server) == 0x000008, "Wrong alignment on RBMinigameRoomComponent_OnOperatableCompleted_Server");
@@ -6771,7 +6771,7 @@ struct RBHUDOverheadInfo_Event_PlayerHealthChanged final
 public:
 	float                                         NewHealth;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSkipAnims;                                        // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D0A[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C6C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUDOverheadInfo_Event_PlayerHealthChanged) == 0x000004, "Wrong alignment on RBHUDOverheadInfo_Event_PlayerHealthChanged");
 static_assert(sizeof(RBHUDOverheadInfo_Event_PlayerHealthChanged) == 0x000008, "Wrong size on RBHUDOverheadInfo_Event_PlayerHealthChanged");
@@ -6917,7 +6917,7 @@ struct RBZoneDefenceObjectiveCoordinator_GetZoneProgress final
 public:
 	const class ARBZoneDefenceLocation*           Zone;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D11[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C73[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBZoneDefenceObjectiveCoordinator_GetZoneProgress) == 0x000008, "Wrong alignment on RBZoneDefenceObjectiveCoordinator_GetZoneProgress");
 static_assert(sizeof(RBZoneDefenceObjectiveCoordinator_GetZoneProgress) == 0x000010, "Wrong size on RBZoneDefenceObjectiveCoordinator_GetZoneProgress");
@@ -6931,7 +6931,7 @@ struct RBZoneDefenceObjectiveCoordinator_IsZoneActive final
 public:
 	const class ARBZoneDefenceLocation*           Zone;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D12[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C74[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBZoneDefenceObjectiveCoordinator_IsZoneActive) == 0x000008, "Wrong alignment on RBZoneDefenceObjectiveCoordinator_IsZoneActive");
 static_assert(sizeof(RBZoneDefenceObjectiveCoordinator_IsZoneActive) == 0x000010, "Wrong size on RBZoneDefenceObjectiveCoordinator_IsZoneActive");
@@ -6945,7 +6945,7 @@ struct RBZoneDefenceObjectiveCoordinator_IsZoneCompleted final
 public:
 	const class ARBZoneDefenceLocation*           Zone;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D13[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C75[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBZoneDefenceObjectiveCoordinator_IsZoneCompleted) == 0x000008, "Wrong alignment on RBZoneDefenceObjectiveCoordinator_IsZoneCompleted");
 static_assert(sizeof(RBZoneDefenceObjectiveCoordinator_IsZoneCompleted) == 0x000010, "Wrong size on RBZoneDefenceObjectiveCoordinator_IsZoneCompleted");
@@ -7392,7 +7392,7 @@ struct RBLargeObjectSpawnerComponent_SetNumberOfSpawnsLeft final
 public:
 	int32                                         Param_NumberOfSpawnsLeft;                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSpawn;                                            // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D45[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CA7[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLargeObjectSpawnerComponent_SetNumberOfSpawnsLeft) == 0x000004, "Wrong alignment on RBLargeObjectSpawnerComponent_SetNumberOfSpawnsLeft");
 static_assert(sizeof(RBLargeObjectSpawnerComponent_SetNumberOfSpawnsLeft) == 0x000008, "Wrong size on RBLargeObjectSpawnerComponent_SetNumberOfSpawnsLeft");
@@ -7461,7 +7461,7 @@ struct RBHUDPlayerStatus_SetPlayer final
 public:
 	class ARBPlayer*                              NewPlayer;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShouldBindStatusChanges;                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D51[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CB3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUDPlayerStatus_SetPlayer) == 0x000008, "Wrong alignment on RBHUDPlayerStatus_SetPlayer");
 static_assert(sizeof(RBHUDPlayerStatus_SetPlayer) == 0x000010, "Wrong size on RBHUDPlayerStatus_SetPlayer");
@@ -7475,7 +7475,7 @@ struct RBGameStateBase_Multicast_FunctionalTestLog final
 public:
 	class FString                                 ServerMsg;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          FailTest;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D57[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CB9[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameStateBase_Multicast_FunctionalTestLog) == 0x000008, "Wrong alignment on RBGameStateBase_Multicast_FunctionalTestLog");
 static_assert(sizeof(RBGameStateBase_Multicast_FunctionalTestLog) == 0x000018, "Wrong size on RBGameStateBase_Multicast_FunctionalTestLog");
@@ -7638,7 +7638,7 @@ struct RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledBool final
 public:
 	struct FScheduledBool                         ScheduledProperty;                                 // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D5A[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CBC[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledBool) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledBool");
 static_assert(sizeof(RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledBool) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledBool");
@@ -7652,7 +7652,7 @@ struct RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledFloat final
 public:
 	struct FScheduledFloat                        ScheduledProperty;                                 // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0078(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D5B[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CBD[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledFloat) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledFloat");
 static_assert(sizeof(RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledFloat) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledFloat");
@@ -7666,7 +7666,7 @@ struct RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt final
 public:
 	struct FScheduledInt                          ScheduledProperty;                                 // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0078(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D5C[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CBE[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt");
 static_assert(sizeof(RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt");
@@ -7680,7 +7680,7 @@ struct RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt8 final
 public:
 	struct FScheduledInt8                         ScheduledProperty;                                 // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	uint8                                         ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D5D[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CBF[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt8) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt8");
 static_assert(sizeof(RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt8) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_GetCurrentValue_ScheduledInt8");
@@ -7720,7 +7720,7 @@ struct RBScheduledBlueprintLibrary_GetInitialValue_ScheduledBool final
 public:
 	struct FScheduledBool                         ScheduledProperty;                                 // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D5E[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC0[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_GetInitialValue_ScheduledBool) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_GetInitialValue_ScheduledBool");
 static_assert(sizeof(RBScheduledBlueprintLibrary_GetInitialValue_ScheduledBool) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_GetInitialValue_ScheduledBool");
@@ -7734,7 +7734,7 @@ struct RBScheduledBlueprintLibrary_GetInitialValue_ScheduledFloat final
 public:
 	struct FScheduledFloat                        ScheduledProperty;                                 // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0078(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D5F[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC1[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_GetInitialValue_ScheduledFloat) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_GetInitialValue_ScheduledFloat");
 static_assert(sizeof(RBScheduledBlueprintLibrary_GetInitialValue_ScheduledFloat) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_GetInitialValue_ScheduledFloat");
@@ -7748,7 +7748,7 @@ struct RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt final
 public:
 	struct FScheduledInt                          ScheduledProperty;                                 // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0078(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D60[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC2[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt");
 static_assert(sizeof(RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt");
@@ -7762,7 +7762,7 @@ struct RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt8 final
 public:
 	struct FScheduledInt8                         ScheduledProperty;                                 // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	uint8                                         ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D61[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC3[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt8) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt8");
 static_assert(sizeof(RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt8) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_GetInitialValue_ScheduledInt8");
@@ -8006,7 +8006,7 @@ struct RBScheduledBlueprintLibrary_ScheduleValue_ScheduledBool final
 public:
 	struct FScheduledBool                         ScheduledProperty;                                 // 0x0000(0x0070)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          Value;                                             // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D62[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC4[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_ScheduleValue_ScheduledBool) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_ScheduleValue_ScheduledBool");
 static_assert(sizeof(RBScheduledBlueprintLibrary_ScheduleValue_ScheduledBool) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_ScheduleValue_ScheduledBool");
@@ -8020,7 +8020,7 @@ struct RBScheduledBlueprintLibrary_ScheduleValue_ScheduledFloat final
 public:
 	struct FScheduledFloat                        ScheduledProperty;                                 // 0x0000(0x0078)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0078(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D63[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC5[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_ScheduleValue_ScheduledFloat) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_ScheduleValue_ScheduledFloat");
 static_assert(sizeof(RBScheduledBlueprintLibrary_ScheduleValue_ScheduledFloat) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_ScheduleValue_ScheduledFloat");
@@ -8034,7 +8034,7 @@ struct RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt final
 public:
 	struct FScheduledInt                          ScheduledProperty;                                 // 0x0000(0x0078)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0078(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D64[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC6[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt");
 static_assert(sizeof(RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt");
@@ -8048,7 +8048,7 @@ struct RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt8 final
 public:
 	struct FScheduledInt8                         ScheduledProperty;                                 // 0x0000(0x0070)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	uint8                                         Value;                                             // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D65[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC7[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt8) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt8");
 static_assert(sizeof(RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt8) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_ScheduleValue_ScheduledInt8");
@@ -8088,7 +8088,7 @@ struct RBScheduledBlueprintLibrary_SetInitialValue_ScheduledBool final
 public:
 	struct FScheduledBool                         ScheduledProperty;                                 // 0x0000(0x0070)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          Value;                                             // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D66[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC8[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_SetInitialValue_ScheduledBool) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_SetInitialValue_ScheduledBool");
 static_assert(sizeof(RBScheduledBlueprintLibrary_SetInitialValue_ScheduledBool) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_SetInitialValue_ScheduledBool");
@@ -8102,7 +8102,7 @@ struct RBScheduledBlueprintLibrary_SetInitialValue_ScheduledFloat final
 public:
 	struct FScheduledFloat                        ScheduledProperty;                                 // 0x0000(0x0078)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0078(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D67[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC9[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_SetInitialValue_ScheduledFloat) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_SetInitialValue_ScheduledFloat");
 static_assert(sizeof(RBScheduledBlueprintLibrary_SetInitialValue_ScheduledFloat) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_SetInitialValue_ScheduledFloat");
@@ -8116,7 +8116,7 @@ struct RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt final
 public:
 	struct FScheduledInt                          ScheduledProperty;                                 // 0x0000(0x0078)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0078(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D68[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CCA[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt");
 static_assert(sizeof(RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt");
@@ -8130,7 +8130,7 @@ struct RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt8 final
 public:
 	struct FScheduledInt8                         ScheduledProperty;                                 // 0x0000(0x0070)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	uint8                                         Value;                                             // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D69[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CCB[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt8) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt8");
 static_assert(sizeof(RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt8) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_SetInitialValue_ScheduledInt8");
@@ -8170,7 +8170,7 @@ struct RBScheduledBlueprintLibrary_SetValue_ScheduledBool final
 public:
 	struct FScheduledBool                         ScheduledProperty;                                 // 0x0000(0x0070)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          Value;                                             // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D6A[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CCC[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_SetValue_ScheduledBool) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_SetValue_ScheduledBool");
 static_assert(sizeof(RBScheduledBlueprintLibrary_SetValue_ScheduledBool) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_SetValue_ScheduledBool");
@@ -8184,7 +8184,7 @@ struct RBScheduledBlueprintLibrary_SetValue_ScheduledFloat final
 public:
 	struct FScheduledFloat                        ScheduledProperty;                                 // 0x0000(0x0078)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0078(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D6B[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CCD[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_SetValue_ScheduledFloat) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_SetValue_ScheduledFloat");
 static_assert(sizeof(RBScheduledBlueprintLibrary_SetValue_ScheduledFloat) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_SetValue_ScheduledFloat");
@@ -8198,7 +8198,7 @@ struct RBScheduledBlueprintLibrary_SetValue_ScheduledInt final
 public:
 	struct FScheduledInt                          ScheduledProperty;                                 // 0x0000(0x0078)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0078(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D6C[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CCE[0x4];                                     // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_SetValue_ScheduledInt) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_SetValue_ScheduledInt");
 static_assert(sizeof(RBScheduledBlueprintLibrary_SetValue_ScheduledInt) == 0x000080, "Wrong size on RBScheduledBlueprintLibrary_SetValue_ScheduledInt");
@@ -8212,7 +8212,7 @@ struct RBScheduledBlueprintLibrary_SetValue_ScheduledInt8 final
 public:
 	struct FScheduledInt8                         ScheduledProperty;                                 // 0x0000(0x0070)(Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	uint8                                         Value;                                             // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D6D[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CCF[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScheduledBlueprintLibrary_SetValue_ScheduledInt8) == 0x000008, "Wrong alignment on RBScheduledBlueprintLibrary_SetValue_ScheduledInt8");
 static_assert(sizeof(RBScheduledBlueprintLibrary_SetValue_ScheduledInt8) == 0x000078, "Wrong size on RBScheduledBlueprintLibrary_SetValue_ScheduledInt8");
@@ -8460,7 +8460,7 @@ struct RBMenuPlayerController_Client_PartyMemberPlayerSlotsReservationProcessed 
 public:
 	TArray<struct FProfileId>                     Members;                                           // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bAccepted;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D93[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CF5[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBMenuPlayerController_Client_PartyMemberPlayerSlotsReservationProcessed) == 0x000008, "Wrong alignment on RBMenuPlayerController_Client_PartyMemberPlayerSlotsReservationProcessed");
 static_assert(sizeof(RBMenuPlayerController_Client_PartyMemberPlayerSlotsReservationProcessed) == 0x000018, "Wrong size on RBMenuPlayerController_Client_PartyMemberPlayerSlotsReservationProcessed");
@@ -8499,10 +8499,10 @@ public:
 	class AActor*                                 OldMenuViewTarget;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         blendTime;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EViewTargetBlendFunction                      BlendFunc;                                         // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D94[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CF6[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BlendExp;                                          // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLockOutgoing;                                     // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D95[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CF7[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBMenuPlayerController_RestorePlayerViewTarget) == 0x000008, "Wrong alignment on RBMenuPlayerController_RestorePlayerViewTarget");
 static_assert(sizeof(RBMenuPlayerController_RestorePlayerViewTarget) == 0x000018, "Wrong size on RBMenuPlayerController_RestorePlayerViewTarget");
@@ -8519,7 +8519,7 @@ struct RBMenuPlayerController_Server_Report final
 public:
 	struct FProfileId                             TargetProfileId;                                   // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPlayerReportReason                           Reason;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D96[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CF8[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReasonText;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBMenuPlayerController_Server_Report) == 0x000008, "Wrong alignment on RBMenuPlayerController_Server_Report");
@@ -8582,7 +8582,7 @@ public:
 	bool                                          bJoinable;                                         // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFriendRequiresInvite;                             // 0x0015(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPublicRequiresInvite;                             // 0x0016(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D97[0x1];                                     // 0x0017(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CF9[0x1];                                     // 0x0017(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBMenuPlayerController_Server_SetPresenceInfo) == 0x000008, "Wrong alignment on RBMenuPlayerController_Server_SetPresenceInfo");
 static_assert(sizeof(RBMenuPlayerController_Server_SetPresenceInfo) == 0x000018, "Wrong size on RBMenuPlayerController_Server_SetPresenceInfo");
@@ -8633,10 +8633,10 @@ public:
 	class AActor*                                 NewViewTarget;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         blendTime;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EViewTargetBlendFunction                      BlendFunc;                                         // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D98[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CFA[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BlendExp;                                          // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLockOutgoing;                                     // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D99[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CFB[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBMenuPlayerController_SetMenuViewTargetWithBlend) == 0x000008, "Wrong alignment on RBMenuPlayerController_SetMenuViewTargetWithBlend");
 static_assert(sizeof(RBMenuPlayerController_SetMenuViewTargetWithBlend) == 0x000018, "Wrong size on RBMenuPlayerController_SetMenuViewTargetWithBlend");
@@ -8730,7 +8730,7 @@ struct RBController_BP_Cheat_AddOnlineItem final
 public:
 	class FName                                   OnlineItemId;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsPersistentItem;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DA4[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D06[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_BP_Cheat_AddOnlineItem) == 0x000004, "Wrong alignment on RBController_BP_Cheat_AddOnlineItem");
 static_assert(sizeof(RBController_BP_Cheat_AddOnlineItem) == 0x00000C, "Wrong size on RBController_BP_Cheat_AddOnlineItem");
@@ -8789,10 +8789,10 @@ public:
 	class FName                                   MessageId;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   Text;                                              // 0x0008(0x0018)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	EMessagePriority                              Priority;                                          // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DA5[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D07[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Duration;                                          // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGameMessageCategory                          GameMessageCategory;                               // 0x0028(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DA6[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D08[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Client_AddHudMessage) == 0x000008, "Wrong alignment on RBController_Client_AddHudMessage");
 static_assert(sizeof(RBController_Client_AddHudMessage) == 0x000030, "Wrong size on RBController_Client_AddHudMessage");
@@ -8831,7 +8831,7 @@ struct RBController_Client_ConnectToServer final
 public:
 	class FString                                 IpAddress;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        Port;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DA7[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D09[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PlayerSessionId;                                   // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBController_Client_ConnectToServer) == 0x000008, "Wrong alignment on RBController_Client_ConnectToServer");
@@ -8903,7 +8903,7 @@ struct RBController_Client_MatchCanceled final
 {
 public:
 	EMatchCancelationReason                       Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DA8[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D0A[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ErrorFacility;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ErrorCode;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -8919,7 +8919,7 @@ struct RBController_Client_OnPlayerScoringEventRecorded final
 {
 public:
 	EPlayerEvent                                  EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DA9[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D0B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   RuleId;                                            // 0x0004(0x0008)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ScoreValue;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         XpValue;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -8949,7 +8949,7 @@ struct RBController_Client_PlaySingleShotMusicTrack final
 public:
 	class UAkAudioEvent*                          MusicTrack;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPauseLevelMusic;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DAA[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D0C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Client_PlaySingleShotMusicTrack) == 0x000008, "Wrong alignment on RBController_Client_PlaySingleShotMusicTrack");
 static_assert(sizeof(RBController_Client_PlaySingleShotMusicTrack) == 0x000010, "Wrong size on RBController_Client_PlaySingleShotMusicTrack");
@@ -8964,10 +8964,10 @@ public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 VoOwner;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOPriority                                   VOPriority;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DAB[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D0D[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        RandomSeed;                                        // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPlayOnPlayersWatch;                               // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DAC[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D0E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Client_PlayVOOnActor) == 0x000008, "Wrong alignment on RBController_Client_PlayVOOnActor");
 static_assert(sizeof(RBController_Client_PlayVOOnActor) == 0x000020, "Wrong size on RBController_Client_PlayVOOnActor");
@@ -8984,7 +8984,7 @@ struct RBController_Client_PlayVOOnNarrator final
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOPriority                                   VOPriority;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DAD[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D0F[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        RandomSeed;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBController_Client_PlayVOOnNarrator) == 0x000008, "Wrong alignment on RBController_Client_PlayVOOnNarrator");
@@ -9000,7 +9000,7 @@ struct RBController_Client_PlayVOOnWatch final
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        RandomSeed;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DAE[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D10[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Client_PlayVOOnWatch) == 0x000008, "Wrong alignment on RBController_Client_PlayVOOnWatch");
 static_assert(sizeof(RBController_Client_PlayVOOnWatch) == 0x000010, "Wrong size on RBController_Client_PlayVOOnWatch");
@@ -9101,7 +9101,7 @@ struct RBController_Client_ServerError final
 public:
 	class FString                                 ServerError;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisplayOnScreen;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DAF[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D11[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Client_ServerError) == 0x000008, "Wrong alignment on RBController_Client_ServerError");
 static_assert(sizeof(RBController_Client_ServerError) == 0x000018, "Wrong size on RBController_Client_ServerError");
@@ -9115,7 +9115,7 @@ struct RBController_Client_ServerMsg final
 public:
 	class FString                                 ServerMsg;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisplayOnScreen;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D12[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Client_ServerMsg) == 0x000008, "Wrong alignment on RBController_Client_ServerMsg");
 static_assert(sizeof(RBController_Client_ServerMsg) == 0x000018, "Wrong size on RBController_Client_ServerMsg");
@@ -9230,7 +9230,7 @@ struct RBController_Multicast_NotifyEndOfStage final
 public:
 	struct FEndStageInfo                          EndOfStageInfo;                                    // 0x0000(0x0030)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bShowEndOfMatchScreen;                             // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB1[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D13[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Multicast_NotifyEndOfStage) == 0x000008, "Wrong alignment on RBController_Multicast_NotifyEndOfStage");
 static_assert(sizeof(RBController_Multicast_NotifyEndOfStage) == 0x000038, "Wrong size on RBController_Multicast_NotifyEndOfStage");
@@ -9353,7 +9353,7 @@ struct RBController_Server_Cheat_AddCurrency final
 {
 public:
 	ECurrencyType                                 CurrencyType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D14[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Amount;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBController_Server_Cheat_AddCurrency) == 0x000004, "Wrong alignment on RBController_Server_Cheat_AddCurrency");
@@ -9401,7 +9401,7 @@ struct RBController_Server_Cheat_AddOnlineItem final
 public:
 	class FName                                   OnlineItemId;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsPersistentItem;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB3[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D15[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_Cheat_AddOnlineItem) == 0x000004, "Wrong alignment on RBController_Server_Cheat_AddOnlineItem");
 static_assert(sizeof(RBController_Server_Cheat_AddOnlineItem) == 0x00000C, "Wrong size on RBController_Server_Cheat_AddOnlineItem");
@@ -9415,7 +9415,7 @@ struct RBController_Server_Cheat_AddProgressivePsychosis final
 public:
 	int32                                         Amount;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bGas;                                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB4[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D16[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_Cheat_AddProgressivePsychosis) == 0x000004, "Wrong alignment on RBController_Server_Cheat_AddProgressivePsychosis");
 static_assert(sizeof(RBController_Server_Cheat_AddProgressivePsychosis) == 0x000008, "Wrong size on RBController_Server_Cheat_AddProgressivePsychosis");
@@ -9517,7 +9517,7 @@ struct RBController_Server_Cheat_CompleteObjectiveCoordinator final
 public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsExactMatch;                                     // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB5[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D17[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_Cheat_CompleteObjectiveCoordinator) == 0x000008, "Wrong alignment on RBController_Server_Cheat_CompleteObjectiveCoordinator");
 static_assert(sizeof(RBController_Server_Cheat_CompleteObjectiveCoordinator) == 0x000018, "Wrong size on RBController_Server_Cheat_CompleteObjectiveCoordinator");
@@ -9586,7 +9586,7 @@ struct RBController_Server_Cheat_ForceDecodableState final
 public:
 	class UObject*                                Decodable;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bActive;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D18[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_Cheat_ForceDecodableState) == 0x000008, "Wrong alignment on RBController_Server_Cheat_ForceDecodableState");
 static_assert(sizeof(RBController_Server_Cheat_ForceDecodableState) == 0x000010, "Wrong size on RBController_Server_Cheat_ForceDecodableState");
@@ -9622,7 +9622,7 @@ struct RBController_Server_Cheat_ForcePreLoginError final
 public:
 	class FString                                 Error;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Amount;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB7[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D19[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_Cheat_ForcePreLoginError) == 0x000008, "Wrong alignment on RBController_Server_Cheat_ForcePreLoginError");
 static_assert(sizeof(RBController_Server_Cheat_ForcePreLoginError) == 0x000018, "Wrong size on RBController_Server_Cheat_ForcePreLoginError");
@@ -9636,7 +9636,7 @@ struct RBController_Server_Cheat_ForceRandomState final
 public:
 	class FString                                 Query;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStateA;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D1A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_Cheat_ForceRandomState) == 0x000008, "Wrong alignment on RBController_Server_Cheat_ForceRandomState");
 static_assert(sizeof(RBController_Server_Cheat_ForceRandomState) == 0x000018, "Wrong size on RBController_Server_Cheat_ForceRandomState");
@@ -9718,7 +9718,7 @@ struct RBController_Server_Cheat_SetActiveUpgrades final
 public:
 	TArray<class FName>                           CoreUpgrades;                                      // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	EActiveSkillType                              ActiveSkillType;                                   // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DB9[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D1B[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           ActiveSkillUpgrades;                               // 0x0018(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<class FName>                           Perks;                                             // 0x0028(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
@@ -9967,7 +9967,7 @@ struct RBController_Server_Cheat_ToggleAll final
 public:
 	class FString                                 Query;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStateA;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DBA[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D1C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_Cheat_ToggleAll) == 0x000008, "Wrong alignment on RBController_Server_Cheat_ToggleAll");
 static_assert(sizeof(RBController_Server_Cheat_ToggleAll) == 0x000018, "Wrong size on RBController_Server_Cheat_ToggleAll");
@@ -9992,7 +9992,7 @@ struct RBController_Server_Cheat_ToggleVariator final
 public:
 	class FName                                   ID;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DBB[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D1D[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_Cheat_ToggleVariator) == 0x000004, "Wrong alignment on RBController_Server_Cheat_ToggleVariator");
 static_assert(sizeof(RBController_Server_Cheat_ToggleVariator) == 0x00000C, "Wrong size on RBController_Server_Cheat_ToggleVariator");
@@ -10005,7 +10005,7 @@ struct RBController_Server_Cheat_UpdateStatistic final
 {
 public:
 	EPlayerStat                                   PlayerStat;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DBC[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D1E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Value;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBController_Server_Cheat_UpdateStatistic) == 0x000004, "Wrong alignment on RBController_Server_Cheat_UpdateStatistic");
@@ -10140,7 +10140,7 @@ struct RBController_Server_DumpAILog final
 public:
 	class ARBNPC*                                 NPC;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxEvents;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DBD[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D1F[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_DumpAILog) == 0x000008, "Wrong alignment on RBController_Server_DumpAILog");
 static_assert(sizeof(RBController_Server_DumpAILog) == 0x000010, "Wrong size on RBController_Server_DumpAILog");
@@ -10164,7 +10164,7 @@ struct RBController_Server_GhostPawn final
 {
 public:
 	bool                                          bGhost;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DBE[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D20[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CamLoc;                                            // 0x0004(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               CamRot;                                            // 0x0010(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -10215,7 +10215,7 @@ struct RBController_Server_PurchasedCurrencyPack final
 {
 public:
 	ECurrencyType                                 CurrencyType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DBF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D21[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Quantity;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBController_Server_PurchasedCurrencyPack) == 0x000004, "Wrong alignment on RBController_Server_PurchasedCurrencyPack");
@@ -10230,7 +10230,7 @@ struct RBController_Server_PurchaseItem final
 public:
 	class FName                                   ItemOnlineUnlockId;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPlayerCustomizationRarity                    Rarity;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DC0[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D22[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBController_Server_PurchaseItem) == 0x000004, "Wrong alignment on RBController_Server_PurchaseItem");
 static_assert(sizeof(RBController_Server_PurchaseItem) == 0x00000C, "Wrong size on RBController_Server_PurchaseItem");
@@ -10265,7 +10265,7 @@ struct RBController_Server_SetClientInitData final
 {
 public:
 	bool                                          bVoiceChatEnabled;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DC1[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D23[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRegionLatency>                 RegionLatency;                                     // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<class FString>                         OwnedProductIds;                                   // 0x0018(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
@@ -10292,7 +10292,7 @@ struct RBController_Server_SetNewPlayerCustomizationOptions final
 {
 public:
 	bool                                          bIsFemale;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DC2[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D24[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class URBPlayerCustomizationOption*>   NewCustomizationOptions;                           // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class FName                                   NewHairColor;                                      // 0x0018(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URBCustomizationOutfit*                 LegendaryOutfit;                                   // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10514,7 +10514,7 @@ struct RBLobbyPlayerController_Client_FindPartyCanceled final
 {
 public:
 	EMatchCancelationReason                       Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DC7[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D29[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ErrorFacility;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ErrorCode;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -10637,7 +10637,7 @@ struct RBLobbyPlayerController_OnPartyOwnerMatchSettingsUpdated final
 public:
 	class ARBLobbyPlayerState*                    RBLobbyPlayerState;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMatchSettings                         MatchSettings;                                     // 0x0008(0x0024)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DC8[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D2A[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLobbyPlayerController_OnPartyOwnerMatchSettingsUpdated) == 0x000008, "Wrong alignment on RBLobbyPlayerController_OnPartyOwnerMatchSettingsUpdated");
 static_assert(sizeof(RBLobbyPlayerController_OnPartyOwnerMatchSettingsUpdated) == 0x000030, "Wrong size on RBLobbyPlayerController_OnPartyOwnerMatchSettingsUpdated");
@@ -10664,7 +10664,7 @@ struct RBLobbyPlayerController_OnPlayerReleaseAvailableServerTimeUpdated final
 public:
 	class ARBLobbyPlayerState*                    RBLobbyPlayerState;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PlayerReleaseAvailableServerTime;                  // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DC9[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D2B[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLobbyPlayerController_OnPlayerReleaseAvailableServerTimeUpdated) == 0x000008, "Wrong alignment on RBLobbyPlayerController_OnPlayerReleaseAvailableServerTimeUpdated");
 static_assert(sizeof(RBLobbyPlayerController_OnPlayerReleaseAvailableServerTimeUpdated) == 0x000010, "Wrong size on RBLobbyPlayerController_OnPlayerReleaseAvailableServerTimeUpdated");
@@ -10869,7 +10869,7 @@ public:
 	TArray<class ARBLobbyPlayerState*>            Members;                                           // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FMatchSettings                         MatchSettings;                                     // 0x0010(0x0024)(ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bUseLongCancelGracePeriod;                         // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DCA[0x3];                                     // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D2C[0x3];                                     // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLobbyPlayerController_Server_StartMatchCountdown) == 0x000008, "Wrong alignment on RBLobbyPlayerController_Server_StartMatchCountdown");
 static_assert(sizeof(RBLobbyPlayerController_Server_StartMatchCountdown) == 0x000038, "Wrong size on RBLobbyPlayerController_Server_StartMatchCountdown");
@@ -11113,7 +11113,7 @@ public:
 	class ARBPlayer*                              WinnerPlayer;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ARBPlayer*                              LoserPlayer;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          GameTied_value;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DD0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D32[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBArmWreslingTable_Multicast_BroadcastMatchEndMessage) == 0x000008, "Wrong alignment on RBArmWreslingTable_Multicast_BroadcastMatchEndMessage");
 static_assert(sizeof(RBArmWreslingTable_Multicast_BroadcastMatchEndMessage) == 0x000018, "Wrong size on RBArmWreslingTable_Multicast_BroadcastMatchEndMessage");
@@ -11319,7 +11319,7 @@ public:
 	struct FRBStageID                             StageID;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRBMissionID                           MissionID;                                         // 0x0028(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bisReset;                                          // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DD6[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D38[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAutoCompleteStageTestAgent_OnStageEnded) == 0x000008, "Wrong alignment on RBAutoCompleteStageTestAgent_OnStageEnded");
 static_assert(sizeof(RBAutoCompleteStageTestAgent_OnStageEnded) == 0x000058, "Wrong size on RBAutoCompleteStageTestAgent_OnStageEnded");
@@ -11402,7 +11402,7 @@ struct RBNetworkSyncComponent_BP_GetSyncLocationFromSequence final
 public:
 	TArray<struct FVector>                        Sequence;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FVector                                OutLocation;                                       // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DE8[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D4A[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNetworkSyncComponent_BP_GetSyncLocationFromSequence) == 0x000008, "Wrong alignment on RBNetworkSyncComponent_BP_GetSyncLocationFromSequence");
 static_assert(sizeof(RBNetworkSyncComponent_BP_GetSyncLocationFromSequence) == 0x000020, "Wrong size on RBNetworkSyncComponent_BP_GetSyncLocationFromSequence");
@@ -11416,7 +11416,7 @@ struct RBNetworkSyncComponent_BP_GetSyncRotationFromSequence final
 public:
 	TArray<struct FRotator>                       Sequence;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRotator                               OutRotation;                                       // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DE9[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D4B[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNetworkSyncComponent_BP_GetSyncRotationFromSequence) == 0x000008, "Wrong alignment on RBNetworkSyncComponent_BP_GetSyncRotationFromSequence");
 static_assert(sizeof(RBNetworkSyncComponent_BP_GetSyncRotationFromSequence) == 0x000020, "Wrong size on RBNetworkSyncComponent_BP_GetSyncRotationFromSequence");
@@ -11488,7 +11488,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DEC[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D4E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAutomaticDoor_BackBeginOverlap) == 0x000008, "Wrong alignment on RBAutomaticDoor_BackBeginOverlap");
@@ -11509,7 +11509,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DED[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D4F[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAutomaticDoor_BackEndOverlap) == 0x000008, "Wrong alignment on RBAutomaticDoor_BackEndOverlap");
 static_assert(sizeof(RBAutomaticDoor_BackEndOverlap) == 0x000020, "Wrong size on RBAutomaticDoor_BackEndOverlap");
@@ -11528,7 +11528,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DEE[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D50[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBAutomaticDoor_FrontBeginOverlap) == 0x000008, "Wrong alignment on RBAutomaticDoor_FrontBeginOverlap");
@@ -11549,7 +11549,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DEF[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D51[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBAutomaticDoor_FrontEndOverlap) == 0x000008, "Wrong alignment on RBAutomaticDoor_FrontEndOverlap");
 static_assert(sizeof(RBAutomaticDoor_FrontEndOverlap) == 0x000020, "Wrong size on RBAutomaticDoor_FrontEndOverlap");
@@ -11709,7 +11709,7 @@ struct RBBarcodeScanner_Event_OnTVBarcodeChanged final
 {
 public:
 	int32                                         Code;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DFA[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D5C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Prefix;                                            // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBarcodeScanner_Event_OnTVBarcodeChanged) == 0x000008, "Wrong alignment on RBBarcodeScanner_Event_OnTVBarcodeChanged");
@@ -11746,7 +11746,7 @@ struct RBBattlePassMenu_GetBattlePassAvailability final
 public:
 	class FName                                   BattlePassId;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBattlePassAvailability                       ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E00[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D62[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBattlePassMenu_GetBattlePassAvailability) == 0x000004, "Wrong alignment on RBBattlePassMenu_GetBattlePassAvailability");
 static_assert(sizeof(RBBattlePassMenu_GetBattlePassAvailability) == 0x00000C, "Wrong size on RBBattlePassMenu_GetBattlePassAvailability");
@@ -11771,7 +11771,7 @@ struct RBBattlePassMenu_GetItemAvailability final
 public:
 	class FName                                   ItemId;                                            // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBattlePassItemAvailability                   ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E01[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D63[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBattlePassMenu_GetItemAvailability) == 0x000004, "Wrong alignment on RBBattlePassMenu_GetItemAvailability");
 static_assert(sizeof(RBBattlePassMenu_GetItemAvailability) == 0x00000C, "Wrong size on RBBattlePassMenu_GetItemAvailability");
@@ -11850,7 +11850,7 @@ struct RBPawn_BP_DamageParams final
 {
 public:
 	EDamageType                                   DmgType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E27[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D89[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageParameters                      ReturnValue;                                       // 0x0004(0x0014)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPawn_BP_DamageParams) == 0x000004, "Wrong alignment on RBPawn_BP_DamageParams");
@@ -11876,7 +11876,7 @@ struct RBPawn_BP_AddHealth final
 public:
 	float                                         HealthToAdd;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRemoveBleeding;                                   // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E28[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D8A[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_BP_AddHealth) == 0x000004, "Wrong alignment on RBPawn_BP_AddHealth");
 static_assert(sizeof(RBPawn_BP_AddHealth) == 0x000008, "Wrong size on RBPawn_BP_AddHealth");
@@ -11914,7 +11914,7 @@ public:
 	struct FRotator                               Rotation;                                          // 0x000C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	ELocomotionMode                               ExitLocomotionMode;                                // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTeleport;                                         // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E29[0x2];                                     // 0x001A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D8B[0x2];                                     // 0x001A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_BP_EnterCinematicMode) == 0x000004, "Wrong alignment on RBPawn_BP_EnterCinematicMode");
 static_assert(sizeof(RBPawn_BP_EnterCinematicMode) == 0x00001C, "Wrong size on RBPawn_BP_EnterCinematicMode");
@@ -11971,7 +11971,7 @@ struct RBPawn_BP_RemoveTemporaryComponent final
 public:
 	class USceneComponent*                        Component;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSnapBack;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E2A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D8C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_BP_RemoveTemporaryComponent) == 0x000008, "Wrong alignment on RBPawn_BP_RemoveTemporaryComponent");
 static_assert(sizeof(RBPawn_BP_RemoveTemporaryComponent) == 0x000010, "Wrong size on RBPawn_BP_RemoveTemporaryComponent");
@@ -11999,7 +11999,7 @@ public:
 	struct FRBAnimRef                             Animation;                                         // 0x0018(0x0030)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class FName                                   ScriptedAttachBone;                                // 0x0048(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Param_ScriptedAttachActor;                         // 0x0050(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E2B[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D8D[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ScriptedAttachOffset;                              // 0x0060(0x0030)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPawn_BP_StartScriptedAnimation) == 0x000010, "Wrong alignment on RBPawn_BP_StartScriptedAnimation");
@@ -12017,11 +12017,11 @@ struct RBPawn_BP_StartSpecialMove final
 {
 public:
 	ESpecialMove                                  SpecialMove;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E2C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D8E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                TargetPosition;                                    // 0x0004(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                TargetDirection;                                   // 0x0010(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPredicted;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E2D[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D8F[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_BP_StartSpecialMove) == 0x000004, "Wrong alignment on RBPawn_BP_StartSpecialMove");
 static_assert(sizeof(RBPawn_BP_StartSpecialMove) == 0x000020, "Wrong size on RBPawn_BP_StartSpecialMove");
@@ -12050,7 +12050,7 @@ struct RBPawn_Event_HealthUpdated final
 public:
 	float                                         NewHealth;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIncreased;                                        // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E2E[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D90[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_Event_HealthUpdated) == 0x000004, "Wrong alignment on RBPawn_Event_HealthUpdated");
 static_assert(sizeof(RBPawn_Event_HealthUpdated) == 0x000008, "Wrong size on RBPawn_Event_HealthUpdated");
@@ -12142,7 +12142,7 @@ public:
 	float                                         blendOutTime;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SpecialMoveIndex;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E2F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D91[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_Multicast_BlendOutActiveSpecialMove) == 0x000004, "Wrong alignment on RBPawn_Multicast_BlendOutActiveSpecialMove");
 static_assert(sizeof(RBPawn_Multicast_BlendOutActiveSpecialMove) == 0x00000C, "Wrong size on RBPawn_Multicast_BlendOutActiveSpecialMove");
@@ -12226,10 +12226,10 @@ public:
 	float                                         PawnTime;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ServerTime;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E30[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D92[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SpecialMoveSubType;                                // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInterrupted;                                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E31[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D93[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_Multicast_ScheduleCompleteSpecialMove) == 0x000004, "Wrong alignment on RBPawn_Multicast_ScheduleCompleteSpecialMove");
 static_assert(sizeof(RBPawn_Multicast_ScheduleCompleteSpecialMove) == 0x000014, "Wrong size on RBPawn_Multicast_ScheduleCompleteSpecialMove");
@@ -12245,7 +12245,7 @@ struct RBPawn_Multicast_ScheduleLocomotionMode final
 {
 public:
 	ELocomotionMode                               NewLocomotionMode;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E32[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D94[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PawnTime;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ServerTime;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -12283,10 +12283,10 @@ struct RBPawn_Multicast_SetFinishedGhostReason final
 {
 public:
 	EGhostFinishReason                            FinishReason;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E33[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D95[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CustomFinishReason;                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPredicted;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E34[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D96[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_Multicast_SetFinishedGhostReason) == 0x000004, "Wrong alignment on RBPawn_Multicast_SetFinishedGhostReason");
 static_assert(sizeof(RBPawn_Multicast_SetFinishedGhostReason) == 0x00000C, "Wrong size on RBPawn_Multicast_SetFinishedGhostReason");
@@ -12301,7 +12301,7 @@ struct RBPawn_Multicast_SetPairedPawn final
 public:
 	class ARBPawn*                                Param_PairedPawn;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPairedPawnIsLeader;                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E35[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D97[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_Multicast_SetPairedPawn) == 0x000008, "Wrong alignment on RBPawn_Multicast_SetPairedPawn");
 static_assert(sizeof(RBPawn_Multicast_SetPairedPawn) == 0x000010, "Wrong size on RBPawn_Multicast_SetPairedPawn");
@@ -12316,7 +12316,7 @@ public:
 	int32                                         SpecialMoveIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ELocomotionMode                               NextLocomotionMode;                                // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E36[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D98[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_Multicast_SetSpecialMoveInterruptedLocomotionMode) == 0x000004, "Wrong alignment on RBPawn_Multicast_SetSpecialMoveInterruptedLocomotionMode");
 static_assert(sizeof(RBPawn_Multicast_SetSpecialMoveInterruptedLocomotionMode) == 0x000008, "Wrong size on RBPawn_Multicast_SetSpecialMoveInterruptedLocomotionMode");
@@ -12332,7 +12332,7 @@ public:
 	int32                                         SpecialMoveIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ELocomotionMode                               NextLocomotionMode;                                // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E37[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D99[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_Multicast_SetSpecialMoveNextLocomotionMode) == 0x000004, "Wrong alignment on RBPawn_Multicast_SetSpecialMoveNextLocomotionMode");
 static_assert(sizeof(RBPawn_Multicast_SetSpecialMoveNextLocomotionMode) == 0x000008, "Wrong size on RBPawn_Multicast_SetSpecialMoveNextLocomotionMode");
@@ -12361,7 +12361,7 @@ public:
 	class ARBDoor*                                Door;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBashDoorType                                 bashType;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPredicted;                                        // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E38[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D9A[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                StartCharLocation;                                 // 0x000C(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPawn_Multicast_StartBashDoor) == 0x000008, "Wrong alignment on RBPawn_Multicast_StartBashDoor");
@@ -12378,7 +12378,7 @@ struct RBPawn_Multicast_StartDoorInteraction final
 public:
 	class ARBDoor*                                Door;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDoorInteractionType                          DoorInteractionType;                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E39[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D9B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_Multicast_StartDoorInteraction) == 0x000008, "Wrong alignment on RBPawn_Multicast_StartDoorInteraction");
 static_assert(sizeof(RBPawn_Multicast_StartDoorInteraction) == 0x000010, "Wrong size on RBPawn_Multicast_StartDoorInteraction");
@@ -12394,7 +12394,7 @@ public:
 	struct FSpecialMoveMulticastData              SpecialMoveData;                                   // 0x0008(0x0048)(ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bPairedPawnIsLeader;                               // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBasicDirection                               Direction;                                         // 0x0051(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E3A[0x6];                                     // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D9C[0x6];                                     // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_Multicast_StartPairedMove) == 0x000008, "Wrong alignment on RBPawn_Multicast_StartPairedMove");
 static_assert(sizeof(RBPawn_Multicast_StartPairedMove) == 0x000058, "Wrong size on RBPawn_Multicast_StartPairedMove");
@@ -12413,7 +12413,7 @@ public:
 	struct FRBAnimRef                             Animation;                                         // 0x0018(0x0030)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class FName                                   ScriptedAttachName;                                // 0x0048(0x0008)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Param_ScriptedAttachActor;                         // 0x0050(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E3B[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D9D[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ScriptedAttachOffset;                              // 0x0060(0x0030)(ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPawn_Multicast_StartScriptedAnimation) == 0x000010, "Wrong alignment on RBPawn_Multicast_StartScriptedAnimation");
@@ -12481,7 +12481,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E3C[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D9E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPawn_OnDamageVolumeHit) == 0x000008, "Wrong alignment on RBPawn_OnDamageVolumeHit");
@@ -12500,7 +12500,7 @@ struct RBPawn_OnFootstep final
 public:
 	class USkeletalMeshComponent*                 MeshComp;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLeftFoot;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E3D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D9F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_OnFootstep) == 0x000008, "Wrong alignment on RBPawn_OnFootstep");
 static_assert(sizeof(RBPawn_OnFootstep) == 0x000010, "Wrong size on RBPawn_OnFootstep");
@@ -12546,7 +12546,7 @@ struct RBPawn_Server_SetFinishedGhostReason final
 {
 public:
 	EGhostFinishReason                            FinishReason;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E3E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DA0[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CustomFinishReason;                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPawn_Server_SetFinishedGhostReason) == 0x000004, "Wrong alignment on RBPawn_Server_SetFinishedGhostReason");
@@ -12576,7 +12576,7 @@ struct RBPawn_StartGhostAnimState final
 public:
 	TSubclassOf<class URBGhostAnimInstance>       AnimInstanceClass;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         blendTime;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E3F[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DA1[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_StartGhostAnimState) == 0x000008, "Wrong alignment on RBPawn_StartGhostAnimState");
 static_assert(sizeof(RBPawn_StartGhostAnimState) == 0x000010, "Wrong size on RBPawn_StartGhostAnimState");
@@ -12616,7 +12616,7 @@ struct RBPawn_TryPlayFacialAnim_Pawn final
 public:
 	class FString                                 LineId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E40[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DA2[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawn_TryPlayFacialAnim_Pawn) == 0x000008, "Wrong alignment on RBPawn_TryPlayFacialAnim_Pawn");
 static_assert(sizeof(RBPawn_TryPlayFacialAnim_Pawn) == 0x000018, "Wrong size on RBPawn_TryPlayFacialAnim_Pawn");
@@ -12862,12 +12862,12 @@ struct RBNPC_BP_DamageNPC final
 {
 public:
 	EDamageType                                   DmgType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E59[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DBB[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 SrcActor;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DmgAmount;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanKill;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanKnockdown;                                     // 0x0015(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E5A[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DBC[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_BP_DamageNPC) == 0x000008, "Wrong alignment on RBNPC_BP_DamageNPC");
 static_assert(sizeof(RBNPC_BP_DamageNPC) == 0x000018, "Wrong size on RBNPC_BP_DamageNPC");
@@ -12896,7 +12896,7 @@ public:
 	struct FVector                                DestLocation;                                      // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               DestRotation;                                      // 0x000C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bNoCheck;                                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E5B[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DBD[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_BP_TeleportTo) == 0x000004, "Wrong alignment on RBNPC_BP_TeleportTo");
 static_assert(sizeof(RBNPC_BP_TeleportTo) == 0x00001C, "Wrong size on RBNPC_BP_TeleportTo");
@@ -12910,7 +12910,7 @@ struct RBNPC_BP_TestHitReaction final
 {
 public:
 	ENPCHitReactionType                           HitReactionType;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E5C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DBE[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                HitDirection;                                      // 0x0004(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_BP_TestHitReaction) == 0x000004, "Wrong alignment on RBNPC_BP_TestHitReaction");
@@ -12924,7 +12924,7 @@ struct RBNPC_Event_OnAIEvent final
 {
 public:
 	EAIEvent                                      EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E5D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DBF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 RelevantActor;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Event_OnAIEvent) == 0x000008, "Wrong alignment on RBNPC_Event_OnAIEvent");
@@ -12952,7 +12952,7 @@ struct RBNPC_Event_OnDealtWeaponDamage final
 public:
 	class ARBPawn*                                OtherPawn;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                DamageLocation;                                    // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E5E[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC0[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_Event_OnDealtWeaponDamage) == 0x000008, "Wrong alignment on RBNPC_Event_OnDealtWeaponDamage");
 static_assert(sizeof(RBNPC_Event_OnDealtWeaponDamage) == 0x000018, "Wrong size on RBNPC_Event_OnDealtWeaponDamage");
@@ -13011,7 +13011,7 @@ struct RBNPC_Event_OnWeaponHidden final
 {
 public:
 	ENPCWeapon                                    WeaponType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E5F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC1[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBNPCWeapon*                           WeaponActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Event_OnWeaponHidden) == 0x000008, "Wrong alignment on RBNPC_Event_OnWeaponHidden");
@@ -13025,7 +13025,7 @@ struct RBNPC_Event_OnWeaponVisible final
 {
 public:
 	ENPCWeapon                                    WeaponType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E60[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC2[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBNPCWeapon*                           WeaponActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Event_OnWeaponVisible) == 0x000008, "Wrong alignment on RBNPC_Event_OnWeaponVisible");
@@ -13100,7 +13100,7 @@ struct RBNPC_Multicast_CompleteNPCSpecialMove final
 {
 public:
 	ESpecialMove                                  SpecialMoveCompleted;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E61[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC3[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SpecialMoveEndVelocityOverride;                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Multicast_CompleteNPCSpecialMove) == 0x000004, "Wrong alignment on RBNPC_Multicast_CompleteNPCSpecialMove");
@@ -13114,7 +13114,7 @@ struct RBNPC_Multicast_CycleBreaker final
 {
 public:
 	ENPCAnimStyle                                 breakerAnimStyle;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E62[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC4[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RandomSelector;                                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Multicast_CycleBreaker) == 0x000004, "Wrong alignment on RBNPC_Multicast_CycleBreaker");
@@ -13151,10 +13151,10 @@ struct RBNPC_Multicast_EnterAmbientStation final
 public:
 	class URBAmbientStationComponent*             AmbientStation;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bImmediate;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E63[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC5[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                EntryLocation;                                     // 0x000C(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                EntryForward;                                      // 0x0018(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E64[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC6[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_Multicast_EnterAmbientStation) == 0x000008, "Wrong alignment on RBNPC_Multicast_EnterAmbientStation");
 static_assert(sizeof(RBNPC_Multicast_EnterAmbientStation) == 0x000028, "Wrong size on RBNPC_Multicast_EnterAmbientStation");
@@ -13252,7 +13252,7 @@ struct RBNPC_Multicast_GroundAndPoundInterrupted final
 public:
 	class ARBPlayer*                              PinnedPlayer;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NpcToInterrupterRelativeYaw;                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E65[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC7[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_Multicast_GroundAndPoundInterrupted) == 0x000008, "Wrong alignment on RBNPC_Multicast_GroundAndPoundInterrupted");
 static_assert(sizeof(RBNPC_Multicast_GroundAndPoundInterrupted) == 0x000010, "Wrong size on RBNPC_Multicast_GroundAndPoundInterrupted");
@@ -13296,7 +13296,7 @@ struct RBNPC_Multicast_OnDealtWeaponDamage final
 public:
 	class ARBPawn*                                OtherPawn;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                DamageLocation;                                    // 0x0008(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E66[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC8[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_Multicast_OnDealtWeaponDamage) == 0x000008, "Wrong alignment on RBNPC_Multicast_OnDealtWeaponDamage");
 static_assert(sizeof(RBNPC_Multicast_OnDealtWeaponDamage) == 0x000018, "Wrong size on RBNPC_Multicast_OnDealtWeaponDamage");
@@ -13310,7 +13310,7 @@ struct RBNPC_Multicast_OnFinishedExitingMonsterCloset final
 public:
 	class ARBMonsterCloset*                       Closet;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPlayVO;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E67[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC9[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_Multicast_OnFinishedExitingMonsterCloset) == 0x000008, "Wrong alignment on RBNPC_Multicast_OnFinishedExitingMonsterCloset");
 static_assert(sizeof(RBNPC_Multicast_OnFinishedExitingMonsterCloset) == 0x000010, "Wrong size on RBNPC_Multicast_OnFinishedExitingMonsterCloset");
@@ -13430,10 +13430,10 @@ struct RBNPC_Multicast_PlayWaypointAnim final
 public:
 	class UAnimSequence*                          AnimSeq;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLoopAnim;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E68[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCA[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                TargetPos;                                         // 0x000C(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                TargetDir;                                         // 0x0018(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E69[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCB[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_Multicast_PlayWaypointAnim) == 0x000008, "Wrong alignment on RBNPC_Multicast_PlayWaypointAnim");
 static_assert(sizeof(RBNPC_Multicast_PlayWaypointAnim) == 0x000028, "Wrong size on RBNPC_Multicast_PlayWaypointAnim");
@@ -13449,7 +13449,7 @@ struct RBNPC_Multicast_PlayWeaponImpactParticles final
 public:
 	TArray<struct FVector>                        ImpactPoints;                                      // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRotator                               ImpactRotation;                                    // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E6A[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCC[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_Multicast_PlayWeaponImpactParticles) == 0x000008, "Wrong alignment on RBNPC_Multicast_PlayWeaponImpactParticles");
 static_assert(sizeof(RBNPC_Multicast_PlayWeaponImpactParticles) == 0x000020, "Wrong size on RBNPC_Multicast_PlayWeaponImpactParticles");
@@ -13485,7 +13485,7 @@ struct RBNPC_Multicast_SleeperScream final
 public:
 	class UAnimSequence*                          AnimSeq;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bNoScream;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E6B[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCD[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ScreamDuration;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Multicast_SleeperScream) == 0x000008, "Wrong alignment on RBNPC_Multicast_SleeperScream");
@@ -13515,7 +13515,7 @@ struct RBNPC_Multicast_StartFixedDurationSpecialMove final
 {
 public:
 	ESpecialMove                                  SpecialMoveType;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E6C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCE[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ExpirationServerTime;                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Multicast_StartFixedDurationSpecialMove) == 0x000004, "Wrong alignment on RBNPC_Multicast_StartFixedDurationSpecialMove");
@@ -13553,7 +13553,7 @@ struct RBNPC_Multicast_StartRelativeYawSpecialMove final
 {
 public:
 	ESpecialMove                                  RelYawSpecialMove;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E6D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RelativeYaw;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Multicast_StartRelativeYawSpecialMove) == 0x000004, "Wrong alignment on RBNPC_Multicast_StartRelativeYawSpecialMove");
@@ -13578,7 +13578,7 @@ struct RBNPC_Multicast_StartSpecialMoveOrientedToActor final
 {
 public:
 	ESpecialMove                                  SpecialMoveType;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E6E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DD0[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Multicast_StartSpecialMoveOrientedToActor) == 0x000008, "Wrong alignment on RBNPC_Multicast_StartSpecialMoveOrientedToActor");
@@ -13605,7 +13605,7 @@ public:
 	struct FVector                                DestLocation;                                      // 0x0000(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               DestRotation;                                      // 0x000C(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bNoCheck;                                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E6F[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DD1[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPC_Multicast_TeleportTo) == 0x000004, "Wrong alignment on RBNPC_Multicast_TeleportTo");
 static_assert(sizeof(RBNPC_Multicast_TeleportTo) == 0x00001C, "Wrong size on RBNPC_Multicast_TeleportTo");
@@ -13630,7 +13630,7 @@ struct RBNPC_Multicast_TriggerContextualVO final
 {
 public:
 	EVOContext                                    VOContext;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E70[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DD2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        RandomSeed;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Multicast_TriggerContextualVO) == 0x000004, "Wrong alignment on RBNPC_Multicast_TriggerContextualVO");
@@ -13645,7 +13645,7 @@ struct RBNPC_Multicast_TriggerScriptedVO final
 public:
 	class UAkAudioEvent*                          AudioEvent;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOPriority                                   VOPriority;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E71[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DD3[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        RandomSeed;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPC_Multicast_TriggerScriptedVO) == 0x000008, "Wrong alignment on RBNPC_Multicast_TriggerScriptedVO");
@@ -13977,7 +13977,7 @@ public:
 	float                                         RangeYMax;                                         // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RangeZMin;                                         // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RangeZMax;                                         // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E79[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DDB[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_AddRandomizeRelativeLocation) == 0x000008, "Wrong alignment on RBBlueprintLibrary_AddRandomizeRelativeLocation");
 static_assert(sizeof(RBBlueprintLibrary_AddRandomizeRelativeLocation) == 0x000028, "Wrong size on RBBlueprintLibrary_AddRandomizeRelativeLocation");
@@ -14075,7 +14075,7 @@ public:
 	struct FProfileId                             FirstProfileId;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FProfileId                             SecondProfileId;                                   // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E7A[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DDC[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_AreSameProfileIds) == 0x000004, "Wrong alignment on RBBlueprintLibrary_AreSameProfileIds");
 static_assert(sizeof(RBBlueprintLibrary_AreSameProfileIds) == 0x000024, "Wrong size on RBBlueprintLibrary_AreSameProfileIds");
@@ -14091,7 +14091,7 @@ public:
 	struct FVFXParams                             ParamsA;                                           // 0x0000(0x00F0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FVFXParams                             ParamsB;                                           // 0x00F0(0x00F0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         Alpha;                                             // 0x01E0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E7B[0x4];                                     // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DDD[0x4];                                     // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVFXParams                             ReturnValue;                                       // 0x01E8(0x00F0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_BlendVFX) == 0x000008, "Wrong alignment on RBBlueprintLibrary_BlendVFX");
@@ -14157,7 +14157,7 @@ public:
 	class AActor*                                 baseActor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 ActorToCheck;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E7C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DDE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_CanActorCollisionOverlapInEditor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_CanActorCollisionOverlapInEditor");
 static_assert(sizeof(RBBlueprintLibrary_CanActorCollisionOverlapInEditor) == 0x000018, "Wrong size on RBBlueprintLibrary_CanActorCollisionOverlapInEditor");
@@ -14184,7 +14184,7 @@ public:
 	struct FGruntCustomizationMeshesConfig        CustomizationMeshesConfig;                         // 0x0000(0x0180)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	ENPCFlavor                                    Flavor;                                            // 0x0180(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0181(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E7D[0x6];                                     // 0x0182(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DDF[0x6];                                     // 0x0182(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_CanNPCBeFemale) == 0x000008, "Wrong alignment on RBBlueprintLibrary_CanNPCBeFemale");
 static_assert(sizeof(RBBlueprintLibrary_CanNPCBeFemale) == 0x000188, "Wrong size on RBBlueprintLibrary_CanNPCBeFemale");
@@ -14199,7 +14199,7 @@ struct RBBlueprintLibrary_CheckFeatureSwitch final
 public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E7E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_CheckFeatureSwitch) == 0x000008, "Wrong alignment on RBBlueprintLibrary_CheckFeatureSwitch");
 static_assert(sizeof(RBBlueprintLibrary_CheckFeatureSwitch) == 0x000018, "Wrong size on RBBlueprintLibrary_CheckFeatureSwitch");
@@ -14214,7 +14214,7 @@ public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Owner;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOPriority                                   VOPriority;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E7F[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE1[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ForcedRandomSeed;                                  // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_ClientOnly_PlayVOOnActor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_ClientOnly_PlayVOOnActor");
@@ -14232,10 +14232,10 @@ public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Owner;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOPriority                                   VOPriority;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E80[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE2[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PrePlayDelay;                                      // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ForcedRandomSeed;                                  // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E81[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE3[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_ClientOnly_QueueVOOnActor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_ClientOnly_QueueVOOnActor");
 static_assert(sizeof(RBBlueprintLibrary_ClientOnly_QueueVOOnActor) == 0x000020, "Wrong size on RBBlueprintLibrary_ClientOnly_QueueVOOnActor");
@@ -14306,7 +14306,7 @@ public:
 	const class ARBPawn*                          InteractorPawn;                                    // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsYFacing;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E82[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE4[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_DefaultTestInteractionAngle) == 0x000008, "Wrong alignment on RBBlueprintLibrary_DefaultTestInteractionAngle");
 static_assert(sizeof(RBBlueprintLibrary_DefaultTestInteractionAngle) == 0x000018, "Wrong size on RBBlueprintLibrary_DefaultTestInteractionAngle");
@@ -14333,7 +14333,7 @@ struct RBBlueprintLibrary_DisablePawnAnimOptims final
 public:
 	class ARBPawn*                                RBPawn;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisableOptims;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E83[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_DisablePawnAnimOptims) == 0x000008, "Wrong alignment on RBBlueprintLibrary_DisablePawnAnimOptims");
 static_assert(sizeof(RBBlueprintLibrary_DisablePawnAnimOptims) == 0x000010, "Wrong size on RBBlueprintLibrary_DisablePawnAnimOptims");
@@ -14347,7 +14347,7 @@ struct RBBlueprintLibrary_Dispatch_ActivateCameraShake final
 public:
 	struct FCameraShakeData                       ShakeData;                                         // 0x0000(0x0090)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                SourceLocation;                                    // 0x0090(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E84[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE6[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                ShakeOwner;                                        // 0x00A0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_Dispatch_ActivateCameraShake) == 0x000008, "Wrong alignment on RBBlueprintLibrary_Dispatch_ActivateCameraShake");
@@ -14375,7 +14375,7 @@ public:
 	class UAkAudioEvent*                          MusicTrack;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ARBPlayer*                              Player;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPauseLevelMusic;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E85[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE7[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_Dispatch_PlaySingleShotMusicTrack) == 0x000008, "Wrong alignment on RBBlueprintLibrary_Dispatch_PlaySingleShotMusicTrack");
 static_assert(sizeof(RBBlueprintLibrary_Dispatch_PlaySingleShotMusicTrack) == 0x000018, "Wrong size on RBBlueprintLibrary_Dispatch_PlaySingleShotMusicTrack");
@@ -14392,7 +14392,7 @@ public:
 	class AActor*                                 Owner;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOPriority                                   VOPriority;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPlayOnPlayersWatch;                               // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E86[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE8[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_Dispatch_PlayVOOnActor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_Dispatch_PlayVOOnActor");
 static_assert(sizeof(RBBlueprintLibrary_Dispatch_PlayVOOnActor) == 0x000018, "Wrong size on RBBlueprintLibrary_Dispatch_PlayVOOnActor");
@@ -14408,7 +14408,7 @@ struct RBBlueprintLibrary_Dispatch_PlayVOOnNarrator final
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOPriority                                   VOPriority;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E87[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DE9[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_Dispatch_PlayVOOnNarrator) == 0x000008, "Wrong alignment on RBBlueprintLibrary_Dispatch_PlayVOOnNarrator");
 static_assert(sizeof(RBBlueprintLibrary_Dispatch_PlayVOOnNarrator) == 0x000010, "Wrong size on RBBlueprintLibrary_Dispatch_PlayVOOnNarrator");
@@ -14504,10 +14504,10 @@ struct RBBlueprintLibrary_Dispatch_StopCameraShake final
 {
 public:
 	bool                                          bInstantly;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E88[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DEA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                ShakeOwner;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreOwnerCondition;                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E89[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DEB[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_Dispatch_StopCameraShake) == 0x000008, "Wrong alignment on RBBlueprintLibrary_Dispatch_StopCameraShake");
 static_assert(sizeof(RBBlueprintLibrary_Dispatch_StopCameraShake) == 0x000018, "Wrong size on RBBlueprintLibrary_Dispatch_StopCameraShake");
@@ -14546,7 +14546,7 @@ public:
 	float                                         Time;                                              // 0x0088(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DefaultValue;                                      // 0x008C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0090(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E8A[0x4];                                     // 0x0094(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DEC[0x4];                                     // 0x0094(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_EvalRuntimeFloatCurve) == 0x000008, "Wrong alignment on RBBlueprintLibrary_EvalRuntimeFloatCurve");
 static_assert(sizeof(RBBlueprintLibrary_EvalRuntimeFloatCurve) == 0x000098, "Wrong size on RBBlueprintLibrary_EvalRuntimeFloatCurve");
@@ -14563,7 +14563,7 @@ public:
 	struct FBox                                   boxA;                                              // 0x0000(0x001C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBox                                   boxB;                                              // 0x001C(0x001C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E8B[0x3];                                     // 0x0039(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DED[0x3];                                     // 0x0039(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_FBoxIntersect) == 0x000004, "Wrong alignment on RBBlueprintLibrary_FBoxIntersect");
 static_assert(sizeof(RBBlueprintLibrary_FBoxIntersect) == 0x00003C, "Wrong size on RBBlueprintLibrary_FBoxIntersect");
@@ -14578,7 +14578,7 @@ struct RBBlueprintLibrary_FilterByRandomState final
 public:
 	TArray<class AActor*>                         InActors;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          bIsStateA;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E8C[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DEE[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_FilterByRandomState) == 0x000008, "Wrong alignment on RBBlueprintLibrary_FilterByRandomState");
@@ -14625,7 +14625,7 @@ public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FVector2D                              UV;                                                // 0x0088(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E8D[0x3];                                     // 0x0091(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DEF[0x3];                                     // 0x0091(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_FindCollisionUVFromHit) == 0x000004, "Wrong alignment on RBBlueprintLibrary_FindCollisionUVFromHit");
 static_assert(sizeof(RBBlueprintLibrary_FindCollisionUVFromHit) == 0x000094, "Wrong size on RBBlueprintLibrary_FindCollisionUVFromHit");
@@ -14666,7 +14666,7 @@ struct RBBlueprintLibrary_FindQuatBetweenVectors final
 public:
 	struct FVector                                Vec1;                                              // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Vec2;                                              // 0x000C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E8E[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF0[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_FindQuatBetweenVectors) == 0x000010, "Wrong alignment on RBBlueprintLibrary_FindQuatBetweenVectors");
@@ -14684,7 +14684,7 @@ public:
 	bool                                          bFlipX;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFlipY;                                            // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFlipZ;                                            // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E8F[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF1[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_FlipRelativeLocation) == 0x000008, "Wrong alignment on RBBlueprintLibrary_FlipRelativeLocation");
 static_assert(sizeof(RBBlueprintLibrary_FlipRelativeLocation) == 0x000010, "Wrong size on RBBlueprintLibrary_FlipRelativeLocation");
@@ -14710,7 +14710,7 @@ struct RBBlueprintLibrary_FormatTimeFromFloat final
 {
 public:
 	float                                         Seconds;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E90[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_FormatTimeFromFloat) == 0x000008, "Wrong alignment on RBBlueprintLibrary_FormatTimeFromFloat");
@@ -14724,7 +14724,7 @@ struct RBBlueprintLibrary_FormatTimeFromInt final
 {
 public:
 	int32                                         Seconds;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E91[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF3[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_FormatTimeFromInt) == 0x000008, "Wrong alignment on RBBlueprintLibrary_FormatTimeFromInt");
@@ -14767,7 +14767,7 @@ struct RBBlueprintLibrary_GenerateRandomSeed final
 public:
 	class UObject*                                RandomSeedObject;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E92[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF4[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GenerateRandomSeed) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GenerateRandomSeed");
 static_assert(sizeof(RBBlueprintLibrary_GenerateRandomSeed) == 0x000010, "Wrong size on RBBlueprintLibrary_GenerateRandomSeed");
@@ -14781,7 +14781,7 @@ struct RBBlueprintLibrary_GenerateRandomSeedNonDeterministic final
 public:
 	class UObject*                                RandomSeedObject;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E93[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF5[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GenerateRandomSeedNonDeterministic) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GenerateRandomSeedNonDeterministic");
 static_assert(sizeof(RBBlueprintLibrary_GenerateRandomSeedNonDeterministic) == 0x000010, "Wrong size on RBBlueprintLibrary_GenerateRandomSeedNonDeterministic");
@@ -14794,7 +14794,7 @@ struct RBBlueprintLibrary_GenerateRandomString final
 {
 public:
 	int32                                         NbOfCharactersNeeded;                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E94[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GenerateRandomString) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GenerateRandomString");
@@ -14808,7 +14808,7 @@ struct RBBlueprintLibrary_GetActiveSkillClass final
 {
 public:
 	EActiveSkillType                              Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E95[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF7[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ARBActiveSkill>             ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetActiveSkillClass) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetActiveSkillClass");
@@ -14822,7 +14822,7 @@ struct RBBlueprintLibrary_GetActiveSkillCommonParams final
 {
 public:
 	EActiveSkillType                              Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E96[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF8[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FActiveSkillCommonParams               ReturnValue;                                       // 0x0008(0x0078)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetActiveSkillCommonParams) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetActiveSkillCommonParams");
@@ -14882,7 +14882,7 @@ struct RBBlueprintLibrary_GetAllTeamPlayers final
 {
 public:
 	ETeam                                         Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E97[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DF9[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARBPlayer*>                      ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetAllTeamPlayers) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetAllTeamPlayers");
@@ -14896,7 +14896,7 @@ struct RBBlueprintLibrary_GetAnchorOffsetTransform final
 {
 public:
 	class UAnimSequence*                          Sequence;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E98[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFA[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0010(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetAnchorOffsetTransform) == 0x000010, "Wrong alignment on RBBlueprintLibrary_GetAnchorOffsetTransform");
@@ -14910,7 +14910,7 @@ struct RBBlueprintLibrary_GetAnchorOffsetTransformFromGhostAnimation final
 {
 public:
 	TSubclassOf<class URBGhostAnimInstance>       GhostAnimClass;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E99[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFB[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0010(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetAnchorOffsetTransformFromGhostAnimation) == 0x000010, "Wrong alignment on RBBlueprintLibrary_GetAnchorOffsetTransformFromGhostAnimation");
@@ -14942,7 +14942,7 @@ public:
 	const class UAnimSequence*                    AnimAsset;                                         // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   BoneName;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Time;                                              // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E9A[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFC[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0020(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetAnimBoneTransform) == 0x000010, "Wrong alignment on RBBlueprintLibrary_GetAnimBoneTransform");
@@ -14960,7 +14960,7 @@ struct RBBlueprintLibrary_GetAnimPlayLength final
 public:
 	class UAnimSequence*                          AnimSeqence;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E9B[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFD[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetAnimPlayLength) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetAnimPlayLength");
 static_assert(sizeof(RBBlueprintLibrary_GetAnimPlayLength) == 0x000010, "Wrong size on RBBlueprintLibrary_GetAnimPlayLength");
@@ -14976,9 +14976,9 @@ public:
 	class FName                                   CurveName;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CurveValue;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromEnd;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E9C[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFE[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E9D[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFF[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetAnimTimeMatchForCurve) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetAnimTimeMatchForCurve");
 static_assert(sizeof(RBBlueprintLibrary_GetAnimTimeMatchForCurve) == 0x000020, "Wrong size on RBBlueprintLibrary_GetAnimTimeMatchForCurve");
@@ -15042,7 +15042,7 @@ public:
 	class UAnimSequence*                          Sequence;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   BoneName;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EvalTime;                                          // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E9E[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E00[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0020(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetBoneTransformForAnimation) == 0x000010, "Wrong alignment on RBBlueprintLibrary_GetBoneTransformForAnimation");
@@ -15059,7 +15059,7 @@ struct RBBlueprintLibrary_GetBoolValue final
 public:
 	struct FConfigurableBool                      ConfigurableBool;                                  // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E9F[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E01[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetBoolValue) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetBoolValue");
 static_assert(sizeof(RBBlueprintLibrary_GetBoolValue) == 0x000068, "Wrong size on RBBlueprintLibrary_GetBoolValue");
@@ -15086,7 +15086,7 @@ struct RBBlueprintLibrary_GetBoxFromPositions final
 public:
 	TArray<struct FVector>                        Positions;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FBox                                   ReturnValue;                                       // 0x0010(0x001C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA0[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E02[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetBoxFromPositions) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetBoxFromPositions");
 static_assert(sizeof(RBBlueprintLibrary_GetBoxFromPositions) == 0x000030, "Wrong size on RBBlueprintLibrary_GetBoxFromPositions");
@@ -15170,7 +15170,7 @@ struct RBBlueprintLibrary_GetClosestPushCartGoalManager final
 {
 public:
 	struct FVector                                Position;                                          // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA1[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E03[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPushCartGoalManager*                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetClosestPushCartGoalManager) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetClosestPushCartGoalManager");
@@ -15269,7 +15269,7 @@ struct RBBlueprintLibrary_GetCurrentSAS final
 {
 public:
 	ETeam                                         Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA2[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E04[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBSAS*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetCurrentSAS) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetCurrentSAS");
@@ -15314,7 +15314,7 @@ public:
 	class FName                                   CurveName;                                         // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Out_value;                                         // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA3[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E05[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetCurveValueFromAnimInstance) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetCurveValueFromAnimInstance");
 static_assert(sizeof(RBBlueprintLibrary_GetCurveValueFromAnimInstance) == 0x000018, "Wrong size on RBBlueprintLibrary_GetCurveValueFromAnimInstance");
@@ -15331,7 +15331,7 @@ public:
 	struct FGruntCustomizationMeshesConfig        CustomizationMeshesConfig;                         // 0x0000(0x0180)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FSelectedGruntCustomizationMeshesInfo  CustomizationMeshesInfo;                           // 0x0180(0x0014)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	ENPCCustomizationSlot                         Slot;                                              // 0x0194(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA4[0x3];                                     // 0x0195(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E06[0x3];                                     // 0x0195(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNPCCustomizationMesh                  ReturnValue;                                       // 0x0198(0x00D0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetCustomizationMeshForGrunt) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetCustomizationMeshForGrunt");
@@ -15483,7 +15483,7 @@ struct RBBlueprintLibrary_GetFloatValue final
 public:
 	struct FConfigurableFloat                     ConfigurableFloat;                                 // 0x0000(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x00C8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA5[0x4];                                     // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E07[0x4];                                     // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetFloatValue) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetFloatValue");
 static_assert(sizeof(RBBlueprintLibrary_GetFloatValue) == 0x0000D0, "Wrong size on RBBlueprintLibrary_GetFloatValue");
@@ -15496,7 +15496,7 @@ struct RBBlueprintLibrary_GetFoleySwitchOverrideFromGruntCustomization final
 {
 public:
 	struct FSelectedGruntCustomizationMeshesInfo  SelectedMeshInfo;                                  // 0x0000(0x0014)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA6[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E08[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGruntCustomizationMeshesConfig        MeshesConfig;                                      // 0x0018(0x0180)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FName                                   ReturnValue;                                       // 0x0198(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -15636,7 +15636,7 @@ public:
 	int32                                         Value;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceGamepad;                                     // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceKBM;                                         // 0x000D(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA7[0x2];                                     // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E09[0x2];                                     // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputActionKeyMapping                 ReturnValue;                                       // 0x0010(0x0028)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetInputBinding) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetInputBinding");
@@ -15654,7 +15654,7 @@ struct RBBlueprintLibrary_GetIntValue final
 public:
 	struct FConfigurableInt                       ConfigurableInt;                                   // 0x0000(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x00C8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA8[0x4];                                     // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E0A[0x4];                                     // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetIntValue) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetIntValue");
 static_assert(sizeof(RBBlueprintLibrary_GetIntValue) == 0x0000D0, "Wrong size on RBBlueprintLibrary_GetIntValue");
@@ -15848,7 +15848,7 @@ public:
 	class AActor*                                 Source;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Radius;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCheckClearance;                                   // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EA9[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E0B[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARBBot*>                         ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetNearbyBots) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetNearbyBots");
@@ -15866,9 +15866,9 @@ public:
 	class AActor*                                 Source;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Radius;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCheckClearance;                                   // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EAA[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E0C[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                OriginOffset;                                      // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EAB[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E0D[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARBPlayer*>                      ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetNearbyPlayers) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetNearbyPlayers");
@@ -15993,7 +15993,7 @@ struct RBBlueprintLibrary_GetPlayerCustomizationOptionForSlot final
 public:
 	class AActor*                                 CustomizationOwner;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPlayerCustomizationSlot                      Slot;                                              // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EAC[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E0E[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPlayerCustomizationOption*           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetPlayerCustomizationOptionForSlot) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetPlayerCustomizationOptionForSlot");
@@ -16142,7 +16142,7 @@ public:
 	bool                                          bFemale;                                           // 0x0180(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENPCCustomizationSlot                         Slot;                                              // 0x0181(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENPCFlavor                                    Flavor;                                            // 0x0182(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EAD[0x1];                                     // 0x0183(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E0F[0x1];                                     // 0x0183(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0184(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetRandomIndexForNPCCustomizationSlot) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetRandomIndexForNPCCustomizationSlot");
@@ -16269,7 +16269,7 @@ struct RBBlueprintLibrary_GetRBObjectiveManager final
 {
 public:
 	ETeam                                         Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EAE[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E10[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBObjectiveManager*                    ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetRBObjectiveManager) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetRBObjectiveManager");
@@ -16390,10 +16390,10 @@ public:
 	class AActor*                                 SourceActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DestActor;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Out_ValidPath;                                     // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EAF[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E11[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaxDistance;                                       // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AllowCoopRooms;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB0[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E12[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetRoomPathedDistance) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetRoomPathedDistance");
@@ -16516,7 +16516,7 @@ public:
 	class UStaticMesh*                            StaticMesh;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LODIndex;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB1[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E13[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetStaticMeshImportSettingsGenerateLightmapUVs) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetStaticMeshImportSettingsGenerateLightmapUVs");
 static_assert(sizeof(RBBlueprintLibrary_GetStaticMeshImportSettingsGenerateLightmapUVs) == 0x000010, "Wrong size on RBBlueprintLibrary_GetStaticMeshImportSettingsGenerateLightmapUVs");
@@ -16532,7 +16532,7 @@ public:
 	class UStaticMesh*                            StaticMesh;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LODIndex;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB2[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E14[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetStaticMeshLODGenerateLightmapUVs) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetStaticMeshLODGenerateLightmapUVs");
 static_assert(sizeof(RBBlueprintLibrary_GetStaticMeshLODGenerateLightmapUVs) == 0x000010, "Wrong size on RBBlueprintLibrary_GetStaticMeshLODGenerateLightmapUVs");
@@ -16585,11 +16585,11 @@ struct RBBlueprintLibrary_GetUniqueVariatorTypeValue final
 {
 public:
 	EUniqueVariatorType                           Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB3[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E15[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Param_Name;                                        // 0x0004(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OutValue;                                          // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB4[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E16[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetUniqueVariatorTypeValue) == 0x000004, "Wrong alignment on RBBlueprintLibrary_GetUniqueVariatorTypeValue");
 static_assert(sizeof(RBBlueprintLibrary_GetUniqueVariatorTypeValue) == 0x000014, "Wrong size on RBBlueprintLibrary_GetUniqueVariatorTypeValue");
@@ -16629,7 +16629,7 @@ struct RBBlueprintLibrary_GetViewForward final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB5[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E17[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetViewForward) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetViewForward");
 static_assert(sizeof(RBBlueprintLibrary_GetViewForward) == 0x000018, "Wrong size on RBBlueprintLibrary_GetViewForward");
@@ -16643,7 +16643,7 @@ struct RBBlueprintLibrary_GetViewLocation final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB6[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E18[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetViewLocation) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetViewLocation");
 static_assert(sizeof(RBBlueprintLibrary_GetViewLocation) == 0x000018, "Wrong size on RBBlueprintLibrary_GetViewLocation");
@@ -16672,7 +16672,7 @@ struct RBBlueprintLibrary_GetViewRotation final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB7[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E19[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetViewRotation) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetViewRotation");
 static_assert(sizeof(RBBlueprintLibrary_GetViewRotation) == 0x000018, "Wrong size on RBBlueprintLibrary_GetViewRotation");
@@ -16714,10 +16714,10 @@ public:
 	const class UAnimSequence*                    Sequence;                                          // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USceneComponent*                        InSceneComponent;                                  // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSnapToGround;                                     // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB8[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E1A[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                OutLocation;                                       // 0x001C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OutDirection;                                      // 0x0028(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EB9[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E1B[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                SnapToGroundRequester;                             // 0x0038(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_GetWorldTransformFromAnimationAnchor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_GetWorldTransformFromAnimationAnchor");
@@ -16739,12 +16739,12 @@ public:
 	const class UAnimSequence*                    Sequence;                                          // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             InTransformReference;                              // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bSnapToGround;                                     // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EBA[0x3];                                     // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E1C[0x3];                                     // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                OutLocation;                                       // 0x0044(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OutDirection;                                      // 0x0050(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EBB[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E1D[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                SnapToGroundRequester;                             // 0x0060(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EBC[0x8];                                     // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E1E[0x8];                                     // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetWorldTransformFromAnimationAnchorByTransform) == 0x000010, "Wrong alignment on RBBlueprintLibrary_GetWorldTransformFromAnimationAnchorByTransform");
 static_assert(sizeof(RBBlueprintLibrary_GetWorldTransformFromAnimationAnchorByTransform) == 0x000070, "Wrong size on RBBlueprintLibrary_GetWorldTransformFromAnimationAnchorByTransform");
@@ -16762,11 +16762,11 @@ struct RBBlueprintLibrary_GetWorldTransformFromGhostAnimationAnchorByTransform f
 {
 public:
 	TSubclassOf<class URBGhostAnimInstance>       GhostAnimClass;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EBD[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E1F[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             InTransformReference;                              // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                OutLocation;                                       // 0x0040(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OutDirection;                                      // 0x004C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EBE[0x8];                                     // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E20[0x8];                                     // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetWorldTransformFromGhostAnimationAnchorByTransform) == 0x000010, "Wrong alignment on RBBlueprintLibrary_GetWorldTransformFromGhostAnimationAnchorByTransform");
 static_assert(sizeof(RBBlueprintLibrary_GetWorldTransformFromGhostAnimationAnchorByTransform) == 0x000060, "Wrong size on RBBlueprintLibrary_GetWorldTransformFromGhostAnimationAnchorByTransform");
@@ -16800,7 +16800,7 @@ public:
 	const class UAnimSequence*                    Sequence;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   BoneName;                                          // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EvalTime;                                          // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EBF[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E21[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             InTransformReference;                              // 0x0020(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FTransform                             OutTransform;                                      // 0x0050(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -16821,10 +16821,10 @@ public:
 	const class UAnimSequence*                    Sequence;                                          // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             InTransformReference;                              // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bSnapToGround;                                     // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC0[0xF];                                     // 0x0041(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E22[0xF];                                     // 0x0041(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             OutTransform;                                      // 0x0050(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class UObject*                                SnapToGroundRequester;                             // 0x0080(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC1[0x8];                                     // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E23[0x8];                                     // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetWorldTransformMatrixFromAnimationAnchorByTransform) == 0x000010, "Wrong alignment on RBBlueprintLibrary_GetWorldTransformMatrixFromAnimationAnchorByTransform");
 static_assert(sizeof(RBBlueprintLibrary_GetWorldTransformMatrixFromAnimationAnchorByTransform) == 0x000090, "Wrong size on RBBlueprintLibrary_GetWorldTransformMatrixFromAnimationAnchorByTransform");
@@ -16844,10 +16844,10 @@ public:
 	const class UAnimSequence*                    Sequence;                                          // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             InTransformReference;                              // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bSnapToGround;                                     // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC2[0xF];                                     // 0x0041(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E24[0xF];                                     // 0x0041(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             OutTransform;                                      // 0x0050(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class UObject*                                SnapToGroundRequester;                             // 0x0080(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC3[0x8];                                     // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E25[0x8];                                     // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_GetWorldTransformMatrixFromAnimationAnchorByTransformInMeshSpace) == 0x000010, "Wrong alignment on RBBlueprintLibrary_GetWorldTransformMatrixFromAnimationAnchorByTransformInMeshSpace");
 static_assert(sizeof(RBBlueprintLibrary_GetWorldTransformMatrixFromAnimationAnchorByTransformInMeshSpace) == 0x000090, "Wrong size on RBBlueprintLibrary_GetWorldTransformMatrixFromAnimationAnchorByTransformInMeshSpace");
@@ -16864,7 +16864,7 @@ struct RBBlueprintLibrary_GetWorldTransformMatrixFromGhostAnimationAnchorByTrans
 {
 public:
 	TSubclassOf<class URBGhostAnimInstance>       GhostAnimClass;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC4[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E26[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             InTransformReference;                              // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FTransform                             OutTransform;                                      // 0x0040(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -16881,7 +16881,7 @@ struct RBBlueprintLibrary_HasActorBegunPlay final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E27[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_HasActorBegunPlay) == 0x000008, "Wrong alignment on RBBlueprintLibrary_HasActorBegunPlay");
 static_assert(sizeof(RBBlueprintLibrary_HasActorBegunPlay) == 0x000010, "Wrong size on RBBlueprintLibrary_HasActorBegunPlay");
@@ -16895,7 +16895,7 @@ struct RBBlueprintLibrary_HasActorNotBegunPlay final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E28[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_HasActorNotBegunPlay) == 0x000008, "Wrong alignment on RBBlueprintLibrary_HasActorNotBegunPlay");
 static_assert(sizeof(RBBlueprintLibrary_HasActorNotBegunPlay) == 0x000010, "Wrong size on RBBlueprintLibrary_HasActorNotBegunPlay");
@@ -16934,7 +16934,7 @@ public:
 	class ARBPlayer*                              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   UpgradeID;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC7[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E29[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_HasPlayerUpgradeEffect) == 0x000008, "Wrong alignment on RBBlueprintLibrary_HasPlayerUpgradeEffect");
 static_assert(sizeof(RBBlueprintLibrary_HasPlayerUpgradeEffect) == 0x000018, "Wrong size on RBBlueprintLibrary_HasPlayerUpgradeEffect");
@@ -16962,7 +16962,7 @@ public:
 	class FString                                 Filename;                                          // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETextureCompressionSettings                   CompressionSettings;                               // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC8[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E2A[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_ImportTexture) == 0x000008, "Wrong alignment on RBBlueprintLibrary_ImportTexture");
 static_assert(sizeof(RBBlueprintLibrary_ImportTexture) == 0x000028, "Wrong size on RBBlueprintLibrary_ImportTexture");
@@ -16978,7 +16978,7 @@ struct RBBlueprintLibrary_IsActionMappingValid final
 public:
 	struct FInputActionKeyMapping                 KeyMapping;                                        // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC9[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E2B[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsActionMappingValid) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsActionMappingValid");
 static_assert(sizeof(RBBlueprintLibrary_IsActionMappingValid) == 0x000030, "Wrong size on RBBlueprintLibrary_IsActionMappingValid");
@@ -16992,7 +16992,7 @@ struct RBBlueprintLibrary_IsAxisMappingValid final
 public:
 	struct FInputAxisKeyMapping                   KeyMapping;                                        // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ECA[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E2C[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsAxisMappingValid) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsAxisMappingValid");
 static_assert(sizeof(RBBlueprintLibrary_IsAxisMappingValid) == 0x000030, "Wrong size on RBBlueprintLibrary_IsAxisMappingValid");
@@ -17105,7 +17105,7 @@ public:
 	struct FUniqueNetIdRepl                       UniqueID1;                                         // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FUniqueNetIdRepl                       UniqueID2;                                         // 0x0028(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ECB[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E2D[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsEqual) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsEqual");
 static_assert(sizeof(RBBlueprintLibrary_IsEqual) == 0x000058, "Wrong size on RBBlueprintLibrary_IsEqual");
@@ -17131,7 +17131,7 @@ struct RBBlueprintLibrary_IsHiddenInEditor final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ECC[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E2E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsHiddenInEditor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsHiddenInEditor");
 static_assert(sizeof(RBBlueprintLibrary_IsHiddenInEditor) == 0x000010, "Wrong size on RBBlueprintLibrary_IsHiddenInEditor");
@@ -17145,7 +17145,7 @@ struct RBBlueprintLibrary_IsInBlueprintEditor final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ECD[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E2F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsInBlueprintEditor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsInBlueprintEditor");
 static_assert(sizeof(RBBlueprintLibrary_IsInBlueprintEditor) == 0x000010, "Wrong size on RBBlueprintLibrary_IsInBlueprintEditor");
@@ -17159,7 +17159,7 @@ struct RBBlueprintLibrary_IsInEditor final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ECE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E30[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsInEditor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsInEditor");
 static_assert(sizeof(RBBlueprintLibrary_IsInEditor) == 0x000010, "Wrong size on RBBlueprintLibrary_IsInEditor");
@@ -17173,7 +17173,7 @@ struct RBBlueprintLibrary_IsInEditorOrCommandlet final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ECF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E31[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsInEditorOrCommandlet) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsInEditorOrCommandlet");
 static_assert(sizeof(RBBlueprintLibrary_IsInEditorOrCommandlet) == 0x000010, "Wrong size on RBBlueprintLibrary_IsInEditorOrCommandlet");
@@ -17187,7 +17187,7 @@ struct RBBlueprintLibrary_IsInPIE final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E32[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsInPIE) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsInPIE");
 static_assert(sizeof(RBBlueprintLibrary_IsInPIE) == 0x000010, "Wrong size on RBBlueprintLibrary_IsInPIE");
@@ -17224,7 +17224,7 @@ public:
 	struct FRBMissionID                           MissionID1;                                        // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRBMissionID                           MissionID2;                                        // 0x0028(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED1[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E33[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsMissionIDEqual) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsMissionIDEqual");
 static_assert(sizeof(RBBlueprintLibrary_IsMissionIDEqual) == 0x000058, "Wrong size on RBBlueprintLibrary_IsMissionIDEqual");
@@ -17239,7 +17239,7 @@ struct RBBlueprintLibrary_IsMissionIDValid final
 public:
 	struct FRBMissionID                           MissionID;                                         // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED2[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E34[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsMissionIDValid) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsMissionIDValid");
 static_assert(sizeof(RBBlueprintLibrary_IsMissionIDValid) == 0x000030, "Wrong size on RBBlueprintLibrary_IsMissionIDValid");
@@ -17253,7 +17253,7 @@ struct RBBlueprintLibrary_IsPlayInEditor final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E35[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsPlayInEditor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsPlayInEditor");
 static_assert(sizeof(RBBlueprintLibrary_IsPlayInEditor) == 0x000010, "Wrong size on RBBlueprintLibrary_IsPlayInEditor");
@@ -17267,7 +17267,7 @@ struct RBBlueprintLibrary_IsProgramEnabled final
 public:
 	class FName                                   ProgramId;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED4[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E36[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsProgramEnabled) == 0x000004, "Wrong alignment on RBBlueprintLibrary_IsProgramEnabled");
 static_assert(sizeof(RBBlueprintLibrary_IsProgramEnabled) == 0x00000C, "Wrong size on RBBlueprintLibrary_IsProgramEnabled");
@@ -17283,7 +17283,7 @@ public:
 	class FString                                 InWidgetName;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OutWidgetIndex;                                    // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED5[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E37[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsPropertyWidgetSelected) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsPropertyWidgetSelected");
 static_assert(sizeof(RBBlueprintLibrary_IsPropertyWidgetSelected) == 0x000020, "Wrong size on RBBlueprintLibrary_IsPropertyWidgetSelected");
@@ -17300,7 +17300,7 @@ public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxDelay;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED6[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E38[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsRecentEvent) == 0x000004, "Wrong alignment on RBBlueprintLibrary_IsRecentEvent");
 static_assert(sizeof(RBBlueprintLibrary_IsRecentEvent) == 0x00000C, "Wrong size on RBBlueprintLibrary_IsRecentEvent");
@@ -17316,7 +17316,7 @@ public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxDelay;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED7[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E39[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsRecentServerEvent) == 0x000004, "Wrong alignment on RBBlueprintLibrary_IsRecentServerEvent");
 static_assert(sizeof(RBBlueprintLibrary_IsRecentServerEvent) == 0x00000C, "Wrong size on RBBlueprintLibrary_IsRecentServerEvent");
@@ -17365,7 +17365,7 @@ public:
 	struct FRBStageID                             StageID1;                                          // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRBStageID                             StageID2;                                          // 0x0028(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED8[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E3A[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsStageIDEqual) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsStageIDEqual");
 static_assert(sizeof(RBBlueprintLibrary_IsStageIDEqual) == 0x000058, "Wrong size on RBBlueprintLibrary_IsStageIDEqual");
@@ -17380,7 +17380,7 @@ struct RBBlueprintLibrary_IsStageIDValid final
 public:
 	struct FRBStageID                             StageID;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1ED9[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E3B[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsStageIDValid) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsStageIDValid");
 static_assert(sizeof(RBBlueprintLibrary_IsStageIDValid) == 0x000030, "Wrong size on RBBlueprintLibrary_IsStageIDValid");
@@ -17427,7 +17427,7 @@ struct RBBlueprintLibrary_IsTransactional final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EDA[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E3C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsTransactional) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsTransactional");
 static_assert(sizeof(RBBlueprintLibrary_IsTransactional) == 0x000010, "Wrong size on RBBlueprintLibrary_IsTransactional");
@@ -17441,7 +17441,7 @@ struct RBBlueprintLibrary_IsTransient final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EDB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E3D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsTransient) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsTransient");
 static_assert(sizeof(RBBlueprintLibrary_IsTransient) == 0x000010, "Wrong size on RBBlueprintLibrary_IsTransient");
@@ -17466,7 +17466,7 @@ struct RBBlueprintLibrary_IsTrialEnabled final
 public:
 	class FName                                   TrialId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EDC[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E3E[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsTrialEnabled) == 0x000004, "Wrong alignment on RBBlueprintLibrary_IsTrialEnabled");
 static_assert(sizeof(RBBlueprintLibrary_IsTrialEnabled) == 0x00000C, "Wrong size on RBBlueprintLibrary_IsTrialEnabled");
@@ -17493,7 +17493,7 @@ struct RBBlueprintLibrary_IsValid final
 public:
 	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EDD[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E3F[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsValid) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsValid");
 static_assert(sizeof(RBBlueprintLibrary_IsValid) == 0x000030, "Wrong size on RBBlueprintLibrary_IsValid");
@@ -17507,7 +17507,7 @@ struct RBBlueprintLibrary_IsValidNPCForAuraVariator final
 public:
 	class ARBNPC*                                 RBNPC;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EDE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E40[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_IsValidNPCForAuraVariator) == 0x000008, "Wrong alignment on RBBlueprintLibrary_IsValidNPCForAuraVariator");
 static_assert(sizeof(RBBlueprintLibrary_IsValidNPCForAuraVariator) == 0x000010, "Wrong size on RBBlueprintLibrary_IsValidNPCForAuraVariator");
@@ -17571,7 +17571,7 @@ struct RBBlueprintLibrary_LevelRandomBool final
 public:
 	int32                                         RandomizerId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EDF[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E41[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_LevelRandomBool) == 0x000004, "Wrong alignment on RBBlueprintLibrary_LevelRandomBool");
 static_assert(sizeof(RBBlueprintLibrary_LevelRandomBool) == 0x000008, "Wrong size on RBBlueprintLibrary_LevelRandomBool");
@@ -17695,7 +17695,7 @@ struct RBBlueprintLibrary_PlayAnnouncerLine_Server final
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVOBehavior                                   VoBehavior;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE0[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E42[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PrePlayQueueDelay;                                 // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_PlayAnnouncerLine_Server) == 0x000008, "Wrong alignment on RBBlueprintLibrary_PlayAnnouncerLine_Server");
@@ -17712,7 +17712,7 @@ public:
 	class UAkAudioEvent*                          StartEvent;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          StopEvent;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStopLevelMusic;                                   // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE1[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E43[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_PlayLoopingMusicTrack) == 0x000008, "Wrong alignment on RBBlueprintLibrary_PlayLoopingMusicTrack");
 static_assert(sizeof(RBBlueprintLibrary_PlayLoopingMusicTrack) == 0x000018, "Wrong size on RBBlueprintLibrary_PlayLoopingMusicTrack");
@@ -17729,7 +17729,7 @@ public:
 	class UAkAudioEvent*                          StopAkEvent;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                Actor;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE2[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E44[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_PlayLoopingSoundOnActor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_PlayLoopingSoundOnActor");
 static_assert(sizeof(RBBlueprintLibrary_PlayLoopingSoundOnActor) == 0x000020, "Wrong size on RBBlueprintLibrary_PlayLoopingSoundOnActor");
@@ -17746,7 +17746,7 @@ public:
 	struct FRBMurkoffAnnouncentData               AnnouncementData;                                  // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          StopEvent;                                         // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StopDelay;                                         // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE3[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E45[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_PlayMurkoffAnnouncement) == 0x000008, "Wrong alignment on RBBlueprintLibrary_PlayMurkoffAnnouncement");
 static_assert(sizeof(RBBlueprintLibrary_PlayMurkoffAnnouncement) == 0x000030, "Wrong size on RBBlueprintLibrary_PlayMurkoffAnnouncement");
@@ -17761,7 +17761,7 @@ struct RBBlueprintLibrary_PlayObjectiveNarrativeScreenAnimation final
 public:
 	struct FNarrativeScreenAnimationData          AnimData;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bPlayerDefaultIntro;                               // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE4[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E46[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_PlayObjectiveNarrativeScreenAnimation) == 0x000008, "Wrong alignment on RBBlueprintLibrary_PlayObjectiveNarrativeScreenAnimation");
 static_assert(sizeof(RBBlueprintLibrary_PlayObjectiveNarrativeScreenAnimation) == 0x000020, "Wrong size on RBBlueprintLibrary_PlayObjectiveNarrativeScreenAnimation");
@@ -17792,7 +17792,7 @@ struct RBBlueprintLibrary_PlaySingleShotMusicTrack final
 public:
 	class UAkAudioEvent*                          MusicTrack;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPauseLevelMusic;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E47[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_PlaySingleShotMusicTrack) == 0x000008, "Wrong alignment on RBBlueprintLibrary_PlaySingleShotMusicTrack");
 static_assert(sizeof(RBBlueprintLibrary_PlaySingleShotMusicTrack) == 0x000010, "Wrong size on RBBlueprintLibrary_PlaySingleShotMusicTrack");
@@ -17829,7 +17829,7 @@ struct RBBlueprintLibrary_RandomizeActorArray final
 {
 public:
 	int32                                         RandomizerId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E48[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         InActors;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
@@ -17891,7 +17891,7 @@ struct RBBlueprintLibrary_RotatorToQuaternion final
 {
 public:
 	struct FRotator                               Rotation;                                          // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE7[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E49[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_RotatorToQuaternion) == 0x000010, "Wrong alignment on RBBlueprintLibrary_RotatorToQuaternion");
@@ -17919,7 +17919,7 @@ public:
 	class UAkComponent*                           In_pComponent;                                     // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         In_fPercent;                                       // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          In_bSeekToNearestMarker;                           // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE8[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E4A[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SeekOnEvent) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SeekOnEvent");
 static_assert(sizeof(RBBlueprintLibrary_SeekOnEvent) == 0x000020, "Wrong size on RBBlueprintLibrary_SeekOnEvent");
@@ -17936,7 +17936,7 @@ public:
 	class FString                                 PropertyName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PropertyIndex;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsPropertyTransform;                              // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EE9[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E4B[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_Select3DWidget) == 0x000008, "Wrong alignment on RBBlueprintLibrary_Select3DWidget");
 static_assert(sizeof(RBBlueprintLibrary_Select3DWidget) == 0x000018, "Wrong size on RBBlueprintLibrary_Select3DWidget");
@@ -17951,7 +17951,7 @@ struct RBBlueprintLibrary_SelectActorsInEditor final
 public:
 	TArray<class AActor*>                         Actors;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bClearSelection;                                   // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EEA[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E4C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SelectActorsInEditor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SelectActorsInEditor");
 static_assert(sizeof(RBBlueprintLibrary_SelectActorsInEditor) == 0x000018, "Wrong size on RBBlueprintLibrary_SelectActorsInEditor");
@@ -17976,7 +17976,7 @@ struct RBBlueprintLibrary_SelectComponentsInEditor final
 public:
 	TArray<class UActorComponent*>                Components;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          bClearSelection;                                   // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EEB[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E4D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SelectComponentsInEditor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SelectComponentsInEditor");
 static_assert(sizeof(RBBlueprintLibrary_SelectComponentsInEditor) == 0x000018, "Wrong size on RBBlueprintLibrary_SelectComponentsInEditor");
@@ -18002,7 +18002,7 @@ public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   PropertyName;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWidgetEnabled;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EEC[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E4E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_Set3DWidgetEnabled) == 0x000008, "Wrong alignment on RBBlueprintLibrary_Set3DWidgetEnabled");
 static_assert(sizeof(RBBlueprintLibrary_Set3DWidgetEnabled) == 0x000018, "Wrong size on RBBlueprintLibrary_Set3DWidgetEnabled");
@@ -18017,7 +18017,7 @@ struct RBBlueprintLibrary_SetActorCastStaticShadow final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCastStaticShadow;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EED[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E4F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetActorCastStaticShadow) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetActorCastStaticShadow");
 static_assert(sizeof(RBBlueprintLibrary_SetActorCastStaticShadow) == 0x000010, "Wrong size on RBBlueprintLibrary_SetActorCastStaticShadow");
@@ -18031,7 +18031,7 @@ struct RBBlueprintLibrary_SetActorTemporarilyHiddenInEditor final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsHidden;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EEE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E50[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetActorTemporarilyHiddenInEditor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetActorTemporarilyHiddenInEditor");
 static_assert(sizeof(RBBlueprintLibrary_SetActorTemporarilyHiddenInEditor) == 0x000010, "Wrong size on RBBlueprintLibrary_SetActorTemporarilyHiddenInEditor");
@@ -18046,7 +18046,7 @@ public:
 	class USceneComponent*                        SceneComponent;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECanBeCharacterBase                           CanStepUponValue;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPropagateToChildren;                              // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EEF[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E51[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetCanStepUpon) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetCanStepUpon");
 static_assert(sizeof(RBBlueprintLibrary_SetCanStepUpon) == 0x000010, "Wrong size on RBBlueprintLibrary_SetCanStepUpon");
@@ -18061,7 +18061,7 @@ struct RBBlueprintLibrary_SetCollisionEnabledOnHierarchy final
 public:
 	class USceneComponent*                        SceneComponent;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECollisionEnabled                             NewType;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E52[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetCollisionEnabledOnHierarchy) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetCollisionEnabledOnHierarchy");
 static_assert(sizeof(RBBlueprintLibrary_SetCollisionEnabledOnHierarchy) == 0x000010, "Wrong size on RBBlueprintLibrary_SetCollisionEnabledOnHierarchy");
@@ -18086,7 +18086,7 @@ struct RBBlueprintLibrary_SetForceNoVolumetricLightmapsOnHierarchy final
 public:
 	class USceneComponent*                        SceneComponent;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceNoVolumetricLightMap;                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E53[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetForceNoVolumetricLightmapsOnHierarchy) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetForceNoVolumetricLightmapsOnHierarchy");
 static_assert(sizeof(RBBlueprintLibrary_SetForceNoVolumetricLightmapsOnHierarchy) == 0x000010, "Wrong size on RBBlueprintLibrary_SetForceNoVolumetricLightmapsOnHierarchy");
@@ -18126,7 +18126,7 @@ struct RBBlueprintLibrary_SetHiddenInEditor final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHidden;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E54[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetHiddenInEditor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetHiddenInEditor");
 static_assert(sizeof(RBBlueprintLibrary_SetHiddenInEditor) == 0x000010, "Wrong size on RBBlueprintLibrary_SetHiddenInEditor");
@@ -18153,7 +18153,7 @@ struct RBBlueprintLibrary_SetListenAtPlayerLocation final
 public:
 	class UObject*                                RequestOwner;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bListenAtPlayerLocation;                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E55[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetListenAtPlayerLocation) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetListenAtPlayerLocation");
 static_assert(sizeof(RBBlueprintLibrary_SetListenAtPlayerLocation) == 0x000010, "Wrong size on RBBlueprintLibrary_SetListenAtPlayerLocation");
@@ -18180,7 +18180,7 @@ struct RBBlueprintLibrary_SetNarrativeMusicServer final
 public:
 	struct FNarrativeSoundEventsInfo              NarrativeSoundEventsInfo;                          // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bPauseLevelMusic;                                  // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF4[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E56[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetNarrativeMusicServer) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetNarrativeMusicServer");
 static_assert(sizeof(RBBlueprintLibrary_SetNarrativeMusicServer) == 0x000028, "Wrong size on RBBlueprintLibrary_SetNarrativeMusicServer");
@@ -18195,7 +18195,7 @@ public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bActive;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bChain;                                            // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF5[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E57[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetNetworkSyncState) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetNetworkSyncState");
 static_assert(sizeof(RBBlueprintLibrary_SetNetworkSyncState) == 0x000010, "Wrong size on RBBlueprintLibrary_SetNetworkSyncState");
@@ -18210,7 +18210,7 @@ struct RBBlueprintLibrary_SetNVBattery final
 public:
 	class ARBPlayer*                              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF6[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E58[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SetNVBattery) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SetNVBattery");
 static_assert(sizeof(RBBlueprintLibrary_SetNVBattery) == 0x000010, "Wrong size on RBBlueprintLibrary_SetNVBattery");
@@ -18271,7 +18271,7 @@ public:
 	class ARBPlayer*                              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   Message;                                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	EMessagePriority                              Priority;                                          // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF7[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E59[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Duration;                                          // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_ShowInteractionMessage) == 0x000008, "Wrong alignment on RBBlueprintLibrary_ShowInteractionMessage");
@@ -18288,7 +18288,7 @@ struct RBBlueprintLibrary_ShowInteractionMessageToAllPlayers final
 public:
 	class FText                                   Message;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	EMessagePriority                              Priority;                                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF8[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E5A[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Duration;                                          // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_ShowInteractionMessageToAllPlayers) == 0x000008, "Wrong alignment on RBBlueprintLibrary_ShowInteractionMessageToAllPlayers");
@@ -18306,7 +18306,7 @@ public:
 	class FText                                   Message;                                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         Duration;                                          // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          PlaySounds;                                        // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EF9[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E5B[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_ShowObjectiveMessage) == 0x000008, "Wrong alignment on RBBlueprintLibrary_ShowObjectiveMessage");
 static_assert(sizeof(RBBlueprintLibrary_ShowObjectiveMessage) == 0x000028, "Wrong size on RBBlueprintLibrary_ShowObjectiveMessage");
@@ -18336,7 +18336,7 @@ public:
 	const class AActor*                           ActorA;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class AActor*                           ActorB;                                            // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EFA[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E5C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SortCompareActorsByName) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SortCompareActorsByName");
 static_assert(sizeof(RBBlueprintLibrary_SortCompareActorsByName) == 0x000018, "Wrong size on RBBlueprintLibrary_SortCompareActorsByName");
@@ -18352,7 +18352,7 @@ public:
 	class FString                                 StringA;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 StringB;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EFB[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E5D[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SortCompareString) == 0x000008, "Wrong alignment on RBBlueprintLibrary_SortCompareString");
 static_assert(sizeof(RBBlueprintLibrary_SortCompareString) == 0x000028, "Wrong size on RBBlueprintLibrary_SortCompareString");
@@ -18367,7 +18367,7 @@ struct RBBlueprintLibrary_StartPsychosisOnAllPlayers final
 public:
 	class URBHalluCfg_Psychosis*                  PsychosisConfig;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Force;                                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EFC[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E5E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_StartPsychosisOnAllPlayers) == 0x000008, "Wrong alignment on RBBlueprintLibrary_StartPsychosisOnAllPlayers");
 static_assert(sizeof(RBBlueprintLibrary_StartPsychosisOnAllPlayers) == 0x000010, "Wrong size on RBBlueprintLibrary_StartPsychosisOnAllPlayers");
@@ -18408,7 +18408,7 @@ public:
 	class UAkAudioEvent*                          StartEvent;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          StopEvent;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bResumeLevelMusic;                                 // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EFD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E5F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_StopMusicTrack) == 0x000008, "Wrong alignment on RBBlueprintLibrary_StopMusicTrack");
 static_assert(sizeof(RBBlueprintLibrary_StopMusicTrack) == 0x000018, "Wrong size on RBBlueprintLibrary_StopMusicTrack");
@@ -18434,7 +18434,7 @@ struct RBBlueprintLibrary_SwitchLevelRandom2 final
 public:
 	int32                                         RandomizerId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERandomSwitch2                                RandomSwitch;                                      // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EFE[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E60[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SwitchLevelRandom2) == 0x000004, "Wrong alignment on RBBlueprintLibrary_SwitchLevelRandom2");
 static_assert(sizeof(RBBlueprintLibrary_SwitchLevelRandom2) == 0x000008, "Wrong size on RBBlueprintLibrary_SwitchLevelRandom2");
@@ -18448,7 +18448,7 @@ struct RBBlueprintLibrary_SwitchLevelRandom3 final
 public:
 	int32                                         RandomizerId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERandomSwitch3                                RandomSwitch;                                      // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EFF[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E61[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SwitchLevelRandom3) == 0x000004, "Wrong alignment on RBBlueprintLibrary_SwitchLevelRandom3");
 static_assert(sizeof(RBBlueprintLibrary_SwitchLevelRandom3) == 0x000008, "Wrong size on RBBlueprintLibrary_SwitchLevelRandom3");
@@ -18462,7 +18462,7 @@ struct RBBlueprintLibrary_SwitchLevelRandom4 final
 public:
 	int32                                         RandomizerId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERandomSwitch4                                RandomSwitch;                                      // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F00[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E62[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SwitchLevelRandom4) == 0x000004, "Wrong alignment on RBBlueprintLibrary_SwitchLevelRandom4");
 static_assert(sizeof(RBBlueprintLibrary_SwitchLevelRandom4) == 0x000008, "Wrong size on RBBlueprintLibrary_SwitchLevelRandom4");
@@ -18476,7 +18476,7 @@ struct RBBlueprintLibrary_SwitchLevelRandom5 final
 public:
 	int32                                         RandomizerId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERandomSwitch5                                RandomSwitch;                                      // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F01[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E63[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SwitchLevelRandom5) == 0x000004, "Wrong alignment on RBBlueprintLibrary_SwitchLevelRandom5");
 static_assert(sizeof(RBBlueprintLibrary_SwitchLevelRandom5) == 0x000008, "Wrong size on RBBlueprintLibrary_SwitchLevelRandom5");
@@ -18491,7 +18491,7 @@ public:
 	int32                                         RandomizerId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxOptions;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERandomSwitch10                               RandomSwitch;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F02[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E64[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_SwitchLevelRandomN) == 0x000004, "Wrong alignment on RBBlueprintLibrary_SwitchLevelRandomN");
 static_assert(sizeof(RBBlueprintLibrary_SwitchLevelRandomN) == 0x00000C, "Wrong size on RBBlueprintLibrary_SwitchLevelRandomN");
@@ -18509,7 +18509,7 @@ public:
 	bool                                          bUseTransitionFX;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseTargetForRotation;                             // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInterruptAction;                                  // 0x0012(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F03[0x5];                                     // 0x0013(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E65[0x5];                                     // 0x0013(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_TeleportPlayer) == 0x000008, "Wrong alignment on RBBlueprintLibrary_TeleportPlayer");
 static_assert(sizeof(RBBlueprintLibrary_TeleportPlayer) == 0x000018, "Wrong size on RBBlueprintLibrary_TeleportPlayer");
@@ -18528,7 +18528,7 @@ public:
 	const class AActor*                           SourceReference;                                   // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class AActor*                           TargetReference;                                   // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseTransitionFX;                                  // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F04[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E66[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_TeleportRelative) == 0x000008, "Wrong alignment on RBBlueprintLibrary_TeleportRelative");
 static_assert(sizeof(RBBlueprintLibrary_TeleportRelative) == 0x000020, "Wrong size on RBBlueprintLibrary_TeleportRelative");
@@ -18544,7 +18544,7 @@ struct RBBlueprintLibrary_TestPlayerConditions final
 public:
 	class ARBPlayer*                              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBoolCommandResult                            OperationResult;                                   // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F05[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E67[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBPlayerConditionSet                  ConditionSet;                                      // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBlueprintLibrary_TestPlayerConditions) == 0x000008, "Wrong alignment on RBBlueprintLibrary_TestPlayerConditions");
@@ -18560,7 +18560,7 @@ struct RBBlueprintLibrary_ToggleActor final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F06[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E68[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_ToggleActor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_ToggleActor");
 static_assert(sizeof(RBBlueprintLibrary_ToggleActor) == 0x000010, "Wrong size on RBBlueprintLibrary_ToggleActor");
@@ -18574,7 +18574,7 @@ struct RBBlueprintLibrary_ToggleLedgeMarkerOnActor final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F07[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E69[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_ToggleLedgeMarkerOnActor) == 0x000008, "Wrong alignment on RBBlueprintLibrary_ToggleLedgeMarkerOnActor");
 static_assert(sizeof(RBBlueprintLibrary_ToggleLedgeMarkerOnActor) == 0x000010, "Wrong size on RBBlueprintLibrary_ToggleLedgeMarkerOnActor");
@@ -18602,7 +18602,7 @@ public:
 	class UObject*                                Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 LineId;                                            // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F08[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E6A[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBBlueprintLibrary_TryPlayFacialAnim) == 0x000008, "Wrong alignment on RBBlueprintLibrary_TryPlayFacialAnim");
 static_assert(sizeof(RBBlueprintLibrary_TryPlayFacialAnim) == 0x000020, "Wrong size on RBBlueprintLibrary_TryPlayFacialAnim");
@@ -18746,7 +18746,7 @@ struct RBHotPotatoObjectiveCoordinator_OnHotPotatoStateChanged final
 public:
 	class ARBHotPotato*                           HotPotato;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHotPotatoState                               NewState;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F20[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E82[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHotPotatoObjectiveCoordinator_OnHotPotatoStateChanged) == 0x000008, "Wrong alignment on RBHotPotatoObjectiveCoordinator_OnHotPotatoStateChanged");
 static_assert(sizeof(RBHotPotatoObjectiveCoordinator_OnHotPotatoStateChanged) == 0x000010, "Wrong size on RBHotPotatoObjectiveCoordinator_OnHotPotatoStateChanged");
@@ -18929,7 +18929,7 @@ public:
 	class UPrimitiveComponent*                    OtherComponent;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F2E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E90[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBTrapDart_OnPawnBeginOverlap) == 0x000008, "Wrong alignment on RBTrapDart_OnPawnBeginOverlap");
@@ -19094,7 +19094,7 @@ struct RBBreakableWindow_OnLinkedShutterStateChanged final
 {
 public:
 	bool                                          IsOn;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F3C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E9E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBTriggerable*                         Triggerable;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBBreakableWindow_OnLinkedShutterStateChanged) == 0x000008, "Wrong alignment on RBBreakableWindow_OnLinkedShutterStateChanged");
@@ -19264,7 +19264,7 @@ struct RBGroupStatusEntryWidget_Event_Refresh_Health final
 public:
 	float                                         NewHealth;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          SkipAnim;                                          // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F44[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EA6[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGroupStatusEntryWidget_Event_Refresh_Health) == 0x000004, "Wrong alignment on RBGroupStatusEntryWidget_Event_Refresh_Health");
 static_assert(sizeof(RBGroupStatusEntryWidget_Event_Refresh_Health) == 0x000008, "Wrong size on RBGroupStatusEntryWidget_Event_Refresh_Health");
@@ -19310,7 +19310,7 @@ struct RBGroupStatusEntryWidget_OnPlayerIndicatorUpdated final
 {
 public:
 	EPlayerIndicatorType                          PlayerIndicatorType;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F45[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EA7[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TimeLeft;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Progress;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -19530,7 +19530,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F47[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EA9[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBTriggerableDoorWayDetector_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBTriggerableDoorWayDetector_OnComponentBeginOverlap");
@@ -19551,7 +19551,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F48[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EAA[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTriggerableDoorWayDetector_OnComponentEndOverlap) == 0x000008, "Wrong alignment on RBTriggerableDoorWayDetector_OnComponentEndOverlap");
 static_assert(sizeof(RBTriggerableDoorWayDetector_OnComponentEndOverlap) == 0x000020, "Wrong size on RBTriggerableDoorWayDetector_OnComponentEndOverlap");
@@ -19625,7 +19625,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F4D[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EAF[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBFloorMaterialVolume_BeginOverlap) == 0x000008, "Wrong alignment on RBFloorMaterialVolume_BeginOverlap");
@@ -19657,7 +19657,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F4E[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EB0[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBFloorMaterialVolume_EndOverlap) == 0x000008, "Wrong alignment on RBFloorMaterialVolume_EndOverlap");
 static_assert(sizeof(RBFloorMaterialVolume_EndOverlap) == 0x000020, "Wrong size on RBFloorMaterialVolume_EndOverlap");
@@ -19673,7 +19673,7 @@ struct RBChainingUpgradePointItem_Multicast_OnPointsPickedUp final
 public:
 	class ARBPlayer*                              Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Amount;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F52[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EB4[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBChainingUpgradePointItem_Multicast_OnPointsPickedUp) == 0x000008, "Wrong alignment on RBChainingUpgradePointItem_Multicast_OnPointsPickedUp");
 static_assert(sizeof(RBChainingUpgradePointItem_Multicast_OnPointsPickedUp) == 0x000010, "Wrong size on RBChainingUpgradePointItem_Multicast_OnPointsPickedUp");
@@ -19687,7 +19687,7 @@ struct RBCharacterCustomizationContent_GetItemCountForCategory final
 public:
 	ECustomizationMenuCategory                    Category;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsCustomizingFemale;                               // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F55[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EB7[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBCharacterCustomizationContent_GetItemCountForCategory) == 0x000004, "Wrong alignment on RBCharacterCustomizationContent_GetItemCountForCategory");
@@ -19769,7 +19769,7 @@ struct RBCharacterCustomizationContent_Event_AddCustomizationSlotOptions final
 public:
 	TArray<class URBPlayerCustomizationOption*>   Options;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          SelectSpecificIndex;                               // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F56[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EB8[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SelectedIndex;                                     // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBCharacterCustomizationContent_Event_AddCustomizationSlotOptions) == 0x000008, "Wrong alignment on RBCharacterCustomizationContent_Event_AddCustomizationSlotOptions");
@@ -19851,7 +19851,7 @@ struct RBCharacterCustomizationContent_OnItemClicked final
 public:
 	struct FUICustomizationItem                   Item;                                              // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	ECustomizationMenuCategory                    Category;                                          // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F57[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EB9[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCharacterCustomizationContent_OnItemClicked) == 0x000008, "Wrong alignment on RBCharacterCustomizationContent_OnItemClicked");
 static_assert(sizeof(RBCharacterCustomizationContent_OnItemClicked) == 0x000038, "Wrong size on RBCharacterCustomizationContent_OnItemClicked");
@@ -19969,7 +19969,7 @@ public:
 	class UAkAudioEvent*                          LoopStartEvent;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          LoopStopEvent;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowMultipleIdenticalLoops;                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F68[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ECA[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSoundComponent_PlayLoopingSound) == 0x000008, "Wrong alignment on RBSoundComponent_PlayLoopingSound");
@@ -19987,7 +19987,7 @@ public:
 	class UAkAudioEvent*                          LoopStartEvent;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          LoopStopEvent;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F69[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ECB[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSoundComponent_PlayVOLoopingSound) == 0x000008, "Wrong alignment on RBSoundComponent_PlayVOLoopingSound");
 static_assert(sizeof(RBSoundComponent_PlayVOLoopingSound) == 0x000018, "Wrong size on RBSoundComponent_PlayVOLoopingSound");
@@ -20013,7 +20013,7 @@ struct RBSoundComponent_SetMultiPositionGroup final
 public:
 	class FName                                   NewCloneGroupName;                                 // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAddToGroup;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F6A[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ECC[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSoundComponent_SetMultiPositionGroup) == 0x000004, "Wrong alignment on RBSoundComponent_SetMultiPositionGroup");
 static_assert(sizeof(RBSoundComponent_SetMultiPositionGroup) == 0x00000C, "Wrong size on RBSoundComponent_SetMultiPositionGroup");
@@ -20039,7 +20039,7 @@ public:
 	class UAkAudioEvent*                          LoopStartEvent;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          LoopStopEvent;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F6B[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ECD[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSoundComponent_StopLoopingSound) == 0x000008, "Wrong alignment on RBSoundComponent_StopLoopingSound");
 static_assert(sizeof(RBSoundComponent_StopLoopingSound) == 0x000018, "Wrong size on RBSoundComponent_StopLoopingSound");
@@ -20077,7 +20077,7 @@ public:
 	class UAkAudioEvent*                          LoopStartEvent;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          LoopStopEvent;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F6C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ECE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSoundComponent_IsPlayingLoopingSound) == 0x000008, "Wrong alignment on RBSoundComponent_IsPlayingLoopingSound");
 static_assert(sizeof(RBSoundComponent_IsPlayingLoopingSound) == 0x000018, "Wrong size on RBSoundComponent_IsPlayingLoopingSound");
@@ -20194,7 +20194,7 @@ struct RBCheatManager_AddCurrency final
 {
 public:
 	ECurrencyType                                 CurrencyType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F79[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EDB[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Amount;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBCheatManager_AddCurrency) == 0x000004, "Wrong alignment on RBCheatManager_AddCurrency");
@@ -20231,7 +20231,7 @@ struct RBCheatManager_AddMultipleItems final
 public:
 	class FString                                 ItemName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumberOfCopy;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F7A[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EDC[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCheatManager_AddMultipleItems) == 0x000008, "Wrong alignment on RBCheatManager_AddMultipleItems");
 static_assert(sizeof(RBCheatManager_AddMultipleItems) == 0x000018, "Wrong size on RBCheatManager_AddMultipleItems");
@@ -20267,7 +20267,7 @@ struct RBCheatManager_AddOnlineItemWithID final
 public:
 	class FName                                   UpgradeOnlineItemId;                               // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsPersistentItem;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F7B[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EDD[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCheatManager_AddOnlineItemWithID) == 0x000004, "Wrong alignment on RBCheatManager_AddOnlineItemWithID");
 static_assert(sizeof(RBCheatManager_AddOnlineItemWithID) == 0x00000C, "Wrong size on RBCheatManager_AddOnlineItemWithID");
@@ -20599,7 +20599,7 @@ struct RBCheatManager_DelayedBugIt final
 {
 public:
 	float                                         DelayInSeconds;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F7C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EDE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Description;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBCheatManager_DelayedBugIt) == 0x000008, "Wrong alignment on RBCheatManager_DelayedBugIt");
@@ -20783,7 +20783,7 @@ struct RBCheatManager_ForcePreLoginError final
 public:
 	class FString                                 Error;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Amount;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F7D[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EDF[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCheatManager_ForcePreLoginError) == 0x000008, "Wrong alignment on RBCheatManager_ForcePreLoginError");
 static_assert(sizeof(RBCheatManager_ForcePreLoginError) == 0x000018, "Wrong size on RBCheatManager_ForcePreLoginError");
@@ -20808,7 +20808,7 @@ struct RBCheatManager_ForceRandomState final
 public:
 	class FString                                 SearchQuery;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStateA;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F7E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EE0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCheatManager_ForceRandomState) == 0x000008, "Wrong alignment on RBCheatManager_ForceRandomState");
 static_assert(sizeof(RBCheatManager_ForceRandomState) == 0x000018, "Wrong size on RBCheatManager_ForceRandomState");
@@ -20943,7 +20943,7 @@ struct RBCheatManager_HurtSelf final
 public:
 	float                                         Amount;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHitReaction;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F7F[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EE1[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         HurtType;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBCheatManager_HurtSelf) == 0x000004, "Wrong alignment on RBCheatManager_HurtSelf");
@@ -21082,7 +21082,7 @@ public:
 	class FString                                 SwitchGroup;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 SwitchState;                                       // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ForcedRandomSeed;                                  // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F80[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EE2[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCheatManager_PlayVO) == 0x000008, "Wrong alignment on RBCheatManager_PlayVO");
 static_assert(sizeof(RBCheatManager_PlayVO) == 0x000038, "Wrong size on RBCheatManager_PlayVO");
@@ -21654,7 +21654,7 @@ struct RBCheatManager_ShowWorldOctreeObjects final
 {
 public:
 	EDebugWorldOctreeObjectType                   ObjectType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F81[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EE3[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Range;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBCheatManager_ShowWorldOctreeObjects) == 0x000004, "Wrong alignment on RBCheatManager_ShowWorldOctreeObjects");
@@ -21713,7 +21713,7 @@ struct RBCheatManager_SpawnMultipleLargePickups final
 public:
 	class FString                                 ItemName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumberOfCopy;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F82[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EE4[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCheatManager_SpawnMultipleLargePickups) == 0x000008, "Wrong alignment on RBCheatManager_SpawnMultipleLargePickups");
 static_assert(sizeof(RBCheatManager_SpawnMultipleLargePickups) == 0x000018, "Wrong size on RBCheatManager_SpawnMultipleLargePickups");
@@ -21770,7 +21770,7 @@ struct RBCheatManager_ToggleAll final
 public:
 	class FString                                 SearchQuery;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStateA;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F83[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EE5[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCheatManager_ToggleAll) == 0x000008, "Wrong alignment on RBCheatManager_ToggleAll");
 static_assert(sizeof(RBCheatManager_ToggleAll) == 0x000018, "Wrong size on RBCheatManager_ToggleAll");
@@ -21828,7 +21828,7 @@ struct RBCheatManager_TriggerForceFeedback final
 public:
 	class FString                                 TypeName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLoop;                                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F84[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EE6[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCheatManager_TriggerForceFeedback) == 0x000008, "Wrong alignment on RBCheatManager_TriggerForceFeedback");
 static_assert(sizeof(RBCheatManager_TriggerForceFeedback) == 0x000018, "Wrong size on RBCheatManager_TriggerForceFeedback");
@@ -21852,7 +21852,7 @@ struct RBCheatManager_UpdateStatistic final
 {
 public:
 	EPlayerStat                                   PlayerStat;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F85[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EE7[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Value;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBCheatManager_UpdateStatistic) == 0x000004, "Wrong alignment on RBCheatManager_UpdateStatistic");
@@ -22052,7 +22052,7 @@ struct RBChessBoard_GetTeamChessPanelComponent final
 {
 public:
 	EChessTeam                                    Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F93[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EF5[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBChessBoardPanelComponent*            ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBChessBoard_GetTeamChessPanelComponent) == 0x000008, "Wrong alignment on RBChessBoard_GetTeamChessPanelComponent");
@@ -22066,7 +22066,7 @@ struct RBChessBoard_GetTeamRemainingTime final
 {
 public:
 	EChessTeam                                    Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F94[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EF6[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBChessBoard_GetTeamRemainingTime) == 0x000004, "Wrong alignment on RBChessBoard_GetTeamRemainingTime");
@@ -22106,7 +22106,7 @@ public:
 	class ARBPlayer*                              WinnerPtr;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ARBPlayer*                              LoserPtr;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsDraw;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F95[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EF7[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBChessBoard_Multicast_BroadcastMatchEndMessage) == 0x000008, "Wrong alignment on RBChessBoard_Multicast_BroadcastMatchEndMessage");
 static_assert(sizeof(RBChessBoard_Multicast_BroadcastMatchEndMessage) == 0x000018, "Wrong size on RBChessBoard_Multicast_BroadcastMatchEndMessage");
@@ -22133,7 +22133,7 @@ struct RBChessBoard_Multicast_PlayerDropPieceAt final
 {
 public:
 	EChessTeam                                    Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F96[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EF8[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntPoint                              TargetLocation;                                    // 0x0004(0x0008)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBChessBoard_Multicast_PlayerDropPieceAt) == 0x000004, "Wrong alignment on RBChessBoard_Multicast_PlayerDropPieceAt");
@@ -22241,7 +22241,7 @@ struct RBChessBoardPanelComponent_GetWSFocusedLocation final
 {
 public:
 	bool                                          bUseReplicatedValue;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F9D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EFF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0004(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBChessBoardPanelComponent_GetWSFocusedLocation) == 0x000004, "Wrong alignment on RBChessBoardPanelComponent_GetWSFocusedLocation");
@@ -22314,7 +22314,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FA1[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F03[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBFloorMaterialBoxComponent_BeginOverlap) == 0x000008, "Wrong alignment on RBFloorMaterialBoxComponent_BeginOverlap");
@@ -22346,7 +22346,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FA2[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F04[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBFloorMaterialBoxComponent_EndOverlap) == 0x000008, "Wrong alignment on RBFloorMaterialBoxComponent_EndOverlap");
 static_assert(sizeof(RBFloorMaterialBoxComponent_EndOverlap) == 0x000020, "Wrong size on RBFloorMaterialBoxComponent_EndOverlap");
@@ -22408,7 +22408,7 @@ struct RBTrialChainingUpgradeMenu_IsATrialChainingUpgradeChoice final
 public:
 	class FName                                   ItemId;                                            // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FA6[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F08[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialChainingUpgradeMenu_IsATrialChainingUpgradeChoice) == 0x000004, "Wrong alignment on RBTrialChainingUpgradeMenu_IsATrialChainingUpgradeChoice");
 static_assert(sizeof(RBTrialChainingUpgradeMenu_IsATrialChainingUpgradeChoice) == 0x00000C, "Wrong size on RBTrialChainingUpgradeMenu_IsATrialChainingUpgradeChoice");
@@ -22422,7 +22422,7 @@ struct RBChunkInstallManager_GetChunkInstallationStatus final
 public:
 	float                                         Percent;                                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FA8[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F0A[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBChunkInstallManager_GetChunkInstallationStatus) == 0x000004, "Wrong alignment on RBChunkInstallManager_GetChunkInstallationStatus");
 static_assert(sizeof(RBChunkInstallManager_GetChunkInstallationStatus) == 0x000008, "Wrong size on RBChunkInstallManager_GetChunkInstallationStatus");
@@ -22642,7 +22642,7 @@ struct RBTutorialManager_OnObjectiveCoordinatorStateChanged final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EObjectiveCoordinatorState                    State;                                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FB9[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F1B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTutorialManager_OnObjectiveCoordinatorStateChanged) == 0x000008, "Wrong alignment on RBTutorialManager_OnObjectiveCoordinatorStateChanged");
 static_assert(sizeof(RBTutorialManager_OnObjectiveCoordinatorStateChanged) == 0x000010, "Wrong size on RBTutorialManager_OnObjectiveCoordinatorStateChanged");
@@ -22670,7 +22670,7 @@ public:
 	class ARBPlayer*                              RBPlayer;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFirstInteraction;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWasAcquired;                                      // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FBB[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F1D[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCollectibleDocumentPickup_Multicast_OnDocumentPickedUp) == 0x000008, "Wrong alignment on RBCollectibleDocumentPickup_Multicast_OnDocumentPickedUp");
 static_assert(sizeof(RBCollectibleDocumentPickup_Multicast_OnDocumentPickedUp) == 0x000010, "Wrong size on RBCollectibleDocumentPickup_Multicast_OnDocumentPickedUp");
@@ -22769,7 +22769,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EInputEvent                                   EventType;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bGamepad;                                          // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FBF[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F21[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBMenuControlBinding_OnInputKey) == 0x000008, "Wrong alignment on RBMenuControlBinding_OnInputKey");
 static_assert(sizeof(RBMenuControlBinding_OnInputKey) == 0x000020, "Wrong size on RBMenuControlBinding_OnInputKey");
@@ -22795,7 +22795,7 @@ struct RBFaceAnimTalkerInterface_TryPlayFacialAnim final
 public:
 	class FString                                 LineId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FCD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F2F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBFaceAnimTalkerInterface_TryPlayFacialAnim) == 0x000008, "Wrong alignment on RBFaceAnimTalkerInterface_TryPlayFacialAnim");
 static_assert(sizeof(RBFaceAnimTalkerInterface_TryPlayFacialAnim) == 0x000018, "Wrong size on RBFaceAnimTalkerInterface_TryPlayFacialAnim");
@@ -22911,7 +22911,7 @@ struct RBStroopGamePanelComponent_GetPlayerMatchData final
 {
 public:
 	bool                                          bIsLocalPlayer;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FD9[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F3B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStroopPlayerMatchData                 ReturnValue;                                       // 0x0004(0x000C)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBStroopGamePanelComponent_GetPlayerMatchData) == 0x000004, "Wrong alignment on RBStroopGamePanelComponent_GetPlayerMatchData");
@@ -22926,7 +22926,7 @@ struct RBStroopGamePanelComponent_Multicast_OptionChosen final
 public:
 	class ARBStroopGameButton*                    Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRightAnswer;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FDA[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F3C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStroopGamePanelComponent_Multicast_OptionChosen) == 0x000008, "Wrong alignment on RBStroopGamePanelComponent_Multicast_OptionChosen");
 static_assert(sizeof(RBStroopGamePanelComponent_Multicast_OptionChosen) == 0x000010, "Wrong size on RBStroopGamePanelComponent_Multicast_OptionChosen");
@@ -22951,7 +22951,7 @@ struct RBStroopGamePanelComponent_GetButtonAnswer final
 public:
 	class ARBStroopGameButton*                    Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EStroopGameColor                              ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FDB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F3D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStroopGamePanelComponent_GetButtonAnswer) == 0x000008, "Wrong alignment on RBStroopGamePanelComponent_GetButtonAnswer");
 static_assert(sizeof(RBStroopGamePanelComponent_GetButtonAnswer) == 0x000010, "Wrong size on RBStroopGamePanelComponent_GetButtonAnswer");
@@ -23269,7 +23269,7 @@ struct RBTasksWidget_GroupHasRefreshTimer final
 public:
 	class FName                                   GroupID;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FEE[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F50[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTasksWidget_GroupHasRefreshTimer) == 0x000004, "Wrong alignment on RBTasksWidget_GroupHasRefreshTimer");
 static_assert(sizeof(RBTasksWidget_GroupHasRefreshTimer) == 0x00000C, "Wrong size on RBTasksWidget_GroupHasRefreshTimer");
@@ -23283,7 +23283,7 @@ struct RBTasksWidget_HasCompletedTasksPendingConsume final
 public:
 	class FName                                   GroupID;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FEF[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F51[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTasksWidget_HasCompletedTasksPendingConsume) == 0x000004, "Wrong alignment on RBTasksWidget_HasCompletedTasksPendingConsume");
 static_assert(sizeof(RBTasksWidget_HasCompletedTasksPendingConsume) == 0x00000C, "Wrong size on RBTasksWidget_HasCompletedTasksPendingConsume");
@@ -23389,7 +23389,7 @@ struct RBLargeObjectInteractionPanelComponent_GetSpecialMoveAnimation final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFirstPerson;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FF2[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F54[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBLargeObjectInteractionPanelComponent_GetSpecialMoveAnimation) == 0x000008, "Wrong alignment on RBLargeObjectInteractionPanelComponent_GetSpecialMoveAnimation");
@@ -23416,7 +23416,7 @@ struct RBOperatableComponent_CanOperate final
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FF4[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F56[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBOperatableComponent_CanOperate) == 0x000008, "Wrong alignment on RBOperatableComponent_CanOperate");
 static_assert(sizeof(RBOperatableComponent_CanOperate) == 0x000010, "Wrong size on RBOperatableComponent_CanOperate");
@@ -23429,7 +23429,7 @@ struct RBOperatableComponent_GetOperateTransform final
 {
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FF5[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F57[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0010(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBOperatableComponent_GetOperateTransform) == 0x000010, "Wrong alignment on RBOperatableComponent_GetOperateTransform");
@@ -23444,7 +23444,7 @@ struct RBOperatableComponent_GetOperatorLoopAnimation final
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFirstPerson;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FF6[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F58[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBOperatableComponent_GetOperatorLoopAnimation) == 0x000008, "Wrong alignment on RBOperatableComponent_GetOperatorLoopAnimation");
@@ -23460,7 +23460,7 @@ struct RBOperatableComponent_GetOperatorStartAnimation final
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFirstPerson;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FF7[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F59[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBOperatableComponent_GetOperatorStartAnimation) == 0x000008, "Wrong alignment on RBOperatableComponent_GetOperatorStartAnimation");
@@ -23476,7 +23476,7 @@ struct RBOperatableComponent_GetOperatorStopAnimation final
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFirstPerson;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FF8[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F5A[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBOperatableComponent_GetOperatorStopAnimation) == 0x000008, "Wrong alignment on RBOperatableComponent_GetOperatorStopAnimation");
@@ -23593,7 +23593,7 @@ struct RBGameMode_OnObjectiveCoordinatorStateChanged final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EObjectiveCoordinatorState                    State;                                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FFF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F61[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameMode_OnObjectiveCoordinatorStateChanged) == 0x000008, "Wrong alignment on RBGameMode_OnObjectiveCoordinatorStateChanged");
 static_assert(sizeof(RBGameMode_OnObjectiveCoordinatorStateChanged) == 0x000010, "Wrong size on RBGameMode_OnObjectiveCoordinatorStateChanged");
@@ -23792,7 +23792,7 @@ public:
 	float                                         DistanceBetweenItems;                              // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECollectablePriority                          Priority;                                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSpawnAsMuchAsPossible;                            // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_200A[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F6C[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBItemSpawningManager_RequestCollectableSpawning) == 0x000008, "Wrong alignment on RBItemSpawningManager_RequestCollectableSpawning");
 static_assert(sizeof(RBItemSpawningManager_RequestCollectableSpawning) == 0x000020, "Wrong size on RBItemSpawningManager_RequestCollectableSpawning");
@@ -23809,7 +23809,7 @@ struct RBItemSpawningManager_GetItemClass final
 {
 public:
 	EItemType                                     ItemType;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_200B[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F6D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ARBPickup>                  ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBItemSpawningManager_GetItemClass) == 0x000008, "Wrong alignment on RBItemSpawningManager_GetItemClass");
@@ -23846,7 +23846,7 @@ struct RBCorpseSearchObjectiveCoordinator_Multicast_KeyPickedUp final
 public:
 	struct FClueData                              ClueData;                                          // 0x0000(0x0008)(ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bFirstTimePickedUp;                                // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_200E[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F70[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCorpseSearchObjectiveCoordinator_Multicast_KeyPickedUp) == 0x000004, "Wrong alignment on RBCorpseSearchObjectiveCoordinator_Multicast_KeyPickedUp");
 static_assert(sizeof(RBCorpseSearchObjectiveCoordinator_Multicast_KeyPickedUp) == 0x00000C, "Wrong size on RBCorpseSearchObjectiveCoordinator_Multicast_KeyPickedUp");
@@ -24012,12 +24012,12 @@ public:
 	float                                         FadeInDuration;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FadeOutDuration;                                   // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EWorldIconType                                IconType;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2020[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F82[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ShowDuration;                                      // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2021[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F83[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x0028(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2022[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F84[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUD_BP_AddWorldIcon) == 0x000008, "Wrong alignment on RBHUD_BP_AddWorldIcon");
 static_assert(sizeof(RBHUD_BP_AddWorldIcon) == 0x000038, "Wrong size on RBHUD_BP_AddWorldIcon");
@@ -24084,7 +24084,7 @@ public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOutsideOfRange;                                   // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2023[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F85[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUD_BP_ShouldDrawWorldIcon) == 0x000004, "Wrong alignment on RBHUD_BP_ShouldDrawWorldIcon");
 static_assert(sizeof(RBHUD_BP_ShouldDrawWorldIcon) == 0x000008, "Wrong size on RBHUD_BP_ShouldDrawWorldIcon");
@@ -24143,7 +24143,7 @@ struct RBHUD_OnHudActionProgressChanged__DelegateSignature final
 public:
 	float                                         NewProgress;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EActionProgressContext                        Context;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2024[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F86[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUD_OnHudActionProgressChanged__DelegateSignature) == 0x000004, "Wrong alignment on RBHUD_OnHudActionProgressChanged__DelegateSignature");
 static_assert(sizeof(RBHUD_OnHudActionProgressChanged__DelegateSignature) == 0x000008, "Wrong size on RBHUD_OnHudActionProgressChanged__DelegateSignature");
@@ -24201,7 +24201,7 @@ struct RBHUD_OnShowGameMessage__DelegateSignature final
 public:
 	class FText                                   GameMessage;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	EGameMessageCategory                          MessageCategory;                                   // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2025[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F87[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameMessageAudioParams                AudioParams;                                       // 0x0020(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBHUD_OnShowGameMessage__DelegateSignature) == 0x000008, "Wrong alignment on RBHUD_OnShowGameMessage__DelegateSignature");
@@ -24251,7 +24251,7 @@ public:
 	struct FRBStageID                             StageID;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRBMissionID                           MissionID;                                         // 0x0028(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          IsRestarting;                                      // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2026[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F88[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUD_OnStageEnded) == 0x000008, "Wrong alignment on RBHUD_OnStageEnded");
 static_assert(sizeof(RBHUD_OnStageEnded) == 0x000058, "Wrong size on RBHUD_OnStageEnded");
@@ -24312,7 +24312,7 @@ public:
 	int32                                         SizeX;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SizeY;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOutsideOfRange;                                   // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2027[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F89[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         OutsideRangeDirectionAngle;                        // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0014(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -24332,7 +24332,7 @@ struct RBHUD_BP_GetMaxTextCharacterWidth final
 public:
 	class FString                                 String;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2028[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F8A[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUD_BP_GetMaxTextCharacterWidth) == 0x000008, "Wrong alignment on RBHUD_BP_GetMaxTextCharacterWidth");
 static_assert(sizeof(RBHUD_BP_GetMaxTextCharacterWidth) == 0x000018, "Wrong size on RBHUD_BP_GetMaxTextCharacterWidth");
@@ -24356,7 +24356,7 @@ struct RBHUD_GetActionProgress final
 {
 public:
 	EActionProgressContext                        Context;                                           // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2029[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F8B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBHUD_GetActionProgress) == 0x000004, "Wrong alignment on RBHUD_GetActionProgress");
@@ -24581,7 +24581,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EInputEvent                                   EventType;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bGamepad;                                          // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2033[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F95[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBCutsceneMenu_OnInputKey) == 0x000008, "Wrong alignment on RBCutsceneMenu_OnInputKey");
 static_assert(sizeof(RBCutsceneMenu_OnInputKey) == 0x000020, "Wrong size on RBCutsceneMenu_OnInputKey");
@@ -24698,7 +24698,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2042[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FA4[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBDamageBoxComponent_ComponentBeginOverlap) == 0x000008, "Wrong alignment on RBDamageBoxComponent_ComponentBeginOverlap");
@@ -24753,7 +24753,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2044[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FA6[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBDarknessVolume_BeginOverlap) == 0x000008, "Wrong alignment on RBDarknessVolume_BeginOverlap");
@@ -24785,7 +24785,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2045[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FA7[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDarknessVolume_EndOverlap) == 0x000008, "Wrong alignment on RBDarknessVolume_EndOverlap");
 static_assert(sizeof(RBDarknessVolume_EndOverlap) == 0x000020, "Wrong size on RBDarknessVolume_EndOverlap");
@@ -24811,10 +24811,10 @@ struct RBGhostAnimInstance_FinishGhost final
 {
 public:
 	EGhostFinishReason                            FinishReason;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2049[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FAB[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         GhostFinishCustomReason;                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_204A[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FAC[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGhostAnimInstance_FinishGhost) == 0x000004, "Wrong alignment on RBGhostAnimInstance_FinishGhost");
 static_assert(sizeof(RBGhostAnimInstance_FinishGhost) == 0x00000C, "Wrong size on RBGhostAnimInstance_FinishGhost");
@@ -24839,7 +24839,7 @@ struct RBGhostAnimInstance_OnGhostAnimNotify final
 {
 public:
 	EGhostAnimEvent                               AnimEvent;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_204B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FAD[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   AnimEventName;                                     // 0x0004(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBGhostAnimInstance_OnGhostAnimNotify) == 0x000004, "Wrong alignment on RBGhostAnimInstance_OnGhostAnimNotify");
@@ -24932,7 +24932,7 @@ public:
 	struct FVector                                EyeLocation;                                       // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                EyeForward;                                        // 0x000C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDecoderProximityType                         ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2057[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FB9[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDecodable_GetDecoderProximity) == 0x000004, "Wrong alignment on RBDecodable_GetDecoderProximity");
 static_assert(sizeof(RBDecodable_GetDecoderProximity) == 0x00001C, "Wrong size on RBDecodable_GetDecoderProximity");
@@ -24947,7 +24947,7 @@ struct RBDecodable_GetPerfectPlayerLocation final
 public:
 	class ARBPlayer*                              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2058[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FBA[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDecodable_GetPerfectPlayerLocation) == 0x000008, "Wrong alignment on RBDecodable_GetPerfectPlayerLocation");
 static_assert(sizeof(RBDecodable_GetPerfectPlayerLocation) == 0x000018, "Wrong size on RBDecodable_GetPerfectPlayerLocation");
@@ -25112,7 +25112,7 @@ struct RBWireTriggerTrap_OnLinkDoorInteraction final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOpening;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2063[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FC5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBWireTriggerTrap_OnLinkDoorInteraction) == 0x000008, "Wrong alignment on RBWireTriggerTrap_OnLinkDoorInteraction");
 static_assert(sizeof(RBWireTriggerTrap_OnLinkDoorInteraction) == 0x000010, "Wrong size on RBWireTriggerTrap_OnLinkDoorInteraction");
@@ -25126,7 +25126,7 @@ struct RBWireTriggerTrap_OnLinkedDoorAction final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDoorActionType                               ActionType;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2064[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FC6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBWireTriggerTrap_OnLinkedDoorAction) == 0x000008, "Wrong alignment on RBWireTriggerTrap_OnLinkedDoorAction");
 static_assert(sizeof(RBWireTriggerTrap_OnLinkedDoorAction) == 0x000010, "Wrong size on RBWireTriggerTrap_OnLinkedDoorAction");
@@ -25151,7 +25151,7 @@ struct RBWireTriggerTrap_BP_IsTriggererOnWrongSide final
 public:
 	class ARBPawn*                                OutTriggerer;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          OutIsOnWrongSide;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2065[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FC7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBWireTriggerTrap_BP_IsTriggererOnWrongSide) == 0x000008, "Wrong alignment on RBWireTriggerTrap_BP_IsTriggererOnWrongSide");
 static_assert(sizeof(RBWireTriggerTrap_BP_IsTriggererOnWrongSide) == 0x000010, "Wrong size on RBWireTriggerTrap_BP_IsTriggererOnWrongSide");
@@ -25208,7 +25208,7 @@ struct RBDeployableSkillItem_Deploy_Server final
 {
 public:
 	class ARBPlayer*                              Param_Deployer;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_206C[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FCE[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBDeployableSkillItem_Deploy_Server) == 0x000010, "Wrong alignment on RBDeployableSkillItem_Deploy_Server");
@@ -25222,7 +25222,7 @@ struct RBDeployableSkillItem_Multicast_OnDeploy final
 {
 public:
 	class ARBPlayer*                              Param_Deployer;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_206D[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FCF[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0030)(ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBDeployableSkillItem_Multicast_OnDeploy) == 0x000010, "Wrong alignment on RBDeployableSkillItem_Multicast_OnDeploy");
@@ -25240,7 +25240,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_206E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FD0[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBDeployableSkillItem_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBDeployableSkillItem_OnComponentBeginOverlap");
@@ -25303,7 +25303,7 @@ struct RBHittableActor_OnDamaged final
 public:
 	class URBDamageableComponent*                 DamageComponent;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsDestroyed;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2071[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FD3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHittableActor_OnDamaged) == 0x000008, "Wrong alignment on RBHittableActor_OnDamaged");
 static_assert(sizeof(RBHittableActor_OnDamaged) == 0x000010, "Wrong size on RBHittableActor_OnDamaged");
@@ -25322,7 +25322,7 @@ public:
 	ERadialImpulseFalloff                         Falloff;                                           // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDamageSoundMaterial                          DamageSoundMaterial;                               // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPlayBreakSound;                                   // 0x0022(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2074[0x1];                                     // 0x0023(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FD6[0x1];                                     // 0x0023(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDestructibleActor_BP_BreakInSphere) == 0x000004, "Wrong alignment on RBDestructibleActor_BP_BreakInSphere");
 static_assert(sizeof(RBDestructibleActor_BP_BreakInSphere) == 0x000024, "Wrong size on RBDestructibleActor_BP_BreakInSphere");
@@ -25345,7 +25345,7 @@ public:
 	float                                         Strength;                                          // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERadialImpulseFalloff                         Falloff;                                           // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDamageSoundMaterial                          DamageSoundMaterial;                               // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2075[0x2];                                     // 0x0022(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FD7[0x2];                                     // 0x0022(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDestructibleActor_BP_DisplaceInSphere) == 0x000004, "Wrong alignment on RBDestructibleActor_BP_DisplaceInSphere");
 static_assert(sizeof(RBDestructibleActor_BP_DisplaceInSphere) == 0x000024, "Wrong size on RBDestructibleActor_BP_DisplaceInSphere");
@@ -25381,7 +25381,7 @@ public:
 	float                                         Radius;                                            // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Strength;                                          // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERadialImpulseFalloff                         Falloff;                                           // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_207B[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FDD[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDestructibleComponent_BP_BreakInSphere) == 0x000004, "Wrong alignment on RBDestructibleComponent_BP_BreakInSphere");
 static_assert(sizeof(RBDestructibleComponent_BP_BreakInSphere) == 0x000024, "Wrong size on RBDestructibleComponent_BP_BreakInSphere");
@@ -25401,7 +25401,7 @@ public:
 	float                                         Radius;                                            // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Strength;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERadialImpulseFalloff                         Falloff;                                           // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_207C[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FDE[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDestructibleComponent_BP_BreakNearBone) == 0x000004, "Wrong alignment on RBDestructibleComponent_BP_BreakNearBone");
 static_assert(sizeof(RBDestructibleComponent_BP_BreakNearBone) == 0x000020, "Wrong size on RBDestructibleComponent_BP_BreakNearBone");
@@ -25421,7 +25421,7 @@ public:
 	float                                         Radius;                                            // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Strength;                                          // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERadialImpulseFalloff                         Falloff;                                           // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_207D[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FDF[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBDestructibleComponent_BP_Displacement) == 0x000004, "Wrong alignment on RBDestructibleComponent_BP_Displacement");
 static_assert(sizeof(RBDestructibleComponent_BP_Displacement) == 0x000024, "Wrong size on RBDestructibleComponent_BP_Displacement");
@@ -25460,7 +25460,7 @@ struct RBHUDLinearInventory_Event_OnIsInCooldownChanged final
 public:
 	class ARBActiveSkill*                         ActiveSkill;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsInCooldown;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_207E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FE0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUDLinearInventory_Event_OnIsInCooldownChanged) == 0x000008, "Wrong alignment on RBHUDLinearInventory_Event_OnIsInCooldownChanged");
 static_assert(sizeof(RBHUDLinearInventory_Event_OnIsInCooldownChanged) == 0x000010, "Wrong size on RBHUDLinearInventory_Event_OnIsInCooldownChanged");
@@ -25552,7 +25552,7 @@ public:
 	class USkeletalMeshComponent*                 baseSlotSkeletalCompoment;                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class USkeletalMesh*>                  ExtraMeshes;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	EPlayerCustomizationSlot                      Slot;                                              // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2086[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FE8[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class USkeletalMeshComponent*>         OutNewComponents;                                  // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPawnCustomizationManager_AddExtraCustomizationMeshesForSlot) == 0x000008, "Wrong alignment on RBPawnCustomizationManager_AddExtraCustomizationMeshesForSlot");
@@ -25608,7 +25608,7 @@ public:
 	class USkeletalMesh*                          Mesh;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, class UMaterialInstanceConstant*> MaterialOverrideMap;                               // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bSetMasterPoseComponent;                           // 0x0060(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2087[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FE9[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawnCustomizationManager_UpdateSkeletalMeshComponent) == 0x000008, "Wrong alignment on RBPawnCustomizationManager_UpdateSkeletalMeshComponent");
 static_assert(sizeof(RBPawnCustomizationManager_UpdateSkeletalMeshComponent) == 0x000068, "Wrong size on RBPawnCustomizationManager_UpdateSkeletalMeshComponent");
@@ -25625,7 +25625,7 @@ public:
 	class USkeletalMeshComponent*                 Cmp;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URBPlayerCustomizationOption*           Option;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFemale;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2088[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FEA[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawnCustomizationManager_UpdateSkeletalMeshComponentFromCustomizationOption) == 0x000008, "Wrong alignment on RBPawnCustomizationManager_UpdateSkeletalMeshComponentFromCustomizationOption");
 static_assert(sizeof(RBPawnCustomizationManager_UpdateSkeletalMeshComponentFromCustomizationOption) == 0x000018, "Wrong size on RBPawnCustomizationManager_UpdateSkeletalMeshComponentFromCustomizationOption");
@@ -25666,7 +25666,7 @@ struct RBPawnCustomizationManager_CancelAllLoadCustomizationResourcesOfType fina
 public:
 	class AActor*                                 CustomizationOwner;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPawnCustomizationRequestType                 RequestType;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2089[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FEB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawnCustomizationManager_CancelAllLoadCustomizationResourcesOfType) == 0x000008, "Wrong alignment on RBPawnCustomizationManager_CancelAllLoadCustomizationResourcesOfType");
 static_assert(sizeof(RBPawnCustomizationManager_CancelAllLoadCustomizationResourcesOfType) == 0x000010, "Wrong size on RBPawnCustomizationManager_CancelAllLoadCustomizationResourcesOfType");
@@ -25692,7 +25692,7 @@ public:
 	class AActor*                                 RequestOwner;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>                ResourcesToLoad;                                   // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_208A[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FEC[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawnCustomizationManager_LoadCustomResources) == 0x000008, "Wrong alignment on RBPawnCustomizationManager_LoadCustomResources");
 static_assert(sizeof(RBPawnCustomizationManager_LoadCustomResources) == 0x000020, "Wrong size on RBPawnCustomizationManager_LoadCustomResources");
@@ -25725,7 +25725,7 @@ public:
 	class AActor*                                 PlayerCustomizationOwner;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>                ResourcesToLoad;                                   // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	EPawnCustomizationRequestType                 RequestType;                                       // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_208B[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FED[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPawnCustomizationManager_LoadPawnCustomizationResources) == 0x000008, "Wrong alignment on RBPawnCustomizationManager_LoadPawnCustomizationResources");
@@ -25742,7 +25742,7 @@ struct RBPawnCustomizationManager_LoadPlayerCustomizationResources final
 public:
 	class AActor*                                 PlayerCustomizationOwner;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_208C[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FEE[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawnCustomizationManager_LoadPlayerCustomizationResources) == 0x000008, "Wrong alignment on RBPawnCustomizationManager_LoadPlayerCustomizationResources");
 static_assert(sizeof(RBPawnCustomizationManager_LoadPlayerCustomizationResources) == 0x000010, "Wrong size on RBPawnCustomizationManager_LoadPlayerCustomizationResources");
@@ -25757,7 +25757,7 @@ public:
 	class AActor*                                 PlayerCustomizationOwner;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URBCustomizationOutfit*                 Outfit;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_208D[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FEF[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawnCustomizationManager_LoadPlayerCustomizationResourcesWithOutfitOverride) == 0x000008, "Wrong alignment on RBPawnCustomizationManager_LoadPlayerCustomizationResourcesWithOutfitOverride");
 static_assert(sizeof(RBPawnCustomizationManager_LoadPlayerCustomizationResourcesWithOutfitOverride) == 0x000018, "Wrong size on RBPawnCustomizationManager_LoadPlayerCustomizationResourcesWithOutfitOverride");
@@ -25773,7 +25773,7 @@ public:
 	class AActor*                                 CustomizationOwner;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPawnCustomizationRequestType                 RequestType;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_208E[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FF0[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawnCustomizationManager_IsRequestActive) == 0x000008, "Wrong alignment on RBPawnCustomizationManager_IsRequestActive");
 static_assert(sizeof(RBPawnCustomizationManager_IsRequestActive) == 0x000010, "Wrong size on RBPawnCustomizationManager_IsRequestActive");
@@ -25788,7 +25788,7 @@ struct RBPawnCustomizationManager_IsRequestIDActive final
 public:
 	int32                                         RequestID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_208F[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FF1[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPawnCustomizationManager_IsRequestIDActive) == 0x000004, "Wrong alignment on RBPawnCustomizationManager_IsRequestIDActive");
 static_assert(sizeof(RBPawnCustomizationManager_IsRequestIDActive) == 0x000008, "Wrong size on RBPawnCustomizationManager_IsRequestIDActive");
@@ -25823,7 +25823,7 @@ struct RBUIBlueprintLibrary_BP_GetRHIName final
 {
 public:
 	EGraphicsRHI                                  Version;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2098[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FFA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBUIBlueprintLibrary_BP_GetRHIName) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_BP_GetRHIName");
@@ -25838,7 +25838,7 @@ struct RBUIBlueprintLibrary_BP_IsInteractingWithCursorEnabledPanelComponent fina
 public:
 	const class ARBPlayer*                        RBPlayer;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2099[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FFB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_BP_IsInteractingWithCursorEnabledPanelComponent) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_BP_IsInteractingWithCursorEnabledPanelComponent");
 static_assert(sizeof(RBUIBlueprintLibrary_BP_IsInteractingWithCursorEnabledPanelComponent) == 0x000010, "Wrong size on RBUIBlueprintLibrary_BP_IsInteractingWithCursorEnabledPanelComponent");
@@ -25852,7 +25852,7 @@ struct RBUIBlueprintLibrary_BP_IsQuestGiverUnlocked final
 public:
 	const class ARBQuestGiver*                    QuestGiver;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FFC[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_BP_IsQuestGiverUnlocked) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_BP_IsQuestGiverUnlocked");
 static_assert(sizeof(RBUIBlueprintLibrary_BP_IsQuestGiverUnlocked) == 0x000010, "Wrong size on RBUIBlueprintLibrary_BP_IsQuestGiverUnlocked");
@@ -25894,7 +25894,7 @@ public:
 	EActiveSkillType                              AssociatedActiveSkillType;                         // 0x0001(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EProfileUpgradeCategory                       ProfileUpgradeCategory;                            // 0x0002(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPerkCategory                                 PerkCategory;                                      // 0x0003(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FFD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBUIBlueprintLibrary_FilterRecentlyBoughtUpdates) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_FilterRecentlyBoughtUpdates");
@@ -25912,7 +25912,7 @@ struct RBUIBlueprintLibrary_FormatPlayerName final
 public:
 	class FString                                 DisplayName;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxLength;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209C[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FFE[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBUIBlueprintLibrary_FormatPlayerName) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_FormatPlayerName");
@@ -25928,7 +25928,7 @@ struct RBUIBlueprintLibrary_FormatTextForDecorator final
 public:
 	class FText                                   Message;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         HeightOverride;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209D[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FFF[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0020(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBUIBlueprintLibrary_FormatTextForDecorator) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_FormatTextForDecorator");
@@ -25970,7 +25970,7 @@ struct RBUIBlueprintLibrary_GetCurrencyReward final
 public:
 	struct FRBGeneratedRewardData                 RewardData;                                        // 0x0000(0x0048)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	ECurrencyType                                 CurrencyType;                                      // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209E[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2000[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x004C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBUIBlueprintLibrary_GetCurrencyReward) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_GetCurrencyReward");
@@ -26095,7 +26095,7 @@ struct RBUIBlueprintLibrary_HasPlayedMenuTutorial final
 public:
 	class FName                                   TutorialId;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2001[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_HasPlayedMenuTutorial) == 0x000004, "Wrong alignment on RBUIBlueprintLibrary_HasPlayedMenuTutorial");
 static_assert(sizeof(RBUIBlueprintLibrary_HasPlayedMenuTutorial) == 0x00000C, "Wrong size on RBUIBlueprintLibrary_HasPlayedMenuTutorial");
@@ -26122,7 +26122,7 @@ struct RBUIBlueprintLibrary_HasPlayedTutorial final
 public:
 	class FName                                   TutorialId;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A0[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2002[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_HasPlayedTutorial) == 0x000004, "Wrong alignment on RBUIBlueprintLibrary_HasPlayedTutorial");
 static_assert(sizeof(RBUIBlueprintLibrary_HasPlayedTutorial) == 0x00000C, "Wrong size on RBUIBlueprintLibrary_HasPlayedTutorial");
@@ -26136,7 +26136,7 @@ struct RBUIBlueprintLibrary_HasPlayedVoicelineForLastLevelGained final
 public:
 	struct FUILevelInfo                           LevelInfo;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A1[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2003[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_HasPlayedVoicelineForLastLevelGained) == 0x000004, "Wrong alignment on RBUIBlueprintLibrary_HasPlayedVoicelineForLastLevelGained");
 static_assert(sizeof(RBUIBlueprintLibrary_HasPlayedVoicelineForLastLevelGained) == 0x000014, "Wrong size on RBUIBlueprintLibrary_HasPlayedVoicelineForLastLevelGained");
@@ -26180,7 +26180,7 @@ struct RBUIBlueprintLibrary_HasSeenDocument final
 public:
 	class FName                                   ID;                                                // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A2[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2004[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_HasSeenDocument) == 0x000004, "Wrong alignment on RBUIBlueprintLibrary_HasSeenDocument");
 static_assert(sizeof(RBUIBlueprintLibrary_HasSeenDocument) == 0x00000C, "Wrong size on RBUIBlueprintLibrary_HasSeenDocument");
@@ -26275,7 +26275,7 @@ struct RBUIBlueprintLibrary_IsWiderInputTexture final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A3[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2005[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_IsWiderInputTexture) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_IsWiderInputTexture");
 static_assert(sizeof(RBUIBlueprintLibrary_IsWiderInputTexture) == 0x000020, "Wrong size on RBUIBlueprintLibrary_IsWiderInputTexture");
@@ -26289,7 +26289,7 @@ struct RBUIBlueprintLibrary_NormalizedScoreToRating final
 public:
 	float                                         Score;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPlayerTrialRating                            ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A4[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2006[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_NormalizedScoreToRating) == 0x000004, "Wrong alignment on RBUIBlueprintLibrary_NormalizedScoreToRating");
 static_assert(sizeof(RBUIBlueprintLibrary_NormalizedScoreToRating) == 0x000008, "Wrong size on RBUIBlueprintLibrary_NormalizedScoreToRating");
@@ -26302,7 +26302,7 @@ struct RBUIBlueprintLibrary_NormalizedScoreToText final
 {
 public:
 	float                                         Score;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2007[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBUIBlueprintLibrary_NormalizedScoreToText) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_NormalizedScoreToText");
@@ -26352,7 +26352,7 @@ struct RBUIBlueprintLibrary_SaveThumbnailForCellItems final
 public:
 	TArray<class URBPlayerCellItemDefinition*>    RbPlayerCellItems;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ForceCleanCategory;                                // 0x0010(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A6[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2008[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_SaveThumbnailForCellItems) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_SaveThumbnailForCellItems");
 static_assert(sizeof(RBUIBlueprintLibrary_SaveThumbnailForCellItems) == 0x000018, "Wrong size on RBUIBlueprintLibrary_SaveThumbnailForCellItems");
@@ -26366,7 +26366,7 @@ struct RBUIBlueprintLibrary_SaveThumbnailForOptions final
 public:
 	TArray<class URBPlayerCustomizationOption*>   RbCustomizationOptions;                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ForceCleanCategory;                                // 0x0010(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A7[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2009[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_SaveThumbnailForOptions) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_SaveThumbnailForOptions");
 static_assert(sizeof(RBUIBlueprintLibrary_SaveThumbnailForOptions) == 0x000018, "Wrong size on RBUIBlueprintLibrary_SaveThumbnailForOptions");
@@ -26380,7 +26380,7 @@ struct RBUIBlueprintLibrary_SaveThumbnailForOutfits final
 public:
 	TArray<class URBCustomizationOutfit*>         RbCustomizationOutfits;                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ForceCleanCategory;                                // 0x0010(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_200A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_SaveThumbnailForOutfits) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_SaveThumbnailForOutfits");
 static_assert(sizeof(RBUIBlueprintLibrary_SaveThumbnailForOutfits) == 0x000018, "Wrong size on RBUIBlueprintLibrary_SaveThumbnailForOutfits");
@@ -26521,7 +26521,7 @@ struct RBUIBlueprintLibrary_ShowContextualTutorial final
 public:
 	class FText                                   TutorialText;                                      // 0x0000(0x0018)(Parm, NativeAccessSpecifierPublic)
 	float                                         Duration;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A9[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_200B[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_ShowContextualTutorial) == 0x000008, "Wrong alignment on RBUIBlueprintLibrary_ShowContextualTutorial");
 static_assert(sizeof(RBUIBlueprintLibrary_ShowContextualTutorial) == 0x000020, "Wrong size on RBUIBlueprintLibrary_ShowContextualTutorial");
@@ -26568,7 +26568,7 @@ struct RBUIBlueprintLibrary_WasSeenInMenu final
 public:
 	class FName                                   OnlineID;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20AA[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_200C[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_WasSeenInMenu) == 0x000004, "Wrong alignment on RBUIBlueprintLibrary_WasSeenInMenu");
 static_assert(sizeof(RBUIBlueprintLibrary_WasSeenInMenu) == 0x00000C, "Wrong size on RBUIBlueprintLibrary_WasSeenInMenu");
@@ -26582,7 +26582,7 @@ struct RBUIBlueprintLibrary_WasUpgradeRecentlyBought final
 public:
 	class FName                                   OnlineID;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20AB[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_200D[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBUIBlueprintLibrary_WasUpgradeRecentlyBought) == 0x000004, "Wrong alignment on RBUIBlueprintLibrary_WasUpgradeRecentlyBought");
 static_assert(sizeof(RBUIBlueprintLibrary_WasUpgradeRecentlyBought) == 0x00000C, "Wrong size on RBUIBlueprintLibrary_WasUpgradeRecentlyBought");
@@ -26759,7 +26759,7 @@ struct RBGameState_GetCurrentSAS final
 {
 public:
 	ETeam                                         Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20B8[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_201A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBSAS*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBGameState_GetCurrentSAS) == 0x000008, "Wrong alignment on RBGameState_GetCurrentSAS");
@@ -26950,7 +26950,7 @@ struct RBLargePickup_BP_SetDesiredTransform final
 public:
 	struct FTransform                             DesiredTransform;                                  // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Delay;                                             // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20D8[0xC];                                     // 0x0034(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_203A[0xC];                                     // 0x0034(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLargePickup_BP_SetDesiredTransform) == 0x000010, "Wrong alignment on RBLargePickup_BP_SetDesiredTransform");
 static_assert(sizeof(RBLargePickup_BP_SetDesiredTransform) == 0x000040, "Wrong size on RBLargePickup_BP_SetDesiredTransform");
@@ -27021,7 +27021,7 @@ struct RBLargePickup_BP_ShouldPlayAnimAfterAdjustPosition final
 public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20D9[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_203B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLargePickup_BP_ShouldPlayAnimAfterAdjustPosition) == 0x000008, "Wrong alignment on RBLargePickup_BP_ShouldPlayAnimAfterAdjustPosition");
 static_assert(sizeof(RBLargePickup_BP_ShouldPlayAnimAfterAdjustPosition) == 0x000010, "Wrong size on RBLargePickup_BP_ShouldPlayAnimAfterAdjustPosition");
@@ -27036,7 +27036,7 @@ public:
 	const class ARBPlayer*                        Player;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   Out_CustomInteractionText;                         // 0x0008(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20DA[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_203C[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLargePickup_GetCustomDropInteractionText) == 0x000008, "Wrong alignment on RBLargePickup_GetCustomDropInteractionText");
 static_assert(sizeof(RBLargePickup_GetCustomDropInteractionText) == 0x000028, "Wrong size on RBLargePickup_GetCustomDropInteractionText");
@@ -27052,7 +27052,7 @@ public:
 	const class ARBPlayer*                        Player;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   Out_CustomInteractionText;                         // 0x0008(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20DB[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_203D[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLargePickup_GetCustomPickupInteractionText) == 0x000008, "Wrong alignment on RBLargePickup_GetCustomPickupInteractionText");
 static_assert(sizeof(RBLargePickup_GetCustomPickupInteractionText) == 0x000028, "Wrong size on RBLargePickup_GetCustomPickupInteractionText");
@@ -27289,7 +27289,7 @@ struct RBStroopGame_GetPlayerRoundDataFromPanel final
 public:
 	class URBStroopGamePanelComponent*            Panel;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FStroopPlayerMatchData                 ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20F4[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2056[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStroopGame_GetPlayerRoundDataFromPanel) == 0x000008, "Wrong alignment on RBStroopGame_GetPlayerRoundDataFromPanel");
 static_assert(sizeof(RBStroopGame_GetPlayerRoundDataFromPanel) == 0x000018, "Wrong size on RBStroopGame_GetPlayerRoundDataFromPanel");
@@ -27304,7 +27304,7 @@ public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bActivePlayer1;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bActivePlayer2;                                    // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20F5[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2057[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStroopGame_SetDisturbanceActivation) == 0x000004, "Wrong alignment on RBStroopGame_SetDisturbanceActivation");
 static_assert(sizeof(RBStroopGame_SetDisturbanceActivation) == 0x000008, "Wrong size on RBStroopGame_SetDisturbanceActivation");
@@ -27318,7 +27318,7 @@ struct RBStroopGame_GetButtonSelectionIndexesFromMode final
 {
 public:
 	EStroopButtonSelectionMode                    Mode;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20F6[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2058[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBStroopGame_GetButtonSelectionIndexesFromMode) == 0x000008, "Wrong alignment on RBStroopGame_GetButtonSelectionIndexesFromMode");
@@ -27333,7 +27333,7 @@ struct RBStroopGame_GetPlayerScore final
 public:
 	class URBStroopGamePanelComponent*            Panel;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20F7[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2059[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStroopGame_GetPlayerScore) == 0x000008, "Wrong alignment on RBStroopGame_GetPlayerScore");
 static_assert(sizeof(RBStroopGame_GetPlayerScore) == 0x000010, "Wrong size on RBStroopGame_GetPlayerScore");
@@ -27360,7 +27360,7 @@ struct RBEditorClearanceCollisionBoxComponent_Editor_SetSettingFromPlayerInterac
 public:
 	class UObject*                                Interactable;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20FB[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_205D[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         FinalCapsuleGroundOffset;                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBEditorClearanceCollisionBoxComponent_Editor_SetSettingFromPlayerInteraction) == 0x000008, "Wrong alignment on RBEditorClearanceCollisionBoxComponent_Editor_SetSettingFromPlayerInteraction");
@@ -27399,7 +27399,7 @@ public:
 	const class ARBPawn*                          Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OutLocation;                                       // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20FC[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_205E[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBEditorClearanceCollisionBoxComponent_GetClearancePlayerLocation) == 0x000008, "Wrong alignment on RBEditorClearanceCollisionBoxComponent_GetClearancePlayerLocation");
 static_assert(sizeof(RBEditorClearanceCollisionBoxComponent_GetClearancePlayerLocation) == 0x000018, "Wrong size on RBEditorClearanceCollisionBoxComponent_GetClearancePlayerLocation");
@@ -27490,10 +27490,10 @@ struct RBEditorMapCheckable_BP_MapCheck final
 {
 public:
 	EMapCheckType                                 CheckType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_210A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_206C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 OutErrorMsg;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_210B[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_206D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBEditorMapCheckable_BP_MapCheck) == 0x000008, "Wrong alignment on RBEditorMapCheckable_BP_MapCheck");
 static_assert(sizeof(RBEditorMapCheckable_BP_MapCheck) == 0x000020, "Wrong size on RBEditorMapCheckable_BP_MapCheck");
@@ -27709,7 +27709,7 @@ struct RBGlobalUIConfig_GetNPCSettings final
 {
 public:
 	EMetaNPCType                                  NPCType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_211A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_207C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMetaNPCSettings                       ReturnValue;                                       // 0x0008(0x0088)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBGlobalUIConfig_GetNPCSettings) == 0x000008, "Wrong alignment on RBGlobalUIConfig_GetNPCSettings");
@@ -27738,7 +27738,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_211D[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_207F[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBElectricFloorTrapComponent_OnNPCBeginOverlap) == 0x000008, "Wrong alignment on RBElectricFloorTrapComponent_OnNPCBeginOverlap");
@@ -28051,7 +28051,7 @@ struct RBPopUpWidget_BP_AdjustToAnchor final
 public:
 	class URBPopUpAnchorWidget*                   AnchorWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUsePopupCenter;                                   // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2126[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2088[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPopUpWidget_BP_AdjustToAnchor) == 0x000008, "Wrong alignment on RBPopUpWidget_BP_AdjustToAnchor");
 static_assert(sizeof(RBPopUpWidget_BP_AdjustToAnchor) == 0x000010, "Wrong size on RBPopUpWidget_BP_AdjustToAnchor");
@@ -28122,7 +28122,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2129[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_208B[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBGameplayTriggerComponent_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBGameplayTriggerComponent_OnComponentBeginOverlap");
@@ -28155,7 +28155,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_212E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2090[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBEvalCorridor_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBEvalCorridor_OnComponentBeginOverlap");
@@ -28176,7 +28176,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_212F[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2091[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBEvalCorridor_OnComponentEndOverlap) == 0x000008, "Wrong alignment on RBEvalCorridor_OnComponentEndOverlap");
 static_assert(sizeof(RBEvalCorridor_OnComponentEndOverlap) == 0x000020, "Wrong size on RBEvalCorridor_OnComponentEndOverlap");
@@ -28206,7 +28206,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2133[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2095[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBEvalCorridorEntrance_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBEvalCorridorEntrance_OnComponentBeginOverlap");
@@ -28228,7 +28228,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2136[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2098[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBEvalCorridorExit_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBEvalCorridorExit_OnComponentBeginOverlap");
@@ -28249,7 +28249,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2137[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2099[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBEvalCorridorExit_OnComponentEndOverlap) == 0x000008, "Wrong alignment on RBEvalCorridorExit_OnComponentEndOverlap");
 static_assert(sizeof(RBEvalCorridorExit_OnComponentEndOverlap) == 0x000020, "Wrong size on RBEvalCorridorExit_OnComponentEndOverlap");
@@ -28265,7 +28265,7 @@ struct RBEvalCorridorHelperComponent_BP_ScheduleCollisionEnabled final
 public:
 	class ARBPlayer*                              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_213B[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_209D[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Delay;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBEvalCorridorHelperComponent_BP_ScheduleCollisionEnabled) == 0x000008, "Wrong alignment on RBEvalCorridorHelperComponent_BP_ScheduleCollisionEnabled");
@@ -28280,7 +28280,7 @@ struct RBEvalCorridorHelperComponent_BP_ScheduleCollisionEnabledLocalPlayer fina
 {
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_213C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_209E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Delay;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBEvalCorridorHelperComponent_BP_ScheduleCollisionEnabledLocalPlayer) == 0x000004, "Wrong alignment on RBEvalCorridorHelperComponent_BP_ScheduleCollisionEnabledLocalPlayer");
@@ -28295,10 +28295,10 @@ struct RBEvalCorridorHelperComponent_Multicast_ScheduleCollisionEnabledForPlayer
 public:
 	class ARBPlayer*                              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_213D[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_209F[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ExecutionTime;                                     // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSkipLocalPlayer;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_213E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20A0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBEvalCorridorHelperComponent_Multicast_ScheduleCollisionEnabledForPlayer) == 0x000008, "Wrong alignment on RBEvalCorridorHelperComponent_Multicast_ScheduleCollisionEnabledForPlayer");
 static_assert(sizeof(RBEvalCorridorHelperComponent_Multicast_ScheduleCollisionEnabledForPlayer) == 0x000018, "Wrong size on RBEvalCorridorHelperComponent_Multicast_ScheduleCollisionEnabledForPlayer");
@@ -28557,7 +28557,7 @@ struct RBHitNPCObjectiveCoordinator_Event_OnNPCHit final
 public:
 	class ARBNPC*                                 NPC;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHeadshot;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_214F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20B1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHitNPCObjectiveCoordinator_Event_OnNPCHit) == 0x000008, "Wrong alignment on RBHitNPCObjectiveCoordinator_Event_OnNPCHit");
 static_assert(sizeof(RBHitNPCObjectiveCoordinator_Event_OnNPCHit) == 0x000010, "Wrong size on RBHitNPCObjectiveCoordinator_Event_OnNPCHit");
@@ -28573,7 +28573,7 @@ public:
 	class ARBPawn*                                Thrower;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Projectile;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsHeadshot;                                       // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2150[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20B2[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHitNPCObjectiveCoordinator_OnNPCHitByProjectile) == 0x000008, "Wrong alignment on RBHitNPCObjectiveCoordinator_OnNPCHitByProjectile");
 static_assert(sizeof(RBHitNPCObjectiveCoordinator_OnNPCHitByProjectile) == 0x000020, "Wrong size on RBHitNPCObjectiveCoordinator_OnNPCHitByProjectile");
@@ -28601,7 +28601,7 @@ public:
 	class ARBProjectile*                          RBProjectile;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ARBPawn*                                RBPawn;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                HitLocation;                                       // 0x0010(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2152[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20B4[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTaskConditionContext_ProjectileHit_OnProjectilePawnHit) == 0x000008, "Wrong alignment on RBTaskConditionContext_ProjectileHit_OnProjectilePawnHit");
 static_assert(sizeof(RBTaskConditionContext_ProjectileHit_OnProjectilePawnHit) == 0x000020, "Wrong size on RBTaskConditionContext_ProjectileHit_OnProjectilePawnHit");
@@ -28806,7 +28806,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_215E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20C0[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBExplosiveTrap_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBExplosiveTrap_OnComponentBeginOverlap");
@@ -28827,7 +28827,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_215F[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20C1[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBExplosiveTrap_OnComponentEndOverlap) == 0x000008, "Wrong alignment on RBExplosiveTrap_OnComponentEndOverlap");
 static_assert(sizeof(RBExplosiveTrap_OnComponentEndOverlap) == 0x000020, "Wrong size on RBExplosiveTrap_OnComponentEndOverlap");
@@ -28870,7 +28870,7 @@ public:
 	int32                                         TargetIndex;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timestamp;                                         // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETimingInputResultType                        Result;                                            // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2166[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20C8[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBFirePumpObjectiveCoordinator_OnPumpInput_Server) == 0x000008, "Wrong alignment on RBFirePumpObjectiveCoordinator_OnPumpInput_Server");
 static_assert(sizeof(RBFirePumpObjectiveCoordinator_OnPumpInput_Server) == 0x000020, "Wrong size on RBFirePumpObjectiveCoordinator_OnPumpInput_Server");
@@ -28936,7 +28936,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EInputEvent                                   EventType;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bGamepad;                                          // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2175[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20D7[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameModeMainMenu_OnInputKey) == 0x000008, "Wrong alignment on RBGameModeMainMenu_OnInputKey");
 static_assert(sizeof(RBGameModeMainMenu_OnInputKey) == 0x000020, "Wrong size on RBGameModeMainMenu_OnInputKey");
@@ -29206,7 +29206,7 @@ struct RBGameStructureConfig_IsReleaseTrial final
 public:
 	class FName                                   TrialId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_217F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20E1[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameStructureConfig_IsReleaseTrial) == 0x000004, "Wrong alignment on RBGameStructureConfig_IsReleaseTrial");
 static_assert(sizeof(RBGameStructureConfig_IsReleaseTrial) == 0x00000C, "Wrong size on RBGameStructureConfig_IsReleaseTrial");
@@ -29310,7 +29310,7 @@ struct RBGameUserPreferences_SetEnableRegion final
 public:
 	class FString                                 Region;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnable;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_218E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20F0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameUserPreferences_SetEnableRegion) == 0x000008, "Wrong alignment on RBGameUserPreferences_SetEnableRegion");
 static_assert(sizeof(RBGameUserPreferences_SetEnableRegion) == 0x000018, "Wrong size on RBGameUserPreferences_SetEnableRegion");
@@ -29403,7 +29403,7 @@ struct RBGameUserPreferences_SetMasterVolume final
 public:
 	float                                         Param_MasterVolume;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bApply;                                            // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_218F[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20F1[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameUserPreferences_SetMasterVolume) == 0x000004, "Wrong alignment on RBGameUserPreferences_SetMasterVolume");
 static_assert(sizeof(RBGameUserPreferences_SetMasterVolume) == 0x000008, "Wrong size on RBGameUserPreferences_SetMasterVolume");
@@ -29439,7 +29439,7 @@ struct RBGameUserPreferences_SetMusicVolume final
 public:
 	float                                         InMusicVolume;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bApply;                                            // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2190[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20F2[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameUserPreferences_SetMusicVolume) == 0x000004, "Wrong alignment on RBGameUserPreferences_SetMusicVolume");
 static_assert(sizeof(RBGameUserPreferences_SetMusicVolume) == 0x000008, "Wrong size on RBGameUserPreferences_SetMusicVolume");
@@ -29499,7 +29499,7 @@ struct RBGameUserPreferences_SetSFXVolume final
 public:
 	float                                         InSFXVolume;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bApply;                                            // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2191[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20F3[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameUserPreferences_SetSFXVolume) == 0x000004, "Wrong alignment on RBGameUserPreferences_SetSFXVolume");
 static_assert(sizeof(RBGameUserPreferences_SetSFXVolume) == 0x000008, "Wrong size on RBGameUserPreferences_SetSFXVolume");
@@ -30010,7 +30010,7 @@ struct RBGameUserPreferences_IsBindingInverted final
 public:
 	class FName                                   BindingName;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2192[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20F4[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameUserPreferences_IsBindingInverted) == 0x000004, "Wrong alignment on RBGameUserPreferences_IsBindingInverted");
 static_assert(sizeof(RBGameUserPreferences_IsBindingInverted) == 0x00000C, "Wrong size on RBGameUserPreferences_IsBindingInverted");
@@ -30024,7 +30024,7 @@ struct RBGameUserPreferences_IsBlocked final
 public:
 	struct FProfileId                             ProfileId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2193[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20F5[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameUserPreferences_IsBlocked) == 0x000004, "Wrong alignment on RBGameUserPreferences_IsBlocked");
 static_assert(sizeof(RBGameUserPreferences_IsBlocked) == 0x000014, "Wrong size on RBGameUserPreferences_IsBlocked");
@@ -30073,7 +30073,7 @@ struct RBGameUserPreferences_IsRegionEnabled final
 public:
 	class FString                                 Region;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2194[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20F6[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGameUserPreferences_IsRegionEnabled) == 0x000008, "Wrong alignment on RBGameUserPreferences_IsRegionEnabled");
 static_assert(sizeof(RBGameUserPreferences_IsRegionEnabled) == 0x000018, "Wrong size on RBGameUserPreferences_IsRegionEnabled");
@@ -30147,7 +30147,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2197[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20F9[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBGasTrapComponent_OnTrapBeginOverlap_Server) == 0x000008, "Wrong alignment on RBGasTrapComponent_OnTrapBeginOverlap_Server");
@@ -30168,7 +30168,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2198[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20FA[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBGasTrapComponent_OnTrapEndOverlap_Server) == 0x000008, "Wrong alignment on RBGasTrapComponent_OnTrapEndOverlap_Server");
 static_assert(sizeof(RBGasTrapComponent_OnTrapEndOverlap_Server) == 0x000020, "Wrong size on RBGasTrapComponent_OnTrapEndOverlap_Server");
@@ -30285,7 +30285,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21AB[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_210D[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBHingedSceneComponent_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBHingedSceneComponent_OnComponentBeginOverlap");
@@ -30306,7 +30306,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21AC[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_210E[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHingedSceneComponent_OnComponentEndOverlap) == 0x000008, "Wrong alignment on RBHingedSceneComponent_OnComponentEndOverlap");
 static_assert(sizeof(RBHingedSceneComponent_OnComponentEndOverlap) == 0x000020, "Wrong size on RBHingedSceneComponent_OnComponentEndOverlap");
@@ -30322,7 +30322,7 @@ struct RBHotPotatoSpawner_OnHotPotatoStateChanged final
 public:
 	class ARBHotPotato*                           HotPotato;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHotPotatoState                               NewState;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21AF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2111[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHotPotatoSpawner_OnHotPotatoStateChanged) == 0x000008, "Wrong alignment on RBHotPotatoSpawner_OnHotPotatoStateChanged");
 static_assert(sizeof(RBHotPotatoSpawner_OnHotPotatoStateChanged) == 0x000010, "Wrong size on RBHotPotatoSpawner_OnHotPotatoStateChanged");
@@ -30415,7 +30415,7 @@ struct RBHUDPlayerInfo_OnHealthUpdated final
 public:
 	float                                         NewHealth;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIncreased;                                        // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21B4[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2116[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUDPlayerInfo_OnHealthUpdated) == 0x000004, "Wrong alignment on RBHUDPlayerInfo_OnHealthUpdated");
 static_assert(sizeof(RBHUDPlayerInfo_OnHealthUpdated) == 0x000008, "Wrong size on RBHUDPlayerInfo_OnHealthUpdated");
@@ -30486,7 +30486,7 @@ struct RBHUDPlayerInfo_OnStaminaChanged final
 public:
 	float                                         NewStamina;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsExhausted;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21B5[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2117[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUDPlayerInfo_OnStaminaChanged) == 0x000004, "Wrong alignment on RBHUDPlayerInfo_OnStaminaChanged");
 static_assert(sizeof(RBHUDPlayerInfo_OnStaminaChanged) == 0x000008, "Wrong size on RBHUDPlayerInfo_OnStaminaChanged");
@@ -30577,7 +30577,7 @@ struct RBHUDWidget_Event_ShowInteractionMessage final
 public:
 	class FText                                   Message;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	EGameMessageCategory                          GameMessageCategory;                               // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21BB[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_211D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBHUDWidget_Event_ShowInteractionMessage) == 0x000008, "Wrong alignment on RBHUDWidget_Event_ShowInteractionMessage");
 static_assert(sizeof(RBHUDWidget_Event_ShowInteractionMessage) == 0x000020, "Wrong size on RBHUDWidget_Event_ShowInteractionMessage");
@@ -30762,7 +30762,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21CD[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_212F[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBJumpScareTriggerable_OnTriggerBoxOverlap) == 0x000008, "Wrong alignment on RBJumpScareTriggerable_OnTriggerBoxOverlap");
@@ -30836,7 +30836,7 @@ struct RBLight_PlayAnimationCurve final
 public:
 	class UCurveFloat*                            NewAnimCurve;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Looping;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21DA[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_213C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLight_PlayAnimationCurve) == 0x000008, "Wrong alignment on RBLight_PlayAnimationCurve");
 static_assert(sizeof(RBLight_PlayAnimationCurve) == 0x000010, "Wrong size on RBLight_PlayAnimationCurve");
@@ -30884,7 +30884,7 @@ struct RBPlayerState_OnCurrencyGained__DelegateSignature final
 {
 public:
 	ECurrencyType                                 CurrencyType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21F4[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2156[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Amount;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerState_OnCurrencyGained__DelegateSignature) == 0x000004, "Wrong alignment on RBPlayerState_OnCurrencyGained__DelegateSignature");
@@ -30966,7 +30966,7 @@ struct RBPlayerState_OnPlayerEvent__DelegateSignature final
 {
 public:
 	EPlayerEvent                                  EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21F5[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2157[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Value;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerState_OnPlayerEvent__DelegateSignature) == 0x000004, "Wrong alignment on RBPlayerState_OnPlayerEvent__DelegateSignature");
@@ -30991,7 +30991,7 @@ struct RBPlayerState_OnPlayerIndicatorUpdated__DelegateSignature final
 {
 public:
 	EPlayerIndicatorType                          Param_PlayerIndicatorType;                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21F6[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2158[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TimeLeft;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Progress;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -31070,7 +31070,7 @@ public:
 	class ARBProjectile*                          RBProjectile;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ARBPawn*                                RBPawn;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                HitLocation;                                       // 0x0010(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21F7[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2159[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerState_OnProjectilePawnHit__DelegateSignature) == 0x000008, "Wrong alignment on RBPlayerState_OnProjectilePawnHit__DelegateSignature");
 static_assert(sizeof(RBPlayerState_OnProjectilePawnHit__DelegateSignature) == 0x000020, "Wrong size on RBPlayerState_OnProjectilePawnHit__DelegateSignature");
@@ -31085,7 +31085,7 @@ struct RBPlayerState_OnReadyForStageResetChanged__DelegateSignature final
 public:
 	class ARBPlayerState*                         RBPlayerState;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsReady;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21F8[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_215A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerState_OnReadyForStageResetChanged__DelegateSignature) == 0x000008, "Wrong alignment on RBPlayerState_OnReadyForStageResetChanged__DelegateSignature");
 static_assert(sizeof(RBPlayerState_OnReadyForStageResetChanged__DelegateSignature) == 0x000010, "Wrong size on RBPlayerState_OnReadyForStageResetChanged__DelegateSignature");
@@ -31178,7 +31178,7 @@ struct RBPlayerState_AreItemsAcquired final
 public:
 	TArray<class FName>                           ItemIds;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21F9[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_215B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerState_AreItemsAcquired) == 0x000008, "Wrong alignment on RBPlayerState_AreItemsAcquired");
 static_assert(sizeof(RBPlayerState_AreItemsAcquired) == 0x000018, "Wrong size on RBPlayerState_AreItemsAcquired");
@@ -31214,7 +31214,7 @@ struct RBPlayerState_BP_IsUpgradeAcquired final
 public:
 	class FName                                   UpgradeID;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21FA[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_215C[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerState_BP_IsUpgradeAcquired) == 0x000004, "Wrong alignment on RBPlayerState_BP_IsUpgradeAcquired");
 static_assert(sizeof(RBPlayerState_BP_IsUpgradeAcquired) == 0x00000C, "Wrong size on RBPlayerState_BP_IsUpgradeAcquired");
@@ -31238,7 +31238,7 @@ struct RBPlayerState_GetCurrency final
 {
 public:
 	ECurrencyType                                 CurrencyType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21FB[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_215D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerState_GetCurrency) == 0x000004, "Wrong alignment on RBPlayerState_GetCurrency");
@@ -31285,7 +31285,7 @@ struct RBPlayerState_GetCustomizationOptionsBySlot final
 {
 public:
 	EPlayerCustomizationSlot                      Slot;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21FC[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_215E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPlayerCustomizationOption*           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerState_GetCustomizationOptionsBySlot) == 0x000008, "Wrong alignment on RBPlayerState_GetCustomizationOptionsBySlot");
@@ -31510,7 +31510,7 @@ public:
 	class FName                                   ItemId;                                            // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTrialChainingUpgradeChoiceData        OutResult;                                         // 0x0008(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21FD[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_215F[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerState_GetTrialChainingUpgradeChoice) == 0x000004, "Wrong alignment on RBPlayerState_GetTrialChainingUpgradeChoice");
 static_assert(sizeof(RBPlayerState_GetTrialChainingUpgradeChoice) == 0x00001C, "Wrong size on RBPlayerState_GetTrialChainingUpgradeChoice");
@@ -31535,7 +31535,7 @@ struct RBPlayerState_GetUnlockedPerkSlots final
 {
 public:
 	EPerkCategory                                 PerkCategory;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21FE[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2160[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerState_GetUnlockedPerkSlots) == 0x000004, "Wrong alignment on RBPlayerState_GetUnlockedPerkSlots");
@@ -31572,7 +31572,7 @@ struct RBPlayerState_HasAttemptedTrial final
 public:
 	class FName                                   ID;                                                // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21FF[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2161[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerState_HasAttemptedTrial) == 0x000004, "Wrong alignment on RBPlayerState_HasAttemptedTrial");
 static_assert(sizeof(RBPlayerState_HasAttemptedTrial) == 0x00000C, "Wrong size on RBPlayerState_HasAttemptedTrial");
@@ -31587,7 +31587,7 @@ public:
 	class FName                                   ID;                                                // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPerfect;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2200[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2162[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerState_HasCompletedTrial) == 0x000004, "Wrong alignment on RBPlayerState_HasCompletedTrial");
 static_assert(sizeof(RBPlayerState_HasCompletedTrial) == 0x00000C, "Wrong size on RBPlayerState_HasCompletedTrial");
@@ -31602,7 +31602,7 @@ struct RBPlayerState_HasUpgradeEffect final
 public:
 	class FName                                   ID;                                                // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2201[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2163[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerState_HasUpgradeEffect) == 0x000004, "Wrong alignment on RBPlayerState_HasUpgradeEffect");
 static_assert(sizeof(RBPlayerState_HasUpgradeEffect) == 0x00000C, "Wrong size on RBPlayerState_HasUpgradeEffect");
@@ -31627,7 +31627,7 @@ struct RBPlayerState_IsItemAcquired final
 public:
 	class FName                                   ItemId;                                            // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2202[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2164[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerState_IsItemAcquired) == 0x000004, "Wrong alignment on RBPlayerState_IsItemAcquired");
 static_assert(sizeof(RBPlayerState_IsItemAcquired) == 0x00000C, "Wrong size on RBPlayerState_IsItemAcquired");
@@ -31674,7 +31674,7 @@ struct RBLobbyPlayerState_OnMatchSettingsUpdated__DelegateSignature final
 public:
 	class ARBLobbyPlayerState*                    RBLobbyPlayerState;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMatchSettings                         Param_MatchSettings;                               // 0x0008(0x0024)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2206[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2168[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLobbyPlayerState_OnMatchSettingsUpdated__DelegateSignature) == 0x000008, "Wrong alignment on RBLobbyPlayerState_OnMatchSettingsUpdated__DelegateSignature");
 static_assert(sizeof(RBLobbyPlayerState_OnMatchSettingsUpdated__DelegateSignature) == 0x000030, "Wrong size on RBLobbyPlayerState_OnMatchSettingsUpdated__DelegateSignature");
@@ -31962,7 +31962,7 @@ struct RBLocalProfile_SetLastPlayedStoryline final
 {
 public:
 	EMetaNPCType                                  NPCType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_220B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_216D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         StorylineLevelPlayed;                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 FeatureSwitchPlayed;                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -32022,11 +32022,11 @@ struct RBLocalProfile_GetNextStorylineVO final
 {
 public:
 	EMetaNPCType                                  NPCType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_220C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_216E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	const class URBLobbyData*                     LobbyData;                                         // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         StorylineLevelPlayed;                              // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFallbackVO;                                     // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_220D[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_216F[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FeatureSwitchPlayed;                               // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -32057,7 +32057,7 @@ struct RBLocalProfile_HasItemBeenDisplayedInMenu final
 public:
 	class FName                                   OnlineID;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_220E[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2170[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLocalProfile_HasItemBeenDisplayedInMenu) == 0x000004, "Wrong alignment on RBLocalProfile_HasItemBeenDisplayedInMenu");
 static_assert(sizeof(RBLocalProfile_HasItemBeenDisplayedInMenu) == 0x00000C, "Wrong size on RBLocalProfile_HasItemBeenDisplayedInMenu");
@@ -32071,7 +32071,7 @@ struct RBLocalProfile_HasProgramBeenSeenInMenu final
 public:
 	class FName                                   ProgramId;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_220F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2171[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBLocalProfile_HasProgramBeenSeenInMenu) == 0x000004, "Wrong alignment on RBLocalProfile_HasProgramBeenSeenInMenu");
 static_assert(sizeof(RBLocalProfile_HasProgramBeenSeenInMenu) == 0x00000C, "Wrong size on RBLocalProfile_HasProgramBeenSeenInMenu");
@@ -32175,14 +32175,14 @@ struct RBMenuCharacter_Setup final
 public:
 	bool                                          Param_bVisible;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Param_bUnknown;                                    // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2219[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_217B[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBPlayerCustomizationInfo             Param_CustomizationInfo;                           // 0x0008(0x0038)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	EActiveSkillType                              Param_ActiveSkillType;                             // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESocialMenuSceneActorSlot                     Param_Slot;                                        // 0x0041(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_221A[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_217C[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         Param_RBPlayerState;                               // 0x0048(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInIsFailureScene;                                 // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_221B[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_217D[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Param_HealthRatio;                                 // 0x0054(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBMenuCharacter_Setup) == 0x000008, "Wrong alignment on RBMenuCharacter_Setup");
@@ -32495,7 +32495,7 @@ struct RBMenuOptionsEntry_ChangeOptionValue final
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          LeftClicked;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_222A[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_218C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBMenuOptionsEntry_ChangeOptionValue) == 0x000004, "Wrong alignment on RBMenuOptionsEntry_ChangeOptionValue");
 static_assert(sizeof(RBMenuOptionsEntry_ChangeOptionValue) == 0x000008, "Wrong size on RBMenuOptionsEntry_ChangeOptionValue");
@@ -32508,7 +32508,7 @@ struct RBMenuOptionsEntry_Event_UpdateSliderValue final
 {
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_222B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_218D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   TextOverride;                                      // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBMenuOptionsEntry_Event_UpdateSliderValue) == 0x000008, "Wrong alignment on RBMenuOptionsEntry_Event_UpdateSliderValue");
@@ -32720,7 +32720,7 @@ struct RBMenuOptionsTab_OnHUDPresetChanged final
 {
 public:
 	bool                                          bIsPreset;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_222D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_218F[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         NewValue;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBMenuOptionsTab_OnHUDPresetChanged) == 0x000004, "Wrong alignment on RBMenuOptionsTab_OnHUDPresetChanged");
@@ -32756,7 +32756,7 @@ struct RBMenuOptionsTab_OnQualityValueUpdated final
 {
 public:
 	bool                                          bIsPreset;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_222E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2190[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         NewValue;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBMenuOptionsTab_OnQualityValueUpdated) == 0x000004, "Wrong alignment on RBMenuOptionsTab_OnQualityValueUpdated");
@@ -32863,7 +32863,7 @@ struct RBMonsterCloset_BP_Tick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_223D[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_219F[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBMonsterCloset_BP_Tick) == 0x000004, "Wrong alignment on RBMonsterCloset_BP_Tick");
 static_assert(sizeof(RBMonsterCloset_BP_Tick) == 0x000008, "Wrong size on RBMonsterCloset_BP_Tick");
@@ -32968,7 +32968,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_223E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21A0[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBMonsterCloset_OnSpawningZoneBeginOverlap) == 0x000008, "Wrong alignment on RBMonsterCloset_OnSpawningZoneBeginOverlap");
@@ -32989,7 +32989,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_223F[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21A1[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBMonsterCloset_OnSpawningZoneEndOverlap) == 0x000008, "Wrong alignment on RBMonsterCloset_OnSpawningZoneEndOverlap");
 static_assert(sizeof(RBMonsterCloset_OnSpawningZoneEndOverlap) == 0x000020, "Wrong size on RBMonsterCloset_OnSpawningZoneEndOverlap");
@@ -33005,7 +33005,7 @@ struct RBMonsterCloset_SetDoorCollisionsForPawn final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2240[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21A2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBMonsterCloset_SetDoorCollisionsForPawn) == 0x000008, "Wrong alignment on RBMonsterCloset_SetDoorCollisionsForPawn");
 static_assert(sizeof(RBMonsterCloset_SetDoorCollisionsForPawn) == 0x000010, "Wrong size on RBMonsterCloset_SetDoorCollisionsForPawn");
@@ -33053,7 +33053,7 @@ public:
 	struct FNarrativeScreenAnimationData          PlayingData;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bQueueIfPlaying;                                   // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceAllLinkedTVsOn;                              // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2248[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21AA[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNarrativeScreenChannel_BP_PlayAnimation) == 0x000008, "Wrong alignment on RBNarrativeScreenChannel_BP_PlayAnimation");
 static_assert(sizeof(RBNarrativeScreenChannel_BP_PlayAnimation) == 0x000020, "Wrong size on RBNarrativeScreenChannel_BP_PlayAnimation");
@@ -33420,7 +33420,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2257[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21B9[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPCSeparatorDoor_OnInsideSafetyComponentBeginOverlap) == 0x000008, "Wrong alignment on RBNPCSeparatorDoor_OnInsideSafetyComponentBeginOverlap");
@@ -33442,7 +33442,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2258[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21BA[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPCSeparatorDoor_OnOutsideSafetyComponentBeginOverlap) == 0x000008, "Wrong alignment on RBNPCSeparatorDoor_OnOutsideSafetyComponentBeginOverlap");
@@ -33518,7 +33518,7 @@ struct RBNPCSeparatorTube_BP_SetMaxNumberOfPassages final
 public:
 	int32                                         MaxNumber;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bResetNumberOfPassages;                            // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_225C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21BE[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPCSeparatorTube_BP_SetMaxNumberOfPassages) == 0x000004, "Wrong alignment on RBNPCSeparatorTube_BP_SetMaxNumberOfPassages");
 static_assert(sizeof(RBNPCSeparatorTube_BP_SetMaxNumberOfPassages) == 0x000008, "Wrong size on RBNPCSeparatorTube_BP_SetMaxNumberOfPassages");
@@ -33546,7 +33546,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_225D[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21BF[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPCSeparatorTube_OnComponentBoxBeginOverlap) == 0x000008, "Wrong alignment on RBNPCSeparatorTube_OnComponentBoxBeginOverlap");
@@ -33567,7 +33567,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_225E[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C0[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPCSeparatorTube_OnComponentBoxEndOverlap) == 0x000008, "Wrong alignment on RBNPCSeparatorTube_OnComponentBoxEndOverlap");
 static_assert(sizeof(RBNPCSeparatorTube_OnComponentBoxEndOverlap) == 0x000020, "Wrong size on RBNPCSeparatorTube_OnComponentBoxEndOverlap");
@@ -33586,7 +33586,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_225F[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C1[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBNPCSeparatorTube_OnComponentCapsuleBeginOverlap) == 0x000008, "Wrong alignment on RBNPCSeparatorTube_OnComponentCapsuleBeginOverlap");
@@ -33607,7 +33607,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2260[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C2[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBNPCSeparatorTube_OnComponentCapsuleEndOverlap) == 0x000008, "Wrong alignment on RBNPCSeparatorTube_OnComponentCapsuleEndOverlap");
 static_assert(sizeof(RBNPCSeparatorTube_OnComponentCapsuleEndOverlap) == 0x000020, "Wrong size on RBNPCSeparatorTube_OnComponentCapsuleEndOverlap");
@@ -33746,7 +33746,7 @@ struct RBObjectiveManager_BP_PlayObjectiveScreenAnim final
 public:
 	struct FNarrativeScreenAnimationData          AnimData;                                          // 0x0000(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bPlayIntro;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2272[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21D4[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBObjectiveManager_BP_PlayObjectiveScreenAnim) == 0x000008, "Wrong alignment on RBObjectiveManager_BP_PlayObjectiveScreenAnim");
 static_assert(sizeof(RBObjectiveManager_BP_PlayObjectiveScreenAnim) == 0x000020, "Wrong size on RBObjectiveManager_BP_PlayObjectiveScreenAnim");
@@ -33760,7 +33760,7 @@ struct RBObjectiveManager_OnObjectiveCoordinatorStateChanged_Callback final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EObjectiveCoordinatorState                    NewState;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2273[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21D5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBObjectiveManager_OnObjectiveCoordinatorStateChanged_Callback) == 0x000008, "Wrong alignment on RBObjectiveManager_OnObjectiveCoordinatorStateChanged_Callback");
 static_assert(sizeof(RBObjectiveManager_OnObjectiveCoordinatorStateChanged_Callback) == 0x000010, "Wrong size on RBObjectiveManager_OnObjectiveCoordinatorStateChanged_Callback");
@@ -33810,7 +33810,7 @@ struct RBObjectiveManager_BP_GetFormattedCurrentObjectiveString final
 {
 public:
 	int32                                         MaxCharPerLine;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2274[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21D6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBObjectiveManager_BP_GetFormattedCurrentObjectiveString) == 0x000008, "Wrong alignment on RBObjectiveManager_BP_GetFormattedCurrentObjectiveString");
@@ -33869,7 +33869,7 @@ struct RBObjectiveRandomizable_ShouldDiscardOtherObjectiveActorForRandomization 
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2279[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21DB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBObjectiveRandomizable_ShouldDiscardOtherObjectiveActorForRandomization) == 0x000008, "Wrong alignment on RBObjectiveRandomizable_ShouldDiscardOtherObjectiveActorForRandomization");
 static_assert(sizeof(RBObjectiveRandomizable_ShouldDiscardOtherObjectiveActorForRandomization) == 0x000010, "Wrong size on RBObjectiveRandomizable_ShouldDiscardOtherObjectiveActorForRandomization");
@@ -33948,7 +33948,7 @@ struct RBOperatableTriggerObjectiveCoordinator_OnPlayerCompletedOperatable final
 {
 public:
 	bool                                          IsOn;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2280[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21E2[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBOperatable*                          Operatable;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBOperatableTriggerObjectiveCoordinator_OnPlayerCompletedOperatable) == 0x000008, "Wrong alignment on RBOperatableTriggerObjectiveCoordinator_OnPlayerCompletedOperatable");
@@ -34143,7 +34143,7 @@ struct RBPharmaSkill_Event_OnActiveOnPawn final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bActive;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2297[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F9[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPharmaSkill_Event_OnActiveOnPawn) == 0x000008, "Wrong alignment on RBPharmaSkill_Event_OnActiveOnPawn");
 static_assert(sizeof(RBPharmaSkill_Event_OnActiveOnPawn) == 0x000010, "Wrong size on RBPharmaSkill_Event_OnActiveOnPawn");
@@ -34323,7 +34323,7 @@ struct RBPlayer_BP_ActivateCameraShake final
 public:
 	struct FCameraShakeData                       ShakeData;                                         // 0x0000(0x0090)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                SourceLocation;                                    // 0x0090(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F2[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2254[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                ShakeOwner;                                        // 0x00A0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_ActivateCameraShake) == 0x000008, "Wrong alignment on RBPlayer_BP_ActivateCameraShake");
@@ -34340,7 +34340,7 @@ public:
 	float                                         PsychosisAmount;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bGas;                                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bBypassPlayerReductions;                           // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F3[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2255[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_BP_AddProgressivePsychosis) == 0x000004, "Wrong alignment on RBPlayer_BP_AddProgressivePsychosis");
 static_assert(sizeof(RBPlayer_BP_AddProgressivePsychosis) == 0x000008, "Wrong size on RBPlayer_BP_AddProgressivePsychosis");
@@ -34365,12 +34365,12 @@ struct RBPlayer_BP_DamagePlayer final
 {
 public:
 	EDamageType                                   DmgType;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F4[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2256[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 SrcActor;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DmgAmount;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanKill;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanKnockdown;                                     // 0x0015(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F5[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2257[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_BP_DamagePlayer) == 0x000008, "Wrong alignment on RBPlayer_BP_DamagePlayer");
 static_assert(sizeof(RBPlayer_BP_DamagePlayer) == 0x000018, "Wrong size on RBPlayer_BP_DamagePlayer");
@@ -34389,7 +34389,7 @@ public:
 	float                                         OffsetFwd;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OffsetSide;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OffsetHeight;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F6[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2258[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_BP_Debug_AdjustPlayerPosition) == 0x000008, "Wrong alignment on RBPlayer_BP_Debug_AdjustPlayerPosition");
 static_assert(sizeof(RBPlayer_BP_Debug_AdjustPlayerPosition) == 0x000018, "Wrong size on RBPlayer_BP_Debug_AdjustPlayerPosition");
@@ -34405,7 +34405,7 @@ struct RBPlayer_BP_ForceHitReaction final
 public:
 	bool                                          bCancelInteraction;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPlayerHitReactionType                        HitReactionType;                                   // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F7[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2259[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                HitDirection;                                      // 0x0004(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_ForceHitReaction) == 0x000004, "Wrong alignment on RBPlayer_BP_ForceHitReaction");
@@ -34442,11 +34442,11 @@ struct RBPlayer_BP_ForceSpecialAnimation final
 {
 public:
 	bool                                          bCancelInteraction;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F8[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 TargetLocation;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAnimSequence*                          Animation;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCollisionEnabled;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F9[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225B[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         blendInTime;                                       // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_ForceSpecialAnimation) == 0x000008, "Wrong alignment on RBPlayer_BP_ForceSpecialAnimation");
@@ -34485,7 +34485,7 @@ struct RBPlayer_BP_GetPickupInFocus final
 {
 public:
 	bool                                          OutIsSwap;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPickup*                              ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_GetPickupInFocus) == 0x000008, "Wrong alignment on RBPlayer_BP_GetPickupInFocus");
@@ -34500,7 +34500,7 @@ struct RBPlayer_BP_HasInventoryItem final
 public:
 	TSubclassOf<class ARBPickup>                  ItemClass;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_BP_HasInventoryItem) == 0x000008, "Wrong alignment on RBPlayer_BP_HasInventoryItem");
 static_assert(sizeof(RBPlayer_BP_HasInventoryItem) == 0x000010, "Wrong size on RBPlayer_BP_HasInventoryItem");
@@ -34552,7 +34552,7 @@ struct RBPlayer_BP_StartHallucination final
 {
 public:
 	EHallucinationType                            HalluType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FC[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	const class URBHallucinationConfig*           Config;                                            // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_StartHallucination) == 0x000008, "Wrong alignment on RBPlayer_BP_StartHallucination");
@@ -34566,10 +34566,10 @@ struct RBPlayer_BP_StopCameraShake final
 {
 public:
 	bool                                          bInstantly;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FD[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                ShakeOwner;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreOwnerCondition;                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2260[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_BP_StopCameraShake) == 0x000008, "Wrong alignment on RBPlayer_BP_StopCameraShake");
 static_assert(sizeof(RBPlayer_BP_StopCameraShake) == 0x000018, "Wrong size on RBPlayer_BP_StopCameraShake");
@@ -34605,7 +34605,7 @@ struct RBPlayer_BP_TestHitReaction final
 {
 public:
 	EPlayerHitReactionType                        HitReactionType;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2261[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                HitDirection;                                      // 0x0004(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_TestHitReaction) == 0x000004, "Wrong alignment on RBPlayer_BP_TestHitReaction");
@@ -34666,7 +34666,7 @@ struct RBPlayer_Client_ShowCustomInteractionMessage final
 public:
 	class FText                                   Message;                                           // 0x0000(0x0018)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	EMessagePriority                              Priority;                                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2300[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2262[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Duration;                                          // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_Client_ShowCustomInteractionMessage) == 0x000008, "Wrong alignment on RBPlayer_Client_ShowCustomInteractionMessage");
@@ -34799,7 +34799,7 @@ struct RBPlayer_LogPlayerEvent_Server final
 {
 public:
 	EPlayerEvent                                  EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2301[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2263[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ExplicitValue;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_LogPlayerEvent_Server) == 0x000004, "Wrong alignment on RBPlayer_LogPlayerEvent_Server");
@@ -34814,7 +34814,7 @@ struct RBPlayer_Multicast_ActivateCameraShake final
 public:
 	struct FCameraShakeData                       ShakeData;                                         // 0x0000(0x0090)(ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                SourceLocation;                                    // 0x0090(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2302[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2264[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                ShakeOwner;                                        // 0x00A0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_Multicast_ActivateCameraShake) == 0x000008, "Wrong alignment on RBPlayer_Multicast_ActivateCameraShake");
@@ -34830,7 +34830,7 @@ struct RBPlayer_Multicast_AddPingForDroppedItem final
 public:
 	class ARBPickup*                              DroppedItem;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                PingLocation;                                      // 0x0008(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2303[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2265[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_AddPingForDroppedItem) == 0x000008, "Wrong alignment on RBPlayer_Multicast_AddPingForDroppedItem");
 static_assert(sizeof(RBPlayer_Multicast_AddPingForDroppedItem) == 0x000018, "Wrong size on RBPlayer_Multicast_AddPingForDroppedItem");
@@ -34960,11 +34960,11 @@ struct RBPlayer_Multicast_DrawDebugBox final
 public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Extent;                                            // 0x000C(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2304[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2266[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  Rotation;                                          // 0x0020(0x0010)(ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FColor                                 Color;                                             // 0x0030(0x0004)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Duration;                                          // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2305[0x8];                                     // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2267[0x8];                                     // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_DrawDebugBox) == 0x000010, "Wrong alignment on RBPlayer_Multicast_DrawDebugBox");
 static_assert(sizeof(RBPlayer_Multicast_DrawDebugBox) == 0x000040, "Wrong size on RBPlayer_Multicast_DrawDebugBox");
@@ -34982,11 +34982,11 @@ public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         HalfHeight;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Radius;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2306[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2268[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  Rotation;                                          // 0x0020(0x0010)(ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FColor                                 Color;                                             // 0x0030(0x0004)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Duration;                                          // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2307[0x8];                                     // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2269[0x8];                                     // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_DrawDebugCapsule) == 0x000010, "Wrong alignment on RBPlayer_Multicast_DrawDebugCapsule");
 static_assert(sizeof(RBPlayer_Multicast_DrawDebugCapsule) == 0x000040, "Wrong size on RBPlayer_Multicast_DrawDebugCapsule");
@@ -35037,13 +35037,13 @@ struct RBPlayer_Multicast_DrawStimulusDebug final
 {
 public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2308[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226A[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 SourceActor;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EStimulusType                                 StimulusType;                                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2309[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226B[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Range;                                             // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsPerceived;                                      // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230A[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226C[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_DrawStimulusDebug) == 0x000008, "Wrong alignment on RBPlayer_Multicast_DrawStimulusDebug");
 static_assert(sizeof(RBPlayer_Multicast_DrawStimulusDebug) == 0x000028, "Wrong size on RBPlayer_Multicast_DrawStimulusDebug");
@@ -35077,7 +35077,7 @@ struct RBPlayer_Multicast_ExitGroundAndPound final
 public:
 	ESpecialMove                                  PlayerSM;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDamageResultType                             DamageResult;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230B[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226D[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          PlayerExitAnimSeq;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_Multicast_ExitGroundAndPound) == 0x000008, "Wrong alignment on RBPlayer_Multicast_ExitGroundAndPound");
@@ -35092,7 +35092,7 @@ struct RBPlayer_Multicast_GainCurrency final
 {
 public:
 	ECurrencyType                                 CurrencyType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Amount;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_Multicast_GainCurrency) == 0x000004, "Wrong alignment on RBPlayer_Multicast_GainCurrency");
@@ -35106,7 +35106,7 @@ struct RBPlayer_Multicast_GhostPawn final
 {
 public:
 	bool                                          bGhost;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226F[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CamLoc;                                            // 0x0004(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               CamRot;                                            // 0x0010(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -35123,7 +35123,7 @@ struct RBPlayer_Multicast_HitReaction final
 public:
 	struct FPlayerHitReactionParams               HitReaction;                                       // 0x0000(0x0048)(ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bSchedule;                                         // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230E[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2270[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_HitReaction) == 0x000008, "Wrong alignment on RBPlayer_Multicast_HitReaction");
 static_assert(sizeof(RBPlayer_Multicast_HitReaction) == 0x000050, "Wrong size on RBPlayer_Multicast_HitReaction");
@@ -35187,7 +35187,7 @@ public:
 	struct FVector                                Location;                                          // 0x0008(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Forward;                                           // 0x0014(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ELargeObjectPickupSubtype                     Subtype;                                           // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230F[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2271[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_PickupLargeObject) == 0x000008, "Wrong alignment on RBPlayer_Multicast_PickupLargeObject");
 static_assert(sizeof(RBPlayer_Multicast_PickupLargeObject) == 0x000028, "Wrong size on RBPlayer_Multicast_PickupLargeObject");
@@ -35258,10 +35258,10 @@ struct RBPlayer_Multicast_PutDownLargeObject final
 public:
 	class ARBLargePickup*                         LargePickup;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x0008(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2310[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2272[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  Rotation;                                          // 0x0020(0x0010)(ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bPredicted;                                        // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2311[0xF];                                     // 0x0031(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2273[0xF];                                     // 0x0031(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_PutDownLargeObject) == 0x000010, "Wrong alignment on RBPlayer_Multicast_PutDownLargeObject");
 static_assert(sizeof(RBPlayer_Multicast_PutDownLargeObject) == 0x000040, "Wrong size on RBPlayer_Multicast_PutDownLargeObject");
@@ -35322,12 +35322,12 @@ struct RBPlayer_Multicast_SetCoopMoveOfferingState final
 {
 public:
 	ECoopMoveOfferState                           CoopMoveOfferingState;                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2312[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2274[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBLedgeMarker*                         LedgeMarker;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ARBPlayer*                              SpecificPlayer;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECoopMoveType                                 CoopMoveOfferingType;                              // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBasicDirection                               BasicDirection;                                    // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2313[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2275[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_SetCoopMoveOfferingState) == 0x000008, "Wrong alignment on RBPlayer_Multicast_SetCoopMoveOfferingState");
 static_assert(sizeof(RBPlayer_Multicast_SetCoopMoveOfferingState) == 0x000020, "Wrong size on RBPlayer_Multicast_SetCoopMoveOfferingState");
@@ -35405,7 +35405,7 @@ struct RBPlayer_Multicast_SpecialAnimation final
 public:
 	struct FScheduledSpecialAnimData              SpecialAnimData;                                   // 0x0000(0x0048)(ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	EScriptedAnimationType                        ScriptedAnimType;                                  // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2314[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2276[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_SpecialAnimation) == 0x000008, "Wrong alignment on RBPlayer_Multicast_SpecialAnimation");
 static_assert(sizeof(RBPlayer_Multicast_SpecialAnimation) == 0x000050, "Wrong size on RBPlayer_Multicast_SpecialAnimation");
@@ -35462,10 +35462,10 @@ struct RBPlayer_Multicast_StopCameraShake final
 {
 public:
 	bool                                          bInstantly;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2315[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2277[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                ShakeOwner;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreOwnerCondition;                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2316[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2278[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_StopCameraShake) == 0x000008, "Wrong alignment on RBPlayer_Multicast_StopCameraShake");
 static_assert(sizeof(RBPlayer_Multicast_StopCameraShake) == 0x000018, "Wrong size on RBPlayer_Multicast_StopCameraShake");
@@ -35492,7 +35492,7 @@ struct RBPlayer_Multicast_TalkWheel final
 {
 public:
 	ETalkWheelAction                              Action;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2317[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2279[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CurrentEyeLocation;                                // 0x0004(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                CurrentEyeForward;                                 // 0x0010(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -35514,7 +35514,7 @@ public:
 	bool                                          bIsInstant;                                        // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAdjustLocForFeets;                                // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInterruptAction;                                  // 0x0022(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2318[0x1];                                     // 0x0023(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227A[0x1];                                     // 0x0023(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Multicast_TeleportPlayer) == 0x000004, "Wrong alignment on RBPlayer_Multicast_TeleportPlayer");
 static_assert(sizeof(RBPlayer_Multicast_TeleportPlayer) == 0x000024, "Wrong size on RBPlayer_Multicast_TeleportPlayer");
@@ -35841,7 +35841,7 @@ struct RBPlayer_Server_Cheat_DebugPuzzleRoom final
 public:
 	class URBPuzzleRoomComponent*                 PuzzleRoom;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDebug;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2319[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Server_Cheat_DebugPuzzleRoom) == 0x000008, "Wrong alignment on RBPlayer_Server_Cheat_DebugPuzzleRoom");
 static_assert(sizeof(RBPlayer_Server_Cheat_DebugPuzzleRoom) == 0x000010, "Wrong size on RBPlayer_Server_Cheat_DebugPuzzleRoom");
@@ -35899,7 +35899,7 @@ struct RBPlayer_Server_CheatHurtSelf final
 public:
 	float                                         DamageAmount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHitReaction;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231A[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227C[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         HurtType;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_Server_CheatHurtSelf) == 0x000004, "Wrong alignment on RBPlayer_Server_CheatHurtSelf");
@@ -35927,7 +35927,7 @@ struct RBPlayer_Server_DebugHitReaction final
 {
 public:
 	EPlayerHitReactionType                        HitReactionType;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RelativeAngle;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_Server_DebugHitReaction) == 0x000004, "Wrong alignment on RBPlayer_Server_DebugHitReaction");
@@ -35990,7 +35990,7 @@ struct RBPlayer_Server_ScheduleHelperCollisionEnabled final
 public:
 	class URBEvalCorridorHelperComponent*         CorridorHelper;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnable;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231C[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227E[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ExecutionServerTime;                               // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_Server_ScheduleHelperCollisionEnabled) == 0x000008, "Wrong alignment on RBPlayer_Server_ScheduleHelperCollisionEnabled");
@@ -36028,7 +36028,7 @@ struct RBPlayer_Server_SetInteractiblePanelChildValue final
 public:
 	class URBInteractibleComponent*               PanelChild;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231D[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227F[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Server_SetInteractiblePanelChildValue) == 0x000008, "Wrong alignment on RBPlayer_Server_SetInteractiblePanelChildValue");
 static_assert(sizeof(RBPlayer_Server_SetInteractiblePanelChildValue) == 0x000010, "Wrong size on RBPlayer_Server_SetInteractiblePanelChildValue");
@@ -36041,7 +36041,7 @@ struct RBPlayer_Server_SetLobbyGameInputAtLoc final
 {
 public:
 	bool                                          InputDown;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2280[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0004(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_Server_SetLobbyGameInputAtLoc) == 0x000004, "Wrong alignment on RBPlayer_Server_SetLobbyGameInputAtLoc");
@@ -36066,9 +36066,9 @@ struct RBPlayer_Server_SetPlayerInputAtCoord final
 {
 public:
 	bool                                          InputDown;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231F[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2281[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntPoint                              Coord;                                             // 0x0004(0x0008)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2320[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2282[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBChessPieceComponent*                 Piece;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_Server_SetPlayerInputAtCoord) == 0x000008, "Wrong alignment on RBPlayer_Server_SetPlayerInputAtCoord");
@@ -36095,7 +36095,7 @@ struct RBPlayer_Server_SetSwitchPanelPartDesiredStatusValue final
 public:
 	class ARBSwitchPanelPart*                     PanelPart;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2321[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2283[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Server_SetSwitchPanelPartDesiredStatusValue) == 0x000008, "Wrong alignment on RBPlayer_Server_SetSwitchPanelPartDesiredStatusValue");
 static_assert(sizeof(RBPlayer_Server_SetSwitchPanelPartDesiredStatusValue) == 0x000010, "Wrong size on RBPlayer_Server_SetSwitchPanelPartDesiredStatusValue");
@@ -36130,7 +36130,7 @@ struct RBPlayer_Server_TalkWheel final
 {
 public:
 	ETalkWheelAction                              Action;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2322[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2284[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CurrentEyeLocation;                                // 0x0004(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                CurrentEyeForward;                                 // 0x0010(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -36158,7 +36158,7 @@ struct RBPlayer_Server_TrySwitchToItemTutorial final
 public:
 	int32                                         SpecialMoveIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpecialMove                                  SpecialMove;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2323[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2285[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_Server_TrySwitchToItemTutorial) == 0x000004, "Wrong alignment on RBPlayer_Server_TrySwitchToItemTutorial");
 static_assert(sizeof(RBPlayer_Server_TrySwitchToItemTutorial) == 0x000008, "Wrong size on RBPlayer_Server_TrySwitchToItemTutorial");
@@ -36239,7 +36239,7 @@ struct RBPlayer_BP_FindFirstInventoryItemIndex final
 {
 public:
 	EItemCategory                                 Category;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2324[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2286[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_FindFirstInventoryItemIndex) == 0x000004, "Wrong alignment on RBPlayer_BP_FindFirstInventoryItemIndex");
@@ -36254,7 +36254,7 @@ struct RBPlayer_BP_FindFirstInventoryItemIndexFromClass final
 public:
 	TSubclassOf<class ARBPickup>                  ItemClass;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowChildClasses;                                // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2325[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2287[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_FindFirstInventoryItemIndexFromClass) == 0x000008, "Wrong alignment on RBPlayer_BP_FindFirstInventoryItemIndexFromClass");
@@ -36292,7 +36292,7 @@ struct RBPlayer_BP_GetInventoryIndexFromItem final
 public:
 	const class ARBPickup*                        Item;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2326[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2288[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_BP_GetInventoryIndexFromItem) == 0x000008, "Wrong alignment on RBPlayer_BP_GetInventoryIndexFromItem");
 static_assert(sizeof(RBPlayer_BP_GetInventoryIndexFromItem) == 0x000010, "Wrong size on RBPlayer_BP_GetInventoryIndexFromItem");
@@ -36305,7 +36305,7 @@ struct RBPlayer_BP_GetItemFromIndex final
 {
 public:
 	int32                                         ItemIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2327[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2289[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPickup*                              ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_GetItemFromIndex) == 0x000008, "Wrong alignment on RBPlayer_BP_GetItemFromIndex");
@@ -36319,10 +36319,10 @@ struct RBPlayer_BP_GetItemIndexForSwap final
 {
 public:
 	EItemCategory                                 Category;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2328[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	const class ARBPickup*                        Item;                                              // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2329[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228B[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_BP_GetItemIndexForSwap) == 0x000008, "Wrong alignment on RBPlayer_BP_GetItemIndexForSwap");
 static_assert(sizeof(RBPlayer_BP_GetItemIndexForSwap) == 0x000018, "Wrong size on RBPlayer_BP_GetItemIndexForSwap");
@@ -36336,7 +36336,7 @@ struct RBPlayer_BP_GetItemsForCategory final
 {
 public:
 	EItemCategory                                 Category;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARBPickup*>                      ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_GetItemsForCategory) == 0x000008, "Wrong alignment on RBPlayer_BP_GetItemsForCategory");
@@ -36361,7 +36361,7 @@ struct RBPlayer_BP_GetMaxNumberOfItemForCategory final
 {
 public:
 	EItemCategory                                 Category;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_GetMaxNumberOfItemForCategory) == 0x000004, "Wrong alignment on RBPlayer_BP_GetMaxNumberOfItemForCategory");
@@ -36375,7 +36375,7 @@ struct RBPlayer_BP_GetNumberOfItemForCategory final
 {
 public:
 	EItemCategory                                 Category;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayer_BP_GetNumberOfItemForCategory) == 0x000004, "Wrong alignment on RBPlayer_BP_GetNumberOfItemForCategory");
@@ -36779,7 +36779,7 @@ struct RBPlayer_IsFocusOnSwappingItem final
 public:
 	const class ARBPickup*                        Item;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayer_IsFocusOnSwappingItem) == 0x000008, "Wrong alignment on RBPlayer_IsFocusOnSwappingItem");
 static_assert(sizeof(RBPlayer_IsFocusOnSwappingItem) == 0x000010, "Wrong size on RBPlayer_IsFocusOnSwappingItem");
@@ -36871,7 +36871,7 @@ struct RBPlayerCellCustomizationConfig_GetDefaultPlayerCellItemForSlot final
 {
 public:
 	ECustomizationMenuCategory                    Slot;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2331[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2293[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPlayerCellItemDefinition*            ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCellCustomizationConfig_GetDefaultPlayerCellItemForSlot) == 0x000008, "Wrong alignment on RBPlayerCellCustomizationConfig_GetDefaultPlayerCellItemForSlot");
@@ -36899,7 +36899,7 @@ struct RBPlayerCellItem_Event_AssignItem final
 public:
 	class URBPlayerCellItemDefinition*            ItemDefinition;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsPreview;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2333[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2295[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerCellItem_Event_AssignItem) == 0x000008, "Wrong alignment on RBPlayerCellItem_Event_AssignItem");
 static_assert(sizeof(RBPlayerCellItem_Event_AssignItem) == 0x000010, "Wrong size on RBPlayerCellItem_Event_AssignItem");
@@ -36945,7 +36945,7 @@ struct RBTaskTrackingEntry_OnPlayerEvent final
 {
 public:
 	EPlayerEvent                                  EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2336[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2298[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Value;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBTaskTrackingEntry_OnPlayerEvent) == 0x000004, "Wrong alignment on RBTaskTrackingEntry_OnPlayerEvent");
@@ -37023,11 +37023,11 @@ public:
 	struct FVector                                HitLocation;                                       // 0x0000(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                HitNormal;                                         // 0x000C(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReflectedDir;                                      // 0x0018(0x000C)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2342[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A4[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      ImpactMaterial;                                    // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 HitActor;                                          // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ForceBreak;                                        // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2343[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A5[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBThrowableWeapon_Multicast_ThrownHit) == 0x000008, "Wrong alignment on RBThrowableWeapon_Multicast_ThrownHit");
 static_assert(sizeof(RBThrowableWeapon_Multicast_ThrownHit) == 0x000040, "Wrong size on RBThrowableWeapon_Multicast_ThrownHit");
@@ -37077,7 +37077,7 @@ struct RBPlayerCustomizationOption_BP_GetAllResourcesToLoad final
 {
 public:
 	bool                                          IsFemale;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AC[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSoftObjectPath>                ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationOption_BP_GetAllResourcesToLoad) == 0x000008, "Wrong alignment on RBPlayerCustomizationOption_BP_GetAllResourcesToLoad");
@@ -37091,7 +37091,7 @@ struct RBPlayerCustomizationOption_BP_GetMaterialOverrideInstancesMap final
 {
 public:
 	bool                                          bIsFemale;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234B[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AD[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, class UMaterialInstanceConstant*> ReturnValue;                                       // 0x0008(0x0050)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationOption_BP_GetMaterialOverrideInstancesMap) == 0x000008, "Wrong alignment on RBPlayerCustomizationOption_BP_GetMaterialOverrideInstancesMap");
@@ -37105,7 +37105,7 @@ struct RBPlayerCustomizationOption_GetExtraSkeletalMeshes final
 {
 public:
 	bool                                          bIsFemale;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AE[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSoftObjectPtr<class USkeletalMesh>>   ReturnValue;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, UObjectWrapper, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationOption_GetExtraSkeletalMeshes) == 0x000008, "Wrong alignment on RBPlayerCustomizationOption_GetExtraSkeletalMeshes");
@@ -37119,7 +37119,7 @@ struct RBPlayerCustomizationOption_GetMaterialOverrides final
 {
 public:
 	bool                                          bIsFemale;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRBPlayerCustomizationMaterialOverride> ReturnValue;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationOption_GetMaterialOverrides) == 0x000008, "Wrong alignment on RBPlayerCustomizationOption_GetMaterialOverrides");
@@ -37133,7 +37133,7 @@ struct RBPlayerCustomizationOption_GetSkeletalMesh final
 {
 public:
 	bool                                          bIsFemale;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B0[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class USkeletalMesh>           ReturnValue;                                       // 0x0008(0x0028)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationOption_GetSkeletalMesh) == 0x000008, "Wrong alignment on RBPlayerCustomizationOption_GetSkeletalMesh");
@@ -37147,7 +37147,7 @@ struct RBPlayerCustomizationOption_GetStaticMesh final
 {
 public:
 	bool                                          bIsFemale;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B1[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UStaticMesh>             ReturnValue;                                       // 0x0008(0x0028)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationOption_GetStaticMesh) == 0x000008, "Wrong alignment on RBPlayerCustomizationOption_GetStaticMesh");
@@ -37237,7 +37237,7 @@ struct RBCustomizationOutfit_BP_GetAllResourcesToLoad final
 {
 public:
 	bool                                          IsFemale;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2353[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B5[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSoftObjectPath>                ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBCustomizationOutfit_BP_GetAllResourcesToLoad) == 0x000008, "Wrong alignment on RBCustomizationOutfit_BP_GetAllResourcesToLoad");
@@ -37275,7 +37275,7 @@ struct RBCustomizationOutfit_GetOutfitCustomizationOption final
 {
 public:
 	EPlayerCustomizationSlot                      Slot;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2354[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B6[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPlayerCustomizationOption*           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBCustomizationOutfit_GetOutfitCustomizationOption) == 0x000008, "Wrong alignment on RBCustomizationOutfit_GetOutfitCustomizationOption");
@@ -37304,7 +37304,7 @@ public:
 	EPlayerCustomizationSlot                      Slot;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPlayerCustomizationSexQueryType              SexQueryType;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIncludeLegendaries;                               // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2355[0x5];                                     // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B7[0x5];                                     // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class URBPlayerCustomizationOption*>   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationConfig_GetAllCustomizationOptions) == 0x000008, "Wrong alignment on RBPlayerCustomizationConfig_GetAllCustomizationOptions");
@@ -37347,7 +37347,7 @@ struct RBPlayerCustomizationConfig_GetDefaultCustomizationOption final
 public:
 	EPlayerCustomizationSlot                      Slot;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFemale;                                         // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2356[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B8[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPlayerCustomizationOption*           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationConfig_GetDefaultCustomizationOption) == 0x000008, "Wrong alignment on RBPlayerCustomizationConfig_GetDefaultCustomizationOption");
@@ -37362,7 +37362,7 @@ struct RBPlayerCustomizationConfig_GetDefaultPlayerCustomizationInfo final
 {
 public:
 	bool                                          bIsFemale;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2357[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B9[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBPlayerCustomizationInfo             ReturnValue;                                       // 0x0008(0x0038)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationConfig_GetDefaultPlayerCustomizationInfo) == 0x000008, "Wrong alignment on RBPlayerCustomizationConfig_GetDefaultPlayerCustomizationInfo");
@@ -37416,7 +37416,7 @@ struct RBPlayerCustomizationConfig_GetRandomAcquiredCustomizationInfo final
 public:
 	class ARBPlayerState*                         RBPlayerState;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAlwaysAcquiredOnly;                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2358[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22BA[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBPlayerCustomizationInfo             ReturnValue;                                       // 0x0010(0x0038)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationConfig_GetRandomAcquiredCustomizationInfo) == 0x000008, "Wrong alignment on RBPlayerCustomizationConfig_GetRandomAcquiredCustomizationInfo");
@@ -37434,7 +37434,7 @@ public:
 	EPlayerCustomizationSlot                      Slot;                                              // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFemale;                                         // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAlwaysAcquiredOnly;                               // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2359[0x5];                                     // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22BB[0x5];                                     // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPlayerCustomizationOption*           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationConfig_GetRandomAcquiredCustomizationOption) == 0x000008, "Wrong alignment on RBPlayerCustomizationConfig_GetRandomAcquiredCustomizationOption");
@@ -37467,7 +37467,7 @@ public:
 	EPlayerCustomizationRarity                    MaxRarity;                                         // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRandomSex;                                        // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFemale;                                         // 0x0006(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_235A[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22BC[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBPlayerCustomizationInfo             ReturnValue;                                       // 0x0008(0x0038)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationConfig_GetRandomCustomizationInfo) == 0x000008, "Wrong alignment on RBPlayerCustomizationConfig_GetRandomCustomizationInfo");
@@ -37486,7 +37486,7 @@ public:
 	int32                                         RandomSeed;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRandomSex;                                        // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFemale;                                         // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_235B[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22BD[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBPlayerCustomizationInfo             ReturnValue;                                       // 0x0008(0x0038)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationConfig_GetRandomDeadBodyCustomizationInfo) == 0x000008, "Wrong alignment on RBPlayerCustomizationConfig_GetRandomDeadBodyCustomizationInfo");
@@ -37516,7 +37516,7 @@ struct RBPlayerCustomizationOwner_OnExtraCustomizationMeshesAddedForSlot final
 public:
 	TArray<class USkeletalMeshComponent*>         AddedExtraMeshes;                                  // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	EPlayerCustomizationSlot                      Slot;                                              // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_235C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22BE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerCustomizationOwner_OnExtraCustomizationMeshesAddedForSlot) == 0x000008, "Wrong alignment on RBPlayerCustomizationOwner_OnExtraCustomizationMeshesAddedForSlot");
 static_assert(sizeof(RBPlayerCustomizationOwner_OnExtraCustomizationMeshesAddedForSlot) == 0x000018, "Wrong size on RBPlayerCustomizationOwner_OnExtraCustomizationMeshesAddedForSlot");
@@ -37551,7 +37551,7 @@ struct RBPlayerCustomizationOwner_GetSkeletalMeshComponentForSlot final
 {
 public:
 	EPlayerCustomizationSlot                      Slot;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_235D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22BF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerCustomizationOwner_GetSkeletalMeshComponentForSlot) == 0x000008, "Wrong alignment on RBPlayerCustomizationOwner_GetSkeletalMeshComponentForSlot");
@@ -37634,7 +37634,7 @@ struct RBPlayerGameSessionManager_OnPartyMemberPlayerSlotsReservationProcessed f
 public:
 	TArray<struct FProfileId>                     Members;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bAccepted;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2365[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C7[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerGameSessionManager_OnPartyMemberPlayerSlotsReservationProcessed) == 0x000008, "Wrong alignment on RBPlayerGameSessionManager_OnPartyMemberPlayerSlotsReservationProcessed");
 static_assert(sizeof(RBPlayerGameSessionManager_OnPartyMemberPlayerSlotsReservationProcessed) == 0x000018, "Wrong size on RBPlayerGameSessionManager_OnPartyMemberPlayerSlotsReservationProcessed");
@@ -37669,7 +37669,7 @@ struct RBPlayerLoadoutConfig_GetActiveSkillCommonParams final
 {
 public:
 	EActiveSkillType                              Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2368[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FActiveSkillCommonParams               ReturnValue;                                       // 0x0008(0x0078)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerLoadoutConfig_GetActiveSkillCommonParams) == 0x000008, "Wrong alignment on RBPlayerLoadoutConfig_GetActiveSkillCommonParams");
@@ -37722,7 +37722,7 @@ public:
 	class ARBPlayerState*                         RBPlayerState;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRBPlayerLoadout                       Loadout;                                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236B[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CD[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerLoadoutManager_IsValidLoadout) == 0x000008, "Wrong alignment on RBPlayerLoadoutManager_IsValidLoadout");
 static_assert(sizeof(RBPlayerLoadoutManager_IsValidLoadout) == 0x000028, "Wrong size on RBPlayerLoadoutManager_IsValidLoadout");
@@ -37737,7 +37737,7 @@ struct RBPlayerLoadoutUIBlueprintLibrary_CanEquipPerkInMenuLoadout final
 public:
 	class FName                                   ItemIdToEquip;                                     // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236C[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CE[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerLoadoutUIBlueprintLibrary_CanEquipPerkInMenuLoadout) == 0x000004, "Wrong alignment on RBPlayerLoadoutUIBlueprintLibrary_CanEquipPerkInMenuLoadout");
 static_assert(sizeof(RBPlayerLoadoutUIBlueprintLibrary_CanEquipPerkInMenuLoadout) == 0x00000C, "Wrong size on RBPlayerLoadoutUIBlueprintLibrary_CanEquipPerkInMenuLoadout");
@@ -37750,7 +37750,7 @@ struct RBPlayerLoadoutUIBlueprintLibrary_GetActiveSkillUpgradeItemInfo final
 {
 public:
 	EActiveSkillType                              ActiveSkillType;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMenuUpgradeItemInfo                   ReturnValue;                                       // 0x0008(0x0128)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerLoadoutUIBlueprintLibrary_GetActiveSkillUpgradeItemInfo) == 0x000008, "Wrong alignment on RBPlayerLoadoutUIBlueprintLibrary_GetActiveSkillUpgradeItemInfo");
@@ -37828,7 +37828,7 @@ struct RBPlayerLoadoutUIBlueprintLibrary_TogglePerkInMenuLoadout final
 public:
 	class FName                                   ItemIdToEquip;                                     // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236E[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D0[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerLoadoutUIBlueprintLibrary_TogglePerkInMenuLoadout) == 0x000004, "Wrong alignment on RBPlayerLoadoutUIBlueprintLibrary_TogglePerkInMenuLoadout");
 static_assert(sizeof(RBPlayerLoadoutUIBlueprintLibrary_TogglePerkInMenuLoadout) == 0x00000C, "Wrong size on RBPlayerLoadoutUIBlueprintLibrary_TogglePerkInMenuLoadout");
@@ -37873,7 +37873,7 @@ public:
 	const class ARBPlayerState*                   RBPlayerState;                                     // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRBRewardData                          RewardData;                                        // 0x0008(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bSortByImportance;                                 // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2371[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D3[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRewardUIData>                  ReturnValue;                                       // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerProgressionData_GetRewardUIDataFromRewards) == 0x000008, "Wrong alignment on RBPlayerProgressionData_GetRewardUIDataFromRewards");
@@ -37894,7 +37894,7 @@ public:
 	EPerkCategory                                 PerkCategory;                                      // 0x0003(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Rank;                                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFilterAvailable;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2372[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D4[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRBItemProgressionData>         ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerProgressionData_FilterItemProgressionData) == 0x000008, "Wrong alignment on RBPlayerProgressionData_FilterItemProgressionData");
@@ -37918,7 +37918,7 @@ public:
 	EPerkCategory                                 PerkCategory;                                      // 0x0003(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Rank;                                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFilterAvailable;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2373[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D5[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerProgressionData_FilterItemProgressionDataIds) == 0x000008, "Wrong alignment on RBPlayerProgressionData_FilterItemProgressionDataIds");
@@ -37937,7 +37937,7 @@ struct RBPlayerProgressionData_GetActiveSkillSettings final
 {
 public:
 	EActiveSkillType                              ActiveSkillType;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2374[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D6[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBActiveSkillSettings                 ReturnValue;                                       // 0x0004(0x002C)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerProgressionData_GetActiveSkillSettings) == 0x000004, "Wrong alignment on RBPlayerProgressionData_GetActiveSkillSettings");
@@ -37987,7 +37987,7 @@ struct RBPlayerProgressionData_GetItemProgressionData final
 public:
 	class FName                                   ItemId;                                            // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bValidateFeatureSwitch;                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2375[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D7[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBItemProgressionData                 ReturnValue;                                       // 0x0010(0x00E8)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerProgressionData_GetItemProgressionData) == 0x000008, "Wrong alignment on RBPlayerProgressionData_GetItemProgressionData");
@@ -38025,7 +38025,7 @@ struct RBPlayerProgressionData_GetPerkSlotRequiredLevel final
 public:
 	int32                                         PerkSlotIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPerkCategory                                 PerkCategory;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2376[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D8[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerProgressionData_GetPerkSlotRequiredLevel) == 0x000004, "Wrong alignment on RBPlayerProgressionData_GetPerkSlotRequiredLevel");
@@ -38109,7 +38109,7 @@ struct RBPlayerProgressionData_GetRewardsForPlayerLevel final
 {
 public:
 	int32                                         Level;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2377[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBRewardData                          ReturnValue;                                       // 0x0008(0x0088)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerProgressionData_GetRewardsForPlayerLevel) == 0x000008, "Wrong alignment on RBPlayerProgressionData_GetRewardsForPlayerLevel");
@@ -38139,7 +38139,7 @@ struct RBPlayerProgressionManager_CanReleaseCharacter final
 public:
 	const class ARBController*                    RBController;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_237A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22DC[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerProgressionManager_CanReleaseCharacter) == 0x000008, "Wrong alignment on RBPlayerProgressionManager_CanReleaseCharacter");
 static_assert(sizeof(RBPlayerProgressionManager_CanReleaseCharacter) == 0x000010, "Wrong size on RBPlayerProgressionManager_CanReleaseCharacter");
@@ -38281,7 +38281,7 @@ struct RBPlayerStatsTabWidget_GetGlobalStatValue final
 {
 public:
 	EPlayerStat                                   PlayerStat;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2385[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E7[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerStatsTabWidget_GetGlobalStatValue) == 0x000004, "Wrong alignment on RBPlayerStatsTabWidget_GetGlobalStatValue");
@@ -38358,7 +38358,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_238E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F0[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPlayerTriggerComponent_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBPlayerTriggerComponent_OnComponentBeginOverlap");
@@ -38379,7 +38379,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_238F[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F1[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBPlayerTriggerComponent_OnComponentEndOverlap) == 0x000008, "Wrong alignment on RBPlayerTriggerComponent_OnComponentEndOverlap");
 static_assert(sizeof(RBPlayerTriggerComponent_OnComponentEndOverlap) == 0x000020, "Wrong size on RBPlayerTriggerComponent_OnComponentEndOverlap");
@@ -38978,7 +38978,7 @@ struct RBPsychosisMine_Multicast_OnDeploy final
 {
 public:
 	class ARBPawn*                                Deployer;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B3[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2315[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0030)(ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPsychosisMine_Multicast_OnDeploy) == 0x000010, "Wrong alignment on RBPsychosisMine_Multicast_OnDeploy");
@@ -39006,7 +39006,7 @@ public:
 	int32                                         TargetIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timestamp;                                         // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETimingInputResultType                        Result;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BB[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBZoneTimingPanelComponent_Event_OnInputEvent) == 0x000008, "Wrong alignment on RBZoneTimingPanelComponent_Event_OnInputEvent");
 static_assert(sizeof(RBZoneTimingPanelComponent_Event_OnInputEvent) == 0x000018, "Wrong size on RBZoneTimingPanelComponent_Event_OnInputEvent");
@@ -39024,7 +39024,7 @@ public:
 	float                                         NeedleRatio;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PawnTimestamp;                                     // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETimingInputResultType                        Result;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BC[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBZoneTimingPanelComponent_Multicast_OnPanelInput) == 0x000008, "Wrong alignment on RBZoneTimingPanelComponent_Multicast_OnPanelInput");
 static_assert(sizeof(RBZoneTimingPanelComponent_Multicast_OnPanelInput) == 0x000018, "Wrong size on RBZoneTimingPanelComponent_Multicast_OnPanelInput");
@@ -39145,7 +39145,7 @@ public:
 	class FText                                   Out_CustomInteractionText;                         // 0x0008(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          Out_bInteractionFail;                              // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BD[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231F[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBZoneTimingPanelComponent_GetZoneTimingCustomInteractionText) == 0x000008, "Wrong alignment on RBZoneTimingPanelComponent_GetZoneTimingCustomInteractionText");
 static_assert(sizeof(RBZoneTimingPanelComponent_GetZoneTimingCustomInteractionText) == 0x000028, "Wrong size on RBZoneTimingPanelComponent_GetZoneTimingCustomInteractionText");
@@ -39267,7 +39267,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C9[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_232B[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPushCartObjectiveCoordinator_OnTargetTriggerBeginOverlap) == 0x000008, "Wrong alignment on RBPushCartObjectiveCoordinator_OnTargetTriggerBeginOverlap");
@@ -39285,7 +39285,7 @@ struct RBPushCartRailBlocker_OnLinkedTriggered final
 {
 public:
 	bool                                          bIsOn;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23CB[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_232D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBTriggerable*                         Triggerable;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBPushCartRailBlocker_OnLinkedTriggered) == 0x000008, "Wrong alignment on RBPushCartRailBlocker_OnLinkedTriggered");
@@ -39591,7 +39591,7 @@ struct RBTrialBoardMenuTabWidget_OnEntryActionRequested final
 public:
 	class URBSocialMenuEntry*                     Entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERBSocialMenuEntryAction                      Action;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2348[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_OnEntryActionRequested) == 0x000008, "Wrong alignment on RBTrialBoardMenuTabWidget_OnEntryActionRequested");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_OnEntryActionRequested) == 0x000010, "Wrong size on RBTrialBoardMenuTabWidget_OnEntryActionRequested");
@@ -39664,7 +39664,7 @@ struct RBTrialBoardMenuTabWidget_OnPartyOwnerMatchSettingsUpdated final
 public:
 	class ARBLobbyPlayerState*                    RBLobbyPlayerState;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMatchSettings                         MatchSettings;                                     // 0x0008(0x0024)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E7[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2349[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_OnPartyOwnerMatchSettingsUpdated) == 0x000008, "Wrong alignment on RBTrialBoardMenuTabWidget_OnPartyOwnerMatchSettingsUpdated");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_OnPartyOwnerMatchSettingsUpdated) == 0x000030, "Wrong size on RBTrialBoardMenuTabWidget_OnPartyOwnerMatchSettingsUpdated");
@@ -39791,7 +39791,7 @@ public:
 	class FName                                   FirstTrialId;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   SecondTrialId;                                     // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E8[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234A[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_AreTrialsFromSameProgram) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_AreTrialsFromSameProgram");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_AreTrialsFromSameProgram) == 0x000014, "Wrong size on RBTrialBoardMenuTabWidget_AreTrialsFromSameProgram");
@@ -39850,7 +39850,7 @@ struct RBTrialBoardMenuTabWidget_CanSelectTrial final
 public:
 	class FName                                   TrialId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E9[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234B[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_CanSelectTrial) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_CanSelectTrial");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_CanSelectTrial) == 0x00000C, "Wrong size on RBTrialBoardMenuTabWidget_CanSelectTrial");
@@ -39967,7 +39967,7 @@ struct RBTrialBoardMenuTabWidget_HasAttemptedTrial final
 public:
 	class FName                                   TrialId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EA[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234C[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_HasAttemptedTrial) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_HasAttemptedTrial");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_HasAttemptedTrial) == 0x00000C, "Wrong size on RBTrialBoardMenuTabWidget_HasAttemptedTrial");
@@ -39981,7 +39981,7 @@ struct RBTrialBoardMenuTabWidget_HasCompletedProgram final
 public:
 	class FName                                   ProgramId;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EB[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234D[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_HasCompletedProgram) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_HasCompletedProgram");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_HasCompletedProgram) == 0x00000C, "Wrong size on RBTrialBoardMenuTabWidget_HasCompletedProgram");
@@ -40028,7 +40028,7 @@ struct RBTrialBoardMenuTabWidget_IsProgramUnlocked final
 public:
 	class FName                                   ProgramId;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EC[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234E[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_IsProgramUnlocked) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_IsProgramUnlocked");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_IsProgramUnlocked) == 0x00000C, "Wrong size on RBTrialBoardMenuTabWidget_IsProgramUnlocked");
@@ -40042,7 +40042,7 @@ struct RBTrialBoardMenuTabWidget_IsProgramVisible final
 public:
 	class FName                                   ProgramId;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23ED[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_IsProgramVisible) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_IsProgramVisible");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_IsProgramVisible) == 0x00000C, "Wrong size on RBTrialBoardMenuTabWidget_IsProgramVisible");
@@ -40068,7 +40068,7 @@ public:
 	class FName                                   TrialId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPerfect;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EE[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2350[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_IsTrialCompleted) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_IsTrialCompleted");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_IsTrialCompleted) == 0x00000C, "Wrong size on RBTrialBoardMenuTabWidget_IsTrialCompleted");
@@ -40083,7 +40083,7 @@ struct RBTrialBoardMenuTabWidget_IsTrialEnabled final
 public:
 	class FName                                   TrialId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EF[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2351[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_IsTrialEnabled) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_IsTrialEnabled");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_IsTrialEnabled) == 0x00000C, "Wrong size on RBTrialBoardMenuTabWidget_IsTrialEnabled");
@@ -40097,7 +40097,7 @@ struct RBTrialBoardMenuTabWidget_IsTrialUnlocked final
 public:
 	class FName                                   TrialId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F0[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2352[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_IsTrialUnlocked) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_IsTrialUnlocked");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_IsTrialUnlocked) == 0x00000C, "Wrong size on RBTrialBoardMenuTabWidget_IsTrialUnlocked");
@@ -40123,7 +40123,7 @@ public:
 	class FName                                   TrialId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   OutProgramId;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F1[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2353[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTrialBoardMenuTabWidget_WouldTrialCompletionUnlockProgram) == 0x000004, "Wrong alignment on RBTrialBoardMenuTabWidget_WouldTrialCompletionUnlockProgram");
 static_assert(sizeof(RBTrialBoardMenuTabWidget_WouldTrialCompletionUnlockProgram) == 0x000014, "Wrong size on RBTrialBoardMenuTabWidget_WouldTrialCompletionUnlockProgram");
@@ -40194,7 +40194,7 @@ public:
 	class FString                                 StateA;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 StateB;                                            // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23FD[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_235F[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBRandomizable_GetStateName) == 0x000008, "Wrong alignment on RBRandomizable_GetStateName");
 static_assert(sizeof(RBRandomizable_GetStateName) == 0x000028, "Wrong size on RBRandomizable_GetStateName");
@@ -40208,7 +40208,7 @@ struct RBRandomizable_PrepareState final
 {
 public:
 	bool                                          bStateA;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23FE[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2360[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 RandomOwner;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBRandomizable_PrepareState) == 0x000008, "Wrong alignment on RBRandomizable_PrepareState");
@@ -40345,7 +40345,7 @@ public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsProgressionInProgress;                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsCompletedByLocalPlayer;                          // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2406[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2368[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CoordinatorTutorialInfo_OnCompletionInProgressChanged) == 0x000008, "Wrong alignment on CoordinatorTutorialInfo_OnCompletionInProgressChanged");
 static_assert(sizeof(CoordinatorTutorialInfo_OnCompletionInProgressChanged) == 0x000010, "Wrong size on CoordinatorTutorialInfo_OnCompletionInProgressChanged");
@@ -40371,7 +40371,7 @@ struct RBStreaming_Multicast_ForceUnloadLevels final
 public:
 	TArray<class FName>                           LevelsToUnload;                                    // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bResetWorld;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_240D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_236F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStreaming_Multicast_ForceUnloadLevels) == 0x000008, "Wrong alignment on RBStreaming_Multicast_ForceUnloadLevels");
 static_assert(sizeof(RBStreaming_Multicast_ForceUnloadLevels) == 0x000018, "Wrong size on RBStreaming_Multicast_ForceUnloadLevels");
@@ -40524,7 +40524,7 @@ struct RBRemoteDebuggingComponent_Client_SetAIConfigInfo final
 {
 public:
 	struct FAIConfigData                          AddedOverrides;                                    // 0x0000(0x137C)(ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2416[0x4];                                     // 0x137C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2378[0x4];                                     // 0x137C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class URBPartialAIConfig*>             AdditionalConfigs;                                 // 0x1380(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBRemoteDebuggingComponent_Client_SetAIConfigInfo) == 0x000008, "Wrong alignment on RBRemoteDebuggingComponent_Client_SetAIConfigInfo");
@@ -40661,7 +40661,7 @@ struct RBReportPlayerMenu_Send final
 {
 public:
 	EPlayerReportReason                           Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_241C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReasonText;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBReportPlayerMenu_Send) == 0x000008, "Wrong alignment on RBReportPlayerMenu_Send");
@@ -40697,7 +40697,7 @@ struct RBReportPlayerMenu_GetPlayerReportReasonText final
 {
 public:
 	EPlayerReportReason                           Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_241D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBReportPlayerMenu_GetPlayerReportReasonText) == 0x000008, "Wrong alignment on RBReportPlayerMenu_GetPlayerReportReasonText");
@@ -40722,10 +40722,10 @@ struct RBRepulsionComponent_AddRepulsionRule final
 {
 public:
 	ERepulsionRuleType                            RuleType;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2423[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2385[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RepulsionDirection;                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseVelocityOverLocation;                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2424[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2386[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRepulsionRule                         ReturnValue;                                       // 0x0010(0x0030)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBRepulsionComponent_AddRepulsionRule) == 0x000008, "Wrong alignment on RBRepulsionComponent_AddRepulsionRule");
@@ -40741,7 +40741,7 @@ struct RBRepulsionComponent_BP_SetEnabled final
 {
 public:
 	bool                                          bNewValue;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2425[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2387[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Delay;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Duration;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -40758,7 +40758,7 @@ struct RBSwitchPanelPart_BP_OnAddInputHorizontal final
 public:
 	float                                         Val;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsGamepad;                                        // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_242E[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2390[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DeltaValue;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSwitchPanelPart_BP_OnAddInputHorizontal) == 0x000004, "Wrong alignment on RBSwitchPanelPart_BP_OnAddInputHorizontal");
@@ -40774,7 +40774,7 @@ struct RBSwitchPanelPart_BP_OnAddInputVertical final
 public:
 	float                                         Val;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsGamepad;                                        // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_242F[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2391[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DeltaValue;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSwitchPanelPart_BP_OnAddInputVertical) == 0x000004, "Wrong alignment on RBSwitchPanelPart_BP_OnAddInputVertical");
@@ -41116,7 +41116,7 @@ public:
 	struct FRBStageID                             StageID;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRBMissionID                           MissionID;                                         // 0x0028(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          IsRestarting;                                      // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2443[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A5[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSAS_OnStageEnded) == 0x000008, "Wrong alignment on RBSAS_OnStageEnded");
 static_assert(sizeof(RBSAS_OnStageEnded) == 0x000058, "Wrong size on RBSAS_OnStageEnded");
@@ -41176,7 +41176,7 @@ struct RBSAS_BP_GetTrialNameFromChainIndex final
 {
 public:
 	int32                                         ChainIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2444[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSAS_BP_GetTrialNameFromChainIndex) == 0x000008, "Wrong alignment on RBSAS_BP_GetTrialNameFromChainIndex");
@@ -41205,7 +41205,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_244C[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AE[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSASTube_OnComponentBoxBeginOverlap) == 0x000008, "Wrong alignment on RBSASTube_OnComponentBoxBeginOverlap");
@@ -41227,7 +41227,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_244D[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AF[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSASTube_OnComponentCapsuleBeginOverlap) == 0x000008, "Wrong alignment on RBSASTube_OnComponentCapsuleBeginOverlap");
@@ -41248,7 +41248,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_244E[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B0[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSASTube_OnComponentCapsuleEndOverlap) == 0x000008, "Wrong alignment on RBSASTube_OnComponentCapsuleEndOverlap");
 static_assert(sizeof(RBSASTube_OnComponentCapsuleEndOverlap) == 0x000020, "Wrong size on RBSASTube_OnComponentCapsuleEndOverlap");
@@ -41275,7 +41275,7 @@ struct RBSaveGameManager_AsyncLoadGameUserPreferencesDone final
 public:
 	class FString                                 SlotName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         UserIndex;                                         // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2451[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B3[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USaveGame*                              SaveGame;                                          // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSaveGameManager_AsyncLoadGameUserPreferencesDone) == 0x000008, "Wrong alignment on RBSaveGameManager_AsyncLoadGameUserPreferencesDone");
@@ -41291,7 +41291,7 @@ struct RBSaveGameManager_AsyncLoadProfileDone final
 public:
 	class FString                                 SlotName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         UserIndex;                                         // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2452[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B4[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USaveGame*                              SaveGame;                                          // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSaveGameManager_AsyncLoadProfileDone) == 0x000008, "Wrong alignment on RBSaveGameManager_AsyncLoadProfileDone");
@@ -41308,7 +41308,7 @@ public:
 	class FString                                 SlotName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         UserIndex;                                         // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSuccess;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2453[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B5[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSaveGameManager_AsyncWriteGameUserPreferencesDone) == 0x000008, "Wrong alignment on RBSaveGameManager_AsyncWriteGameUserPreferencesDone");
 static_assert(sizeof(RBSaveGameManager_AsyncWriteGameUserPreferencesDone) == 0x000018, "Wrong size on RBSaveGameManager_AsyncWriteGameUserPreferencesDone");
@@ -41324,7 +41324,7 @@ public:
 	class FString                                 SlotName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         UserIndex;                                         // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSuccess;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2454[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B6[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSaveGameManager_AsyncWriteProfileDone) == 0x000008, "Wrong alignment on RBSaveGameManager_AsyncWriteProfileDone");
 static_assert(sizeof(RBSaveGameManager_AsyncWriteProfileDone) == 0x000018, "Wrong size on RBSaveGameManager_AsyncWriteProfileDone");
@@ -41440,7 +41440,7 @@ struct RBScoringConfig_FilterScoringEvents final
 public:
 	TArray<struct FRecordedScoringEvent>          ScoringEvents;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         MaxEvents;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2457[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B9[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRecordedScoringEvent>          ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBScoringConfig_FilterScoringEvents) == 0x000008, "Wrong alignment on RBScoringConfig_FilterScoringEvents");
@@ -41470,7 +41470,7 @@ public:
 	struct FRecordedScoringEvent                  ScoringEvent;                                      // 0x0000(0x001C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         TrialSeed;                                         // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ScoringEventIndex;                                 // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2458[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23BA[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0028(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBScoringConfig_GetTextValue) == 0x000008, "Wrong alignment on RBScoringConfig_GetTextValue");
@@ -41531,7 +41531,7 @@ struct RBScriptedAnimStation_BP_WillSkeletalMeshTick final
 public:
 	class USkeletalMeshComponent*                 Mesh;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_245C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23BE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBScriptedAnimStation_BP_WillSkeletalMeshTick) == 0x000008, "Wrong alignment on RBScriptedAnimStation_BP_WillSkeletalMeshTick");
 static_assert(sizeof(RBScriptedAnimStation_BP_WillSkeletalMeshTick) == 0x000010, "Wrong size on RBScriptedAnimStation_BP_WillSkeletalMeshTick");
@@ -41544,7 +41544,7 @@ struct RBSettings_Gameplay_GetIngameItemConfig final
 {
 public:
 	EItemType                                     ItemType;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A3[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2405[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIngameItemConfig                      ReturnValue;                                       // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSettings_Gameplay_GetIngameItemConfig) == 0x000008, "Wrong alignment on RBSettings_Gameplay_GetIngameItemConfig");
@@ -41623,7 +41623,7 @@ struct RBSimpleObjectiveCoordinator_OnPlayerCompletedOperatable final
 {
 public:
 	bool                                          IsOn;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24AF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2411[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBOperatable*                          Operatable;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSimpleObjectiveCoordinator_OnPlayerCompletedOperatable) == 0x000008, "Wrong alignment on RBSimpleObjectiveCoordinator_OnPlayerCompletedOperatable");
@@ -41667,7 +41667,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B0[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2412[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSimpleObjectiveCoordinator_OnTargetTriggerBeginOverlap) == 0x000008, "Wrong alignment on RBSimpleObjectiveCoordinator_OnTargetTriggerBeginOverlap");
@@ -41685,7 +41685,7 @@ struct RBSimpleObjectiveCoordinator_OnTriggered final
 {
 public:
 	bool                                          IsOn;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B1[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2413[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBTriggerable*                         Triggerable;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSimpleObjectiveCoordinator_OnTriggered) == 0x000008, "Wrong alignment on RBSimpleObjectiveCoordinator_OnTriggered");
@@ -41773,7 +41773,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24BA[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241C[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSlideDownVolume_OnBrushComponentBeginOverlap) == 0x000008, "Wrong alignment on RBSlideDownVolume_OnBrushComponentBeginOverlap");
@@ -41802,7 +41802,7 @@ struct RBSlidingLock_BP_ApplyAnimatedTransform final
 {
 public:
 	float                                         CurveValue;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2424[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class ARBPawn*                          InteractorPawn;                                    // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSlidingLock_BP_ApplyAnimatedTransform) == 0x000008, "Wrong alignment on RBSlidingLock_BP_ApplyAnimatedTransform");
@@ -41817,7 +41817,7 @@ struct RBSlidingLock_BP_OverrideEditorCompTranform final
 public:
 	class FName                                   CompName;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLocked;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C3[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2425[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FTransform                             ReturnValue;                                       // 0x0040(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -41936,7 +41936,7 @@ struct RBSocialMenuEntry_OnSocialMenuEntryActionCompleted final
 public:
 	class URBSocialMenuEntry*                     Entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERBSocialMenuEntryAction                      Action;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2428[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSocialMenuEntry_OnSocialMenuEntryActionCompleted) == 0x000008, "Wrong alignment on RBSocialMenuEntry_OnSocialMenuEntryActionCompleted");
 static_assert(sizeof(RBSocialMenuEntry_OnSocialMenuEntryActionCompleted) == 0x000010, "Wrong size on RBSocialMenuEntry_OnSocialMenuEntryActionCompleted");
@@ -41950,7 +41950,7 @@ struct RBSocialMenuEntry_OnSocialMenuEntryActionStarted final
 public:
 	class URBSocialMenuEntry*                     Entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERBSocialMenuEntryAction                      Action;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2429[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSocialMenuEntry_OnSocialMenuEntryActionStarted) == 0x000008, "Wrong alignment on RBSocialMenuEntry_OnSocialMenuEntryActionStarted");
 static_assert(sizeof(RBSocialMenuEntry_OnSocialMenuEntryActionStarted) == 0x000010, "Wrong size on RBSocialMenuEntry_OnSocialMenuEntryActionStarted");
@@ -42669,7 +42669,7 @@ struct RBSocialMenuEntryListWidget_OnEntryActionRequested final
 public:
 	class URBSocialMenuEntry*                     Entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERBSocialMenuEntryAction                      Action;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24D7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2439[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSocialMenuEntryListWidget_OnEntryActionRequested) == 0x000008, "Wrong alignment on RBSocialMenuEntryListWidget_OnEntryActionRequested");
 static_assert(sizeof(RBSocialMenuEntryListWidget_OnEntryActionRequested) == 0x000010, "Wrong size on RBSocialMenuEntryListWidget_OnEntryActionRequested");
@@ -42918,7 +42918,7 @@ struct RBSocialMenuPartyWidget_OnEntryActionRequested final
 public:
 	class URBSocialMenuEntry*                     Entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERBSocialMenuEntryAction                      Action;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24DF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2441[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSocialMenuPartyWidget_OnEntryActionRequested) == 0x000008, "Wrong alignment on RBSocialMenuPartyWidget_OnEntryActionRequested");
 static_assert(sizeof(RBSocialMenuPartyWidget_OnEntryActionRequested) == 0x000010, "Wrong size on RBSocialMenuPartyWidget_OnEntryActionRequested");
@@ -42965,7 +42965,7 @@ struct RBSocialMenuPartyWidget_OnSocialMenuEntryActionCompleted final
 public:
 	class URBSocialMenuEntry*                     Entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERBSocialMenuEntryAction                      Action;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2442[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSocialMenuPartyWidget_OnSocialMenuEntryActionCompleted) == 0x000008, "Wrong alignment on RBSocialMenuPartyWidget_OnSocialMenuEntryActionCompleted");
 static_assert(sizeof(RBSocialMenuPartyWidget_OnSocialMenuEntryActionCompleted) == 0x000010, "Wrong size on RBSocialMenuPartyWidget_OnSocialMenuEntryActionCompleted");
@@ -42979,7 +42979,7 @@ struct RBSocialMenuPartyWidget_OnSocialMenuEntryActionStarted final
 public:
 	class URBSocialMenuEntry*                     Entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERBSocialMenuEntryAction                      Action;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2443[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSocialMenuPartyWidget_OnSocialMenuEntryActionStarted) == 0x000008, "Wrong alignment on RBSocialMenuPartyWidget_OnSocialMenuEntryActionStarted");
 static_assert(sizeof(RBSocialMenuPartyWidget_OnSocialMenuEntryActionStarted) == 0x000010, "Wrong size on RBSocialMenuPartyWidget_OnSocialMenuEntryActionStarted");
@@ -43190,7 +43190,7 @@ struct RBSocialMenuSceneActor_GetMenuCharacter final
 {
 public:
 	ESocialMenuSceneActorSlot                     Slot;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E4[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2446[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBMenuCharacter*                       ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSocialMenuSceneActor_GetMenuCharacter) == 0x000008, "Wrong alignment on RBSocialMenuSceneActor_GetMenuCharacter");
@@ -43248,7 +43248,7 @@ struct RBSoundTrap_BP_OnHitByThrowable final
 {
 public:
 	struct FVector                                HitLocation;                                       // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24EF[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2451[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBThrowableWeapon*                     ThrowableWeapon;                                   // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSoundTrap_BP_OnHitByThrowable) == 0x000008, "Wrong alignment on RBSoundTrap_BP_OnHitByThrowable");
@@ -43277,7 +43277,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24F0[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2452[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSoundTrap_OnCapsuleBeginOverlap) == 0x000008, "Wrong alignment on RBSoundTrap_OnCapsuleBeginOverlap");
@@ -43529,7 +43529,7 @@ struct RBSpectraSkillTarget_CanBeActivedInSpectra final
 public:
 	const class ARBSpectraSkill*                  SpectraOwner;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2503[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2465[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSpectraSkillTarget_CanBeActivedInSpectra) == 0x000008, "Wrong alignment on RBSpectraSkillTarget_CanBeActivedInSpectra");
 static_assert(sizeof(RBSpectraSkillTarget_CanBeActivedInSpectra) == 0x000010, "Wrong size on RBSpectraSkillTarget_CanBeActivedInSpectra");
@@ -43590,7 +43590,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2508[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_246A[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBSplineFollowingStation_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on RBSplineFollowingStation_OnComponentBeginOverlap");
@@ -43644,7 +43644,7 @@ struct RBSplineMeshActor_BP_SetNextSpline final
 public:
 	class ARBSplineMeshActor*                     NextSplineMesh;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bToFirstNode;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_250F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2471[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSplineMeshActor_BP_SetNextSpline) == 0x000008, "Wrong alignment on RBSplineMeshActor_BP_SetNextSpline");
 static_assert(sizeof(RBSplineMeshActor_BP_SetNextSpline) == 0x000010, "Wrong size on RBSplineMeshActor_BP_SetNextSpline");
@@ -43658,7 +43658,7 @@ struct RBSplineMeshActor_BP_SetPreviousSpline final
 public:
 	class ARBSplineMeshActor*                     PreviousSplineMesh;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bToLastNode;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2510[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2472[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSplineMeshActor_BP_SetPreviousSpline) == 0x000008, "Wrong alignment on RBSplineMeshActor_BP_SetPreviousSpline");
 static_assert(sizeof(RBSplineMeshActor_BP_SetPreviousSpline) == 0x000010, "Wrong size on RBSplineMeshActor_BP_SetPreviousSpline");
@@ -43673,7 +43673,7 @@ public:
 	float                                         Distance;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Speed;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMoveForward;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2519[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_247B[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBSplinePushable_AutoMove) == 0x000004, "Wrong alignment on RBSplinePushable_AutoMove");
 static_assert(sizeof(RBSplinePushable_AutoMove) == 0x00000C, "Wrong size on RBSplinePushable_AutoMove");
@@ -43714,7 +43714,7 @@ public:
 	float                                         Radius;                                            // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAdjustToCenterOfStepDepth;                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAdjustToCenterOfStepHeight;                       // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_251D[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_247F[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                DropOffset;                                        // 0x0014(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0020(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -43758,7 +43758,7 @@ struct RBStairsMarker_GetStairsKnockdownSlideVelocity final
 public:
 	class ARBPlayer*                              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_251E[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2480[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStairsMarker_GetStairsKnockdownSlideVelocity) == 0x000008, "Wrong alignment on RBStairsMarker_GetStairsKnockdownSlideVelocity");
 static_assert(sizeof(RBStairsMarker_GetStairsKnockdownSlideVelocity) == 0x000018, "Wrong size on RBStairsMarker_GetStairsKnockdownSlideVelocity");
@@ -43774,7 +43774,7 @@ public:
 	float                                         Radius;                                            // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bConsiderPhantomSteps;                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_251F[0x2];                                     // 0x0012(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2481[0x2];                                     // 0x0012(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStairsMarker_IsLocationOnStairs) == 0x000004, "Wrong alignment on RBStairsMarker_IsLocationOnStairs");
 static_assert(sizeof(RBStairsMarker_IsLocationOnStairs) == 0x000014, "Wrong size on RBStairsMarker_IsLocationOnStairs");
@@ -43791,7 +43791,7 @@ public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ZBuffer;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2520[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2482[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStairsMarker_IsLocationValidInZ) == 0x000004, "Wrong alignment on RBStairsMarker_IsLocationValidInZ");
 static_assert(sizeof(RBStairsMarker_IsLocationValidInZ) == 0x000014, "Wrong size on RBStairsMarker_IsLocationValidInZ");
@@ -43944,7 +43944,7 @@ struct RBStalkerObjectiveCoordinator_IsNPCLocallyStalked final
 public:
 	class ARBNPC*                                 NPC;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2526[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2488[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStalkerObjectiveCoordinator_IsNPCLocallyStalked) == 0x000008, "Wrong alignment on RBStalkerObjectiveCoordinator_IsNPCLocallyStalked");
 static_assert(sizeof(RBStalkerObjectiveCoordinator_IsNPCLocallyStalked) == 0x000010, "Wrong size on RBStalkerObjectiveCoordinator_IsNPCLocallyStalked");
@@ -43958,7 +43958,7 @@ struct RBStalkerObjectiveCoordinator_IsNPCStalked final
 public:
 	class ARBNPC*                                 NPC;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2527[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2489[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBStalkerObjectiveCoordinator_IsNPCStalked) == 0x000008, "Wrong alignment on RBStalkerObjectiveCoordinator_IsNPCStalked");
 static_assert(sizeof(RBStalkerObjectiveCoordinator_IsNPCStalked) == 0x000010, "Wrong size on RBStalkerObjectiveCoordinator_IsNPCStalked");
@@ -44070,7 +44070,7 @@ struct RBTaskConditionContext_PlayerEvent_OnPlayerEvent final
 {
 public:
 	EPlayerEvent                                  EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2532[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2494[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Value;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBTaskConditionContext_PlayerEvent_OnPlayerEvent) == 0x000004, "Wrong alignment on RBTaskConditionContext_PlayerEvent_OnPlayerEvent");
@@ -44148,7 +44148,7 @@ struct RBTorturePanelComponent_Multicast_OnPanelSucceeded final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          TortureCompleted;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_253E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24A0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTorturePanelComponent_Multicast_OnPanelSucceeded) == 0x000008, "Wrong alignment on RBTorturePanelComponent_Multicast_OnPanelSucceeded");
 static_assert(sizeof(RBTorturePanelComponent_Multicast_OnPanelSucceeded) == 0x000010, "Wrong size on RBTorturePanelComponent_Multicast_OnPanelSucceeded");
@@ -44206,7 +44206,7 @@ struct RBTutorialZoneComponent_OnObjectiveCoordinatorStateChanged final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EObjectiveCoordinatorState                    State;                                             // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2546[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24A8[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBTutorialZoneComponent_OnObjectiveCoordinatorStateChanged) == 0x000008, "Wrong alignment on RBTutorialZoneComponent_OnObjectiveCoordinatorStateChanged");
 static_assert(sizeof(RBTutorialZoneComponent_OnObjectiveCoordinatorStateChanged) == 0x000010, "Wrong size on RBTutorialZoneComponent_OnObjectiveCoordinatorStateChanged");
@@ -44278,7 +44278,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2555[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24B7[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RBWaterVolume_OnWaterVolumeBeginOverlap) == 0x000008, "Wrong alignment on RBWaterVolume_OnWaterVolumeBeginOverlap");
@@ -44299,7 +44299,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2556[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24B8[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBWaterVolume_OnWaterVolumeEndOverlap) == 0x000008, "Wrong alignment on RBWaterVolume_OnWaterVolumeEndOverlap");
 static_assert(sizeof(RBWaterVolume_OnWaterVolumeEndOverlap) == 0x000020, "Wrong size on RBWaterVolume_OnWaterVolumeEndOverlap");
@@ -44370,7 +44370,7 @@ struct RBZoneDefenceWatcherComponent_OnObjectiveCoordinatorStateChanged final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EObjectiveCoordinatorState                    NewState;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_255D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24BF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RBZoneDefenceWatcherComponent_OnObjectiveCoordinatorStateChanged) == 0x000008, "Wrong alignment on RBZoneDefenceWatcherComponent_OnObjectiveCoordinatorStateChanged");
 static_assert(sizeof(RBZoneDefenceWatcherComponent_OnObjectiveCoordinatorStateChanged) == 0x000010, "Wrong size on RBZoneDefenceWatcherComponent_OnObjectiveCoordinatorStateChanged");

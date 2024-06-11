@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "RBNPC_BP_classes.hpp"
 #include "Engine_structs.hpp"
+#include "RBNPC_BP_classes.hpp"
 
 
 namespace SDK
@@ -28,7 +28,7 @@ public:
 	class USkeletalMeshComponent*                 Head;                                              // 0x58E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 FullBodyMesh;                                      // 0x58F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         TimeToPlayNextIdleBreaker;                         // 0x58F8(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_312C[0x4];                                     // 0x58FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3127[0x4];                                     // 0x58FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             PlayFuttermanIdleBreaker;                          // 0x5900(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bFaceFXUseFuttermanHead;                           // 0x5910(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

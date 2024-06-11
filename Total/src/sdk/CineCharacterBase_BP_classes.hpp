@@ -28,10 +28,10 @@ public:
 	class UAnimSequence*                          Anim;                                              // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Time;                                              // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ActivateScreenshotMode;                            // 0x0254(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E93[0x3];                                      // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31B9[0x3];                                     // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          BodyAnimation;                                     // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PositionInAnimation;                               // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E94[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31BA[0x4];                                     // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          FacialAnimation;                                   // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCine_Body_AnimBP_C*                    In_Animation_Mode;                                 // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

@@ -47,10 +47,10 @@ public:
 	bool                                          bEnableOverlay;                                    // 0x004C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnableSocialOverlay;                              // 0x004D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShouldEnforceBeingLaunchedByEGS;                  // 0x004E(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F35[0x1];                                      // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EE4[0x1];                                      // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         TitleStorageTags;                                  // 0x0050(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	int32                                         TitleStorageReadChunkLength;                       // 0x0060(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F36[0x4];                                      // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EE5[0x4];                                      // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FArtifactSettings>              Artifacts;                                         // 0x0068(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	bool                                          bUseEAS;                                           // 0x0078(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseEOSConnect;                                    // 0x0079(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -58,7 +58,7 @@ public:
 	bool                                          bMirrorAchievementsToEOS;                          // 0x007B(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseEOSSessions;                                   // 0x007C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMirrorPresenceToEAS;                              // 0x007D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F37[0x2];                                      // 0x007E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EE6[0x2];                                      // 0x007E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -93,7 +93,7 @@ static_assert(offsetof(UEOSSettings, bMirrorPresenceToEAS) == 0x00007D, "Member 
 class UNetConnectionEOS final : public UIpConnection
 {
 public:
-	uint8                                         Pad_F38[0x8];                                      // 0x1C48(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EE7[0x8];                                      // 0x1C48(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -115,7 +115,7 @@ class UNetDriverEOS final : public UIpNetDriver
 public:
 	bool                                          bIsPassthrough;                                    // 0x07D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsUsingP2PSockets;                                // 0x07D1(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F39[0x6];                                      // 0x07D2(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EE8[0x6];                                      // 0x07D2(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

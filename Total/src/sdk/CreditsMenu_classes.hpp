@@ -36,10 +36,10 @@ public:
 	class URBMenuButton_C*                        SkipPrompt;                                        // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Vignette;                                          // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	float                                         ScrollTarget;                                      // 0x0368(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_317C[0x4];                                     // 0x036C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3177[0x4];                                     // 0x036C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBinkMediaPlayer*                       BinkBackgroundVideoPlayer;                         // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Scroll_speed;                                      // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_317D[0x4];                                     // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3178[0x4];                                     // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           SkipTimerHandle;                                   // 0x0380(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsShowingSkipPrompt;                              // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

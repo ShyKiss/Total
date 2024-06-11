@@ -27,7 +27,7 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         Timeline_0_Raduis0_1_04B50D3943BBBE4241AE48953AF1BA07; // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Timeline_0__Direction_04B50D3943BBBE4241AE48953AF1BA07; // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30A6[0x3];                                     // 0x024D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3116[0x3];                                     // 0x024D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Timeline_0;                                        // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

@@ -30,7 +30,7 @@ public:
 	class UProgressBar*                           SuspiciousProgress;                                // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UProgressBar*                           UnawareProgress;                                   // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EAIAwarenessStateType                         CurrentState;                                      // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2ADA[0x3];                                     // 0x0369(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B7D[0x3];                                     // 0x0369(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CurrentMeterValue;                                 // 0x036C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ApprochainCoeff;                                   // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

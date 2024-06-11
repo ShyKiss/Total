@@ -24413,6 +24413,9 @@ class UPhysicalMaterialMask* UMaterialInterface::GetPhysicalMaterialMask() const
 
 class UWorld* UWorld::GetWorld()
 {
+	if constexpr (Offsets::GWorld != 0)
+		return *reinterpret_cast<UWorld**>(InSDKUtils::GetImageBase() + Offsets::GWorld);
+
 	if (UEngine* Engine = UEngine::GetEngine())
 	{
 		if (!Engine->GameViewport)

@@ -25,17 +25,17 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_CountdownConfirmCancelPopup_C;      // 0x03F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class FText                                   DisplayedText;                                     // 0x0400(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         TimeToCountdown;                                   // 0x0418(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F7C[0x4];                                     // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E79[0x4];                                     // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CountdownTimer;                                    // 0x0420(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_CountdownConfirmCancelPopup(int32 EntryPoint);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Destruct();
+	void Event_InitializePopup(const class FText& TitleText, const class FText& MainText, const class FText& ConfirmText, const class FText& CancelText);
 	void StartCountdown(int32 Time);
 	void OnCountdownEnds();
 	void Update_Countdown_Text(int32 Countdown);
-	void Destruct();
-	void Event_InitializePopup(const class FText& TitleText, const class FText& MainText, const class FText& ConfirmText, const class FText& CancelText);
 
 public:
 	static class UClass* StaticClass()

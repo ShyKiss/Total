@@ -12,6 +12,9 @@
 
 #include <memory>
 
+#define STB_IMAGE_IMPLEMENTATION
+#include "../../../utils/stb_image.h"
+
 #include "hook_directx11.hpp"
 
 #include "../../../dependencies/imgui/imgui_impl_dx11.h"
@@ -28,9 +31,56 @@ static ID3D11DeviceContext* g_pd3dDeviceContext = NULL;
 static ID3D11RenderTargetView* g_pd3dRenderTarget = NULL;
 static IDXGISwapChain* g_pSwapChain = NULL;
 
+static int HalfInt = 0;
+
+
+
 static void CleanupDeviceD3D11( );
 static void CleanupRenderTarget( );
 static void RenderImGui_DX11(IDXGISwapChain* pSwapChain);
+
+bool LoadTextureFromFile(const char* filename, ID3D11ShaderResourceView** out_srv) {
+    // Load from disk into a raw RGBA buffer
+    int image_width = 0;
+    int image_height = 0;
+    unsigned char* image_data = stbi_load(filename, &image_width, &image_height, NULL, 4);
+    if (image_data == NULL)
+        return false;
+
+    // Create texture
+    D3D11_TEXTURE2D_DESC desc;
+    ZeroMemory(&desc, sizeof(desc));
+    desc.Width = image_width;
+    desc.Height = image_height;
+    desc.MipLevels = 1;
+    desc.ArraySize = 1;
+    desc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
+    desc.SampleDesc.Count = 1;
+    desc.Usage = D3D11_USAGE_DEFAULT;
+    desc.BindFlags = D3D11_BIND_SHADER_RESOURCE;
+    desc.CPUAccessFlags = 0;
+
+    ID3D11Texture2D* pTexture = NULL;
+    D3D11_SUBRESOURCE_DATA subResource;
+    subResource.pSysMem = image_data;
+    subResource.SysMemPitch = desc.Width * 4;
+    subResource.SysMemSlicePitch = 0;
+    g_pd3dDevice->CreateTexture2D(&desc, &subResource, &pTexture);
+
+    // Create texture view
+    D3D11_SHADER_RESOURCE_VIEW_DESC srvDesc;
+    ZeroMemory(&srvDesc, sizeof(srvDesc));
+    srvDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
+    srvDesc.ViewDimension = D3D11_SRV_DIMENSION_TEXTURE2D;
+    srvDesc.Texture2D.MipLevels = desc.MipLevels;
+    srvDesc.Texture2D.MostDetailedMip = 0;
+    g_pd3dDevice->CreateShaderResourceView(pTexture, &srvDesc, out_srv);
+    pTexture->Release( );
+
+    stbi_image_free(image_data);
+
+    return true;
+}
 
 static bool CreateDeviceD3D11(HWND hWnd) {
     // Create the D3DDevice
@@ -276,6 +326,11 @@ static void CleanupDeviceD3D11( ) {
 static void RenderImGui_DX11(IDXGISwapChain* pSwapChain) {
     if (!ImGui::GetIO( ).BackendRendererUserData) {
         if (SUCCEEDED(pSwapChain->GetDevice(IID_PPV_ARGS(&g_pd3dDevice)))) {
+
+            ImGui::GetIO( ).WantCaptureMouse || ImGui::GetIO( ).WantTextInput || ImGui::GetIO( ).WantCaptureKeyboard;
+            ImGui::GetIO( ).ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+            ImGui::GetIO( ).Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\Consolab.ttf", 12.0f, NULL, ImGui::GetIO( ).Fonts->GetGlyphRangesCyrillic( ));
+
             g_pd3dDevice->GetImmediateContext(&g_pd3dDeviceContext);
             ImGui_ImplDX11_Init(g_pd3dDevice, g_pd3dDeviceContext);
         }
@@ -287,6 +342,38 @@ static void RenderImGui_DX11(IDXGISwapChain* pSwapChain) {
         }
 
         if (ImGui::GetCurrentContext( ) && g_pd3dRenderTarget) {
+
+            if (HalfInt < 24) {
+                switch (HalfInt) {
+                    case 0:     LoadTextureFromFile("icons\\inventory\\item_bottle.png",            &DX11::BOTTLE_TEX              );  break;
+                    case 1:     LoadTextureFromFile("icons\\inventory\\key.png",                    &DX11::KEY_TEX                 );  break;
+                    case 2:     LoadTextureFromFile("icons\\inventory\\item_brick.png",             &DX11::BRICK_TEX               );  break;
+                    case 3:     LoadTextureFromFile("icons\\inventory\\item_antidote_psy.png",      &DX11::ANTIDOTE_TEX            );  break;
+                    case 4:     LoadTextureFromFile("icons\\inventory\\item_skillcharge.png",       &DX11::SKILLCHARGE_TEX         );  break;
+                    case 5:     LoadTextureFromFile("icons\\inventory\\item_battery.png",           &DX11::BATTERY_TEX             );  break;
+                    case 6:     LoadTextureFromFile("icons\\inventory\\item_battery_small.png",     &DX11::SMALL_BATTERY_TEX       );  break;
+                    case 7:     LoadTextureFromFile("icons\\inventory\\item_heal_drink.png",        &DX11::HEAL_TEX                );  break;
+                    case 8:     LoadTextureFromFile("icons\\inventory\\bloody_heart.png",           &DX11::HEART_TEX               );  break;
+                    case 9:     LoadTextureFromFile("icons\\inventory\\item_pill.png",              &DX11::ADRENALINE_TEX          );  break;
+                    case 10:    LoadTextureFromFile("icons\\inventory\\ticket.png",                 &DX11::TICKET_TEX              );  break;
+                    case 11:    LoadTextureFromFile("icons\\inventory\\item_temp_heal_drink.png",   &DX11::SMALL_HEAL_TEX          );  break;
+                    case 12:    LoadTextureFromFile("icons\\inventory\\item_bandage.png",           &DX11::BANDAGE_TEX             );  break;
+                    case 13:    LoadTextureFromFile("icons\\inventory\\item_lockpick.png",          &DX11::LOCKPICK_TEX            );  break;
+                    case 14:    LoadTextureFromFile("icons\\other\\item_valve.png",                 &DX11::VALVE_TEX               );  break;
+                    case 15:    LoadTextureFromFile("icons\\largepickups\\item_diapo.png",          &DX11::DIAPO_TEX               );  break;
+                    case 16:    LoadTextureFromFile("icons\\other\\item_enemy.png",                 &DX11::ENEMY_TEX               );  break;
+                    case 17:    LoadTextureFromFile("icons\\largepickups\\item_kids.png",           &DX11::KIDS_TEX                );  break;
+                    case 18:    LoadTextureFromFile("icons\\largepickups\\item_acidbottle.png",     &DX11::ACID_BOTTLE_TEX         );  break;
+                    case 19:    LoadTextureFromFile("icons\\largepickups\\item_acidbucket.png",     &DX11::ACID_BUCKET_TEX         );  break;
+                    case 20:    LoadTextureFromFile("icons\\largepickups\\gas_canister.png",        &DX11::CANISTER_TEX            );  break;
+                    case 21:    LoadTextureFromFile("icons\\other\\item_Mk_folder.png",             &DX11::DOCUMENT_TEX            );  break;
+                    case 22:    LoadTextureFromFile("icons\\inventory\\item_evidence.png",          &DX11::EVIDENCE_TEX            );  break;
+                    case 23:    LoadTextureFromFile("icons\\other\\objectif_base_03.png",           &DX11::OBJECTIVE_TEX           );  break;
+                    case 24:    LoadTextureFromFile("icons\\largepickups\\item_object.png",         &DX11::MATERIAL_OBJECT_TEX     );  break;
+                }
+                HalfInt++;
+            }
+
             ImGui_ImplDX11_NewFrame( );
             ImGui_ImplWin32_NewFrame( );
             ImGui::NewFrame( );

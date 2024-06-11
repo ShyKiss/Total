@@ -172,6 +172,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>d3d12.dll;d3d11.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -193,6 +194,7 @@
     <ClCompile Include="src\dependencies\minhook\hook.c" />
     <ClCompile Include="src\dependencies\minhook\trampoline.c" />
     <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\hooks\backend\dx11\hook_directx11.cpp" />
     <ClCompile Include="src\hooks\backend\dx12\hook_directx12.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </ExcludedFromBuild>
@@ -232,6 +234,7 @@
     <ClInclude Include="src\dependencies\minhook\hde\table64.h" />
     <ClInclude Include="src\dependencies\minhook\MinHook.h" />
     <ClInclude Include="src\dependencies\minhook\trampoline.h" />
+    <ClInclude Include="src\hooks\backend\dx11\hook_directx11.hpp" />
     <ClInclude Include="src\hooks\backend\dx12\hook_directx12.hpp" />
     <ClInclude Include="src\hooks\hooks.hpp" />
     <ClInclude Include="src\menu\menu.hpp" />
@@ -251,6 +254,7 @@
     <ClInclude Include="src\utils\utils.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="lox1.bin" />
     <None Include="src\NameCollisions.inl" />
   </ItemGroup>
   <ItemGroup>

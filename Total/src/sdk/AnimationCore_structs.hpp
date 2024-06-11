@@ -41,7 +41,7 @@ enum class EConstraintType : uint8
 struct alignas(0x10) FCCDIKChainLink final
 {
 public:
-	uint8                                         Pad_2813[0x80];                                    // 0x0000(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_278A[0x80];                                    // 0x0000(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCCDIKChainLink) == 0x000010, "Wrong alignment on FCCDIKChainLink");
 static_assert(sizeof(FCCDIKChainLink) == 0x000080, "Wrong size on FCCDIKChainLink");
@@ -53,7 +53,7 @@ struct FAxis final
 public:
 	struct FVector                                Axis;                                              // 0x0000(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInLocalSpace;                                     // 0x000C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2814[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_278B[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FAxis) == 0x000004, "Wrong alignment on FAxis");
 static_assert(sizeof(FAxis) == 0x000010, "Wrong size on FAxis");
@@ -66,7 +66,7 @@ struct alignas(0x08) FConstraintDescriptor final
 {
 public:
 	EConstraintType                               Type;                                              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2815[0xF];                                     // 0x0001(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_278C[0xF];                                     // 0x0001(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FConstraintDescriptor) == 0x000008, "Wrong alignment on FConstraintDescriptor");
 static_assert(sizeof(FConstraintDescriptor) == 0x000010, "Wrong size on FConstraintDescriptor");
@@ -80,7 +80,7 @@ public:
 	struct FConstraintDescriptor                  Constraint;                                        // 0x0000(0x0010)(NativeAccessSpecifierPublic)
 	float                                         Weight;                                            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMaintainOffset;                                   // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2816[0xB];                                     // 0x0015(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_278D[0xB];                                     // 0x0015(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Offset;                                            // 0x0020(0x0030)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FTransform                             CurrentTransform;                                  // 0x0050(0x0030)(Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -92,45 +92,16 @@ static_assert(offsetof(FConstraintData, bMaintainOffset) == 0x000014, "Member 'F
 static_assert(offsetof(FConstraintData, Offset) == 0x000020, "Member 'FConstraintData::Offset' has a wrong offset!");
 static_assert(offsetof(FConstraintData, CurrentTransform) == 0x000050, "Member 'FConstraintData::CurrentTransform' has a wrong offset!");
 
-// ScriptStruct AnimationCore.NodeObject
+// ScriptStruct AnimationCore.NodeChain
 // 0x0010 (0x0010 - 0x0000)
-struct FNodeObject final
+struct FNodeChain final
 {
 public:
-	class FName                                   Name;                                              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   ParentName;                                        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FName>                           Nodes;                                             // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNodeObject) == 0x000004, "Wrong alignment on FNodeObject");
-static_assert(sizeof(FNodeObject) == 0x000010, "Wrong size on FNodeObject");
-static_assert(offsetof(FNodeObject, Name) == 0x000000, "Member 'FNodeObject::Name' has a wrong offset!");
-static_assert(offsetof(FNodeObject, ParentName) == 0x000008, "Member 'FNodeObject::ParentName' has a wrong offset!");
-
-// ScriptStruct AnimationCore.NodeHierarchyData
-// 0x0070 (0x0070 - 0x0000)
-struct FNodeHierarchyData final
-{
-public:
-	TArray<struct FNodeObject>                    Nodes;                                             // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FTransform>                     Transforms;                                        // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TMap<class FName, int32>                      NodeNameToIndexMapping;                            // 0x0020(0x0050)(NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FNodeHierarchyData) == 0x000008, "Wrong alignment on FNodeHierarchyData");
-static_assert(sizeof(FNodeHierarchyData) == 0x000070, "Wrong size on FNodeHierarchyData");
-static_assert(offsetof(FNodeHierarchyData, Nodes) == 0x000000, "Member 'FNodeHierarchyData::Nodes' has a wrong offset!");
-static_assert(offsetof(FNodeHierarchyData, Transforms) == 0x000010, "Member 'FNodeHierarchyData::Transforms' has a wrong offset!");
-static_assert(offsetof(FNodeHierarchyData, NodeNameToIndexMapping) == 0x000020, "Member 'FNodeHierarchyData::NodeNameToIndexMapping' has a wrong offset!");
-
-// ScriptStruct AnimationCore.NodeHierarchyWithUserData
-// 0x0078 (0x0078 - 0x0000)
-struct FNodeHierarchyWithUserData final
-{
-public:
-	uint8                                         Pad_2817[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FNodeHierarchyData                     Hierarchy;                                         // 0x0008(0x0070)(Protected, NativeAccessSpecifierProtected)
-};
-static_assert(alignof(FNodeHierarchyWithUserData) == 0x000008, "Wrong alignment on FNodeHierarchyWithUserData");
-static_assert(sizeof(FNodeHierarchyWithUserData) == 0x000078, "Wrong size on FNodeHierarchyWithUserData");
-static_assert(offsetof(FNodeHierarchyWithUserData, Hierarchy) == 0x000008, "Member 'FNodeHierarchyWithUserData::Hierarchy' has a wrong offset!");
+static_assert(alignof(FNodeChain) == 0x000008, "Wrong alignment on FNodeChain");
+static_assert(sizeof(FNodeChain) == 0x000010, "Wrong size on FNodeChain");
+static_assert(offsetof(FNodeChain, Nodes) == 0x000000, "Member 'FNodeChain::Nodes' has a wrong offset!");
 
 // ScriptStruct AnimationCore.FilterOptionPerAxis
 // 0x0003 (0x0003 - 0x0000)
@@ -152,9 +123,9 @@ static_assert(offsetof(FFilterOptionPerAxis, bZ) == 0x000002, "Member 'FFilterOp
 struct alignas(0x08) FConstraintDescriptionEx
 {
 public:
-	uint8                                         Pad_2818[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_278E[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFilterOptionPerAxis                   AxesFilterOption;                                  // 0x0008(0x0003)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2819[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_278F[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FConstraintDescriptionEx) == 0x000008, "Wrong alignment on FConstraintDescriptionEx");
 static_assert(sizeof(FConstraintDescriptionEx) == 0x000010, "Wrong size on FConstraintDescriptionEx");
@@ -168,7 +139,7 @@ public:
 	struct FAxis                                  LookAt_Axis;                                       // 0x0010(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FAxis                                  LookUp_Axis;                                       // 0x0020(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bUseLookUp;                                        // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_281A[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2790[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                LookUpTarget;                                      // 0x0034(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FAimConstraintDescription) == 0x000008, "Wrong alignment on FAimConstraintDescription");
@@ -184,7 +155,7 @@ struct FTransformConstraintDescription final : public FConstraintDescriptionEx
 {
 public:
 	ETransformConstraintType                      TransformType;                                     // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_281B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2791[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FTransformConstraintDescription) == 0x000008, "Wrong alignment on FTransformConstraintDescription");
 static_assert(sizeof(FTransformConstraintDescription) == 0x000018, "Wrong size on FTransformConstraintDescription");
@@ -219,12 +190,12 @@ struct FTransformConstraint final
 {
 public:
 	struct FConstraintDescription                 Operator;                                          // 0x0000(0x000D)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_281C[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2792[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   SourceNode;                                        // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   TargetNode;                                        // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Weight;                                            // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMaintainOffset;                                   // 0x0024(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_281D[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2793[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FTransformConstraint) == 0x000004, "Wrong alignment on FTransformConstraint");
 static_assert(sizeof(FTransformConstraint) == 0x000028, "Wrong size on FTransformConstraint");
@@ -240,10 +211,10 @@ struct FConstraintOffset final
 {
 public:
 	struct FVector                                Translation;                                       // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_281E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2794[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  Rotation;                                          // 0x0010(0x0010)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                Scale;                                             // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_281F[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2795[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Parent;                                            // 0x0030(0x0030)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FConstraintOffset) == 0x000010, "Wrong alignment on FConstraintOffset");
@@ -288,21 +259,50 @@ static_assert(offsetof(FEulerTransform, Scale) == 0x000018, "Member 'FEulerTrans
 struct alignas(0x08) FFABRIKChainLink final
 {
 public:
-	uint8                                         Pad_2820[0x38];                                    // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2796[0x38];                                    // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FFABRIKChainLink) == 0x000008, "Wrong alignment on FFABRIKChainLink");
 static_assert(sizeof(FFABRIKChainLink) == 0x000038, "Wrong size on FFABRIKChainLink");
 
-// ScriptStruct AnimationCore.NodeChain
+// ScriptStruct AnimationCore.NodeObject
 // 0x0010 (0x0010 - 0x0000)
-struct FNodeChain final
+struct FNodeObject final
 {
 public:
-	TArray<class FName>                           Nodes;                                             // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	class FName                                   Name;                                              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   ParentName;                                        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNodeChain) == 0x000008, "Wrong alignment on FNodeChain");
-static_assert(sizeof(FNodeChain) == 0x000010, "Wrong size on FNodeChain");
-static_assert(offsetof(FNodeChain, Nodes) == 0x000000, "Member 'FNodeChain::Nodes' has a wrong offset!");
+static_assert(alignof(FNodeObject) == 0x000004, "Wrong alignment on FNodeObject");
+static_assert(sizeof(FNodeObject) == 0x000010, "Wrong size on FNodeObject");
+static_assert(offsetof(FNodeObject, Name) == 0x000000, "Member 'FNodeObject::Name' has a wrong offset!");
+static_assert(offsetof(FNodeObject, ParentName) == 0x000008, "Member 'FNodeObject::ParentName' has a wrong offset!");
+
+// ScriptStruct AnimationCore.NodeHierarchyData
+// 0x0070 (0x0070 - 0x0000)
+struct FNodeHierarchyData final
+{
+public:
+	TArray<struct FNodeObject>                    Nodes;                                             // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FTransform>                     Transforms;                                        // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TMap<class FName, int32>                      NodeNameToIndexMapping;                            // 0x0020(0x0050)(NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FNodeHierarchyData) == 0x000008, "Wrong alignment on FNodeHierarchyData");
+static_assert(sizeof(FNodeHierarchyData) == 0x000070, "Wrong size on FNodeHierarchyData");
+static_assert(offsetof(FNodeHierarchyData, Nodes) == 0x000000, "Member 'FNodeHierarchyData::Nodes' has a wrong offset!");
+static_assert(offsetof(FNodeHierarchyData, Transforms) == 0x000010, "Member 'FNodeHierarchyData::Transforms' has a wrong offset!");
+static_assert(offsetof(FNodeHierarchyData, NodeNameToIndexMapping) == 0x000020, "Member 'FNodeHierarchyData::NodeNameToIndexMapping' has a wrong offset!");
+
+// ScriptStruct AnimationCore.NodeHierarchyWithUserData
+// 0x0078 (0x0078 - 0x0000)
+struct FNodeHierarchyWithUserData final
+{
+public:
+	uint8                                         Pad_2797[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNodeHierarchyData                     Hierarchy;                                         // 0x0008(0x0070)(Protected, NativeAccessSpecifierProtected)
+};
+static_assert(alignof(FNodeHierarchyWithUserData) == 0x000008, "Wrong alignment on FNodeHierarchyWithUserData");
+static_assert(sizeof(FNodeHierarchyWithUserData) == 0x000078, "Wrong size on FNodeHierarchyWithUserData");
+static_assert(offsetof(FNodeHierarchyWithUserData, Hierarchy) == 0x000008, "Member 'FNodeHierarchyWithUserData::Hierarchy' has a wrong offset!");
 
 // ScriptStruct AnimationCore.TransformNoScale
 // 0x0020 (0x0020 - 0x0000)
@@ -310,7 +310,7 @@ struct FTransformNoScale final
 {
 public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2821[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2798[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  Rotation;                                          // 0x0010(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FTransformNoScale) == 0x000010, "Wrong alignment on FTransformNoScale");

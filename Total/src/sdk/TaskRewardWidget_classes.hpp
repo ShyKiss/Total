@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
 #include "Engine_structs.hpp"
+#include "OPP_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -29,7 +29,7 @@ public:
 	class USingleRewardWidget_C*                  SingleRewardWidget;                                // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<struct FRewardUIData>                  Rewards;                                           // 0x0280(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          bAnimated;                                         // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2ED9[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D0D[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CurrentRewardIndex;                                // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -27,7 +27,7 @@ public:
 	class UInvalidationBox*                       InvalidationBox_ConsumingProgressWidget;           // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Progress;                                          // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	float                                         ProgressRatio;                                     // 0x0300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DCA[0x4];                                     // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E35[0x4];                                      // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               DynamicMaterial_Circle;                            // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               DynamicMaterial_Status;                            // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPlayerActionStatus                           CurrentStatus;                                     // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

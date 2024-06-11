@@ -596,10 +596,10 @@ public:
 	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0xF1E0(0x0028)()
 	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0xF208(0x00C0)()
 	float                                         DelayedPeek;                                       // 0xF2C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2BE3[0x4];                                     // 0xF2CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2AA9[0x4];                                     // 0xF2CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequenceBase*                      PickUpHand;                                        // 0xF2D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PickUpBlend;                                       // 0xF2D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2BE4[0x4];                                     // 0xF2DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2AAA[0x4];                                     // 0xF2DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<EItemType, class UAnimSequenceBase*>     ItemTypeStyle;                                     // 0xF2E0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         SpeedNormal;                                       // 0xF330(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

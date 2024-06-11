@@ -31,7 +31,7 @@ public:
 	class USecondaryObjectiveWidget_C*            SecondaryObjectiveWidget_335;                      // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           SubobjectivesBox;                                  // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bPauseMenu;                                        // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FFA[0x7];                                     // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F7A[0x7];                                     // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBBaseObjectiveCoordinator*            ForcedShownCoordinator;                            // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

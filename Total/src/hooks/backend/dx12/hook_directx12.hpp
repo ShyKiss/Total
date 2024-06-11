@@ -35,9 +35,17 @@ namespace DX12 {
     inline D3D12_GPU_DESCRIPTOR_HANDLE  SMALL_BATTERY_GPU;
     inline ID3D12Resource*              SMALL_BATTERY_TEX = NULL;
 
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  SMALL_HEAL_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  SMALL_HEAL_GPU;
+    inline ID3D12Resource*              SMALL_HEAL_TEX = NULL;
+
     inline D3D12_CPU_DESCRIPTOR_HANDLE  HEAL_CPU;
     inline D3D12_GPU_DESCRIPTOR_HANDLE  HEAL_GPU;
     inline ID3D12Resource*              HEAL_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  BANDAGE_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  BANDAGE_GPU;
+    inline ID3D12Resource*              BANDAGE_TEX = NULL;
 
     inline D3D12_CPU_DESCRIPTOR_HANDLE  HEART_CPU;
     inline D3D12_GPU_DESCRIPTOR_HANDLE  HEART_GPU;
@@ -51,10 +59,53 @@ namespace DX12 {
     inline D3D12_GPU_DESCRIPTOR_HANDLE  TICKET_GPU;
     inline ID3D12Resource*              TICKET_TEX = NULL;
 
-    inline int my_image_width = 0;
-    inline int my_image_height = 0;
-    inline int my_image_width1 = 0;
-    inline int my_image_height1 = 0;
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  CANISTER_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  CANISTER_GPU;
+    inline ID3D12Resource*              CANISTER_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  ACID_BOTTLE_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  ACID_BOTTLE_GPU;
+    inline ID3D12Resource*              ACID_BOTTLE_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  ACID_BUCKET_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  ACID_BUCKET_GPU;
+    inline ID3D12Resource*              ACID_BUCKET_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  DIAPO_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  DIAPO_GPU;
+    inline ID3D12Resource*              DIAPO_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  KIDS_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  KIDS_GPU;
+    inline ID3D12Resource*              KIDS_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  MATERIAL_OBJECT_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  MATERIAL_OBJECT_GPU;
+    inline ID3D12Resource*              MATERIAL_OBJECT_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  ENEMY_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  ENEMY_GPU;
+    inline ID3D12Resource*              ENEMY_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  VALVE_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  VALVE_GPU;
+    inline ID3D12Resource*              VALVE_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  DOCUMENT_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  DOCUMENT_GPU;
+    inline ID3D12Resource*              DOCUMENT_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  EVIDENCE_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  EVIDENCE_GPU;
+    inline ID3D12Resource*              EVIDENCE_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  OBJECTIVE_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  OBJECTIVE_GPU;
+    inline ID3D12Resource*              OBJECTIVE_TEX = NULL;
+
+    inline D3D12_CPU_DESCRIPTOR_HANDLE  LOCKPICK_CPU;
+    inline D3D12_GPU_DESCRIPTOR_HANDLE  LOCKPICK_GPU;
+    inline ID3D12Resource*              LOCKPICK_TEX = NULL;
     
     
 

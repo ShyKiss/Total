@@ -18,6 +18,136 @@
 namespace SDK::Params
 {
 
+// Function NewsWidget.NewsWidget_C.RequestPageChange
+// 0x0038 (0x0038 - 0x0000)
+struct NewsWidget_C_RequestPageChange final
+{
+public:
+	bool                                          Left;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BFC[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_2;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BFD[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BFE[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetNumItems_ReturnValue_1;                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue_1;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BFF[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default_1;                           // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default_2;                           // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(NewsWidget_C_RequestPageChange) == 0x000004, "Wrong alignment on NewsWidget_C_RequestPageChange");
+static_assert(sizeof(NewsWidget_C_RequestPageChange) == 0x000038, "Wrong size on NewsWidget_C_RequestPageChange");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, Left) == 0x000000, "Member 'NewsWidget_C_RequestPageChange::Left' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, Temp_bool_Variable) == 0x000001, "Member 'NewsWidget_C_RequestPageChange::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, Temp_int_Variable) == 0x000004, "Member 'NewsWidget_C_RequestPageChange::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, Temp_bool_Variable_1) == 0x000008, "Member 'NewsWidget_C_RequestPageChange::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, Temp_bool_Variable_2) == 0x000009, "Member 'NewsWidget_C_RequestPageChange::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_GetNumItems_ReturnValue) == 0x00000C, "Member 'NewsWidget_C_RequestPageChange::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_GetCurrentItemIndex_ReturnValue) == 0x000010, "Member 'NewsWidget_C_RequestPageChange::CallFunc_GetCurrentItemIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'NewsWidget_C_RequestPageChange::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000018, "Member 'NewsWidget_C_RequestPageChange::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_GetNumItems_ReturnValue_1) == 0x00001C, "Member 'NewsWidget_C_RequestPageChange::CallFunc_GetNumItems_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_GetCurrentItemIndex_ReturnValue_1) == 0x000020, "Member 'NewsWidget_C_RequestPageChange::CallFunc_GetCurrentItemIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, K2Node_Select_Default) == 0x000024, "Member 'NewsWidget_C_RequestPageChange::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000028, "Member 'NewsWidget_C_RequestPageChange::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, K2Node_Select_Default_1) == 0x00002C, "Member 'NewsWidget_C_RequestPageChange::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_Subtract_IntInt_ReturnValue) == 0x000030, "Member 'NewsWidget_C_RequestPageChange::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_RequestPageChange, K2Node_Select_Default_2) == 0x000034, "Member 'NewsWidget_C_RequestPageChange::K2Node_Select_Default_2' has a wrong offset!");
+
+// Function NewsWidget.NewsWidget_C.UpdateBorderColor
+// 0x0034 (0x0034 - 0x0000)
+struct NewsWidget_C_UpdateBorderColor final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2C00[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetBorderColor_ReturnValue;               // 0x0014(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(NewsWidget_C_UpdateBorderColor) == 0x000004, "Wrong alignment on NewsWidget_C_UpdateBorderColor");
+static_assert(sizeof(NewsWidget_C_UpdateBorderColor) == 0x000034, "Wrong size on NewsWidget_C_UpdateBorderColor");
+static_assert(offsetof(NewsWidget_C_UpdateBorderColor, Temp_bool_Variable) == 0x000000, "Member 'NewsWidget_C_UpdateBorderColor::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateBorderColor, Temp_struct_Variable) == 0x000004, "Member 'NewsWidget_C_UpdateBorderColor::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateBorderColor, CallFunc_GetBorderColor_ReturnValue) == 0x000014, "Member 'NewsWidget_C_UpdateBorderColor::CallFunc_GetBorderColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateBorderColor, K2Node_Select_Default) == 0x000024, "Member 'NewsWidget_C_UpdateBorderColor::K2Node_Select_Default' has a wrong offset!");
+
+// Function NewsWidget.NewsWidget_C.UpdateDots
+// 0x0050 (0x0050 - 0x0000)
+struct NewsWidget_C_UpdateDots final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue;          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2C01[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C02[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2C03[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNewsWidgetDot_C*                       K2Node_DynamicCast_AsNews_Widget_Dot;              // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(NewsWidget_C_UpdateDots) == 0x000008, "Wrong alignment on NewsWidget_C_UpdateDots");
+static_assert(sizeof(NewsWidget_C_UpdateDots) == 0x000050, "Wrong size on NewsWidget_C_UpdateDots");
+static_assert(offsetof(NewsWidget_C_UpdateDots, Temp_int_Array_Index_Variable) == 0x000000, "Member 'NewsWidget_C_UpdateDots::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'NewsWidget_C_UpdateDots::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'NewsWidget_C_UpdateDots::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_GetCurrentItemIndex_ReturnValue) == 0x00000C, "Member 'NewsWidget_C_UpdateDots::CallFunc_GetCurrentItemIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'NewsWidget_C_UpdateDots::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_GetAllChildren_ReturnValue) == 0x000018, "Member 'NewsWidget_C_UpdateDots::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'NewsWidget_C_UpdateDots::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_Array_Get_Item) == 0x000030, "Member 'NewsWidget_C_UpdateDots::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'NewsWidget_C_UpdateDots::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, K2Node_DynamicCast_AsNews_Widget_Dot) == 0x000040, "Member 'NewsWidget_C_UpdateDots::K2Node_DynamicCast_AsNews_Widget_Dot' has a wrong offset!");
+static_assert(offsetof(NewsWidget_C_UpdateDots, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'NewsWidget_C_UpdateDots::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
+// Function NewsWidget.NewsWidget_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct NewsWidget_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(NewsWidget_C_PreConstruct) == 0x000001, "Wrong alignment on NewsWidget_C_PreConstruct");
+static_assert(sizeof(NewsWidget_C_PreConstruct) == 0x000001, "Wrong size on NewsWidget_C_PreConstruct");
+static_assert(offsetof(NewsWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'NewsWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
+// Function NewsWidget.NewsWidget_C.OnFocusLost
+// 0x0008 (0x0008 - 0x0000)
+struct NewsWidget_C_OnFocusLost final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+static_assert(alignof(NewsWidget_C_OnFocusLost) == 0x000004, "Wrong alignment on NewsWidget_C_OnFocusLost");
+static_assert(sizeof(NewsWidget_C_OnFocusLost) == 0x000008, "Wrong size on NewsWidget_C_OnFocusLost");
+static_assert(offsetof(NewsWidget_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'NewsWidget_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+
+// Function NewsWidget.NewsWidget_C.OnDotButtonClicked
+// 0x0004 (0x0004 - 0x0000)
+struct NewsWidget_C_OnDotButtonClicked final
+{
+public:
+	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(NewsWidget_C_OnDotButtonClicked) == 0x000004, "Wrong alignment on NewsWidget_C_OnDotButtonClicked");
+static_assert(sizeof(NewsWidget_C_OnDotButtonClicked) == 0x000004, "Wrong size on NewsWidget_C_OnDotButtonClicked");
+static_assert(offsetof(NewsWidget_C_OnDotButtonClicked, Param_Index) == 0x000000, "Member 'NewsWidget_C_OnDotButtonClicked::Param_Index' has a wrong offset!");
+
 // Function NewsWidget.NewsWidget_C.ExecuteUbergraph_NewsWidget
 // 0x0158 (0x0158 - 0x0000)
 struct NewsWidget_C_ExecuteUbergraph_NewsWidget final
@@ -30,42 +160,42 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E76[0x2];                                      // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C04[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x000C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	TDelegate<void(int32 Index)>                  K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         Temp_int_Variable;                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E77[0x4];                                      // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C05[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2DDynamic*                      CallFunc_GetImage_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E78[0x4];                                      // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C06[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNewsWidgetDot_C*                       CallFunc_Create_ReturnValue;                       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E79[0x4];                                      // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C07[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E7A[0x5];                                      // 0x0063(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C08[0x5];                                     // 0x0063(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetDescription_ReturnValue;               // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0078(0x0018)()
 	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E7B[0x6];                                      // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C09[0x6];                                     // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetHeaderBackgroundColor_ReturnValue;     // 0x00A0(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00B0(0x0028)()
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x00D8(0x0008)(NoDestructor)
 	int32                                         K2Node_CustomEvent_Index;                          // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasCTA_ReturnValue;                       // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E7C[0x3];                                      // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C0A[0x3];                                     // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetTitle_ReturnValue;                     // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00F8(0x0018)()
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E7D[0x2];                                      // 0x0112(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C0B[0x2];                                     // 0x0112(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_GetHeaderTextColor_ReturnValue;           // 0x0114(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E7E[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C0C[0x4];                                     // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0128(0x0028)()
 	bool                                          CallFunc_HasCTA_ReturnValue_1;                     // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -107,136 +237,6 @@ static_assert(offsetof(NewsWidget_C_ExecuteUbergraph_NewsWidget, K2Node_Select_D
 static_assert(offsetof(NewsWidget_C_ExecuteUbergraph_NewsWidget, CallFunc_GetHeaderTextColor_ReturnValue) == 0x000114, "Member 'NewsWidget_C_ExecuteUbergraph_NewsWidget::CallFunc_GetHeaderTextColor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(NewsWidget_C_ExecuteUbergraph_NewsWidget, K2Node_MakeStruct_SlateColor_1) == 0x000128, "Member 'NewsWidget_C_ExecuteUbergraph_NewsWidget::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
 static_assert(offsetof(NewsWidget_C_ExecuteUbergraph_NewsWidget, CallFunc_HasCTA_ReturnValue_1) == 0x000150, "Member 'NewsWidget_C_ExecuteUbergraph_NewsWidget::CallFunc_HasCTA_ReturnValue_1' has a wrong offset!");
-
-// Function NewsWidget.NewsWidget_C.OnDotButtonClicked
-// 0x0004 (0x0004 - 0x0000)
-struct NewsWidget_C_OnDotButtonClicked final
-{
-public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(NewsWidget_C_OnDotButtonClicked) == 0x000004, "Wrong alignment on NewsWidget_C_OnDotButtonClicked");
-static_assert(sizeof(NewsWidget_C_OnDotButtonClicked) == 0x000004, "Wrong size on NewsWidget_C_OnDotButtonClicked");
-static_assert(offsetof(NewsWidget_C_OnDotButtonClicked, Param_Index) == 0x000000, "Member 'NewsWidget_C_OnDotButtonClicked::Param_Index' has a wrong offset!");
-
-// Function NewsWidget.NewsWidget_C.OnFocusLost
-// 0x0008 (0x0008 - 0x0000)
-struct NewsWidget_C_OnFocusLost final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-static_assert(alignof(NewsWidget_C_OnFocusLost) == 0x000004, "Wrong alignment on NewsWidget_C_OnFocusLost");
-static_assert(sizeof(NewsWidget_C_OnFocusLost) == 0x000008, "Wrong size on NewsWidget_C_OnFocusLost");
-static_assert(offsetof(NewsWidget_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'NewsWidget_C_OnFocusLost::InFocusEvent' has a wrong offset!");
-
-// Function NewsWidget.NewsWidget_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct NewsWidget_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(NewsWidget_C_PreConstruct) == 0x000001, "Wrong alignment on NewsWidget_C_PreConstruct");
-static_assert(sizeof(NewsWidget_C_PreConstruct) == 0x000001, "Wrong size on NewsWidget_C_PreConstruct");
-static_assert(offsetof(NewsWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'NewsWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function NewsWidget.NewsWidget_C.UpdateDots
-// 0x0050 (0x0050 - 0x0000)
-struct NewsWidget_C_UpdateDots final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue;          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E7F[0x7];                                      // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E80[0x4];                                      // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E81[0x7];                                      // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNewsWidgetDot_C*                       K2Node_DynamicCast_AsNews_Widget_Dot;              // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(NewsWidget_C_UpdateDots) == 0x000008, "Wrong alignment on NewsWidget_C_UpdateDots");
-static_assert(sizeof(NewsWidget_C_UpdateDots) == 0x000050, "Wrong size on NewsWidget_C_UpdateDots");
-static_assert(offsetof(NewsWidget_C_UpdateDots, Temp_int_Array_Index_Variable) == 0x000000, "Member 'NewsWidget_C_UpdateDots::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'NewsWidget_C_UpdateDots::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'NewsWidget_C_UpdateDots::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_GetCurrentItemIndex_ReturnValue) == 0x00000C, "Member 'NewsWidget_C_UpdateDots::CallFunc_GetCurrentItemIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'NewsWidget_C_UpdateDots::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_GetAllChildren_ReturnValue) == 0x000018, "Member 'NewsWidget_C_UpdateDots::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'NewsWidget_C_UpdateDots::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_Array_Get_Item) == 0x000030, "Member 'NewsWidget_C_UpdateDots::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'NewsWidget_C_UpdateDots::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, K2Node_DynamicCast_AsNews_Widget_Dot) == 0x000040, "Member 'NewsWidget_C_UpdateDots::K2Node_DynamicCast_AsNews_Widget_Dot' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateDots, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'NewsWidget_C_UpdateDots::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-
-// Function NewsWidget.NewsWidget_C.UpdateBorderColor
-// 0x0034 (0x0034 - 0x0000)
-struct NewsWidget_C_UpdateBorderColor final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E82[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetBorderColor_ReturnValue;               // 0x0014(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(NewsWidget_C_UpdateBorderColor) == 0x000004, "Wrong alignment on NewsWidget_C_UpdateBorderColor");
-static_assert(sizeof(NewsWidget_C_UpdateBorderColor) == 0x000034, "Wrong size on NewsWidget_C_UpdateBorderColor");
-static_assert(offsetof(NewsWidget_C_UpdateBorderColor, Temp_bool_Variable) == 0x000000, "Member 'NewsWidget_C_UpdateBorderColor::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateBorderColor, Temp_struct_Variable) == 0x000004, "Member 'NewsWidget_C_UpdateBorderColor::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateBorderColor, CallFunc_GetBorderColor_ReturnValue) == 0x000014, "Member 'NewsWidget_C_UpdateBorderColor::CallFunc_GetBorderColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_UpdateBorderColor, K2Node_Select_Default) == 0x000024, "Member 'NewsWidget_C_UpdateBorderColor::K2Node_Select_Default' has a wrong offset!");
-
-// Function NewsWidget.NewsWidget_C.RequestPageChange
-// 0x0038 (0x0038 - 0x0000)
-struct NewsWidget_C_RequestPageChange final
-{
-public:
-	bool                                          Left;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E83[0x2];                                      // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_2;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E84[0x2];                                      // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E85[0x3];                                      // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetNumItems_ReturnValue_1;                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue_1;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E86[0x3];                                      // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select_Default_1;                           // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default_2;                           // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(NewsWidget_C_RequestPageChange) == 0x000004, "Wrong alignment on NewsWidget_C_RequestPageChange");
-static_assert(sizeof(NewsWidget_C_RequestPageChange) == 0x000038, "Wrong size on NewsWidget_C_RequestPageChange");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, Left) == 0x000000, "Member 'NewsWidget_C_RequestPageChange::Left' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, Temp_bool_Variable) == 0x000001, "Member 'NewsWidget_C_RequestPageChange::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, Temp_int_Variable) == 0x000004, "Member 'NewsWidget_C_RequestPageChange::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, Temp_bool_Variable_1) == 0x000008, "Member 'NewsWidget_C_RequestPageChange::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, Temp_bool_Variable_2) == 0x000009, "Member 'NewsWidget_C_RequestPageChange::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_GetNumItems_ReturnValue) == 0x00000C, "Member 'NewsWidget_C_RequestPageChange::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_GetCurrentItemIndex_ReturnValue) == 0x000010, "Member 'NewsWidget_C_RequestPageChange::CallFunc_GetCurrentItemIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'NewsWidget_C_RequestPageChange::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000018, "Member 'NewsWidget_C_RequestPageChange::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_GetNumItems_ReturnValue_1) == 0x00001C, "Member 'NewsWidget_C_RequestPageChange::CallFunc_GetNumItems_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_GetCurrentItemIndex_ReturnValue_1) == 0x000020, "Member 'NewsWidget_C_RequestPageChange::CallFunc_GetCurrentItemIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, K2Node_Select_Default) == 0x000024, "Member 'NewsWidget_C_RequestPageChange::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000028, "Member 'NewsWidget_C_RequestPageChange::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, K2Node_Select_Default_1) == 0x00002C, "Member 'NewsWidget_C_RequestPageChange::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, CallFunc_Subtract_IntInt_ReturnValue) == 0x000030, "Member 'NewsWidget_C_RequestPageChange::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsWidget_C_RequestPageChange, K2Node_Select_Default_2) == 0x000034, "Member 'NewsWidget_C_RequestPageChange::K2Node_Select_Default_2' has a wrong offset!");
 
 }
 

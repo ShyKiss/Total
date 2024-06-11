@@ -45,7 +45,7 @@ class URawInputSettings final : public UDeveloperSettings
 public:
 	TArray<struct FRawInputDeviceConfiguration>   DeviceConfigurations;                              // 0x0038(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	bool                                          bRegisterDefaultDevice;                            // 0x0048(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1151[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10C2[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

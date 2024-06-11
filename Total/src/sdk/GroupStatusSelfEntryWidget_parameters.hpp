@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "OPP_structs.hpp"
 
 
 namespace SDK::Params
@@ -30,17 +30,17 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3035[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E81[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3036[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E82[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetMaxDisplayNameLength_ReturnValue;      // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_FormatPlayerDisplayName_formatedDisplayName; // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
 	class FString                                 CallFunc_FormatPlayerDisplayName_formatedDisplayName_1; // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0060(0x0018)()
 	bool                                          CallFunc_IsPartyOwner_ReturnValue;                 // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3037[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E83[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsSpeaking_ReturnValue;                   // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -52,13 +52,13 @@ public:
 	bool                                          CallFunc_IsVoiceChatConnected_ReturnValue;         // 0x008F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3038[0x6];                                     // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E84[0x6];                                     // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         CallFunc_GetPlayerState_ReturnValue;               // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue;          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BP_HasAcquiredActiveSkill_ReturnValue;    // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3039[0x5];                                     // 0x00AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E85[0x5];                                     // 0x00AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBSAS*                                 CallFunc_GetCurrentSAS_ReturnValue;                // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -123,7 +123,7 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0000(0x0028)()
 	EActiveSkillType                              CallFunc_GetActiveSkillType_ReturnValue;           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_303A[0x6];                                     // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E86[0x6];                                     // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FActiveSkillCommonParams               CallFunc_GetActiveSkillCommonParams_ReturnValue;   // 0x0030(0x0078)(ConstParm)
 };
 static_assert(alignof(GroupStatusSelfEntryWidget_C_SetupCharacterClass) == 0x000008, "Wrong alignment on GroupStatusSelfEntryWidget_C_SetupCharacterClass");

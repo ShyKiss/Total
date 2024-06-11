@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "ObjectiveWidgetBase_classes.hpp"
 #include "UMG_structs.hpp"
+#include "ObjectiveWidgetBase_classes.hpp"
 
 
 namespace SDK
@@ -41,10 +41,10 @@ public:
 	class UImage*                                 ProgressGlow;                                      // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               ProgressSizeBox;                                   // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          IsMakingPositiveProgress;                          // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E1D[0x3];                                     // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2646[0x3];                                     // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ProgressBarWidth;                                  // 0x03BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TargetProgress;                                    // 0x03C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E1E[0x4];                                     // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2647[0x4];                                     // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               ObjectiveIconMaterial;                             // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           PositiveProgressTimerHandle;                       // 0x03D0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         LastPositiveProgressTimestamp;                     // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -58,11 +58,11 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void Construct();
 	void Finished_8A3EC16D4EBA343192A93F85CA6E35E3();
-	void GetFadeInAnimation(class UWidgetAnimation** FadeInAnimation);
 	void SetIsMakingPositiveProgress(bool Param_IsMakingPositiveProgress);
 	void SetProgressRatio(float Ratio);
-	void Initialize(class ARBBaseObjectiveCoordinator* Coordinator);
 	void UpdateIntermediateObjectives();
+	void GetFadeInAnimation(class UWidgetAnimation** FadeInAnimation);
+	void Initialize(class ARBBaseObjectiveCoordinator* Coordinator);
 	void GetRemoveAnimation(class UWidgetAnimation** Param_RemoveAnimation);
 
 public:

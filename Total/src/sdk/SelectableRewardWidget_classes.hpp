@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
 #include "Engine_structs.hpp"
+#include "OPP_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -31,7 +31,7 @@ public:
 	bool                                          bFocused;                                          // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bHovered;                                          // 0x0281(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bIsGamepad;                                        // 0x0282(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EE3[0x5];                                     // 0x0283(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D2A[0x5];                                     // 0x0283(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnHovered;                                         // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnUnhovered;                                       // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FRewardUIData                          Reward;                                            // 0x02A8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)

@@ -23,7 +23,7 @@ class ARBMainMenuGameMode_BP_C final : public ARBGameModeMainMenu
 public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          CheckRequiredXP;                                   // 0x0448(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3185[0x7];                                     // 0x0449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3180[0x7];                                     // 0x0449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             CheckRequiredXPChanged;                            // 0x0450(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:

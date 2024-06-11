@@ -23,7 +23,7 @@ namespace SDK
 class UNightVision_Goggle_AnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2BCE[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A92[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_1;                  // 0x02F8(0x0028)()
@@ -37,7 +37,7 @@ public:
 	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x0540(0x00B0)()
 	class ARBPlayer_BP_C*                         Player;                                            // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         NVAnimTime;                                        // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2BCF[0x4];                                     // 0x05FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A93[0x4];                                     // 0x05FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequenceBase*                      AnimSequence;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bMoving;                                           // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bIsDown;                                           // 0x0609(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)

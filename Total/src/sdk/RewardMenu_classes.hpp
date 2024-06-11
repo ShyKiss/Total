@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -54,7 +54,7 @@ public:
 	int32                                         ProgressionAnimationXp;                            // 0x03E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ProgressionLevelUpRewardIndex;                     // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bPlayingScoreLinesSound;                           // 0x03EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F14[0x3];                                     // 0x03ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D2C[0x3];                                     // 0x03ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TimeUntilNextProgressionAnimation;                 // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

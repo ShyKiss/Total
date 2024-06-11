@@ -71,10 +71,10 @@ struct ModularSynthComponent_CreatePatch final
 {
 public:
 	ESynth1PatchSource                            PatchSource;                                       // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F1[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1355[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSynth1PatchCable>              PatchCables;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bEnableByDefault;                                  // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F2[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1356[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPatchId                               ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ModularSynthComponent_CreatePatch) == 0x000008, "Wrong alignment on ModularSynthComponent_CreatePatch");
@@ -92,7 +92,7 @@ public:
 	float                                         Note;                                              // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllNotesOff;                                      // 0x0004(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bKillAllNotes;                                     // 0x0005(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F3[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1357[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ModularSynthComponent_NoteOff) == 0x000004, "Wrong alignment on ModularSynthComponent_NoteOff");
 static_assert(sizeof(ModularSynthComponent_NoteOff) == 0x000008, "Wrong size on ModularSynthComponent_NoteOff");
@@ -200,7 +200,7 @@ public:
 	struct FPatchId                               PatchId;                                           // 0x0000(0x0004)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bIsEnabled;                                        // 0x0004(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F4[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1358[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ModularSynthComponent_SetEnablePatch) == 0x000004, "Wrong alignment on ModularSynthComponent_SetEnablePatch");
 static_assert(sizeof(ModularSynthComponent_SetEnablePatch) == 0x000008, "Wrong size on ModularSynthComponent_SetEnablePatch");
@@ -377,7 +377,7 @@ struct ModularSynthComponent_SetLFOMode final
 public:
 	int32                                         LFOIndex;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESynthLFOMode                                 LFOMode;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F5[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1359[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ModularSynthComponent_SetLFOMode) == 0x000004, "Wrong alignment on ModularSynthComponent_SetLFOMode");
 static_assert(sizeof(ModularSynthComponent_SetLFOMode) == 0x000008, "Wrong size on ModularSynthComponent_SetLFOMode");
@@ -391,7 +391,7 @@ struct ModularSynthComponent_SetLFOPatch final
 public:
 	int32                                         LFOIndex;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESynthLFOPatchType                            LFOPatchType;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F6[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_135A[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ModularSynthComponent_SetLFOPatch) == 0x000004, "Wrong alignment on ModularSynthComponent_SetLFOPatch");
 static_assert(sizeof(ModularSynthComponent_SetLFOPatch) == 0x000008, "Wrong size on ModularSynthComponent_SetLFOPatch");
@@ -405,7 +405,7 @@ struct ModularSynthComponent_SetLFOType final
 public:
 	int32                                         LFOIndex;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESynthLFOType                                 LFOType;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F7[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_135B[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ModularSynthComponent_SetLFOType) == 0x000004, "Wrong alignment on ModularSynthComponent_SetLFOType");
 static_assert(sizeof(ModularSynthComponent_SetLFOType) == 0x000008, "Wrong size on ModularSynthComponent_SetLFOType");
@@ -620,7 +620,7 @@ struct ModularSynthComponent_SetOscType final
 public:
 	int32                                         OscIndex;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESynth1OscType                                OscType;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F8[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_135C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ModularSynthComponent_SetOscType) == 0x000004, "Wrong alignment on ModularSynthComponent_SetOscType");
 static_assert(sizeof(ModularSynthComponent_SetOscType) == 0x000008, "Wrong size on ModularSynthComponent_SetOscType");
@@ -1452,7 +1452,7 @@ struct GranularSynth_NoteOff final
 public:
 	float                                         Note;                                              // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bKill;                                             // 0x0004(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1414[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1378[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GranularSynth_NoteOff) == 0x000004, "Wrong alignment on GranularSynth_NoteOff");
 static_assert(sizeof(GranularSynth_NoteOff) == 0x000008, "Wrong size on GranularSynth_NoteOff");
@@ -1600,7 +1600,7 @@ public:
 	float                                         InPositionSec;                                     // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LerpTimeSec;                                       // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGranularSynthSeekType                        SeekType;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1415[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1379[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GranularSynth_SetPlayheadTime) == 0x000004, "Wrong alignment on GranularSynth_SetPlayheadTime");
 static_assert(sizeof(GranularSynth_SetPlayheadTime) == 0x00000C, "Wrong size on GranularSynth_SetPlayheadTime");
@@ -1838,10 +1838,10 @@ struct SynthComponentMonoWaveTable_SetCurveInterpolationType final
 {
 public:
 	ECurveInterpolationType                       InterpolationType;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_141A[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_137E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TableIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_141B[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_137F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SynthComponentMonoWaveTable_SetCurveInterpolationType) == 0x000004, "Wrong alignment on SynthComponentMonoWaveTable_SetCurveInterpolationType");
 static_assert(sizeof(SynthComponentMonoWaveTable_SetCurveInterpolationType) == 0x00000C, "Wrong size on SynthComponentMonoWaveTable_SetCurveInterpolationType");
@@ -1857,7 +1857,7 @@ public:
 	int32                                         TableIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InNewTangent;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_141C[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1380[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SynthComponentMonoWaveTable_SetCurveTangent) == 0x000004, "Wrong alignment on SynthComponentMonoWaveTable_SetCurveTangent");
 static_assert(sizeof(SynthComponentMonoWaveTable_SetCurveTangent) == 0x00000C, "Wrong size on SynthComponentMonoWaveTable_SetCurveTangent");
@@ -1874,7 +1874,7 @@ public:
 	int32                                         KeyframeIndex;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NewValue;                                          // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_141D[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1381[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SynthComponentMonoWaveTable_SetCurveValue) == 0x000004, "Wrong alignment on SynthComponentMonoWaveTable_SetCurveValue");
 static_assert(sizeof(SynthComponentMonoWaveTable_SetCurveValue) == 0x000010, "Wrong size on SynthComponentMonoWaveTable_SetCurveValue");
@@ -2164,7 +2164,7 @@ struct SynthComponentMonoWaveTable_GetKeyFrameValuesForTable final
 {
 public:
 	float                                         TableIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_141E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1382[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SynthComponentMonoWaveTable_GetKeyFrameValuesForTable) == 0x000008, "Wrong alignment on SynthComponentMonoWaveTable_GetKeyFrameValuesForTable");
@@ -2213,7 +2213,7 @@ public:
 	float                                         TimeSec;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESamplePlayerSeekType                         SeekType;                                          // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWrap;                                             // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1421[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1385[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SynthSamplePlayer_SeekToTime) == 0x000004, "Wrong alignment on SynthSamplePlayer_SeekToTime");
 static_assert(sizeof(SynthSamplePlayer_SeekToTime) == 0x000008, "Wrong size on SynthSamplePlayer_SeekToTime");

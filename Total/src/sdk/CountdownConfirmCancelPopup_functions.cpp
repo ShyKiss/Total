@@ -59,6 +59,46 @@ void UCountdownConfirmCancelPopup_C::Tick(const struct FGeometry& MyGeometry, fl
 }
 
 
+// Function CountdownConfirmCancelPopup.CountdownConfirmCancelPopup_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UCountdownConfirmCancelPopup_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CountdownConfirmCancelPopup_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CountdownConfirmCancelPopup.CountdownConfirmCancelPopup_C.Event_InitializePopup
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// class FText                             TitleText                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FText                             MainText                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FText                             ConfirmText                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FText                             CancelText                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UCountdownConfirmCancelPopup_C::Event_InitializePopup(const class FText& TitleText, const class FText& MainText, const class FText& ConfirmText, const class FText& CancelText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CountdownConfirmCancelPopup_C", "Event_InitializePopup");
+
+	Params::CountdownConfirmCancelPopup_C_Event_InitializePopup Parms{};
+
+	Parms.TitleText = std::move(TitleText);
+	Parms.MainText = std::move(MainText);
+	Parms.ConfirmText = std::move(ConfirmText);
+	Parms.CancelText = std::move(CancelText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function CountdownConfirmCancelPopup.CountdownConfirmCancelPopup_C.StartCountdown
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -108,46 +148,6 @@ void UCountdownConfirmCancelPopup_C::Update_Countdown_Text(int32 Countdown)
 	Params::CountdownConfirmCancelPopup_C_Update_Countdown_Text Parms{};
 
 	Parms.Countdown = Countdown;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function CountdownConfirmCancelPopup.CountdownConfirmCancelPopup_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UCountdownConfirmCancelPopup_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CountdownConfirmCancelPopup_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function CountdownConfirmCancelPopup.CountdownConfirmCancelPopup_C.Event_InitializePopup
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// class FText                             TitleText                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class FText                             MainText                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class FText                             ConfirmText                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class FText                             CancelText                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UCountdownConfirmCancelPopup_C::Event_InitializePopup(const class FText& TitleText, const class FText& MainText, const class FText& ConfirmText, const class FText& CancelText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CountdownConfirmCancelPopup_C", "Event_InitializePopup");
-
-	Params::CountdownConfirmCancelPopup_C_Event_InitializePopup Parms{};
-
-	Parms.TitleText = std::move(TitleText);
-	Parms.MainText = std::move(MainText);
-	Parms.ConfirmText = std::move(ConfirmText);
-	Parms.CancelText = std::move(CancelText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -32,11 +32,11 @@ public:
 	class UAkAudioBank*                           RequiredBank;                                      // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxAttenuationRadius;                              // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsInfinite;                                        // 0x0034(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122B[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1190[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MinimumDuration;                                   // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaximumDuration;                                   // 0x003C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ForceSyncPrepare;                                  // 0x0040(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122C[0x7];                                     // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1191[0x7];                                     // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -63,10 +63,10 @@ class AAkAcousticPortal final : public AVolume
 {
 public:
 	EAkAcousticPortalState                        InitialState;                                      // 0x0268(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122D[0x3];                                     // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1192[0x3];                                     // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ObstructionRefreshInterval;                        // 0x026C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECollisionChannel                             ObstructionCollisionChannel;                       // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122E[0x9F];                                    // 0x0271(0x009F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1193[0x9F];                                    // 0x0271(0x009F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClosePortal();
@@ -96,16 +96,16 @@ class UAkComponent : public USceneComponent
 {
 public:
 	bool                                          bUseSpatialAudio;                                  // 0x0208(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122F[0x7];                                     // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1194[0x7];                                     // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAuxBus*                              EarlyReflectionAuxBus;                             // 0x0210(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 EarlyReflectionAuxBusName;                         // 0x0218(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         EarlyReflectionOrder;                              // 0x0228(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EarlyReflectionBusSendGain;                        // 0x022C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EarlyReflectionMaxPathLength;                      // 0x0230(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECollisionChannel                             OcclusionCollisionChannel;                         // 0x0234(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1230[0x7];                                     // 0x0235(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1195[0x7];                                     // 0x0235(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         EnableSpotReflectors : 1;                          // 0x023C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1231[0x3];                                     // 0x023D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1196[0x3];                                     // 0x023D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RoomReverbAuxBusGain;                              // 0x0240(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         DiffractionMaxEdges;                               // 0x0244(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         DiffractionMaxPaths;                               // 0x0248(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -114,16 +114,16 @@ public:
 	uint8                                         DrawSecondOrderReflections : 1;                    // 0x0250(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         DrawHigherOrderReflections : 1;                    // 0x0250(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         DrawDiffraction : 1;                               // 0x0250(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1232[0x3];                                     // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1197[0x3];                                     // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          StopWhenOwnerDestroyed;                            // 0x0254(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1233[0x3];                                     // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1198[0x3];                                     // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         AttenuationScalingFactor;                          // 0x0258(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OcclusionRefreshInterval;                          // 0x025C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseReverbVolumes;                                 // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1234[0x7];                                     // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1199[0x7];                                     // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAudioEvent*                          AkAudioEvent;                                      // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 EventName;                                         // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1235[0x110];                                   // 0x0280(0x0110)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_119A[0x110];                                   // 0x0280(0x0110)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GetRTPCValue(const class FString& RTPC, int32 PlayingId, ERTPCValueType InputValueType, float* Value, ERTPCValueType* OutputValueType);
@@ -219,7 +219,7 @@ public:
 	class UAkComponent*                           AkComponent;                                       // 0x0238(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          StopWhenOwnerIsDestroyed;                          // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, SimpleDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AutoPost;                                          // 0x0241(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, SimpleDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1240[0x2E];                                    // 0x0242(0x002E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A5[0x2E];                                    // 0x0242(0x002E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void StartAmbientSound();
@@ -250,7 +250,7 @@ public:
 	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings;                                    // 0x0028(0x0068)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings;                             // 0x0090(0x0028)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FAkAndroidAdvancedInitializationSettings AdvancedSettings;                                  // 0x00B8(0x003C)(Edit, Config, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1241[0x4];                                     // 0x00F4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A6[0x4];                                     // 0x00F4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -274,7 +274,7 @@ class UAkAudioBank final : public UObject
 {
 public:
 	bool                                          AutoLoad;                                          // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1242[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A7[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -295,7 +295,7 @@ static_assert(offsetof(UAkAudioBank, AutoLoad) == 0x000028, "Member 'UAkAudioBan
 class UAkAudioInputComponent final : public UAkComponent
 {
 public:
-	uint8                                         Pad_1243[0x10];                                    // 0x0390(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A8[0x10];                                    // 0x0390(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	int32 PostAssociatedAudioInputEvent();
@@ -319,7 +319,7 @@ class UAkAuxBus final : public UObject
 {
 public:
 	class UAkAudioBank*                           RequiredBank;                                      // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1244[0x8];                                     // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A9[0x8];                                     // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -340,21 +340,21 @@ static_assert(offsetof(UAkAuxBus, RequiredBank) == 0x000028, "Member 'UAkAuxBus:
 class UAkCheckBox final : public UContentWidget
 {
 public:
-	uint8                                         Pad_1245[0x340];                                   // 0x0120(0x0340)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11AA[0x340];                                   // 0x0120(0x0340)(Fixing Size After Last Property [ Dumper-7 ])
 	ECheckBoxState                                CheckedState;                                      // 0x0460(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1246[0x3];                                     // 0x0461(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11AB[0x3];                                     // 0x0461(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             CheckedStateDelegate;                              // 0x0464(0x0010)(ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1247[0x4];                                     // 0x0474(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11AC[0x4];                                     // 0x0474(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FCheckBoxStyle                         WidgetStyle;                                       // 0x0478(0x0580)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	EHorizontalAlignment                          HorizontalAlignment;                               // 0x09F8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsFocusable;                                       // 0x09F9(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1248[0x6];                                     // 0x09FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11AD[0x6];                                     // 0x09FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAkBoolPropertyToControl               ThePropertyToControl;                              // 0x0A00(0x0010)(Edit, NativeAccessSpecifierPublic)
 	struct FAkWwiseItemToControl                  ItemToControl;                                     // 0x0A10(0x0040)(Edit, Config, EditConst, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             AkOnCheckStateChanged;                             // 0x0A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnItemDropped;                                     // 0x0A60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPropertyDropped;                                 // 0x0A70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1249[0x50];                                    // 0x0A80(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11AE[0x50];                                    // 0x0A80(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetAkBoolProperty(const class FString& ItemProperty);
@@ -511,7 +511,7 @@ static_assert(offsetof(UAkEventCallbackInfo, EventId) == 0x000034, "Member 'UAkE
 class UAkMIDIEventCallbackInfo final : public UAkEventCallbackInfo
 {
 public:
-	uint8                                         Pad_1270[0x10];                                    // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D5[0x10];                                    // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool GetCc(struct FAkMidiCc* AsCc);
@@ -573,7 +573,7 @@ public:
 	int32                                         AudioNodeID;                                       // 0x0040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MediaID;                                           // 0x0044(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStreaming;                                        // 0x0048(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1272[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D7[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -601,7 +601,7 @@ public:
 	int32                                         PlayingId;                                         // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAkSegmentInfo                         SegmentInfo;                                       // 0x0034(0x0024)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 	EAkCallbackType                               MusicSyncType;                                     // 0x0058(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1273[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D8[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 UserCueName;                                       // 0x0060(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -628,10 +628,10 @@ class UAkIOSInitializationSettings final : public UObject
 public:
 	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings;                                    // 0x0028(0x0068)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FAkAudioSession                        AudioSession;                                      // 0x0090(0x000C)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1274[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D9[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings;                             // 0x00A0(0x0028)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FAkAdvancedInitializationSettings      AdvancedSettings;                                  // 0x00C8(0x0034)(Edit, Config, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1275[0x4];                                     // 0x00FC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11DA[0x4];                                     // 0x00FC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -678,7 +678,7 @@ class UAkItemBoolProperties final : public UWidget
 public:
 	FMulticastInlineDelegateProperty_             OnSelectionChanged;                                // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPropertyDragged;                                 // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1276[0x20];                                    // 0x0128(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11DB[0x20];                                    // 0x0128(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetSearchText(const class FString& NewText);
@@ -729,7 +729,7 @@ class UAkItemProperties final : public UWidget
 public:
 	FMulticastInlineDelegateProperty_             OnSelectionChanged;                                // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPropertyDragged;                                 // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1277[0x20];                                    // 0x0128(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11DC[0x20];                                    // 0x0128(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetSearchText(const class FString& NewText);
@@ -758,15 +758,15 @@ class UAkLateReverbComponent final : public USceneComponent
 {
 public:
 	uint8                                         bEnable : 1;                                       // 0x0208(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1278[0x7];                                     // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11DD[0x7];                                     // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAuxBus*                              AuxBus;                                            // 0x0210(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 AuxBusName;                                        // 0x0218(0x0010)(Edit, BlueprintVisible, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SendLevel;                                         // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FadeRate;                                          // 0x022C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Priority;                                          // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1279[0x4];                                     // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11DE[0x4];                                     // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkLateReverbComponent*                 NextLowerPriorityComponent;                        // 0x0238(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_127A[0x10];                                    // 0x0240(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11DF[0x10];                                    // 0x0240(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -895,7 +895,7 @@ public:
 	struct FAkCommonInitializationSettings        CommonSettings;                                    // 0x0028(0x0060)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings;                             // 0x0088(0x0028)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FAkPS5AdvancedInitializationSettings   AdvancedSettings;                                  // 0x00B0(0x003C)(Edit, Config, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         Pad_127B[0x4];                                     // 0x00EC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E0[0x4];                                     // 0x00EC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -936,13 +936,13 @@ class AAkReverbVolume final : public AVolume
 {
 public:
 	uint8                                         bEnabled : 1;                                      // 0x0268(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Deprecated, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_127C[0x7];                                     // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E1[0x7];                                     // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAuxBus*                              AuxBus;                                            // 0x0270(0x0008)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 AuxBusName;                                        // 0x0278(0x0010)(ZeroConstructor, Deprecated, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SendLevel;                                         // 0x0288(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FadeRate;                                          // 0x028C(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Priority;                                          // 0x0290(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_127D[0x4];                                     // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E2[0x4];                                     // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkLateReverbComponent*                 LateReverbComponent;                               // 0x0298(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -970,11 +970,11 @@ class UAkRoomComponent final : public USceneComponent
 {
 public:
 	uint8                                         bEnable : 1;                                       // 0x0208(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_127E[0x7];                                     // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E3[0x7];                                     // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkRoomComponent*                       NextLowerPriorityComponent;                        // 0x0210(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Priority;                                          // 0x0218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WallOcclusion;                                     // 0x021C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_127F[0x10];                                    // 0x0220(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E4[0x10];                                    // 0x0220(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -998,7 +998,7 @@ class UAkSettings final : public UObject
 {
 public:
 	uint8                                         MaxSimultaneousReverbVolumes;                      // 0x0028(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1280[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E5[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFilePath                              WwiseProjectPath;                                  // 0x0030(0x0010)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FDirectoryPath                         WwiseSoundBankFolder;                              // 0x0040(0x0010)(Edit, Config, NativeAccessSpecifierPublic)
 	bool                                          bAutoConnectToWAAPI;                               // 0x0050(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1006,11 +1006,11 @@ public:
 	ECollisionChannel                             DefaultOcclusionCollisionChannel;                  // 0x0052(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnableMultiCoreRendering;                         // 0x0053(0x0001)(ZeroConstructor, Config, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          MigratedEnableMultiCoreRendering;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1281[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E6[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDirectoryPath                         WwiseWindowsInstallationPath;                      // 0x0058(0x0010)(Config, Deprecated, NativeAccessSpecifierPublic)
 	struct FFilePath                              WwiseMacInstallationPath;                          // 0x0068(0x0010)(Config, Deprecated, NativeAccessSpecifierPublic)
 	TArray<class FString>                         BanksContainingMedia;                              // 0x0078(0x0010)(ZeroConstructor, Config, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1282[0x40];                                    // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E7[0x40];                                    // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1046,7 +1046,7 @@ public:
 	class FString                                 WaapiIPAddress;                                    // 0x0048(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        WaapiPort;                                         // 0x0058(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          SuppressWwiseProjectPathWarnings;                  // 0x005C(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1283[0x3];                                     // 0x005D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E8[0x3];                                     // 0x005D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1073,24 +1073,24 @@ class UAkSlider final : public UWidget
 public:
 	float                                         Value;                                             // 0x0108(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void()>                             ValueDelegate;                                     // 0x010C(0x0010)(ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1284[0x4];                                     // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E9[0x4];                                     // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSliderStyle                           WidgetStyle;                                       // 0x0120(0x0340)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	EOrientation                                  Orientation;                                       // 0x0460(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1285[0x3];                                     // 0x0461(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11EA[0x3];                                     // 0x0461(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           SliderBarColor;                                    // 0x0464(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           SliderHandleColor;                                 // 0x0474(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IndentHandle;                                      // 0x0484(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Locked;                                            // 0x0485(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1286[0x2];                                     // 0x0486(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11EB[0x2];                                     // 0x0486(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         StepSize;                                          // 0x0488(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsFocusable;                                       // 0x048C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1287[0x3];                                     // 0x048D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11EC[0x3];                                     // 0x048D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAkPropertyToControl                   ThePropertyToControl;                              // 0x0490(0x0010)(Edit, EditConst, NativeAccessSpecifierPublic)
 	struct FAkWwiseItemToControl                  ItemToControl;                                     // 0x04A0(0x0040)(Edit, Config, EditConst, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnValueChanged;                                    // 0x04E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnItemDropped;                                     // 0x04F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPropertyDropped;                                 // 0x0500(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1288[0x20];                                    // 0x0510(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11ED[0x20];                                    // 0x0510(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetAkSliderItemId(const struct FGuid& ItemId);
@@ -1169,7 +1169,7 @@ public:
 	class UAkAcousticTexture*                     AcousticTexture;                                   // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DistanceScalingFactor;                             // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Level;                                             // 0x0254(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1289[0x8];                                     // 0x0258(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11EE[0x8];                                     // 0x0258(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1195,13 +1195,13 @@ class UAkSurfaceReflectorSetComponent final : public USceneComponent
 {
 public:
 	uint8                                         bEnableSurfaceReflectors : 1;                      // 0x0208(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_128A[0x7];                                     // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11EF[0x7];                                     // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAkPoly>                        AcousticPolys;                                     // 0x0210(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         bEnableDiffraction : 1;                            // 0x0220(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bEnableDiffractionOnBoundaryEdges : 1;             // 0x0220(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_128B[0x7];                                     // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F0[0x7];                                     // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 AssociatedRoom;                                    // 0x0228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_128C[0x10];                                    // 0x0230(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F1[0x10];                                    // 0x0230(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void RemoveSurfaceReflectorSet();
@@ -1359,7 +1359,7 @@ public:
 	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings;                                    // 0x0028(0x0068)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings;                             // 0x0090(0x0028)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FAkWindowsAdvancedInitializationSettings AdvancedSettings;                                  // 0x00B8(0x0044)(Edit, Config, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1298[0x4];                                     // 0x00FC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11FD[0x4];                                     // 0x00FC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1384,7 +1384,7 @@ class UAkWwiseTree final : public UWidget
 public:
 	FMulticastInlineDelegateProperty_             OnSelectionChanged;                                // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnItemDragged;                                     // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1299[0x20];                                    // 0x0128(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11FE[0x20];                                    // 0x0128(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetSearchText(const class FString& NewText);
@@ -1414,7 +1414,7 @@ class UAkWwiseTreeSelector final : public UWidget
 public:
 	FMulticastInlineDelegateProperty_             OnSelectionChanged;                                // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnItemDragged;                                     // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_129A[0x40];                                    // 0x0128(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11FF[0x40];                                    // 0x0128(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1465,7 +1465,7 @@ class UInterpTrackAkAudioEvent final : public UInterpTrackVectorBase
 public:
 	TArray<struct FAkAudioEventTrackKey>          Events;                                            // 0x0090(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         bContinueEventOnMatineeEnd : 1;                    // 0x00A0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_129B[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1200[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1489,7 +1489,7 @@ public:
 	class FString                                 Param;                                             // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bPlayOnReverse : 1;                                // 0x00A0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bContinueRTPCOnMatineeEnd : 1;                     // 0x00A0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_129C[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1201[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1511,7 +1511,7 @@ class UInterpTrackInstAkAudioEvent final : public UInterpTrackInst
 {
 public:
 	float                                         LastUpdatePosition;                                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_129D[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1202[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1533,7 +1533,7 @@ class UInterpTrackInstAkAudioRTPC final : public UInterpTrackInst
 {
 public:
 	float                                         LastUpdatePosition;                                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_129E[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1203[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1554,19 +1554,19 @@ static_assert(offsetof(UInterpTrackInstAkAudioRTPC, LastUpdatePosition) == 0x000
 class UMovieSceneAkAudioEventSection final : public UMovieSceneSection
 {
 public:
-	uint8                                         Pad_129F[0x40];                                    // 0x00E8(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1204[0x40];                                    // 0x00E8(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAudioEvent*                          Event;                                             // 0x0128(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          RetriggerEvent;                                    // 0x0130(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_12A0[0x3];                                     // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1205[0x3];                                     // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ScrubTailLengthMs;                                 // 0x0134(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          StopAtSectionEnd;                                  // 0x0138(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_12A1[0x7];                                     // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1206[0x7];                                     // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EventName;                                         // 0x0140(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_12A2[0x20];                                    // 0x0150(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1207[0x20];                                    // 0x0150(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaxSourceDuration;                                 // 0x0170(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_12A3[0x4];                                     // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1208[0x4];                                     // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 MaxDurationSourceID;                               // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_12A4[0x48];                                    // 0x0188(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1209[0x48];                                    // 0x0188(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1595,7 +1595,7 @@ class UMovieSceneAkTrack : public UMovieSceneTrack
 public:
 	TArray<class UMovieSceneSection*>             Sections;                                          // 0x0090(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	uint8                                         bIsAMasterTrack : 1;                               // 0x00A0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_12A5[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_120A[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1616,7 +1616,7 @@ static_assert(offsetof(UMovieSceneAkTrack, Sections) == 0x000090, "Member 'UMovi
 class UMovieSceneAkAudioEventTrack final : public UMovieSceneAkTrack
 {
 public:
-	uint8                                         Pad_12A6[0x8];                                     // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_120B[0x8];                                     // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1639,7 +1639,7 @@ public:
 	class FString                                 Name_MovieSceneAkAudioRTPCSection;                 // 0x00E8(0x0010)(Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FRichCurve                             FloatCurve;                                        // 0x00F8(0x0080)(Protected, NativeAccessSpecifierProtected)
 	struct FMovieSceneFloatChannelSerializationHelper FloatChannelSerializationHelper;                   // 0x0178(0x0030)(Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12A7[0xA0];                                    // 0x01A8(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_120C[0xA0];                                    // 0x01A8(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1662,7 +1662,7 @@ static_assert(offsetof(UMovieSceneAkAudioRTPCSection, FloatChannelSerializationH
 class UMovieSceneAkAudioRTPCTrack final : public UMovieSceneAkTrack
 {
 public:
-	uint8                                         Pad_12A8[0x8];                                     // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_120D[0x8];                                     // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

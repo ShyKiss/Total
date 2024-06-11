@@ -21,8 +21,8 @@ int main(int argc, char* argv[]) {
 
     HRSRC hResource = FindResource(NULL, MAKEINTRESOURCE(IDR_DLL1), "DLL");
     HGLOBAL hGlobal = LoadResource(NULL, hResource);
-    DWORD exeSiz = SizeofResource(NULL, hResource);
-    void* exeBuf = LockResource(hGlobal);
+    DWORD dllSize = SizeofResource(NULL, hResource);
+    void* dllBuffer = LockResource(hGlobal);
 
     char tempPath[MAX_PATH] = { };
     if (!GetTempPathA(MAX_PATH, pathtemp))
@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
     if (!outfile.is_open( ))
         return 6;
 
-    int res = (outfile.write((char*)exeBuf, exeSiz)) ? 0 : 7;
+    int res = (outfile.write((char*)dllBuffer, dllSize)) ? 0 : 7;
     outfile.close( );
 
     GetFullPathName(name_of_dll, MAX_PATH, path, NULL); // Нахождение патча, где находится инъектор

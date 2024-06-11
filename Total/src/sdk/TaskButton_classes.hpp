@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
 #include "Engine_structs.hpp"
+#include "OPP_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -42,13 +42,13 @@ public:
 	class UTextBlock*                             Title;                                             // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bFocused;                                          // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bHovered;                                          // 0x02E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F5F[0x6];                                     // 0x02E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D5A[0x6];                                     // 0x02E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bIsGamepad;                                        // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F60[0x7];                                     // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D5B[0x7];                                     // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBTaskMenuEntry                       Entry;                                             // 0x0300(0x01B0)(Edit, BlueprintVisible)
 	bool                                          bMenuCanConsume;                                   // 0x04B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F61[0x3];                                     // 0x04B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D5C[0x3];                                     // 0x04B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBTaskProgressionEntry                Progression;                                       // 0x04B4(0x0018)(Edit, BlueprintVisible, NoDestructor)
 
 public:

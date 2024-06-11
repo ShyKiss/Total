@@ -17,145 +17,77 @@
 namespace SDK
 {
 
-// Function NewsWidget.NewsWidget_C.NewsUpdated__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UNewsWidget_C::NewsUpdated__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "NewsUpdated__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function NewsWidget.NewsWidget_C.ExecuteUbergraph_NewsWidget
-// (Final, UbergraphFunction, HasDefaults)
+// Function NewsWidget.NewsWidget_C.RequestPageChange
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Left                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UNewsWidget_C::ExecuteUbergraph_NewsWidget(int32 EntryPoint)
+void UNewsWidget_C::RequestPageChange(bool Left)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "ExecuteUbergraph_NewsWidget");
+		Func = Class->GetFunction("NewsWidget_C", "RequestPageChange");
 
-	Params::NewsWidget_C_ExecuteUbergraph_NewsWidget Parms{};
+	Params::NewsWidget_C_RequestPageChange Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Left = Left;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function NewsWidget.NewsWidget_C.PressCTAInput
-// (BlueprintCallable, BlueprintEvent)
+// Function NewsWidget.NewsWidget_C.UpdateBorderColor
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UNewsWidget_C::PressCTAInput()
+void UNewsWidget_C::UpdateBorderColor()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "PressCTAInput");
+		Func = Class->GetFunction("NewsWidget_C", "UpdateBorderColor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function NewsWidget.NewsWidget_C.Event_Refresh
-// (Event, Public, BlueprintEvent)
+// Function NewsWidget.NewsWidget_C.UpdateDots
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UNewsWidget_C::Event_Refresh()
+void UNewsWidget_C::UpdateDots()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "Event_Refresh");
+		Func = Class->GetFunction("NewsWidget_C", "UpdateDots");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function NewsWidget.NewsWidget_C.Event_NextItem
-// (Event, Public, BlueprintEvent)
-
-void UNewsWidget_C::Event_NextItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "Event_NextItem");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function NewsWidget.NewsWidget_C.OnDotButtonClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UNewsWidget_C::OnDotButtonClicked(int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "OnDotButtonClicked");
-
-	Params::NewsWidget_C_OnDotButtonClicked Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function NewsWidget.NewsWidget_C.OnFocusLost
+// Function NewsWidget.NewsWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// struct FFocusEvent                      InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UNewsWidget_C::OnFocusLost(const struct FFocusEvent& InFocusEvent)
+void UNewsWidget_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "OnFocusLost");
-
-	Params::NewsWidget_C_OnFocusLost Parms{};
-
-	Parms.InFocusEvent = std::move(InFocusEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function NewsWidget.NewsWidget_C.BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UNewsWidget_C::BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature");
+		Func = Class->GetFunction("NewsWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function NewsWidget.NewsWidget_C.BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature
+// Function NewsWidget.NewsWidget_C.BndEvt__Button_69_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UNewsWidget_C::BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature()
+void UNewsWidget_C::BndEvt__Button_69_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
+		Func = Class->GetFunction("NewsWidget_C", "BndEvt__Button_69_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,79 +113,147 @@ void UNewsWidget_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function NewsWidget.NewsWidget_C.BndEvt__Button_69_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// Function NewsWidget.NewsWidget_C.BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UNewsWidget_C::BndEvt__Button_69_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+void UNewsWidget_C::BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "BndEvt__Button_69_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("NewsWidget_C", "BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function NewsWidget.NewsWidget_C.Construct
+// Function NewsWidget.NewsWidget_C.BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UNewsWidget_C::BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NewsWidget_C", "BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function NewsWidget.NewsWidget_C.OnFocusLost
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UNewsWidget_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function NewsWidget.NewsWidget_C.UpdateDots
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UNewsWidget_C::UpdateDots()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "UpdateDots");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function NewsWidget.NewsWidget_C.UpdateBorderColor
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UNewsWidget_C::UpdateBorderColor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "UpdateBorderColor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function NewsWidget.NewsWidget_C.RequestPageChange
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Left                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FFocusEvent                      InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UNewsWidget_C::RequestPageChange(bool Left)
+void UNewsWidget_C::OnFocusLost(const struct FFocusEvent& InFocusEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidget_C", "RequestPageChange");
+		Func = Class->GetFunction("NewsWidget_C", "OnFocusLost");
 
-	Params::NewsWidget_C_RequestPageChange Parms{};
+	Params::NewsWidget_C_OnFocusLost Parms{};
 
-	Parms.Left = Left;
+	Parms.InFocusEvent = std::move(InFocusEvent);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function NewsWidget.NewsWidget_C.OnDotButtonClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UNewsWidget_C::OnDotButtonClicked(int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NewsWidget_C", "OnDotButtonClicked");
+
+	Params::NewsWidget_C_OnDotButtonClicked Parms{};
+
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function NewsWidget.NewsWidget_C.Event_NextItem
+// (Event, Public, BlueprintEvent)
+
+void UNewsWidget_C::Event_NextItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NewsWidget_C", "Event_NextItem");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function NewsWidget.NewsWidget_C.Event_Refresh
+// (Event, Public, BlueprintEvent)
+
+void UNewsWidget_C::Event_Refresh()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NewsWidget_C", "Event_Refresh");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function NewsWidget.NewsWidget_C.PressCTAInput
+// (BlueprintCallable, BlueprintEvent)
+
+void UNewsWidget_C::PressCTAInput()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NewsWidget_C", "PressCTAInput");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function NewsWidget.NewsWidget_C.ExecuteUbergraph_NewsWidget
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UNewsWidget_C::ExecuteUbergraph_NewsWidget(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NewsWidget_C", "ExecuteUbergraph_NewsWidget");
+
+	Params::NewsWidget_C_ExecuteUbergraph_NewsWidget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function NewsWidget.NewsWidget_C.NewsUpdated__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UNewsWidget_C::NewsUpdated__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NewsWidget_C", "NewsUpdated__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

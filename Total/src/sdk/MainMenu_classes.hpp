@@ -27,7 +27,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class ARBMainMenuPlayerController*            MainMenuController;                                // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsMusicPlaying;                                    // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30CE[0x7];                                     // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A4B[0x7];                                     // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBinkMediaPlayer*                       BinkMovieMinus01;                                  // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBinkMediaPlayer*                       BinkOldMovieMinus01;                               // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBinkMediaPlayer*                       BinkMovieMinus02;                                  // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_classes.hpp"
 
@@ -50,7 +50,7 @@ public:
 	struct FSlateColor                            InvisibleColor;                                    // 0x03D8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                            FailureColor;                                      // 0x0400(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsLoading;                                         // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3160[0x7];                                     // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_315D[0x7];                                     // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            SuccessMessageColor;                               // 0x0430(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FString                                 FindMatchSuccessMessage;                           // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class FString                                 JoinGameSessionSucceededMessage;                   // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
@@ -58,10 +58,10 @@ public:
 	class FString                                 FindHubSuccessMessage;                             // 0x0488(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          bIsConnecting;                                     // 0x0498(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bConnected;                                        // 0x0499(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3161[0x6];                                     // 0x049A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_315E[0x6];                                     // 0x049A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                LastFocusedButton;                                 // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InstallationPercent;                               // 0x04A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3162[0x4];                                     // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_315F[0x4];                                     // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   EnterFacilityText;                                 // 0x04B0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class ARBMainMenuPlayerController*            Main_Menu_Controller;                              // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNewsFocus_C*                           NewsFocusWidget;                                   // 0x04D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

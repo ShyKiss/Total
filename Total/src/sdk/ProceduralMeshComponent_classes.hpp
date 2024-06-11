@@ -53,15 +53,15 @@ static_assert(sizeof(UKismetProceduralMeshLibrary) == 0x000028, "Wrong size on U
 class UProceduralMeshComponent final : public UMeshComponent
 {
 public:
-	uint8                                         Pad_F83[0x8];                                      // 0x04A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F03[0x8];                                      // 0x04A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bUseComplexAsSimpleCollision;                      // 0x04B0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseAsyncCooking;                                  // 0x04B1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F84[0x6];                                      // 0x04B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F04[0x6];                                      // 0x04B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBodySetup*                             ProcMeshBodySetup;                                 // 0x04B8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FProcMeshSection>               ProcMeshSections;                                  // 0x04C0(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<struct FKConvexElem>                   CollisionConvexElems;                              // 0x04D0(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FBoxSphereBounds                       LocalBounds;                                       // 0x04E0(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_F85[0x4];                                      // 0x04FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F05[0x4];                                      // 0x04FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UBodySetup*>                     AsyncBodySetupQueue;                               // 0x0500(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
 
 public:

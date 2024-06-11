@@ -16,6 +16,7 @@ C:\Users\Beerymaid\source\repos\Total\Total\src\dependencies\minhook\hde\hde64.c
 C:\Users\Beerymaid\source\repos\Total\Total\src\dependencies\minhook\hook.c;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\hook.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\dependencies\minhook\trampoline.c;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\trampoline.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\dllmain.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\dllmain.obj
+C:\Users\Beerymaid\source\repos\Total\Total\src\hooks\backend\dx11\hook_directx11.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\hook_directx11.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\hooks\backend\dx12\hook_directx12.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\hook_directx12.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\hooks\hooks.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\hooks.obj
 C:\Users\Beerymaid\source\repos\Total\Total\src\menu\menu.cpp;C:\Users\Beerymaid\source\repos\Total\Total\obj\Release x64\menu.obj

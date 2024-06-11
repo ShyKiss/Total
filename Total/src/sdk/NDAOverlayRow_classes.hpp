@@ -21,7 +21,7 @@ namespace SDK
 class UNDAOverlayRow_C final : public UUserWidget
 {
 public:
-	class UHorizontalBox*                         Hbox;                                              // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HBox;                                              // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -35,7 +35,7 @@ public:
 };
 static_assert(alignof(UNDAOverlayRow_C) == 0x000008, "Wrong alignment on UNDAOverlayRow_C");
 static_assert(sizeof(UNDAOverlayRow_C) == 0x000268, "Wrong size on UNDAOverlayRow_C");
-static_assert(offsetof(UNDAOverlayRow_C, Hbox) == 0x000260, "Member 'UNDAOverlayRow_C::Hbox' has a wrong offset!");
+static_assert(offsetof(UNDAOverlayRow_C, HBox) == 0x000260, "Member 'UNDAOverlayRow_C::HBox' has a wrong offset!");
 
 }
 

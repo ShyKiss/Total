@@ -45,25 +45,25 @@ public:
 	EHorizontalAlignment                          TextHorizontalAlignment;                           // 0x0371(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EVerticalAlignment                            TextVerticalAlignment;                             // 0x0372(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bHovered;                                          // 0x0373(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E75[0x4];                                      // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2BFB[0x4];                                     // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             NewsUpdated;                                       // 0x0378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void NewsUpdated__DelegateSignature();
-	void ExecuteUbergraph_NewsWidget(int32 EntryPoint);
-	void PressCTAInput();
-	void Event_Refresh();
-	void Event_NextItem();
-	void OnDotButtonClicked(int32 Param_Index);
-	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
-	void BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
-	void BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
-	void PreConstruct(bool IsDesignTime);
-	void BndEvt__Button_69_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void Construct();
-	void UpdateDots();
-	void UpdateBorderColor();
 	void RequestPageChange(bool Left);
+	void UpdateBorderColor();
+	void UpdateDots();
+	void Construct();
+	void BndEvt__Button_69_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void PreConstruct(bool IsDesignTime);
+	void BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__NewsWidget_CTA_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
+	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
+	void OnDotButtonClicked(int32 Param_Index);
+	void Event_NextItem();
+	void Event_Refresh();
+	void PressCTAInput();
+	void ExecuteUbergraph_NewsWidget(int32 EntryPoint);
+	void NewsUpdated__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

@@ -17,6 +17,40 @@
 namespace SDK
 {
 
+// Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.ExecuteUbergraph_Cine_Futterman_AnimBP
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UCine_Futterman_AnimBP_C::ExecuteUbergraph_Cine_Futterman_AnimBP(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cine_Futterman_AnimBP_C", "ExecuteUbergraph_Cine_Futterman_AnimBP");
+
+	Params::Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_AnimBP Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.BlueprintInitializeAnimation
+// (Event, Public, BlueprintEvent)
+
+void UCine_Futterman_AnimBP_C::BlueprintInitializeAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cine_Futterman_AnimBP_C", "BlueprintInitializeAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -35,40 +69,6 @@ void UCine_Futterman_AnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
 
 	if (Param_AnimGraph != nullptr)
 		*Param_AnimGraph = std::move(Parms.Param_AnimGraph);
-}
-
-
-// Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.BlueprintInitializeAnimation
-// (Event, Public, BlueprintEvent)
-
-void UCine_Futterman_AnimBP_C::BlueprintInitializeAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cine_Futterman_AnimBP_C", "BlueprintInitializeAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.ExecuteUbergraph_Cine_Futterman_AnimBP
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UCine_Futterman_AnimBP_C::ExecuteUbergraph_Cine_Futterman_AnimBP(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cine_Futterman_AnimBP_C", "ExecuteUbergraph_Cine_Futterman_AnimBP");
-
-	Params::Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_AnimBP Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

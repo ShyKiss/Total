@@ -42,7 +42,7 @@ public:
 	class UGeometryCollection*                    GeometryCollection;                                // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UGeometryCollection*                    OriginalGeometryCollection;                        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         GeometryCollectionLODIndex;                        // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1333[0x9C];                                    // 0x003C(0x009C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1298[0x9C];                                    // 0x003C(0x009C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -65,14 +65,14 @@ static_assert(offsetof(UEditableGeometryCollectionAdapter, GeometryCollectionLOD
 class UEditableMesh final : public UObject
 {
 public:
-	uint8                                         Pad_1334[0x390];                                   // 0x0028(0x0390)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1299[0x390];                                   // 0x0028(0x0390)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UEditableMeshAdapter*>           Adapters;                                          // 0x03B8(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1335[0x8];                                     // 0x03C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129A[0x8];                                     // 0x03C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TextureCoordinateCount;                            // 0x03D0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1336[0x148];                                   // 0x03D4(0x0148)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129B[0x148];                                   // 0x03D4(0x0148)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PendingCompactCounter;                             // 0x051C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SubdivisionCount;                                  // 0x0520(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1337[0x1E4];                                   // 0x0524(0x01E4)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129C[0x1E4];                                   // 0x0524(0x01E4)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static struct FEdgeID InvalidEdgeID();
@@ -252,7 +252,7 @@ public:
 	class UStaticMesh*                            StaticMesh;                                        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UStaticMesh*                            OriginalStaticMesh;                                // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         StaticMeshLODIndex;                                // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_135D[0xA4];                                    // 0x003C(0x00A4)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12C2[0xA4];                                    // 0x003C(0x00A4)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

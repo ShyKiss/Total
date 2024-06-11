@@ -440,7 +440,7 @@ struct alignas(0x08) FSlateColor final
 public:
 	struct FLinearColor                           SpecifiedColor;                                    // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	ESlateColorStylingMode                        ColorUseRule;                                      // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_26C0[0x17];                                    // 0x0011(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2622[0x17];                                    // 0x0011(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSlateColor) == 0x000008, "Wrong alignment on FSlateColor");
 static_assert(sizeof(FSlateColor) == 0x000028, "Wrong size on FSlateColor");
@@ -452,7 +452,7 @@ static_assert(offsetof(FSlateColor, ColorUseRule) == 0x000010, "Member 'FSlateCo
 struct alignas(0x04) FGeometry final
 {
 public:
-	uint8                                         Pad_26C1[0x38];                                    // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2623[0x38];                                    // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGeometry) == 0x000004, "Wrong alignment on FGeometry");
 static_assert(sizeof(FGeometry) == 0x000038, "Wrong size on FGeometry");
@@ -479,7 +479,7 @@ static_assert(offsetof(FMargin, Bottom) == 0x00000C, "Member 'FMargin::Bottom' h
 struct FSlateBrush final
 {
 public:
-	uint8                                         Pad_26C2[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2624[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              ImageSize;                                         // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMargin                                Margin;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSlateColor                            TintColor;                                         // 0x0020(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
@@ -490,10 +490,10 @@ public:
 	ESlateBrushTileType                           Tiling;                                            // 0x006D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESlateBrushMirrorType                         Mirroring;                                         // 0x006E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESlateBrushImageType                          ImageType;                                         // 0x006F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26C3[0x10];                                    // 0x0070(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2625[0x10];                                    // 0x0070(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bIsDynamicallyLoaded : 1;                          // 0x0080(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bHasUObject : 1;                                   // 0x0080(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Deprecated, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_26C4[0x7];                                     // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2626[0x7];                                     // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSlateBrush) == 0x000008, "Wrong alignment on FSlateBrush");
 static_assert(sizeof(FSlateBrush) == 0x000088, "Wrong size on FSlateBrush");
@@ -516,7 +516,7 @@ public:
 	int32                                         OutlineSize;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSeparateFillAlpha;                                // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bApplyOutlineToDropShadows;                        // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26C5[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2627[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                OutlineMaterial;                                   // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           OutlineColor;                                      // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -533,7 +533,7 @@ static_assert(offsetof(FFontOutlineSettings, OutlineColor) == 0x000010, "Member 
 struct alignas(0x08) FInputEvent
 {
 public:
-	uint8                                         Pad_26C6[0x18];                                    // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2628[0x18];                                    // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FInputEvent) == 0x000008, "Wrong alignment on FInputEvent");
 static_assert(sizeof(FInputEvent) == 0x000018, "Wrong size on FInputEvent");
@@ -543,7 +543,7 @@ static_assert(sizeof(FInputEvent) == 0x000018, "Wrong size on FInputEvent");
 struct FCharacterEvent final : public FInputEvent
 {
 public:
-	uint8                                         Pad_26C7[0x8];                                     // 0x0018(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2629[0x8];                                     // 0x0018(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCharacterEvent) == 0x000008, "Wrong alignment on FCharacterEvent");
 static_assert(sizeof(FCharacterEvent) == 0x000020, "Wrong size on FCharacterEvent");
@@ -553,10 +553,26 @@ static_assert(sizeof(FCharacterEvent) == 0x000020, "Wrong size on FCharacterEven
 struct alignas(0x08) FSlateWidgetStyle
 {
 public:
-	uint8                                         Pad_26C8[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_262A[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSlateWidgetStyle) == 0x000008, "Wrong alignment on FSlateWidgetStyle");
 static_assert(sizeof(FSlateWidgetStyle) == 0x000008, "Wrong size on FSlateWidgetStyle");
+
+// ScriptStruct SlateCore.ExpandableAreaStyle
+// 0x0118 (0x0120 - 0x0008)
+struct FExpandableAreaStyle final : public FSlateWidgetStyle
+{
+public:
+	struct FSlateBrush                            CollapsedImage;                                    // 0x0008(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ExpandedImage;                                     // 0x0090(0x0088)(Edit, NativeAccessSpecifierPublic)
+	float                                         RolloutAnimationSeconds;                           // 0x0118(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_262B[0x4];                                     // 0x011C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FExpandableAreaStyle) == 0x000008, "Wrong alignment on FExpandableAreaStyle");
+static_assert(sizeof(FExpandableAreaStyle) == 0x000120, "Wrong size on FExpandableAreaStyle");
+static_assert(offsetof(FExpandableAreaStyle, CollapsedImage) == 0x000008, "Member 'FExpandableAreaStyle::CollapsedImage' has a wrong offset!");
+static_assert(offsetof(FExpandableAreaStyle, ExpandedImage) == 0x000090, "Member 'FExpandableAreaStyle::ExpandedImage' has a wrong offset!");
+static_assert(offsetof(FExpandableAreaStyle, RolloutAnimationSeconds) == 0x000118, "Member 'FExpandableAreaStyle::RolloutAnimationSeconds' has a wrong offset!");
 
 // ScriptStruct SlateCore.ProgressBarStyle
 // 0x0198 (0x01A0 - 0x0008)
@@ -573,6 +589,109 @@ static_assert(offsetof(FProgressBarStyle, BackgroundImage) == 0x000008, "Member 
 static_assert(offsetof(FProgressBarStyle, FillImage) == 0x000090, "Member 'FProgressBarStyle::FillImage' has a wrong offset!");
 static_assert(offsetof(FProgressBarStyle, MarqueeImage) == 0x000118, "Member 'FProgressBarStyle::MarqueeImage' has a wrong offset!");
 
+// ScriptStruct SlateCore.PointerEvent
+// 0x0058 (0x0070 - 0x0018)
+struct FPointerEvent final : public FInputEvent
+{
+public:
+	uint8                                         Pad_262C[0x58];                                    // 0x0018(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FPointerEvent) == 0x000008, "Wrong alignment on FPointerEvent");
+static_assert(sizeof(FPointerEvent) == 0x000070, "Wrong size on FPointerEvent");
+
+// ScriptStruct SlateCore.TableRowStyle
+// 0x07C0 (0x07C8 - 0x0008)
+struct FTableRowStyle final : public FSlateWidgetStyle
+{
+public:
+	struct FSlateBrush                            SelectorFocusedBrush;                              // 0x0008(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ActiveHoveredBrush;                                // 0x0090(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ActiveBrush;                                       // 0x0118(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            InactiveHoveredBrush;                              // 0x01A0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            InactiveBrush;                                     // 0x0228(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            EvenRowBackgroundHoveredBrush;                     // 0x02B0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            EvenRowBackgroundBrush;                            // 0x0338(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            OddRowBackgroundHoveredBrush;                      // 0x03C0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            OddRowBackgroundBrush;                             // 0x0448(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor;                                         // 0x04D0(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedTextColor;                                 // 0x04F8(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            DropIndicator_Above;                               // 0x0520(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            DropIndicator_Onto;                                // 0x05A8(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            DropIndicator_Below;                               // 0x0630(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ActiveHighlightedBrush;                            // 0x06B8(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            InactiveHighlightedBrush;                          // 0x0740(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FTableRowStyle) == 0x000008, "Wrong alignment on FTableRowStyle");
+static_assert(sizeof(FTableRowStyle) == 0x0007C8, "Wrong size on FTableRowStyle");
+static_assert(offsetof(FTableRowStyle, SelectorFocusedBrush) == 0x000008, "Member 'FTableRowStyle::SelectorFocusedBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, ActiveHoveredBrush) == 0x000090, "Member 'FTableRowStyle::ActiveHoveredBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, ActiveBrush) == 0x000118, "Member 'FTableRowStyle::ActiveBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, InactiveHoveredBrush) == 0x0001A0, "Member 'FTableRowStyle::InactiveHoveredBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, InactiveBrush) == 0x000228, "Member 'FTableRowStyle::InactiveBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, EvenRowBackgroundHoveredBrush) == 0x0002B0, "Member 'FTableRowStyle::EvenRowBackgroundHoveredBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, EvenRowBackgroundBrush) == 0x000338, "Member 'FTableRowStyle::EvenRowBackgroundBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, OddRowBackgroundHoveredBrush) == 0x0003C0, "Member 'FTableRowStyle::OddRowBackgroundHoveredBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, OddRowBackgroundBrush) == 0x000448, "Member 'FTableRowStyle::OddRowBackgroundBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, TextColor) == 0x0004D0, "Member 'FTableRowStyle::TextColor' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, SelectedTextColor) == 0x0004F8, "Member 'FTableRowStyle::SelectedTextColor' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, DropIndicator_Above) == 0x000520, "Member 'FTableRowStyle::DropIndicator_Above' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, DropIndicator_Onto) == 0x0005A8, "Member 'FTableRowStyle::DropIndicator_Onto' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, DropIndicator_Below) == 0x000630, "Member 'FTableRowStyle::DropIndicator_Below' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, ActiveHighlightedBrush) == 0x0006B8, "Member 'FTableRowStyle::ActiveHighlightedBrush' has a wrong offset!");
+static_assert(offsetof(FTableRowStyle, InactiveHighlightedBrush) == 0x000740, "Member 'FTableRowStyle::InactiveHighlightedBrush' has a wrong offset!");
+
+// ScriptStruct SlateCore.KeyEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FKeyEvent : public FInputEvent
+{
+public:
+	uint8                                         Pad_262D[0x20];                                    // 0x0018(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FKeyEvent) == 0x000008, "Wrong alignment on FKeyEvent");
+static_assert(sizeof(FKeyEvent) == 0x000038, "Wrong size on FKeyEvent");
+
+// ScriptStruct SlateCore.MotionEvent
+// 0x0030 (0x0048 - 0x0018)
+struct FMotionEvent final : public FInputEvent
+{
+public:
+	uint8                                         Pad_262E[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FMotionEvent) == 0x000008, "Wrong alignment on FMotionEvent");
+static_assert(sizeof(FMotionEvent) == 0x000048, "Wrong size on FMotionEvent");
+
+// ScriptStruct SlateCore.SlateSound
+// 0x0018 (0x0018 - 0x0000)
+struct FSlateSound final
+{
+public:
+	class UObject*                                ResourceObject;                                    // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_262F[0x10];                                    // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FSlateSound) == 0x000008, "Wrong alignment on FSlateSound");
+static_assert(sizeof(FSlateSound) == 0x000018, "Wrong size on FSlateSound");
+static_assert(offsetof(FSlateSound, ResourceObject) == 0x000000, "Member 'FSlateSound::ResourceObject' has a wrong offset!");
+
+// ScriptStruct SlateCore.NavigationEvent
+// 0x0008 (0x0020 - 0x0018)
+struct FNavigationEvent final : public FInputEvent
+{
+public:
+	uint8                                         Pad_2630[0x8];                                     // 0x0018(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FNavigationEvent) == 0x000008, "Wrong alignment on FNavigationEvent");
+static_assert(sizeof(FNavigationEvent) == 0x000020, "Wrong size on FNavigationEvent");
+
+// ScriptStruct SlateCore.AnalogInputEvent
+// 0x0008 (0x0040 - 0x0038)
+struct FAnalogInputEvent final : public FKeyEvent
+{
+public:
+	uint8                                         Pad_2631[0x8];                                     // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAnalogInputEvent) == 0x000008, "Wrong alignment on FAnalogInputEvent");
+static_assert(sizeof(FAnalogInputEvent) == 0x000040, "Wrong size on FAnalogInputEvent");
+
 // ScriptStruct SlateCore.SlateFontInfo
 // 0x0058 (0x0058 - 0x0000)
 struct FSlateFontInfo final
@@ -581,11 +700,11 @@ public:
 	class UObject*                                FontObject;                                        // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                FontMaterial;                                      // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFontOutlineSettings                   OutlineSettings;                                   // 0x0010(0x0020)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26C9[0x10];                                    // 0x0030(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2632[0x10];                                    // 0x0030(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   TypefaceFontName;                                  // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Size;                                              // 0x0048(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LetterSpacing;                                     // 0x004C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26CA[0x8];                                     // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2633[0x8];                                     // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSlateFontInfo) == 0x000008, "Wrong alignment on FSlateFontInfo");
 static_assert(sizeof(FSlateFontInfo) == 0x000058, "Wrong size on FSlateFontInfo");
@@ -656,164 +775,31 @@ static_assert(offsetof(FEditableTextBoxStyle, HScrollBarPadding) == 0x000308, "M
 static_assert(offsetof(FEditableTextBoxStyle, VScrollBarPadding) == 0x000318, "Member 'FEditableTextBoxStyle::VScrollBarPadding' has a wrong offset!");
 static_assert(offsetof(FEditableTextBoxStyle, ScrollBarStyle) == 0x000328, "Member 'FEditableTextBoxStyle::ScrollBarStyle' has a wrong offset!");
 
-// ScriptStruct SlateCore.TextBlockStyle
-// 0x0268 (0x0270 - 0x0008)
-struct FTextBlockStyle final : public FSlateWidgetStyle
+// ScriptStruct SlateCore.SearchBoxStyle
+// 0x0A88 (0x0A90 - 0x0008)
+struct FSearchBoxStyle final : public FSlateWidgetStyle
 {
 public:
-	struct FSlateFontInfo                         Font;                                              // 0x0008(0x0058)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorAndOpacity;                                   // 0x0060(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FVector2D                              ShadowOffset;                                      // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ShadowColorAndOpacity;                             // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedBackgroundColor;                           // 0x00A0(0x0028)(Edit, NativeAccessSpecifierPublic)
-	struct FLinearColor                           HighlightColor;                                    // 0x00C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            HighlightShape;                                    // 0x00D8(0x0088)(Edit, BlueprintVisible, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            StrikeBrush;                                       // 0x0160(0x0088)(Edit, BlueprintVisible, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            UnderlineBrush;                                    // 0x01E8(0x0088)(Edit, BlueprintVisible, AdvancedDisplay, NativeAccessSpecifierPublic)
+	struct FEditableTextBoxStyle                  TextBoxStyle;                                      // 0x0008(0x07F8)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         ActiveFontInfo;                                    // 0x0800(0x0058)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            UpArrowImage;                                      // 0x0858(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            DownArrowImage;                                    // 0x08E0(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            GlassImage;                                        // 0x0968(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ClearImage;                                        // 0x09F0(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FMargin                                ImagePadding;                                      // 0x0A78(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bLeftAlignButtons;                                 // 0x0A88(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2634[0x7];                                     // 0x0A89(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTextBlockStyle) == 0x000008, "Wrong alignment on FTextBlockStyle");
-static_assert(sizeof(FTextBlockStyle) == 0x000270, "Wrong size on FTextBlockStyle");
-static_assert(offsetof(FTextBlockStyle, Font) == 0x000008, "Member 'FTextBlockStyle::Font' has a wrong offset!");
-static_assert(offsetof(FTextBlockStyle, ColorAndOpacity) == 0x000060, "Member 'FTextBlockStyle::ColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(FTextBlockStyle, ShadowOffset) == 0x000088, "Member 'FTextBlockStyle::ShadowOffset' has a wrong offset!");
-static_assert(offsetof(FTextBlockStyle, ShadowColorAndOpacity) == 0x000090, "Member 'FTextBlockStyle::ShadowColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(FTextBlockStyle, SelectedBackgroundColor) == 0x0000A0, "Member 'FTextBlockStyle::SelectedBackgroundColor' has a wrong offset!");
-static_assert(offsetof(FTextBlockStyle, HighlightColor) == 0x0000C8, "Member 'FTextBlockStyle::HighlightColor' has a wrong offset!");
-static_assert(offsetof(FTextBlockStyle, HighlightShape) == 0x0000D8, "Member 'FTextBlockStyle::HighlightShape' has a wrong offset!");
-static_assert(offsetof(FTextBlockStyle, StrikeBrush) == 0x000160, "Member 'FTextBlockStyle::StrikeBrush' has a wrong offset!");
-static_assert(offsetof(FTextBlockStyle, UnderlineBrush) == 0x0001E8, "Member 'FTextBlockStyle::UnderlineBrush' has a wrong offset!");
-
-// ScriptStruct SlateCore.InlineEditableTextBlockStyle
-// 0x0A68 (0x0A70 - 0x0008)
-struct FInlineEditableTextBlockStyle final : public FSlateWidgetStyle
-{
-public:
-	struct FEditableTextBoxStyle                  EditableTextBoxStyle;                              // 0x0008(0x07F8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FTextBlockStyle                        TextStyle;                                         // 0x0800(0x0270)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FInlineEditableTextBlockStyle) == 0x000008, "Wrong alignment on FInlineEditableTextBlockStyle");
-static_assert(sizeof(FInlineEditableTextBlockStyle) == 0x000A70, "Wrong size on FInlineEditableTextBlockStyle");
-static_assert(offsetof(FInlineEditableTextBlockStyle, EditableTextBoxStyle) == 0x000008, "Member 'FInlineEditableTextBlockStyle::EditableTextBoxStyle' has a wrong offset!");
-static_assert(offsetof(FInlineEditableTextBlockStyle, TextStyle) == 0x000800, "Member 'FInlineEditableTextBlockStyle::TextStyle' has a wrong offset!");
-
-// ScriptStruct SlateCore.PointerEvent
-// 0x0058 (0x0070 - 0x0018)
-struct FPointerEvent final : public FInputEvent
-{
-public:
-	uint8                                         Pad_26CB[0x58];                                    // 0x0018(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FPointerEvent) == 0x000008, "Wrong alignment on FPointerEvent");
-static_assert(sizeof(FPointerEvent) == 0x000070, "Wrong size on FPointerEvent");
-
-// ScriptStruct SlateCore.TableRowStyle
-// 0x07C0 (0x07C8 - 0x0008)
-struct FTableRowStyle final : public FSlateWidgetStyle
-{
-public:
-	struct FSlateBrush                            SelectorFocusedBrush;                              // 0x0008(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ActiveHoveredBrush;                                // 0x0090(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ActiveBrush;                                       // 0x0118(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            InactiveHoveredBrush;                              // 0x01A0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            InactiveBrush;                                     // 0x0228(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            EvenRowBackgroundHoveredBrush;                     // 0x02B0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            EvenRowBackgroundBrush;                            // 0x0338(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            OddRowBackgroundHoveredBrush;                      // 0x03C0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            OddRowBackgroundBrush;                             // 0x0448(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor;                                         // 0x04D0(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedTextColor;                                 // 0x04F8(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DropIndicator_Above;                               // 0x0520(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DropIndicator_Onto;                                // 0x05A8(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DropIndicator_Below;                               // 0x0630(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ActiveHighlightedBrush;                            // 0x06B8(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            InactiveHighlightedBrush;                          // 0x0740(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FTableRowStyle) == 0x000008, "Wrong alignment on FTableRowStyle");
-static_assert(sizeof(FTableRowStyle) == 0x0007C8, "Wrong size on FTableRowStyle");
-static_assert(offsetof(FTableRowStyle, SelectorFocusedBrush) == 0x000008, "Member 'FTableRowStyle::SelectorFocusedBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, ActiveHoveredBrush) == 0x000090, "Member 'FTableRowStyle::ActiveHoveredBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, ActiveBrush) == 0x000118, "Member 'FTableRowStyle::ActiveBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, InactiveHoveredBrush) == 0x0001A0, "Member 'FTableRowStyle::InactiveHoveredBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, InactiveBrush) == 0x000228, "Member 'FTableRowStyle::InactiveBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, EvenRowBackgroundHoveredBrush) == 0x0002B0, "Member 'FTableRowStyle::EvenRowBackgroundHoveredBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, EvenRowBackgroundBrush) == 0x000338, "Member 'FTableRowStyle::EvenRowBackgroundBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, OddRowBackgroundHoveredBrush) == 0x0003C0, "Member 'FTableRowStyle::OddRowBackgroundHoveredBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, OddRowBackgroundBrush) == 0x000448, "Member 'FTableRowStyle::OddRowBackgroundBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, TextColor) == 0x0004D0, "Member 'FTableRowStyle::TextColor' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, SelectedTextColor) == 0x0004F8, "Member 'FTableRowStyle::SelectedTextColor' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, DropIndicator_Above) == 0x000520, "Member 'FTableRowStyle::DropIndicator_Above' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, DropIndicator_Onto) == 0x0005A8, "Member 'FTableRowStyle::DropIndicator_Onto' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, DropIndicator_Below) == 0x000630, "Member 'FTableRowStyle::DropIndicator_Below' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, ActiveHighlightedBrush) == 0x0006B8, "Member 'FTableRowStyle::ActiveHighlightedBrush' has a wrong offset!");
-static_assert(offsetof(FTableRowStyle, InactiveHighlightedBrush) == 0x000740, "Member 'FTableRowStyle::InactiveHighlightedBrush' has a wrong offset!");
-
-// ScriptStruct SlateCore.KeyEvent
-// 0x0020 (0x0038 - 0x0018)
-struct FKeyEvent : public FInputEvent
-{
-public:
-	uint8                                         Pad_26CC[0x20];                                    // 0x0018(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FKeyEvent) == 0x000008, "Wrong alignment on FKeyEvent");
-static_assert(sizeof(FKeyEvent) == 0x000038, "Wrong size on FKeyEvent");
-
-// ScriptStruct SlateCore.MotionEvent
-// 0x0030 (0x0048 - 0x0018)
-struct FMotionEvent final : public FInputEvent
-{
-public:
-	uint8                                         Pad_26CD[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMotionEvent) == 0x000008, "Wrong alignment on FMotionEvent");
-static_assert(sizeof(FMotionEvent) == 0x000048, "Wrong size on FMotionEvent");
-
-// ScriptStruct SlateCore.SlateSound
-// 0x0018 (0x0018 - 0x0000)
-struct FSlateSound final
-{
-public:
-	class UObject*                                ResourceObject;                                    // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_26CE[0x10];                                    // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FSlateSound) == 0x000008, "Wrong alignment on FSlateSound");
-static_assert(sizeof(FSlateSound) == 0x000018, "Wrong size on FSlateSound");
-static_assert(offsetof(FSlateSound, ResourceObject) == 0x000000, "Member 'FSlateSound::ResourceObject' has a wrong offset!");
-
-// ScriptStruct SlateCore.NavigationEvent
-// 0x0008 (0x0020 - 0x0018)
-struct FNavigationEvent final : public FInputEvent
-{
-public:
-	uint8                                         Pad_26CF[0x8];                                     // 0x0018(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FNavigationEvent) == 0x000008, "Wrong alignment on FNavigationEvent");
-static_assert(sizeof(FNavigationEvent) == 0x000020, "Wrong size on FNavigationEvent");
-
-// ScriptStruct SlateCore.AnalogInputEvent
-// 0x0008 (0x0040 - 0x0038)
-struct FAnalogInputEvent final : public FKeyEvent
-{
-public:
-	uint8                                         Pad_26D0[0x8];                                     // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAnalogInputEvent) == 0x000008, "Wrong alignment on FAnalogInputEvent");
-static_assert(sizeof(FAnalogInputEvent) == 0x000040, "Wrong size on FAnalogInputEvent");
-
-// ScriptStruct SlateCore.ExpandableAreaStyle
-// 0x0118 (0x0120 - 0x0008)
-struct FExpandableAreaStyle final : public FSlateWidgetStyle
-{
-public:
-	struct FSlateBrush                            CollapsedImage;                                    // 0x0008(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ExpandedImage;                                     // 0x0090(0x0088)(Edit, NativeAccessSpecifierPublic)
-	float                                         RolloutAnimationSeconds;                           // 0x0118(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26D1[0x4];                                     // 0x011C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FExpandableAreaStyle) == 0x000008, "Wrong alignment on FExpandableAreaStyle");
-static_assert(sizeof(FExpandableAreaStyle) == 0x000120, "Wrong size on FExpandableAreaStyle");
-static_assert(offsetof(FExpandableAreaStyle, CollapsedImage) == 0x000008, "Member 'FExpandableAreaStyle::CollapsedImage' has a wrong offset!");
-static_assert(offsetof(FExpandableAreaStyle, ExpandedImage) == 0x000090, "Member 'FExpandableAreaStyle::ExpandedImage' has a wrong offset!");
-static_assert(offsetof(FExpandableAreaStyle, RolloutAnimationSeconds) == 0x000118, "Member 'FExpandableAreaStyle::RolloutAnimationSeconds' has a wrong offset!");
+static_assert(alignof(FSearchBoxStyle) == 0x000008, "Wrong alignment on FSearchBoxStyle");
+static_assert(sizeof(FSearchBoxStyle) == 0x000A90, "Wrong size on FSearchBoxStyle");
+static_assert(offsetof(FSearchBoxStyle, TextBoxStyle) == 0x000008, "Member 'FSearchBoxStyle::TextBoxStyle' has a wrong offset!");
+static_assert(offsetof(FSearchBoxStyle, ActiveFontInfo) == 0x000800, "Member 'FSearchBoxStyle::ActiveFontInfo' has a wrong offset!");
+static_assert(offsetof(FSearchBoxStyle, UpArrowImage) == 0x000858, "Member 'FSearchBoxStyle::UpArrowImage' has a wrong offset!");
+static_assert(offsetof(FSearchBoxStyle, DownArrowImage) == 0x0008E0, "Member 'FSearchBoxStyle::DownArrowImage' has a wrong offset!");
+static_assert(offsetof(FSearchBoxStyle, GlassImage) == 0x000968, "Member 'FSearchBoxStyle::GlassImage' has a wrong offset!");
+static_assert(offsetof(FSearchBoxStyle, ClearImage) == 0x0009F0, "Member 'FSearchBoxStyle::ClearImage' has a wrong offset!");
+static_assert(offsetof(FSearchBoxStyle, ImagePadding) == 0x000A78, "Member 'FSearchBoxStyle::ImagePadding' has a wrong offset!");
+static_assert(offsetof(FSearchBoxStyle, bLeftAlignButtons) == 0x000A88, "Member 'FSearchBoxStyle::bLeftAlignButtons' has a wrong offset!");
 
 // ScriptStruct SlateCore.ButtonStyle
 // 0x0270 (0x0278 - 0x0008)
@@ -895,50 +881,46 @@ static_assert(offsetof(FEditableTextStyle, BackgroundImageSelected) == 0x000088,
 static_assert(offsetof(FEditableTextStyle, BackgroundImageComposing) == 0x000110, "Member 'FEditableTextStyle::BackgroundImageComposing' has a wrong offset!");
 static_assert(offsetof(FEditableTextStyle, CaretImage) == 0x000198, "Member 'FEditableTextStyle::CaretImage' has a wrong offset!");
 
-// ScriptStruct SlateCore.SliderStyle
-// 0x0338 (0x0340 - 0x0008)
-struct FSliderStyle final : public FSlateWidgetStyle
+// ScriptStruct SlateCore.InlineTextImageStyle
+// 0x0090 (0x0098 - 0x0008)
+struct FInlineTextImageStyle final : public FSlateWidgetStyle
 {
 public:
-	struct FSlateBrush                            NormalBarImage;                                    // 0x0008(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            HoveredBarImage;                                   // 0x0090(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DisabledBarImage;                                  // 0x0118(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            NormalThumbImage;                                  // 0x01A0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            HoveredThumbImage;                                 // 0x0228(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DisabledThumbImage;                                // 0x02B0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         BarThickness;                                      // 0x0338(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26D2[0x4];                                     // 0x033C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Image;                                             // 0x0008(0x0088)(Edit, NativeAccessSpecifierPublic)
+	int16                                         Baseline;                                          // 0x0090(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2635[0x6];                                     // 0x0092(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSliderStyle) == 0x000008, "Wrong alignment on FSliderStyle");
-static_assert(sizeof(FSliderStyle) == 0x000340, "Wrong size on FSliderStyle");
-static_assert(offsetof(FSliderStyle, NormalBarImage) == 0x000008, "Member 'FSliderStyle::NormalBarImage' has a wrong offset!");
-static_assert(offsetof(FSliderStyle, HoveredBarImage) == 0x000090, "Member 'FSliderStyle::HoveredBarImage' has a wrong offset!");
-static_assert(offsetof(FSliderStyle, DisabledBarImage) == 0x000118, "Member 'FSliderStyle::DisabledBarImage' has a wrong offset!");
-static_assert(offsetof(FSliderStyle, NormalThumbImage) == 0x0001A0, "Member 'FSliderStyle::NormalThumbImage' has a wrong offset!");
-static_assert(offsetof(FSliderStyle, HoveredThumbImage) == 0x000228, "Member 'FSliderStyle::HoveredThumbImage' has a wrong offset!");
-static_assert(offsetof(FSliderStyle, DisabledThumbImage) == 0x0002B0, "Member 'FSliderStyle::DisabledThumbImage' has a wrong offset!");
-static_assert(offsetof(FSliderStyle, BarThickness) == 0x000338, "Member 'FSliderStyle::BarThickness' has a wrong offset!");
+static_assert(alignof(FInlineTextImageStyle) == 0x000008, "Wrong alignment on FInlineTextImageStyle");
+static_assert(sizeof(FInlineTextImageStyle) == 0x000098, "Wrong size on FInlineTextImageStyle");
+static_assert(offsetof(FInlineTextImageStyle, Image) == 0x000008, "Member 'FInlineTextImageStyle::Image' has a wrong offset!");
+static_assert(offsetof(FInlineTextImageStyle, Baseline) == 0x000090, "Member 'FInlineTextImageStyle::Baseline' has a wrong offset!");
 
-// ScriptStruct SlateCore.VolumeControlStyle
-// 0x05E8 (0x05F0 - 0x0008)
-struct FVolumeControlStyle final : public FSlateWidgetStyle
+// ScriptStruct SlateCore.TextBlockStyle
+// 0x0268 (0x0270 - 0x0008)
+struct FTextBlockStyle final : public FSlateWidgetStyle
 {
 public:
-	struct FSliderStyle                           SliderStyle;                                       // 0x0008(0x0340)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            HighVolumeImage;                                   // 0x0348(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            MidVolumeImage;                                    // 0x03D0(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            LowVolumeImage;                                    // 0x0458(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            NoVolumeImage;                                     // 0x04E0(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            MutedImage;                                        // 0x0568(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         Font;                                              // 0x0008(0x0058)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorAndOpacity;                                   // 0x0060(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FVector2D                              ShadowOffset;                                      // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ShadowColorAndOpacity;                             // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedBackgroundColor;                           // 0x00A0(0x0028)(Edit, NativeAccessSpecifierPublic)
+	struct FLinearColor                           HighlightColor;                                    // 0x00C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            HighlightShape;                                    // 0x00D8(0x0088)(Edit, BlueprintVisible, AdvancedDisplay, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            StrikeBrush;                                       // 0x0160(0x0088)(Edit, BlueprintVisible, AdvancedDisplay, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            UnderlineBrush;                                    // 0x01E8(0x0088)(Edit, BlueprintVisible, AdvancedDisplay, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FVolumeControlStyle) == 0x000008, "Wrong alignment on FVolumeControlStyle");
-static_assert(sizeof(FVolumeControlStyle) == 0x0005F0, "Wrong size on FVolumeControlStyle");
-static_assert(offsetof(FVolumeControlStyle, SliderStyle) == 0x000008, "Member 'FVolumeControlStyle::SliderStyle' has a wrong offset!");
-static_assert(offsetof(FVolumeControlStyle, HighVolumeImage) == 0x000348, "Member 'FVolumeControlStyle::HighVolumeImage' has a wrong offset!");
-static_assert(offsetof(FVolumeControlStyle, MidVolumeImage) == 0x0003D0, "Member 'FVolumeControlStyle::MidVolumeImage' has a wrong offset!");
-static_assert(offsetof(FVolumeControlStyle, LowVolumeImage) == 0x000458, "Member 'FVolumeControlStyle::LowVolumeImage' has a wrong offset!");
-static_assert(offsetof(FVolumeControlStyle, NoVolumeImage) == 0x0004E0, "Member 'FVolumeControlStyle::NoVolumeImage' has a wrong offset!");
-static_assert(offsetof(FVolumeControlStyle, MutedImage) == 0x000568, "Member 'FVolumeControlStyle::MutedImage' has a wrong offset!");
+static_assert(alignof(FTextBlockStyle) == 0x000008, "Wrong alignment on FTextBlockStyle");
+static_assert(sizeof(FTextBlockStyle) == 0x000270, "Wrong size on FTextBlockStyle");
+static_assert(offsetof(FTextBlockStyle, Font) == 0x000008, "Member 'FTextBlockStyle::Font' has a wrong offset!");
+static_assert(offsetof(FTextBlockStyle, ColorAndOpacity) == 0x000060, "Member 'FTextBlockStyle::ColorAndOpacity' has a wrong offset!");
+static_assert(offsetof(FTextBlockStyle, ShadowOffset) == 0x000088, "Member 'FTextBlockStyle::ShadowOffset' has a wrong offset!");
+static_assert(offsetof(FTextBlockStyle, ShadowColorAndOpacity) == 0x000090, "Member 'FTextBlockStyle::ShadowColorAndOpacity' has a wrong offset!");
+static_assert(offsetof(FTextBlockStyle, SelectedBackgroundColor) == 0x0000A0, "Member 'FTextBlockStyle::SelectedBackgroundColor' has a wrong offset!");
+static_assert(offsetof(FTextBlockStyle, HighlightColor) == 0x0000C8, "Member 'FTextBlockStyle::HighlightColor' has a wrong offset!");
+static_assert(offsetof(FTextBlockStyle, HighlightShape) == 0x0000D8, "Member 'FTextBlockStyle::HighlightShape' has a wrong offset!");
+static_assert(offsetof(FTextBlockStyle, StrikeBrush) == 0x000160, "Member 'FTextBlockStyle::StrikeBrush' has a wrong offset!");
+static_assert(offsetof(FTextBlockStyle, UnderlineBrush) == 0x0001E8, "Member 'FTextBlockStyle::UnderlineBrush' has a wrong offset!");
 
 // ScriptStruct SlateCore.SpinBoxStyle
 // 0x02E0 (0x02E8 - 0x0008)
@@ -968,7 +950,7 @@ static_assert(offsetof(FSpinBoxStyle, TextPadding) == 0x0002D8, "Member 'FSpinBo
 struct alignas(0x04) FFocusEvent final
 {
 public:
-	uint8                                         Pad_26D3[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2636[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FFocusEvent) == 0x000004, "Wrong alignment on FFocusEvent");
 static_assert(sizeof(FFocusEvent) == 0x000008, "Wrong size on FFocusEvent");
@@ -981,7 +963,7 @@ public:
 	class FString                                 FontFilename;                                      // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	EFontHinting                                  Hinting;                                           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	EFontLoadingPolicy                            LoadingPolicy;                                     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_26D4[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2637[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SubFaceIndex;                                      // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UObject*                                FontFaceAsset;                                     // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
@@ -1024,7 +1006,7 @@ struct FCompositeFallbackFont
 public:
 	struct FTypeface                              Typeface;                                          // 0x0000(0x0010)(NativeAccessSpecifierPublic)
 	float                                         ScalingFactor;                                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26D5[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2638[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCompositeFallbackFont) == 0x000008, "Wrong alignment on FCompositeFallbackFont");
 static_assert(sizeof(FCompositeFallbackFont) == 0x000018, "Wrong size on FCompositeFallbackFont");
@@ -1064,7 +1046,7 @@ static_assert(offsetof(FCompositeFont, SubTypefaces) == 0x000028, "Member 'FComp
 struct alignas(0x04) FCaptureLostEvent final
 {
 public:
-	uint8                                         Pad_26D6[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2639[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCaptureLostEvent) == 0x000004, "Wrong alignment on FCaptureLostEvent");
 static_assert(sizeof(FCaptureLostEvent) == 0x000008, "Wrong size on FCaptureLostEvent");
@@ -1152,7 +1134,7 @@ public:
 	struct FSlateBrush                            TabWellBrush;                                      // 0x0638(0x0088)(Edit, NativeAccessSpecifierPublic)
 	struct FMargin                                TabPadding;                                        // 0x06C0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         OverlapWidth;                                      // 0x06D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26D7[0x4];                                     // 0x06D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_263A[0x4];                                     // 0x06D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            FlashColor;                                        // 0x06D8(0x0028)(Edit, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FDockTabStyle) == 0x000008, "Wrong alignment on FDockTabStyle");
@@ -1229,45 +1211,63 @@ static_assert(offsetof(FHeaderRowStyle, ColumnSplitterStyle) == 0x0009A8, "Membe
 static_assert(offsetof(FHeaderRowStyle, BackgroundBrush) == 0x000AC0, "Member 'FHeaderRowStyle::BackgroundBrush' has a wrong offset!");
 static_assert(offsetof(FHeaderRowStyle, ForegroundColor) == 0x000B48, "Member 'FHeaderRowStyle::ForegroundColor' has a wrong offset!");
 
-// ScriptStruct SlateCore.InlineTextImageStyle
-// 0x0090 (0x0098 - 0x0008)
-struct FInlineTextImageStyle final : public FSlateWidgetStyle
+// ScriptStruct SlateCore.SliderStyle
+// 0x0338 (0x0340 - 0x0008)
+struct FSliderStyle final : public FSlateWidgetStyle
 {
 public:
-	struct FSlateBrush                            Image;                                             // 0x0008(0x0088)(Edit, NativeAccessSpecifierPublic)
-	int16                                         Baseline;                                          // 0x0090(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26D8[0x6];                                     // 0x0092(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            NormalBarImage;                                    // 0x0008(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            HoveredBarImage;                                   // 0x0090(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            DisabledBarImage;                                  // 0x0118(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            NormalThumbImage;                                  // 0x01A0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            HoveredThumbImage;                                 // 0x0228(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            DisabledThumbImage;                                // 0x02B0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         BarThickness;                                      // 0x0338(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_263B[0x4];                                     // 0x033C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInlineTextImageStyle) == 0x000008, "Wrong alignment on FInlineTextImageStyle");
-static_assert(sizeof(FInlineTextImageStyle) == 0x000098, "Wrong size on FInlineTextImageStyle");
-static_assert(offsetof(FInlineTextImageStyle, Image) == 0x000008, "Member 'FInlineTextImageStyle::Image' has a wrong offset!");
-static_assert(offsetof(FInlineTextImageStyle, Baseline) == 0x000090, "Member 'FInlineTextImageStyle::Baseline' has a wrong offset!");
+static_assert(alignof(FSliderStyle) == 0x000008, "Wrong alignment on FSliderStyle");
+static_assert(sizeof(FSliderStyle) == 0x000340, "Wrong size on FSliderStyle");
+static_assert(offsetof(FSliderStyle, NormalBarImage) == 0x000008, "Member 'FSliderStyle::NormalBarImage' has a wrong offset!");
+static_assert(offsetof(FSliderStyle, HoveredBarImage) == 0x000090, "Member 'FSliderStyle::HoveredBarImage' has a wrong offset!");
+static_assert(offsetof(FSliderStyle, DisabledBarImage) == 0x000118, "Member 'FSliderStyle::DisabledBarImage' has a wrong offset!");
+static_assert(offsetof(FSliderStyle, NormalThumbImage) == 0x0001A0, "Member 'FSliderStyle::NormalThumbImage' has a wrong offset!");
+static_assert(offsetof(FSliderStyle, HoveredThumbImage) == 0x000228, "Member 'FSliderStyle::HoveredThumbImage' has a wrong offset!");
+static_assert(offsetof(FSliderStyle, DisabledThumbImage) == 0x0002B0, "Member 'FSliderStyle::DisabledThumbImage' has a wrong offset!");
+static_assert(offsetof(FSliderStyle, BarThickness) == 0x000338, "Member 'FSliderStyle::BarThickness' has a wrong offset!");
 
-// ScriptStruct SlateCore.SearchBoxStyle
-// 0x0A88 (0x0A90 - 0x0008)
-struct FSearchBoxStyle final : public FSlateWidgetStyle
+// ScriptStruct SlateCore.VolumeControlStyle
+// 0x05E8 (0x05F0 - 0x0008)
+struct FVolumeControlStyle final : public FSlateWidgetStyle
 {
 public:
-	struct FEditableTextBoxStyle                  TextBoxStyle;                                      // 0x0008(0x07F8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         ActiveFontInfo;                                    // 0x0800(0x0058)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            UpArrowImage;                                      // 0x0858(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DownArrowImage;                                    // 0x08E0(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            GlassImage;                                        // 0x0968(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ClearImage;                                        // 0x09F0(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FMargin                                ImagePadding;                                      // 0x0A78(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bLeftAlignButtons;                                 // 0x0A88(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26D9[0x7];                                     // 0x0A89(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FSliderStyle                           SliderStyle;                                       // 0x0008(0x0340)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            HighVolumeImage;                                   // 0x0348(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            MidVolumeImage;                                    // 0x03D0(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            LowVolumeImage;                                    // 0x0458(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            NoVolumeImage;                                     // 0x04E0(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            MutedImage;                                        // 0x0568(0x0088)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSearchBoxStyle) == 0x000008, "Wrong alignment on FSearchBoxStyle");
-static_assert(sizeof(FSearchBoxStyle) == 0x000A90, "Wrong size on FSearchBoxStyle");
-static_assert(offsetof(FSearchBoxStyle, TextBoxStyle) == 0x000008, "Member 'FSearchBoxStyle::TextBoxStyle' has a wrong offset!");
-static_assert(offsetof(FSearchBoxStyle, ActiveFontInfo) == 0x000800, "Member 'FSearchBoxStyle::ActiveFontInfo' has a wrong offset!");
-static_assert(offsetof(FSearchBoxStyle, UpArrowImage) == 0x000858, "Member 'FSearchBoxStyle::UpArrowImage' has a wrong offset!");
-static_assert(offsetof(FSearchBoxStyle, DownArrowImage) == 0x0008E0, "Member 'FSearchBoxStyle::DownArrowImage' has a wrong offset!");
-static_assert(offsetof(FSearchBoxStyle, GlassImage) == 0x000968, "Member 'FSearchBoxStyle::GlassImage' has a wrong offset!");
-static_assert(offsetof(FSearchBoxStyle, ClearImage) == 0x0009F0, "Member 'FSearchBoxStyle::ClearImage' has a wrong offset!");
-static_assert(offsetof(FSearchBoxStyle, ImagePadding) == 0x000A78, "Member 'FSearchBoxStyle::ImagePadding' has a wrong offset!");
-static_assert(offsetof(FSearchBoxStyle, bLeftAlignButtons) == 0x000A88, "Member 'FSearchBoxStyle::bLeftAlignButtons' has a wrong offset!");
+static_assert(alignof(FVolumeControlStyle) == 0x000008, "Wrong alignment on FVolumeControlStyle");
+static_assert(sizeof(FVolumeControlStyle) == 0x0005F0, "Wrong size on FVolumeControlStyle");
+static_assert(offsetof(FVolumeControlStyle, SliderStyle) == 0x000008, "Member 'FVolumeControlStyle::SliderStyle' has a wrong offset!");
+static_assert(offsetof(FVolumeControlStyle, HighVolumeImage) == 0x000348, "Member 'FVolumeControlStyle::HighVolumeImage' has a wrong offset!");
+static_assert(offsetof(FVolumeControlStyle, MidVolumeImage) == 0x0003D0, "Member 'FVolumeControlStyle::MidVolumeImage' has a wrong offset!");
+static_assert(offsetof(FVolumeControlStyle, LowVolumeImage) == 0x000458, "Member 'FVolumeControlStyle::LowVolumeImage' has a wrong offset!");
+static_assert(offsetof(FVolumeControlStyle, NoVolumeImage) == 0x0004E0, "Member 'FVolumeControlStyle::NoVolumeImage' has a wrong offset!");
+static_assert(offsetof(FVolumeControlStyle, MutedImage) == 0x000568, "Member 'FVolumeControlStyle::MutedImage' has a wrong offset!");
+
+// ScriptStruct SlateCore.InlineEditableTextBlockStyle
+// 0x0A68 (0x0A70 - 0x0008)
+struct FInlineEditableTextBlockStyle final : public FSlateWidgetStyle
+{
+public:
+	struct FEditableTextBoxStyle                  EditableTextBoxStyle;                              // 0x0008(0x07F8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FTextBlockStyle                        TextStyle;                                         // 0x0800(0x0270)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FInlineEditableTextBlockStyle) == 0x000008, "Wrong alignment on FInlineEditableTextBlockStyle");
+static_assert(sizeof(FInlineEditableTextBlockStyle) == 0x000A70, "Wrong size on FInlineEditableTextBlockStyle");
+static_assert(offsetof(FInlineEditableTextBlockStyle, EditableTextBoxStyle) == 0x000008, "Member 'FInlineEditableTextBlockStyle::EditableTextBoxStyle' has a wrong offset!");
+static_assert(offsetof(FInlineEditableTextBlockStyle, TextStyle) == 0x000800, "Member 'FInlineEditableTextBlockStyle::TextStyle' has a wrong offset!");
 
 // ScriptStruct SlateCore.HyperlinkStyle
 // 0x04F8 (0x0500 - 0x0008)
@@ -1290,7 +1290,7 @@ struct FCheckBoxStyle final : public FSlateWidgetStyle
 {
 public:
 	ESlateCheckBoxType                            CheckBoxType;                                      // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_26DA[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_263C[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            UncheckedImage;                                    // 0x0010(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            UncheckedHoveredImage;                             // 0x0098(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            UncheckedPressedImage;                             // 0x0120(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)

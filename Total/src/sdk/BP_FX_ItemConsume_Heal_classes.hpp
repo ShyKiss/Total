@@ -28,13 +28,13 @@ public:
 	float                                         Heal02_Smooth_StretchDistance_AEE0181E49033649DF2B4380EAB8474E; // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Heal02_Smooth_StretchMulti_AEE0181E49033649DF2B4380EAB8474E; // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Heal02_Smooth__Direction_AEE0181E49033649DF2B4380EAB8474E; // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2BA3[0x3];                                     // 0x024D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A50[0x3];                                     // 0x024D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Heal02_Smooth;                                     // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Heal01_Depth_8F9E003B47CEC232C974F28F12769A0D;     // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Heal01_StratchDistance_8F9E003B47CEC232C974F28F12769A0D; // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Heal01_OpacityMulti_8F9E003B47CEC232C974F28F12769A0D; // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Heal01__Direction_8F9E003B47CEC232C974F28F12769A0D; // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2BA4[0x3];                                     // 0x0265(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A51[0x3];                                     // 0x0265(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Heal01;                                            // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

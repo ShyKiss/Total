@@ -34,7 +34,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnValueUpdated;                                    // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bEnabled;                                          // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bHovered;                                          // 0x02B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D29[0x2];                                     // 0x02B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E8C[0x2];                                      // 0x02B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CurrentValue;                                      // 0x02B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FText>                           Values;                                            // 0x02B8(0x0010)(Edit, BlueprintVisible)
 	class FText                                   OptionName;                                        // 0x02C8(0x0018)(Edit, BlueprintVisible)

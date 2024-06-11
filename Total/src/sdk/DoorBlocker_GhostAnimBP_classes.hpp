@@ -48,7 +48,7 @@ public:
 	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x0908(0x00B0)()
 	bool                                          Finished;                                          // 0x09B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Stopped;                                           // 0x09B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30AA[0x6];                                     // 0x09BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3112[0x6];                                     // 0x09BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPickup*                              HoldConsumeActionItem;                             // 0x09C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Progress;                                          // 0x09C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

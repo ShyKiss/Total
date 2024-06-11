@@ -22,7 +22,7 @@ struct CineCharacterBase_BP_C_ExecuteUbergraph_CineCharacterBase_BP final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E95[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31BB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBTrialAsyncData*                      K2Node_CustomEvent_asyncData;                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CineCharacterBase_BP_C_ExecuteUbergraph_CineCharacterBase_BP) == 0x000008, "Wrong alignment on CineCharacterBase_BP_C_ExecuteUbergraph_CineCharacterBase_BP");

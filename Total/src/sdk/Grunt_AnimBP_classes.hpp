@@ -23,7 +23,7 @@ namespace SDK
 class UGrunt_AnimBP_C : public URBAnimInstanceNPC
 {
 public:
-	uint8                                         Pad_3123[0x8];                                     // 0x2258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30B4[0x8];                                     // 0x2258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend_7;                  // 0x2268(0x00C0)()
 	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_26;                    // 0x2328(0x0028)()
@@ -57,7 +57,7 @@ public:
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x2CC0(0x0108)()
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_3;             // 0x2DC8(0x0020)()
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_3;             // 0x2DE8(0x0020)()
-	uint8                                         Pad_3124[0x8];                                     // 0x2E08(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30B5[0x8];                                     // 0x2E08(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_4;                         // 0x2E10(0x01E0)()
 	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_32;                   // 0x2FF0(0x0080)()
 	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend_6;                  // 0x3070(0x00C0)()
@@ -265,7 +265,7 @@ public:
 	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_9;                  // 0x8940(0x0028)()
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_1;             // 0x8968(0x0020)()
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_1;             // 0x8988(0x0020)()
-	uint8                                         Pad_3125[0x8];                                     // 0x89A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30B6[0x8];                                     // 0x89A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_1;                         // 0x89B0(0x01E0)()
 	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK;                           // 0x8B90(0x01E0)()
 	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_5;                    // 0x8D70(0x0080)()
@@ -330,10 +330,10 @@ public:
 	bool                                          IsNightHunter;                                     // 0xA6FE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          EnterLight;                                        // 0xA6FF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          BreakFromBlindedPose;                              // 0xA700(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3126[0x3];                                     // 0xA701(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30B7[0x3];                                     // 0xA701(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         AdditivePoseWeight;                                // 0xA704(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanAimWeapon;                                      // 0xA708(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3127[0x3];                                     // 0xA709(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30B8[0x3];                                     // 0xA709(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         IsAimingWeapon_Float;                              // 0xA70C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseQuickStopTransition;                            // 0xA710(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

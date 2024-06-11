@@ -23,7 +23,7 @@ struct SimpleConfirmCancelPopupWidget_C_ExecuteUbergraph_SimpleConfirmCancelPopu
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D2D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DB4[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_Event_TitleText;                            // 0x0010(0x0018)(ConstParm)
 	class FText                                   K2Node_Event_MainText;                             // 0x0028(0x0018)(ConstParm)
@@ -33,11 +33,11 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue_1;                // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2E[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DB5[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button_1;               // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bIsGamepad;                           // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2F[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DB6[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue_1;             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue_1;          // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };

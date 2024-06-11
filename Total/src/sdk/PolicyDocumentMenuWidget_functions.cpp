@@ -17,102 +17,49 @@
 namespace SDK
 {
 
-// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.OnAnalogValueChanged
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.ExecuteUbergraph_PolicyDocumentMenuWidget
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// struct FAnalogInputEvent                InAnalogInputEvent                                     (BlueprintVisible, BlueprintReadOnly, Parm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FEventReply UPolicyDocumentMenuWidget_C::OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent)
+void UPolicyDocumentMenuWidget_C::ExecuteUbergraph_PolicyDocumentMenuWidget(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "OnAnalogValueChanged");
+		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "ExecuteUbergraph_PolicyDocumentMenuWidget");
 
-	Params::PolicyDocumentMenuWidget_C_OnAnalogValueChanged Parms{};
+	Params::PolicyDocumentMenuWidget_C_ExecuteUbergraph_PolicyDocumentMenuWidget Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InAnalogInputEvent = std::move(InAnalogInputEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPolicyDocumentMenuWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Tick");
-
-	Params::PolicyDocumentMenuWidget_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Event_Setup
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class FString                           Content                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UPolicyDocumentMenuWidget_C::Event_Setup(const class FString& Content)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Event_Setup");
-
-	Params::PolicyDocumentMenuWidget_C_Event_Setup Parms{};
-
-	Parms.Content = std::move(Content);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class URBMenuButton_C*                  Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPolicyDocumentMenuWidget_C::BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class URBMenuButton_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	Params::PolicyDocumentMenuWidget_C_BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Event_MenuConfirm_Pressed
+// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Event_OnFocusMenu
 // (Event, Public, BlueprintEvent)
 
-void UPolicyDocumentMenuWidget_C::Event_MenuConfirm_Pressed()
+void UPolicyDocumentMenuWidget_C::Event_OnFocusMenu()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Event_MenuConfirm_Pressed");
+		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Event_OnFocusMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Event_OnPush
+// (Event, Public, BlueprintEvent)
+
+void UPolicyDocumentMenuWidget_C::Event_OnPush()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Event_OnPush");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -138,51 +85,104 @@ void UPolicyDocumentMenuWidget_C::OnFocusLost(const struct FFocusEvent& InFocusE
 }
 
 
-// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Event_OnPush
+// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Event_MenuConfirm_Pressed
 // (Event, Public, BlueprintEvent)
 
-void UPolicyDocumentMenuWidget_C::Event_OnPush()
+void UPolicyDocumentMenuWidget_C::Event_MenuConfirm_Pressed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Event_OnPush");
+		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Event_MenuConfirm_Pressed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Event_OnFocusMenu
-// (Event, Public, BlueprintEvent)
-
-void UPolicyDocumentMenuWidget_C::Event_OnFocusMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Event_OnFocusMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.ExecuteUbergraph_PolicyDocumentMenuWidget
-// (Final, UbergraphFunction, HasDefaults)
+// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class URBMenuButton_C*                  Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPolicyDocumentMenuWidget_C::ExecuteUbergraph_PolicyDocumentMenuWidget(int32 EntryPoint)
+void UPolicyDocumentMenuWidget_C::BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class URBMenuButton_C* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "ExecuteUbergraph_PolicyDocumentMenuWidget");
+		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
-	Params::PolicyDocumentMenuWidget_C_ExecuteUbergraph_PolicyDocumentMenuWidget Parms{};
+	Params::PolicyDocumentMenuWidget_C_BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Event_Setup
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class FString                           Content                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPolicyDocumentMenuWidget_C::Event_Setup(const class FString& Content)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Event_Setup");
+
+	Params::PolicyDocumentMenuWidget_C_Event_Setup Parms{};
+
+	Parms.Content = std::move(Content);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPolicyDocumentMenuWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "Tick");
+
+	Params::PolicyDocumentMenuWidget_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.OnAnalogValueChanged
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// struct FAnalogInputEvent                InAnalogInputEvent                                     (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UPolicyDocumentMenuWidget_C::OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PolicyDocumentMenuWidget_C", "OnAnalogValueChanged");
+
+	Params::PolicyDocumentMenuWidget_C_OnAnalogValueChanged Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InAnalogInputEvent = std::move(InAnalogInputEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

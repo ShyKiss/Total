@@ -24,7 +24,7 @@ namespace SDK
 class UCine_Futterman_AnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2E32[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_314D[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x02F8(0x0080)()
@@ -42,9 +42,9 @@ public:
 	bool                                          ResetRoot;                                         // 0x08A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
-	void BlueprintInitializeAnimation();
 	void ExecuteUbergraph_Cine_Futterman_AnimBP(int32 EntryPoint);
+	void BlueprintInitializeAnimation();
+	void AnimGraph(struct FPoseLink* Param_AnimGraph);
 
 public:
 	static class UClass* StaticClass()

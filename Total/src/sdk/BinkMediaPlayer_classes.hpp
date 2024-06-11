@@ -47,7 +47,7 @@ static_assert(sizeof(UBinkFunctionLibrary) == 0x000028, "Wrong size on UBinkFunc
 class UBinkMediaPlayer final : public UObject
 {
 public:
-	uint8                                         Pad_1152[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10C3[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnMediaClosed;                                     // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnMediaOpened;                                     // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnMediaReachedEnd;                                 // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -58,19 +58,19 @@ public:
 	uint8                                         DelayedOpen : 1;                                   // 0x0080(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         OnlyVisibleWhenPlaying : 1;                        // 0x0080(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         OptimizedSeek : 1;                                 // 0x0080(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1153[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10C4[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              BinkDestinationUpperLeft;                          // 0x0084(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              BinkDestinationLowerRight;                         // 0x008C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1154[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10C5[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 URL;                                               // 0x0098(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBinkMediaPlayerBinkBufferModes               BinkBufferMode;                                    // 0x00A8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBinkMediaPlayerBinkSoundTrack                BinkSoundTrack;                                    // 0x00A9(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1155[0x2];                                     // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10C6[0x2];                                     // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         BinkSoundTrackStart;                               // 0x00AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBinkMediaPlayerBinkDrawStyle                 BinkDrawStyle;                                     // 0x00B0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1156[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10C7[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         BinkLayerDepth;                                    // 0x00B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1157[0x98];                                    // 0x00B8(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10C8[0x98];                                    // 0x00B8(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void CloseUrl();
@@ -133,15 +133,15 @@ class UBinkMediaTexture final : public UTexture
 public:
 	ETextureAddress                               AddressX;                                          // 0x0170(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETextureAddress                               AddressY;                                          // 0x0171(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_115E[0x6];                                     // 0x0172(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10CF[0x6];                                     // 0x0172(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBinkMediaPlayer*                       MediaPlayer;                                       // 0x0178(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPixelFormat                                  PixelFormat;                                       // 0x0180(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Tonemap;                                           // 0x0181(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_115F[0x2];                                     // 0x0182(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10D0[0x2];                                     // 0x0182(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         OutputNits;                                        // 0x0184(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Alpha;                                             // 0x0188(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DecodeSRGB;                                        // 0x018C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1160[0x23];                                    // 0x018D(0x0023)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10D1[0x23];                                    // 0x018D(0x0023)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Clear();
@@ -175,12 +175,12 @@ class UBinkMoviePlayerSettings final : public UObject
 public:
 	EBinkMoviePlayerBinkBufferModes               BinkBufferMode;                                    // 0x0028(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBinkMoviePlayerBinkSoundTrack                BinkSoundTrack;                                    // 0x0029(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1161[0x2];                                     // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10D2[0x2];                                     // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         BinkSoundTrackStart;                               // 0x002C(0x0004)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              BinkDestinationUpperLeft;                          // 0x0030(0x0008)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              BinkDestinationLowerRight;                         // 0x0038(0x0008)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPixelFormat                                  BinkPixelFormat;                                   // 0x0040(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1162[0x7];                                     // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10D3[0x7];                                     // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

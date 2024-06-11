@@ -26,7 +26,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       HideAnim;                                          // 0x0270(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       ShowAnim;                                          // 0x0278(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UHorizontalBox*                         Hbox;                                              // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HBox;                                              // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInvalidationBox*                       InvalidationBox_TextChatEntry;                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonRichTextBlock*                   MessageContent;                                    // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FRBTextChatMessage                     Message;                                           // 0x0298(0x0040)(Edit, BlueprintVisible)
@@ -55,7 +55,7 @@ static_assert(sizeof(UTextChatEntry_C) == 0x0002F0, "Wrong size on UTextChatEntr
 static_assert(offsetof(UTextChatEntry_C, UberGraphFrame) == 0x000268, "Member 'UTextChatEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTextChatEntry_C, HideAnim) == 0x000270, "Member 'UTextChatEntry_C::HideAnim' has a wrong offset!");
 static_assert(offsetof(UTextChatEntry_C, ShowAnim) == 0x000278, "Member 'UTextChatEntry_C::ShowAnim' has a wrong offset!");
-static_assert(offsetof(UTextChatEntry_C, Hbox) == 0x000280, "Member 'UTextChatEntry_C::Hbox' has a wrong offset!");
+static_assert(offsetof(UTextChatEntry_C, HBox) == 0x000280, "Member 'UTextChatEntry_C::HBox' has a wrong offset!");
 static_assert(offsetof(UTextChatEntry_C, InvalidationBox_TextChatEntry) == 0x000288, "Member 'UTextChatEntry_C::InvalidationBox_TextChatEntry' has a wrong offset!");
 static_assert(offsetof(UTextChatEntry_C, MessageContent) == 0x000290, "Member 'UTextChatEntry_C::MessageContent' has a wrong offset!");
 static_assert(offsetof(UTextChatEntry_C, Message) == 0x000298, "Member 'UTextChatEntry_C::Message' has a wrong offset!");

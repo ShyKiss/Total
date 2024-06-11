@@ -5,7 +5,7 @@
 #include "hooks.hpp"
 
 //#include "backend/dx10/hook_directx10.hpp"
-//#include "backend/dx11/hook_directx11.hpp"
+#include "backend/dx11/hook_directx11.hpp"
 #include "backend/dx12/hook_directx12.hpp"
 //#include "backend/dx9/hook_directx9.hpp"
 
@@ -98,9 +98,9 @@ namespace Hooks {
             //case DIRECTX10:
             //    DX10::Hook(g_hWindow);
             //    break;
-            //case DIRECTX11:
-            //    DX11::Hook(g_hWindow);
-            //    break;
+            case DIRECTX11:
+                DX11::Hook(g_hWindow);
+                break;
             case DIRECTX12:
                 DX12::Hook(g_hWindow);
                 break;
@@ -137,9 +137,9 @@ namespace Hooks {
             //case DIRECTX10:
             //    DX10::Unhook( );
             //    break;
-            //case DIRECTX11:
-            //    DX11::Unhook( );
-            //    break;
+            case DIRECTX11:
+                DX11::Unhook( );
+                break;
             case DIRECTX12:
                 DX12::Unhook( );
                 break;

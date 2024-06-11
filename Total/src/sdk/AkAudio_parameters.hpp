@@ -38,10 +38,10 @@ public:
 	class FString                                 RTPC;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayingId;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERTPCValueType                                InputValueType;                                    // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1236[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_119B[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Value;                                             // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERTPCValueType                                OutputValueType;                                   // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1237[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_119C[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkComponent_GetRTPCValue) == 0x000008, "Wrong alignment on AkComponent_GetRTPCValue");
 static_assert(sizeof(AkComponent_GetRTPCValue) == 0x000020, "Wrong size on AkComponent_GetRTPCValue");
@@ -59,11 +59,11 @@ public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CallbackMask;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x000C(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1238[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_119D[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class FString                                 In_EventName;                                      // 0x0030(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0040(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1239[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_119E[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkComponent_PostAkEvent) == 0x000008, "Wrong alignment on AkComponent_PostAkEvent");
 static_assert(sizeof(AkComponent_PostAkEvent) == 0x000048, "Wrong size on AkComponent_PostAkEvent");
@@ -84,7 +84,7 @@ public:
 	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0028(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0040(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123A[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_119F[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkComponent_PostAkEventAndWaitForEnd) == 0x000008, "Wrong alignment on AkComponent_PostAkEventAndWaitForEnd");
 static_assert(sizeof(AkComponent_PostAkEventAndWaitForEnd) == 0x000048, "Wrong size on AkComponent_PostAkEventAndWaitForEnd");
@@ -101,7 +101,7 @@ struct AkComponent_PostAkEventByName final
 public:
 	class FString                                 In_EventName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123B[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A0[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkComponent_PostAkEventByName) == 0x000008, "Wrong alignment on AkComponent_PostAkEventByName");
 static_assert(sizeof(AkComponent_PostAkEventByName) == 0x000018, "Wrong size on AkComponent_PostAkEventByName");
@@ -115,10 +115,10 @@ struct AkComponent_PostAssociatedAkEvent final
 public:
 	int32                                         CallbackMask;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x0004(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123C[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A1[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123D[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A2[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkComponent_PostAssociatedAkEvent) == 0x000008, "Wrong alignment on AkComponent_PostAssociatedAkEvent");
 static_assert(sizeof(AkComponent_PostAssociatedAkEvent) == 0x000030, "Wrong size on AkComponent_PostAssociatedAkEvent");
@@ -135,7 +135,7 @@ public:
 	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123E[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A3[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkComponent_PostAssociatedAkEventAndWaitForEnd) == 0x000008, "Wrong alignment on AkComponent_PostAssociatedAkEventAndWaitForEnd");
 static_assert(sizeof(AkComponent_PostAssociatedAkEventAndWaitForEnd) == 0x000030, "Wrong size on AkComponent_PostAssociatedAkEventAndWaitForEnd");
@@ -247,7 +247,7 @@ public:
 	float                                         BusSendGain;                                       // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxPathLength;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          SpotReflectors;                                    // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123F[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A4[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 AuxBusName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkComponent_UseEarlyReflections) == 0x000008, "Wrong alignment on AkComponent_UseEarlyReflections");
@@ -420,13 +420,13 @@ struct AkGameplayStatics_ExecuteActionOnEvent final
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAkActionOnEventType                          ActionType;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_124A[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11AF[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TransitionDuration;                                // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAkCurveInterpolation                         FadeCurve;                                         // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_124B[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B0[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PlayingId;                                         // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_124C[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B1[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_ExecuteActionOnEvent) == 0x000008, "Wrong alignment on AkGameplayStatics_ExecuteActionOnEvent");
 static_assert(sizeof(AkGameplayStatics_ExecuteActionOnEvent) == 0x000028, "Wrong size on AkGameplayStatics_ExecuteActionOnEvent");
@@ -443,11 +443,11 @@ struct AkGameplayStatics_ExecuteActionOnPlayingID final
 {
 public:
 	EAkActionOnEventType                          ActionType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_124D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PlayingId;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TransitionDuration;                                // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAkCurveInterpolation                         FadeCurve;                                         // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_124E[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B3[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_ExecuteActionOnPlayingID) == 0x000004, "Wrong alignment on AkGameplayStatics_ExecuteActionOnPlayingID");
 static_assert(sizeof(AkGameplayStatics_ExecuteActionOnPlayingID) == 0x000010, "Wrong size on AkGameplayStatics_ExecuteActionOnPlayingID");
@@ -463,11 +463,11 @@ struct AkGameplayStatics_GetAkComponent final
 public:
 	class USceneComponent*                        AttachToComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ComponentCreated;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_124F[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B4[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   AttachPointName;                                   // 0x000C(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x0014(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAttachLocation                               LocationType;                                      // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1250[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B5[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkComponent*                           ReturnValue;                                       // 0x0028(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_GetAkComponent) == 0x000008, "Wrong alignment on AkGameplayStatics_GetAkComponent");
@@ -498,10 +498,10 @@ public:
 	class FName                                   RTPC;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayingId;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERTPCValueType                                InputValueType;                                    // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1251[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B6[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Value;                                             // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERTPCValueType                                OutputValueType;                                   // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1252[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B7[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_GetRTPCValue) == 0x000008, "Wrong alignment on AkGameplayStatics_GetRTPCValue");
@@ -520,7 +520,7 @@ struct AkGameplayStatics_GetSpeakerAngles final
 public:
 	TArray<float>                                 SpeakerAngles;                                     // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         HeightAngle;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1253[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B8[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 DeviceShareset;                                    // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_GetSpeakerAngles) == 0x000008, "Wrong alignment on AkGameplayStatics_GetSpeakerAngles");
@@ -547,7 +547,7 @@ struct AkGameplayStatics_IsGame final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1254[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11B9[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_IsGame) == 0x000008, "Wrong alignment on AkGameplayStatics_IsGame");
 static_assert(sizeof(AkGameplayStatics_IsGame) == 0x000010, "Wrong size on AkGameplayStatics_IsGame");
@@ -602,7 +602,7 @@ struct AkGameplayStatics_LoadBanks final
 public:
 	TArray<class UAkAudioBank*>                   SoundBanks;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          SynchronizeSoundBanks;                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1255[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11BA[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_LoadBanks) == 0x000008, "Wrong alignment on AkGameplayStatics_LoadBanks");
 static_assert(sizeof(AkGameplayStatics_LoadBanks) == 0x000018, "Wrong size on AkGameplayStatics_LoadBanks");
@@ -617,12 +617,12 @@ public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1256[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11BB[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class FString                                 EventName;                                         // 0x0028(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0038(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0050(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1257[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11BC[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostAndWaitForEndOfEvent) == 0x000008, "Wrong alignment on AkGameplayStatics_PostAndWaitForEndOfEvent");
 static_assert(sizeof(AkGameplayStatics_PostAndWaitForEndOfEvent) == 0x000058, "Wrong size on AkGameplayStatics_PostAndWaitForEndOfEvent");
@@ -643,13 +643,13 @@ public:
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CallbackMask;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x0014(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1258[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11BD[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                WorldContextObject;                                // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1259[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11BE[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EventName;                                         // 0x0038(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0048(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_125A[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11BF[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostEvent) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEvent");
 static_assert(sizeof(AkGameplayStatics_PostEvent) == 0x000050, "Wrong size on AkGameplayStatics_PostEvent");
@@ -673,7 +673,7 @@ public:
 	class FString                                 EventName;                                         // 0x0020(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                WorldContextObject;                                // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_125B[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C0[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostEventAtLocation) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEventAtLocation");
 static_assert(sizeof(AkGameplayStatics_PostEventAtLocation) == 0x000040, "Wrong size on AkGameplayStatics_PostEventAtLocation");
@@ -710,10 +710,10 @@ public:
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   AttachPointName;                                   // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_125C[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C1[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EventName;                                         // 0x0020(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_125D[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C2[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostEventAttached) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEventAttached");
 static_assert(sizeof(AkGameplayStatics_PostEventAttached) == 0x000038, "Wrong size on AkGameplayStatics_PostEventAttached");
@@ -732,7 +732,7 @@ public:
 	class FString                                 EventName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Actor;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_125E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C3[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostEventByName) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEventByName");
 static_assert(sizeof(AkGameplayStatics_PostEventByName) == 0x000020, "Wrong size on AkGameplayStatics_PostEventByName");
@@ -748,10 +748,10 @@ public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CallbackMask;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x000C(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         Pad_125F[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C4[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EventName;                                         // 0x0020(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1260[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C5[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostEventGlobal) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEventGlobal");
 static_assert(sizeof(AkGameplayStatics_PostEventGlobal) == 0x000038, "Wrong size on AkGameplayStatics_PostEventGlobal");
@@ -771,10 +771,10 @@ public:
 	int32                                         CallbackMask;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x0014(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1261[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C6[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EventName;                                         // 0x0028(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1262[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C7[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostEventOnActor) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEventOnActor");
 static_assert(sizeof(AkGameplayStatics_PostEventOnActor) == 0x000040, "Wrong size on AkGameplayStatics_PostEventOnActor");
@@ -796,10 +796,10 @@ public:
 	int32                                         CallbackMask;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x0014(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1263[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C8[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EventName;                                         // 0x0028(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1264[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C9[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostNotifyOnActor) == 0x000008, "Wrong alignment on AkGameplayStatics_PostNotifyOnActor");
 static_assert(sizeof(AkGameplayStatics_PostNotifyOnActor) == 0x000040, "Wrong size on AkGameplayStatics_PostNotifyOnActor");
@@ -831,7 +831,7 @@ struct AkGameplayStatics_SetBusConfig final
 public:
 	class FString                                 BusName;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAkChannelConfiguration                       ChannelConfiguration;                              // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1265[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11CA[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetBusConfig) == 0x000008, "Wrong alignment on AkGameplayStatics_SetBusConfig");
 static_assert(sizeof(AkGameplayStatics_SetBusConfig) == 0x000018, "Wrong size on AkGameplayStatics_SetBusConfig");
@@ -847,7 +847,7 @@ public:
 	TArray<EAkChannelConfiguration>               ChannelMasks;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FTransform>                     Positions;                                         // 0x0018(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	EAkMultiPositionType                          MultiPositionType;                                 // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1266[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11CB[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetMultipleChannelEmitterPositions) == 0x000008, "Wrong alignment on AkGameplayStatics_SetMultipleChannelEmitterPositions");
 static_assert(sizeof(AkGameplayStatics_SetMultipleChannelEmitterPositions) == 0x000030, "Wrong size on AkGameplayStatics_SetMultipleChannelEmitterPositions");
@@ -865,7 +865,7 @@ public:
 	TArray<struct FAkChannelMask>                 ChannelMasks;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FTransform>                     Positions;                                         // 0x0018(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	EAkMultiPositionType                          MultiPositionType;                                 // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1267[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11CC[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetMultipleChannelMaskEmitterPositions) == 0x000008, "Wrong alignment on AkGameplayStatics_SetMultipleChannelMaskEmitterPositions");
 static_assert(sizeof(AkGameplayStatics_SetMultipleChannelMaskEmitterPositions) == 0x000030, "Wrong size on AkGameplayStatics_SetMultipleChannelMaskEmitterPositions");
@@ -882,7 +882,7 @@ public:
 	class UAkComponent*                           GameObjectAkComponent;                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FTransform>                     Positions;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	EAkMultiPositionType                          MultiPositionType;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1268[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11CD[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetMultiplePositions) == 0x000008, "Wrong alignment on AkGameplayStatics_SetMultiplePositions");
 static_assert(sizeof(AkGameplayStatics_SetMultiplePositions) == 0x000020, "Wrong size on AkGameplayStatics_SetMultiplePositions");
@@ -896,7 +896,7 @@ struct AkGameplayStatics_SetOcclusionRefreshInterval final
 {
 public:
 	float                                         RefreshInterval;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1269[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11CE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_SetOcclusionRefreshInterval) == 0x000008, "Wrong alignment on AkGameplayStatics_SetOcclusionRefreshInterval");
@@ -921,7 +921,7 @@ struct AkGameplayStatics_SetOutputBusVolume final
 {
 public:
 	float                                         BusVolume;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11CF[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_SetOutputBusVolume) == 0x000008, "Wrong alignment on AkGameplayStatics_SetOutputBusVolume");
@@ -964,7 +964,7 @@ struct AkGameplayStatics_SetSpeakerAngles final
 public:
 	TArray<float>                                 SpeakerAngles;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         HeightAngle;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126B[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D0[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 DeviceShareset;                                    // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_SetSpeakerAngles) == 0x000008, "Wrong alignment on AkGameplayStatics_SetSpeakerAngles");
@@ -1012,11 +1012,11 @@ public:
 	struct FVector                                Location;                                          // 0x0018(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               Orientation;                                       // 0x0024(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          AutoPost;                                          // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126C[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D1[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EventName;                                         // 0x0038(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 EarlyReflectionsBusName;                           // 0x0048(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AutoDestroy;                                       // 0x0058(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126D[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D2[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkComponent*                           ReturnValue;                                       // 0x0060(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_SpawnAkComponentAtLocation) == 0x000008, "Wrong alignment on AkGameplayStatics_SpawnAkComponentAtLocation");
@@ -1139,7 +1139,7 @@ public:
 	float                                         BusSendGain;                                       // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxPathLength;                                     // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          SpotReflectors;                                    // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D3[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 AuxBusName;                                        // 0x0020(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_UseEarlyReflections) == 0x000008, "Wrong alignment on AkGameplayStatics_UseEarlyReflections");
@@ -1158,7 +1158,7 @@ struct AkGameplayStatics_UseReverbVolumes final
 {
 public:
 	bool                                          InUseReverbVolumes;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D4[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_UseReverbVolumes) == 0x000008, "Wrong alignment on AkGameplayStatics_UseReverbVolumes");
@@ -1262,7 +1262,7 @@ struct AkMIDIEventCallbackInfo_GetPitchBend final
 public:
 	struct FAkMidiPitchBend                       AsPitchBend;                                       // 0x0000(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1271[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11D6[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkMIDIEventCallbackInfo_GetPitchBend) == 0x000004, "Wrong alignment on AkMIDIEventCallbackInfo_GetPitchBend");
 static_assert(sizeof(AkMIDIEventCallbackInfo_GetPitchBend) == 0x00000C, "Wrong size on AkMIDIEventCallbackInfo_GetPitchBend");
@@ -1582,7 +1582,7 @@ struct AkWaapiCalls_GetSubscriptionID final
 public:
 	struct FAkWaapiSubscriptionId                 Subscription;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_128D[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F2[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiCalls_GetSubscriptionID) == 0x000008, "Wrong alignment on AkWaapiCalls_GetSubscriptionID");
 static_assert(sizeof(AkWaapiCalls_GetSubscriptionID) == 0x000010, "Wrong size on AkWaapiCalls_GetSubscriptionID");
@@ -1596,7 +1596,7 @@ struct AkWaapiCalls_RegisterWaapiConnectionLostCallback final
 public:
 	TDelegate<void()>                             Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_128E[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F3[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiCalls_RegisterWaapiConnectionLostCallback) == 0x000004, "Wrong alignment on AkWaapiCalls_RegisterWaapiConnectionLostCallback");
 static_assert(sizeof(AkWaapiCalls_RegisterWaapiConnectionLostCallback) == 0x000014, "Wrong size on AkWaapiCalls_RegisterWaapiConnectionLostCallback");
@@ -1610,7 +1610,7 @@ struct AkWaapiCalls_RegisterWaapiProjectLoadedCallback final
 public:
 	TDelegate<void()>                             Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_128F[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F4[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiCalls_RegisterWaapiProjectLoadedCallback) == 0x000004, "Wrong alignment on AkWaapiCalls_RegisterWaapiProjectLoadedCallback");
 static_assert(sizeof(AkWaapiCalls_RegisterWaapiProjectLoadedCallback) == 0x000014, "Wrong size on AkWaapiCalls_RegisterWaapiProjectLoadedCallback");
@@ -1624,7 +1624,7 @@ struct AkWaapiCalls_SetSubscriptionID final
 public:
 	struct FAkWaapiSubscriptionId                 Subscription;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ID;                                                // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1290[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F5[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiCalls_SetSubscriptionID) == 0x000008, "Wrong alignment on AkWaapiCalls_SetSubscriptionID");
 static_assert(sizeof(AkWaapiCalls_SetSubscriptionID) == 0x000010, "Wrong size on AkWaapiCalls_SetSubscriptionID");
@@ -1641,7 +1641,7 @@ public:
 	TDelegate<void(const struct FAkWaapiSubscriptionId& SubscriptionId, const struct FAKWaapiJsonObject& WaapiJsonObject)> Callback;                                          // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FAkWaapiSubscriptionId                 SubscriptionId;                                    // 0x0030(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          SubscriptionDone;                                  // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1291[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F6[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAKWaapiJsonObject                     ReturnValue;                                       // 0x0040(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkWaapiCalls_SubscribeToWaapi) == 0x000008, "Wrong alignment on AkWaapiCalls_SubscribeToWaapi");
@@ -1660,7 +1660,7 @@ struct AkWaapiCalls_Unsubscribe final
 public:
 	struct FAkWaapiSubscriptionId                 SubscriptionId;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          UnsubscriptionDone;                                // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1292[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F7[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAKWaapiJsonObject                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkWaapiCalls_Unsubscribe) == 0x000008, "Wrong alignment on AkWaapiCalls_Unsubscribe");
@@ -1744,7 +1744,7 @@ public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1293[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F8[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiJsonManager_GetBoolField) == 0x000008, "Wrong alignment on AkWaapiJsonManager_GetBoolField");
 static_assert(sizeof(AkWaapiJsonManager_GetBoolField) == 0x000028, "Wrong size on AkWaapiJsonManager_GetBoolField");
@@ -1760,7 +1760,7 @@ public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1294[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11F9[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiJsonManager_GetIntegerField) == 0x000008, "Wrong alignment on AkWaapiJsonManager_GetIntegerField");
 static_assert(sizeof(AkWaapiJsonManager_GetIntegerField) == 0x000028, "Wrong size on AkWaapiJsonManager_GetIntegerField");
@@ -1776,7 +1776,7 @@ public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1295[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11FA[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiJsonManager_GetNumberField) == 0x000008, "Wrong alignment on AkWaapiJsonManager_GetNumberField");
 static_assert(sizeof(AkWaapiJsonManager_GetNumberField) == 0x000028, "Wrong size on AkWaapiJsonManager_GetNumberField");
@@ -1855,7 +1855,7 @@ struct AkWaapiJsonManager_SetBoolField final
 public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          FieldValue;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1296[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11FB[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0018(0x0010)(Parm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
@@ -1873,7 +1873,7 @@ struct AkWaapiJsonManager_SetNumberField final
 public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         FieldValue;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1297[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11FC[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0018(0x0010)(Parm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };

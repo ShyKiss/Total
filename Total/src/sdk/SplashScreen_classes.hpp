@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "MediaUtils_structs.hpp"
-#include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
@@ -40,7 +40,7 @@ public:
 	class UImage*                                 TrialLogo;                                         // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bIsConnecting;                                     // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bConnected;                                        // 0x0369(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_315A[0x6];                                     // 0x036A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3157[0x6];                                     // 0x036A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               LogoMat;                                           // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMediaPlayerOptions                    SplashScreenMediaPlayerOptions;                    // 0x0378(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FTimerHandle                           SkipButtonFadeOutTimer;                            // 0x03A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

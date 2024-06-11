@@ -31,7 +31,7 @@ public:
 	class UVerticalBox*                           VerticalBox_0;                                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTexture2D*                             IconTexture;                                       // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDisplayNotAvailableIcon;                          // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CC8[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E73[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   VariatorName;                                      // 0x02A0(0x0018)(Edit, BlueprintVisible)
 	class FText                                   VariatorDescription;                               // 0x02B8(0x0018)(Edit, BlueprintVisible)
 	FMulticastInlineDelegateProperty_             OnAnimationCompleted;                              // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)

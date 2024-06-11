@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
+#include "OPP_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
-#include "OPP_structs.hpp"
 
 
 namespace SDK
@@ -42,7 +42,7 @@ public:
 	class UScaleBox*                              NewScale;                                          // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	ECategoryButtonState                          State;                                             // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSelected;                                        // 0x02D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3080[0x6];                                     // 0x02DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D8C[0x6];                                     // 0x02DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             Event_OnClicked;                                   // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UTexture2D*                             SelectedTexture;                                   // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             LockedTexture;                                     // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,11 +50,11 @@ public:
 	class UTexture2D*                             AcquiredTexture;                                   // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             HoverBackgroundTexture;                            // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanShowIcon;                                       // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3081[0x7];                                     // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D8D[0x7];                                     // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            EquippedBrush;                                     // 0x0320(0x0088)(Edit, BlueprintVisible)
 	struct FSlateColor                            BaseColor;                                         // 0x03A8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsEquipped;                                        // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3082[0x7];                                     // 0x03D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D8E[0x7];                                     // 0x03D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             Event_OnHovered;                                   // 0x03D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             Event_OnUnhovered;                                 // 0x03E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FSlateColor                            EquippedColor;                                     // 0x03F8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -62,13 +62,13 @@ public:
 	FMulticastInlineDelegateProperty_             Event_OnReleased;                                  // 0x0430(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FName                                   ItemId;                                            // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsNewItem;                                         // 0x0448(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3083[0x3];                                     // 0x0449(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D8F[0x3];                                     // 0x0449(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         NewNotificationScale;                              // 0x044C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Has_New_Items_in_Sub_Category;                     // 0x0450(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bEnableHoverAnimation;                             // 0x0451(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bIsHovered;                                        // 0x0452(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bShowToxicity;                                     // 0x0453(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3084[0x4];                                     // 0x0454(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D90[0x4];                                     // 0x0454(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             Event_BuyAnimationEnded;                           // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             Event_HasSeenItem;                                 // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 

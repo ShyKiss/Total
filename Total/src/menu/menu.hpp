@@ -22,7 +22,7 @@ namespace Menu {
     void Total_ShowProjectors(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Projectors, UC::TArray<SDK::ARBGeneratorMultiObjectiveActor*> Generators);
     void Total_ShowPlayers(UC::TArray<SDK::ARBPlayer*> Players);
     void Total_ShowDoorTraps(UC::TArray<SDK::ARBDoor*> Doors);
-    void Total_ShowItems(UC::TArray<SDK::ARBPickup*> Pickups);
+    void Total_ShowItems(UC::TArray<SDK::ARBPickup*> Pickups, UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Coords);
     void Total_ShowLargeItems(UC::TArray<SDK::ARBLargePickup*> LargePickups);
     bool IsValid(const UObject* Object);
     string utf8_encode(const wstring& wstr);
@@ -32,7 +32,7 @@ namespace Menu {
     // Random
 
     inline bool bShowMenu = false;
-    inline bool bShowItems = true;
+    inline bool bShowItems = false;
     inline bool bShowLargeItems = true;
     inline bool bShowQuestItems = true;
     inline bool bShowObjectiveActors = true;
@@ -54,6 +54,7 @@ namespace Menu {
     inline bool bTotalControllerAlive = false;
     inline float fPlayerPing = 0;
     inline float fStageTime = 0;
+    inline float fPlayerIdleTime = 0;
     inline int LevelSeed = 0;
     inline float IconSize = 24;
     inline int Passcode = 0;

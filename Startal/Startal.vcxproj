@@ -149,6 +149,7 @@
     <None Include="bin\Total-x64.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="icon2.ico" />
     <Image Include="Startal.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

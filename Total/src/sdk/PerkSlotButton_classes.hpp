@@ -29,7 +29,7 @@ public:
 	struct FMenuUpgradeItemInfo                   UpgradeInfo;                                       // 0x0278(0x0128)(Edit, BlueprintVisible)
 	bool                                          DisplayPlus;                                       // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          DisplayTitle;                                      // 0x03A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_305E[0x6];                                     // 0x03A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DD9[0x6];                                     // 0x03A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         RBPlayerState;                                     // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          ShouldUseMenuLoadout;                              // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	EPerkCategory                                 PerkCategory;                                      // 0x03B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

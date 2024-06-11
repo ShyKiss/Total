@@ -27,20 +27,20 @@ public:
 	class UTextBlock*                             ContentTextBlock;                                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             DocumentScrollBox;                                 // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bCanClose;                                         // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3117[0x3];                                     // 0x0339(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CCF[0x3];                                     // 0x0339(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BaseMultiplier;                                    // 0x033C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SpeedAccumulator;                                  // 0x0340(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Event_Setup(const class FString& Content);
-	void BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
-	void Event_MenuConfirm_Pressed();
-	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
-	void Event_OnPush();
-	void Event_OnFocusMenu();
 	void ExecuteUbergraph_PolicyDocumentMenuWidget(int32 EntryPoint);
+	void Event_OnFocusMenu();
+	void Event_OnPush();
+	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
+	void Event_MenuConfirm_Pressed();
+	void BndEvt__PolicyDocumentMenuWidget_AcceptBtn_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
+	void Event_Setup(const class FString& Content);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
 
 public:
 	static class UClass* StaticClass()

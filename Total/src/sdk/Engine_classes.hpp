@@ -4598,7 +4598,7 @@ static_assert(offsetof(UEngine, NextWorldContextHandle) == 0x000CB8, "Member 'UE
 
 // Class Engine.ProjectileMovementComponent
 // 0x00E8 (0x01E0 - 0x00F8)
-class UProjectileMovementComponent final : public UMovementComponent
+class alignas(0x10) UProjectileMovementComponent final : public UMovementComponent
 {
 public:
 	float                                         InitialSpeed;                                      // 0x00F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4661,7 +4661,7 @@ public:
 		return GetDefaultObjImpl<UProjectileMovementComponent>();
 	}
 };
-static_assert(alignof(UProjectileMovementComponent) == 0x000008, "Wrong alignment on UProjectileMovementComponent");
+static_assert(alignof(UProjectileMovementComponent) == 0x000010, "Wrong alignment on UProjectileMovementComponent");
 static_assert(sizeof(UProjectileMovementComponent) == 0x0001E0, "Wrong size on UProjectileMovementComponent");
 static_assert(offsetof(UProjectileMovementComponent, InitialSpeed) == 0x0000F8, "Member 'UProjectileMovementComponent::InitialSpeed' has a wrong offset!");
 static_assert(offsetof(UProjectileMovementComponent, MaxSpeed) == 0x0000FC, "Member 'UProjectileMovementComponent::MaxSpeed' has a wrong offset!");

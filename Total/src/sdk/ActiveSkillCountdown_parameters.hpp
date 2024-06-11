@@ -51,7 +51,7 @@ struct ActiveSkillCountdown_C_On_AS_Cooldown_State_Changed final
 {
 public:
 	bool                                          IsInCooldown;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FF7[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C51[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBActiveSkill*                         NewActiveSkill;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ActiveSkillCountdown_C_On_AS_Cooldown_State_Changed) == 0x000008, "Wrong alignment on ActiveSkillCountdown_C_On_AS_Cooldown_State_Changed");
@@ -67,12 +67,12 @@ public:
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0000(0x0018)()
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FF8[0x2];                                     // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C52[0x2];                                     // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetCooldownTimeRemaining_ReturnValue;     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FF9[0x5];                                     // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C53[0x5];                                     // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0028(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ReferenceParm)

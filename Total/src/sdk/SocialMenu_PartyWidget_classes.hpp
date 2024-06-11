@@ -41,7 +41,7 @@ public:
 	class UTextBlock*                             Title;                                             // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   EmptyText;                                         // 0x03D0(0x0018)(Edit, BlueprintVisible)
 	bool                                          bIsInSocialMenu;                                   // 0x03E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D33[0x7];                                     // 0x03E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DF9[0x7];                                     // 0x03E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPopUpConfirmCancelWidget*            LeaveGroupPopup;                                   // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

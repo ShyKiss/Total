@@ -46,11 +46,11 @@ struct InGameMenuVariatorEntry_C_InitFromDifficulty final
 {
 public:
 	EGameDifficulty                               Difficulty;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2CC9[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E74[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBSettings_Gameplay*                   CallFunc_GetRBSettings_Gameplay_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDifficultyConfig                      CallFunc_Map_Find_Value;                           // 0x0010(0x00E0)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CCA[0x7];                                     // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E75[0x7];                                     // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             CallFunc_GetBrushResourceAsTexture2D_ReturnValue;  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(InGameMenuVariatorEntry_C_InitFromDifficulty) == 0x000008, "Wrong alignment on InGameMenuVariatorEntry_C_InitFromDifficulty");

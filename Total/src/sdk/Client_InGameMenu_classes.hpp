@@ -82,11 +82,11 @@ public:
 	class UHorizontalBox*                         VariatorHBox;                                      // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWorkInProgressOverlay_C*               WorkInProgressOverlay;                             // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         SelectedTabIndex;                                  // 0x04F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F46[0x4];                                      // 0x04F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3069[0x4];                                     // 0x04F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPopUpConfirmCancelWidget*            QuitToDesktopPopup;                                // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanDisplayAmpsInfo;                                // 0x0500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          CanDisplayRigInfo;                                 // 0x0501(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F47[0x6];                                      // 0x0502(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_306A[0x6];                                     // 0x0502(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            LastFocusedWidget;                                 // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

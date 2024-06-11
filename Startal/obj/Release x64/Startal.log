@@ -1,6 +1,6 @@
 ﻿  Startal.cpp
   Создание кода
-  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  Previous IPDB not found, fall back to full compilation.
   All 172 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Создание кода завершено
   Startal.vcxproj -> C:\Users\Beerymaid\source\repos\Total\Startal\bin\Startal-x64.exe

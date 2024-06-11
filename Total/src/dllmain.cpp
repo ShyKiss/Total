@@ -6,8 +6,10 @@
 
 #include "hooks/hooks.hpp"
 #include "utils/utils.hpp"
+#include <Psapi.h>
 
 #include "dependencies/minhook/MinHook.h"
+#include <tchar.h>
 
 DWORD WINAPI OnProcessAttach(LPVOID lpParam);
 DWORD WINAPI OnProcessDetach(LPVOID lpParam);
@@ -15,8 +17,13 @@ DWORD WINAPI OnProcessDetach(LPVOID lpParam);
 BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved) {
     if (fdwReason == DLL_PROCESS_ATTACH) {
         DisableThreadLibraryCalls(hinstDLL);
-
-        U::SetRenderingBackend(DIRECTX12);
+       
+        HINSTANCE hD3D12 = GetModuleHandle(TEXT("D3D12.DLL"));
+        if (hD3D12) {
+            U::SetRenderingBackend(DIRECTX12);
+            H::IsD3D12 = true;
+        }
+        else U::SetRenderingBackend(DIRECTX11);
 
         HANDLE hHandle = CreateThread(NULL, 0, OnProcessAttach, hinstDLL, 0, NULL);
         if (hHandle != NULL) {
@@ -31,9 +38,12 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved) {
 
 DWORD WINAPI OnProcessAttach(LPVOID lpParam) {
     Console::Alloc( );
-    SetFocus((HWND)FindWindow(0, "The Outlast Trials  "));
-    SetForegroundWindow((HWND)FindWindow(0, "The Outlast Trials  "));
+
     Utils::mainWindow = (HWND)FindWindow(0, "The Outlast Trials  ");
+    SetFocus(Utils::mainWindow);
+    SetForegroundWindow(Utils::mainWindow);
+    
+
     LOG("[+] Rendering backend: %s\n", U::RenderingBackendToStr( ));
     if (U::GetRenderingBackend( ) == NONE) {
         LOG("[!] Looks like you forgot to set a backend. Will unload after pressing enter...");

@@ -30,15 +30,15 @@ public:
 	struct FSlateBrush                            InactiveBrush;                                     // 0x0300(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UNewsWidget_C*                          Parent;                                            // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Index_NewsWidgetDot_C;                             // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_314D[0x4];                                     // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C0D[0x4];                                     // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             DotClicked;                                        // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void DotClicked__DelegateSignature(int32 Param_Index);
-	void ExecuteUbergraph_NewsWidgetDot(int32 EntryPoint);
-	void BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void SetActive(bool bActive);
 	void SetIndex(int32 Param_Index);
+	void SetActive(bool bActive);
+	void BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void ExecuteUbergraph_NewsWidgetDot(int32 EntryPoint);
+	void DotClicked__DelegateSignature(int32 Param_Index);
 
 public:
 	static class UClass* StaticClass()

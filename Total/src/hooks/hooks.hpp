@@ -6,6 +6,7 @@ namespace Hooks {
 	void Free( );
 
 	inline bool bShuttingDown;
+    inline bool IsD3D12 = false;
 }
 
 namespace H = Hooks;

@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
+#include "PlayerVisualDamageStruct_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
-#include "PlayerVisualDamageStruct_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -60,38 +60,38 @@ public:
 	bool                                          CreatedShadowMesh;                                 // 0x78A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          HasInitReplicated;                                 // 0x78A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          HasReceivedInitialCustomization;                   // 0x78A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C06[0x5];                                     // 0x78A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B81[0x5];                                     // 0x78A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             ShadowMeshCompleted;                               // 0x78A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                         CorpseSearchBloodHandStartTime;                    // 0x78B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DesiredRightHandBloodIntensity;                    // 0x78BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CorpseSearchBloodDuration;                         // 0x78C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CurrentRightHandBloodIntensity;                    // 0x78C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HandBloodInterpSpeed;                              // 0x78C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C07[0x4];                                     // 0x78CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B82[0x4];                                     // 0x78CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class USkeletalMesh>           DefaultNV1PMesh;                                   // 0x78D0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	float                                         NextBloodDripDelay;                                // 0x78F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LastBloodDripTimestamp;                            // 0x78FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LastDownedStateSmearTimestamp;                     // 0x7900(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C08[0x4];                                     // 0x7904(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B83[0x4];                                     // 0x7904(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInstanceConstant*>      DynamicBloodSplatterMaterials;                     // 0x7908(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UMaterialInstanceConstant*>      DynamicBloodSplatterMaterials_Shuffled;            // 0x7918(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         NextDownedStateSmearDelay;                         // 0x7928(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C09[0x4];                                     // 0x792C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B84[0x4];                                     // 0x792C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInstanceConstant*>      DynamicStraightBloodSmearMaterials;                // 0x7930(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         TravelledDist;                                     // 0x7940(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                DamageVisualPreviousLocation;                      // 0x7944(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               DamageVisualPreviousRotation;                      // 0x7950(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C0A[0x4];                                     // 0x795C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B85[0x4];                                     // 0x795C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInstanceConstant*>      DynamicRoundBloodSmearMaterials;                   // 0x7960(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UPoseAsset*                             FacePoseAsset;                                     // 0x7970(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LastLocationDataTimestamp;                         // 0x7978(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         NextLongBloodDripDelay;                            // 0x797C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LastLongBloodDripTimestamp;                        // 0x7980(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C0B[0x4];                                     // 0x7984(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B86[0x4];                                     // 0x7984(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   ApparatusShadowMesh;                               // 0x7988(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 MainShadowMesh;                                    // 0x7990(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HealthRatio_Local;                                 // 0x7998(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C0C[0x4];                                     // 0x799C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B87[0x4];                                     // 0x799C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPrimitiveComponent*>            CharacterBloodReleventVisualComponents;            // 0x79A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:

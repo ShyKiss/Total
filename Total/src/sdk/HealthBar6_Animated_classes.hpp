@@ -39,10 +39,10 @@ public:
 	class USizeBox*                               StatusBox;                                         // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHudBarElement_Animated_C*              ThirdBracket;                                      // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ShouldShowEmpty;                                   // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D7D[0x3];                                     // 0x0359(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F9F[0x3];                                     // 0x0359(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CurrentHealth;                                     // 0x035C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PreviousHealth;                                    // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D7E[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FA0[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               HealthBarMaterial;                                 // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UHudBarElement_Animated_C*>      Brackets;                                          // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class UHudBarElement_Animated_C*              CurrentAnimatedBracket;                            // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,7 +50,7 @@ public:
 	int32                                         FinishingBracket;                                  // 0x038C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          WasDown;                                           // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          OngoingTweens;                                     // 0x0391(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D7F[0x2];                                     // 0x0392(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FA1[0x2];                                     // 0x0392(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BleedingLeft;                                      // 0x0394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
