@@ -1,1 +1,24 @@
-Total/src/dependencies/** linguist-vendored=true
+* text=auto
+
+*.c text
+*.cpp text
+*.h text
+*.m text
+*.mm text
+*.md text
+*.txt text
+*.html text
+*.bat text
+*.frag text
+*.vert text
+*.mkb text
+*.icf text
+
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.vcxproj.filters text eol=crlf
+*.natvis text eol=crlf
+
+*.png binary
+*.ttf binary
+*.lib binary

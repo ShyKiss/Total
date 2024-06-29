@@ -1,14 +1,9 @@
-.vs/*
-Total/bin/*
-Total/obj/*
-Startal/bin/*
-Startal/obj/*
-
 #Ignore thumbnails created by Windows
 Thumbs.db
 #Ignore files built by Visual Studio
 *.obj
 *.exe
+*.dll
 *.pdb
 *.user
 *.aps
