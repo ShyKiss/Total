@@ -4,6 +4,7 @@
 #include <tlhelp32.h>
 #include "resource.h"
 #include <fstream>
+#include <random>
 using namespace std;
 
 #define _CRT_SECURE_NO_DEPRECATE
@@ -12,6 +13,7 @@ using namespace std;
 
 BOOL Inject(DWORD pID, const char* DLL_NAME);
 DWORD GetTargetThreadIDFromProcName(const char* ProcName);
+string random_string(string::size_type length);
 
 int main(int argc, char* argv[]) {
     DWORD pID = GetTargetThreadIDFromProcName("TOTClient-Win64-Shipping.exe"); // Получаем ID процесса
@@ -28,7 +30,7 @@ int main(int argc, char* argv[]) {
     if (!GetTempPathA(MAX_PATH, pathtemp))
         return 5;
 
-    std::string fullPath = std::string(tempPath) + "Total-x64.dll";
+    string fullPath = string(tempPath) + name_of_dll;
 
     ofstream outfile(fullPath.c_str( ), ios::binary);
     if (!outfile.is_open( ))
@@ -117,4 +119,22 @@ DWORD GetTargetThreadIDFromProcName(const char* ProcName) {
         retval = Process32Next(thSnapShot, &pe);
     }
     return 0;
+}
+
+string random_string(string::size_type length) {
+    static auto& chrs = "0123456789"
+                        "abcdefghijklmnopqrstuvwxyz"
+                        "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    thread_local static mt19937 rg{random_device{ }( )};
+    thread_local static uniform_int_distribution<string::size_type> pick(0, sizeof(chrs) - 2);
+
+    string s;
+
+    s.reserve(length);
+
+    while (length--)
+        s += chrs[pick(rg)];
+
+    return s;
 }

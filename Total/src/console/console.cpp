@@ -1,10 +1,4 @@
-#include <Windows.h>
-
-#include <fstream>
-
-#include "console.hpp"
-
-#include "../hooks/hooks.hpp"
+#include "../pch.h"
 
 void Console::Alloc( ) {
 #ifndef DISABLE_LOGGING_CONSOLE

@@ -8,10 +8,7 @@
 
 // Package: OPP
 
-#include "Basic.hpp"
-
-#include "OPP_classes.hpp"
-#include "OPP_parameters.hpp"
+#include "../pch.h"
 
 
 namespace SDK

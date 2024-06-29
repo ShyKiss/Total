@@ -1,5 +1,5 @@
 #pragma once
-#include <Windows.h>
+#include "../pch.h"
 
 namespace Hooks {
 	void Init( );

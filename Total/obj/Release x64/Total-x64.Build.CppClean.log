@@ -1,44 +1,15 @@
-c:\users\beerymaid\source\repos\total\total\obj\release x64\buffer.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\hde64.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\hook.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\trampoline.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\hde32.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_impl_dx9.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\utils.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_tables.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\coreuobject_functions.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_demo.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\menu.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\hook_directx12.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_impl_dx12.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\hooks.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\hook_directx11.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\dllmain.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_draw.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\opp_functions.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_impl_dx10.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_impl_opengl3.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\basic.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_impl_dx11.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\console.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_impl_win32.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui_widgets.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\engine_functions.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\imgui.obj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\vc143.pdb
-c:\users\beerymaid\source\repos\total\total\bin\total-x64.dll
-c:\users\beerymaid\source\repos\total\total\bin\total-x64.pdb
-c:\users\beerymaid\source\repos\total\total\obj\release x64\resource.res
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total-x64.ipdb
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total-x64.iobj
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\cl.15796.write.1.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\cl.command.1.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\cl.items.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\cl.read.1.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\link.command.1.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\link.read.1.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\link.secondary.1.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\link.write.1.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\rc.command.1.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\rc.read.1.tlog
-c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\rc.write.1.tlog
+c:\users\beerymaid\source\repos\total\total\bin\concrt140.dll
+c:\users\beerymaid\source\repos\total\total\bin\msvcp140.dll
+c:\users\beerymaid\source\repos\total\total\bin\msvcp140_1.dll
+c:\users\beerymaid\source\repos\total\total\bin\msvcp140_2.dll
+c:\users\beerymaid\source\repos\total\total\bin\msvcp140_atomic_wait.dll
+c:\users\beerymaid\source\repos\total\total\bin\msvcp140_codecvt_ids.dll
+c:\users\beerymaid\source\repos\total\total\bin\vccorlib140.dll
+c:\users\beerymaid\source\repos\total\total\bin\vcruntime140.dll
+c:\users\beerymaid\source\repos\total\total\bin\vcruntime140_1.dll
+c:\users\beerymaid\source\repos\total\total\bin\vcruntime140_threads.dll
+c:\users\beerymaid\source\repos\total\total\bin\vcamp140.dll
+c:\users\beerymaid\source\repos\total\total\bin\vcomp140.dll
+c:\users\beerymaid\source\repos\total\total\obj\release x64\total-x64.pch
+c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\copylocal.read.1u.tlog
+c:\users\beerymaid\source\repos\total\total\obj\release x64\total.tlog\copylocal.write.1u.tlog

@@ -1,22 +1,4 @@
-#include <cstdio>
-#include <mutex>
-#include <thread>
-
-#include "hooks.hpp"
-
-//#include "backend/dx10/hook_directx10.hpp"
-#include "backend/dx11/hook_directx11.hpp"
-#include "backend/dx12/hook_directx12.hpp"
-//#include "backend/dx9/hook_directx9.hpp"
-
-//#include "backend/opengl/hook_opengl.hpp"
-//#include "backend/vulkan/hook_vulkan.hpp"
-
-#include "../console/console.hpp"
-#include "../menu/menu.hpp"
-#include "../utils/utils.hpp"
-
-#include "../dependencies/minhook/MinHook.h"
+#include "../pch.h"
 
 static HWND g_hWindow = NULL;
 static std::mutex g_mReinitHooksGuard;

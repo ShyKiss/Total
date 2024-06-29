@@ -1,10 +1,4 @@
-#include <Windows.h>
-#include <thread>
-#include <dxgi.h>
-
-#include "utils.hpp"
-
-#include "../console/console.hpp"
+#include "../pch.h"
 
 #define RB2STR(x) case x: return #x
 

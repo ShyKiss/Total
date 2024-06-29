@@ -1,30 +1,12 @@
-#include "../../../backend.hpp"
-#include "../../../console/console.hpp"
+#include "../../../pch.h"
 
 #ifdef ENABLE_BACKEND_DX11
-#include <Windows.h>
-
-#include <d3d11.h>
-#include <dxgi1_2.h>
 
 #pragma comment(lib, "d3d11.lib")
 #pragma comment(lib, "dxgi.lib")
 
-#include <memory>
-
 #define STB_IMAGE_IMPLEMENTATION
 #include "../../../utils/stb_image.h"
-
-#include "hook_directx11.hpp"
-
-#include "../../../dependencies/imgui/imgui_impl_dx11.h"
-#include "../../../dependencies/imgui/imgui_impl_win32.h"
-#include "../../../dependencies/minhook/MinHook.h"
-
-#include "../../../utils/utils.hpp"
-#include "../../hooks.hpp"
-
-#include "../../../menu/menu.hpp"
 
 static ID3D11Device* g_pd3dDevice = NULL;
 static ID3D11DeviceContext* g_pd3dDeviceContext = NULL;
