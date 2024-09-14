@@ -40,10 +40,10 @@ public:
 	bool                                          bEnableAcceptButton;                               // 0x02D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bEnableRefuseButton;                               // 0x02D5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bEnableBlockButton;                                // 0x02D6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C29[0x1];                                     // 0x02D7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D7[0x1];                                      // 0x02D7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ModeText;                                          // 0x02D8(0x0018)(Edit, BlueprintVisible)
 	bool                                          bShowHeaderBackground;                             // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C2A[0x7];                                     // 0x02F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F1[0x7];                                      // 0x02F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnAcceptedButtonClicked;                           // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnDeclinedButtonClicked;                           // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                   AcceptButtonText;                                  // 0x0318(0x0018)(Edit, BlueprintVisible)
@@ -64,7 +64,7 @@ public:
 	void BndEvt__CommonNotificationWidget_AcceptButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
 	void PreConstruct(bool IsDesignTime);
 	void UpdateProgress(float Progress);
-	void SetMessage(const class FText& Param_Message);
+	void SetMessage(const class FText& Message_0);
 	void EnableBlockButton(bool bEnable);
 
 public:

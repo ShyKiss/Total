@@ -19,34 +19,34 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GasCanister_NonPickable_BP.GasCanister_NonPickable_BP_C
-// 0x0070 (0x0A90 - 0x0A20)
+// 0x0070 (0x0AE0 - 0x0A70)
 class AGasCanister_NonPickable_BP_C final : public ABase_NonPickable_RBPickup_BP_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A18(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Ngr_Gas_NegY;                                      // 0x0A20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Ngr_Gas_NegX;                                      // 0x0A28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Ngr_Gas_PosZ;                                      // 0x0A30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Ngr_Gas_PosX;                                      // 0x0A38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Ngr_Gas_PosY;                                      // 0x0A40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URBSoundComponent*                      SoundComponent;                                    // 0x0A48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URBPropOptimizerComponent*              RBPropOptimizer;                                   // 0x0A50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        FX_Dummy;                                          // 0x0A58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         GasClearanceTestRadius;                            // 0x0A60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         GasClearanceTestDistance;                          // 0x0A64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bForwardTested;                                    // 0x0A68(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bForwardClear;                                     // 0x0A69(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bLeftTested;                                       // 0x0A6A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bLeftClear;                                        // 0x0A6B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bRightClear;                                       // 0x0A6C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bRightTested;                                      // 0x0A6D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bBackwardTested;                                   // 0x0A6E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bBackwardClear;                                    // 0x0A6F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bUpTested;                                         // 0x0A70(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bUpClear;                                          // 0x0A71(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C20[0x2];                                     // 0x0A72(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                GasClearanceTestOffset;                            // 0x0A74(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bTriggered;                                        // 0x0A80(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A68(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Ngr_Gas_NegY;                                      // 0x0A70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Ngr_Gas_NegX;                                      // 0x0A78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Ngr_Gas_PosZ;                                      // 0x0A80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Ngr_Gas_PosX;                                      // 0x0A88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Ngr_Gas_PosY;                                      // 0x0A90(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class URBSoundComponent*                      SoundComponent;                                    // 0x0A98(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class URBPropOptimizerComponent*              RBPropOptimizer;                                   // 0x0AA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        FX_Dummy;                                          // 0x0AA8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         GasClearanceTestRadius;                            // 0x0AB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GasClearanceTestDistance;                          // 0x0AB4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bForwardTested;                                    // 0x0AB8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bForwardClear;                                     // 0x0AB9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bLeftTested;                                       // 0x0ABA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bLeftClear;                                        // 0x0ABB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bRightClear;                                       // 0x0ABC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bRightTested;                                      // 0x0ABD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bBackwardTested;                                   // 0x0ABE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bBackwardClear;                                    // 0x0ABF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bUpTested;                                         // 0x0AC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bUpClear;                                          // 0x0AC1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_AC2[0x2];                                      // 0x0AC2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                GasClearanceTestOffset;                            // 0x0AC4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bTriggered;                                        // 0x0AD0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 
 public:
 	void ExecuteUbergraph_GasCanister_NonPickable_BP(int32 EntryPoint);
@@ -73,30 +73,30 @@ public:
 	}
 };
 static_assert(alignof(AGasCanister_NonPickable_BP_C) == 0x000010, "Wrong alignment on AGasCanister_NonPickable_BP_C");
-static_assert(sizeof(AGasCanister_NonPickable_BP_C) == 0x000A90, "Wrong size on AGasCanister_NonPickable_BP_C");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, UberGraphFrame) == 0x000A18, "Member 'AGasCanister_NonPickable_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_NegY) == 0x000A20, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_NegY' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_NegX) == 0x000A28, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_NegX' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_PosZ) == 0x000A30, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_PosZ' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_PosX) == 0x000A38, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_PosX' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_PosY) == 0x000A40, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_PosY' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, SoundComponent) == 0x000A48, "Member 'AGasCanister_NonPickable_BP_C::SoundComponent' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, RBPropOptimizer) == 0x000A50, "Member 'AGasCanister_NonPickable_BP_C::RBPropOptimizer' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, FX_Dummy) == 0x000A58, "Member 'AGasCanister_NonPickable_BP_C::FX_Dummy' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, GasClearanceTestRadius) == 0x000A60, "Member 'AGasCanister_NonPickable_BP_C::GasClearanceTestRadius' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, GasClearanceTestDistance) == 0x000A64, "Member 'AGasCanister_NonPickable_BP_C::GasClearanceTestDistance' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bForwardTested) == 0x000A68, "Member 'AGasCanister_NonPickable_BP_C::bForwardTested' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bForwardClear) == 0x000A69, "Member 'AGasCanister_NonPickable_BP_C::bForwardClear' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bLeftTested) == 0x000A6A, "Member 'AGasCanister_NonPickable_BP_C::bLeftTested' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bLeftClear) == 0x000A6B, "Member 'AGasCanister_NonPickable_BP_C::bLeftClear' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bRightClear) == 0x000A6C, "Member 'AGasCanister_NonPickable_BP_C::bRightClear' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bRightTested) == 0x000A6D, "Member 'AGasCanister_NonPickable_BP_C::bRightTested' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bBackwardTested) == 0x000A6E, "Member 'AGasCanister_NonPickable_BP_C::bBackwardTested' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bBackwardClear) == 0x000A6F, "Member 'AGasCanister_NonPickable_BP_C::bBackwardClear' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bUpTested) == 0x000A70, "Member 'AGasCanister_NonPickable_BP_C::bUpTested' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bUpClear) == 0x000A71, "Member 'AGasCanister_NonPickable_BP_C::bUpClear' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, GasClearanceTestOffset) == 0x000A74, "Member 'AGasCanister_NonPickable_BP_C::GasClearanceTestOffset' has a wrong offset!");
-static_assert(offsetof(AGasCanister_NonPickable_BP_C, bTriggered) == 0x000A80, "Member 'AGasCanister_NonPickable_BP_C::bTriggered' has a wrong offset!");
+static_assert(sizeof(AGasCanister_NonPickable_BP_C) == 0x000AE0, "Wrong size on AGasCanister_NonPickable_BP_C");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, UberGraphFrame) == 0x000A68, "Member 'AGasCanister_NonPickable_BP_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_NegY) == 0x000A70, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_NegY' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_NegX) == 0x000A78, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_NegX' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_PosZ) == 0x000A80, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_PosZ' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_PosX) == 0x000A88, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_PosX' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, Ngr_Gas_PosY) == 0x000A90, "Member 'AGasCanister_NonPickable_BP_C::Ngr_Gas_PosY' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, SoundComponent) == 0x000A98, "Member 'AGasCanister_NonPickable_BP_C::SoundComponent' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, RBPropOptimizer) == 0x000AA0, "Member 'AGasCanister_NonPickable_BP_C::RBPropOptimizer' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, FX_Dummy) == 0x000AA8, "Member 'AGasCanister_NonPickable_BP_C::FX_Dummy' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, GasClearanceTestRadius) == 0x000AB0, "Member 'AGasCanister_NonPickable_BP_C::GasClearanceTestRadius' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, GasClearanceTestDistance) == 0x000AB4, "Member 'AGasCanister_NonPickable_BP_C::GasClearanceTestDistance' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bForwardTested) == 0x000AB8, "Member 'AGasCanister_NonPickable_BP_C::bForwardTested' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bForwardClear) == 0x000AB9, "Member 'AGasCanister_NonPickable_BP_C::bForwardClear' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bLeftTested) == 0x000ABA, "Member 'AGasCanister_NonPickable_BP_C::bLeftTested' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bLeftClear) == 0x000ABB, "Member 'AGasCanister_NonPickable_BP_C::bLeftClear' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bRightClear) == 0x000ABC, "Member 'AGasCanister_NonPickable_BP_C::bRightClear' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bRightTested) == 0x000ABD, "Member 'AGasCanister_NonPickable_BP_C::bRightTested' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bBackwardTested) == 0x000ABE, "Member 'AGasCanister_NonPickable_BP_C::bBackwardTested' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bBackwardClear) == 0x000ABF, "Member 'AGasCanister_NonPickable_BP_C::bBackwardClear' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bUpTested) == 0x000AC0, "Member 'AGasCanister_NonPickable_BP_C::bUpTested' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bUpClear) == 0x000AC1, "Member 'AGasCanister_NonPickable_BP_C::bUpClear' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, GasClearanceTestOffset) == 0x000AC4, "Member 'AGasCanister_NonPickable_BP_C::GasClearanceTestOffset' has a wrong offset!");
+static_assert(offsetof(AGasCanister_NonPickable_BP_C, bTriggered) == 0x000AD0, "Member 'AGasCanister_NonPickable_BP_C::bTriggered' has a wrong offset!");
 
 }
 

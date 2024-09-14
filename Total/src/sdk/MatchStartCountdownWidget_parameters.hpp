@@ -31,12 +31,12 @@ public:
 	float                                         K2Node_Event_InDeltaTime;                          // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBLobbyPlayerController*               CallFunc_GetLocalLobbyPlayerController_ReturnValue; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F0C[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBLobbyPlayerController*               CallFunc_GetLocalLobbyPlayerController_ReturnValue_1; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBLobbyPlayerState*                    K2Node_CustomEvent_rbLobbyPlayerState_1;           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMatchState                            K2Node_CustomEvent_matchState;                     // 0x0090(0x0020)(ConstParm, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F0D[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBLobbyPlayerState*                    K2Node_CustomEvent_rbLobbyPlayerState;             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFindPartyState                        K2Node_CustomEvent_findPartyState;                 // 0x00C0(0x0028)(ConstParm, NoDestructor)
 	EFindPartyTicketState                         K2Node_CustomEvent_findPartyTicketState;           // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -64,11 +64,11 @@ static_assert(offsetof(MatchStartCountdownWidget_C_ExecuteUbergraph_MatchStartCo
 struct MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent final
 {
 public:
-	EFindPartyTicketState                         Param_FindPartyTicketState;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFindPartyTicketState                         FindPartyTicketState_0;                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent) == 0x000001, "Wrong alignment on MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent");
 static_assert(sizeof(MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent) == 0x000001, "Wrong size on MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent");
-static_assert(offsetof(MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent, Param_FindPartyTicketState) == 0x000000, "Member 'MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent::Param_FindPartyTicketState' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent, FindPartyTicketState_0) == 0x000000, "Member 'MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent::FindPartyTicketState_0' has a wrong offset!");
 
 // Function MatchStartCountdownWidget.MatchStartCountdownWidget_C.OnFindPartyStateUpdatedEvent
 // 0x0030 (0x0030 - 0x0000)
@@ -115,7 +115,7 @@ struct MatchStartCountdownWidget_C_StartMatchCountdown final
 {
 public:
 	float                                         MatchCancelationGracePeriodServerTime;             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_MatchStartServerTime;                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MatchStartServerTime_0;                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bReadyToTravelToMatch;                             // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -125,7 +125,7 @@ public:
 static_assert(alignof(MatchStartCountdownWidget_C_StartMatchCountdown) == 0x000004, "Wrong alignment on MatchStartCountdownWidget_C_StartMatchCountdown");
 static_assert(sizeof(MatchStartCountdownWidget_C_StartMatchCountdown) == 0x000010, "Wrong size on MatchStartCountdownWidget_C_StartMatchCountdown");
 static_assert(offsetof(MatchStartCountdownWidget_C_StartMatchCountdown, MatchCancelationGracePeriodServerTime) == 0x000000, "Member 'MatchStartCountdownWidget_C_StartMatchCountdown::MatchCancelationGracePeriodServerTime' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_StartMatchCountdown, Param_MatchStartServerTime) == 0x000004, "Member 'MatchStartCountdownWidget_C_StartMatchCountdown::Param_MatchStartServerTime' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_StartMatchCountdown, MatchStartServerTime_0) == 0x000004, "Member 'MatchStartCountdownWidget_C_StartMatchCountdown::MatchStartServerTime_0' has a wrong offset!");
 static_assert(offsetof(MatchStartCountdownWidget_C_StartMatchCountdown, bReadyToTravelToMatch) == 0x000008, "Member 'MatchStartCountdownWidget_C_StartMatchCountdown::bReadyToTravelToMatch' has a wrong offset!");
 static_assert(offsetof(MatchStartCountdownWidget_C_StartMatchCountdown, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000009, "Member 'MatchStartCountdownWidget_C_StartMatchCountdown::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MatchStartCountdownWidget_C_StartMatchCountdown, CallFunc_BooleanAND_ReturnValue) == 0x00000A, "Member 'MatchStartCountdownWidget_C_StartMatchCountdown::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
@@ -166,19 +166,19 @@ struct MatchStartCountdownWidget_C_UpdateText final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F0E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	bool                                          Temp_bool_Variable_1;                              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F0F[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0018)()
 	class FText                                   Temp_text_Variable_2;                              // 0x0040(0x0018)()
 	bool                                          Temp_bool_Variable_2;                              // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F10[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable_3;                              // 0x0060(0x0018)()
 	class FText                                   Temp_text_Variable_4;                              // 0x0078(0x0018)()
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F11[0x6];                                     // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetFindPartySearchingText_ReturnValue;    // 0x0098(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
 	class FText                                   K2Node_Select_Default_1;                           // 0x00C8(0x0018)()
@@ -219,11 +219,11 @@ static_assert(offsetof(MatchStartCountdownWidget_C_OnFindPartyStateUpdated, Find
 struct MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated final
 {
 public:
-	EFindPartyTicketState                         Param_FindPartyTicketState;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFindPartyTicketState                         FindPartyTicketState_0;                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated) == 0x000001, "Wrong alignment on MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated");
 static_assert(sizeof(MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated) == 0x000001, "Wrong size on MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated");
-static_assert(offsetof(MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated, Param_FindPartyTicketState) == 0x000000, "Member 'MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated::Param_FindPartyTicketState' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated, FindPartyTicketState_0) == 0x000000, "Member 'MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated::FindPartyTicketState_0' has a wrong offset!");
 
 // Function MatchStartCountdownWidget.MatchStartCountdownWidget_C.UpdateCountdownText
 // 0x000C (0x000C - 0x0000)
@@ -241,53 +241,37 @@ static_assert(offsetof(MatchStartCountdownWidget_C_UpdateCountdownText, CallFunc
 static_assert(offsetof(MatchStartCountdownWidget_C_UpdateCountdownText, CallFunc_FMax_ReturnValue) == 0x000008, "Member 'MatchStartCountdownWidget_C_UpdateCountdownText::CallFunc_FMax_ReturnValue' has a wrong offset!");
 
 // Function MatchStartCountdownWidget.MatchStartCountdownWidget_C.GetFindPartySearchingText
-// 0x0418 (0x0418 - 0x0000)
+// 0x02B8 (0x02B8 - 0x0000)
 struct MatchStartCountdownWidget_C_GetFindPartySearchingText final
 {
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F12[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0020(0x0018)()
 	class URBGameStructureConfig*                 CallFunc_GetGameStructureConfig_ReturnValue;       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRBProgramInfoRow                      CallFunc_GetProgramInfo_ReturnValue;               // 0x0040(0x0148)(ConstParm)
-	struct FRBTrialInfoRow                        CallFunc_GetTrialInfo_ReturnValue;                 // 0x0188(0x0158)(ConstParm)
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x02E0(0x0018)()
-	class FText                                   CallFunc_TextToUpper_ReturnValue_1;                // 0x02F8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0310(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0350(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0390(0x0010)(ReferenceParm)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x03A0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x03B0(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x03C8(0x0018)()
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue_1;          // 0x03E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F13[0x6];                                     // 0x03E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x03E8(0x0018)()
-	class FText                                   K2Node_Select_Default_1;                           // 0x0400(0x0018)()
+	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBProgramInfoRow                      CallFunc_GetProgramInfo_ReturnValue;               // 0x0048(0x01D8)(ConstParm)
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0220(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0238(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0278(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0288(0x0018)()
+	class FText                                   K2Node_Select_Default;                             // 0x02A0(0x0018)()
 };
 static_assert(alignof(MatchStartCountdownWidget_C_GetFindPartySearchingText) == 0x000008, "Wrong alignment on MatchStartCountdownWidget_C_GetFindPartySearchingText");
-static_assert(sizeof(MatchStartCountdownWidget_C_GetFindPartySearchingText) == 0x000418, "Wrong size on MatchStartCountdownWidget_C_GetFindPartySearchingText");
+static_assert(sizeof(MatchStartCountdownWidget_C_GetFindPartySearchingText) == 0x0002B8, "Wrong size on MatchStartCountdownWidget_C_GetFindPartySearchingText");
 static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, ReturnValue) == 0x000000, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::ReturnValue' has a wrong offset!");
 static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, Temp_bool_Variable) == 0x000018, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, Temp_bool_Variable_1) == 0x000019, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, Temp_text_Variable) == 0x000020, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_GetGameStructureConfig_ReturnValue) == 0x000038, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_GetGameStructureConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_GetProgramInfo_ReturnValue) == 0x000040, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_GetProgramInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_GetTrialInfo_ReturnValue) == 0x000188, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_GetTrialInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_TextToUpper_ReturnValue) == 0x0002E0, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_TextToUpper_ReturnValue_1) == 0x0002F8, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_TextToUpper_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, K2Node_MakeStruct_FormatArgumentData) == 0x000310, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, K2Node_MakeStruct_FormatArgumentData_1) == 0x000350, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, K2Node_MakeArray_Array) == 0x000390, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, K2Node_MakeArray_Array_1) == 0x0003A0, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_Format_ReturnValue) == 0x0003B0, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_Format_ReturnValue_1) == 0x0003C8, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_NotEqual_NameName_ReturnValue) == 0x0003E0, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_NotEqual_NameName_ReturnValue_1) == 0x0003E1, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_NotEqual_NameName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, K2Node_Select_Default) == 0x0003E8, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, K2Node_Select_Default_1) == 0x000400, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_NotEqual_NameName_ReturnValue) == 0x000040, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_GetProgramInfo_ReturnValue) == 0x000048, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_GetProgramInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_TextToUpper_ReturnValue) == 0x000220, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, K2Node_MakeStruct_FormatArgumentData) == 0x000238, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, K2Node_MakeArray_Array) == 0x000278, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, CallFunc_Format_ReturnValue) == 0x000288, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MatchStartCountdownWidget_C_GetFindPartySearchingText, K2Node_Select_Default) == 0x0002A0, "Member 'MatchStartCountdownWidget_C_GetFindPartySearchingText::K2Node_Select_Default' has a wrong offset!");
 
 // Function MatchStartCountdownWidget.MatchStartCountdownWidget_C.ShouldShow
 // 0x0006 (0x0006 - 0x0000)

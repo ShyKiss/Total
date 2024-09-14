@@ -10,44 +10,46 @@
 
 #include "Basic.hpp"
 
+#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass CineFace_AnimBP.CineFace_AnimBP_C
-// 0x0760 (0x0A20 - 0x02C0)
+// 0x08F0 (0x0BB0 - 0x02C0)
 class UCineFace_AnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_3150[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x02F8(0x0048)()
-	struct FAnimNode_ApplyAdditive                AnimGraphNode_ApplyAdditive;                       // 0x0340(0x00C8)()
-	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x0408(0x01D8)(ContainsInstancedReference)
-	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x05E0(0x00C0)()
-	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose;                      // 0x06A0(0x0158)()
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_1;                     // 0x07F8(0x0028)()
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0x0820(0x0028)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0848(0x0080)()
-	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool;                     // 0x08C8(0x00A8)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0970(0x0080)()
-	class UPoseAsset*                             PoseAsset;                                         // 0x09F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 Source_Mesh_Component;                             // 0x09F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	bool                                          IsRuntime;                                         // 0x0A00(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor)
-	uint8                                         Pad_3151[0x7];                                     // 0x0A01(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimSequence*                          FacialAnim;                                        // 0x0A08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimSequence*                          FaceForScreenshots;                                // 0x0A10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_1;                              // 0x02C8(0x0048)()
+	struct FAnimNode_ApplyAdditive                AnimGraphNode_ApplyAdditive_1;                     // 0x0310(0x00C8)()
+	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x03D8(0x01D8)(ContainsInstancedReference)
+	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x05B0(0x00C0)()
+	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose;                      // 0x0670(0x0158)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_1;                     // 0x07C8(0x0028)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0x07F0(0x0028)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x0818(0x0080)()
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool;                     // 0x0898(0x00A8)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0940(0x0080)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x09C0(0x0048)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0A08(0x0080)()
+	struct FAnimNode_ApplyAdditive                AnimGraphNode_ApplyAdditive;                       // 0x0A88(0x00C8)()
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0B50(0x0030)()
+	class UPoseAsset*                             PoseAsset;                                         // 0x0B80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 Source_Mesh_Component;                             // 0x0B88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          IsRuntime;                                         // 0x0B90(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor)
+	uint8                                         Pad_B91[0x7];                                      // 0x0B91(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimSequence*                          FacialAnim;                                        // 0x0B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimSequence*                          FaceForScreenshots;                                // 0x0BA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_CineFace_AnimBP(int32 EntryPoint);
 	void BlueprintInitializeAnimation();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()
@@ -60,24 +62,27 @@ public:
 	}
 };
 static_assert(alignof(UCineFace_AnimBP_C) == 0x000010, "Wrong alignment on UCineFace_AnimBP_C");
-static_assert(sizeof(UCineFace_AnimBP_C) == 0x000A20, "Wrong size on UCineFace_AnimBP_C");
+static_assert(sizeof(UCineFace_AnimBP_C) == 0x000BB0, "Wrong size on UCineFace_AnimBP_C");
 static_assert(offsetof(UCineFace_AnimBP_C, UberGraphFrame) == 0x0002C0, "Member 'UCineFace_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UCineFace_AnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_Slot) == 0x0002F8, "Member 'UCineFace_AnimBP_C::AnimGraphNode_Slot' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_ApplyAdditive) == 0x000340, "Member 'UCineFace_AnimBP_C::AnimGraphNode_ApplyAdditive' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_CopyPoseFromMesh) == 0x000408, "Member 'UCineFace_AnimBP_C::AnimGraphNode_CopyPoseFromMesh' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_LayeredBoneBlend) == 0x0005E0, "Member 'UCineFace_AnimBP_C::AnimGraphNode_LayeredBoneBlend' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_SaveCachedPose) == 0x0006A0, "Member 'UCineFace_AnimBP_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_UseCachedPose_1) == 0x0007F8, "Member 'UCineFace_AnimBP_C::AnimGraphNode_UseCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_UseCachedPose) == 0x000820, "Member 'UCineFace_AnimBP_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_SequencePlayer_1) == 0x000848, "Member 'UCineFace_AnimBP_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_BlendListByBool) == 0x0008C8, "Member 'UCineFace_AnimBP_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_SequencePlayer) == 0x000970, "Member 'UCineFace_AnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, PoseAsset) == 0x0009F0, "Member 'UCineFace_AnimBP_C::PoseAsset' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, Source_Mesh_Component) == 0x0009F8, "Member 'UCineFace_AnimBP_C::Source_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, IsRuntime) == 0x000A00, "Member 'UCineFace_AnimBP_C::IsRuntime' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, FacialAnim) == 0x000A08, "Member 'UCineFace_AnimBP_C::FacialAnim' has a wrong offset!");
-static_assert(offsetof(UCineFace_AnimBP_C, FaceForScreenshots) == 0x000A10, "Member 'UCineFace_AnimBP_C::FaceForScreenshots' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_Slot_1) == 0x0002C8, "Member 'UCineFace_AnimBP_C::AnimGraphNode_Slot_1' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_ApplyAdditive_1) == 0x000310, "Member 'UCineFace_AnimBP_C::AnimGraphNode_ApplyAdditive_1' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_CopyPoseFromMesh) == 0x0003D8, "Member 'UCineFace_AnimBP_C::AnimGraphNode_CopyPoseFromMesh' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_LayeredBoneBlend) == 0x0005B0, "Member 'UCineFace_AnimBP_C::AnimGraphNode_LayeredBoneBlend' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_SaveCachedPose) == 0x000670, "Member 'UCineFace_AnimBP_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_UseCachedPose_1) == 0x0007C8, "Member 'UCineFace_AnimBP_C::AnimGraphNode_UseCachedPose_1' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_UseCachedPose) == 0x0007F0, "Member 'UCineFace_AnimBP_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_SequencePlayer_2) == 0x000818, "Member 'UCineFace_AnimBP_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_BlendListByBool) == 0x000898, "Member 'UCineFace_AnimBP_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_SequencePlayer_1) == 0x000940, "Member 'UCineFace_AnimBP_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_Slot) == 0x0009C0, "Member 'UCineFace_AnimBP_C::AnimGraphNode_Slot' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_SequencePlayer) == 0x000A08, "Member 'UCineFace_AnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_ApplyAdditive) == 0x000A88, "Member 'UCineFace_AnimBP_C::AnimGraphNode_ApplyAdditive' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, AnimGraphNode_Root) == 0x000B50, "Member 'UCineFace_AnimBP_C::AnimGraphNode_Root' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, PoseAsset) == 0x000B80, "Member 'UCineFace_AnimBP_C::PoseAsset' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, Source_Mesh_Component) == 0x000B88, "Member 'UCineFace_AnimBP_C::Source_Mesh_Component' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, IsRuntime) == 0x000B90, "Member 'UCineFace_AnimBP_C::IsRuntime' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, FacialAnim) == 0x000B98, "Member 'UCineFace_AnimBP_C::FacialAnim' has a wrong offset!");
+static_assert(offsetof(UCineFace_AnimBP_C, FaceForScreenshots) == 0x000BA0, "Member 'UCineFace_AnimBP_C::FaceForScreenshots' has a wrong offset!");
 
 }
 

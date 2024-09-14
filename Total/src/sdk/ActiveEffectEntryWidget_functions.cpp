@@ -82,11 +82,11 @@ void UActiveEffectEntryWidget_C::PreConstruct(bool IsDesignTime)
 // Function ActiveEffectEntryWidget.ActiveEffectEntryWidget_C.Setup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_EffectId                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_UntilServerTime                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_DisplayValue                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             EffectId_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   UntilServerTime_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DisplayValue_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UActiveEffectEntryWidget_C::Setup(class FName Param_EffectId, float Param_UntilServerTime, float Param_DisplayValue)
+void UActiveEffectEntryWidget_C::Setup(class FName EffectId_0, float UntilServerTime_0, float DisplayValue_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -95,9 +95,9 @@ void UActiveEffectEntryWidget_C::Setup(class FName Param_EffectId, float Param_U
 
 	Params::ActiveEffectEntryWidget_C_Setup Parms{};
 
-	Parms.Param_EffectId = Param_EffectId;
-	Parms.Param_UntilServerTime = Param_UntilServerTime;
-	Parms.Param_DisplayValue = Param_DisplayValue;
+	Parms.EffectId_0 = EffectId_0;
+	Parms.UntilServerTime_0 = UntilServerTime_0;
+	Parms.DisplayValue_0 = DisplayValue_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

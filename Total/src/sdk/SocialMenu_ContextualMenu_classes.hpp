@@ -42,7 +42,7 @@ public:
 	void OnActionTriggered(ERBSocialMenuEntryAction Action);
 	void Event_Refresh();
 	class FText GetActionText(ERBSocialMenuEntryAction Enumerator);
-	class UWidget* DoCustomNavigation_0(EUINavigation Param_Navigation);
+	class UWidget* DoCustomNavigation_0(EUINavigation Navigation_0);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 
 public:

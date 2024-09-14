@@ -27,13 +27,13 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3065[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3066[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0034(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_3067[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0048(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A0(0x0010)(ReferenceParm)
@@ -62,12 +62,12 @@ struct FriendInviteHudWidget_C_Event_UpdateDisplayTime final
 {
 public:
 	float                                         DisplayTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_TotalDisplayTime;                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TotalDisplayTime_0;                                // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FriendInviteHudWidget_C_Event_UpdateDisplayTime) == 0x000004, "Wrong alignment on FriendInviteHudWidget_C_Event_UpdateDisplayTime");
 static_assert(sizeof(FriendInviteHudWidget_C_Event_UpdateDisplayTime) == 0x000008, "Wrong size on FriendInviteHudWidget_C_Event_UpdateDisplayTime");
 static_assert(offsetof(FriendInviteHudWidget_C_Event_UpdateDisplayTime, DisplayTime) == 0x000000, "Member 'FriendInviteHudWidget_C_Event_UpdateDisplayTime::DisplayTime' has a wrong offset!");
-static_assert(offsetof(FriendInviteHudWidget_C_Event_UpdateDisplayTime, Param_TotalDisplayTime) == 0x000004, "Member 'FriendInviteHudWidget_C_Event_UpdateDisplayTime::Param_TotalDisplayTime' has a wrong offset!");
+static_assert(offsetof(FriendInviteHudWidget_C_Event_UpdateDisplayTime, TotalDisplayTime_0) == 0x000004, "Member 'FriendInviteHudWidget_C_Event_UpdateDisplayTime::TotalDisplayTime_0' has a wrong offset!");
 
 }
 

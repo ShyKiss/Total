@@ -24,20 +24,20 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class ARBActiveSkill* ActiveSkillActor)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2F94[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              K2Node_Event_oldPlayer;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bOn;                            // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F95[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBActiveSkill*                         K2Node_CustomEvent_activeSkillActor;               // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F96[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool bOn)>                     K2Node_CreateDelegate_OutputDelegate_2;            // 0x004C(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F97[0x3];                                     // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBActiveSkill*                         K2Node_CustomEvent_ActiveSkill;                    // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bIsActive;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F98[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              K2Node_CustomEvent_player_1;                       // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              K2Node_CustomEvent_player;                         // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -49,7 +49,7 @@ public:
 	float                                         K2Node_CustomEvent_maxBattery;                     // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F99[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_CustomEvent_batteryLevel;                   // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class ARBActiveSkill* ActiveSkill, bool bIsActive)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -182,12 +182,12 @@ static_assert(offsetof(HUDNightVision_C_Event_OnWatchedPlayerChanged, NewPlayer)
 struct HUDNightVision_C_SetIsNVActive final
 {
 public:
-	bool                                          Param_IsNvActive;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsNvActive_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HUDNightVision_C_SetIsNVActive) == 0x000001, "Wrong alignment on HUDNightVision_C_SetIsNVActive");
 static_assert(sizeof(HUDNightVision_C_SetIsNVActive) == 0x000002, "Wrong size on HUDNightVision_C_SetIsNVActive");
-static_assert(offsetof(HUDNightVision_C_SetIsNVActive, Param_IsNvActive) == 0x000000, "Member 'HUDNightVision_C_SetIsNVActive::Param_IsNvActive' has a wrong offset!");
+static_assert(offsetof(HUDNightVision_C_SetIsNVActive, IsNvActive_0) == 0x000000, "Member 'HUDNightVision_C_SetIsNVActive::IsNvActive_0' has a wrong offset!");
 static_assert(offsetof(HUDNightVision_C_SetIsNVActive, CallFunc_BooleanOR_ReturnValue) == 0x000001, "Member 'HUDNightVision_C_SetIsNVActive::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function HUDNightVision.HUDNightVision_C.UpdateRatio
@@ -198,10 +198,10 @@ public:
 	float                                         batteryValue;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Ratio;                                             // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F9A[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9B[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -233,12 +233,12 @@ public:
 	float                                         StaminaBoosterValue;                               // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable;                               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9C[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRBGameplayAttributeModifier           CallFunc_GetBatteryBoostItemModifier_ReturnValue;  // 0x0018(0x000C)(ConstParm, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9D[0x2];                                     // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HUDNightVision_C_GetBatteryBoosterValue) == 0x000008, "Wrong alignment on HUDNightVision_C_GetBatteryBoosterValue");
@@ -257,22 +257,20 @@ static_assert(offsetof(HUDNightVision_C_GetBatteryBoosterValue, K2Node_Select_De
 struct HUDNightVision_C_HandleMaxBatteryChange final
 {
 public:
-	float                                         Param_Max_Battery;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Max_Battery_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9E[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetBatteryBoosterValue_StaminaBoosterValue; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HUDNightVision_C_HandleMaxBatteryChange) == 0x000004, "Wrong alignment on HUDNightVision_C_HandleMaxBatteryChange");
 static_assert(sizeof(HUDNightVision_C_HandleMaxBatteryChange) == 0x000010, "Wrong size on HUDNightVision_C_HandleMaxBatteryChange");
-static_assert(offsetof(HUDNightVision_C_HandleMaxBatteryChange, Param_Max_Battery) == 0x000000, "Member 'HUDNightVision_C_HandleMaxBatteryChange::Param_Max_Battery' has a wrong offset!");
+static_assert(offsetof(HUDNightVision_C_HandleMaxBatteryChange, Max_Battery_0) == 0x000000, "Member 'HUDNightVision_C_HandleMaxBatteryChange::Max_Battery_0' has a wrong offset!");
 static_assert(offsetof(HUDNightVision_C_HandleMaxBatteryChange, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'HUDNightVision_C_HandleMaxBatteryChange::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDNightVision_C_HandleMaxBatteryChange, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'HUDNightVision_C_HandleMaxBatteryChange::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDNightVision_C_HandleMaxBatteryChange, CallFunc_IsValid_ReturnValue_1) == 0x000005, "Member 'HUDNightVision_C_HandleMaxBatteryChange::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(HUDNightVision_C_HandleMaxBatteryChange, CallFunc_GetBatteryBoosterValue_StaminaBoosterValue) == 0x000008, "Member 'HUDNightVision_C_HandleMaxBatteryChange::CallFunc_GetBatteryBoosterValue_StaminaBoosterValue' has a wrong offset!");
 static_assert(offsetof(HUDNightVision_C_HandleMaxBatteryChange, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00000C, "Member 'HUDNightVision_C_HandleMaxBatteryChange::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDNightVision_C_HandleMaxBatteryChange, CallFunc_BooleanAND_ReturnValue) == 0x00000D, "Member 'HUDNightVision_C_HandleMaxBatteryChange::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function HUDNightVision.HUDNightVision_C.ShouldShow
 // 0x0002 (0x0002 - 0x0000)

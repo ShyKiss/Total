@@ -29,10 +29,10 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESpecialMove                                  CallFunc_BP_GetSpecialMove_ReturnValue;            // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AAB[0x5];                                     // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                CallFunc_GetCurrentValue_ScheduledUObject_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AAC[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPickup*                              K2Node_DynamicCast_AsRB_Pickup;                    // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -76,11 +76,11 @@ static_assert(offsetof(Player_1P_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) 
 struct Player_1P_AnimBP_C_AnimGraph final
 {
 public:
-	struct FPoseLink                              Param_AnimGraph;                                   // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(Player_1P_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on Player_1P_AnimBP_C_AnimGraph");
 static_assert(sizeof(Player_1P_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on Player_1P_AnimBP_C_AnimGraph");
-static_assert(offsetof(Player_1P_AnimBP_C_AnimGraph, Param_AnimGraph) == 0x000000, "Member 'Player_1P_AnimBP_C_AnimGraph::Param_AnimGraph' has a wrong offset!");
+static_assert(offsetof(Player_1P_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'Player_1P_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 }
 

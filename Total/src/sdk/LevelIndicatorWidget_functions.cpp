@@ -82,10 +82,10 @@ void ULevelIndicatorWidget_C::Construct()
 // Function LevelIndicatorWidget.LevelIndicatorWidget_C.Init
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Level                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Level_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   ReleaseCount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULevelIndicatorWidget_C::Init(int32 Param_Level, int32 ReleaseCount)
+void ULevelIndicatorWidget_C::Init(int32 Level_0, int32 ReleaseCount)
 {
 	static class UFunction* Func = nullptr;
 
@@ -94,7 +94,7 @@ void ULevelIndicatorWidget_C::Init(int32 Param_Level, int32 ReleaseCount)
 
 	Params::LevelIndicatorWidget_C_Init Parms{};
 
-	Parms.Param_Level = Param_Level;
+	Parms.Level_0 = Level_0;
 	Parms.ReleaseCount = ReleaseCount;
 
 	UObject::ProcessEvent(Func, &Parms);

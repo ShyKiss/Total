@@ -37,6 +37,20 @@ void URewardMenu_C::ExecuteUbergraph_RewardMenu(int32 EntryPoint)
 }
 
 
+// Function RewardMenu.RewardMenu_C.Event_MenuConfirm_Pressed
+// (Event, Public, BlueprintEvent)
+
+void URewardMenu_C::Event_MenuConfirm_Pressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RewardMenu_C", "Event_MenuConfirm_Pressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function RewardMenu.RewardMenu_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -237,8 +251,9 @@ void URewardMenu_C::GetRewardWidget(const struct FRewardUIData& RewardUIData, cl
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FRewardUIData                    Reward                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// class USelectableRewardWidget_C*        Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewardMenu_C::OnRewardHovered(const struct FRewardUIData& Reward)
+void URewardMenu_C::OnRewardHovered(const struct FRewardUIData& Reward, class USelectableRewardWidget_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -248,6 +263,7 @@ void URewardMenu_C::OnRewardHovered(const struct FRewardUIData& Reward)
 	Params::RewardMenu_C_OnRewardHovered Parms{};
 
 	Parms.Reward = std::move(Reward);
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -257,8 +273,9 @@ void URewardMenu_C::OnRewardHovered(const struct FRewardUIData& Reward)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FRewardUIData                    Reward                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// class USelectableRewardWidget_C*        Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewardMenu_C::OnRewardUnhovered(const struct FRewardUIData& Reward)
+void URewardMenu_C::OnRewardUnhovered(const struct FRewardUIData& Reward, class USelectableRewardWidget_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -268,8 +285,23 @@ void URewardMenu_C::OnRewardUnhovered(const struct FRewardUIData& Reward)
 	Params::RewardMenu_C_OnRewardUnhovered Parms{};
 
 	Parms.Reward = std::move(Reward);
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function RewardMenu.RewardMenu_C.OnRewardClicked
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void URewardMenu_C::OnRewardClicked()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RewardMenu_C", "OnRewardClicked");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -298,6 +330,59 @@ void URewardMenu_C::SetupDescriptionText()
 		Func = Class->GetFunction("RewardMenu_C", "SetupDescriptionText");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function RewardMenu.RewardMenu_C.SelectBackground
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void URewardMenu_C::SelectBackground()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RewardMenu_C", "SelectBackground");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function RewardMenu.RewardMenu_C.SetupHeaderText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void URewardMenu_C::SetupHeaderText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RewardMenu_C", "SetupHeaderText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function RewardMenu.RewardMenu_C.OnFocusReceived
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// struct FFocusEvent                      InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply URewardMenu_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RewardMenu_C", "OnFocusReceived");
+
+	Params::RewardMenu_C_OnFocusReceived Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InFocusEvent = std::move(InFocusEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

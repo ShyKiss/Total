@@ -43,9 +43,10 @@ void USecondaryObjectiveWidget_C::ExecuteUbergraph_SecondaryObjectiveWidget(int3
 // class ARBBaseObjectiveCoordinator*      Coordinator                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsPositiveProgress                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             Param_ObjectiveText                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FText                             ObjectiveText_0                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    bForceShow                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void USecondaryObjectiveWidget_C::Event_ProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, float Progress, bool IsPositiveProgress, const class FText& Param_ObjectiveText)
+void USecondaryObjectiveWidget_C::Event_ProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, float Progress, bool IsPositiveProgress, const class FText& ObjectiveText_0, bool bForceShow)
 {
 	static class UFunction* Func = nullptr;
 
@@ -57,7 +58,8 @@ void USecondaryObjectiveWidget_C::Event_ProgressChanged(class ARBBaseObjectiveCo
 	Parms.Coordinator = Coordinator;
 	Parms.Progress = Progress;
 	Parms.IsPositiveProgress = IsPositiveProgress;
-	Parms.Param_ObjectiveText = std::move(Param_ObjectiveText);
+	Parms.ObjectiveText_0 = std::move(ObjectiveText_0);
+	Parms.bForceShow = bForceShow;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -66,9 +68,9 @@ void USecondaryObjectiveWidget_C::Event_ProgressChanged(class ARBBaseObjectiveCo
 // Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.HandleVisibilityEvent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsVisible                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void USecondaryObjectiveWidget_C::HandleVisibilityEvent(bool Param_IsVisible)
+void USecondaryObjectiveWidget_C::HandleVisibilityEvent(bool IsVisible_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -77,7 +79,7 @@ void USecondaryObjectiveWidget_C::HandleVisibilityEvent(bool Param_IsVisible)
 
 	Params::SecondaryObjectiveWidget_C_HandleVisibilityEvent Parms{};
 
-	Parms.Param_IsVisible = Param_IsVisible;
+	Parms.IsVisible_0 = IsVisible_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

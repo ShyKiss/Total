@@ -19,59 +19,85 @@ namespace SDK::Params
 {
 
 // Function SelectableRewardWidget.SelectableRewardWidget_C.OnHovered__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct SelectableRewardWidget_C_OnHovered__DelegateSignature final
 {
 public:
-	struct FRewardUIData                          Param_Reward;                                      // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FRewardUIData                          Reward_0;                                          // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class USelectableRewardWidget_C*              Widget;                                            // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SelectableRewardWidget_C_OnHovered__DelegateSignature) == 0x000008, "Wrong alignment on SelectableRewardWidget_C_OnHovered__DelegateSignature");
-static_assert(sizeof(SelectableRewardWidget_C_OnHovered__DelegateSignature) == 0x000020, "Wrong size on SelectableRewardWidget_C_OnHovered__DelegateSignature");
-static_assert(offsetof(SelectableRewardWidget_C_OnHovered__DelegateSignature, Param_Reward) == 0x000000, "Member 'SelectableRewardWidget_C_OnHovered__DelegateSignature::Param_Reward' has a wrong offset!");
+static_assert(sizeof(SelectableRewardWidget_C_OnHovered__DelegateSignature) == 0x000028, "Wrong size on SelectableRewardWidget_C_OnHovered__DelegateSignature");
+static_assert(offsetof(SelectableRewardWidget_C_OnHovered__DelegateSignature, Reward_0) == 0x000000, "Member 'SelectableRewardWidget_C_OnHovered__DelegateSignature::Reward_0' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_OnHovered__DelegateSignature, Widget) == 0x000020, "Member 'SelectableRewardWidget_C_OnHovered__DelegateSignature::Widget' has a wrong offset!");
 
 // Function SelectableRewardWidget.SelectableRewardWidget_C.OnUnhovered__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct SelectableRewardWidget_C_OnUnhovered__DelegateSignature final
 {
 public:
-	struct FRewardUIData                          Param_Reward;                                      // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FRewardUIData                          Reward_0;                                          // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class USelectableRewardWidget_C*              Widget;                                            // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SelectableRewardWidget_C_OnUnhovered__DelegateSignature) == 0x000008, "Wrong alignment on SelectableRewardWidget_C_OnUnhovered__DelegateSignature");
-static_assert(sizeof(SelectableRewardWidget_C_OnUnhovered__DelegateSignature) == 0x000020, "Wrong size on SelectableRewardWidget_C_OnUnhovered__DelegateSignature");
-static_assert(offsetof(SelectableRewardWidget_C_OnUnhovered__DelegateSignature, Param_Reward) == 0x000000, "Member 'SelectableRewardWidget_C_OnUnhovered__DelegateSignature::Param_Reward' has a wrong offset!");
+static_assert(sizeof(SelectableRewardWidget_C_OnUnhovered__DelegateSignature) == 0x000028, "Wrong size on SelectableRewardWidget_C_OnUnhovered__DelegateSignature");
+static_assert(offsetof(SelectableRewardWidget_C_OnUnhovered__DelegateSignature, Reward_0) == 0x000000, "Member 'SelectableRewardWidget_C_OnUnhovered__DelegateSignature::Reward_0' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_OnUnhovered__DelegateSignature, Widget) == 0x000020, "Member 'SelectableRewardWidget_C_OnUnhovered__DelegateSignature::Widget' has a wrong offset!");
 
 // Function SelectableRewardWidget.SelectableRewardWidget_C.ExecuteUbergraph_SelectableRewardWidget
-// 0x0028 (0x0028 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2D2B[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0030(0x0028)()
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_Select_Default;                             // 0x0078(0x0028)()
 };
 static_assert(alignof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget) == 0x000008, "Wrong alignment on SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget");
-static_assert(sizeof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget) == 0x000028, "Wrong size on SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget");
+static_assert(sizeof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget) == 0x0000A0, "Wrong size on SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget");
 static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, EntryPoint) == 0x000000, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, CallFunc_GetMenuManager_ReturnValue) == 0x000018, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, CallFunc_IsValid_ReturnValue_1) == 0x000021, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000022, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, Temp_bool_Variable) == 0x000004, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, K2Node_MakeStruct_SlateColor_1) == 0x000030, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000058, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, CallFunc_GetMenuManager_ReturnValue) == 0x000068, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, CallFunc_IsValid_ReturnValue_1) == 0x000071, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000072, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, K2Node_Event_IsDesignTime) == 0x000073, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget, K2Node_Select_Default) == 0x000078, "Member 'SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget::K2Node_Select_Default' has a wrong offset!");
+
+// Function SelectableRewardWidget.SelectableRewardWidget_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct SelectableRewardWidget_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(SelectableRewardWidget_C_PreConstruct) == 0x000001, "Wrong alignment on SelectableRewardWidget_C_PreConstruct");
+static_assert(sizeof(SelectableRewardWidget_C_PreConstruct) == 0x000001, "Wrong size on SelectableRewardWidget_C_PreConstruct");
+static_assert(offsetof(SelectableRewardWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'SelectableRewardWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function SelectableRewardWidget.SelectableRewardWidget_C.Init
 // 0x0020 (0x0020 - 0x0000)
 struct SelectableRewardWidget_C_Init final
 {
 public:
-	struct FRewardUIData                          Param_Reward;                                      // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FRewardUIData                          Reward_0;                                          // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
 static_assert(alignof(SelectableRewardWidget_C_Init) == 0x000008, "Wrong alignment on SelectableRewardWidget_C_Init");
 static_assert(sizeof(SelectableRewardWidget_C_Init) == 0x000020, "Wrong size on SelectableRewardWidget_C_Init");
-static_assert(offsetof(SelectableRewardWidget_C_Init, Param_Reward) == 0x000000, "Member 'SelectableRewardWidget_C_Init::Param_Reward' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_Init, Reward_0) == 0x000000, "Member 'SelectableRewardWidget_C_Init::Reward_0' has a wrong offset!");
 
 // Function SelectableRewardWidget.SelectableRewardWidget_C.CanMergeWith
 // 0x0028 (0x0028 - 0x0000)
@@ -123,13 +149,13 @@ static_assert(offsetof(SelectableRewardWidget_C_Refresh, K2Node_Select_Default) 
 struct SelectableRewardWidget_C_SetHovered final
 {
 public:
-	bool                                          Param_IsHovered;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsHovered_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsConsideredHovered_bConsideredHovered;   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(SelectableRewardWidget_C_SetHovered) == 0x000001, "Wrong alignment on SelectableRewardWidget_C_SetHovered");
 static_assert(sizeof(SelectableRewardWidget_C_SetHovered) == 0x000003, "Wrong size on SelectableRewardWidget_C_SetHovered");
-static_assert(offsetof(SelectableRewardWidget_C_SetHovered, Param_IsHovered) == 0x000000, "Member 'SelectableRewardWidget_C_SetHovered::Param_IsHovered' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_SetHovered, IsHovered_0) == 0x000000, "Member 'SelectableRewardWidget_C_SetHovered::IsHovered_0' has a wrong offset!");
 static_assert(offsetof(SelectableRewardWidget_C_SetHovered, CallFunc_IsConsideredHovered_bConsideredHovered) == 0x000001, "Member 'SelectableRewardWidget_C_SetHovered::CallFunc_IsConsideredHovered_bConsideredHovered' has a wrong offset!");
 static_assert(offsetof(SelectableRewardWidget_C_SetHovered, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000002, "Member 'SelectableRewardWidget_C_SetHovered::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
 
@@ -159,17 +185,6 @@ static_assert(alignof(SelectableRewardWidget_C_IsConsideredHovered) == 0x000001,
 static_assert(sizeof(SelectableRewardWidget_C_IsConsideredHovered) == 0x000001, "Wrong size on SelectableRewardWidget_C_IsConsideredHovered");
 static_assert(offsetof(SelectableRewardWidget_C_IsConsideredHovered, bConsideredHovered) == 0x000000, "Member 'SelectableRewardWidget_C_IsConsideredHovered::bConsideredHovered' has a wrong offset!");
 
-// Function SelectableRewardWidget.SelectableRewardWidget_C.OnAddedToFocusPath
-// 0x0008 (0x0008 - 0x0000)
-struct SelectableRewardWidget_C_OnAddedToFocusPath final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-static_assert(alignof(SelectableRewardWidget_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on SelectableRewardWidget_C_OnAddedToFocusPath");
-static_assert(sizeof(SelectableRewardWidget_C_OnAddedToFocusPath) == 0x000008, "Wrong size on SelectableRewardWidget_C_OnAddedToFocusPath");
-static_assert(offsetof(SelectableRewardWidget_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'SelectableRewardWidget_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
-
 // Function SelectableRewardWidget.SelectableRewardWidget_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
 struct SelectableRewardWidget_C_OnRemovedFromFocusPath final
@@ -180,6 +195,27 @@ public:
 static_assert(alignof(SelectableRewardWidget_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on SelectableRewardWidget_C_OnRemovedFromFocusPath");
 static_assert(sizeof(SelectableRewardWidget_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on SelectableRewardWidget_C_OnRemovedFromFocusPath");
 static_assert(offsetof(SelectableRewardWidget_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'SelectableRewardWidget_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+
+// Function SelectableRewardWidget.SelectableRewardWidget_C.OnFocusReceived
+// 0x01C0 (0x01C0 - 0x0000)
+struct SelectableRewardWidget_C_OnFocusReceived final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0100(0x00B8)()
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(SelectableRewardWidget_C_OnFocusReceived) == 0x000008, "Wrong alignment on SelectableRewardWidget_C_OnFocusReceived");
+static_assert(sizeof(SelectableRewardWidget_C_OnFocusReceived) == 0x0001C0, "Wrong size on SelectableRewardWidget_C_OnFocusReceived");
+static_assert(offsetof(SelectableRewardWidget_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'SelectableRewardWidget_C_OnFocusReceived::MyGeometry' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'SelectableRewardWidget_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'SelectableRewardWidget_C_OnFocusReceived::ReturnValue' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_OnFocusReceived, CallFunc_GetMenuManager_ReturnValue) == 0x0000F8, "Member 'SelectableRewardWidget_C_OnFocusReceived::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x000100, "Member 'SelectableRewardWidget_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SelectableRewardWidget_C_OnFocusReceived, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x0001B8, "Member 'SelectableRewardWidget_C_OnFocusReceived::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 }
 

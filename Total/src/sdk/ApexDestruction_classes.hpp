@@ -48,16 +48,16 @@ static_assert(offsetof(ADestructibleActor, OnActorFracture) == 0x000238, "Member
 class UDestructibleComponent final : public USkinnedMeshComponent
 {
 public:
-	uint8                                         Pad_C97[0x8];                                      // 0x06E0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6E0[0x8];                                      // 0x06E0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bFractureEffectOverride : 1;                       // 0x06E8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_C98[0x7];                                      // 0x06E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6E9[0x7];                                      // 0x06E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFractureEffect>                FractureEffects;                                   // 0x06F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, EditFixedSize, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          bEnableHardSleeping;                               // 0x0700(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C99[0x3];                                      // 0x0701(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_701[0x3];                                      // 0x0701(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LargeChunkThreshold;                               // 0x0704(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C9A[0x10];                                     // 0x0708(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_708[0x10];                                     // 0x0708(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnComponentFracture;                               // 0x0718(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C9B[0x98];                                     // 0x0728(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_728[0x98];                                     // 0x0728(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ApplyDamage(float DamageAmount, const struct FVector& HitLocation, const struct FVector& ImpulseDir, float ImpulseStrength);
@@ -90,13 +90,13 @@ public:
 	int32                                         CellSiteCount;                                     // 0x0028(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFractureMaterial                      FractureMaterialDesc;                              // 0x002C(0x0024)(Edit, Transient, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         RandomSeed;                                        // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C9D[0x4];                                      // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        VoronoiSites;                                      // 0x0058(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         OriginalSubmeshCount;                              // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C9E[0x4];                                      // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInterface*>             Materials;                                         // 0x0070(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FDestructibleChunkParameters>   ChunkParameters;                                   // 0x0080(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C9F[0x28];                                     // 0x0090(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_90[0x28];                                      // 0x0090(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -125,7 +125,7 @@ class UDestructibleMesh final : public USkeletalMesh
 public:
 	struct FDestructibleParameters                DefaultDestructibleParameters;                     // 0x03C0(0x0088)(Edit, NativeAccessSpecifierPublic)
 	TArray<struct FFractureEffect>                FractureEffects;                                   // 0x0448(0x0010)(Edit, EditFixedSize, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CA0[0x8];                                      // 0x0458(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_458[0x8];                                      // 0x0458(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -18,13 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MedPharma_SkillController_BP.MedPharma_SkillController_BP_C
-// 0x0020 (0x0A40 - 0x0A20)
+// 0x0020 (0x0A90 - 0x0A70)
 class AMedPharma_SkillController_BP_C final : public ARBActiveSkillController
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A20(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Ngr_SkillDeactivate;                               // 0x0A28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Ptc_Thrust;                                        // 0x0A30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A6C[0x4];                                      // 0x0A6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A70(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Ngr_SkillDeactivate;                               // 0x0A78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Ptc_Thrust;                                        // 0x0A80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MedPharma_SkillController_BP(int32 EntryPoint);
@@ -43,10 +44,10 @@ public:
 	}
 };
 static_assert(alignof(AMedPharma_SkillController_BP_C) == 0x000010, "Wrong alignment on AMedPharma_SkillController_BP_C");
-static_assert(sizeof(AMedPharma_SkillController_BP_C) == 0x000A40, "Wrong size on AMedPharma_SkillController_BP_C");
-static_assert(offsetof(AMedPharma_SkillController_BP_C, UberGraphFrame) == 0x000A20, "Member 'AMedPharma_SkillController_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMedPharma_SkillController_BP_C, Ngr_SkillDeactivate) == 0x000A28, "Member 'AMedPharma_SkillController_BP_C::Ngr_SkillDeactivate' has a wrong offset!");
-static_assert(offsetof(AMedPharma_SkillController_BP_C, Ptc_Thrust) == 0x000A30, "Member 'AMedPharma_SkillController_BP_C::Ptc_Thrust' has a wrong offset!");
+static_assert(sizeof(AMedPharma_SkillController_BP_C) == 0x000A90, "Wrong size on AMedPharma_SkillController_BP_C");
+static_assert(offsetof(AMedPharma_SkillController_BP_C, UberGraphFrame) == 0x000A70, "Member 'AMedPharma_SkillController_BP_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AMedPharma_SkillController_BP_C, Ngr_SkillDeactivate) == 0x000A78, "Member 'AMedPharma_SkillController_BP_C::Ngr_SkillDeactivate' has a wrong offset!");
+static_assert(offsetof(AMedPharma_SkillController_BP_C, Ptc_Thrust) == 0x000A80, "Member 'AMedPharma_SkillController_BP_C::Ptc_Thrust' has a wrong offset!");
 
 }
 

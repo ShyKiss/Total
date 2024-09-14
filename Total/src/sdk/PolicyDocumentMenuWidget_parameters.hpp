@@ -12,7 +12,6 @@
 
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "InputCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,21 +24,21 @@ struct PolicyDocumentMenuWidget_C_ExecuteUbergraph_PolicyDocumentMenuWidget fina
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CD0[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2CD1[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_Event_content;                              // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0058(0x0018)()
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetScrollOffsetOfEnd_ReturnValue;         // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetScrollOffset_ReturnValue;              // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CD2[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0084(0x0008)(NoDestructor)
 	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x008D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CD3[0x2];                                     // 0x008E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8E[0x2];                                       // 0x008E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PolicyDocumentMenuWidget_C_ExecuteUbergraph_PolicyDocumentMenuWidget) == 0x000008, "Wrong alignment on PolicyDocumentMenuWidget_C_ExecuteUbergraph_PolicyDocumentMenuWidget");
@@ -106,90 +105,23 @@ static_assert(offsetof(PolicyDocumentMenuWidget_C_Tick, MyGeometry) == 0x000000,
 static_assert(offsetof(PolicyDocumentMenuWidget_C_Tick, InDeltaTime) == 0x000038, "Member 'PolicyDocumentMenuWidget_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function PolicyDocumentMenuWidget.PolicyDocumentMenuWidget_C.OnAnalogValueChanged
-// 0x02A8 (0x02A8 - 0x0000)
+// 0x01F0 (0x01F0 - 0x0000)
 struct PolicyDocumentMenuWidget_C_OnAnalogValueChanged final
 {
 public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FAnalogInputEvent                      InAnalogInputEvent;                                // 0x0038(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FEventReply                            ReturnValue;                                       // 0x0078(0x00B8)(Parm, OutParm, ReturnParm)
-	bool                                          Temp_bool_Variable;                                // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CD4[0x7];                                     // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKeyEvent                              CallFunc_GetKeyEventFromAnalogInputEvent_ReturnValue; // 0x0138(0x0038)()
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0170(0x0018)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CD5[0x3];                                     // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetAnalogValue_ReturnValue;               // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CD6[0x3];                                     // 0x0195(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetAnalogValue_ReturnValue_1;             // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetScrollOffset_ReturnValue;              // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CD7[0x2];                                     // 0x01A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetScrollOffsetOfEnd_ReturnValue;         // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetScrollOffset_ReturnValue_1;            // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetScrollOffsetOfEnd_ReturnValue_1;       // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue_1;       // 0x01B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x01B7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CD8[0x3];                                     // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetScrollOffset_ReturnValue_2;            // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetAnalogValue_ReturnValue_2;             // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetAnalogValue_ReturnValue_3;             // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Abs_ReturnValue;                          // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CD9[0x3];                                     // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select_Default;                             // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CDA[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x01E8(0x00B8)()
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0130(0x00B8)()
+	bool                                          CallFunc_HandleScrollOnAnalogInputEvent_Handled;   // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged) == 0x000008, "Wrong alignment on PolicyDocumentMenuWidget_C_OnAnalogValueChanged");
-static_assert(sizeof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged) == 0x0002A8, "Wrong size on PolicyDocumentMenuWidget_C_OnAnalogValueChanged");
+static_assert(sizeof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged) == 0x0001F0, "Wrong size on PolicyDocumentMenuWidget_C_OnAnalogValueChanged");
 static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, MyGeometry) == 0x000000, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::MyGeometry' has a wrong offset!");
 static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, InAnalogInputEvent) == 0x000038, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::InAnalogInputEvent' has a wrong offset!");
 static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, ReturnValue) == 0x000078, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, Temp_bool_Variable) == 0x000130, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetKeyEventFromAnalogInputEvent_ReturnValue) == 0x000138, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetKeyEventFromAnalogInputEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetKey_ReturnValue) == 0x000170, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000188, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Add_FloatFloat_ReturnValue) == 0x00018C, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetAnalogValue_ReturnValue) == 0x000190, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetAnalogValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Less_FloatFloat_ReturnValue) == 0x000194, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetAnalogValue_ReturnValue_1) == 0x000198, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetAnalogValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetScrollOffset_ReturnValue) == 0x00019C, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetScrollOffset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0001A0, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x0001A1, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetScrollOffsetOfEnd_ReturnValue) == 0x0001A4, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetScrollOffsetOfEnd_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_SelectFloat_ReturnValue) == 0x0001A8, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetScrollOffset_ReturnValue_1) == 0x0001AC, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetScrollOffset_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetScrollOffsetOfEnd_ReturnValue_1) == 0x0001B0, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetScrollOffsetOfEnd_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0001B4, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_LessEqual_FloatFloat_ReturnValue_1) == 0x0001B5, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_LessEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_BooleanAND_ReturnValue) == 0x0001B6, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_BooleanAND_ReturnValue_1) == 0x0001B7, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_BooleanOR_ReturnValue) == 0x0001B8, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetScrollOffset_ReturnValue_2) == 0x0001BC, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetScrollOffset_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetAnalogValue_ReturnValue_2) == 0x0001C0, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetAnalogValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0001C4, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_GetAnalogValue_ReturnValue_3) == 0x0001C8, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_GetAnalogValue_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0001CC, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Abs_ReturnValue) == 0x0001D0, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0001D4, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0001D8, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, K2Node_Select_Default) == 0x0001DC, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Greater_FloatFloat_ReturnValue_2) == 0x0001E0, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Greater_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Handled_ReturnValue) == 0x0001E8, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_BooleanAND_ReturnValue_2) == 0x0002A0, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_Handled_ReturnValue) == 0x000130, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PolicyDocumentMenuWidget_C_OnAnalogValueChanged, CallFunc_HandleScrollOnAnalogInputEvent_Handled) == 0x0001E8, "Member 'PolicyDocumentMenuWidget_C_OnAnalogValueChanged::CallFunc_HandleScrollOnAnalogInputEvent_Handled' has a wrong offset!");
 
 }
 

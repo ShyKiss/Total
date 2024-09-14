@@ -28,12 +28,12 @@ public:
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D0E[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D0F[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_1;  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -60,24 +60,26 @@ static_assert(offsetof(TaskRewardWidget_C_ExecuteUbergraph_TaskRewardWidget, Cal
 struct TaskRewardWidget_C_Init final
 {
 public:
-	TArray<struct FRewardUIData>                  Param_Rewards;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<struct FRewardUIData>                  Rewards_0;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 static_assert(alignof(TaskRewardWidget_C_Init) == 0x000008, "Wrong alignment on TaskRewardWidget_C_Init");
 static_assert(sizeof(TaskRewardWidget_C_Init) == 0x000010, "Wrong size on TaskRewardWidget_C_Init");
-static_assert(offsetof(TaskRewardWidget_C_Init, Param_Rewards) == 0x000000, "Member 'TaskRewardWidget_C_Init::Param_Rewards' has a wrong offset!");
+static_assert(offsetof(TaskRewardWidget_C_Init, Rewards_0) == 0x000000, "Member 'TaskRewardWidget_C_Init::Rewards_0' has a wrong offset!");
 
 // Function TaskRewardWidget.TaskRewardWidget_C.SetAnimated
-// 0x0002 (0x0002 - 0x0000)
+// 0x0003 (0x0003 - 0x0000)
 struct TaskRewardWidget_C_SetAnimated final
 {
 public:
-	bool                                          Param_bAnimated;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bAnimated_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(TaskRewardWidget_C_SetAnimated) == 0x000001, "Wrong alignment on TaskRewardWidget_C_SetAnimated");
-static_assert(sizeof(TaskRewardWidget_C_SetAnimated) == 0x000002, "Wrong size on TaskRewardWidget_C_SetAnimated");
-static_assert(offsetof(TaskRewardWidget_C_SetAnimated, Param_bAnimated) == 0x000000, "Member 'TaskRewardWidget_C_SetAnimated::Param_bAnimated' has a wrong offset!");
+static_assert(sizeof(TaskRewardWidget_C_SetAnimated) == 0x000003, "Wrong size on TaskRewardWidget_C_SetAnimated");
+static_assert(offsetof(TaskRewardWidget_C_SetAnimated, bAnimated_0) == 0x000000, "Member 'TaskRewardWidget_C_SetAnimated::bAnimated_0' has a wrong offset!");
 static_assert(offsetof(TaskRewardWidget_C_SetAnimated, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000001, "Member 'TaskRewardWidget_C_SetAnimated::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TaskRewardWidget_C_SetAnimated, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000002, "Member 'TaskRewardWidget_C_SetAnimated::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 
 }
 

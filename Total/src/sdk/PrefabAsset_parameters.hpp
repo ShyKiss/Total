@@ -46,7 +46,7 @@ struct PrefabActor_SetPrefab final
 public:
 	class UPrefabAsset*                           NewPrefab;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceRevertEvenDisconnected;                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CA3[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PrefabActor_SetPrefab) == 0x000008, "Wrong alignment on PrefabActor_SetPrefab");
 static_assert(sizeof(PrefabActor_SetPrefab) == 0x000010, "Wrong size on PrefabActor_SetPrefab");
@@ -75,10 +75,10 @@ public:
 	TArray<class AActor*>                         OutSpawnPrefabInstances;                           // 0x0040(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          bSpawnInstancesOnly;                               // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESpawnActorCollisionHandlingMethod            CollisionHandlingOverride;                         // 0x0051(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CA6[0x6];                                      // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Owner;                                             // 0x0058(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APrefabActor*                           ReturnValue;                                       // 0x0060(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CA7[0x8];                                      // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PrefabFunctionLibrary_SpawnPrefab) == 0x000010, "Wrong alignment on PrefabFunctionLibrary_SpawnPrefab");
 static_assert(sizeof(PrefabFunctionLibrary_SpawnPrefab) == 0x000070, "Wrong size on PrefabFunctionLibrary_SpawnPrefab");

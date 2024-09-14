@@ -24,7 +24,7 @@ class UCreditsEntry_C final : public UUserWidget
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UImage*                                 Image_140;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Name_CreditsEntry_C;                               // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Name_0;                                            // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Title;                                             // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   TitleText;                                         // 0x0280(0x0018)(Edit, BlueprintVisible)
 	class FString                                 NameText;                                          // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
@@ -49,7 +49,7 @@ static_assert(alignof(UCreditsEntry_C) == 0x000008, "Wrong alignment on UCredits
 static_assert(sizeof(UCreditsEntry_C) == 0x0002B8, "Wrong size on UCreditsEntry_C");
 static_assert(offsetof(UCreditsEntry_C, UberGraphFrame) == 0x000260, "Member 'UCreditsEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCreditsEntry_C, Image_140) == 0x000268, "Member 'UCreditsEntry_C::Image_140' has a wrong offset!");
-static_assert(offsetof(UCreditsEntry_C, Name_CreditsEntry_C) == 0x000270, "Member 'UCreditsEntry_C::Name_CreditsEntry_C' has a wrong offset!");
+static_assert(offsetof(UCreditsEntry_C, Name_0) == 0x000270, "Member 'UCreditsEntry_C::Name_0' has a wrong offset!");
 static_assert(offsetof(UCreditsEntry_C, Title) == 0x000278, "Member 'UCreditsEntry_C::Title' has a wrong offset!");
 static_assert(offsetof(UCreditsEntry_C, TitleText) == 0x000280, "Member 'UCreditsEntry_C::TitleText' has a wrong offset!");
 static_assert(offsetof(UCreditsEntry_C, NameText) == 0x000298, "Member 'UCreditsEntry_C::NameText' has a wrong offset!");

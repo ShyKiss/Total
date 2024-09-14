@@ -20,9 +20,9 @@ namespace SDK
 // Function ObjectiveWidgetBase.ObjectiveWidgetBase_C.VisibilityEventDispatcher__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsVisible                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UObjectiveWidgetBase_C::VisibilityEventDispatcher__DelegateSignature(bool Param_IsVisible)
+void UObjectiveWidgetBase_C::VisibilityEventDispatcher__DelegateSignature(bool IsVisible_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UObjectiveWidgetBase_C::VisibilityEventDispatcher__DelegateSignature(bool P
 
 	Params::ObjectiveWidgetBase_C_VisibilityEventDispatcher__DelegateSignature Parms{};
 
-	Parms.Param_IsVisible = Param_IsVisible;
+	Parms.IsVisible_0 = IsVisible_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

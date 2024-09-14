@@ -47,24 +47,24 @@ static_assert(offsetof(CategoryButtonWidget_C_PreConstruct, IsDesignTime) == 0x0
 struct CategoryButtonWidget_C_SetSelected final
 {
 public:
-	bool                                          Param_IsSelected;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsSelected_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CategoryButtonWidget_C_SetSelected) == 0x000001, "Wrong alignment on CategoryButtonWidget_C_SetSelected");
 static_assert(sizeof(CategoryButtonWidget_C_SetSelected) == 0x000001, "Wrong size on CategoryButtonWidget_C_SetSelected");
-static_assert(offsetof(CategoryButtonWidget_C_SetSelected, Param_IsSelected) == 0x000000, "Member 'CategoryButtonWidget_C_SetSelected::Param_IsSelected' has a wrong offset!");
+static_assert(offsetof(CategoryButtonWidget_C_SetSelected, IsSelected_0) == 0x000000, "Member 'CategoryButtonWidget_C_SetSelected::IsSelected_0' has a wrong offset!");
 
 // Function CategoryButtonWidget.CategoryButtonWidget_C.SetState
 // 0x0038 (0x0038 - 0x0000)
 struct CategoryButtonWidget_C_SetState final
 {
 public:
-	ECategoryButtonState                          Param_State;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECategoryButtonState                          State_0;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECategoryButtonState                          PreviousState;                                     // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECategoryButtonState                          Temp_byte_Variable_2;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D91[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -73,17 +73,17 @@ public:
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D92[0x2];                                     // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D93[0x5];                                     // 0x002B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B[0x5];                                       // 0x002B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Select_Default_1;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CategoryButtonWidget_C_SetState) == 0x000008, "Wrong alignment on CategoryButtonWidget_C_SetState");
 static_assert(sizeof(CategoryButtonWidget_C_SetState) == 0x000038, "Wrong size on CategoryButtonWidget_C_SetState");
-static_assert(offsetof(CategoryButtonWidget_C_SetState, Param_State) == 0x000000, "Member 'CategoryButtonWidget_C_SetState::Param_State' has a wrong offset!");
+static_assert(offsetof(CategoryButtonWidget_C_SetState, State_0) == 0x000000, "Member 'CategoryButtonWidget_C_SetState::State_0' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_SetState, PreviousState) == 0x000001, "Member 'CategoryButtonWidget_C_SetState::PreviousState' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_SetState, Temp_bool_Variable) == 0x000002, "Member 'CategoryButtonWidget_C_SetState::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_SetState, Temp_byte_Variable) == 0x000003, "Member 'CategoryButtonWidget_C_SetState::Temp_byte_Variable' has a wrong offset!");
@@ -108,13 +108,13 @@ static_assert(offsetof(CategoryButtonWidget_C_SetState, K2Node_Select_Default_1)
 struct CategoryButtonWidget_C_Set_Icon final
 {
 public:
-	class UTexture2D*                             Param_Icon;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Icon_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MatchSize;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CategoryButtonWidget_C_Set_Icon) == 0x000008, "Wrong alignment on CategoryButtonWidget_C_Set_Icon");
 static_assert(sizeof(CategoryButtonWidget_C_Set_Icon) == 0x000010, "Wrong size on CategoryButtonWidget_C_Set_Icon");
-static_assert(offsetof(CategoryButtonWidget_C_Set_Icon, Param_Icon) == 0x000000, "Member 'CategoryButtonWidget_C_Set_Icon::Param_Icon' has a wrong offset!");
+static_assert(offsetof(CategoryButtonWidget_C_Set_Icon, Icon_0) == 0x000000, "Member 'CategoryButtonWidget_C_Set_Icon::Icon_0' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_Set_Icon, MatchSize) == 0x000008, "Member 'CategoryButtonWidget_C_Set_Icon::MatchSize' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_Set_Icon, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'CategoryButtonWidget_C_Set_Icon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -123,7 +123,7 @@ static_assert(offsetof(CategoryButtonWidget_C_Set_Icon, CallFunc_IsValid_ReturnV
 struct CategoryButtonWidget_C_SetCanShowIcon final
 {
 public:
-	bool                                          Param_CanShowIcon;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CanShowIcon_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -133,7 +133,7 @@ public:
 };
 static_assert(alignof(CategoryButtonWidget_C_SetCanShowIcon) == 0x000001, "Wrong alignment on CategoryButtonWidget_C_SetCanShowIcon");
 static_assert(sizeof(CategoryButtonWidget_C_SetCanShowIcon) == 0x000007, "Wrong size on CategoryButtonWidget_C_SetCanShowIcon");
-static_assert(offsetof(CategoryButtonWidget_C_SetCanShowIcon, Param_CanShowIcon) == 0x000000, "Member 'CategoryButtonWidget_C_SetCanShowIcon::Param_CanShowIcon' has a wrong offset!");
+static_assert(offsetof(CategoryButtonWidget_C_SetCanShowIcon, CanShowIcon_0) == 0x000000, "Member 'CategoryButtonWidget_C_SetCanShowIcon::CanShowIcon_0' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_SetCanShowIcon, Temp_bool_Variable) == 0x000001, "Member 'CategoryButtonWidget_C_SetCanShowIcon::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_SetCanShowIcon, Temp_byte_Variable) == 0x000002, "Member 'CategoryButtonWidget_C_SetCanShowIcon::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_SetCanShowIcon, Temp_byte_Variable_1) == 0x000003, "Member 'CategoryButtonWidget_C_SetCanShowIcon::Temp_byte_Variable_1' has a wrong offset!");
@@ -153,7 +153,7 @@ static_assert(sizeof(CategoryButtonWidget_C_SetBaseColor) == 0x000028, "Wrong si
 static_assert(offsetof(CategoryButtonWidget_C_SetBaseColor, Color) == 0x000000, "Member 'CategoryButtonWidget_C_SetBaseColor::Color' has a wrong offset!");
 
 // Function CategoryButtonWidget.CategoryButtonWidget_C.Set Upgrade Item State
-// 0x0014 (0x0014 - 0x0000)
+// 0x000B (0x000B - 0x0000)
 struct CategoryButtonWidget_C_Set_Upgrade_Item_State final
 {
 public:
@@ -167,12 +167,10 @@ public:
 	ECategoryButtonState                          Temp_byte_Variable_6;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECategoryButtonState                          Temp_byte_Variable_7;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECategoryButtonState                          Temp_byte_Variable_8;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D94[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECategoryButtonState                          K2Node_Select_Default;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECategoryButtonState                          K2Node_Select_Default;                             // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CategoryButtonWidget_C_Set_Upgrade_Item_State) == 0x000004, "Wrong alignment on CategoryButtonWidget_C_Set_Upgrade_Item_State");
-static_assert(sizeof(CategoryButtonWidget_C_Set_Upgrade_Item_State) == 0x000014, "Wrong size on CategoryButtonWidget_C_Set_Upgrade_Item_State");
+static_assert(alignof(CategoryButtonWidget_C_Set_Upgrade_Item_State) == 0x000001, "Wrong alignment on CategoryButtonWidget_C_Set_Upgrade_Item_State");
+static_assert(sizeof(CategoryButtonWidget_C_Set_Upgrade_Item_State) == 0x00000B, "Wrong size on CategoryButtonWidget_C_Set_Upgrade_Item_State");
 static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, UpgradeItemState) == 0x000000, "Member 'CategoryButtonWidget_C_Set_Upgrade_Item_State::UpgradeItemState' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, Temp_byte_Variable) == 0x000001, "Member 'CategoryButtonWidget_C_Set_Upgrade_Item_State::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, Temp_byte_Variable_1) == 0x000002, "Member 'CategoryButtonWidget_C_Set_Upgrade_Item_State::Temp_byte_Variable_1' has a wrong offset!");
@@ -183,8 +181,7 @@ static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, Temp_byte_
 static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, Temp_byte_Variable_6) == 0x000007, "Member 'CategoryButtonWidget_C_Set_Upgrade_Item_State::Temp_byte_Variable_6' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, Temp_byte_Variable_7) == 0x000008, "Member 'CategoryButtonWidget_C_Set_Upgrade_Item_State::Temp_byte_Variable_7' has a wrong offset!");
 static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, Temp_byte_Variable_8) == 0x000009, "Member 'CategoryButtonWidget_C_Set_Upgrade_Item_State::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, CallFunc_SelectFloat_ReturnValue) == 0x00000C, "Member 'CategoryButtonWidget_C_Set_Upgrade_Item_State::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, K2Node_Select_Default) == 0x000010, "Member 'CategoryButtonWidget_C_Set_Upgrade_Item_State::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(CategoryButtonWidget_C_Set_Upgrade_Item_State, K2Node_Select_Default) == 0x00000A, "Member 'CategoryButtonWidget_C_Set_Upgrade_Item_State::K2Node_Select_Default' has a wrong offset!");
 
 // Function CategoryButtonWidget.CategoryButtonWidget_C.SetIsEquipped
 // 0x0002 (0x0002 - 0x0000)
@@ -235,12 +232,12 @@ struct CategoryButtonWidget_C_SetHovered final
 public:
 	bool                                          bInHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D95[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D96[0x5];                                     // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

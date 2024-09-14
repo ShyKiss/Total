@@ -18,16 +18,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HUDTutorial.HUDTutorial_C
-// 0x0030 (0x0318 - 0x02E8)
+// 0x0028 (0x0310 - 0x02E8)
 class UHUDTutorial_C final : public URBHUDElementWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       NewAnimation;                                      // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Image_175;                                         // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UInvalidationBox*                       InvalidationBox_HUDTutorial;                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URichTextBlock*                         RichTextBlock_62;                                  // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Title;                                             // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_175;                                         // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_HUDTutorial;                       // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URichTextBlock*                         RichTextBlock_62;                                  // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Title;                                             // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HUDTutorial(int32 EntryPoint);
@@ -50,13 +49,12 @@ public:
 	}
 };
 static_assert(alignof(UHUDTutorial_C) == 0x000008, "Wrong alignment on UHUDTutorial_C");
-static_assert(sizeof(UHUDTutorial_C) == 0x000318, "Wrong size on UHUDTutorial_C");
+static_assert(sizeof(UHUDTutorial_C) == 0x000310, "Wrong size on UHUDTutorial_C");
 static_assert(offsetof(UHUDTutorial_C, UberGraphFrame) == 0x0002E8, "Member 'UHUDTutorial_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHUDTutorial_C, NewAnimation) == 0x0002F0, "Member 'UHUDTutorial_C::NewAnimation' has a wrong offset!");
-static_assert(offsetof(UHUDTutorial_C, Image_175) == 0x0002F8, "Member 'UHUDTutorial_C::Image_175' has a wrong offset!");
-static_assert(offsetof(UHUDTutorial_C, InvalidationBox_HUDTutorial) == 0x000300, "Member 'UHUDTutorial_C::InvalidationBox_HUDTutorial' has a wrong offset!");
-static_assert(offsetof(UHUDTutorial_C, RichTextBlock_62) == 0x000308, "Member 'UHUDTutorial_C::RichTextBlock_62' has a wrong offset!");
-static_assert(offsetof(UHUDTutorial_C, Title) == 0x000310, "Member 'UHUDTutorial_C::Title' has a wrong offset!");
+static_assert(offsetof(UHUDTutorial_C, Image_175) == 0x0002F0, "Member 'UHUDTutorial_C::Image_175' has a wrong offset!");
+static_assert(offsetof(UHUDTutorial_C, InvalidationBox_HUDTutorial) == 0x0002F8, "Member 'UHUDTutorial_C::InvalidationBox_HUDTutorial' has a wrong offset!");
+static_assert(offsetof(UHUDTutorial_C, RichTextBlock_62) == 0x000300, "Member 'UHUDTutorial_C::RichTextBlock_62' has a wrong offset!");
+static_assert(offsetof(UHUDTutorial_C, Title) == 0x000308, "Member 'UHUDTutorial_C::Title' has a wrong offset!");
 
 }
 

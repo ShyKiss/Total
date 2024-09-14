@@ -25,245 +25,244 @@ struct LinearInventory_C_ExecuteUbergraph_LinearInventory final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F1E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F1F[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F20[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESlateVisibility InVisibility)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F21[0x1];                                     // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_LastReset_Variable;                       // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetStageResetCount_ReturnValue;           // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EInventoryUpdateEventType                     K2Node_Event_eventType;                            // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F22[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0068(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F23[0x3];                                     // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F24[0x6];                                     // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FItemDefinition                        CallFunc_GetCurrentEquippedItemDefinition_ReturnValue; // 0x00B8(0x0048)(ConstParm)
-	bool                                          CallFunc_BP_GetPickupInFocus_outIsSwap;            // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F25[0x7];                                     // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPickup*                              CallFunc_BP_GetPickupInFocus_ReturnValue;          // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F26[0x1];                                     // 0x0113(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_BP_GetItemIndexForSwap_ReturnValue;       // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F27[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPickup*                              CallFunc_BP_GetItemFromIndex_ReturnValue;          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F28[0x6];                                     // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0130(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F29[0x4];                                     // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULinearInventoryEntry_C*                K2Node_DynamicCast_AsLinear_Inventory_Entry;       // 0x0150(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x015A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x015B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x015D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x015E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F2A[0x1];                                     // 0x015F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F2B[0x3];                                     // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x016C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2F2C[0x4];                                     // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayer*                              K2Node_Event_oldPlayer;                            // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0195(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0196(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F2D[0x1];                                     // 0x0197(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayerState*                         CallFunc_GetRBPlayerState_ReturnValue;             // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F2E[0x2];                                     // 0x01A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FProfileId                             CallFunc_GetProfileId_ReturnValue;                 // 0x01A4(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x01B4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRenderOpacity_ReturnValue;             // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_CustomEvent_InVisibility;                   // 0x01C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_newDarknessState;                     // 0x01C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F2F[0x4];                                     // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBActiveSkill*                         K2Node_Event_ActiveSkill;                          // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsInCooldown;                        // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F30[0x7];                                     // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_2;       // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRenderOpacity_ReturnValue_1;           // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EHudMode                                      K2Node_Event_newHudMode;                           // 0x01ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInValidHudMode_ReturnValue;             // 0x01EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x01EF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_GetRenderOpacity_ReturnValue_2;           // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x01F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x01F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F31[0x2];                                     // 0x01F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_2;           // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F32[0x7];                                     // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_10;                   // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F33[0x3];                                     // 0x0211(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetInventoryDisplay_ReturnValue;          // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F34[0x3];                                     // 0x0219(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetCooldownTimeRemaining_ReturnValue;     // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x022C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F35[0x3];                                     // 0x022D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_3;       // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F36[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue_1;   // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F37[0x3];                                     // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetInventoryDisplay_ReturnValue_1;        // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F38[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue_2;   // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F39[0x3];                                     // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetInventoryDisplay_ReturnValue_2;        // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_3;             // 0x0269(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_isRestricted;                         // 0x026A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F3A[0x5];                                     // 0x026B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetAnimation*                       K2Node_Select_Default_1;                           // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_4;       // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESlateVisibility InVisibility)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B[0x1];                                       // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_LastReset_Variable;                       // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetStageResetCount_ReturnValue;           // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EInventoryUpdateEventType                     K2Node_Event_eventType;                            // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0047(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0050(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FItemDefinition                        CallFunc_GetCurrentEquippedItemDefinition_ReturnValue; // 0x00A0(0x0050)(ConstParm)
+	bool                                          CallFunc_BP_GetPickupInFocus_outIsSwap;            // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPickup*                              CallFunc_BP_GetPickupInFocus_ReturnValue;          // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0102(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_103[0x1];                                      // 0x0103(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_BP_GetItemIndexForSwap_ReturnValue;       // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPickup*                              CallFunc_BP_GetItemFromIndex_ReturnValue;          // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11A[0x6];                                      // 0x011A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0120(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULinearInventoryEntry_C*                K2Node_DynamicCast_AsLinear_Inventory_Entry;       // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x014B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x014D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x014E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_14F[0x1];                                      // 0x014F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x015C(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              K2Node_Event_oldPlayer;                            // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0185(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0186(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_187[0x1];                                      // 0x0187(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayerState*                         CallFunc_GetRBPlayerState_ReturnValue;             // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_192[0x2];                                      // 0x0192(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FProfileId                             CallFunc_GetProfileId_ReturnValue;                 // 0x0194(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x01A4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRenderOpacity_ReturnValue;             // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_1;                              // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_CustomEvent_InVisibility;                   // 0x01B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_newDarknessState;                     // 0x01B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBActiveSkill*                         K2Node_Event_ActiveSkill;                          // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsInCooldown;                        // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRenderOpacity_ReturnValue_1;           // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EHudMode                                      K2Node_Event_newHudMode;                           // 0x01DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInValidHudMode_ReturnValue;             // 0x01DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x01DF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_GetRenderOpacity_ReturnValue_2;           // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x01E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E6[0x2];                                      // 0x01E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_2;           // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_10;                   // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_201[0x3];                                      // 0x0201(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetInventoryDisplay_ReturnValue;          // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_209[0x3];                                      // 0x0209(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetCooldownTimeRemaining_ReturnValue;     // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_2;       // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_229[0x7];                                      // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue_1;   // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_239[0x3];                                      // 0x0239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetInventoryDisplay_ReturnValue_1;        // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue_2;   // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_251[0x3];                                      // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetInventoryDisplay_ReturnValue_2;        // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_3;             // 0x0259(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_isRestricted;                         // 0x025A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B[0x5];                                      // 0x025B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetAnimation*                       K2Node_Select_Default_1;                           // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_3;       // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_4;       // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(LinearInventory_C_ExecuteUbergraph_LinearInventory) == 0x000008, "Wrong alignment on LinearInventory_C_ExecuteUbergraph_LinearInventory");
 static_assert(sizeof(LinearInventory_C_ExecuteUbergraph_LinearInventory) == 0x000288, "Wrong size on LinearInventory_C_ExecuteUbergraph_LinearInventory");
 static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, EntryPoint) == 0x000000, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000008, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue) == 0x000010, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_int_Array_Index_Variable) == 0x000018, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_int_Loop_Counter_Variable) == 0x00002C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_Variable) == 0x000030, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_True_if_break_was_hit_Variable) == 0x000038, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_CreateDelegate_OutputDelegate_1) == 0x00003C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Not_PreBool_ReturnValue) == 0x00004C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_IsClosed_Variable) == 0x00004D, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_Has_Been_Initd_Variable) == 0x00004E, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_int_LastReset_Variable) == 0x000050, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_int_LastReset_Variable' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetStageResetCount_ReturnValue) == 0x000054, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetStageResetCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000058, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_eventType) == 0x000059, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_eventType' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00005A, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_SwitchEnum_CmpSuccess) == 0x00005B, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetMenuManager_ReturnValue) == 0x000060, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_MyGeometry) == 0x000068, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_InDeltaTime) == 0x0000A0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue) == 0x0000A4, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetWatchedPlayer_ReturnValue) == 0x0000A8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_byte_Variable) == 0x0000B0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_1) == 0x0000B1, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetCurrentEquippedItemDefinition_ReturnValue) == 0x0000B8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetCurrentEquippedItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BP_GetPickupInFocus_outIsSwap) == 0x000100, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BP_GetPickupInFocus_outIsSwap' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BP_GetPickupInFocus_ReturnValue) == 0x000108, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BP_GetPickupInFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_2) == 0x000110, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000111, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Not_PreBool_ReturnValue_1) == 0x000112, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BP_GetItemIndexForSwap_ReturnValue) == 0x000114, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BP_GetItemIndexForSwap_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_byte_Variable_1) == 0x000118, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BP_GetItemFromIndex_ReturnValue) == 0x000120, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BP_GetItemFromIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_3) == 0x000128, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_IsDesignTime) == 0x000129, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetAllChildren_ReturnValue) == 0x000130, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Array_Get_Item) == 0x000140, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Array_Length_ReturnValue) == 0x000148, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_DynamicCast_AsLinear_Inventory_Entry) == 0x000150, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_DynamicCast_AsLinear_Inventory_Entry' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_DynamicCast_bSuccess) == 0x000158, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Less_IntInt_ReturnValue) == 0x000159, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_4) == 0x00015A, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue) == 0x00015B, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x00015C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue_1) == 0x00015D, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00015E, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x000160, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_5) == 0x000168, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_CreateDelegate_OutputDelegate_2) == 0x00016C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_oldPlayer) == 0x000180, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_oldPlayer' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_newPlayer) == 0x000188, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_newPlayer' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Array_Length_ReturnValue_1) == 0x000190, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_6) == 0x000194, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Greater_IntInt_ReturnValue) == 0x000195, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanOR_ReturnValue) == 0x000196, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRBPlayerState_ReturnValue) == 0x000198, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRBPlayerState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_7) == 0x0001A0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_8) == 0x0001A1, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetProfileId_ReturnValue) == 0x0001A4, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetProfileId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_MakeVector2D_ReturnValue) == 0x0001B4, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRenderOpacity_ReturnValue) == 0x0001BC, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRenderOpacity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0001C0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_Variable_1) == 0x0001C1, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_CustomEvent_InVisibility) == 0x0001C2, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_newDarknessState) == 0x0001C3, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_newDarknessState' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_ActiveSkill) == 0x0001C8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_ActiveSkill' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_bIsInCooldown) == 0x0001D0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_bIsInCooldown' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x0001D8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue_2) == 0x0001E0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRenderOpacity_ReturnValue_1) == 0x0001E8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRenderOpacity_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x0001EC, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_newHudMode) == 0x0001ED, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_newHudMode' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsInValidHudMode_ReturnValue) == 0x0001EE, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsInValidHudMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0001EF, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRenderOpacity_ReturnValue_2) == 0x0001F0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRenderOpacity_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_Variable_2) == 0x0001F4, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x0001F5, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetWatchedPlayer_ReturnValue_2) == 0x0001F8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetWatchedPlayer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_9) == 0x000200, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRBGameUserPreferences_ReturnValue) == 0x000208, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRBGameUserPreferences_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_10) == 0x000210, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetInventoryDisplay_ReturnValue) == 0x000214, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetInventoryDisplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000218, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetCooldownTimeRemaining_ReturnValue) == 0x00021C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetCooldownTimeRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Select_Default) == 0x000220, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Add_FloatFloat_ReturnValue) == 0x000228, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsAnimationPlaying_ReturnValue) == 0x00022C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue_3) == 0x000230, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000238, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRBGameUserPreferences_ReturnValue_1) == 0x000240, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRBGameUserPreferences_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue_2) == 0x000248, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetInventoryDisplay_ReturnValue_1) == 0x00024C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetInventoryDisplay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000250, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRBGameUserPreferences_ReturnValue_2) == 0x000258, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRBGameUserPreferences_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue_3) == 0x000260, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetInventoryDisplay_ReturnValue_2) == 0x000264, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetInventoryDisplay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue_4) == 0x000268, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Greater_IntInt_ReturnValue_3) == 0x000269, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_isRestricted) == 0x00026A, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_isRestricted' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Select_Default_1) == 0x000270, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue_4) == 0x000278, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Select_Default_2) == 0x000280, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_int_Array_Index_Variable) == 0x000004, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_Variable) == 0x00001C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_True_if_break_was_hit_Variable) == 0x000024, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_CreateDelegate_OutputDelegate_1) == 0x000028, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Not_PreBool_ReturnValue) == 0x000038, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_IsClosed_Variable) == 0x000039, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_Has_Been_Initd_Variable) == 0x00003A, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_int_LastReset_Variable) == 0x00003C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_int_LastReset_Variable' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetStageResetCount_ReturnValue) == 0x000040, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetStageResetCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000044, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_eventType) == 0x000045, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_eventType' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000046, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_SwitchEnum_CmpSuccess) == 0x000047, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetMenuManager_ReturnValue) == 0x000048, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_MyGeometry) == 0x000050, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_InDeltaTime) == 0x000088, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue) == 0x00008C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000090, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_byte_Variable) == 0x000098, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_1) == 0x000099, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetCurrentEquippedItemDefinition_ReturnValue) == 0x0000A0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetCurrentEquippedItemDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BP_GetPickupInFocus_outIsSwap) == 0x0000F0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BP_GetPickupInFocus_outIsSwap' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BP_GetPickupInFocus_ReturnValue) == 0x0000F8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BP_GetPickupInFocus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_2) == 0x000100, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000101, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Not_PreBool_ReturnValue_1) == 0x000102, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BP_GetItemIndexForSwap_ReturnValue) == 0x000104, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BP_GetItemIndexForSwap_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_byte_Variable_1) == 0x000108, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BP_GetItemFromIndex_ReturnValue) == 0x000110, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BP_GetItemFromIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_3) == 0x000118, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_IsDesignTime) == 0x000119, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetAllChildren_ReturnValue) == 0x000120, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Array_Get_Item) == 0x000130, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Array_Length_ReturnValue) == 0x000138, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_DynamicCast_AsLinear_Inventory_Entry) == 0x000140, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_DynamicCast_AsLinear_Inventory_Entry' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_DynamicCast_bSuccess) == 0x000148, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Less_IntInt_ReturnValue) == 0x000149, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_4) == 0x00014A, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue) == 0x00014B, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x00014C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue_1) == 0x00014D, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00014E, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x000150, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_5) == 0x000158, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_CreateDelegate_OutputDelegate_2) == 0x00015C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_oldPlayer) == 0x000170, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_oldPlayer' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_newPlayer) == 0x000178, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_newPlayer' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Array_Length_ReturnValue_1) == 0x000180, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_6) == 0x000184, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Greater_IntInt_ReturnValue) == 0x000185, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanOR_ReturnValue) == 0x000186, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRBPlayerState_ReturnValue) == 0x000188, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRBPlayerState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_7) == 0x000190, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_8) == 0x000191, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetProfileId_ReturnValue) == 0x000194, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetProfileId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_MakeVector2D_ReturnValue) == 0x0001A4, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRenderOpacity_ReturnValue) == 0x0001AC, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRenderOpacity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0001B0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_Variable_1) == 0x0001B1, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_CustomEvent_InVisibility) == 0x0001B2, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_CustomEvent_InVisibility' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_newDarknessState) == 0x0001B3, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_newDarknessState' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_ActiveSkill) == 0x0001B8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_ActiveSkill' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_bIsInCooldown) == 0x0001C0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_bIsInCooldown' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue) == 0x0001C8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x0001D0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRenderOpacity_ReturnValue_1) == 0x0001D8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRenderOpacity_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x0001DC, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_newHudMode) == 0x0001DD, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_newHudMode' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsInValidHudMode_ReturnValue) == 0x0001DE, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsInValidHudMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0001DF, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRenderOpacity_ReturnValue_2) == 0x0001E0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRenderOpacity_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, Temp_bool_Variable_2) == 0x0001E4, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x0001E5, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetWatchedPlayer_ReturnValue_2) == 0x0001E8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetWatchedPlayer_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_9) == 0x0001F0, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRBGameUserPreferences_ReturnValue) == 0x0001F8, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRBGameUserPreferences_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsValid_ReturnValue_10) == 0x000200, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetInventoryDisplay_ReturnValue) == 0x000204, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetInventoryDisplay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000208, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetCooldownTimeRemaining_ReturnValue) == 0x00020C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetCooldownTimeRemaining_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Select_Default) == 0x000210, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Add_FloatFloat_ReturnValue) == 0x000218, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_IsAnimationPlaying_ReturnValue) == 0x00021C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue_2) == 0x000220, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000228, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRBGameUserPreferences_ReturnValue_1) == 0x000230, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRBGameUserPreferences_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue_2) == 0x000238, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetInventoryDisplay_ReturnValue_1) == 0x00023C, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetInventoryDisplay_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000240, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetRBGameUserPreferences_ReturnValue_2) == 0x000248, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetRBGameUserPreferences_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue_3) == 0x000250, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_GetInventoryDisplay_ReturnValue_2) == 0x000254, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_GetInventoryDisplay_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_BooleanAND_ReturnValue_4) == 0x000258, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_Greater_IntInt_ReturnValue_3) == 0x000259, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Event_isRestricted) == 0x00025A, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Event_isRestricted' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Select_Default_1) == 0x000260, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue_3) == 0x000268, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, K2Node_Select_Default_2) == 0x000270, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000278, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_ExecuteUbergraph_LinearInventory, CallFunc_PlayAnimationForward_ReturnValue_4) == 0x000280, "Member 'LinearInventory_C_ExecuteUbergraph_LinearInventory::CallFunc_PlayAnimationForward_ReturnValue_4' has a wrong offset!");
 
 // Function LinearInventory.LinearInventory_C.Event_RefreshASRestriction
 // 0x0001 (0x0001 - 0x0000)
@@ -377,20 +376,20 @@ struct LinearInventory_C_UpdateEquippedItem final
 public:
 	class ARBPickup*                              CurrentEquippedItem;                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F3B[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F3C[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F3D[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F3E[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F3F[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPickup*                              CallFunc_GetCurrentEquippedItem_ReturnValue;       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
@@ -398,7 +397,7 @@ public:
 	class ULinearInventoryEntry_C*                K2Node_DynamicCast_AsLinear_Inventory_Entry;       // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F40[0x2];                                     // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -430,7 +429,7 @@ static_assert(offsetof(LinearInventory_C_UpdateEquippedItem, CallFunc_BooleanAND
 static_assert(offsetof(LinearInventory_C_UpdateEquippedItem, CallFunc_IsValid_ReturnValue_2) == 0x000072, "Member 'LinearInventory_C_UpdateEquippedItem::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
 // Function LinearInventory.LinearInventory_C.RefreshInventory
-// 0x0150 (0x0150 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct LinearInventory_C_RefreshInventory final
 {
 public:
@@ -440,51 +439,51 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F41[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F42[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_BP_GetMaxNumberOfItemForCategory_ReturnValue; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F43[0x6];                                     // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0040(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F44[0x2];                                     // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue_1;             // 0x0068(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F45[0x2];                                     // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F46[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ULinearInventoryEntry_C*                K2Node_DynamicCast_AsLinear_Inventory_Entry;       // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F47[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUILinearInventoryItem                 CallFunc_Array_Get_Item_1;                         // 0x00A8(0x0080)()
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0135(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F48[0x2];                                     // 0x0136(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue_1;                 // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ULinearInventoryEntry_C*                K2Node_DynamicCast_AsLinear_Inventory_Entry_1;     // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUILinearInventoryItem                 CallFunc_Array_Get_Item_1;                         // 0x00A8(0x0088)()
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x013D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_13E[0x2];                                      // 0x013E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue_1;                 // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ULinearInventoryEntry_C*                K2Node_DynamicCast_AsLinear_Inventory_Entry_1;     // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(LinearInventory_C_RefreshInventory) == 0x000008, "Wrong alignment on LinearInventory_C_RefreshInventory");
-static_assert(sizeof(LinearInventory_C_RefreshInventory) == 0x000150, "Wrong size on LinearInventory_C_RefreshInventory");
+static_assert(sizeof(LinearInventory_C_RefreshInventory) == 0x000158, "Wrong size on LinearInventory_C_RefreshInventory");
 static_assert(offsetof(LinearInventory_C_RefreshInventory, SlotsUsed) == 0x000000, "Member 'LinearInventory_C_RefreshInventory::SlotsUsed' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_RefreshInventory, Temp_int_Array_Index_Variable) == 0x000010, "Member 'LinearInventory_C_RefreshInventory::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_RefreshInventory, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'LinearInventory_C_RefreshInventory::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -515,16 +514,16 @@ static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_GetChildAt_R
 static_assert(offsetof(LinearInventory_C_RefreshInventory, K2Node_DynamicCast_AsLinear_Inventory_Entry) == 0x000098, "Member 'LinearInventory_C_RefreshInventory::K2Node_DynamicCast_AsLinear_Inventory_Entry' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_RefreshInventory, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'LinearInventory_C_RefreshInventory::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_Array_Get_Item_1) == 0x0000A8, "Member 'LinearInventory_C_RefreshInventory::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_GetChildrenCount_ReturnValue) == 0x000128, "Member 'LinearInventory_C_RefreshInventory::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_Array_Length_ReturnValue_2) == 0x00012C, "Member 'LinearInventory_C_RefreshInventory::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_Array_Add_ReturnValue) == 0x000130, "Member 'LinearInventory_C_RefreshInventory::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_Less_IntInt_ReturnValue_3) == 0x000134, "Member 'LinearInventory_C_RefreshInventory::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_Greater_IntInt_ReturnValue) == 0x000135, "Member 'LinearInventory_C_RefreshInventory::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_GetChildAt_ReturnValue_1) == 0x000138, "Member 'LinearInventory_C_RefreshInventory::CallFunc_GetChildAt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, K2Node_DynamicCast_AsLinear_Inventory_Entry_1) == 0x000140, "Member 'LinearInventory_C_RefreshInventory::K2Node_DynamicCast_AsLinear_Inventory_Entry_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, K2Node_DynamicCast_bSuccess_1) == 0x000148, "Member 'LinearInventory_C_RefreshInventory::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000149, "Member 'LinearInventory_C_RefreshInventory::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_BooleanAND_ReturnValue) == 0x00014A, "Member 'LinearInventory_C_RefreshInventory::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_GetChildrenCount_ReturnValue) == 0x000130, "Member 'LinearInventory_C_RefreshInventory::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_Array_Length_ReturnValue_2) == 0x000134, "Member 'LinearInventory_C_RefreshInventory::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_Array_Add_ReturnValue) == 0x000138, "Member 'LinearInventory_C_RefreshInventory::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_Less_IntInt_ReturnValue_3) == 0x00013C, "Member 'LinearInventory_C_RefreshInventory::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_Greater_IntInt_ReturnValue) == 0x00013D, "Member 'LinearInventory_C_RefreshInventory::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_GetChildAt_ReturnValue_1) == 0x000140, "Member 'LinearInventory_C_RefreshInventory::CallFunc_GetChildAt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, K2Node_DynamicCast_AsLinear_Inventory_Entry_1) == 0x000148, "Member 'LinearInventory_C_RefreshInventory::K2Node_DynamicCast_AsLinear_Inventory_Entry_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, K2Node_DynamicCast_bSuccess_1) == 0x000150, "Member 'LinearInventory_C_RefreshInventory::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000151, "Member 'LinearInventory_C_RefreshInventory::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_RefreshInventory, CallFunc_BooleanAND_ReturnValue) == 0x000152, "Member 'LinearInventory_C_RefreshInventory::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function LinearInventory.LinearInventory_C.UpdateObjectiveItems
 // 0x00E0 (0x00E0 - 0x0000)
@@ -535,18 +534,18 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F49[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UImageWidget_C*                         CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class ARBPickup*>                      CallFunc_BP_GetItemsForCategory_ReturnValue;       // 0x0030(0x0010)(ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F4A[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPickup*                              CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F4B[0x2];                                     // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_56[0x2];                                       // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue;         // 0x0058(0x0088)()
 };
 static_assert(alignof(LinearInventory_C_UpdateObjectiveItems) == 0x000008, "Wrong alignment on LinearInventory_C_UpdateObjectiveItems");
@@ -567,38 +566,38 @@ static_assert(offsetof(LinearInventory_C_UpdateObjectiveItems, CallFunc_Less_Int
 static_assert(offsetof(LinearInventory_C_UpdateObjectiveItems, CallFunc_MakeBrushFromTexture_ReturnValue) == 0x000058, "Member 'LinearInventory_C_UpdateObjectiveItems::CallFunc_MakeBrushFromTexture_ReturnValue' has a wrong offset!");
 
 // Function LinearInventory.LinearInventory_C.UpdateRigSlot
-// 0x01C8 (0x01C8 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct LinearInventory_C_UpdateRigSlot final
 {
 public:
 	EActiveSkillType                              ActiveSkillType;                                   // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F4C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F4D[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FActiveSkillCommonParams               CallFunc_GetActiveSkillCommonParams_ReturnValue;   // 0x0018(0x0078)(ConstParm)
 	int32                                         CallFunc_GetActiveSkillIndex_ActiveSkillIndex;     // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetActiveSkillIndex_ActiveSkillFound;     // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetActiveSkillInfo_ActiveSkillFound;      // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F4E[0x1];                                     // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUILinearInventoryItem                 CallFunc_GetActiveSkillInfo_ActiveSkillInfo;       // 0x0098(0x0080)()
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_2;           // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F4F[0x6];                                     // 0x0132(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayerState*                         CallFunc_GetRBPlayerState_ReturnValue;             // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EActiveSkillType                              CallFunc_GetSelectedActiveSkill_ReturnValue;       // 0x0142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F50[0x5];                                     // 0x0143(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FActiveSkillCommonParams               CallFunc_GetActiveSkillCommonParams_ReturnValue_1; // 0x0148(0x0078)(ConstParm)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_97[0x1];                                       // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUILinearInventoryItem                 CallFunc_GetActiveSkillInfo_ActiveSkillInfo;       // 0x0098(0x0088)()
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_2;           // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_13A[0x6];                                      // 0x013A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayerState*                         CallFunc_GetRBPlayerState_ReturnValue;             // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EActiveSkillType                              CallFunc_GetSelectedActiveSkill_ReturnValue;       // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14B[0x5];                                      // 0x014B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FActiveSkillCommonParams               CallFunc_GetActiveSkillCommonParams_ReturnValue_1; // 0x0150(0x0078)(ConstParm)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(LinearInventory_C_UpdateRigSlot) == 0x000008, "Wrong alignment on LinearInventory_C_UpdateRigSlot");
-static_assert(sizeof(LinearInventory_C_UpdateRigSlot) == 0x0001C8, "Wrong size on LinearInventory_C_UpdateRigSlot");
+static_assert(sizeof(LinearInventory_C_UpdateRigSlot) == 0x0001D0, "Wrong size on LinearInventory_C_UpdateRigSlot");
 static_assert(offsetof(LinearInventory_C_UpdateRigSlot, ActiveSkillType) == 0x000000, "Member 'LinearInventory_C_UpdateRigSlot::ActiveSkillType' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000008, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -608,17 +607,17 @@ static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetActiveSkillI
 static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue_1) == 0x000095, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetActiveSkillInfo_ActiveSkillFound) == 0x000096, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetActiveSkillInfo_ActiveSkillFound' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetActiveSkillInfo_ActiveSkillInfo) == 0x000098, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetActiveSkillInfo_ActiveSkillInfo' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000118, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x000120, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetWatchedPlayer_ReturnValue_2) == 0x000128, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetWatchedPlayer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue_2) == 0x000130, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue_3) == 0x000131, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetRBPlayerState_ReturnValue) == 0x000138, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetRBPlayerState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue_4) == 0x000140, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue_5) == 0x000141, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetSelectedActiveSkill_ReturnValue) == 0x000142, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetSelectedActiveSkill_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetActiveSkillCommonParams_ReturnValue_1) == 0x000148, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetActiveSkillCommonParams_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x0001C0, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000120, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x000128, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetWatchedPlayer_ReturnValue_2) == 0x000130, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetWatchedPlayer_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue_2) == 0x000138, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue_3) == 0x000139, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetRBPlayerState_ReturnValue) == 0x000140, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetRBPlayerState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue_4) == 0x000148, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_IsValid_ReturnValue_5) == 0x000149, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetSelectedActiveSkill_ReturnValue) == 0x00014A, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetSelectedActiveSkill_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_GetActiveSkillCommonParams_ReturnValue_1) == 0x000150, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_GetActiveSkillCommonParams_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_UpdateRigSlot, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x0001C8, "Member 'LinearInventory_C_UpdateRigSlot::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
 
 // Function LinearInventory.LinearInventory_C.UpdateASCooldown
 // 0x0018 (0x0018 - 0x0000)
@@ -629,7 +628,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F51[0x1];                                     // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x1];                                        // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetCooldownRatio_ReturnValue;             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -650,10 +649,10 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F52[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ULinearInventoryEntry_C*>        K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F53[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULinearInventoryEntry_C*                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -668,50 +667,50 @@ static_assert(offsetof(LinearInventory_C_RefreshPrompts, CallFunc_Array_Get_Item
 static_assert(offsetof(LinearInventory_C_RefreshPrompts, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'LinearInventory_C_RefreshPrompts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function LinearInventory.LinearInventory_C.GetActiveSkillInfo
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct LinearInventory_C_GetActiveSkillInfo final
 {
 public:
 	bool                                          ActiveSkillFound;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F54[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUILinearInventoryItem                 ActiveSkillInfo;                                   // 0x0008(0x0080)(Parm, OutParm)
-	int32                                         CallFunc_GetActiveSkillIndex_ActiveSkillIndex;     // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetActiveSkillIndex_ActiveSkillFound;     // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUILinearInventoryItem                 ActiveSkillInfo;                                   // 0x0008(0x0088)(Parm, OutParm)
+	int32                                         CallFunc_GetActiveSkillIndex_ActiveSkillIndex;     // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetActiveSkillIndex_ActiveSkillFound;     // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(LinearInventory_C_GetActiveSkillInfo) == 0x000008, "Wrong alignment on LinearInventory_C_GetActiveSkillInfo");
-static_assert(sizeof(LinearInventory_C_GetActiveSkillInfo) == 0x000090, "Wrong size on LinearInventory_C_GetActiveSkillInfo");
+static_assert(sizeof(LinearInventory_C_GetActiveSkillInfo) == 0x000098, "Wrong size on LinearInventory_C_GetActiveSkillInfo");
 static_assert(offsetof(LinearInventory_C_GetActiveSkillInfo, ActiveSkillFound) == 0x000000, "Member 'LinearInventory_C_GetActiveSkillInfo::ActiveSkillFound' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_GetActiveSkillInfo, ActiveSkillInfo) == 0x000008, "Member 'LinearInventory_C_GetActiveSkillInfo::ActiveSkillInfo' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_GetActiveSkillInfo, CallFunc_GetActiveSkillIndex_ActiveSkillIndex) == 0x000088, "Member 'LinearInventory_C_GetActiveSkillInfo::CallFunc_GetActiveSkillIndex_ActiveSkillIndex' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_GetActiveSkillInfo, CallFunc_GetActiveSkillIndex_ActiveSkillFound) == 0x00008C, "Member 'LinearInventory_C_GetActiveSkillInfo::CallFunc_GetActiveSkillIndex_ActiveSkillFound' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_GetActiveSkillInfo, CallFunc_GetActiveSkillIndex_ActiveSkillIndex) == 0x000090, "Member 'LinearInventory_C_GetActiveSkillInfo::CallFunc_GetActiveSkillIndex_ActiveSkillIndex' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_GetActiveSkillInfo, CallFunc_GetActiveSkillIndex_ActiveSkillFound) == 0x000094, "Member 'LinearInventory_C_GetActiveSkillInfo::CallFunc_GetActiveSkillIndex_ActiveSkillFound' has a wrong offset!");
 
 // Function LinearInventory.LinearInventory_C.GetActiveSkillIndex
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct LinearInventory_C_GetActiveSkillIndex final
 {
 public:
 	int32                                         ActiveSkillIndex;                                  // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ActiveSkillFound;                                  // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ASFound;                                           // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F55[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ASIndex;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F56[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F57[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F58[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUILinearInventoryItem                 CallFunc_Array_Get_Item;                           // 0x0028(0x0080)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUILinearInventoryItem                 CallFunc_Array_Get_Item;                           // 0x0028(0x0088)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(LinearInventory_C_GetActiveSkillIndex) == 0x000008, "Wrong alignment on LinearInventory_C_GetActiveSkillIndex");
-static_assert(sizeof(LinearInventory_C_GetActiveSkillIndex) == 0x0000B0, "Wrong size on LinearInventory_C_GetActiveSkillIndex");
+static_assert(sizeof(LinearInventory_C_GetActiveSkillIndex) == 0x0000B8, "Wrong size on LinearInventory_C_GetActiveSkillIndex");
 static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, ActiveSkillIndex) == 0x000000, "Member 'LinearInventory_C_GetActiveSkillIndex::ActiveSkillIndex' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, ActiveSkillFound) == 0x000004, "Member 'LinearInventory_C_GetActiveSkillIndex::ActiveSkillFound' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, ASFound) == 0x000005, "Member 'LinearInventory_C_GetActiveSkillIndex::ASFound' has a wrong offset!");
@@ -723,10 +722,10 @@ static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, Temp_int_Loop_Coun
 static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_Array_IsEmpty_ReturnValue) == 0x000020, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_Array_IsEmpty_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_Array_Get_Item) == 0x000028, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_Array_Length_ReturnValue) == 0x0000A8, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_Less_IntInt_ReturnValue) == 0x0000AC, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000AD, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_BooleanAND_ReturnValue) == 0x0000AE, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_Array_Length_ReturnValue) == 0x0000B0, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_Less_IntInt_ReturnValue) == 0x0000B4, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B5, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LinearInventory_C_GetActiveSkillIndex, CallFunc_BooleanAND_ReturnValue) == 0x0000B6, "Member 'LinearInventory_C_GetActiveSkillIndex::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function LinearInventory.LinearInventory_C.UpdateDarknessDetection
 // 0x0038 (0x0038 - 0x0000)
@@ -734,16 +733,16 @@ struct LinearInventory_C_UpdateDarknessDetection final
 {
 public:
 	bool                                          InDarkness;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F59[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DesiredCrossairValue;                              // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F5A[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetDarknessDisplay_ReturnValue;           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F5B[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(LinearInventory_C_UpdateDarknessDetection) == 0x000008, "Wrong alignment on LinearInventory_C_UpdateDarknessDetection");

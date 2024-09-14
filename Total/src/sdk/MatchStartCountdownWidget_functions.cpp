@@ -40,9 +40,9 @@ void UMatchStartCountdownWidget_C::ExecuteUbergraph_MatchStartCountdownWidget(in
 // Function MatchStartCountdownWidget.MatchStartCountdownWidget_C.OnFindPartyTicketStateUpdatedEvent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EFindPartyTicketState                   Param_FindPartyTicketState                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFindPartyTicketState                   FindPartyTicketState_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMatchStartCountdownWidget_C::OnFindPartyTicketStateUpdatedEvent(EFindPartyTicketState Param_FindPartyTicketState)
+void UMatchStartCountdownWidget_C::OnFindPartyTicketStateUpdatedEvent(EFindPartyTicketState FindPartyTicketState_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +51,7 @@ void UMatchStartCountdownWidget_C::OnFindPartyTicketStateUpdatedEvent(EFindParty
 
 	Params::MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdatedEvent Parms{};
 
-	Parms.Param_FindPartyTicketState = Param_FindPartyTicketState;
+	Parms.FindPartyTicketState_0 = FindPartyTicketState_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -155,10 +155,10 @@ void UMatchStartCountdownWidget_C::Construct()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   MatchCancelationGracePeriodServerTime                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_MatchStartServerTime                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   MatchStartServerTime_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bReadyToTravelToMatch                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMatchStartCountdownWidget_C::StartMatchCountdown(float MatchCancelationGracePeriodServerTime, float Param_MatchStartServerTime, bool bReadyToTravelToMatch)
+void UMatchStartCountdownWidget_C::StartMatchCountdown(float MatchCancelationGracePeriodServerTime, float MatchStartServerTime_0, bool bReadyToTravelToMatch)
 {
 	static class UFunction* Func = nullptr;
 
@@ -168,7 +168,7 @@ void UMatchStartCountdownWidget_C::StartMatchCountdown(float MatchCancelationGra
 	Params::MatchStartCountdownWidget_C_StartMatchCountdown Parms{};
 
 	Parms.MatchCancelationGracePeriodServerTime = MatchCancelationGracePeriodServerTime;
-	Parms.Param_MatchStartServerTime = Param_MatchStartServerTime;
+	Parms.MatchStartServerTime_0 = MatchStartServerTime_0;
 	Parms.bReadyToTravelToMatch = bReadyToTravelToMatch;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -266,9 +266,9 @@ void UMatchStartCountdownWidget_C::OnFindPartyStateUpdated(const struct FFindPar
 // Function MatchStartCountdownWidget.MatchStartCountdownWidget_C.OnFindPartyTicketStateUpdated
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EFindPartyTicketState                   Param_FindPartyTicketState                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFindPartyTicketState                   FindPartyTicketState_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMatchStartCountdownWidget_C::OnFindPartyTicketStateUpdated(EFindPartyTicketState Param_FindPartyTicketState)
+void UMatchStartCountdownWidget_C::OnFindPartyTicketStateUpdated(EFindPartyTicketState FindPartyTicketState_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -277,7 +277,7 @@ void UMatchStartCountdownWidget_C::OnFindPartyTicketStateUpdated(EFindPartyTicke
 
 	Params::MatchStartCountdownWidget_C_OnFindPartyTicketStateUpdated Parms{};
 
-	Parms.Param_FindPartyTicketState = Param_FindPartyTicketState;
+	Parms.FindPartyTicketState_0 = FindPartyTicketState_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -35,7 +35,7 @@ public:
 	void Event_Refused();
 	void Event_Accepted();
 	void Event_Hide();
-	void Event_UpdateDisplayTime(float DisplayTime, float Param_TotalDisplayTime);
+	void Event_UpdateDisplayTime(float DisplayTime, float TotalDisplayTime_0);
 	void Event_Show();
 	void Finished_B968D2F4453AEAEB172D068B95ABDC98();
 

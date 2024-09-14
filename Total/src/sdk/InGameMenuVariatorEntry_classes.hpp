@@ -19,26 +19,34 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InGameMenuVariatorEntry.InGameMenuVariatorEntry_C
-// 0x0080 (0x02E0 - 0x0260)
+// 0x00B0 (0x0310 - 0x0260)
 class UInGameMenuVariatorEntry_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBorder*                                BackgroundBorder;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               BackgroundOverlay;                                 // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon;                                              // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             VariatorNameText;                                  // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_0;                                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTexture2D*                             IconTexture;                                       // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDisplayNotAvailableIcon;                          // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E73[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   VariatorName;                                      // 0x02A0(0x0018)(Edit, BlueprintVisible)
-	class FText                                   VariatorDescription;                               // 0x02B8(0x0018)(Edit, BlueprintVisible)
-	FMulticastInlineDelegateProperty_             OnAnimationCompleted;                              // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UButton*                                Button_171;                                        // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon;                                              // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           SelectionBorderPanel;                              // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             VariatorNameText;                                  // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_0;                                     // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTexture2D*                             IconTexture;                                       // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDisplayNotAvailableIcon;                          // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   VariatorName;                                      // 0x02B0(0x0018)(Edit, BlueprintVisible)
+	class FText                                   VariatorDescription;                               // 0x02C8(0x0018)(Edit, BlueprintVisible)
+	FMulticastInlineDelegateProperty_             OnAnimationCompleted;                              // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnEntryHovered;                                    // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnEntryUnhovered;                                  // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnAnimationCompleted__DelegateSignature();
+	void OnEntryHovered__DelegateSignature(const class FText& Description);
+	void OnEntryUnhovered__DelegateSignature();
 	void ExecuteUbergraph_InGameMenuVariatorEntry(int32 EntryPoint);
+	void BndEvt__InGameMenuVariatorEntry_Button_171_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__InGameMenuVariatorEntry_Button_171_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature();
 	void PreConstruct(bool IsDesignTime);
 	void Refresh();
 	void InitFromDifficulty(EGameDifficulty Difficulty);
@@ -55,18 +63,22 @@ public:
 	}
 };
 static_assert(alignof(UInGameMenuVariatorEntry_C) == 0x000008, "Wrong alignment on UInGameMenuVariatorEntry_C");
-static_assert(sizeof(UInGameMenuVariatorEntry_C) == 0x0002E0, "Wrong size on UInGameMenuVariatorEntry_C");
+static_assert(sizeof(UInGameMenuVariatorEntry_C) == 0x000310, "Wrong size on UInGameMenuVariatorEntry_C");
 static_assert(offsetof(UInGameMenuVariatorEntry_C, UberGraphFrame) == 0x000260, "Member 'UInGameMenuVariatorEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UInGameMenuVariatorEntry_C, BackgroundBorder) == 0x000268, "Member 'UInGameMenuVariatorEntry_C::BackgroundBorder' has a wrong offset!");
 static_assert(offsetof(UInGameMenuVariatorEntry_C, BackgroundOverlay) == 0x000270, "Member 'UInGameMenuVariatorEntry_C::BackgroundOverlay' has a wrong offset!");
-static_assert(offsetof(UInGameMenuVariatorEntry_C, Icon) == 0x000278, "Member 'UInGameMenuVariatorEntry_C::Icon' has a wrong offset!");
-static_assert(offsetof(UInGameMenuVariatorEntry_C, VariatorNameText) == 0x000280, "Member 'UInGameMenuVariatorEntry_C::VariatorNameText' has a wrong offset!");
-static_assert(offsetof(UInGameMenuVariatorEntry_C, VerticalBox_0) == 0x000288, "Member 'UInGameMenuVariatorEntry_C::VerticalBox_0' has a wrong offset!");
-static_assert(offsetof(UInGameMenuVariatorEntry_C, IconTexture) == 0x000290, "Member 'UInGameMenuVariatorEntry_C::IconTexture' has a wrong offset!");
-static_assert(offsetof(UInGameMenuVariatorEntry_C, bDisplayNotAvailableIcon) == 0x000298, "Member 'UInGameMenuVariatorEntry_C::bDisplayNotAvailableIcon' has a wrong offset!");
-static_assert(offsetof(UInGameMenuVariatorEntry_C, VariatorName) == 0x0002A0, "Member 'UInGameMenuVariatorEntry_C::VariatorName' has a wrong offset!");
-static_assert(offsetof(UInGameMenuVariatorEntry_C, VariatorDescription) == 0x0002B8, "Member 'UInGameMenuVariatorEntry_C::VariatorDescription' has a wrong offset!");
-static_assert(offsetof(UInGameMenuVariatorEntry_C, OnAnimationCompleted) == 0x0002D0, "Member 'UInGameMenuVariatorEntry_C::OnAnimationCompleted' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, Button_171) == 0x000278, "Member 'UInGameMenuVariatorEntry_C::Button_171' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, Icon) == 0x000280, "Member 'UInGameMenuVariatorEntry_C::Icon' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, SelectionBorderPanel) == 0x000288, "Member 'UInGameMenuVariatorEntry_C::SelectionBorderPanel' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, VariatorNameText) == 0x000290, "Member 'UInGameMenuVariatorEntry_C::VariatorNameText' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, VerticalBox_0) == 0x000298, "Member 'UInGameMenuVariatorEntry_C::VerticalBox_0' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, IconTexture) == 0x0002A0, "Member 'UInGameMenuVariatorEntry_C::IconTexture' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, bDisplayNotAvailableIcon) == 0x0002A8, "Member 'UInGameMenuVariatorEntry_C::bDisplayNotAvailableIcon' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, VariatorName) == 0x0002B0, "Member 'UInGameMenuVariatorEntry_C::VariatorName' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, VariatorDescription) == 0x0002C8, "Member 'UInGameMenuVariatorEntry_C::VariatorDescription' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, OnAnimationCompleted) == 0x0002E0, "Member 'UInGameMenuVariatorEntry_C::OnAnimationCompleted' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, OnEntryHovered) == 0x0002F0, "Member 'UInGameMenuVariatorEntry_C::OnEntryHovered' has a wrong offset!");
+static_assert(offsetof(UInGameMenuVariatorEntry_C, OnEntryUnhovered) == 0x000300, "Member 'UInGameMenuVariatorEntry_C::OnEntryUnhovered' has a wrong offset!");
 
 }
 

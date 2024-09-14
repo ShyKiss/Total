@@ -13,26 +13,27 @@
 #include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TaskProgressionHudWidget.TaskProgressionHudWidget_C
-// 0x0050 (0x0338 - 0x02E8)
-class UTaskProgressionHudWidget_C final : public URBHUDElementWidget
+// 0x0050 (0x02B8 - 0x0268)
+class UTaskProgressionHudWidget_C final : public URBUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       HideAnimation;                                     // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       ShowAnimation;                                     // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Icon;                                              // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Iconbackground;                                    // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Tag_new;                                           // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URichTextBlock*                         TaskName;                                          // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Title;                                             // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ARBPlayer*                              CurrentPlayer;                                     // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bShowing;                                          // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       HideAnimation;                                     // 0x0270(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ShowAnimation;                                     // 0x0278(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Icon;                                              // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Iconbackground;                                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Tag_new;                                           // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URichTextBlock*                         TaskName;                                          // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Title;                                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ARBPlayer*                              CurrentPlayer;                                     // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bShowing;                                          // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_TaskProgressionHudWidget(int32 EntryPoint);
@@ -51,17 +52,17 @@ public:
 	}
 };
 static_assert(alignof(UTaskProgressionHudWidget_C) == 0x000008, "Wrong alignment on UTaskProgressionHudWidget_C");
-static_assert(sizeof(UTaskProgressionHudWidget_C) == 0x000338, "Wrong size on UTaskProgressionHudWidget_C");
-static_assert(offsetof(UTaskProgressionHudWidget_C, UberGraphFrame) == 0x0002E8, "Member 'UTaskProgressionHudWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTaskProgressionHudWidget_C, HideAnimation) == 0x0002F0, "Member 'UTaskProgressionHudWidget_C::HideAnimation' has a wrong offset!");
-static_assert(offsetof(UTaskProgressionHudWidget_C, ShowAnimation) == 0x0002F8, "Member 'UTaskProgressionHudWidget_C::ShowAnimation' has a wrong offset!");
-static_assert(offsetof(UTaskProgressionHudWidget_C, Icon) == 0x000300, "Member 'UTaskProgressionHudWidget_C::Icon' has a wrong offset!");
-static_assert(offsetof(UTaskProgressionHudWidget_C, Iconbackground) == 0x000308, "Member 'UTaskProgressionHudWidget_C::Iconbackground' has a wrong offset!");
-static_assert(offsetof(UTaskProgressionHudWidget_C, Tag_new) == 0x000310, "Member 'UTaskProgressionHudWidget_C::Tag_new' has a wrong offset!");
-static_assert(offsetof(UTaskProgressionHudWidget_C, TaskName) == 0x000318, "Member 'UTaskProgressionHudWidget_C::TaskName' has a wrong offset!");
-static_assert(offsetof(UTaskProgressionHudWidget_C, Title) == 0x000320, "Member 'UTaskProgressionHudWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(UTaskProgressionHudWidget_C, CurrentPlayer) == 0x000328, "Member 'UTaskProgressionHudWidget_C::CurrentPlayer' has a wrong offset!");
-static_assert(offsetof(UTaskProgressionHudWidget_C, bShowing) == 0x000330, "Member 'UTaskProgressionHudWidget_C::bShowing' has a wrong offset!");
+static_assert(sizeof(UTaskProgressionHudWidget_C) == 0x0002B8, "Wrong size on UTaskProgressionHudWidget_C");
+static_assert(offsetof(UTaskProgressionHudWidget_C, UberGraphFrame) == 0x000268, "Member 'UTaskProgressionHudWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTaskProgressionHudWidget_C, HideAnimation) == 0x000270, "Member 'UTaskProgressionHudWidget_C::HideAnimation' has a wrong offset!");
+static_assert(offsetof(UTaskProgressionHudWidget_C, ShowAnimation) == 0x000278, "Member 'UTaskProgressionHudWidget_C::ShowAnimation' has a wrong offset!");
+static_assert(offsetof(UTaskProgressionHudWidget_C, Icon) == 0x000280, "Member 'UTaskProgressionHudWidget_C::Icon' has a wrong offset!");
+static_assert(offsetof(UTaskProgressionHudWidget_C, Iconbackground) == 0x000288, "Member 'UTaskProgressionHudWidget_C::Iconbackground' has a wrong offset!");
+static_assert(offsetof(UTaskProgressionHudWidget_C, Tag_new) == 0x000290, "Member 'UTaskProgressionHudWidget_C::Tag_new' has a wrong offset!");
+static_assert(offsetof(UTaskProgressionHudWidget_C, TaskName) == 0x000298, "Member 'UTaskProgressionHudWidget_C::TaskName' has a wrong offset!");
+static_assert(offsetof(UTaskProgressionHudWidget_C, Title) == 0x0002A0, "Member 'UTaskProgressionHudWidget_C::Title' has a wrong offset!");
+static_assert(offsetof(UTaskProgressionHudWidget_C, CurrentPlayer) == 0x0002A8, "Member 'UTaskProgressionHudWidget_C::CurrentPlayer' has a wrong offset!");
+static_assert(offsetof(UTaskProgressionHudWidget_C, bShowing) == 0x0002B0, "Member 'UTaskProgressionHudWidget_C::bShowing' has a wrong offset!");
 
 }
 

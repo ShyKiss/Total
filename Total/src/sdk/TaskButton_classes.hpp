@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "OPP_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TaskButton.TaskButton_C
-// 0x0270 (0x04D0 - 0x0260)
+// 0x02A8 (0x0508 - 0x0260)
 class UTaskButton_C final : public UUserWidget
 {
 public:
@@ -30,29 +30,31 @@ public:
 	class UImage*                                 ClaimedTagImage;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             CompletedText;                                     // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Counter;                                           // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Description;                                       // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_131;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                InteractionButton;                                 // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         LineIndicatorContainer;                            // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 LockedTagImage;                                    // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           ProgressionBar_1;                                  // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ReadyToClaimTagImage;                              // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_131;                                         // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                InteractionButton;                                 // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         LineIndicatorContainer;                            // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LockedTagImage;                                    // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           ProgressionBar_1;                                  // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ReadyToClaimTagImage;                              // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             ReadyToClaimText;                                  // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TaskIdDebugText;                                   // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTaskRewardWidget_C*                    TaskRewardWidget;                                  // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Title;                                             // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Title;                                             // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bFocused;                                          // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bHovered;                                          // 0x02E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D5A[0x6];                                     // 0x02E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E2[0x6];                                      // 0x02E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bIsGamepad;                                        // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D5B[0x7];                                     // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRBTaskMenuEntry                       Entry;                                             // 0x0300(0x01B0)(Edit, BlueprintVisible)
-	bool                                          bMenuCanConsume;                                   // 0x04B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D5C[0x3];                                     // 0x04B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRBTaskProgressionEntry                Progression;                                       // 0x04B4(0x0018)(Edit, BlueprintVisible, NoDestructor)
+	uint8                                         Pad_2F9[0x7];                                      // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBTaskMenuEntry                       Entry;                                             // 0x0300(0x01D8)(Edit, BlueprintVisible)
+	bool                                          bMenuCanConsume;                                   // 0x04D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4D9[0x3];                                      // 0x04D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBTaskProgressionEntry                Progression;                                       // 0x04DC(0x001C)(Edit, BlueprintVisible, NoDestructor)
+	FMulticastInlineDelegateProperty_             OnFocused;                                         // 0x04F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnClicked__DelegateSignature(const struct FRBTaskMenuEntry& Param_Entry);
+	void OnClicked__DelegateSignature(const struct FRBTaskMenuEntry& Entry_0);
+	void OnFocused__DelegateSignature(const struct FRBTaskMenuEntry& Entry_0);
 	void ExecuteUbergraph_TaskButton(int32 EntryPoint);
 	void Destruct();
 	void OnMenuInputSourceChanged();
@@ -60,16 +62,16 @@ public:
 	void BndEvt__PerkCategoryButton_InteractionButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__PerkCategoryButton_InteractionButton_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__PerkCategoryButton_InteractionButton_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature();
-	void Setup(const struct FRBTaskMenuEntry& Param_Entry, bool bCanConsume);
-	void UpdateProgression(const struct FRBTaskProgressionEntry& Param_Progression);
+	void Setup(const struct FRBTaskMenuEntry& Entry_0, bool bCanConsume);
+	void UpdateProgression(const struct FRBTaskProgressionEntry& Progression_0);
 	void Refresh();
-	void SetHovered(bool Param_IsHovered);
+	void SetHovered(bool IsHovered_0);
 	void SetFocused(bool bInFocused);
 	void IsConsideredHovered(bool* bConsideredHovered);
 	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
 	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
 	void CanConsume(bool* bCanConsume);
-	void SetupReward(const class FName& RewardDataId);
+	void SetupReward(const TArray<class FName>& RewardDataIds);
 	void UpdateMenuFocusAction();
 
 public:
@@ -83,20 +85,20 @@ public:
 	}
 };
 static_assert(alignof(UTaskButton_C) == 0x000008, "Wrong alignment on UTaskButton_C");
-static_assert(sizeof(UTaskButton_C) == 0x0004D0, "Wrong size on UTaskButton_C");
+static_assert(sizeof(UTaskButton_C) == 0x000508, "Wrong size on UTaskButton_C");
 static_assert(offsetof(UTaskButton_C, UberGraphFrame) == 0x000260, "Member 'UTaskButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, BackgroundImage) == 0x000268, "Member 'UTaskButton_C::BackgroundImage' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, ClaimableBorder) == 0x000270, "Member 'UTaskButton_C::ClaimableBorder' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, ClaimedTagImage) == 0x000278, "Member 'UTaskButton_C::ClaimedTagImage' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, CompletedText) == 0x000280, "Member 'UTaskButton_C::CompletedText' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, Counter) == 0x000288, "Member 'UTaskButton_C::Counter' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, Description) == 0x000290, "Member 'UTaskButton_C::Description' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, Image_131) == 0x000298, "Member 'UTaskButton_C::Image_131' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, InteractionButton) == 0x0002A0, "Member 'UTaskButton_C::InteractionButton' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, LineIndicatorContainer) == 0x0002A8, "Member 'UTaskButton_C::LineIndicatorContainer' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, LockedTagImage) == 0x0002B0, "Member 'UTaskButton_C::LockedTagImage' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, ProgressionBar_1) == 0x0002B8, "Member 'UTaskButton_C::ProgressionBar_1' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, ReadyToClaimTagImage) == 0x0002C0, "Member 'UTaskButton_C::ReadyToClaimTagImage' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, Image_131) == 0x000290, "Member 'UTaskButton_C::Image_131' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, InteractionButton) == 0x000298, "Member 'UTaskButton_C::InteractionButton' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, LineIndicatorContainer) == 0x0002A0, "Member 'UTaskButton_C::LineIndicatorContainer' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, LockedTagImage) == 0x0002A8, "Member 'UTaskButton_C::LockedTagImage' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, ProgressionBar_1) == 0x0002B0, "Member 'UTaskButton_C::ProgressionBar_1' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, ReadyToClaimTagImage) == 0x0002B8, "Member 'UTaskButton_C::ReadyToClaimTagImage' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, ReadyToClaimText) == 0x0002C0, "Member 'UTaskButton_C::ReadyToClaimText' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, TaskIdDebugText) == 0x0002C8, "Member 'UTaskButton_C::TaskIdDebugText' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, TaskRewardWidget) == 0x0002D0, "Member 'UTaskButton_C::TaskRewardWidget' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, Title) == 0x0002D8, "Member 'UTaskButton_C::Title' has a wrong offset!");
@@ -105,8 +107,9 @@ static_assert(offsetof(UTaskButton_C, bHovered) == 0x0002E1, "Member 'UTaskButto
 static_assert(offsetof(UTaskButton_C, OnClicked) == 0x0002E8, "Member 'UTaskButton_C::OnClicked' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, bIsGamepad) == 0x0002F8, "Member 'UTaskButton_C::bIsGamepad' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, Entry) == 0x000300, "Member 'UTaskButton_C::Entry' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, bMenuCanConsume) == 0x0004B0, "Member 'UTaskButton_C::bMenuCanConsume' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, Progression) == 0x0004B4, "Member 'UTaskButton_C::Progression' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, bMenuCanConsume) == 0x0004D8, "Member 'UTaskButton_C::bMenuCanConsume' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, Progression) == 0x0004DC, "Member 'UTaskButton_C::Progression' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, OnFocused) == 0x0004F8, "Member 'UTaskButton_C::OnFocused' has a wrong offset!");
 
 }
 

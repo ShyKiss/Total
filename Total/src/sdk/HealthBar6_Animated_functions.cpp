@@ -37,6 +37,40 @@ void UHealthBar6_Animated_C::ExecuteUbergraph_HealthBar6_Animated(int32 EntryPoi
 }
 
 
+// Function HealthBar6_Animated.HealthBar6_Animated_C.CheckForKnockdownState
+// (BlueprintCallable, BlueprintEvent)
+
+void UHealthBar6_Animated_C::CheckForKnockdownState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HealthBar6_Animated_C", "CheckForKnockdownState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HealthBar6_Animated.HealthBar6_Animated_C.OnForceShowHealthBar
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Duration                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHealthBar6_Animated_C::OnForceShowHealthBar(float Duration)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HealthBar6_Animated_C", "OnForceShowHealthBar");
+
+	Params::HealthBar6_Animated_C_OnForceShowHealthBar Parms{};
+
+	Parms.Duration = Duration;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function HealthBar6_Animated.HealthBar6_Animated_C.OnBleedingLeftChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -239,8 +273,9 @@ void UHealthBar6_Animated_C::Event_Show()
 // float                                   NewHealth                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Increased                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    SkipAnims                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    ForceUpdate                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UHealthBar6_Animated_C::ProcessHealthEvent(float NewHealth, bool Increased, bool SkipAnims)
+void UHealthBar6_Animated_C::ProcessHealthEvent(float NewHealth, bool Increased, bool SkipAnims, bool ForceUpdate)
 {
 	static class UFunction* Func = nullptr;
 
@@ -252,6 +287,7 @@ void UHealthBar6_Animated_C::ProcessHealthEvent(float NewHealth, bool Increased,
 	Parms.NewHealth = NewHealth;
 	Parms.Increased = Increased;
 	Parms.SkipAnims = SkipAnims;
+	Parms.ForceUpdate = ForceUpdate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -370,7 +406,7 @@ void UHealthBar6_Animated_C::ProcessBleedingChangedEvent(float NewBleedingLeft, 
 
 
 // Function HealthBar6_Animated.HealthBar6_Animated_C.ShouldShow
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// (Event, Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 

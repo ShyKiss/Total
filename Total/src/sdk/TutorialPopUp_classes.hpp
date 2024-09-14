@@ -33,7 +33,7 @@ public:
 	void ExecuteUbergraph_TutorialPopUp(int32 EntryPoint);
 	void BndEvt__RBMenuButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
 	void Construct();
-	void Initialize(const class FText& Param_Text);
+	void Initialize(const class FText& Text_0);
 
 public:
 	static class UClass* StaticClass()

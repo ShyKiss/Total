@@ -12,8 +12,8 @@
 
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,14 +27,14 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C62[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0018(0x0038)(IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          K2Node_Event_MouseEvent_1;                         // 0x0050(0x0070)(ConstParm)
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00C0(0x0070)(ConstParm)
 	bool                                          K2Node_Event_bIsGamepad;                           // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C63[0x3];                                     // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0134(0x0008)(NoDestructor)
-	uint8                                         Pad_2C64[0x4];                                     // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ExperimentBoardActionButton_C_ExecuteUbergraph_ExperimentBoardActionButton) == 0x000008, "Wrong alignment on ExperimentBoardActionButton_C_ExecuteUbergraph_ExperimentBoardActionButton");
@@ -107,7 +107,7 @@ static_assert(sizeof(ExperimentBoardActionButton_C_PreConstruct) == 0x000001, "W
 static_assert(offsetof(ExperimentBoardActionButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ExperimentBoardActionButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.UpdateState
-// 0x01E8 (0x01E8 - 0x0000)
+// 0x01F8 (0x01F8 - 0x0000)
 struct ExperimentBoardActionButton_C_UpdateState final
 {
 public:
@@ -119,19 +119,27 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0162(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0163(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_2;                              // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_3;                              // 0x0165(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0166(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0167(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x0168(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_Select_Default_2;                           // 0x0178(0x0028)()
-	struct FSlateColor                            K2Node_Select_Default_3;                           // 0x01A0(0x0028)()
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x01C8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0165(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x0166(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_3;                              // 0x0167(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_4;                              // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16B[0x1];                                      // 0x016B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x016C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_Select_Default_2;                           // 0x0180(0x0028)()
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AA[0x6];                                      // 0x01AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_Select_Default_4;                           // 0x01B0(0x0028)()
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x01D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ExperimentBoardActionButton_C_UpdateState) == 0x000008, "Wrong alignment on ExperimentBoardActionButton_C_UpdateState");
-static_assert(sizeof(ExperimentBoardActionButton_C_UpdateState) == 0x0001E8, "Wrong size on ExperimentBoardActionButton_C_UpdateState");
+static_assert(sizeof(ExperimentBoardActionButton_C_UpdateState) == 0x0001F8, "Wrong size on ExperimentBoardActionButton_C_UpdateState");
 static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, NormalBrush) == 0x000000, "Member 'ExperimentBoardActionButton_C_UpdateState::NormalBrush' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, ActiveBrush) == 0x000088, "Member 'ExperimentBoardActionButton_C_UpdateState::ActiveBrush' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, NormalColor) == 0x000110, "Member 'ExperimentBoardActionButton_C_UpdateState::NormalColor' has a wrong offset!");
@@ -140,16 +148,21 @@ static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_bool_Vari
 static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_byte_Variable) == 0x000161, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_byte_Variable_1) == 0x000162, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_bool_Variable_1) == 0x000163, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_bool_Variable_2) == 0x000164, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_bool_Variable_3) == 0x000165, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, CallFunc_BooleanAND_ReturnValue) == 0x000166, "Member 'ExperimentBoardActionButton_C_UpdateState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, K2Node_Select_Default) == 0x000167, "Member 'ExperimentBoardActionButton_C_UpdateState::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, K2Node_Select_Default_1) == 0x000168, "Member 'ExperimentBoardActionButton_C_UpdateState::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, K2Node_Select_Default_2) == 0x000178, "Member 'ExperimentBoardActionButton_C_UpdateState::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, K2Node_Select_Default_3) == 0x0001A0, "Member 'ExperimentBoardActionButton_C_UpdateState::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, CallFunc_SelectColor_ReturnValue) == 0x0001C8, "Member 'ExperimentBoardActionButton_C_UpdateState::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, CallFunc_PlayAnimation_ReturnValue) == 0x0001D8, "Member 'ExperimentBoardActionButton_C_UpdateState::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, CallFunc_BooleanAND_ReturnValue_1) == 0x0001E0, "Member 'ExperimentBoardActionButton_C_UpdateState::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_byte_Variable_2) == 0x000164, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_byte_Variable_3) == 0x000165, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_bool_Variable_2) == 0x000166, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_bool_Variable_3) == 0x000167, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_bool_Variable_3' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, Temp_bool_Variable_4) == 0x000168, "Member 'ExperimentBoardActionButton_C_UpdateState::Temp_bool_Variable_4' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, CallFunc_BooleanAND_ReturnValue) == 0x000169, "Member 'ExperimentBoardActionButton_C_UpdateState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, K2Node_Select_Default) == 0x00016A, "Member 'ExperimentBoardActionButton_C_UpdateState::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, K2Node_Select_Default_1) == 0x00016C, "Member 'ExperimentBoardActionButton_C_UpdateState::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, K2Node_Select_Default_2) == 0x000180, "Member 'ExperimentBoardActionButton_C_UpdateState::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, CallFunc_BooleanAND_ReturnValue_1) == 0x0001A8, "Member 'ExperimentBoardActionButton_C_UpdateState::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, K2Node_Select_Default_3) == 0x0001A9, "Member 'ExperimentBoardActionButton_C_UpdateState::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, K2Node_Select_Default_4) == 0x0001B0, "Member 'ExperimentBoardActionButton_C_UpdateState::K2Node_Select_Default_4' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, CallFunc_SelectColor_ReturnValue) == 0x0001D8, "Member 'ExperimentBoardActionButton_C_UpdateState::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, CallFunc_PlayAnimation_ReturnValue) == 0x0001E8, "Member 'ExperimentBoardActionButton_C_UpdateState::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_UpdateState, CallFunc_BooleanAND_ReturnValue_2) == 0x0001F0, "Member 'ExperimentBoardActionButton_C_UpdateState::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
 
 // Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.SetEnabled
 // 0x0002 (0x0002 - 0x0000)
@@ -169,12 +182,12 @@ static_assert(offsetof(ExperimentBoardActionButton_C_SetEnabled, CallFunc_NotEqu
 struct ExperimentBoardActionButton_C_SetButtonText final
 {
 public:
-	class FText                                   Param_ButtonText;                                  // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   ButtonText_0;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                          CallFunc_NotEqual_TextText_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ExperimentBoardActionButton_C_SetButtonText) == 0x000008, "Wrong alignment on ExperimentBoardActionButton_C_SetButtonText");
 static_assert(sizeof(ExperimentBoardActionButton_C_SetButtonText) == 0x000020, "Wrong size on ExperimentBoardActionButton_C_SetButtonText");
-static_assert(offsetof(ExperimentBoardActionButton_C_SetButtonText, Param_ButtonText) == 0x000000, "Member 'ExperimentBoardActionButton_C_SetButtonText::Param_ButtonText' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_SetButtonText, ButtonText_0) == 0x000000, "Member 'ExperimentBoardActionButton_C_SetButtonText::ButtonText_0' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_SetButtonText, CallFunc_NotEqual_TextText_ReturnValue) == 0x000018, "Member 'ExperimentBoardActionButton_C_SetButtonText::CallFunc_NotEqual_TextText_ReturnValue' has a wrong offset!");
 
 // Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.OnFocusReceived
@@ -199,56 +212,67 @@ static_assert(offsetof(ExperimentBoardActionButton_C_OnFocusReceived, CallFunc_H
 struct ExperimentBoardActionButton_C_SetHovered final
 {
 public:
-	bool                                          Param_Hovered;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Hovered_0;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ExperimentBoardActionButton_C_SetHovered) == 0x000001, "Wrong alignment on ExperimentBoardActionButton_C_SetHovered");
 static_assert(sizeof(ExperimentBoardActionButton_C_SetHovered) == 0x000001, "Wrong size on ExperimentBoardActionButton_C_SetHovered");
-static_assert(offsetof(ExperimentBoardActionButton_C_SetHovered, Param_Hovered) == 0x000000, "Member 'ExperimentBoardActionButton_C_SetHovered::Param_Hovered' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_SetHovered, Hovered_0) == 0x000000, "Member 'ExperimentBoardActionButton_C_SetHovered::Hovered_0' has a wrong offset!");
 
 // Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.Setup
-// 0x0090 (0x0090 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct ExperimentBoardActionButton_C_Setup final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C65[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FMargin                                K2Node_MakeStruct_Margin_1;                        // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_1;                              // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C66[0x1];                                     // 0x0027(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBorderSlot*                            CallFunc_SlotAsBorderSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_Select_Default;                             // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C67[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FInputActionKeyMapping                 CallFunc_GetInputBinding_ReturnValue;              // 0x0050(0x0028)()
-	bool                                          CallFunc_IsActionMappingValid_ReturnValue;         // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C68[0x6];                                     // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27[0x1];                                       // 0x0027(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0028(0x0058)(HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UButtonSlot*                            CallFunc_SlotAsButtonSlot_ReturnValue;             // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_Select_Default;                             // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UBorderSlot*                            CallFunc_SlotAsBorderSlot_ReturnValue;             // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FInputActionKeyMapping                 CallFunc_GetInputBinding_ReturnValue;              // 0x00C8(0x0028)()
+	bool                                          CallFunc_IsActionMappingValid_ReturnValue;         // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F2[0x6];                                       // 0x00F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ExperimentBoardActionButton_C_Setup) == 0x000008, "Wrong alignment on ExperimentBoardActionButton_C_Setup");
-static_assert(sizeof(ExperimentBoardActionButton_C_Setup) == 0x000090, "Wrong size on ExperimentBoardActionButton_C_Setup");
+static_assert(sizeof(ExperimentBoardActionButton_C_Setup) == 0x000108, "Wrong size on ExperimentBoardActionButton_C_Setup");
 static_assert(offsetof(ExperimentBoardActionButton_C_Setup, Temp_bool_Variable) == 0x000000, "Member 'ExperimentBoardActionButton_C_Setup::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_Setup, K2Node_MakeStruct_Margin) == 0x000004, "Member 'ExperimentBoardActionButton_C_Setup::K2Node_MakeStruct_Margin' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_Setup, K2Node_MakeStruct_Margin_1) == 0x000014, "Member 'ExperimentBoardActionButton_C_Setup::K2Node_MakeStruct_Margin_1' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_Setup, Temp_bool_Variable_1) == 0x000024, "Member 'ExperimentBoardActionButton_C_Setup::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_Setup, Temp_byte_Variable) == 0x000025, "Member 'ExperimentBoardActionButton_C_Setup::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ExperimentBoardActionButton_C_Setup, Temp_byte_Variable_1) == 0x000026, "Member 'ExperimentBoardActionButton_C_Setup::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_SlotAsBorderSlot_ReturnValue) == 0x000028, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_SlotAsBorderSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, K2Node_Select_Default) == 0x000030, "Member 'ExperimentBoardActionButton_C_Setup::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_Conv_StringToName_ReturnValue) == 0x000040, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_IsEmpty_ReturnValue) == 0x000048, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_GetInputBinding_ReturnValue) == 0x000050, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_GetInputBinding_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_IsActionMappingValid_ReturnValue) == 0x000078, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_IsActionMappingValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_Not_PreBool_ReturnValue) == 0x000079, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000080, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_BooleanOR_ReturnValue) == 0x000088, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExperimentBoardActionButton_C_Setup, K2Node_Select_Default_1) == 0x000089, "Member 'ExperimentBoardActionButton_C_Setup::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, K2Node_MakeStruct_SlateFontInfo) == 0x000028, "Member 'ExperimentBoardActionButton_C_Setup::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000080, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000088, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_MakeVector2D_ReturnValue) == 0x000090, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_SlotAsButtonSlot_ReturnValue) == 0x000098, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_SlotAsButtonSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, K2Node_Select_Default) == 0x0000A0, "Member 'ExperimentBoardActionButton_C_Setup::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_SlotAsBorderSlot_ReturnValue) == 0x0000B0, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_SlotAsBorderSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_Conv_StringToName_ReturnValue) == 0x0000B8, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_IsEmpty_ReturnValue) == 0x0000C0, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_GetInputBinding_ReturnValue) == 0x0000C8, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_GetInputBinding_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_IsActionMappingValid_ReturnValue) == 0x0000F0, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_IsActionMappingValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_Not_PreBool_ReturnValue) == 0x0000F1, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x0000F8, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, CallFunc_BooleanOR_ReturnValue) == 0x000100, "Member 'ExperimentBoardActionButton_C_Setup::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ExperimentBoardActionButton_C_Setup, K2Node_Select_Default_1) == 0x000101, "Member 'ExperimentBoardActionButton_C_Setup::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.SetIsNew
 // 0x0005 (0x0005 - 0x0000)

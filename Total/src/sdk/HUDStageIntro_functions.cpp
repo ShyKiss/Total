@@ -118,9 +118,9 @@ void UHUDStageIntro_C::ShowNextVariator()
 // Function HUDStageIntro.HUDStageIntro_C.GetStageName
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_StageName                                        (Parm, OutParm)
+// class FText                             StageName_0                                            (Parm, OutParm)
 
-void UHUDStageIntro_C::GetStageName(class FText* Param_StageName)
+void UHUDStageIntro_C::GetStageName(class FText* StageName_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -131,17 +131,17 @@ void UHUDStageIntro_C::GetStageName(class FText* Param_StageName)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_StageName != nullptr)
-		*Param_StageName = std::move(Parms.Param_StageName);
+	if (StageName_0 != nullptr)
+		*StageName_0 = std::move(Parms.StageName_0);
 }
 
 
 // Function HUDStageIntro.HUDStageIntro_C.GetTrialName
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_StageName                                        (Parm, OutParm)
+// class FText                             StageName_0                                            (Parm, OutParm)
 
-void UHUDStageIntro_C::GetTrialName(class FText* Param_StageName)
+void UHUDStageIntro_C::GetTrialName(class FText* StageName_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -152,8 +152,22 @@ void UHUDStageIntro_C::GetTrialName(class FText* Param_StageName)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_StageName != nullptr)
-		*Param_StageName = std::move(Parms.Param_StageName);
+	if (StageName_0 != nullptr)
+		*StageName_0 = std::move(Parms.StageName_0);
+}
+
+
+// Function HUDStageIntro.HUDStageIntro_C.UpdateEscalationCount
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UHUDStageIntro_C::UpdateEscalationCount()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HUDStageIntro_C", "UpdateEscalationCount");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

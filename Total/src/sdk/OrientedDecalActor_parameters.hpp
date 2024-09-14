@@ -22,8 +22,9 @@ struct OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bStateA_1;                            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30A4[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bStateA_1;                            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_randomOwner;                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bValue;                               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_bStateA;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -31,7 +32,8 @@ public:
 static_assert(alignof(OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor) == 0x000008, "Wrong alignment on OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor");
 static_assert(sizeof(OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor) == 0x000018, "Wrong size on OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor");
 static_assert(offsetof(OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor, EntryPoint) == 0x000000, "Member 'OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor, K2Node_Event_bStateA_1) == 0x000004, "Member 'OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor::K2Node_Event_bStateA_1' has a wrong offset!");
+static_assert(offsetof(OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor, K2Node_Event_bStateA_1) == 0x000005, "Member 'OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor::K2Node_Event_bStateA_1' has a wrong offset!");
 static_assert(offsetof(OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor, K2Node_Event_randomOwner) == 0x000008, "Member 'OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor::K2Node_Event_randomOwner' has a wrong offset!");
 static_assert(offsetof(OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor, K2Node_Event_bValue) == 0x000010, "Member 'OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor::K2Node_Event_bValue' has a wrong offset!");
 static_assert(offsetof(OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor, K2Node_Event_bStateA) == 0x000011, "Member 'OrientedDecalActor_C_ExecuteUbergraph_OrientedDecalActor::K2Node_Event_bStateA' has a wrong offset!");
@@ -64,13 +66,24 @@ struct OrientedDecalActor_C_PrepareState final
 {
 public:
 	bool                                          bStateA;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30A5[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 RandomOwner;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(OrientedDecalActor_C_PrepareState) == 0x000008, "Wrong alignment on OrientedDecalActor_C_PrepareState");
 static_assert(sizeof(OrientedDecalActor_C_PrepareState) == 0x000010, "Wrong size on OrientedDecalActor_C_PrepareState");
 static_assert(offsetof(OrientedDecalActor_C_PrepareState, bStateA) == 0x000000, "Member 'OrientedDecalActor_C_PrepareState::bStateA' has a wrong offset!");
 static_assert(offsetof(OrientedDecalActor_C_PrepareState, RandomOwner) == 0x000008, "Member 'OrientedDecalActor_C_PrepareState::RandomOwner' has a wrong offset!");
+
+// Function OrientedDecalActor.OrientedDecalActor_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct OrientedDecalActor_C_UserConstructionScript final
+{
+public:
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(OrientedDecalActor_C_UserConstructionScript) == 0x000001, "Wrong alignment on OrientedDecalActor_C_UserConstructionScript");
+static_assert(sizeof(OrientedDecalActor_C_UserConstructionScript) == 0x000001, "Wrong size on OrientedDecalActor_C_UserConstructionScript");
+static_assert(offsetof(OrientedDecalActor_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'OrientedDecalActor_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 
 // Function OrientedDecalActor.OrientedDecalActor_C.CreateDynamicOrientedMaterial
 // 0x0038 (0x0038 - 0x0000)
@@ -81,7 +94,7 @@ public:
 	class UMaterialInterface*                     CallFunc_GetDecalMaterial_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               K2Node_DynamicCast_AsMaterial_Instance_Dynamic;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30A6[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -130,6 +143,17 @@ public:
 static_assert(alignof(OrientedDecalActor_C_IsStateA) == 0x000001, "Wrong alignment on OrientedDecalActor_C_IsStateA");
 static_assert(sizeof(OrientedDecalActor_C_IsStateA) == 0x000001, "Wrong size on OrientedDecalActor_C_IsStateA");
 static_assert(offsetof(OrientedDecalActor_C_IsStateA, ReturnValue) == 0x000000, "Member 'OrientedDecalActor_C_IsStateA::ReturnValue' has a wrong offset!");
+
+// Function OrientedDecalActor.OrientedDecalActor_C.IsStateSetAndStateA
+// 0x0001 (0x0001 - 0x0000)
+struct OrientedDecalActor_C_IsStateSetAndStateA final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(OrientedDecalActor_C_IsStateSetAndStateA) == 0x000001, "Wrong alignment on OrientedDecalActor_C_IsStateSetAndStateA");
+static_assert(sizeof(OrientedDecalActor_C_IsStateSetAndStateA) == 0x000001, "Wrong size on OrientedDecalActor_C_IsStateSetAndStateA");
+static_assert(offsetof(OrientedDecalActor_C_IsStateSetAndStateA, ReturnValue) == 0x000000, "Member 'OrientedDecalActor_C_IsStateSetAndStateA::ReturnValue' has a wrong offset!");
 
 }
 

@@ -32,9 +32,8 @@ public:
 	class UImage*                                 STAMP;                                             // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Value;                                             // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	ECurrencyType                                 CurrencyType;                                      // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShowPickedUpCurrency;                              // 0x02A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          IsPreviewing;                                      // 0x02A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DE3[0x5];                                     // 0x02A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          IsPreviewing;                                      // 0x02A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A2[0x6];                                      // 0x02A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         RBPlayerState;                                     // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bHasOverrideValue;                                 // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -51,7 +50,7 @@ public:
 	class UWidget* Get_icon_ToolTipWidget_0();
 	void PreviewCost(int32 Cost);
 	void StopPreviewing();
-	void SetValueDirectly(int32 Param_NewValue);
+	void SetValueDirectly(int32 NewValue_0);
 
 public:
 	static class UClass* StaticClass()
@@ -74,8 +73,7 @@ static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, PreviewOverlay) == 0x00
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, STAMP) == 0x000290, "Member 'ULocalPlayerCurrencyHorizontal_C::STAMP' has a wrong offset!");
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, Value) == 0x000298, "Member 'ULocalPlayerCurrencyHorizontal_C::Value' has a wrong offset!");
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, CurrencyType) == 0x0002A0, "Member 'ULocalPlayerCurrencyHorizontal_C::CurrencyType' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, ShowPickedUpCurrency) == 0x0002A1, "Member 'ULocalPlayerCurrencyHorizontal_C::ShowPickedUpCurrency' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, IsPreviewing) == 0x0002A2, "Member 'ULocalPlayerCurrencyHorizontal_C::IsPreviewing' has a wrong offset!");
+static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, IsPreviewing) == 0x0002A1, "Member 'ULocalPlayerCurrencyHorizontal_C::IsPreviewing' has a wrong offset!");
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, RBPlayerState) == 0x0002A8, "Member 'ULocalPlayerCurrencyHorizontal_C::RBPlayerState' has a wrong offset!");
 static_assert(offsetof(ULocalPlayerCurrencyHorizontal_C, bHasOverrideValue) == 0x0002B0, "Member 'ULocalPlayerCurrencyHorizontal_C::bHasOverrideValue' has a wrong offset!");
 

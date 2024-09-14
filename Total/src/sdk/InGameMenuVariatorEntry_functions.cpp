@@ -31,6 +31,40 @@ void UInGameMenuVariatorEntry_C::OnAnimationCompleted__DelegateSignature()
 }
 
 
+// Function InGameMenuVariatorEntry.InGameMenuVariatorEntry_C.OnEntryHovered__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             Description                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UInGameMenuVariatorEntry_C::OnEntryHovered__DelegateSignature(const class FText& Description)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InGameMenuVariatorEntry_C", "OnEntryHovered__DelegateSignature");
+
+	Params::InGameMenuVariatorEntry_C_OnEntryHovered__DelegateSignature Parms{};
+
+	Parms.Description = std::move(Description);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function InGameMenuVariatorEntry.InGameMenuVariatorEntry_C.OnEntryUnhovered__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UInGameMenuVariatorEntry_C::OnEntryUnhovered__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InGameMenuVariatorEntry_C", "OnEntryUnhovered__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function InGameMenuVariatorEntry.InGameMenuVariatorEntry_C.ExecuteUbergraph_InGameMenuVariatorEntry
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +82,34 @@ void UInGameMenuVariatorEntry_C::ExecuteUbergraph_InGameMenuVariatorEntry(int32 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function InGameMenuVariatorEntry.InGameMenuVariatorEntry_C.BndEvt__InGameMenuVariatorEntry_Button_171_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UInGameMenuVariatorEntry_C::BndEvt__InGameMenuVariatorEntry_Button_171_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InGameMenuVariatorEntry_C", "BndEvt__InGameMenuVariatorEntry_Button_171_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function InGameMenuVariatorEntry.InGameMenuVariatorEntry_C.BndEvt__InGameMenuVariatorEntry_Button_171_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UInGameMenuVariatorEntry_C::BndEvt__InGameMenuVariatorEntry_Button_171_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InGameMenuVariatorEntry_C", "BndEvt__InGameMenuVariatorEntry_Button_171_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

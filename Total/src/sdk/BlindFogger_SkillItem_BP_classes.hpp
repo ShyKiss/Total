@@ -19,16 +19,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BlindFogger_SkillItem_BP.BlindFogger_SkillItem_BP_C
-// 0x0010 (0x0B80 - 0x0B70)
+// 0x0010 (0x0C20 - 0x0C10)
 class ABlindFogger_SkillItem_BP_C final : public ABaseFogger_SkillItem_BP_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BlindFogger_SkillItem_BP_C;         // 0x0B70(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Ngr_SkillDeactivate;                               // 0x0B78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BlindFogger_SkillItem_BP_C;         // 0x0C10(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Ngr_SkillDeactivate;                               // 0x0C18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BlindFogger_SkillItem_BP(int32 EntryPoint);
-	void Toto();
 	void On_Skill_Deactivate_FX(bool IsInZone);
 	void Event_AudioDistractionTriggered();
 	void Event_OnActivate();
@@ -47,9 +46,9 @@ public:
 	}
 };
 static_assert(alignof(ABlindFogger_SkillItem_BP_C) == 0x000010, "Wrong alignment on ABlindFogger_SkillItem_BP_C");
-static_assert(sizeof(ABlindFogger_SkillItem_BP_C) == 0x000B80, "Wrong size on ABlindFogger_SkillItem_BP_C");
-static_assert(offsetof(ABlindFogger_SkillItem_BP_C, UberGraphFrame_BlindFogger_SkillItem_BP_C) == 0x000B70, "Member 'ABlindFogger_SkillItem_BP_C::UberGraphFrame_BlindFogger_SkillItem_BP_C' has a wrong offset!");
-static_assert(offsetof(ABlindFogger_SkillItem_BP_C, Ngr_SkillDeactivate) == 0x000B78, "Member 'ABlindFogger_SkillItem_BP_C::Ngr_SkillDeactivate' has a wrong offset!");
+static_assert(sizeof(ABlindFogger_SkillItem_BP_C) == 0x000C20, "Wrong size on ABlindFogger_SkillItem_BP_C");
+static_assert(offsetof(ABlindFogger_SkillItem_BP_C, UberGraphFrame_BlindFogger_SkillItem_BP_C) == 0x000C10, "Member 'ABlindFogger_SkillItem_BP_C::UberGraphFrame_BlindFogger_SkillItem_BP_C' has a wrong offset!");
+static_assert(offsetof(ABlindFogger_SkillItem_BP_C, Ngr_SkillDeactivate) == 0x000C18, "Member 'ABlindFogger_SkillItem_BP_C::Ngr_SkillDeactivate' has a wrong offset!");
 
 }
 

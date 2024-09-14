@@ -20,43 +20,45 @@ namespace SDK::Params
 {
 
 // Function MainObjectiveWidget.MainObjectiveWidget_C.ExecuteUbergraph_MainObjectiveWidget
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_isMakingPositiveProgress;             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2648[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2649[0x3];                                     // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Approach_ReturnValue;                     // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_264A[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_264B[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBBaseObjectiveCoordinator*            K2Node_Event_coordinator;                          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_progress;                             // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_isPositiveProgress;                   // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_264C[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Event_objectiveText;                        // 0x0078(0x0018)(ConstParm)
-	class FText                                   CallFunc_FormatTextForDecorator_ReturnValue;       // 0x0090(0x0018)()
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_264D[0x3];                                     // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetElapsedTime_ReturnValue;               // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_264E[0x2];                                     // 0x00D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetGameTime_ReturnValue;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bForceShow;                           // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_FormatTextForDecorator_ReturnValue;       // 0x0098(0x0018)()
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00B0(0x0010)(ZeroConstructor, NoDestructor)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetElapsedTime_ReturnValue;               // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetGameTime_ReturnValue;                  // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget) == 0x000008, "Wrong alignment on MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget");
-static_assert(sizeof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget) == 0x0000D8, "Wrong size on MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget");
+static_assert(sizeof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget) == 0x0000E0, "Wrong size on MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget");
 static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, EntryPoint) == 0x000000, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, K2Node_Event_IsDesignTime) == 0x000004, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, K2Node_Event_isMakingPositiveProgress) == 0x000005, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::K2Node_Event_isMakingPositiveProgress' has a wrong offset!");
@@ -71,33 +73,36 @@ static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidge
 static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, K2Node_Event_progress) == 0x000070, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::K2Node_Event_progress' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, K2Node_Event_isPositiveProgress) == 0x000074, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::K2Node_Event_isPositiveProgress' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, K2Node_Event_objectiveText) == 0x000078, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::K2Node_Event_objectiveText' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_FormatTextForDecorator_ReturnValue) == 0x000090, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_FormatTextForDecorator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, K2Node_CreateDelegate_OutputDelegate) == 0x0000A8, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0000B8, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0000C0, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_IsValid_ReturnValue_1) == 0x0000C8, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_GetElapsedTime_ReturnValue) == 0x0000CC, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_GetElapsedTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000D0, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_BooleanAND_ReturnValue) == 0x0000D1, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_GetGameTime_ReturnValue) == 0x0000D4, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_GetGameTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, K2Node_Event_bForceShow) == 0x000090, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::K2Node_Event_bForceShow' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_FormatTextForDecorator_ReturnValue) == 0x000098, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_FormatTextForDecorator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, K2Node_CreateDelegate_OutputDelegate) == 0x0000B0, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0000C0, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0000C8, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_IsValid_ReturnValue_1) == 0x0000D0, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_GetElapsedTime_ReturnValue) == 0x0000D4, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_GetElapsedTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000D8, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_BooleanAND_ReturnValue) == 0x0000D9, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget, CallFunc_GetGameTime_ReturnValue) == 0x0000DC, "Member 'MainObjectiveWidget_C_ExecuteUbergraph_MainObjectiveWidget::CallFunc_GetGameTime_ReturnValue' has a wrong offset!");
 
 // Function MainObjectiveWidget.MainObjectiveWidget_C.Event_ProgressChanged
-// 0x0028 (0x0028 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct MainObjectiveWidget_C_Event_ProgressChanged final
 {
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Progress;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPositiveProgress;                                // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_264F[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ObjectiveText;                                     // 0x0010(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          bForceShow;                                        // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MainObjectiveWidget_C_Event_ProgressChanged) == 0x000008, "Wrong alignment on MainObjectiveWidget_C_Event_ProgressChanged");
-static_assert(sizeof(MainObjectiveWidget_C_Event_ProgressChanged) == 0x000028, "Wrong size on MainObjectiveWidget_C_Event_ProgressChanged");
+static_assert(sizeof(MainObjectiveWidget_C_Event_ProgressChanged) == 0x000030, "Wrong size on MainObjectiveWidget_C_Event_ProgressChanged");
 static_assert(offsetof(MainObjectiveWidget_C_Event_ProgressChanged, Coordinator) == 0x000000, "Member 'MainObjectiveWidget_C_Event_ProgressChanged::Coordinator' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_Event_ProgressChanged, Progress) == 0x000008, "Member 'MainObjectiveWidget_C_Event_ProgressChanged::Progress' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_Event_ProgressChanged, IsPositiveProgress) == 0x00000C, "Member 'MainObjectiveWidget_C_Event_ProgressChanged::IsPositiveProgress' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_Event_ProgressChanged, ObjectiveText) == 0x000010, "Member 'MainObjectiveWidget_C_Event_ProgressChanged::ObjectiveText' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Event_ProgressChanged, bForceShow) == 0x000028, "Member 'MainObjectiveWidget_C_Event_ProgressChanged::bForceShow' has a wrong offset!");
 
 // Function MainObjectiveWidget.MainObjectiveWidget_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -117,11 +122,11 @@ static_assert(offsetof(MainObjectiveWidget_C_Tick, InDeltaTime) == 0x000038, "Me
 struct MainObjectiveWidget_C_Event_IsMakingPositiveProgress final
 {
 public:
-	bool                                          Param_IsMakingPositiveProgress;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsMakingPositiveProgress_0;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MainObjectiveWidget_C_Event_IsMakingPositiveProgress) == 0x000001, "Wrong alignment on MainObjectiveWidget_C_Event_IsMakingPositiveProgress");
 static_assert(sizeof(MainObjectiveWidget_C_Event_IsMakingPositiveProgress) == 0x000001, "Wrong size on MainObjectiveWidget_C_Event_IsMakingPositiveProgress");
-static_assert(offsetof(MainObjectiveWidget_C_Event_IsMakingPositiveProgress, Param_IsMakingPositiveProgress) == 0x000000, "Member 'MainObjectiveWidget_C_Event_IsMakingPositiveProgress::Param_IsMakingPositiveProgress' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Event_IsMakingPositiveProgress, IsMakingPositiveProgress_0) == 0x000000, "Member 'MainObjectiveWidget_C_Event_IsMakingPositiveProgress::IsMakingPositiveProgress_0' has a wrong offset!");
 
 // Function MainObjectiveWidget.MainObjectiveWidget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -139,22 +144,22 @@ static_assert(offsetof(MainObjectiveWidget_C_PreConstruct, IsDesignTime) == 0x00
 struct MainObjectiveWidget_C_SetIsMakingPositiveProgress final
 {
 public:
-	bool                                          Param_IsMakingPositiveProgress;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsMakingPositiveProgress_0;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2650[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2651[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_PlayLoopingSoundOnActor_ReturnValue;      // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2652[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue_1;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -163,7 +168,7 @@ public:
 };
 static_assert(alignof(MainObjectiveWidget_C_SetIsMakingPositiveProgress) == 0x000008, "Wrong alignment on MainObjectiveWidget_C_SetIsMakingPositiveProgress");
 static_assert(sizeof(MainObjectiveWidget_C_SetIsMakingPositiveProgress) == 0x000030, "Wrong size on MainObjectiveWidget_C_SetIsMakingPositiveProgress");
-static_assert(offsetof(MainObjectiveWidget_C_SetIsMakingPositiveProgress, Param_IsMakingPositiveProgress) == 0x000000, "Member 'MainObjectiveWidget_C_SetIsMakingPositiveProgress::Param_IsMakingPositiveProgress' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_SetIsMakingPositiveProgress, IsMakingPositiveProgress_0) == 0x000000, "Member 'MainObjectiveWidget_C_SetIsMakingPositiveProgress::IsMakingPositiveProgress_0' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_SetIsMakingPositiveProgress, Temp_bool_Variable) == 0x000001, "Member 'MainObjectiveWidget_C_SetIsMakingPositiveProgress::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_SetIsMakingPositiveProgress, Temp_byte_Variable) == 0x000002, "Member 'MainObjectiveWidget_C_SetIsMakingPositiveProgress::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_SetIsMakingPositiveProgress, Temp_byte_Variable_1) == 0x000003, "Member 'MainObjectiveWidget_C_SetIsMakingPositiveProgress::Temp_byte_Variable_1' has a wrong offset!");
@@ -223,17 +228,17 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_RemoveChild_ReturnValue;                  // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2653[0x2];                                     // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2654[0x3];                                     // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasIntermediateObjectiveText_ReturnValue; // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2655[0x6];                                     // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FIntermediateObjectiveData>     CallFunc_GetIntermediateObjectivesData_ReturnValue; // 0x0078(0x0010)(ReferenceParm)
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0088(0x0010)(ReferenceParm, ContainsInstancedReference)
 	struct FIntermediateObjectiveData             CallFunc_Array_Get_Item_1;                         // 0x0098(0x0020)()
@@ -241,10 +246,10 @@ public:
 	class UIntermediateObjectiveTextWidget_C*     K2Node_DynamicCast_AsIntermediate_Objective_Text_Widget; // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2656[0x2];                                     // 0x00CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CA[0x2];                                       // 0x00CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2657[0x3];                                     // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MainObjectiveWidget_C_UpdateIntermediateObjectives) == 0x000008, "Wrong alignment on MainObjectiveWidget_C_UpdateIntermediateObjectives");
@@ -301,18 +306,18 @@ struct MainObjectiveWidget_C_Initialize final
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2658[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             CallFunc_GetObjectiveWidgetIcon_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2659[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBObjectiveManager*                    CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_BP_GetIntroObjectiveIcon_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_265A[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               K2Node_Select_Default_1;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -339,11 +344,30 @@ static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_IsValid_Return
 struct MainObjectiveWidget_C_GetRemoveAnimation final
 {
 public:
-	class UWidgetAnimation*                       Param_RemoveAnimation;                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       RemoveAnimation_0;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MainObjectiveWidget_C_GetRemoveAnimation) == 0x000008, "Wrong alignment on MainObjectiveWidget_C_GetRemoveAnimation");
 static_assert(sizeof(MainObjectiveWidget_C_GetRemoveAnimation) == 0x000008, "Wrong size on MainObjectiveWidget_C_GetRemoveAnimation");
-static_assert(offsetof(MainObjectiveWidget_C_GetRemoveAnimation, Param_RemoveAnimation) == 0x000000, "Member 'MainObjectiveWidget_C_GetRemoveAnimation::Param_RemoveAnimation' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_GetRemoveAnimation, RemoveAnimation_0) == 0x000000, "Member 'MainObjectiveWidget_C_GetRemoveAnimation::RemoveAnimation_0' has a wrong offset!");
+
+// Function MainObjectiveWidget.MainObjectiveWidget_C.ShouldShow
+// 0x0005 (0x0005 - 0x0000)
+struct MainObjectiveWidget_C_ShouldShow final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_ShouldShow_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsOfHighestUIPriority_ReturnValue;        // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(MainObjectiveWidget_C_ShouldShow) == 0x000001, "Wrong alignment on MainObjectiveWidget_C_ShouldShow");
+static_assert(sizeof(MainObjectiveWidget_C_ShouldShow) == 0x000005, "Wrong size on MainObjectiveWidget_C_ShouldShow");
+static_assert(offsetof(MainObjectiveWidget_C_ShouldShow, ReturnValue) == 0x000000, "Member 'MainObjectiveWidget_C_ShouldShow::ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ShouldShow, CallFunc_ShouldShow_ReturnValue) == 0x000001, "Member 'MainObjectiveWidget_C_ShouldShow::CallFunc_ShouldShow_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ShouldShow, CallFunc_IsValid_ReturnValue) == 0x000002, "Member 'MainObjectiveWidget_C_ShouldShow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ShouldShow, CallFunc_IsOfHighestUIPriority_ReturnValue) == 0x000003, "Member 'MainObjectiveWidget_C_ShouldShow::CallFunc_IsOfHighestUIPriority_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_ShouldShow, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'MainObjectiveWidget_C_ShouldShow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }
 

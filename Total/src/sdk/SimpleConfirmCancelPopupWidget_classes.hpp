@@ -39,7 +39,7 @@ public:
 	void Event_MenuCancel_Pressed();
 	void BndEvt__SimpleConfirmCancelPopupWidget_CancelBtn_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
 	void BndEvt__SimpleConfirmCancelPopupWidget_ConfirmBtn_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
-	void Event_InitializePopup(const class FText& TitleText, const class FText& Param_MainText, const class FText& ConfirmText, const class FText& CancelText);
+	void Event_InitializePopup(const class FText& TitleText, const class FText& MainText_0, const class FText& ConfirmText, const class FText& CancelText);
 	void PreConstruct(bool IsDesignTime);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 

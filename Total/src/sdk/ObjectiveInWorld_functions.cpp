@@ -247,9 +247,9 @@ void UObjectiveInWorld_C::Event_DrawHudUpdate(const struct FRBWorldIconUpdateCon
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // float                                   Distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_TargetOpacity                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   TargetOpacity_0                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UObjectiveInWorld_C::ProcessOpacity(float Distance, float* Param_TargetOpacity) const
+void UObjectiveInWorld_C::ProcessOpacity(float Distance, float* TargetOpacity_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -262,8 +262,8 @@ void UObjectiveInWorld_C::ProcessOpacity(float Distance, float* Param_TargetOpac
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_TargetOpacity != nullptr)
-		*Param_TargetOpacity = Parms.Param_TargetOpacity;
+	if (TargetOpacity_0 != nullptr)
+		*TargetOpacity_0 = Parms.TargetOpacity_0;
 }
 
 

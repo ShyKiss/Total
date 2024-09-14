@@ -61,12 +61,12 @@ struct Futterman_Drill_C_TryToSetFuttermanDrillVariable final
 public:
 	class USkeletalMeshComponent*                 Mesh_Comp;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Drill_Value;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Param_DrillManual;                                 // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          DrillManual_0;                                     // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Result;                                            // 0x000A(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30A2[0x5];                                     // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30A3[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IFuttermanOwner_Interface_BP_C> K2Node_DynamicCast_AsFutterman_Owner_Interface_BP; // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetFuttermanDrillValue_Success;           // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -75,7 +75,7 @@ static_assert(alignof(Futterman_Drill_C_TryToSetFuttermanDrillVariable) == 0x000
 static_assert(sizeof(Futterman_Drill_C_TryToSetFuttermanDrillVariable) == 0x000038, "Wrong size on Futterman_Drill_C_TryToSetFuttermanDrillVariable");
 static_assert(offsetof(Futterman_Drill_C_TryToSetFuttermanDrillVariable, Mesh_Comp) == 0x000000, "Member 'Futterman_Drill_C_TryToSetFuttermanDrillVariable::Mesh_Comp' has a wrong offset!");
 static_assert(offsetof(Futterman_Drill_C_TryToSetFuttermanDrillVariable, Drill_Value) == 0x000008, "Member 'Futterman_Drill_C_TryToSetFuttermanDrillVariable::Drill_Value' has a wrong offset!");
-static_assert(offsetof(Futterman_Drill_C_TryToSetFuttermanDrillVariable, Param_DrillManual) == 0x000009, "Member 'Futterman_Drill_C_TryToSetFuttermanDrillVariable::Param_DrillManual' has a wrong offset!");
+static_assert(offsetof(Futterman_Drill_C_TryToSetFuttermanDrillVariable, DrillManual_0) == 0x000009, "Member 'Futterman_Drill_C_TryToSetFuttermanDrillVariable::DrillManual_0' has a wrong offset!");
 static_assert(offsetof(Futterman_Drill_C_TryToSetFuttermanDrillVariable, Result) == 0x00000A, "Member 'Futterman_Drill_C_TryToSetFuttermanDrillVariable::Result' has a wrong offset!");
 static_assert(offsetof(Futterman_Drill_C_TryToSetFuttermanDrillVariable, CallFunc_GetOwner_ReturnValue) == 0x000010, "Member 'Futterman_Drill_C_TryToSetFuttermanDrillVariable::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Futterman_Drill_C_TryToSetFuttermanDrillVariable, CallFunc_DoesImplementInterface_ReturnValue) == 0x000018, "Member 'Futterman_Drill_C_TryToSetFuttermanDrillVariable::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");

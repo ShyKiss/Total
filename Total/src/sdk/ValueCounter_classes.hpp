@@ -32,7 +32,7 @@ public:
 	class UImage*                                 Image_4;                                           // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_56;                                          // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         LastHighlightedBarIndex;                           // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C7B[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            NormalTint;                                        // 0x02A8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                            HighlightedTint;                                   // 0x02D0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 

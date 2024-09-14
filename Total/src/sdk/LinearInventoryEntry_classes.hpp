@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LinearInventoryEntry.LinearInventoryEntry_C
-// 0x00F8 (0x03E0 - 0x02E8)
+// 0x0100 (0x03E8 - 0x02E8)
 class ULinearInventoryEntry_C final : public URBHUDElementWidget
 {
 public:
@@ -38,12 +38,12 @@ public:
 	bool                                          IsSpecialSlot;                                     // 0x0340(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IconStartsCollapsed;                               // 0x0341(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShouldAlwaysShowText;                              // 0x0342(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C4C[0x5];                                     // 0x0343(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_343[0x5];                                      // 0x0343(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             DefaultIcon;                                       // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   PromptActionName;                                  // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUILinearInventoryItem                 ItemInfo;                                          // 0x0358(0x0080)(Edit, BlueprintVisible, ExposeOnSpawn)
-	bool                                          WasSelected;                                       // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          SwapState;                                         // 0x03D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FUILinearInventoryItem                 ItemInfo;                                          // 0x0358(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                          WasSelected;                                       // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          SwapState;                                         // 0x03E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_LinearInventoryEntry(int32 EntryPoint);
@@ -52,7 +52,7 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void Init();
 	void SetSelected(bool IsSelected);
-	void UpdateInfo(const struct FUILinearInventoryItem& Param_ItemInfo);
+	void UpdateInfo(const struct FUILinearInventoryItem& ItemInfo_0);
 	void UpdatePrompt();
 	void UpdateSpecialColor(const struct FLinearColor& SpecialColor);
 	void UpdateSwapIconVisibility(bool Swap);
@@ -70,7 +70,7 @@ public:
 	}
 };
 static_assert(alignof(ULinearInventoryEntry_C) == 0x000008, "Wrong alignment on ULinearInventoryEntry_C");
-static_assert(sizeof(ULinearInventoryEntry_C) == 0x0003E0, "Wrong size on ULinearInventoryEntry_C");
+static_assert(sizeof(ULinearInventoryEntry_C) == 0x0003E8, "Wrong size on ULinearInventoryEntry_C");
 static_assert(offsetof(ULinearInventoryEntry_C, UberGraphFrame) == 0x0002E8, "Member 'ULinearInventoryEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULinearInventoryEntry_C, ItemReady) == 0x0002F0, "Member 'ULinearInventoryEntry_C::ItemReady' has a wrong offset!");
 static_assert(offsetof(ULinearInventoryEntry_C, Highlight) == 0x0002F8, "Member 'ULinearInventoryEntry_C::Highlight' has a wrong offset!");
@@ -88,8 +88,8 @@ static_assert(offsetof(ULinearInventoryEntry_C, ShouldAlwaysShowText) == 0x00034
 static_assert(offsetof(ULinearInventoryEntry_C, DefaultIcon) == 0x000348, "Member 'ULinearInventoryEntry_C::DefaultIcon' has a wrong offset!");
 static_assert(offsetof(ULinearInventoryEntry_C, PromptActionName) == 0x000350, "Member 'ULinearInventoryEntry_C::PromptActionName' has a wrong offset!");
 static_assert(offsetof(ULinearInventoryEntry_C, ItemInfo) == 0x000358, "Member 'ULinearInventoryEntry_C::ItemInfo' has a wrong offset!");
-static_assert(offsetof(ULinearInventoryEntry_C, WasSelected) == 0x0003D8, "Member 'ULinearInventoryEntry_C::WasSelected' has a wrong offset!");
-static_assert(offsetof(ULinearInventoryEntry_C, SwapState) == 0x0003D9, "Member 'ULinearInventoryEntry_C::SwapState' has a wrong offset!");
+static_assert(offsetof(ULinearInventoryEntry_C, WasSelected) == 0x0003E0, "Member 'ULinearInventoryEntry_C::WasSelected' has a wrong offset!");
+static_assert(offsetof(ULinearInventoryEntry_C, SwapState) == 0x0003E1, "Member 'ULinearInventoryEntry_C::SwapState' has a wrong offset!");
 
 }
 

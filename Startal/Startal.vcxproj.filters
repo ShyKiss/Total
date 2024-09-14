@@ -37,8 +37,5 @@
     <Image Include="Startal.ico">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="icon2.ico">
-      <Filter>Файлы ресурсов</Filter>
-    </Image>
   </ItemGroup>
 </Project>

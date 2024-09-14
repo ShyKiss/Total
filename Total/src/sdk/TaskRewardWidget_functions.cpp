@@ -82,9 +82,9 @@ void UTaskRewardWidget_C::Finished_06C8D1BA4A83DEE7EEB540A7F6355A36()
 // Function TaskRewardWidget.TaskRewardWidget_C.Init
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FRewardUIData>            Param_Rewards                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<struct FRewardUIData>            Rewards_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UTaskRewardWidget_C::Init(TArray<struct FRewardUIData>& Param_Rewards)
+void UTaskRewardWidget_C::Init(TArray<struct FRewardUIData>& Rewards_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -93,20 +93,20 @@ void UTaskRewardWidget_C::Init(TArray<struct FRewardUIData>& Param_Rewards)
 
 	Params::TaskRewardWidget_C_Init Parms{};
 
-	Parms.Param_Rewards = std::move(Param_Rewards);
+	Parms.Rewards_0 = std::move(Rewards_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Param_Rewards = std::move(Parms.Param_Rewards);
+	Rewards_0 = std::move(Parms.Rewards_0);
 }
 
 
 // Function TaskRewardWidget.TaskRewardWidget_C.SetAnimated
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bAnimated                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bAnimated_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTaskRewardWidget_C::SetAnimated(bool Param_bAnimated)
+void UTaskRewardWidget_C::SetAnimated(bool bAnimated_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -115,7 +115,7 @@ void UTaskRewardWidget_C::SetAnimated(bool Param_bAnimated)
 
 	Params::TaskRewardWidget_C_SetAnimated Parms{};
 
-	Parms.Param_bAnimated = Param_bAnimated;
+	Parms.bAnimated_0 = bAnimated_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

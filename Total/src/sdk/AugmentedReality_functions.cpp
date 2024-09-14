@@ -1998,9 +1998,9 @@ void UARComponent::ReceiveRemove()
 // Function AugmentedReality.ARComponent.SetNativeID
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FGuid                            Param_NativeID                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FGuid                            NativeID_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UARComponent::SetNativeID(const struct FGuid& Param_NativeID)
+void UARComponent::SetNativeID(const struct FGuid& NativeID_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2009,7 +2009,7 @@ void UARComponent::SetNativeID(const struct FGuid& Param_NativeID)
 
 	Params::ARComponent_SetNativeID Parms{};
 
-	Parms.Param_NativeID = std::move(Param_NativeID);
+	Parms.NativeID_0 = std::move(NativeID_0);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3342,20 +3342,6 @@ void UGetGeoLocationAsyncTaskBlueprintProxy::GetGeoLocationDelegate__DelegateSig
 }
 
 
-// Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady
-// (Event, Public, BlueprintEvent)
-
-void AARSharedWorldGameState::K2_OnARWorldMapIsReady()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameState", "K2_OnARWorldMapIsReady");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // DelegateFunction AugmentedReality.ARLifeCycleComponent.InstanceARActorSpawnedDelegate__DelegateSignature
 // (MulticastDelegate, Public, Delegate, HasDefaults)
 // Parameters:
@@ -3986,9 +3972,9 @@ void UARSessionConfig::SetSessionTrackingFeatureToEnable(EARSessionTrackingFeatu
 // Function AugmentedReality.ARSessionConfig.SetWorldMapData
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TArray<uint8>                           Param_WorldMapData                                     (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<uint8>                           WorldMapData_0                                         (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 
-void UARSessionConfig::SetWorldMapData(const TArray<uint8>& Param_WorldMapData)
+void UARSessionConfig::SetWorldMapData(const TArray<uint8>& WorldMapData_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3997,7 +3983,7 @@ void UARSessionConfig::SetWorldMapData(const TArray<uint8>& Param_WorldMapData)
 
 	Params::ARSessionConfig_SetWorldMapData Parms{};
 
-	Parms.Param_WorldMapData = std::move(Param_WorldMapData);
+	Parms.WorldMapData_0 = std::move(WorldMapData_0);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4599,6 +4585,20 @@ void AARSharedWorldGameMode::SetPreviewImageData(const TArray<uint8>& ImageData)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady
+// (Event, Public, BlueprintEvent)
+
+void AARSharedWorldGameState::K2_OnARWorldMapIsReady()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameState", "K2_OnARWorldMapIsReady");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

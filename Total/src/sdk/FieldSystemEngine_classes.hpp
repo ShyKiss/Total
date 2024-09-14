@@ -46,7 +46,7 @@ static_assert(offsetof(AFieldSystemActor, FieldSystemComponent) == 0x000230, "Me
 class UFieldSystem final : public UObject
 {
 public:
-	uint8                                         Pad_2996[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -69,11 +69,11 @@ public:
 	class UFieldSystem*                           FieldSystem;                                       // 0x0480(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsWorldField;                                     // 0x0488(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsChaosField;                                     // 0x0489(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2997[0x6];                                     // 0x048A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48A[0x6];                                      // 0x048A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSoftObjectPtr<class AChaosSolverActor>> SupportedSolvers;                                  // 0x0490(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	struct FFieldObjectCommands                   ConstructionCommands;                              // 0x04A0(0x0030)(ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FFieldObjectCommands                   BufferCommands;                                    // 0x04D0(0x0030)(ContainsInstancedReference, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2998[0x50];                                    // 0x0500(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_500[0x50];                                     // 0x0500(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddFieldCommand(bool Enabled, EFieldPhysicsType Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field);
@@ -107,6 +107,66 @@ static_assert(offsetof(UFieldSystemComponent, SupportedSolvers) == 0x000490, "Me
 static_assert(offsetof(UFieldSystemComponent, ConstructionCommands) == 0x0004A0, "Member 'UFieldSystemComponent::ConstructionCommands' has a wrong offset!");
 static_assert(offsetof(UFieldSystemComponent, BufferCommands) == 0x0004D0, "Member 'UFieldSystemComponent::BufferCommands' has a wrong offset!");
 
+// Class FieldSystemEngine.FieldNodeBase
+// 0x0000 (0x00B8 - 0x00B8)
+class UFieldNodeBase : public UActorComponent
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"FieldNodeBase">();
+	}
+	static class UFieldNodeBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UFieldNodeBase>();
+	}
+};
+static_assert(alignof(UFieldNodeBase) == 0x000008, "Wrong alignment on UFieldNodeBase");
+static_assert(sizeof(UFieldNodeBase) == 0x0000B8, "Wrong size on UFieldNodeBase");
+
+// Class FieldSystemEngine.FieldNodeVector
+// 0x0000 (0x00B8 - 0x00B8)
+class UFieldNodeVector : public UFieldNodeBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"FieldNodeVector">();
+	}
+	static class UFieldNodeVector* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UFieldNodeVector>();
+	}
+};
+static_assert(alignof(UFieldNodeVector) == 0x000008, "Wrong alignment on UFieldNodeVector");
+static_assert(sizeof(UFieldNodeVector) == 0x0000B8, "Wrong size on UFieldNodeVector");
+
+// Class FieldSystemEngine.RadialVector
+// 0x0010 (0x00C8 - 0x00B8)
+class URadialVector final : public UFieldNodeVector
+{
+public:
+	float                                         Magnitude;                                         // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Position;                                          // 0x00BC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	class URadialVector* SetRadialVector(float Magnitude_0, const struct FVector& Position_0);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"RadialVector">();
+	}
+	static class URadialVector* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URadialVector>();
+	}
+};
+static_assert(alignof(URadialVector) == 0x000008, "Wrong alignment on URadialVector");
+static_assert(sizeof(URadialVector) == 0x0000C8, "Wrong size on URadialVector");
+static_assert(offsetof(URadialVector, Magnitude) == 0x0000B8, "Member 'URadialVector::Magnitude' has a wrong offset!");
+static_assert(offsetof(URadialVector, Position) == 0x0000BC, "Member 'URadialVector::Position' has a wrong offset!");
+
 // Class FieldSystemEngine.FieldSystemMetaData
 // 0x0000 (0x00B8 - 0x00B8)
 class UFieldSystemMetaData : public UActorComponent
@@ -130,10 +190,10 @@ class UFieldSystemMetaDataIteration final : public UFieldSystemMetaData
 {
 public:
 	int32                                         Iterations;                                        // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29A2[0x4];                                     // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UFieldSystemMetaDataIteration* SetMetaDataIteration(int32 Param_Iterations);
+	class UFieldSystemMetaDataIteration* SetMetaDataIteration(int32 Iterations_0);
 
 public:
 	static class UClass* StaticClass()
@@ -155,10 +215,10 @@ class UFieldSystemMetaDataProcessingResolution final : public UFieldSystemMetaDa
 {
 public:
 	EFieldResolutionType                          ResolutionType;                                    // 0x00B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29A4[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UFieldSystemMetaDataProcessingResolution* SetMetaDataaProcessingResolutionType(EFieldResolutionType Param_ResolutionType);
+	class UFieldSystemMetaDataProcessingResolution* SetMetaDataaProcessingResolutionType(EFieldResolutionType ResolutionType_0);
 
 public:
 	static class UClass* StaticClass()
@@ -180,10 +240,10 @@ class UFieldSystemMetaDataFilter final : public UFieldSystemMetaData
 {
 public:
 	EFieldFilterType                              FilterType;                                        // 0x00B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29A6[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UFieldSystemMetaDataFilter* SetMetaDataFilterType(EFieldFilterType Param_FilterType);
+	class UFieldSystemMetaDataFilter* SetMetaDataFilterType(EFieldFilterType FilterType_0);
 
 public:
 	static class UClass* StaticClass()
@@ -198,40 +258,6 @@ public:
 static_assert(alignof(UFieldSystemMetaDataFilter) == 0x000008, "Wrong alignment on UFieldSystemMetaDataFilter");
 static_assert(sizeof(UFieldSystemMetaDataFilter) == 0x0000C0, "Wrong size on UFieldSystemMetaDataFilter");
 static_assert(offsetof(UFieldSystemMetaDataFilter, FilterType) == 0x0000B8, "Member 'UFieldSystemMetaDataFilter::FilterType' has a wrong offset!");
-
-// Class FieldSystemEngine.FieldNodeBase
-// 0x0000 (0x00B8 - 0x00B8)
-class UFieldNodeBase : public UActorComponent
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"FieldNodeBase">();
-	}
-	static class UFieldNodeBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UFieldNodeBase>();
-	}
-};
-static_assert(alignof(UFieldNodeBase) == 0x000008, "Wrong alignment on UFieldNodeBase");
-static_assert(sizeof(UFieldNodeBase) == 0x0000B8, "Wrong size on UFieldNodeBase");
-
-// Class FieldSystemEngine.FieldNodeInt
-// 0x0000 (0x00B8 - 0x00B8)
-class UFieldNodeInt : public UFieldNodeBase
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"FieldNodeInt">();
-	}
-	static class UFieldNodeInt* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UFieldNodeInt>();
-	}
-};
-static_assert(alignof(UFieldNodeInt) == 0x000008, "Wrong alignment on UFieldNodeInt");
-static_assert(sizeof(UFieldNodeInt) == 0x0000B8, "Wrong size on UFieldNodeInt");
 
 // Class FieldSystemEngine.FieldNodeFloat
 // 0x0000 (0x00B8 - 0x00B8)
@@ -250,22 +276,71 @@ public:
 static_assert(alignof(UFieldNodeFloat) == 0x000008, "Wrong alignment on UFieldNodeFloat");
 static_assert(sizeof(UFieldNodeFloat) == 0x0000B8, "Wrong size on UFieldNodeFloat");
 
-// Class FieldSystemEngine.FieldNodeVector
+// Class FieldSystemEngine.ToFloatField
+// 0x0008 (0x00C0 - 0x00B8)
+class UToFloatField final : public UFieldNodeFloat
+{
+public:
+	class UFieldNodeInt*                          IntField;                                          // 0x00B8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	class UToFloatField* SetToFloatField(const class UFieldNodeInt* IntegerField);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ToFloatField">();
+	}
+	static class UToFloatField* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UToFloatField>();
+	}
+};
+static_assert(alignof(UToFloatField) == 0x000008, "Wrong alignment on UToFloatField");
+static_assert(sizeof(UToFloatField) == 0x0000C0, "Wrong size on UToFloatField");
+static_assert(offsetof(UToFloatField, IntField) == 0x0000B8, "Member 'UToFloatField::IntField' has a wrong offset!");
+
+// Class FieldSystemEngine.FieldNodeInt
 // 0x0000 (0x00B8 - 0x00B8)
-class UFieldNodeVector : public UFieldNodeBase
+class UFieldNodeInt : public UFieldNodeBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldNodeVector">();
+		return StaticClassImpl<"FieldNodeInt">();
 	}
-	static class UFieldNodeVector* GetDefaultObj()
+	static class UFieldNodeInt* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UFieldNodeVector>();
+		return GetDefaultObjImpl<UFieldNodeInt>();
 	}
 };
-static_assert(alignof(UFieldNodeVector) == 0x000008, "Wrong alignment on UFieldNodeVector");
-static_assert(sizeof(UFieldNodeVector) == 0x0000B8, "Wrong size on UFieldNodeVector");
+static_assert(alignof(UFieldNodeInt) == 0x000008, "Wrong alignment on UFieldNodeInt");
+static_assert(sizeof(UFieldNodeInt) == 0x0000B8, "Wrong size on UFieldNodeInt");
+
+// Class FieldSystemEngine.RandomVector
+// 0x0008 (0x00C0 - 0x00B8)
+class URandomVector final : public UFieldNodeVector
+{
+public:
+	float                                         Magnitude;                                         // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	class URandomVector* SetRandomVector(float Magnitude_0);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"RandomVector">();
+	}
+	static class URandomVector* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URandomVector>();
+	}
+};
+static_assert(alignof(URandomVector) == 0x000008, "Wrong alignment on URandomVector");
+static_assert(sizeof(URandomVector) == 0x0000C0, "Wrong size on URandomVector");
+static_assert(offsetof(URandomVector, Magnitude) == 0x0000B8, "Member 'URandomVector::Magnitude' has a wrong offset!");
 
 // Class FieldSystemEngine.UniformInteger
 // 0x0008 (0x00C0 - 0x00B8)
@@ -273,10 +348,10 @@ class UUniformInteger final : public UFieldNodeInt
 {
 public:
 	int32                                         Magnitude;                                         // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29A8[0x4];                                     // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UUniformInteger* SetUniformInteger(int32 Param_Magnitude);
+	class UUniformInteger* SetUniformInteger(int32 Magnitude_0);
 
 public:
 	static class UClass* StaticClass()
@@ -302,10 +377,10 @@ public:
 	int32                                         InteriorValue;                                     // 0x00C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ExteriorValue;                                     // 0x00CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESetMaskConditionType                         SetMaskCondition;                                  // 0x00D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29AA[0x7];                                     // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class URadialIntMask* SetRadialIntMask(float Param_Radius, const struct FVector& Param_Position, int32 Param_InteriorValue, int32 Param_ExteriorValue, ESetMaskConditionType SetMaskConditionIn);
+	class URadialIntMask* SetRadialIntMask(float Radius_0, const struct FVector& Position_0, int32 InteriorValue_0, int32 ExteriorValue_0, ESetMaskConditionType SetMaskConditionIn);
 
 public:
 	static class UClass* StaticClass()
@@ -331,10 +406,10 @@ class UUniformScalar final : public UFieldNodeFloat
 {
 public:
 	float                                         Magnitude;                                         // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29AC[0x4];                                     // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UUniformScalar* SetUniformScalar(float Param_Magnitude);
+	class UUniformScalar* SetUniformScalar(float Magnitude_0);
 
 public:
 	static class UClass* StaticClass()
@@ -361,10 +436,10 @@ public:
 	float                                         Period;                                            // 0x00CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EWaveFunctionType                             Function;                                          // 0x00D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldFalloffType                             Falloff;                                           // 0x00D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29AE[0x6];                                     // 0x00D2(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D2[0x6];                                       // 0x00D2(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UWaveScalar* SetWaveScalar(float Param_Magnitude, const struct FVector& Param_Position, float Param_Wavelength, float Param_Period, float Time, EWaveFunctionType Param_Function, EFieldFalloffType Param_Falloff);
+	class UWaveScalar* SetWaveScalar(float Magnitude_0, const struct FVector& Position_0, float Wavelength_0, float Period_0, float Time, EWaveFunctionType Function_0, EFieldFalloffType Falloff_0);
 
 public:
 	static class UClass* StaticClass()
@@ -397,10 +472,10 @@ public:
 	float                                         Radius;                                            // 0x00C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Position;                                          // 0x00CC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldFalloffType                             Falloff;                                           // 0x00D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29B0[0x7];                                     // 0x00D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class URadialFalloff* SetRadialFalloff(float Param_Magnitude, float Param_MinRange, float Param_MaxRange, float Param_Default, float Param_Radius, const struct FVector& Param_Position, EFieldFalloffType Param_Falloff);
+	class URadialFalloff* SetRadialFalloff(float Magnitude_0, float MinRange_0, float MaxRange_0, float Default_0, float Radius_0, const struct FVector& Position_0, EFieldFalloffType Falloff_0);
 
 public:
 	static class UClass* StaticClass()
@@ -435,10 +510,10 @@ public:
 	struct FVector                                Position;                                          // 0x00CC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Normal;                                            // 0x00D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldFalloffType                             Falloff;                                           // 0x00E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29B2[0x3];                                     // 0x00E5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UPlaneFalloff* SetPlaneFalloff(float Param_Magnitude, float Param_MinRange, float Param_MaxRange, float Param_Default, float Param_Distance, const struct FVector& Param_Position, const struct FVector& Param_Normal, EFieldFalloffType Param_Falloff);
+	class UPlaneFalloff* SetPlaneFalloff(float Magnitude_0, float MinRange_0, float MaxRange_0, float Default_0, float Distance_0, const struct FVector& Position_0, const struct FVector& Normal_0, EFieldFalloffType Falloff_0);
 
 public:
 	static class UClass* StaticClass()
@@ -470,13 +545,13 @@ public:
 	float                                         MinRange;                                          // 0x00BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxRange;                                          // 0x00C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Default;                                           // 0x00C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29B4[0x8];                                     // 0x00C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C8[0x8];                                       // 0x00C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x00D0(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	EFieldFalloffType                             Falloff;                                           // 0x0100(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29B5[0xF];                                     // 0x0101(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_101[0xF];                                      // 0x0101(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UBoxFalloff* SetBoxFalloff(float Param_Magnitude, float Param_MinRange, float Param_MaxRange, float Param_Default, const struct FTransform& Param_Transform, EFieldFalloffType Param_Falloff);
+	class UBoxFalloff* SetBoxFalloff(float Magnitude_0, float MinRange_0, float MaxRange_0, float Default_0, const struct FTransform& Transform_0, EFieldFalloffType Falloff_0);
 
 public:
 	static class UClass* StaticClass()
@@ -507,7 +582,7 @@ public:
 	struct FTransform                             Transform;                                         // 0x00C0(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
-	class UNoiseField* SetNoiseField(float Param_MinRange, float Param_MaxRange, const struct FTransform& Param_Transform);
+	class UNoiseField* SetNoiseField(float MinRange_0, float MaxRange_0, const struct FTransform& Transform_0);
 
 public:
 	static class UClass* StaticClass()
@@ -534,7 +609,7 @@ public:
 	struct FVector                                Direction;                                         // 0x00BC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	class UUniformVector* SetUniformVector(float Param_Magnitude, const struct FVector& Param_Direction);
+	class UUniformVector* SetUniformVector(float Magnitude_0, const struct FVector& Direction_0);
 
 public:
 	static class UClass* StaticClass()
@@ -551,71 +626,20 @@ static_assert(sizeof(UUniformVector) == 0x0000C8, "Wrong size on UUniformVector"
 static_assert(offsetof(UUniformVector, Magnitude) == 0x0000B8, "Member 'UUniformVector::Magnitude' has a wrong offset!");
 static_assert(offsetof(UUniformVector, Direction) == 0x0000BC, "Member 'UUniformVector::Direction' has a wrong offset!");
 
-// Class FieldSystemEngine.RadialVector
-// 0x0010 (0x00C8 - 0x00B8)
-class URadialVector final : public UFieldNodeVector
-{
-public:
-	float                                         Magnitude;                                         // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Position;                                          // 0x00BC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	class URadialVector* SetRadialVector(float Param_Magnitude, const struct FVector& Param_Position);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"RadialVector">();
-	}
-	static class URadialVector* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URadialVector>();
-	}
-};
-static_assert(alignof(URadialVector) == 0x000008, "Wrong alignment on URadialVector");
-static_assert(sizeof(URadialVector) == 0x0000C8, "Wrong size on URadialVector");
-static_assert(offsetof(URadialVector, Magnitude) == 0x0000B8, "Member 'URadialVector::Magnitude' has a wrong offset!");
-static_assert(offsetof(URadialVector, Position) == 0x0000BC, "Member 'URadialVector::Position' has a wrong offset!");
-
-// Class FieldSystemEngine.RandomVector
-// 0x0008 (0x00C0 - 0x00B8)
-class URandomVector final : public UFieldNodeVector
-{
-public:
-	float                                         Magnitude;                                         // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29B9[0x4];                                     // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	class URandomVector* SetRandomVector(float Param_Magnitude);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"RandomVector">();
-	}
-	static class URandomVector* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URandomVector>();
-	}
-};
-static_assert(alignof(URandomVector) == 0x000008, "Wrong alignment on URandomVector");
-static_assert(sizeof(URandomVector) == 0x0000C0, "Wrong size on URandomVector");
-static_assert(offsetof(URandomVector, Magnitude) == 0x0000B8, "Member 'URandomVector::Magnitude' has a wrong offset!");
-
 // Class FieldSystemEngine.OperatorField
 // 0x0020 (0x00D8 - 0x00B8)
 class UOperatorField final : public UFieldNodeBase
 {
 public:
 	float                                         Magnitude;                                         // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29BB[0x4];                                     // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFieldNodeBase*                         RightField;                                        // 0x00C0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFieldNodeBase*                         LeftField;                                         // 0x00C8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldOperationType                           Operation;                                         // 0x00D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29BC[0x7];                                     // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UOperatorField* SetOperatorField(float Param_Magnitude, const class UFieldNodeBase* Param_LeftField, const class UFieldNodeBase* Param_RightField, EFieldOperationType Param_Operation);
+	class UOperatorField* SetOperatorField(float Magnitude_0, const class UFieldNodeBase* LeftField_0, const class UFieldNodeBase* RightField_0, EFieldOperationType Operation_0);
 
 public:
 	static class UClass* StaticClass()
@@ -642,7 +666,7 @@ public:
 	class UFieldNodeFloat*                        FloatField;                                        // 0x00B8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	class UToIntegerField* SetToIntegerField(const class UFieldNodeFloat* Param_FloatField);
+	class UToIntegerField* SetToIntegerField(const class UFieldNodeFloat* FloatField_0);
 
 public:
 	static class UClass* StaticClass()
@@ -658,30 +682,6 @@ static_assert(alignof(UToIntegerField) == 0x000008, "Wrong alignment on UToInteg
 static_assert(sizeof(UToIntegerField) == 0x0000C0, "Wrong size on UToIntegerField");
 static_assert(offsetof(UToIntegerField, FloatField) == 0x0000B8, "Member 'UToIntegerField::FloatField' has a wrong offset!");
 
-// Class FieldSystemEngine.ToFloatField
-// 0x0008 (0x00C0 - 0x00B8)
-class UToFloatField final : public UFieldNodeFloat
-{
-public:
-	class UFieldNodeInt*                          IntField;                                          // 0x00B8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	class UToFloatField* SetToFloatField(const class UFieldNodeInt* IntegerField);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ToFloatField">();
-	}
-	static class UToFloatField* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UToFloatField>();
-	}
-};
-static_assert(alignof(UToFloatField) == 0x000008, "Wrong alignment on UToFloatField");
-static_assert(sizeof(UToFloatField) == 0x0000C0, "Wrong size on UToFloatField");
-static_assert(offsetof(UToFloatField, IntField) == 0x0000B8, "Member 'UToFloatField::IntField' has a wrong offset!");
-
 // Class FieldSystemEngine.CullingField
 // 0x0018 (0x00D0 - 0x00B8)
 class UCullingField final : public UFieldNodeBase
@@ -690,10 +690,10 @@ public:
 	class UFieldNodeBase*                         Culling;                                           // 0x00B8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFieldNodeBase*                         Field;                                             // 0x00C0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldCullingOperationType                    Operation;                                         // 0x00C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29BF[0x7];                                     // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UCullingField* SetCullingField(const class UFieldNodeBase* Param_Culling, const class UFieldNodeBase* Param_Field, EFieldCullingOperationType Param_Operation);
+	class UCullingField* SetCullingField(const class UFieldNodeBase* Culling_0, const class UFieldNodeBase* Field_0, EFieldCullingOperationType Operation_0);
 
 public:
 	static class UClass* StaticClass()

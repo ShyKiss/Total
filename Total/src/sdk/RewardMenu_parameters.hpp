@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -21,79 +21,98 @@ namespace SDK::Params
 {
 
 // Function RewardMenu.RewardMenu_C.ExecuteUbergraph_RewardMenu
-// 0x00D0 (0x00D0 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct RewardMenu_C_ExecuteUbergraph_RewardMenu final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D2D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBPlayerProgressionData*               CallFunc_GetLocalPlayerProgressionData_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetMaxPlayerLevel_ReturnValue;            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2E[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetPlayerLevelRequiredXP_ReturnValue;     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2F[0x2];                                     // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D30[0x6];                                     // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USelectableRewardWidget_C*              CallFunc_GetRewardWidget_rewardWidget;             // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRewardWidget_bCreated;                 // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D31[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0058(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_PostEventGlobal_ReturnValue;              // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D32[0x3];                                     // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0078(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Min_ReturnValue;                          // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0004(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
+	int32                                         CallFunc_PostEventGlobal_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBPlayerProgressionData*               CallFunc_GetLocalPlayerProgressionData_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetMaxPlayerLevel_ReturnValue;            // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerLevelRequiredXP_ReturnValue;     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F[0x1];                                       // 0x003F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1;                          // 0x0048(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
+	int32                                         CallFunc_PostEventGlobal_ReturnValue_1;            // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UExtraRewardWidget_C*                   CallFunc_Create_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USelectableRewardWidget_C*              CallFunc_GetRewardWidget_rewardWidget;             // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRewardWidget_bCreated;                 // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue_1;    // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x00B0(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Min_ReturnValue;                          // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RewardMenu_C_ExecuteUbergraph_RewardMenu) == 0x000008, "Wrong alignment on RewardMenu_C_ExecuteUbergraph_RewardMenu");
-static_assert(sizeof(RewardMenu_C_ExecuteUbergraph_RewardMenu) == 0x0000D0, "Wrong size on RewardMenu_C_ExecuteUbergraph_RewardMenu");
+static_assert(sizeof(RewardMenu_C_ExecuteUbergraph_RewardMenu) == 0x000108, "Wrong size on RewardMenu_C_ExecuteUbergraph_RewardMenu");
 static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, EntryPoint) == 0x000000, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetLocalPlayerProgressionData_ReturnValue) == 0x000008, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetLocalPlayerProgressionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000010, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetMaxPlayerLevel_ReturnValue) == 0x000014, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetMaxPlayerLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Add_IntInt_ReturnValue_1) == 0x00001C, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000020, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetPlayerLevelRequiredXP_ReturnValue) == 0x000024, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetPlayerLevelRequiredXP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Greater_IntInt_ReturnValue) == 0x000028, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000029, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, Temp_int_Variable) == 0x00002C, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Subtract_IntInt_ReturnValue) == 0x000030, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Max_ReturnValue) == 0x000034, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000038, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000039, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetRewardWidget_rewardWidget) == 0x000040, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetRewardWidget_rewardWidget' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetRewardWidget_bCreated) == 0x000048, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetRewardWidget_bCreated' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000050, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, Temp_delegate_Variable) == 0x000058, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::Temp_delegate_Variable' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_PostEventGlobal_ReturnValue) == 0x000068, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_PostEventGlobal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x00006C, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, K2Node_ComponentBoundEvent_Button) == 0x000070, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, K2Node_Event_MyGeometry) == 0x000078, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, K2Node_Event_InDeltaTime) == 0x0000B0, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000B4, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000B8, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_FCeil_ReturnValue) == 0x0000BC, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Min_ReturnValue) == 0x0000C0, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Min_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000C4, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x0000C8, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, Temp_delegate_Variable) == 0x000004, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::Temp_delegate_Variable' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_PostEventGlobal_ReturnValue) == 0x000014, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_PostEventGlobal_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000018, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, Temp_int_Variable) == 0x00001C, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetLocalPlayerProgressionData_ReturnValue) == 0x000020, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetLocalPlayerProgressionData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000028, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetMaxPlayerLevel_ReturnValue) == 0x00002C, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetMaxPlayerLevel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Add_IntInt_ReturnValue_1) == 0x000034, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetPlayerLevelRequiredXP_ReturnValue) == 0x000038, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetPlayerLevelRequiredXP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00003C, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Greater_IntInt_ReturnValue) == 0x00003D, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00003E, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetChildrenCount_ReturnValue) == 0x000040, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, Temp_delegate_Variable_1) == 0x000048, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::Temp_delegate_Variable_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_PostEventGlobal_ReturnValue_1) == 0x000058, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_PostEventGlobal_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, Temp_int_Variable_1) == 0x00005C, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Create_ReturnValue) == 0x000060, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000068, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetRewardWidget_rewardWidget) == 0x000070, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetRewardWidget_rewardWidget' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GetRewardWidget_bCreated) == 0x000078, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GetRewardWidget_bCreated' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000080, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Add_IntInt_ReturnValue_2) == 0x000088, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00008C, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Subtract_IntInt_ReturnValue) == 0x000090, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Max_ReturnValue) == 0x000094, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Max_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000098, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_AddChildToHorizontalBox_ReturnValue_1) == 0x0000A0, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_AddChildToHorizontalBox_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, K2Node_ComponentBoundEvent_Button) == 0x0000A8, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, K2Node_Event_MyGeometry) == 0x0000B0, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, K2Node_Event_InDeltaTime) == 0x0000E8, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000EC, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000F0, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_FCeil_ReturnValue) == 0x0000F4, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_FCeil_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Min_ReturnValue) == 0x0000F8, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Min_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Add_IntInt_ReturnValue_3) == 0x0000FC, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_ExecuteUbergraph_RewardMenu, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000100, "Member 'RewardMenu_C_ExecuteUbergraph_RewardMenu::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function RewardMenu.RewardMenu_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -127,13 +146,13 @@ public:
 	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Value;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D33[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPlayerProgressionData*               CallFunc_GetLocalPlayerProgressionData_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetPlayerLevelRequiredXP_ReturnValue;     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetMaxPlayerLevel_ReturnValue;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Min_ReturnValue;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D34[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0080(0x0018)()
@@ -166,13 +185,13 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D35[0x5];                                     // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRBUIXPGainInfo>                CallFunc_GetUIXPGainInfoList_ReturnValue;          // 0x0008(0x0010)(ConstParm, ReferenceParm)
 	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D36[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBPlayerProgressionData*               CallFunc_GetLocalPlayerProgressionData_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetMaxPlayerLevel_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D37[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetXp_ReturnValue;                        // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetReleaseCount_ReturnValue;              // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -182,12 +201,12 @@ public:
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D38[0x3];                                     // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetPlayerLevelRequiredXP_ReturnValue;     // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D39[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x00B0(0x0018)()
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D3A[0x7];                                     // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00D0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0110(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0120(0x0018)()
@@ -224,7 +243,7 @@ struct RewardMenu_C_AddPendingReward final
 public:
 	struct FRewardUIData                          RewardUIData;                                      // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	bool                                          bMerged;                                           // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D3B[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RewardMenu_C_AddPendingReward) == 0x000008, "Wrong alignment on RewardMenu_C_AddPendingReward");
@@ -245,23 +264,23 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0010(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
 	struct FRewardUIData                          K2Node_MakeStruct_RewardUIData;                    // 0x0020(0x0020)(NoDestructor)
 	int32                                         CallFunc_PostEventGlobal_ReturnValue;              // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D3C[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USelectableRewardWidget_C*              CallFunc_GetRewardWidget_rewardWidget;             // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetRewardWidget_bCreated;                 // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D3D[0x2];                                     // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FRBUIXPGainInfo>                CallFunc_GetUIXPGainInfoList_ReturnValue;          // 0x0060(0x0010)(ConstParm, ReferenceParm)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D3E[0x6];                                     // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRewardUIData                          CallFunc_Array_Get_Item;                           // 0x0078(0x0020)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x009E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D3F[0x1];                                     // 0x009F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9F[0x1];                                       // 0x009F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RewardMenu_C_TryStartNextProgressionAnimation) == 0x000008, "Wrong alignment on RewardMenu_C_TryStartNextProgressionAnimation");
@@ -299,11 +318,11 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D40[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRBUIXPGainInfo>                CallFunc_GetUIXPGainInfoList_ReturnValue;          // 0x0028(0x0010)(ConstParm, ReferenceParm)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D41[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRewardUIData                          CallFunc_Array_Get_Item;                           // 0x0048(0x0020)(NoDestructor)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -352,7 +371,7 @@ static_assert(offsetof(RewardMenu_C_StopXpSound, Temp_delegate_Variable) == 0x00
 static_assert(offsetof(RewardMenu_C_StopXpSound, CallFunc_PostEventGlobal_ReturnValue) == 0x000010, "Member 'RewardMenu_C_StopXpSound::CallFunc_PostEventGlobal_ReturnValue' has a wrong offset!");
 
 // Function RewardMenu.RewardMenu_C.GetRewardWidget
-// 0x0090 (0x0090 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct RewardMenu_C_GetRewardWidget final
 {
 public:
@@ -360,24 +379,25 @@ public:
 	class USelectableRewardWidget_C*              RewardWidget;                                      // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bCreated;                                          // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bMerged;                                           // 0x0029(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D42[0x2];                                     // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FRewardUIData& Reward)> K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FRewardUIData& Reward)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
-	class USelectableRewardWidget_C*              CallFunc_Create_ReturnValue;                       // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0060(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D43[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USelectableRewardWidget_C*              K2Node_DynamicCast_AsSelectable_Reward_Widget;     // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CanMergeWith_bCanMergeWith;               // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FRewardUIData& Reward, class USelectableRewardWidget_C* Widget)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FRewardUIData& Reward, class USelectableRewardWidget_C* Widget)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	class USelectableRewardWidget_C*              CallFunc_Create_ReturnValue;                       // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0070(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USelectableRewardWidget_C*              K2Node_DynamicCast_AsSelectable_Reward_Widget;     // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CanMergeWith_bCanMergeWith;               // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(RewardMenu_C_GetRewardWidget) == 0x000008, "Wrong alignment on RewardMenu_C_GetRewardWidget");
-static_assert(sizeof(RewardMenu_C_GetRewardWidget) == 0x000090, "Wrong size on RewardMenu_C_GetRewardWidget");
+static_assert(sizeof(RewardMenu_C_GetRewardWidget) == 0x0000A0, "Wrong size on RewardMenu_C_GetRewardWidget");
 static_assert(offsetof(RewardMenu_C_GetRewardWidget, RewardUIData) == 0x000000, "Member 'RewardMenu_C_GetRewardWidget::RewardUIData' has a wrong offset!");
 static_assert(offsetof(RewardMenu_C_GetRewardWidget, RewardWidget) == 0x000020, "Member 'RewardMenu_C_GetRewardWidget::RewardWidget' has a wrong offset!");
 static_assert(offsetof(RewardMenu_C_GetRewardWidget, bCreated) == 0x000028, "Member 'RewardMenu_C_GetRewardWidget::bCreated' has a wrong offset!");
@@ -387,72 +407,72 @@ static_assert(offsetof(RewardMenu_C_GetRewardWidget, Temp_int_Loop_Counter_Varia
 static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RewardMenu_C_GetRewardWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'RewardMenu_C_GetRewardWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(RewardMenu_C_GetRewardWidget, K2Node_CreateDelegate_OutputDelegate_1) == 0x000048, "Member 'RewardMenu_C_GetRewardWidget::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_Create_ReturnValue) == 0x000058, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_GetAllChildren_ReturnValue) == 0x000060, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_Array_Get_Item) == 0x000070, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_GetRewardWidget, K2Node_DynamicCast_AsSelectable_Reward_Widget) == 0x000080, "Member 'RewardMenu_C_GetRewardWidget::K2Node_DynamicCast_AsSelectable_Reward_Widget' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_GetRewardWidget, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'RewardMenu_C_GetRewardWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_Less_IntInt_ReturnValue) == 0x000089, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_CanMergeWith_bCanMergeWith) == 0x00008A, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_CanMergeWith_bCanMergeWith' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_GetRewardWidget, K2Node_CreateDelegate_OutputDelegate_2) == 0x000058, "Member 'RewardMenu_C_GetRewardWidget::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_Create_ReturnValue) == 0x000068, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_GetAllChildren_ReturnValue) == 0x000070, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_Array_Get_Item) == 0x000080, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_Array_Length_ReturnValue) == 0x000088, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_GetRewardWidget, K2Node_DynamicCast_AsSelectable_Reward_Widget) == 0x000090, "Member 'RewardMenu_C_GetRewardWidget::K2Node_DynamicCast_AsSelectable_Reward_Widget' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_GetRewardWidget, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'RewardMenu_C_GetRewardWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_Less_IntInt_ReturnValue) == 0x000099, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_GetRewardWidget, CallFunc_CanMergeWith_bCanMergeWith) == 0x00009A, "Member 'RewardMenu_C_GetRewardWidget::CallFunc_CanMergeWith_bCanMergeWith' has a wrong offset!");
 
 // Function RewardMenu.RewardMenu_C.OnRewardHovered
-// 0x0140 (0x0140 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct RewardMenu_C_OnRewardHovered final
 {
 public:
 	struct FRewardUIData                          Reward;                                            // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D44[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0028(0x0018)()
-	class URBPlayerCellItemDefinition*            K2Node_DynamicCast_AsRB_Player_Cell_Item_Definition; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D45[0x6];                                     // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable_1;                              // 0x0050(0x0018)()
-	ERewardType                                   Temp_byte_Variable;                                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D46[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0070(0x0018)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0088(0x0018)()
-	class FText                                   Temp_text_Variable_3;                              // 0x00A0(0x0018)()
-	class FText                                   Temp_text_Variable_4;                              // 0x00B8(0x0018)()
-	class FText                                   Temp_text_Variable_5;                              // 0x00D0(0x0018)()
-	class URBSettings_Gameplay*                   CallFunc_GetRBSettings_Gameplay_ReturnValue;       // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FCurencySettings                       CallFunc_Map_Find_Value;                           // 0x00F0(0x0030)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D47[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default_1;                           // 0x0128(0x0018)()
+	class USelectableRewardWidget_C*              Widget;                                            // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERewardType                                   Temp_byte_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0030(0x0018)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0048(0x0018)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0060(0x0018)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0078(0x0018)()
+	class URBSettings_Gameplay*                   CallFunc_GetRBSettings_Gameplay_ReturnValue;       // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FCurencySettings                       CallFunc_Map_Find_Value;                           // 0x0098(0x0060)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x0100(0x0018)()
 };
 static_assert(alignof(RewardMenu_C_OnRewardHovered) == 0x000008, "Wrong alignment on RewardMenu_C_OnRewardHovered");
-static_assert(sizeof(RewardMenu_C_OnRewardHovered) == 0x000140, "Wrong size on RewardMenu_C_OnRewardHovered");
+static_assert(sizeof(RewardMenu_C_OnRewardHovered) == 0x000118, "Wrong size on RewardMenu_C_OnRewardHovered");
 static_assert(offsetof(RewardMenu_C_OnRewardHovered, Reward) == 0x000000, "Member 'RewardMenu_C_OnRewardHovered::Reward' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_bool_Variable) == 0x000020, "Member 'RewardMenu_C_OnRewardHovered::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable) == 0x000028, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, K2Node_DynamicCast_AsRB_Player_Cell_Item_Definition) == 0x000040, "Member 'RewardMenu_C_OnRewardHovered::K2Node_DynamicCast_AsRB_Player_Cell_Item_Definition' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'RewardMenu_C_OnRewardHovered::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, CallFunc_IsValid_ReturnValue) == 0x000049, "Member 'RewardMenu_C_OnRewardHovered::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable_1) == 0x000050, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_byte_Variable) == 0x000068, "Member 'RewardMenu_C_OnRewardHovered::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, K2Node_Select_Default) == 0x000070, "Member 'RewardMenu_C_OnRewardHovered::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable_2) == 0x000088, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable_3) == 0x0000A0, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable_4) == 0x0000B8, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable_5) == 0x0000D0, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, CallFunc_GetRBSettings_Gameplay_ReturnValue) == 0x0000E8, "Member 'RewardMenu_C_OnRewardHovered::CallFunc_GetRBSettings_Gameplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, CallFunc_Map_Find_Value) == 0x0000F0, "Member 'RewardMenu_C_OnRewardHovered::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, CallFunc_Map_Find_ReturnValue) == 0x000120, "Member 'RewardMenu_C_OnRewardHovered::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_OnRewardHovered, K2Node_Select_Default_1) == 0x000128, "Member 'RewardMenu_C_OnRewardHovered::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, Widget) == 0x000020, "Member 'RewardMenu_C_OnRewardHovered::Widget' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_byte_Variable) == 0x000028, "Member 'RewardMenu_C_OnRewardHovered::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable) == 0x000030, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable_1) == 0x000048, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable_2) == 0x000060, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable_2' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, Temp_text_Variable_3) == 0x000078, "Member 'RewardMenu_C_OnRewardHovered::Temp_text_Variable_3' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, CallFunc_GetRBSettings_Gameplay_ReturnValue) == 0x000090, "Member 'RewardMenu_C_OnRewardHovered::CallFunc_GetRBSettings_Gameplay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, CallFunc_Map_Find_Value) == 0x000098, "Member 'RewardMenu_C_OnRewardHovered::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, CallFunc_Map_Find_ReturnValue) == 0x0000F8, "Member 'RewardMenu_C_OnRewardHovered::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardHovered, K2Node_Select_Default) == 0x000100, "Member 'RewardMenu_C_OnRewardHovered::K2Node_Select_Default' has a wrong offset!");
 
 // Function RewardMenu.RewardMenu_C.OnRewardUnhovered
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct RewardMenu_C_OnRewardUnhovered final
 {
 public:
 	struct FRewardUIData                          Reward;                                            // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class USelectableRewardWidget_C*              Widget;                                            // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RewardMenu_C_OnRewardUnhovered) == 0x000008, "Wrong alignment on RewardMenu_C_OnRewardUnhovered");
-static_assert(sizeof(RewardMenu_C_OnRewardUnhovered) == 0x000020, "Wrong size on RewardMenu_C_OnRewardUnhovered");
+static_assert(sizeof(RewardMenu_C_OnRewardUnhovered) == 0x000028, "Wrong size on RewardMenu_C_OnRewardUnhovered");
 static_assert(offsetof(RewardMenu_C_OnRewardUnhovered, Reward) == 0x000000, "Member 'RewardMenu_C_OnRewardUnhovered::Reward' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnRewardUnhovered, Widget) == 0x000020, "Member 'RewardMenu_C_OnRewardUnhovered::Widget' has a wrong offset!");
+
+// Function RewardMenu.RewardMenu_C.OnRewardClicked
+// 0x0001 (0x0001 - 0x0000)
+struct RewardMenu_C_OnRewardClicked final
+{
+public:
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(RewardMenu_C_OnRewardClicked) == 0x000001, "Wrong alignment on RewardMenu_C_OnRewardClicked");
+static_assert(sizeof(RewardMenu_C_OnRewardClicked) == 0x000001, "Wrong size on RewardMenu_C_OnRewardClicked");
+static_assert(offsetof(RewardMenu_C_OnRewardClicked, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000000, "Member 'RewardMenu_C_OnRewardClicked::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function RewardMenu.RewardMenu_C.HandleRewardFocus
 // 0x0018 (0x0018 - 0x0000)
@@ -460,7 +480,7 @@ struct RewardMenu_C_HandleRewardFocus final
 {
 public:
 	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D48[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -473,37 +493,150 @@ static_assert(offsetof(RewardMenu_C_HandleRewardFocus, CallFunc_GetChildrenCount
 static_assert(offsetof(RewardMenu_C_HandleRewardFocus, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000014, "Member 'RewardMenu_C_HandleRewardFocus::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function RewardMenu.RewardMenu_C.SetupDescriptionText
-// 0x0078 (0x0078 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct RewardMenu_C_SetupDescriptionText final
 {
 public:
 	ERewardSource                                 Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D49[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0018)()
 	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0018)()
-	ERewardSource                                 Temp_byte_Variable_1;                              // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERewardSource                                 CallFunc_GetRewardSource_ReturnValue;              // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D4A[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0058(0x0018)()
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable_3;                              // 0x0050(0x0018)()
+	class FText                                   Temp_text_Variable_4;                              // 0x0068(0x0018)()
+	class FText                                   Temp_text_Variable_5;                              // 0x0080(0x0018)()
+	class FText                                   Temp_text_Variable_6;                              // 0x0098(0x0018)()
+	class FText                                   Temp_text_Variable_7;                              // 0x00B0(0x0018)()
+	class FText                                   Temp_text_Variable_8;                              // 0x00C8(0x0018)()
+	ERewardSource                                 Temp_byte_Variable_1;                              // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x00E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x00E6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_8;                              // 0x00E7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_9;                              // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_10;                             // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERewardSource                                 CallFunc_GetRewardSource_ReturnValue;              // 0x00EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_EB[0x5];                                       // 0x00EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x00F0(0x0018)()
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RewardMenu_C_SetupDescriptionText) == 0x000008, "Wrong alignment on RewardMenu_C_SetupDescriptionText");
-static_assert(sizeof(RewardMenu_C_SetupDescriptionText) == 0x000078, "Wrong size on RewardMenu_C_SetupDescriptionText");
+static_assert(sizeof(RewardMenu_C_SetupDescriptionText) == 0x000110, "Wrong size on RewardMenu_C_SetupDescriptionText");
 static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable) == 0x000000, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_text_Variable) == 0x000008, "Member 'RewardMenu_C_SetupDescriptionText::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_text_Variable_1) == 0x000020, "Member 'RewardMenu_C_SetupDescriptionText::Temp_text_Variable_1' has a wrong offset!");
 static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_text_Variable_2) == 0x000038, "Member 'RewardMenu_C_SetupDescriptionText::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_1) == 0x000050, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_2) == 0x000051, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_3) == 0x000052, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_4) == 0x000053, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_SetupDescriptionText, CallFunc_GetRewardSource_ReturnValue) == 0x000054, "Member 'RewardMenu_C_SetupDescriptionText::CallFunc_GetRewardSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_SetupDescriptionText, K2Node_Select_Default) == 0x000058, "Member 'RewardMenu_C_SetupDescriptionText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RewardMenu_C_SetupDescriptionText, K2Node_Select_Default_1) == 0x000070, "Member 'RewardMenu_C_SetupDescriptionText::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_text_Variable_3) == 0x000050, "Member 'RewardMenu_C_SetupDescriptionText::Temp_text_Variable_3' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_text_Variable_4) == 0x000068, "Member 'RewardMenu_C_SetupDescriptionText::Temp_text_Variable_4' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_text_Variable_5) == 0x000080, "Member 'RewardMenu_C_SetupDescriptionText::Temp_text_Variable_5' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_text_Variable_6) == 0x000098, "Member 'RewardMenu_C_SetupDescriptionText::Temp_text_Variable_6' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_text_Variable_7) == 0x0000B0, "Member 'RewardMenu_C_SetupDescriptionText::Temp_text_Variable_7' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_text_Variable_8) == 0x0000C8, "Member 'RewardMenu_C_SetupDescriptionText::Temp_text_Variable_8' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_1) == 0x0000E0, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_2) == 0x0000E1, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_3) == 0x0000E2, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_4) == 0x0000E3, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_5) == 0x0000E4, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_6) == 0x0000E5, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_6' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_7) == 0x0000E6, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_7' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_8) == 0x0000E7, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_8' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_9) == 0x0000E8, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_9' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, Temp_byte_Variable_10) == 0x0000E9, "Member 'RewardMenu_C_SetupDescriptionText::Temp_byte_Variable_10' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, CallFunc_GetRewardSource_ReturnValue) == 0x0000EA, "Member 'RewardMenu_C_SetupDescriptionText::CallFunc_GetRewardSource_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, K2Node_Select_Default) == 0x0000F0, "Member 'RewardMenu_C_SetupDescriptionText::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupDescriptionText, K2Node_Select_Default_1) == 0x000108, "Member 'RewardMenu_C_SetupDescriptionText::K2Node_Select_Default_1' has a wrong offset!");
+
+// Function RewardMenu.RewardMenu_C.SelectBackground
+// 0x0168 (0x0168 - 0x0000)
+struct RewardMenu_C_SelectBackground final
+{
+public:
+	class FName                                   CallFunc_GetAssociatedItemId_ReturnValue;          // 0x0000(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBPlayerProgressionData*               CallFunc_GetLocalPlayerProgressionData_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERewardSource                                 CallFunc_GetRewardSource_ReturnValue;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBBattlePassData                      CallFunc_GetBattlePass_ReturnValue;                // 0x0018(0x0130)()
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_TryLoadSyncSoftRef_NewParam;              // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(RewardMenu_C_SelectBackground) == 0x000008, "Wrong alignment on RewardMenu_C_SelectBackground");
+static_assert(sizeof(RewardMenu_C_SelectBackground) == 0x000168, "Wrong size on RewardMenu_C_SelectBackground");
+static_assert(offsetof(RewardMenu_C_SelectBackground, CallFunc_GetAssociatedItemId_ReturnValue) == 0x000000, "Member 'RewardMenu_C_SelectBackground::CallFunc_GetAssociatedItemId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SelectBackground, CallFunc_GetLocalPlayerProgressionData_ReturnValue) == 0x000008, "Member 'RewardMenu_C_SelectBackground::CallFunc_GetLocalPlayerProgressionData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SelectBackground, CallFunc_GetRewardSource_ReturnValue) == 0x000010, "Member 'RewardMenu_C_SelectBackground::CallFunc_GetRewardSource_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SelectBackground, CallFunc_GetBattlePass_ReturnValue) == 0x000018, "Member 'RewardMenu_C_SelectBackground::CallFunc_GetBattlePass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SelectBackground, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000148, "Member 'RewardMenu_C_SelectBackground::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SelectBackground, CallFunc_TryLoadSyncSoftRef_NewParam) == 0x000150, "Member 'RewardMenu_C_SelectBackground::CallFunc_TryLoadSyncSoftRef_NewParam' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SelectBackground, K2Node_DynamicCast_AsTexture_2D) == 0x000158, "Member 'RewardMenu_C_SelectBackground::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SelectBackground, K2Node_DynamicCast_bSuccess) == 0x000160, "Member 'RewardMenu_C_SelectBackground::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
+// Function RewardMenu.RewardMenu_C.SetupHeaderText
+// 0x0100 (0x0100 - 0x0000)
+struct RewardMenu_C_SetupHeaderText final
+{
+public:
+	ERewardSource                                 Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0018)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0018)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0050(0x0018)()
+	class FText                                   Temp_text_Variable_4;                              // 0x0068(0x0018)()
+	class FText                                   Temp_text_Variable_5;                              // 0x0080(0x0018)()
+	class FText                                   Temp_text_Variable_6;                              // 0x0098(0x0018)()
+	class FText                                   Temp_text_Variable_7;                              // 0x00B0(0x0018)()
+	class FText                                   Temp_text_Variable_8;                              // 0x00C8(0x0018)()
+	ERewardSource                                 CallFunc_GetRewardSource_ReturnValue;              // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x00E8(0x0018)()
+};
+static_assert(alignof(RewardMenu_C_SetupHeaderText) == 0x000008, "Wrong alignment on RewardMenu_C_SetupHeaderText");
+static_assert(sizeof(RewardMenu_C_SetupHeaderText) == 0x000100, "Wrong size on RewardMenu_C_SetupHeaderText");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_byte_Variable) == 0x000000, "Member 'RewardMenu_C_SetupHeaderText::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_text_Variable) == 0x000008, "Member 'RewardMenu_C_SetupHeaderText::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_text_Variable_1) == 0x000020, "Member 'RewardMenu_C_SetupHeaderText::Temp_text_Variable_1' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_text_Variable_2) == 0x000038, "Member 'RewardMenu_C_SetupHeaderText::Temp_text_Variable_2' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_text_Variable_3) == 0x000050, "Member 'RewardMenu_C_SetupHeaderText::Temp_text_Variable_3' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_text_Variable_4) == 0x000068, "Member 'RewardMenu_C_SetupHeaderText::Temp_text_Variable_4' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_text_Variable_5) == 0x000080, "Member 'RewardMenu_C_SetupHeaderText::Temp_text_Variable_5' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_text_Variable_6) == 0x000098, "Member 'RewardMenu_C_SetupHeaderText::Temp_text_Variable_6' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_text_Variable_7) == 0x0000B0, "Member 'RewardMenu_C_SetupHeaderText::Temp_text_Variable_7' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, Temp_text_Variable_8) == 0x0000C8, "Member 'RewardMenu_C_SetupHeaderText::Temp_text_Variable_8' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, CallFunc_GetRewardSource_ReturnValue) == 0x0000E0, "Member 'RewardMenu_C_SetupHeaderText::CallFunc_GetRewardSource_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_SetupHeaderText, K2Node_Select_Default) == 0x0000E8, "Member 'RewardMenu_C_SetupHeaderText::K2Node_Select_Default' has a wrong offset!");
+
+// Function RewardMenu.RewardMenu_C.OnFocusReceived
+// 0x01C8 (0x01C8 - 0x0000)
+struct RewardMenu_C_OnFocusReceived final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0110(0x00B8)()
+};
+static_assert(alignof(RewardMenu_C_OnFocusReceived) == 0x000008, "Wrong alignment on RewardMenu_C_OnFocusReceived");
+static_assert(sizeof(RewardMenu_C_OnFocusReceived) == 0x0001C8, "Wrong size on RewardMenu_C_OnFocusReceived");
+static_assert(offsetof(RewardMenu_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'RewardMenu_C_OnFocusReceived::MyGeometry' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'RewardMenu_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'RewardMenu_C_OnFocusReceived::ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnFocusReceived, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x0000F8, "Member 'RewardMenu_C_OnFocusReceived::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnFocusReceived, CallFunc_GetChildAt_ReturnValue) == 0x000100, "Member 'RewardMenu_C_OnFocusReceived::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnFocusReceived, CallFunc_GetChildrenCount_ReturnValue) == 0x000108, "Member 'RewardMenu_C_OnFocusReceived::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnFocusReceived, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00010C, "Member 'RewardMenu_C_OnFocusReceived::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardMenu_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x000110, "Member 'RewardMenu_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 }
 

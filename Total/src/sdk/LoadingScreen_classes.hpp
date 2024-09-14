@@ -33,7 +33,7 @@ public:
 	class UTextBlock*                             TextBlock;                                         // 0x02B0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Vignette;                                          // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bIsLoadingScreen;                                  // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3049[0x7];                                     // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FText>                           HintEntries;                                       // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class FText>                           AvailableHintEntries;                              // 0x02D8(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
 	TArray<class FText>                           MansionEscapeHintsEntries;                         // 0x02E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -42,7 +42,7 @@ public:
 	class UBinkMediaPlayer*                       BinkMansionEscape_MP;                              // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFailedInMansionEscape;                            // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bIsReagentReleaseTrial;                            // 0x0311(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_304A[0x2];                                     // 0x0312(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_312[0x2];                                      // 0x0312(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         DEBUG_HintIndex;                                   // 0x0314(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bFromTrial;                                        // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

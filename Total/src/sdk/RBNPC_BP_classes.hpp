@@ -18,21 +18,21 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass RBNPC_BP.RBNPC_BP_C
-// 0x0050 (0x58D0 - 0x5880)
+// 0x0050 (0x5960 - 0x5910)
 class ARBNPC_BP_C : public ARBNPC
 {
 public:
-	uint8                                         Pad_30BE[0x8];                                     // 0x5878(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x5880(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class URBActiveSkillVisionComponent*          RBActiveSkillVision;                               // 0x5888(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   AS_WaveSphere;                                     // 0x5890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URBAimAssistComponent*                  Head_Aim_Assist;                                   // 0x5898(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             BroadcastWeaponAnimation;                          // 0x58A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UNiagaraComponent*                      RageEyeFX_R;                                       // 0x58B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      RageEyeFX_L;                                       // 0x58B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      BloodDripsParticles;                               // 0x58C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SubtitleDistanceOverride;                          // 0x58C8(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	float                                         SubtitleDistanceOccludedOverride;                  // 0x58CC(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5908[0x8];                                     // 0x5908(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x5910(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class URBActiveSkillVisionComponent*          RBActiveSkillVision;                               // 0x5918(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   AS_WaveSphere;                                     // 0x5920(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class URBAimAssistComponent*                  Head_Aim_Assist;                                   // 0x5928(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             BroadcastWeaponAnimation;                          // 0x5930(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UNiagaraComponent*                      RageEyeFX_R;                                       // 0x5940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      RageEyeFX_L;                                       // 0x5948(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      BloodDripsParticles;                               // 0x5950(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SubtitleDistanceOverride;                          // 0x5958(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	float                                         SubtitleDistanceOccludedOverride;                  // 0x595C(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BroadcastWeaponAnimation__DelegateSignature(class UAnimSequence* Sequence);
@@ -63,17 +63,17 @@ public:
 	}
 };
 static_assert(alignof(ARBNPC_BP_C) == 0x000010, "Wrong alignment on ARBNPC_BP_C");
-static_assert(sizeof(ARBNPC_BP_C) == 0x0058D0, "Wrong size on ARBNPC_BP_C");
-static_assert(offsetof(ARBNPC_BP_C, UberGraphFrame) == 0x005880, "Member 'ARBNPC_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ARBNPC_BP_C, RBActiveSkillVision) == 0x005888, "Member 'ARBNPC_BP_C::RBActiveSkillVision' has a wrong offset!");
-static_assert(offsetof(ARBNPC_BP_C, AS_WaveSphere) == 0x005890, "Member 'ARBNPC_BP_C::AS_WaveSphere' has a wrong offset!");
-static_assert(offsetof(ARBNPC_BP_C, Head_Aim_Assist) == 0x005898, "Member 'ARBNPC_BP_C::Head_Aim_Assist' has a wrong offset!");
-static_assert(offsetof(ARBNPC_BP_C, BroadcastWeaponAnimation) == 0x0058A0, "Member 'ARBNPC_BP_C::BroadcastWeaponAnimation' has a wrong offset!");
-static_assert(offsetof(ARBNPC_BP_C, RageEyeFX_R) == 0x0058B0, "Member 'ARBNPC_BP_C::RageEyeFX_R' has a wrong offset!");
-static_assert(offsetof(ARBNPC_BP_C, RageEyeFX_L) == 0x0058B8, "Member 'ARBNPC_BP_C::RageEyeFX_L' has a wrong offset!");
-static_assert(offsetof(ARBNPC_BP_C, BloodDripsParticles) == 0x0058C0, "Member 'ARBNPC_BP_C::BloodDripsParticles' has a wrong offset!");
-static_assert(offsetof(ARBNPC_BP_C, SubtitleDistanceOverride) == 0x0058C8, "Member 'ARBNPC_BP_C::SubtitleDistanceOverride' has a wrong offset!");
-static_assert(offsetof(ARBNPC_BP_C, SubtitleDistanceOccludedOverride) == 0x0058CC, "Member 'ARBNPC_BP_C::SubtitleDistanceOccludedOverride' has a wrong offset!");
+static_assert(sizeof(ARBNPC_BP_C) == 0x005960, "Wrong size on ARBNPC_BP_C");
+static_assert(offsetof(ARBNPC_BP_C, UberGraphFrame) == 0x005910, "Member 'ARBNPC_BP_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ARBNPC_BP_C, RBActiveSkillVision) == 0x005918, "Member 'ARBNPC_BP_C::RBActiveSkillVision' has a wrong offset!");
+static_assert(offsetof(ARBNPC_BP_C, AS_WaveSphere) == 0x005920, "Member 'ARBNPC_BP_C::AS_WaveSphere' has a wrong offset!");
+static_assert(offsetof(ARBNPC_BP_C, Head_Aim_Assist) == 0x005928, "Member 'ARBNPC_BP_C::Head_Aim_Assist' has a wrong offset!");
+static_assert(offsetof(ARBNPC_BP_C, BroadcastWeaponAnimation) == 0x005930, "Member 'ARBNPC_BP_C::BroadcastWeaponAnimation' has a wrong offset!");
+static_assert(offsetof(ARBNPC_BP_C, RageEyeFX_R) == 0x005940, "Member 'ARBNPC_BP_C::RageEyeFX_R' has a wrong offset!");
+static_assert(offsetof(ARBNPC_BP_C, RageEyeFX_L) == 0x005948, "Member 'ARBNPC_BP_C::RageEyeFX_L' has a wrong offset!");
+static_assert(offsetof(ARBNPC_BP_C, BloodDripsParticles) == 0x005950, "Member 'ARBNPC_BP_C::BloodDripsParticles' has a wrong offset!");
+static_assert(offsetof(ARBNPC_BP_C, SubtitleDistanceOverride) == 0x005958, "Member 'ARBNPC_BP_C::SubtitleDistanceOverride' has a wrong offset!");
+static_assert(offsetof(ARBNPC_BP_C, SubtitleDistanceOccludedOverride) == 0x00595C, "Member 'ARBNPC_BP_C::SubtitleDistanceOccludedOverride' has a wrong offset!");
 
 }
 

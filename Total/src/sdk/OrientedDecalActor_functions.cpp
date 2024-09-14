@@ -208,5 +208,25 @@ bool AOrientedDecalActor_C::IsStateA() const
 	return Parms.ReturnValue;
 }
 
+
+// Function OrientedDecalActor.OrientedDecalActor_C.IsStateSetAndStateA
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool AOrientedDecalActor_C::IsStateSetAndStateA() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OrientedDecalActor_C", "IsStateSetAndStateA");
+
+	Params::OrientedDecalActor_C_IsStateSetAndStateA Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
 }
 

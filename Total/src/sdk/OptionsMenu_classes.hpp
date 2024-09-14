@@ -19,44 +19,46 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OptionsMenu.OptionsMenu_C
-// 0x00C0 (0x0420 - 0x0360)
+// 0x00C8 (0x0440 - 0x0378)
 class UOptionsMenu_C final : public URBMenuOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       FadeOut;                                           // 0x0368(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class URBMenuButton_C*                        ApplyChangeBtn;                                    // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 bg;                                                // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBackgroundBlur*                        Blur;                                              // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UActionIconWidget_C*                    CycleTabLeftBtn;                                   // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UActionIconWidget_C*                    CycleTabRightBtn;                                  // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsTab_C*                          ExempleTab;                                        // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBMenuButton_C*                        ExitBtn;                                           // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMenuFocusActionButtonContainer_C*      MenuFocusActionButtonContainer;                    // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        Pages;                                             // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton;                            // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton_136;                        // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton_248;                        // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton_377;                        // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton_536;                        // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBMenuButton_C*                        ResetDefaultsBtn;                                  // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUniformGridPanel*                      TabButtonsContainer;                               // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          ApplyChanges;                                      // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E24[0x7];                                     // 0x03F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UOptionsTab_C*>                  Tabs;                                              // 0x03F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class URBOptionsTabMenuButton_C*>      TabsButtons;                                       // 0x0408(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class URBPopUpConfirmCancelWidget*            CurrentApplyChangesPopup;                          // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       FadeOut;                                           // 0x0380(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class URBMenuButton_C*                        ApplyChangeBtn;                                    // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 bg;                                                // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBackgroundBlur*                        Blur;                                              // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UActionIconWidget_C*                    CycleTabLeftBtn;                                   // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UActionIconWidget_C*                    CycleTabRightBtn;                                  // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsTab_C*                          ExempleTab;                                        // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBMenuButton_C*                        ExitBtn;                                           // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMenuFocusActionButtonContainer_C*      MenuFocusActionButtonContainer;                    // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        Pages;                                             // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton;                            // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton_136;                        // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton_248;                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton_377;                        // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBOptionsTabMenuButton_C*              RBOptionsTabMenuButton_536;                        // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBMenuButton_C*                        ResetDefaultsBtn;                                  // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUniformGridPanel*                      TabButtonsContainer;                               // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          ApplyChanges;                                      // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UOptionsTab_C*>                  Tabs;                                              // 0x0410(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class URBOptionsTabMenuButton_C*>      TabsButtons;                                       // 0x0420(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class URBPopUpConfirmCancelWidget*            CurrentApplyChangesPopup;                          // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          WantsToPop;                                        // 0x0438(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_OptionsMenu(int32 EntryPoint);
+	void Event_MenuCancel_Pressed();
 	void Destruct();
 	void Event_OnFocusMenu();
 	void Event_RefreshAllEntries();
 	void Event_InputSourceChanged(bool bIsGamepad);
 	void Event_OnMenuTabSwitched(int32 PreviousIndex);
 	void OnFullscreenOrDesktopSettingsChanged();
-	void OnReleasedReset();
-	void OnReleasedApply();
+	void OnPressedReset();
+	void OnPressedApply();
 	void Event_StartTransitionOut();
 	void Event_StartTransitionIn();
 	void BndEvt__RBMenuButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
@@ -68,7 +70,7 @@ public:
 	void ApplyChangesToCurrentTab();
 	void ExecuteChangesDecision();
 	void OnSubButtonClicked(class URBMenuOptionsEntry* Entry);
-	void Event_UpdateNavigation(bool Param_CanExitMenu);
+	void Event_UpdateNavigation(bool CanExitMenu_0);
 	bool PreNavigationChangeAction();
 	ESlateVisibility Get_ApplyChangeBtn_Visibility_0();
 	void ConditionalShowApplyDialog(const class FText& Prompt, bool* Return);
@@ -88,29 +90,30 @@ public:
 	}
 };
 static_assert(alignof(UOptionsMenu_C) == 0x000008, "Wrong alignment on UOptionsMenu_C");
-static_assert(sizeof(UOptionsMenu_C) == 0x000420, "Wrong size on UOptionsMenu_C");
-static_assert(offsetof(UOptionsMenu_C, UberGraphFrame) == 0x000360, "Member 'UOptionsMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, FadeOut) == 0x000368, "Member 'UOptionsMenu_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ApplyChangeBtn) == 0x000370, "Member 'UOptionsMenu_C::ApplyChangeBtn' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, bg) == 0x000378, "Member 'UOptionsMenu_C::bg' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Blur) == 0x000380, "Member 'UOptionsMenu_C::Blur' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, CycleTabLeftBtn) == 0x000388, "Member 'UOptionsMenu_C::CycleTabLeftBtn' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, CycleTabRightBtn) == 0x000390, "Member 'UOptionsMenu_C::CycleTabRightBtn' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ExempleTab) == 0x000398, "Member 'UOptionsMenu_C::ExempleTab' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ExitBtn) == 0x0003A0, "Member 'UOptionsMenu_C::ExitBtn' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, MenuFocusActionButtonContainer) == 0x0003A8, "Member 'UOptionsMenu_C::MenuFocusActionButtonContainer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Pages) == 0x0003B0, "Member 'UOptionsMenu_C::Pages' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton) == 0x0003B8, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton_136) == 0x0003C0, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton_136' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton_248) == 0x0003C8, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton_248' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton_377) == 0x0003D0, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton_377' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton_536) == 0x0003D8, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton_536' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ResetDefaultsBtn) == 0x0003E0, "Member 'UOptionsMenu_C::ResetDefaultsBtn' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabButtonsContainer) == 0x0003E8, "Member 'UOptionsMenu_C::TabButtonsContainer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ApplyChanges) == 0x0003F0, "Member 'UOptionsMenu_C::ApplyChanges' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Tabs) == 0x0003F8, "Member 'UOptionsMenu_C::Tabs' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabsButtons) == 0x000408, "Member 'UOptionsMenu_C::TabsButtons' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, CurrentApplyChangesPopup) == 0x000418, "Member 'UOptionsMenu_C::CurrentApplyChangesPopup' has a wrong offset!");
+static_assert(sizeof(UOptionsMenu_C) == 0x000440, "Wrong size on UOptionsMenu_C");
+static_assert(offsetof(UOptionsMenu_C, UberGraphFrame) == 0x000378, "Member 'UOptionsMenu_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, FadeOut) == 0x000380, "Member 'UOptionsMenu_C::FadeOut' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, ApplyChangeBtn) == 0x000388, "Member 'UOptionsMenu_C::ApplyChangeBtn' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, bg) == 0x000390, "Member 'UOptionsMenu_C::bg' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, Blur) == 0x000398, "Member 'UOptionsMenu_C::Blur' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, CycleTabLeftBtn) == 0x0003A0, "Member 'UOptionsMenu_C::CycleTabLeftBtn' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, CycleTabRightBtn) == 0x0003A8, "Member 'UOptionsMenu_C::CycleTabRightBtn' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, ExempleTab) == 0x0003B0, "Member 'UOptionsMenu_C::ExempleTab' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, ExitBtn) == 0x0003B8, "Member 'UOptionsMenu_C::ExitBtn' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, MenuFocusActionButtonContainer) == 0x0003C0, "Member 'UOptionsMenu_C::MenuFocusActionButtonContainer' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, Pages) == 0x0003C8, "Member 'UOptionsMenu_C::Pages' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton) == 0x0003D0, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton_136) == 0x0003D8, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton_136' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton_248) == 0x0003E0, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton_248' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton_377) == 0x0003E8, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton_377' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, RBOptionsTabMenuButton_536) == 0x0003F0, "Member 'UOptionsMenu_C::RBOptionsTabMenuButton_536' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, ResetDefaultsBtn) == 0x0003F8, "Member 'UOptionsMenu_C::ResetDefaultsBtn' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, TabButtonsContainer) == 0x000400, "Member 'UOptionsMenu_C::TabButtonsContainer' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, ApplyChanges) == 0x000408, "Member 'UOptionsMenu_C::ApplyChanges' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, Tabs) == 0x000410, "Member 'UOptionsMenu_C::Tabs' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, TabsButtons) == 0x000420, "Member 'UOptionsMenu_C::TabsButtons' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, CurrentApplyChangesPopup) == 0x000430, "Member 'UOptionsMenu_C::CurrentApplyChangesPopup' has a wrong offset!");
+static_assert(offsetof(UOptionsMenu_C, WantsToPop) == 0x000438, "Member 'UOptionsMenu_C::WantsToPop' has a wrong offset!");
 
 }
 

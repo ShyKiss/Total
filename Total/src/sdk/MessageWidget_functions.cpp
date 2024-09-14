@@ -37,6 +37,34 @@ void UMessageWidget_C::ExecuteUbergraph_MessageWidget(int32 EntryPoint)
 }
 
 
+// Function MessageWidget.MessageWidget_C.OnHideTalkWheel
+// (BlueprintCallable, BlueprintEvent)
+
+void UMessageWidget_C::OnHideTalkWheel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MessageWidget_C", "OnHideTalkWheel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MessageWidget.MessageWidget_C.OnShowTalkWheel
+// (BlueprintCallable, BlueprintEvent)
+
+void UMessageWidget_C::OnShowTalkWheel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MessageWidget_C", "OnShowTalkWheel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function MessageWidget.MessageWidget_C.Event_Hide
 // (Event, Public, BlueprintEvent)
 
@@ -180,6 +208,26 @@ void UMessageWidget_C::HideIcons()
 		Func = Class->GetFunction("MessageWidget_C", "HideIcons");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MessageWidget.MessageWidget_C.ShouldShow
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UMessageWidget_C::ShouldShow() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MessageWidget_C", "ShouldShow");
+
+	Params::MessageWidget_C_ShouldShow Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

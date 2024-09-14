@@ -33,13 +33,13 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C2B[0x2];                                     // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button_2;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button_1;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C2C[0x5];                                     // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_Gamepad;                        // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -141,11 +141,11 @@ static_assert(offsetof(CommonNotificationWidget_C_UpdateProgress, K2Node_MakeStr
 struct CommonNotificationWidget_C_SetMessage final
 {
 public:
-	class FText                                   Param_Message;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   Message_0;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(CommonNotificationWidget_C_SetMessage) == 0x000008, "Wrong alignment on CommonNotificationWidget_C_SetMessage");
 static_assert(sizeof(CommonNotificationWidget_C_SetMessage) == 0x000018, "Wrong size on CommonNotificationWidget_C_SetMessage");
-static_assert(offsetof(CommonNotificationWidget_C_SetMessage, Param_Message) == 0x000000, "Member 'CommonNotificationWidget_C_SetMessage::Param_Message' has a wrong offset!");
+static_assert(offsetof(CommonNotificationWidget_C_SetMessage, Message_0) == 0x000000, "Member 'CommonNotificationWidget_C_SetMessage::Message_0' has a wrong offset!");
 
 // Function CommonNotificationWidget.CommonNotificationWidget_C.EnableBlockButton
 // 0x0005 (0x0005 - 0x0000)

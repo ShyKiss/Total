@@ -20,7 +20,7 @@ struct TutorialZoneIcon_C_ExecuteUbergraph_TutorialZoneIcon final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A3B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Event_newTexture;                           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TutorialZoneIcon_C_ExecuteUbergraph_TutorialZoneIcon) == 0x000008, "Wrong alignment on TutorialZoneIcon_C_ExecuteUbergraph_TutorialZoneIcon");

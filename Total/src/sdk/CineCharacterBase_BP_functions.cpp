@@ -136,10 +136,10 @@ void ACineCharacterBase_BP_C::PreviewSequence()
 // Function CineCharacterBase_BP.CineCharacterBase_BP_C.SetPreviewSequenceData
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UAnimSequence*                    Param_Anim                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_Time                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimSequence*                    Anim_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Time_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACineCharacterBase_BP_C::SetPreviewSequenceData(class UAnimSequence* Param_Anim, float Param_Time)
+void ACineCharacterBase_BP_C::SetPreviewSequenceData(class UAnimSequence* Anim_0, float Time_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -148,8 +148,8 @@ void ACineCharacterBase_BP_C::SetPreviewSequenceData(class UAnimSequence* Param_
 
 	Params::CineCharacterBase_BP_C_SetPreviewSequenceData Parms{};
 
-	Parms.Param_Anim = Param_Anim;
-	Parms.Param_Time = Param_Time;
+	Parms.Anim_0 = Anim_0;
+	Parms.Time_0 = Time_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -201,9 +201,9 @@ void ACineCharacterBase_BP_C::GetPoseAsset(class UPoseAsset** PoseAsset)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class USkeletalMeshComponent*           Mesh                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimSequence*                    Param_Anim                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimSequence*                    Anim_0                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACineCharacterBase_BP_C::GetBodyAnimation(class USkeletalMeshComponent* Mesh, class UAnimSequence** Param_Anim)
+void ACineCharacterBase_BP_C::GetBodyAnimation(class USkeletalMeshComponent* Mesh, class UAnimSequence** Anim_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -216,8 +216,8 @@ void ACineCharacterBase_BP_C::GetBodyAnimation(class USkeletalMeshComponent* Mes
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Anim != nullptr)
-		*Param_Anim = Parms.Param_Anim;
+	if (Anim_0 != nullptr)
+		*Anim_0 = Parms.Anim_0;
 }
 
 
@@ -225,9 +225,9 @@ void ACineCharacterBase_BP_C::GetBodyAnimation(class USkeletalMeshComponent* Mes
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class USkeletalMeshComponent*           Mesh                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimSequence*                    Param_Anim                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimSequence*                    Anim_0                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACineCharacterBase_BP_C::GetFacialAnimation(class USkeletalMeshComponent* Mesh, class UAnimSequence** Param_Anim)
+void ACineCharacterBase_BP_C::GetFacialAnimation(class USkeletalMeshComponent* Mesh, class UAnimSequence** Anim_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -240,8 +240,8 @@ void ACineCharacterBase_BP_C::GetFacialAnimation(class USkeletalMeshComponent* M
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Anim != nullptr)
-		*Param_Anim = Parms.Param_Anim;
+	if (Anim_0 != nullptr)
+		*Anim_0 = Parms.Anim_0;
 }
 
 }

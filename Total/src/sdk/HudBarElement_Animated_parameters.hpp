@@ -19,42 +19,39 @@ namespace SDK::Params
 {
 
 // Function HudBarElement_Animated.HudBarElement_Animated_C.ExecuteUbergraph_HudBarElement_Animated
-// 0x00C8 (0x00C8 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EA9[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable;                                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_1;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EAA[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x001C(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Select_Default;                             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EAB[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EAC[0x7];                                     // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_1;          // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x00C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0068(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated) == 0x000008, "Wrong alignment on HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated");
-static_assert(sizeof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated) == 0x0000C8, "Wrong size on HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated");
+static_assert(sizeof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated) == 0x0000A8, "Wrong size on HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, EntryPoint) == 0x000000, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_bool_Variable) == 0x000004, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_name_Variable) == 0x000008, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_name_Variable' has a wrong offset!");
@@ -62,35 +59,21 @@ static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_A
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_bool_Variable_1) == 0x000018, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_byte_Variable) == 0x000019, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_byte_Variable_1) == 0x00001A, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_MyGeometry) == 0x00001C, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_InDeltaTime) == 0x000054, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_GetDisplayName_ReturnValue) == 0x000058, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Concat_StrStr_ReturnValue) == 0x000068, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Select_Default) == 0x000078, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Conv_StringToName_ReturnValue) == 0x000080, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000088, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000090, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000098, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0000A0, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Conv_StringToName_ReturnValue_1) == 0x0000B0, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x0000B8, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Not_PreBool_ReturnValue) == 0x0000C0, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_BooleanAND_ReturnValue) == 0x0000C1, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Select_Default_1) == 0x0000C2, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_IsValid_ReturnValue) == 0x0000C3, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000C4, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_IsDesignTime) == 0x0000C5, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_IsDesignTime' has a wrong offset!");
-
-// Function HudBarElement_Animated.HudBarElement_Animated_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct HudBarElement_Animated_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(HudBarElement_Animated_C_PreConstruct) == 0x000001, "Wrong alignment on HudBarElement_Animated_C_PreConstruct");
-static_assert(sizeof(HudBarElement_Animated_C_PreConstruct) == 0x000001, "Wrong size on HudBarElement_Animated_C_PreConstruct");
-static_assert(offsetof(HudBarElement_Animated_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HudBarElement_Animated_C_PreConstruct::IsDesignTime' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_GetDisplayName_ReturnValue) == 0x000020, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Concat_StrStr_ReturnValue) == 0x000030, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Select_Default) == 0x000040, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Conv_StringToName_ReturnValue) == 0x000048, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000050, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000058, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000060, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Not_PreBool_ReturnValue) == 0x000061, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_BooleanAND_ReturnValue) == 0x000062, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Select_Default_1) == 0x000063, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_IsValid_ReturnValue) == 0x000064, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Not_PreBool_ReturnValue_1) == 0x000065, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_IsDesignTime) == 0x000066, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_MyGeometry) == 0x000068, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_InDeltaTime) == 0x0000A0, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_InDeltaTime' has a wrong offset!");
 
 // Function HudBarElement_Animated.HudBarElement_Animated_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -104,6 +87,17 @@ static_assert(alignof(HudBarElement_Animated_C_Tick) == 0x000004, "Wrong alignme
 static_assert(sizeof(HudBarElement_Animated_C_Tick) == 0x00003C, "Wrong size on HudBarElement_Animated_C_Tick");
 static_assert(offsetof(HudBarElement_Animated_C_Tick, MyGeometry) == 0x000000, "Member 'HudBarElement_Animated_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_Tick, InDeltaTime) == 0x000038, "Member 'HudBarElement_Animated_C_Tick::InDeltaTime' has a wrong offset!");
+
+// Function HudBarElement_Animated.HudBarElement_Animated_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct HudBarElement_Animated_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(HudBarElement_Animated_C_PreConstruct) == 0x000001, "Wrong alignment on HudBarElement_Animated_C_PreConstruct");
+static_assert(sizeof(HudBarElement_Animated_C_PreConstruct) == 0x000001, "Wrong size on HudBarElement_Animated_C_PreConstruct");
+static_assert(offsetof(HudBarElement_Animated_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HudBarElement_Animated_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function HudBarElement_Animated.HudBarElement_Animated_C.Setup Tints
 // 0x0030 (0x0030 - 0x0000)
@@ -133,29 +127,29 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EAD[0x1];                                     // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x1];                                        // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable_1;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_2;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EAE[0x1];                                     // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EAF[0x1];                                     // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F[0x1];                                       // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EB0[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue_1;          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB1[0x1];                                     // 0x0043(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_43[0x1];                                       // 0x0043(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue_1; // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HudBarElement_Animated_C_SetupNewTween) == 0x000004, "Wrong alignment on HudBarElement_Animated_C_SetupNewTween");
@@ -194,19 +188,19 @@ struct HudBarElement_Animated_C_UpdateTween final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable;                                // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_1;                              // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB3[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable_2;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_3;                              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_2;                              // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB4[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable_4;                              // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_5;                              // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_3;                              // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB5[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable_1;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -217,7 +211,7 @@ public:
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x0064(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB6[0x2];                                     // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Select_Default_1;                           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_Select_Default_2;                           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_3;                           // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -261,7 +255,7 @@ struct HudBarElement_Animated_C_SetEntireBar final
 public:
 	bool                                          Fill;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB7[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable_1;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -315,10 +309,10 @@ public:
 	float                                         CallFunc_GetRatioForHealthValue_Ratio;             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue_1;     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB8[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB9[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetRatioForHealthValue_Ratio_1;           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -65,6 +65,42 @@ void UHudBarElement_Animated_C::ExecuteUbergraph_HudBarElement_Animated(int32 En
 }
 
 
+// Function HudBarElement_Animated.HudBarElement_Animated_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UHudBarElement_Animated_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HudBarElement_Animated_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HudBarElement_Animated.HudBarElement_Animated_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHudBarElement_Animated_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HudBarElement_Animated_C", "Tick");
+
+	Params::HudBarElement_Animated_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function HudBarElement_Animated.HudBarElement_Animated_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -108,42 +144,6 @@ void UHudBarElement_Animated_C::StartTween()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("HudBarElement_Animated_C", "StartTween");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HudBarElement_Animated.HudBarElement_Animated_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UHudBarElement_Animated_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HudBarElement_Animated_C", "Tick");
-
-	Params::HudBarElement_Animated_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HudBarElement_Animated.HudBarElement_Animated_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UHudBarElement_Animated_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HudBarElement_Animated_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

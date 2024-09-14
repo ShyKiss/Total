@@ -26,7 +26,7 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_Duration_1;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_duration_1;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_Radius_2;                       // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_CustomEvent_Color;                          // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_CustomEvent_TriggeringPawn;                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -39,15 +39,15 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30AA[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDecalComponent*                        CallFunc_Array_Get_Item;                           // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30AB[0x3];                                     // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_CustomEvent_Duration;                       // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_CustomEvent_duration;                       // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_Radius_1;                       // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30AC[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x00A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x00B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,25 +59,25 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30AD[0x3];                                     // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Array_Get_Item_1;                         // 0x016C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0178(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0184(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor_1;                   // 0x0194(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30AE[0x4];                                     // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x01A8(0x0010)(ConstParm, ReferenceParm)
 	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x01B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0241(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0242(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30AF[0x1];                                     // 0x0243(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_243[0x1];                                      // 0x0243(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x024C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0258(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0264(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0270(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30B0[0x4];                                     // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0290(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -94,7 +94,7 @@ static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_B
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, K2Node_CustomEvent_Duration_1) == 0x000010, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::K2Node_CustomEvent_Duration_1' has a wrong offset!");
+static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, K2Node_CustomEvent_duration_1) == 0x000010, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::K2Node_CustomEvent_duration_1' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, K2Node_CustomEvent_Radius_2) == 0x000014, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::K2Node_CustomEvent_Radius_2' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, K2Node_CustomEvent_Color) == 0x000018, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::K2Node_CustomEvent_Color' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, K2Node_CustomEvent_TriggeringPawn) == 0x000028, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::K2Node_CustomEvent_TriggeringPawn' has a wrong offset!");
@@ -111,7 +111,7 @@ static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_B
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, CallFunc_Array_Length_ReturnValue_1) == 0x000088, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, CallFunc_Add_IntInt_ReturnValue_1) == 0x00008C, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, CallFunc_Less_IntInt_ReturnValue_1) == 0x000090, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, K2Node_CustomEvent_Duration) == 0x000094, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::K2Node_CustomEvent_Duration' has a wrong offset!");
+static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, K2Node_CustomEvent_duration) == 0x000094, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::K2Node_CustomEvent_duration' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, K2Node_CustomEvent_Radius_1) == 0x000098, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::K2Node_CustomEvent_Radius_1' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x0000A0, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP, CallFunc_MakeVector_ReturnValue_1) == 0x0000A8, "Member 'PaintBombMinus01_BP_C_ExecuteUbergraph_PaintBombMinus01_BP::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
@@ -155,12 +155,12 @@ struct PaintBombMinus01_BP_C_Mist final
 {
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_Radius;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Radius_0;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PaintBombMinus01_BP_C_Mist) == 0x000004, "Wrong alignment on PaintBombMinus01_BP_C_Mist");
 static_assert(sizeof(PaintBombMinus01_BP_C_Mist) == 0x000008, "Wrong size on PaintBombMinus01_BP_C_Mist");
 static_assert(offsetof(PaintBombMinus01_BP_C_Mist, Time) == 0x000000, "Member 'PaintBombMinus01_BP_C_Mist::Time' has a wrong offset!");
-static_assert(offsetof(PaintBombMinus01_BP_C_Mist, Param_Radius) == 0x000004, "Member 'PaintBombMinus01_BP_C_Mist::Param_Radius' has a wrong offset!");
+static_assert(offsetof(PaintBombMinus01_BP_C_Mist, Radius_0) == 0x000004, "Member 'PaintBombMinus01_BP_C_Mist::Radius_0' has a wrong offset!");
 
 // Function PaintBomb-01_BP.PaintBomb-01_BP_C.SetDecal
 // 0x0008 (0x0008 - 0x0000)
@@ -168,12 +168,12 @@ struct PaintBombMinus01_BP_C_SetDecal final
 {
 public:
 	float                                         Duration;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_Radius;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Radius_0;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PaintBombMinus01_BP_C_SetDecal) == 0x000004, "Wrong alignment on PaintBombMinus01_BP_C_SetDecal");
 static_assert(sizeof(PaintBombMinus01_BP_C_SetDecal) == 0x000008, "Wrong size on PaintBombMinus01_BP_C_SetDecal");
 static_assert(offsetof(PaintBombMinus01_BP_C_SetDecal, Duration) == 0x000000, "Member 'PaintBombMinus01_BP_C_SetDecal::Duration' has a wrong offset!");
-static_assert(offsetof(PaintBombMinus01_BP_C_SetDecal, Param_Radius) == 0x000004, "Member 'PaintBombMinus01_BP_C_SetDecal::Param_Radius' has a wrong offset!");
+static_assert(offsetof(PaintBombMinus01_BP_C_SetDecal, Radius_0) == 0x000004, "Member 'PaintBombMinus01_BP_C_SetDecal::Radius_0' has a wrong offset!");
 
 // Function PaintBomb-01_BP.PaintBomb-01_BP_C.Boom
 // 0x0020 (0x0020 - 0x0000)
@@ -181,14 +181,14 @@ struct PaintBombMinus01_BP_C_Boom final
 {
 public:
 	float                                         Duration;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_Radius;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Radius_0;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color;                                             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  TriggeringPawn;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PaintBombMinus01_BP_C_Boom) == 0x000008, "Wrong alignment on PaintBombMinus01_BP_C_Boom");
 static_assert(sizeof(PaintBombMinus01_BP_C_Boom) == 0x000020, "Wrong size on PaintBombMinus01_BP_C_Boom");
 static_assert(offsetof(PaintBombMinus01_BP_C_Boom, Duration) == 0x000000, "Member 'PaintBombMinus01_BP_C_Boom::Duration' has a wrong offset!");
-static_assert(offsetof(PaintBombMinus01_BP_C_Boom, Param_Radius) == 0x000004, "Member 'PaintBombMinus01_BP_C_Boom::Param_Radius' has a wrong offset!");
+static_assert(offsetof(PaintBombMinus01_BP_C_Boom, Radius_0) == 0x000004, "Member 'PaintBombMinus01_BP_C_Boom::Radius_0' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_Boom, Color) == 0x000008, "Member 'PaintBombMinus01_BP_C_Boom::Color' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_Boom, TriggeringPawn) == 0x000018, "Member 'PaintBombMinus01_BP_C_Boom::TriggeringPawn' has a wrong offset!");
 
@@ -213,13 +213,13 @@ public:
 	struct FVector                                RandomLocation;                                    // 0x0018(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_MakeRotFromZ_ReturnValue;                 // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30B1[0xC];                                     // 0x0034(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0xC];                                       // 0x0034(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0040(0x0030)(IsPlainOldData, NoDestructor)
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0070(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30B2[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30B3[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APaintBombDecal_C*                      CallFunc_FinishSpawningActor_ReturnValue;          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -255,14 +255,14 @@ struct PaintBombMinus01_BP_C_UpdateFog final
 {
 public:
 	float                                         Density;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_Radius;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Radius_0;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PaintBombMinus01_BP_C_UpdateFog) == 0x000004, "Wrong alignment on PaintBombMinus01_BP_C_UpdateFog");
 static_assert(sizeof(PaintBombMinus01_BP_C_UpdateFog) == 0x000010, "Wrong size on PaintBombMinus01_BP_C_UpdateFog");
 static_assert(offsetof(PaintBombMinus01_BP_C_UpdateFog, Density) == 0x000000, "Member 'PaintBombMinus01_BP_C_UpdateFog::Density' has a wrong offset!");
-static_assert(offsetof(PaintBombMinus01_BP_C_UpdateFog, Param_Radius) == 0x000004, "Member 'PaintBombMinus01_BP_C_UpdateFog::Param_Radius' has a wrong offset!");
+static_assert(offsetof(PaintBombMinus01_BP_C_UpdateFog, Radius_0) == 0x000004, "Member 'PaintBombMinus01_BP_C_UpdateFog::Radius_0' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_UpdateFog, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000008, "Member 'PaintBombMinus01_BP_C_UpdateFog::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PaintBombMinus01_BP_C_UpdateFog, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00000C, "Member 'PaintBombMinus01_BP_C_UpdateFog::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
 

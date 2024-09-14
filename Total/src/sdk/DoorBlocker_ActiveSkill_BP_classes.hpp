@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DoorBlocker_ActiveSkill_BP.DoorBlocker_ActiveSkill_BP_C
-// 0x0020 (0x0518 - 0x04F8)
+// 0x0020 (0x0560 - 0x0540)
 class ADoorBlocker_ActiveSkill_BP_C final : public ARBDoorBlockerSkill
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class URBSoundComponent*                      RBSound;                                           // 0x0500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0508(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0510(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0540(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class URBSoundComponent*                      RBSound;                                           // 0x0548(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0550(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_DoorBlocker_ActiveSkill_BP(int32 EntryPoint);
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(ADoorBlocker_ActiveSkill_BP_C) == 0x000008, "Wrong alignment on ADoorBlocker_ActiveSkill_BP_C");
-static_assert(sizeof(ADoorBlocker_ActiveSkill_BP_C) == 0x000518, "Wrong size on ADoorBlocker_ActiveSkill_BP_C");
-static_assert(offsetof(ADoorBlocker_ActiveSkill_BP_C, UberGraphFrame) == 0x0004F8, "Member 'ADoorBlocker_ActiveSkill_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ADoorBlocker_ActiveSkill_BP_C, RBSound) == 0x000500, "Member 'ADoorBlocker_ActiveSkill_BP_C::RBSound' has a wrong offset!");
-static_assert(offsetof(ADoorBlocker_ActiveSkill_BP_C, StaticMesh) == 0x000508, "Member 'ADoorBlocker_ActiveSkill_BP_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ADoorBlocker_ActiveSkill_BP_C, DefaultSceneRoot) == 0x000510, "Member 'ADoorBlocker_ActiveSkill_BP_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ADoorBlocker_ActiveSkill_BP_C) == 0x000560, "Wrong size on ADoorBlocker_ActiveSkill_BP_C");
+static_assert(offsetof(ADoorBlocker_ActiveSkill_BP_C, UberGraphFrame) == 0x000540, "Member 'ADoorBlocker_ActiveSkill_BP_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ADoorBlocker_ActiveSkill_BP_C, RBSound) == 0x000548, "Member 'ADoorBlocker_ActiveSkill_BP_C::RBSound' has a wrong offset!");
+static_assert(offsetof(ADoorBlocker_ActiveSkill_BP_C, StaticMesh) == 0x000550, "Member 'ADoorBlocker_ActiveSkill_BP_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(ADoorBlocker_ActiveSkill_BP_C, DefaultSceneRoot) == 0x000558, "Member 'ADoorBlocker_ActiveSkill_BP_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

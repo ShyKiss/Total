@@ -110,9 +110,9 @@ void UConsumingProgressWidget_C::Construct()
 // Function ConsumingProgressWidget.ConsumingProgressWidget_C.UpdateProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Param_Progress                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Progress_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UConsumingProgressWidget_C::UpdateProgress(float Param_Progress)
+void UConsumingProgressWidget_C::UpdateProgress(float Progress_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -121,7 +121,7 @@ void UConsumingProgressWidget_C::UpdateProgress(float Param_Progress)
 
 	Params::ConsumingProgressWidget_C_UpdateProgress Parms{};
 
-	Parms.Param_Progress = Param_Progress;
+	Parms.Progress_0 = Progress_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

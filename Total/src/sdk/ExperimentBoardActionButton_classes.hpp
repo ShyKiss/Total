@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ExperimentBoardActionButton.ExperimentBoardActionButton_C
-// 0x0198 (0x0400 - 0x0268)
+// 0x0200 (0x0468 - 0x0268)
 class UExperimentBoardActionButton_C final : public URBUserWidget
 {
 public:
@@ -29,42 +29,62 @@ public:
 	class UWidgetAnimation*                       Hovered;                                           // 0x0270(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class USizeBox*                               AssociatedActionContainer;                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UActionIconWidget_C*                    AssociatedActionWidget;                            // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ButtonBg;                                          // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             ButtonText;                                        // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UActionIconWidget_C*                    FocusedActionWidget;                               // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               FocusedInputActionContainer;                       // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                SelectButton;                                      // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_0;                                         // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Tag_new;                                           // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bHovered;                                          // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C5D[0x7];                                     // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          bEnabled;                                          // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bPlayDefaultClickSound;                            // 0x02D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C5E[0x6];                                     // 0x02DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   ButtonTextValue;                                   // 0x02E0(0x0018)(Edit, BlueprintVisible)
-	class UTexture2D*                             ButtonTexture;                                     // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            NormalTextColor;                                   // 0x0300(0x0028)(Edit, BlueprintVisible)
-	struct FSlateColor                            HoveredTextColor;                                  // 0x0328(0x0028)(Edit, BlueprintVisible)
-	struct FSlateColor                            DisabledTextColor;                                 // 0x0350(0x0028)(Edit, BlueprintVisible)
-	struct FLinearColor                           NormalBackgroundColor;                             // 0x0378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           HoveredBackgroundColor;                            // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DisabledBackgroundColor;                           // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bEnableFocusAction;                                // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C5F[0x3];                                     // 0x03A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   FocusActionName;                                   // 0x03AC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C60[0x4];                                     // 0x03B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   FocusActionText;                                   // 0x03B8(0x0018)(Edit, BlueprintVisible)
-	float                                         MinDesiredWidth;                                   // 0x03D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C61[0x4];                                     // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AssociatedInputActionName;                         // 0x03D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FMargin                                TextPadding;                                       // 0x03E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bEnableFocusActionButton;                          // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bEnableHoveredAnimation;                           // 0x03F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UScaleBox*                              BracketsContainer;                                 // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ButtonBg;                                          // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             ButtonText;                                        // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UActionIconWidget_C*                    FocusedActionWidget;                               // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               FocusedInputActionContainer;                       // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FocussedBottomLeftBracket_1;                       // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FocussedBottomRightBracket_1;                      // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FocussedTopLeftBracket_1;                          // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FocussedTopRightBracket_1;                         // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_74;                                        // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                SelectButton;                                      // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_0;                                         // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Tag_new;                                           // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bHovered;                                          // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F1[0x7];                                      // 0x02F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          bEnabled;                                          // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bPlayDefaultClickSound;                            // 0x0309(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_30A[0x6];                                      // 0x030A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ButtonTextValue;                                   // 0x0310(0x0018)(Edit, BlueprintVisible)
+	class UTexture2D*                             ButtonTexture;                                     // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            NormalTextColor;                                   // 0x0330(0x0028)(Edit, BlueprintVisible)
+	struct FSlateColor                            HoveredTextColor;                                  // 0x0358(0x0028)(Edit, BlueprintVisible)
+	struct FSlateColor                            DisabledTextColor;                                 // 0x0380(0x0028)(Edit, BlueprintVisible)
+	struct FLinearColor                           NormalBackgroundColor;                             // 0x03A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           HoveredBackgroundColor;                            // 0x03B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DisabledBackgroundColor;                           // 0x03C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnableFocusAction;                                // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3D9[0x3];                                      // 0x03D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   FocusActionName;                                   // 0x03DC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E4[0x4];                                      // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   FocusActionText;                                   // 0x03E8(0x0018)(Edit, BlueprintVisible)
+	float                                         MinDesiredWidth;                                   // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 AssociatedInputActionName;                         // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FMargin                                TextPadding;                                       // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bEnableFocusActionButton;                          // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bEnableHoveredAnimation;                           // 0x0429(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bEnableBrackets;                                   // 0x042A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42B[0x1];                                      // 0x042B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                InnerButtonPadding;                                // 0x042C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bAssociatedInputIsHoldAction;                      // 0x043C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bColorAssociatedInputActionWidget;                 // 0x043D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_43E[0x2];                                      // 0x043E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         FontSize;                                          // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AssociatedActionContainerHeight;                   // 0x0444(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnPressed;                                         // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnReleased;                                        // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnClicked__DelegateSignature();
+	void OnPressed__DelegateSignature();
+	void OnReleased__DelegateSignature();
 	void ExecuteUbergraph_ExperimentBoardActionButton(int32 EntryPoint);
+	void BndEvt__ExperimentBoardActionButton_SelectButton_K2Node_ComponentBoundEvent_2_OnButtonReleasedEvent__DelegateSignature();
+	void BndEvt__ExperimentBoardActionButton_SelectButton_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature();
 	void Destruct();
 	void OnMenuInputSourceChanged();
 	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
@@ -76,12 +96,14 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void UpdateState();
 	void SetEnabled(bool bInEnabled);
-	void SetButtonText(const class FText& Param_ButtonText);
+	void SetButtonText(const class FText& ButtonText_0);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
-	void SetHovered(bool Param_Hovered);
+	void SetHovered(bool Hovered_0);
 	void GamepadNav_MenuConfirm();
 	void GamepadNav_MenuConfirm_Release();
 	void OnButtonClicked();
+	void OnButtonPressed();
+	void OnButtonReleased();
 	void Setup();
 	void SetIsNew(bool IsNew);
 
@@ -96,38 +118,52 @@ public:
 	}
 };
 static_assert(alignof(UExperimentBoardActionButton_C) == 0x000008, "Wrong alignment on UExperimentBoardActionButton_C");
-static_assert(sizeof(UExperimentBoardActionButton_C) == 0x000400, "Wrong size on UExperimentBoardActionButton_C");
+static_assert(sizeof(UExperimentBoardActionButton_C) == 0x000468, "Wrong size on UExperimentBoardActionButton_C");
 static_assert(offsetof(UExperimentBoardActionButton_C, UberGraphFrame) == 0x000268, "Member 'UExperimentBoardActionButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UExperimentBoardActionButton_C, Hovered) == 0x000270, "Member 'UExperimentBoardActionButton_C::Hovered' has a wrong offset!");
 static_assert(offsetof(UExperimentBoardActionButton_C, AssociatedActionContainer) == 0x000278, "Member 'UExperimentBoardActionButton_C::AssociatedActionContainer' has a wrong offset!");
 static_assert(offsetof(UExperimentBoardActionButton_C, AssociatedActionWidget) == 0x000280, "Member 'UExperimentBoardActionButton_C::AssociatedActionWidget' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, ButtonBg) == 0x000288, "Member 'UExperimentBoardActionButton_C::ButtonBg' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, ButtonText) == 0x000290, "Member 'UExperimentBoardActionButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, FocusedActionWidget) == 0x000298, "Member 'UExperimentBoardActionButton_C::FocusedActionWidget' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, FocusedInputActionContainer) == 0x0002A0, "Member 'UExperimentBoardActionButton_C::FocusedInputActionContainer' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, SelectButton) == 0x0002A8, "Member 'UExperimentBoardActionButton_C::SelectButton' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, SizeBox_0) == 0x0002B0, "Member 'UExperimentBoardActionButton_C::SizeBox_0' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, Tag_new) == 0x0002B8, "Member 'UExperimentBoardActionButton_C::Tag_new' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, bHovered) == 0x0002C0, "Member 'UExperimentBoardActionButton_C::bHovered' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, OnClicked) == 0x0002C8, "Member 'UExperimentBoardActionButton_C::OnClicked' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, bEnabled) == 0x0002D8, "Member 'UExperimentBoardActionButton_C::bEnabled' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, bPlayDefaultClickSound) == 0x0002D9, "Member 'UExperimentBoardActionButton_C::bPlayDefaultClickSound' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, ButtonTextValue) == 0x0002E0, "Member 'UExperimentBoardActionButton_C::ButtonTextValue' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, ButtonTexture) == 0x0002F8, "Member 'UExperimentBoardActionButton_C::ButtonTexture' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, NormalTextColor) == 0x000300, "Member 'UExperimentBoardActionButton_C::NormalTextColor' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, HoveredTextColor) == 0x000328, "Member 'UExperimentBoardActionButton_C::HoveredTextColor' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, DisabledTextColor) == 0x000350, "Member 'UExperimentBoardActionButton_C::DisabledTextColor' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, NormalBackgroundColor) == 0x000378, "Member 'UExperimentBoardActionButton_C::NormalBackgroundColor' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, HoveredBackgroundColor) == 0x000388, "Member 'UExperimentBoardActionButton_C::HoveredBackgroundColor' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, DisabledBackgroundColor) == 0x000398, "Member 'UExperimentBoardActionButton_C::DisabledBackgroundColor' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, bEnableFocusAction) == 0x0003A8, "Member 'UExperimentBoardActionButton_C::bEnableFocusAction' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, FocusActionName) == 0x0003AC, "Member 'UExperimentBoardActionButton_C::FocusActionName' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, FocusActionText) == 0x0003B8, "Member 'UExperimentBoardActionButton_C::FocusActionText' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, MinDesiredWidth) == 0x0003D0, "Member 'UExperimentBoardActionButton_C::MinDesiredWidth' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, AssociatedInputActionName) == 0x0003D8, "Member 'UExperimentBoardActionButton_C::AssociatedInputActionName' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, TextPadding) == 0x0003E8, "Member 'UExperimentBoardActionButton_C::TextPadding' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, bEnableFocusActionButton) == 0x0003F8, "Member 'UExperimentBoardActionButton_C::bEnableFocusActionButton' has a wrong offset!");
-static_assert(offsetof(UExperimentBoardActionButton_C, bEnableHoveredAnimation) == 0x0003F9, "Member 'UExperimentBoardActionButton_C::bEnableHoveredAnimation' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, BracketsContainer) == 0x000288, "Member 'UExperimentBoardActionButton_C::BracketsContainer' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, ButtonBg) == 0x000290, "Member 'UExperimentBoardActionButton_C::ButtonBg' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, ButtonText) == 0x000298, "Member 'UExperimentBoardActionButton_C::ButtonText' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, FocusedActionWidget) == 0x0002A0, "Member 'UExperimentBoardActionButton_C::FocusedActionWidget' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, FocusedInputActionContainer) == 0x0002A8, "Member 'UExperimentBoardActionButton_C::FocusedInputActionContainer' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, FocussedBottomLeftBracket_1) == 0x0002B0, "Member 'UExperimentBoardActionButton_C::FocussedBottomLeftBracket_1' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, FocussedBottomRightBracket_1) == 0x0002B8, "Member 'UExperimentBoardActionButton_C::FocussedBottomRightBracket_1' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, FocussedTopLeftBracket_1) == 0x0002C0, "Member 'UExperimentBoardActionButton_C::FocussedTopLeftBracket_1' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, FocussedTopRightBracket_1) == 0x0002C8, "Member 'UExperimentBoardActionButton_C::FocussedTopRightBracket_1' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, Overlay_74) == 0x0002D0, "Member 'UExperimentBoardActionButton_C::Overlay_74' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, SelectButton) == 0x0002D8, "Member 'UExperimentBoardActionButton_C::SelectButton' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, SizeBox_0) == 0x0002E0, "Member 'UExperimentBoardActionButton_C::SizeBox_0' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, Tag_new) == 0x0002E8, "Member 'UExperimentBoardActionButton_C::Tag_new' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, bHovered) == 0x0002F0, "Member 'UExperimentBoardActionButton_C::bHovered' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, OnClicked) == 0x0002F8, "Member 'UExperimentBoardActionButton_C::OnClicked' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, bEnabled) == 0x000308, "Member 'UExperimentBoardActionButton_C::bEnabled' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, bPlayDefaultClickSound) == 0x000309, "Member 'UExperimentBoardActionButton_C::bPlayDefaultClickSound' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, ButtonTextValue) == 0x000310, "Member 'UExperimentBoardActionButton_C::ButtonTextValue' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, ButtonTexture) == 0x000328, "Member 'UExperimentBoardActionButton_C::ButtonTexture' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, NormalTextColor) == 0x000330, "Member 'UExperimentBoardActionButton_C::NormalTextColor' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, HoveredTextColor) == 0x000358, "Member 'UExperimentBoardActionButton_C::HoveredTextColor' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, DisabledTextColor) == 0x000380, "Member 'UExperimentBoardActionButton_C::DisabledTextColor' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, NormalBackgroundColor) == 0x0003A8, "Member 'UExperimentBoardActionButton_C::NormalBackgroundColor' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, HoveredBackgroundColor) == 0x0003B8, "Member 'UExperimentBoardActionButton_C::HoveredBackgroundColor' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, DisabledBackgroundColor) == 0x0003C8, "Member 'UExperimentBoardActionButton_C::DisabledBackgroundColor' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, bEnableFocusAction) == 0x0003D8, "Member 'UExperimentBoardActionButton_C::bEnableFocusAction' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, FocusActionName) == 0x0003DC, "Member 'UExperimentBoardActionButton_C::FocusActionName' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, FocusActionText) == 0x0003E8, "Member 'UExperimentBoardActionButton_C::FocusActionText' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, MinDesiredWidth) == 0x000400, "Member 'UExperimentBoardActionButton_C::MinDesiredWidth' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, AssociatedInputActionName) == 0x000408, "Member 'UExperimentBoardActionButton_C::AssociatedInputActionName' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, TextPadding) == 0x000418, "Member 'UExperimentBoardActionButton_C::TextPadding' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, bEnableFocusActionButton) == 0x000428, "Member 'UExperimentBoardActionButton_C::bEnableFocusActionButton' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, bEnableHoveredAnimation) == 0x000429, "Member 'UExperimentBoardActionButton_C::bEnableHoveredAnimation' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, bEnableBrackets) == 0x00042A, "Member 'UExperimentBoardActionButton_C::bEnableBrackets' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, InnerButtonPadding) == 0x00042C, "Member 'UExperimentBoardActionButton_C::InnerButtonPadding' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, bAssociatedInputIsHoldAction) == 0x00043C, "Member 'UExperimentBoardActionButton_C::bAssociatedInputIsHoldAction' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, bColorAssociatedInputActionWidget) == 0x00043D, "Member 'UExperimentBoardActionButton_C::bColorAssociatedInputActionWidget' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, FontSize) == 0x000440, "Member 'UExperimentBoardActionButton_C::FontSize' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, AssociatedActionContainerHeight) == 0x000444, "Member 'UExperimentBoardActionButton_C::AssociatedActionContainerHeight' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, OnPressed) == 0x000448, "Member 'UExperimentBoardActionButton_C::OnPressed' has a wrong offset!");
+static_assert(offsetof(UExperimentBoardActionButton_C, OnReleased) == 0x000458, "Member 'UExperimentBoardActionButton_C::OnReleased' has a wrong offset!");
 
 }
 

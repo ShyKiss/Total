@@ -59,11 +59,11 @@ static_assert(offsetof(CommonVisibilitySwitcher_SetActiveWidget, Widget) == 0x00
 struct CommonVisibilitySwitcher_SetActiveWidgetIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonVisibilitySwitcher_SetActiveWidgetIndex) == 0x000004, "Wrong alignment on CommonVisibilitySwitcher_SetActiveWidgetIndex");
 static_assert(sizeof(CommonVisibilitySwitcher_SetActiveWidgetIndex) == 0x000004, "Wrong size on CommonVisibilitySwitcher_SetActiveWidgetIndex");
-static_assert(offsetof(CommonVisibilitySwitcher_SetActiveWidgetIndex, Param_Index) == 0x000000, "Member 'CommonVisibilitySwitcher_SetActiveWidgetIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(CommonVisibilitySwitcher_SetActiveWidgetIndex, Index_0) == 0x000000, "Member 'CommonVisibilitySwitcher_SetActiveWidgetIndex::Index_0' has a wrong offset!");
 
 // Function CommonUI.CommonVisibilitySwitcher.GetActiveWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -232,9 +232,9 @@ struct CommonUISubsystemBase_GetInputActionButtonIcon final
 public:
 	struct FDataTableRowHandle                    InputActionRowHandle;                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	ECommonInputType                              InputType;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_105D[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   GamepadName;                                       // 0x0014(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_105E[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            ReturnValue;                                       // 0x0020(0x0088)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonUISubsystemBase_GetInputActionButtonIcon) == 0x000008, "Wrong alignment on CommonUISubsystemBase_GetInputActionButtonIcon");
@@ -701,7 +701,7 @@ struct CommonButtonBase_GetInputAction final
 public:
 	struct FDataTableRowHandle                    InputActionRow;                                    // 0x0000(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1072[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonButtonBase_GetInputAction) == 0x000008, "Wrong alignment on CommonButtonBase_GetInputAction");
 static_assert(sizeof(CommonButtonBase_GetInputAction) == 0x000018, "Wrong size on CommonButtonBase_GetInputAction");
@@ -1023,7 +1023,7 @@ struct CommonButtonGroupBase_OnSelectionStateChangedBase final
 public:
 	class UCommonButtonBase*                      BaseButton;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsSelected;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_107E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonButtonGroupBase_OnSelectionStateChangedBase) == 0x000008, "Wrong alignment on CommonButtonGroupBase_OnSelectionStateChangedBase");
 static_assert(sizeof(CommonButtonGroupBase_OnSelectionStateChangedBase) == 0x000010, "Wrong size on CommonButtonGroupBase_OnSelectionStateChangedBase");
@@ -1081,7 +1081,7 @@ struct CommonButtonGroupBase_FindButtonIndex final
 public:
 	const class UCommonButtonBase*                ButtonToFind;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_107F[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonButtonGroupBase_FindButtonIndex) == 0x000008, "Wrong alignment on CommonButtonGroupBase_FindButtonIndex");
 static_assert(sizeof(CommonButtonGroupBase_FindButtonIndex) == 0x000010, "Wrong size on CommonButtonGroupBase_FindButtonIndex");
@@ -1093,13 +1093,13 @@ static_assert(offsetof(CommonButtonGroupBase_FindButtonIndex, ReturnValue) == 0x
 struct CommonButtonGroupBase_GetButtonBaseAtIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1080[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButtonBase*                      ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonButtonGroupBase_GetButtonBaseAtIndex) == 0x000008, "Wrong alignment on CommonButtonGroupBase_GetButtonBaseAtIndex");
 static_assert(sizeof(CommonButtonGroupBase_GetButtonBaseAtIndex) == 0x000010, "Wrong size on CommonButtonGroupBase_GetButtonBaseAtIndex");
-static_assert(offsetof(CommonButtonGroupBase_GetButtonBaseAtIndex, Param_Index) == 0x000000, "Member 'CommonButtonGroupBase_GetButtonBaseAtIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(CommonButtonGroupBase_GetButtonBaseAtIndex, Index_0) == 0x000000, "Member 'CommonButtonGroupBase_GetButtonBaseAtIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(CommonButtonGroupBase_GetButtonBaseAtIndex, ReturnValue) == 0x000008, "Member 'CommonButtonGroupBase_GetButtonBaseAtIndex::ReturnValue' has a wrong offset!");
 
 // Function CommonUI.CommonButtonGroupBase.GetButtonCount
@@ -1208,7 +1208,7 @@ struct CommonDateTimeTextBlock_SetDateTimeValue final
 public:
 	struct FDateTime                              InDateTime;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowAsCountdown;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1084[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         InRefreshDelay;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonDateTimeTextBlock_SetDateTimeValue) == 0x000008, "Wrong alignment on CommonDateTimeTextBlock_SetDateTimeValue");
@@ -1246,7 +1246,7 @@ struct CommonLazyImage_SetBrushFromLazyDisplayAsset final
 public:
 	TSoftObjectPtr<class UObject>                 LazyObject;                                        // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMatchTextureSize;                                 // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1087[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonLazyImage_SetBrushFromLazyDisplayAsset) == 0x000008, "Wrong alignment on CommonLazyImage_SetBrushFromLazyDisplayAsset");
 static_assert(sizeof(CommonLazyImage_SetBrushFromLazyDisplayAsset) == 0x000030, "Wrong size on CommonLazyImage_SetBrushFromLazyDisplayAsset");
@@ -1271,7 +1271,7 @@ struct CommonLazyImage_SetBrushFromLazyTexture final
 public:
 	TSoftObjectPtr<class UTexture2D>              LazyTexture;                                       // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMatchSize;                                        // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1088[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonLazyImage_SetBrushFromLazyTexture) == 0x000008, "Wrong alignment on CommonLazyImage_SetBrushFromLazyTexture");
 static_assert(sizeof(CommonLazyImage_SetBrushFromLazyTexture) == 0x000030, "Wrong size on CommonLazyImage_SetBrushFromLazyTexture");
@@ -1458,7 +1458,7 @@ struct CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature final
 public:
 	class UCommonNumericTextBlock*                NumericTextBlock;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HadCompleted;                                      // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1091[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature) == 0x000008, "Wrong alignment on CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature");
 static_assert(sizeof(CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature) == 0x000010, "Wrong size on CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature");
@@ -1551,11 +1551,11 @@ static_assert(offsetof(CommonNumericTextBlock_IsInterpolatingNumericValue, Retur
 struct CommonRotator_BP_OnOptionSelected final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonRotator_BP_OnOptionSelected) == 0x000004, "Wrong alignment on CommonRotator_BP_OnOptionSelected");
 static_assert(sizeof(CommonRotator_BP_OnOptionSelected) == 0x000004, "Wrong size on CommonRotator_BP_OnOptionSelected");
-static_assert(offsetof(CommonRotator_BP_OnOptionSelected, Param_Index) == 0x000000, "Member 'CommonRotator_BP_OnOptionSelected::Param_Index' has a wrong offset!");
+static_assert(offsetof(CommonRotator_BP_OnOptionSelected, Index_0) == 0x000000, "Member 'CommonRotator_BP_OnOptionSelected::Index_0' has a wrong offset!");
 
 // Function CommonUI.CommonRotator.BP_OnOptionsPopulated
 // 0x0004 (0x0004 - 0x0000)
@@ -1667,7 +1667,7 @@ struct CommonTabListWidgetBase_HandleTabButtonSelected final
 public:
 	class UCommonButtonBase*                      SelectedTabButton;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_109C[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonTabListWidgetBase_HandleTabButtonSelected) == 0x000008, "Wrong alignment on CommonTabListWidgetBase_HandleTabButtonSelected");
 static_assert(sizeof(CommonTabListWidgetBase_HandleTabButtonSelected) == 0x000010, "Wrong size on CommonTabListWidgetBase_HandleTabButtonSelected");
@@ -1746,7 +1746,7 @@ public:
 	TSubclassOf<class UCommonButtonBase>          ButtonWidgetType;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWidget*                                ContentWidget;                                     // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_109D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonTabListWidgetBase_RegisterTab) == 0x000008, "Wrong alignment on CommonTabListWidgetBase_RegisterTab");
 static_assert(sizeof(CommonTabListWidgetBase_RegisterTab) == 0x000020, "Wrong size on CommonTabListWidgetBase_RegisterTab");
@@ -1762,7 +1762,7 @@ struct CommonTabListWidgetBase_RemoveTab final
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_109E[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonTabListWidgetBase_RemoveTab) == 0x000004, "Wrong alignment on CommonTabListWidgetBase_RemoveTab");
 static_assert(sizeof(CommonTabListWidgetBase_RemoveTab) == 0x00000C, "Wrong size on CommonTabListWidgetBase_RemoveTab");
@@ -1777,7 +1777,7 @@ public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSuppressClickFeedback;                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_109F[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonTabListWidgetBase_SelectTabByID) == 0x000004, "Wrong alignment on CommonTabListWidgetBase_SelectTabByID");
 static_assert(sizeof(CommonTabListWidgetBase_SelectTabByID) == 0x00000C, "Wrong size on CommonTabListWidgetBase_SelectTabByID");
@@ -1814,7 +1814,7 @@ struct CommonTabListWidgetBase_SetTabEnabled final
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnable;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10A0[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonTabListWidgetBase_SetTabEnabled) == 0x000004, "Wrong alignment on CommonTabListWidgetBase_SetTabEnabled");
 static_assert(sizeof(CommonTabListWidgetBase_SetTabEnabled) == 0x00000C, "Wrong size on CommonTabListWidgetBase_SetTabEnabled");
@@ -1828,7 +1828,7 @@ struct CommonTabListWidgetBase_SetTabInteractionEnabled final
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnable;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10A1[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonTabListWidgetBase_SetTabInteractionEnabled) == 0x000004, "Wrong alignment on CommonTabListWidgetBase_SetTabInteractionEnabled");
 static_assert(sizeof(CommonTabListWidgetBase_SetTabInteractionEnabled) == 0x00000C, "Wrong size on CommonTabListWidgetBase_SetTabInteractionEnabled");
@@ -1842,7 +1842,7 @@ struct CommonTabListWidgetBase_SetTabVisibility final
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESlateVisibility                              NewVisibility;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10A2[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonTabListWidgetBase_SetTabVisibility) == 0x000004, "Wrong alignment on CommonTabListWidgetBase_SetTabVisibility");
 static_assert(sizeof(CommonTabListWidgetBase_SetTabVisibility) == 0x00000C, "Wrong size on CommonTabListWidgetBase_SetTabVisibility");
@@ -1898,12 +1898,12 @@ static_assert(offsetof(CommonTabListWidgetBase_GetTabCount, ReturnValue) == 0x00
 struct CommonTabListWidgetBase_GetTabIdAtIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ReturnValue;                                       // 0x0004(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonTabListWidgetBase_GetTabIdAtIndex) == 0x000004, "Wrong alignment on CommonTabListWidgetBase_GetTabIdAtIndex");
 static_assert(sizeof(CommonTabListWidgetBase_GetTabIdAtIndex) == 0x00000C, "Wrong size on CommonTabListWidgetBase_GetTabIdAtIndex");
-static_assert(offsetof(CommonTabListWidgetBase_GetTabIdAtIndex, Param_Index) == 0x000000, "Member 'CommonTabListWidgetBase_GetTabIdAtIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(CommonTabListWidgetBase_GetTabIdAtIndex, Index_0) == 0x000000, "Member 'CommonTabListWidgetBase_GetTabIdAtIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(CommonTabListWidgetBase_GetTabIdAtIndex, ReturnValue) == 0x000004, "Member 'CommonTabListWidgetBase_GetTabIdAtIndex::ReturnValue' has a wrong offset!");
 
 // Function CommonUI.CommonTextStyle.GetColor
@@ -2010,11 +2010,11 @@ static_assert(offsetof(CommonWidgetCarousel_SetActiveWidget, Widget) == 0x000000
 struct CommonWidgetCarousel_SetActiveWidgetIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonWidgetCarousel_SetActiveWidgetIndex) == 0x000004, "Wrong alignment on CommonWidgetCarousel_SetActiveWidgetIndex");
 static_assert(sizeof(CommonWidgetCarousel_SetActiveWidgetIndex) == 0x000004, "Wrong size on CommonWidgetCarousel_SetActiveWidgetIndex");
-static_assert(offsetof(CommonWidgetCarousel_SetActiveWidgetIndex, Param_Index) == 0x000000, "Member 'CommonWidgetCarousel_SetActiveWidgetIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(CommonWidgetCarousel_SetActiveWidgetIndex, Index_0) == 0x000000, "Member 'CommonWidgetCarousel_SetActiveWidgetIndex::Index_0' has a wrong offset!");
 
 // Function CommonUI.CommonWidgetCarousel.GetActiveWidgetIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -2032,13 +2032,13 @@ static_assert(offsetof(CommonWidgetCarousel_GetActiveWidgetIndex, ReturnValue) =
 struct CommonWidgetCarousel_GetWidgetAtIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10AE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonWidgetCarousel_GetWidgetAtIndex) == 0x000008, "Wrong alignment on CommonWidgetCarousel_GetWidgetAtIndex");
 static_assert(sizeof(CommonWidgetCarousel_GetWidgetAtIndex) == 0x000010, "Wrong size on CommonWidgetCarousel_GetWidgetAtIndex");
-static_assert(offsetof(CommonWidgetCarousel_GetWidgetAtIndex, Param_Index) == 0x000000, "Member 'CommonWidgetCarousel_GetWidgetAtIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(CommonWidgetCarousel_GetWidgetAtIndex, Index_0) == 0x000000, "Member 'CommonWidgetCarousel_GetWidgetAtIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(CommonWidgetCarousel_GetWidgetAtIndex, ReturnValue) == 0x000008, "Member 'CommonWidgetCarousel_GetWidgetAtIndex::ReturnValue' has a wrong offset!");
 
 // Function CommonUI.CommonWidgetCarouselNavBar.HandleButtonClicked
@@ -2048,7 +2048,7 @@ struct CommonWidgetCarouselNavBar_HandleButtonClicked final
 public:
 	class UCommonButtonBase*                      AssociatedButton;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10B0[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonWidgetCarouselNavBar_HandleButtonClicked) == 0x000008, "Wrong alignment on CommonWidgetCarouselNavBar_HandleButtonClicked");
 static_assert(sizeof(CommonWidgetCarouselNavBar_HandleButtonClicked) == 0x000010, "Wrong size on CommonWidgetCarouselNavBar_HandleButtonClicked");
@@ -2062,7 +2062,7 @@ struct CommonWidgetCarouselNavBar_HandlePageChanged final
 public:
 	class UCommonWidgetCarousel*                  CommonCarousel;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PageIndex;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10B1[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonWidgetCarouselNavBar_HandlePageChanged) == 0x000008, "Wrong alignment on CommonWidgetCarouselNavBar_HandlePageChanged");
 static_assert(sizeof(CommonWidgetCarouselNavBar_HandlePageChanged) == 0x000010, "Wrong size on CommonWidgetCarouselNavBar_HandlePageChanged");

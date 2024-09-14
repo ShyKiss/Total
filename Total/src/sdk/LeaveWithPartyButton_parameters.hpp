@@ -24,7 +24,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF2[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0038)(IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          K2Node_Event_MouseEvent_1;                         // 0x0040(0x0070)(ConstParm)
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00B0(0x0070)(ConstParm)
@@ -113,11 +113,11 @@ static_assert(offsetof(LeaveWithPartyButton_C_SetEnabled, bInEnabled) == 0x00000
 struct LeaveWithPartyButton_C_SetButtonText final
 {
 public:
-	class FText                                   Param_ButtonText;                                  // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   ButtonText_0;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(LeaveWithPartyButton_C_SetButtonText) == 0x000008, "Wrong alignment on LeaveWithPartyButton_C_SetButtonText");
 static_assert(sizeof(LeaveWithPartyButton_C_SetButtonText) == 0x000018, "Wrong size on LeaveWithPartyButton_C_SetButtonText");
-static_assert(offsetof(LeaveWithPartyButton_C_SetButtonText, Param_ButtonText) == 0x000000, "Member 'LeaveWithPartyButton_C_SetButtonText::Param_ButtonText' has a wrong offset!");
+static_assert(offsetof(LeaveWithPartyButton_C_SetButtonText, ButtonText_0) == 0x000000, "Member 'LeaveWithPartyButton_C_SetButtonText::ButtonText_0' has a wrong offset!");
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "OPP_structs.hpp"
 
 
 namespace SDK::Params
@@ -52,26 +52,26 @@ static_assert(sizeof(PerkUpgradeButton_C_OnUnhoveredEvent__DelegateSignature) ==
 static_assert(offsetof(PerkUpgradeButton_C_OnUnhoveredEvent__DelegateSignature, Button) == 0x000000, "Member 'PerkUpgradeButton_C_OnUnhoveredEvent__DelegateSignature::Button' has a wrong offset!");
 
 // Function PerkUpgradeButton.PerkUpgradeButton_C.OnPressedEvent__DelegateSignature
-// 0x0128 (0x0128 - 0x0000)
+// 0x0188 (0x0188 - 0x0000)
 struct PerkUpgradeButton_C_OnPressedEvent__DelegateSignature final
 {
 public:
-	struct FMenuUpgradeItemInfo                   Param_ItemInfo;                                    // 0x0000(0x0128)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FMenuUpgradeItemInfo                   ItemInfo_0;                                        // 0x0000(0x0188)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(PerkUpgradeButton_C_OnPressedEvent__DelegateSignature) == 0x000008, "Wrong alignment on PerkUpgradeButton_C_OnPressedEvent__DelegateSignature");
-static_assert(sizeof(PerkUpgradeButton_C_OnPressedEvent__DelegateSignature) == 0x000128, "Wrong size on PerkUpgradeButton_C_OnPressedEvent__DelegateSignature");
-static_assert(offsetof(PerkUpgradeButton_C_OnPressedEvent__DelegateSignature, Param_ItemInfo) == 0x000000, "Member 'PerkUpgradeButton_C_OnPressedEvent__DelegateSignature::Param_ItemInfo' has a wrong offset!");
+static_assert(sizeof(PerkUpgradeButton_C_OnPressedEvent__DelegateSignature) == 0x000188, "Wrong size on PerkUpgradeButton_C_OnPressedEvent__DelegateSignature");
+static_assert(offsetof(PerkUpgradeButton_C_OnPressedEvent__DelegateSignature, ItemInfo_0) == 0x000000, "Member 'PerkUpgradeButton_C_OnPressedEvent__DelegateSignature::ItemInfo_0' has a wrong offset!");
 
 // Function PerkUpgradeButton.PerkUpgradeButton_C.OnReleasedEvent__DelegateSignature
-// 0x0128 (0x0128 - 0x0000)
+// 0x0188 (0x0188 - 0x0000)
 struct PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature final
 {
 public:
-	struct FMenuUpgradeItemInfo                   Param_ItemInfo;                                    // 0x0000(0x0128)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FMenuUpgradeItemInfo                   ItemInfo_0;                                        // 0x0000(0x0188)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature) == 0x000008, "Wrong alignment on PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature");
-static_assert(sizeof(PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature) == 0x000128, "Wrong size on PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature");
-static_assert(offsetof(PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature, Param_ItemInfo) == 0x000000, "Member 'PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature::Param_ItemInfo' has a wrong offset!");
+static_assert(sizeof(PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature) == 0x000188, "Wrong size on PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature");
+static_assert(offsetof(PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature, ItemInfo_0) == 0x000000, "Member 'PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature::ItemInfo_0' has a wrong offset!");
 
 // Function PerkUpgradeButton.PerkUpgradeButton_C.OnBuyAnimationEndedEvent__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -91,7 +91,7 @@ struct PerkUpgradeButton_C_ExecuteUbergraph_PerkUpgradeButton final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DB8[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PerkUpgradeButton_C_ExecuteUbergraph_PerkUpgradeButton) == 0x000008, "Wrong alignment on PerkUpgradeButton_C_ExecuteUbergraph_PerkUpgradeButton");
@@ -112,97 +112,97 @@ static_assert(sizeof(PerkUpgradeButton_C_PreConstruct) == 0x000001, "Wrong size 
 static_assert(offsetof(PerkUpgradeButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'PerkUpgradeButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function PerkUpgradeButton.PerkUpgradeButton_C.Initialize
-// 0x0418 (0x0418 - 0x0000)
+// 0x0580 (0x0580 - 0x0000)
 struct PerkUpgradeButton_C_Initialize final
 {
 public:
-	struct FMenuUpgradeItemInfo                   ItemUpgradeInfo;                                   // 0x0000(0x0128)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          InIsLoadout;                                       // 0x0128(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bInIsSlot;                                         // 0x0129(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DB9[0x6];                                     // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayerState*                         PlayerState;                                       // 0x0130(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayerState*                         RB_Player_State;                                   // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EMenuUpgradeItemState                         Temp_byte_Variable;                                // 0x0143(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ELoadoutElementType                           Temp_byte_Variable_1;                              // 0x0144(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0145(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0146(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DBA[0x1];                                     // 0x0147(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMenuUpgradeItemInfo                   CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue;  // 0x0148(0x0128)()
-	bool                                          CallFunc_HasRecentlyBoughtUpgradeOfType_ReturnValue; // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0271(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0272(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0273(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0275(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0276(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_WasUpgradeRecentlyBought_ReturnValue;     // 0x0277(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0279(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x027A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_WasSeenInMenu_ReturnValue;                // 0x027B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x027C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_5;                 // 0x027D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_6;                 // 0x027E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x027F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayerState*                         K2Node_Select_Default;                             // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBPlayerProgressionData*               CallFunc_GetPlayerProgressionData_ReturnValue;     // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DBB[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRBItemProgressionData                 CallFunc_GetItemProgressionData_ReturnValue;       // 0x02A0(0x00E8)(ConstParm)
-	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0390(0x0028)()
-	struct FSlateColor                            CallFunc_Map_Find_Value;                           // 0x03B8(0x0028)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DBC[0x7];                                     // 0x03E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_Select_Default_1;                           // 0x03E8(0x0028)()
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FMenuUpgradeItemInfo                   ItemUpgradeInfo;                                   // 0x0000(0x0188)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          InIsLoadout;                                       // 0x0188(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsSlot;                                         // 0x0189(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_18A[0x6];                                      // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayerState*                         PlayerState;                                       // 0x0190(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayerState*                         RB_Player_State;                                   // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EMenuUpgradeItemState                         Temp_byte_Variable;                                // 0x01A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ELoadoutElementType                           Temp_byte_Variable_1;                              // 0x01A3(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x01A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A6[0x2];                                      // 0x01A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMenuUpgradeItemInfo                   CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue;  // 0x01A8(0x0188)()
+	bool                                          CallFunc_HasRecentlyBoughtUpgradeOfType_ReturnValue; // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0333(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0334(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0335(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0336(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_WasUpgradeRecentlyBought_ReturnValue;     // 0x0337(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0339(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x033A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_WasSeenInMenu_ReturnValue;                // 0x033B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x033C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_5;                 // 0x033D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_6;                 // 0x033E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x033F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayerState*                         K2Node_Select_Default;                             // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBPlayerProgressionData*               CallFunc_GetPlayerProgressionData_ReturnValue;     // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_359[0x7];                                      // 0x0359(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBItemProgressionData                 CallFunc_GetItemProgressionData_ReturnValue;       // 0x0360(0x0168)(ConstParm)
+	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x04D0(0x0028)()
+	struct FSlateColor                            CallFunc_Map_Find_Value;                           // 0x04F8(0x0028)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0520(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_521[0x7];                                      // 0x0521(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0528(0x0028)()
+	struct FSlateColor                            K2Node_Select_Default_1;                           // 0x0550(0x0028)()
+	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0578(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PerkUpgradeButton_C_Initialize) == 0x000008, "Wrong alignment on PerkUpgradeButton_C_Initialize");
-static_assert(sizeof(PerkUpgradeButton_C_Initialize) == 0x000418, "Wrong size on PerkUpgradeButton_C_Initialize");
+static_assert(sizeof(PerkUpgradeButton_C_Initialize) == 0x000580, "Wrong size on PerkUpgradeButton_C_Initialize");
 static_assert(offsetof(PerkUpgradeButton_C_Initialize, ItemUpgradeInfo) == 0x000000, "Member 'PerkUpgradeButton_C_Initialize::ItemUpgradeInfo' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, InIsLoadout) == 0x000128, "Member 'PerkUpgradeButton_C_Initialize::InIsLoadout' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, bInIsSlot) == 0x000129, "Member 'PerkUpgradeButton_C_Initialize::bInIsSlot' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, PlayerState) == 0x000130, "Member 'PerkUpgradeButton_C_Initialize::PlayerState' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, RB_Player_State) == 0x000138, "Member 'PerkUpgradeButton_C_Initialize::RB_Player_State' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, Temp_bool_Variable) == 0x000140, "Member 'PerkUpgradeButton_C_Initialize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_IsValid_ReturnValue) == 0x000141, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Not_PreBool_ReturnValue) == 0x000142, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, Temp_byte_Variable) == 0x000143, "Member 'PerkUpgradeButton_C_Initialize::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, Temp_byte_Variable_1) == 0x000144, "Member 'PerkUpgradeButton_C_Initialize::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Not_PreBool_ReturnValue_1) == 0x000145, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Not_PreBool_ReturnValue_2) == 0x000146, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue) == 0x000148, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_HasRecentlyBoughtUpgradeOfType_ReturnValue) == 0x000270, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_HasRecentlyBoughtUpgradeOfType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000271, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue) == 0x000272, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_1) == 0x000273, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_2) == 0x000274, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000275, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000276, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_WasUpgradeRecentlyBought_ReturnValue) == 0x000277, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_WasUpgradeRecentlyBought_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanOR_ReturnValue) == 0x000278, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_3) == 0x000279, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_4) == 0x00027A, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_WasSeenInMenu_ReturnValue) == 0x00027B, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_WasSeenInMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Not_PreBool_ReturnValue_3) == 0x00027C, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_5) == 0x00027D, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_6) == 0x00027E, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanOR_ReturnValue_1) == 0x00027F, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetLocalPlayerState_ReturnValue) == 0x000280, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetLocalPlayerState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, K2Node_Select_Default) == 0x000288, "Member 'PerkUpgradeButton_C_Initialize::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetPlayerProgressionData_ReturnValue) == 0x000290, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetPlayerProgressionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000298, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetItemProgressionData_ReturnValue) == 0x0002A0, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetItemProgressionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000388, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, K2Node_MakeStruct_SlateColor) == 0x000390, "Member 'PerkUpgradeButton_C_Initialize::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Map_Find_Value) == 0x0003B8, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Map_Find_ReturnValue) == 0x0003E0, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, K2Node_Select_Default_1) == 0x0003E8, "Member 'PerkUpgradeButton_C_Initialize::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_NotEqual_NameName_ReturnValue) == 0x000410, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, InIsLoadout) == 0x000188, "Member 'PerkUpgradeButton_C_Initialize::InIsLoadout' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, bInIsSlot) == 0x000189, "Member 'PerkUpgradeButton_C_Initialize::bInIsSlot' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, PlayerState) == 0x000190, "Member 'PerkUpgradeButton_C_Initialize::PlayerState' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, RB_Player_State) == 0x000198, "Member 'PerkUpgradeButton_C_Initialize::RB_Player_State' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, Temp_bool_Variable) == 0x0001A0, "Member 'PerkUpgradeButton_C_Initialize::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_IsValid_ReturnValue) == 0x0001A1, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, Temp_byte_Variable) == 0x0001A2, "Member 'PerkUpgradeButton_C_Initialize::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, Temp_byte_Variable_1) == 0x0001A3, "Member 'PerkUpgradeButton_C_Initialize::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Not_PreBool_ReturnValue) == 0x0001A4, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Not_PreBool_ReturnValue_1) == 0x0001A5, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue) == 0x0001A8, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_HasRecentlyBoughtUpgradeOfType_ReturnValue) == 0x000330, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_HasRecentlyBoughtUpgradeOfType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000331, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue) == 0x000332, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_1) == 0x000333, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_2) == 0x000334, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000335, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000336, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_WasUpgradeRecentlyBought_ReturnValue) == 0x000337, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_WasUpgradeRecentlyBought_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanOR_ReturnValue) == 0x000338, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_3) == 0x000339, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_4) == 0x00033A, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_WasSeenInMenu_ReturnValue) == 0x00033B, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_WasSeenInMenu_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Not_PreBool_ReturnValue_2) == 0x00033C, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_5) == 0x00033D, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanAND_ReturnValue_6) == 0x00033E, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_BooleanOR_ReturnValue_1) == 0x00033F, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetLocalPlayerState_ReturnValue) == 0x000340, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetLocalPlayerState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, K2Node_Select_Default) == 0x000348, "Member 'PerkUpgradeButton_C_Initialize::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetPlayerProgressionData_ReturnValue) == 0x000350, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetPlayerProgressionData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000358, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetItemProgressionData_ReturnValue) == 0x000360, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetItemProgressionData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x0004C8, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, K2Node_MakeStruct_SlateColor) == 0x0004D0, "Member 'PerkUpgradeButton_C_Initialize::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Map_Find_Value) == 0x0004F8, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_Map_Find_ReturnValue) == 0x000520, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, K2Node_MakeStruct_SlateColor_1) == 0x000528, "Member 'PerkUpgradeButton_C_Initialize::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, K2Node_Select_Default_1) == 0x000550, "Member 'PerkUpgradeButton_C_Initialize::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Initialize, CallFunc_NotEqual_NameName_ReturnValue) == 0x000578, "Member 'PerkUpgradeButton_C_Initialize::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
 
 // Function PerkUpgradeButton.PerkUpgradeButton_C.Initialize Locked Slot
 // 0x0028 (0x0028 - 0x0000)
@@ -224,12 +224,12 @@ public:
 	bool                                          InIsLoadout;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EPerkCategory                                 PerkCategory;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DBD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0018(0x0028)()
 	bool                                          CallFunc_HasRecentlyBoughtUpgradeOfType_ReturnValue; // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DBE[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -301,68 +301,97 @@ static_assert(sizeof(PerkUpgradeButton_C_OnFocusLost) == 0x000008, "Wrong size o
 static_assert(offsetof(PerkUpgradeButton_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'PerkUpgradeButton_C_OnFocusLost::InFocusEvent' has a wrong offset!");
 
 // Function PerkUpgradeButton.PerkUpgradeButton_C.Setup
-// 0x0128 (0x0128 - 0x0000)
+// 0x01B8 (0x01B8 - 0x0000)
 struct PerkUpgradeButton_C_Setup final
 {
 public:
-	ECurrencyType                                 Temp_byte_Variable;                                // 0x0000(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMenuUpgradeItemState                         Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_2;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_3;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_4;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_5;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_6;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_7;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_8;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_9;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBPlayerProgressionData*               CallFunc_GetLocalPlayerProgressionData_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRBItemProgressionData                 CallFunc_GetItemProgressionData_ReturnValue;       // 0x0018(0x00E8)(ConstParm)
-	int32                                         CallFunc_Map_Find_Value;                           // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Select_Default;                             // 0x0105(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DBF[0x2];                                     // 0x0106(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0108(0x0018)()
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0123(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMenuUpgradeItemState                         Temp_byte_Variable_2;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_2;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_3;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_4;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_5;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_6;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_7;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_8;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ECurrencyType                                 Temp_byte_Variable_3;                              // 0x000C(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMenuUpgradeItemState                         Temp_byte_Variable_4;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_9;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_10;                             // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_11;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_12;                             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_13;                             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_14;                             // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_15;                             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_16;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_17;                             // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_18;                             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_8;                              // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBPlayerProgressionData*               CallFunc_GetLocalPlayerProgressionData_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRBItemProgressionData                 CallFunc_GetItemProgressionData_ReturnValue;       // 0x0028(0x0168)(ConstParm)
+	int32                                         CallFunc_Map_Find_Value;                           // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Select_Default;                             // 0x0195(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_196[0x2];                                      // 0x0196(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0198(0x0018)()
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Select_Default_2;                           // 0x01B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x01B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_4;                           // 0x01B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PerkUpgradeButton_C_Setup) == 0x000008, "Wrong alignment on PerkUpgradeButton_C_Setup");
-static_assert(sizeof(PerkUpgradeButton_C_Setup) == 0x000128, "Wrong size on PerkUpgradeButton_C_Setup");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable) == 0x000000, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_1) == 0x000001, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable) == 0x000002, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_1) == 0x000003, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_2) == 0x000004, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_3) == 0x000005, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_4) == 0x000006, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_5) == 0x000007, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_6) == 0x000008, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_7) == 0x000009, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_8) == 0x00000A, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_8' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_2) == 0x00000B, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(sizeof(PerkUpgradeButton_C_Setup) == 0x0001B8, "Wrong size on PerkUpgradeButton_C_Setup");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable) == 0x000000, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable) == 0x000001, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_1) == 0x000002, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_2) == 0x000003, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_1) == 0x000004, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_2) == 0x000005, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_3) == 0x000006, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_3' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_4) == 0x000007, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_4' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_5) == 0x000008, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_5' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_6) == 0x000009, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_6' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_7) == 0x00000A, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_7' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_8) == 0x00000B, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_8' has a wrong offset!");
 static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_3) == 0x00000C, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_9) == 0x00000D, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_9' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_4) == 0x00000E, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_5) == 0x00000F, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_GetLocalPlayerProgressionData_ReturnValue) == 0x000010, "Member 'PerkUpgradeButton_C_Setup::CallFunc_GetLocalPlayerProgressionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_GetItemProgressionData_ReturnValue) == 0x000018, "Member 'PerkUpgradeButton_C_Setup::CallFunc_GetItemProgressionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_Map_Find_Value) == 0x000100, "Member 'PerkUpgradeButton_C_Setup::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_Map_Find_ReturnValue) == 0x000104, "Member 'PerkUpgradeButton_C_Setup::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, K2Node_Select_Default) == 0x000105, "Member 'PerkUpgradeButton_C_Setup::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_Conv_IntToText_ReturnValue) == 0x000108, "Member 'PerkUpgradeButton_C_Setup::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_Not_PreBool_ReturnValue) == 0x000120, "Member 'PerkUpgradeButton_C_Setup::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_BooleanAND_ReturnValue) == 0x000121, "Member 'PerkUpgradeButton_C_Setup::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, K2Node_Select_Default_1) == 0x000122, "Member 'PerkUpgradeButton_C_Setup::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_BooleanAND_ReturnValue_1) == 0x000123, "Member 'PerkUpgradeButton_C_Setup::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PerkUpgradeButton_C_Setup, K2Node_Select_Default_2) == 0x000124, "Member 'PerkUpgradeButton_C_Setup::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_4) == 0x00000D, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_9) == 0x00000E, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_9' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_10) == 0x00000F, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_10' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_11) == 0x000010, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_11' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_12) == 0x000011, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_12' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_13) == 0x000012, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_13' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_14) == 0x000013, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_14' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_15) == 0x000014, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_15' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_16) == 0x000015, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_16' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_17) == 0x000016, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_17' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_5) == 0x000017, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_6) == 0x000018, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_6' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_bool_Variable_18) == 0x000019, "Member 'PerkUpgradeButton_C_Setup::Temp_bool_Variable_18' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_7) == 0x00001A, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_7' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, Temp_byte_Variable_8) == 0x00001B, "Member 'PerkUpgradeButton_C_Setup::Temp_byte_Variable_8' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_GetLocalPlayerProgressionData_ReturnValue) == 0x000020, "Member 'PerkUpgradeButton_C_Setup::CallFunc_GetLocalPlayerProgressionData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_GetItemProgressionData_ReturnValue) == 0x000028, "Member 'PerkUpgradeButton_C_Setup::CallFunc_GetItemProgressionData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_Map_Find_Value) == 0x000190, "Member 'PerkUpgradeButton_C_Setup::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_Map_Find_ReturnValue) == 0x000194, "Member 'PerkUpgradeButton_C_Setup::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, K2Node_Select_Default) == 0x000195, "Member 'PerkUpgradeButton_C_Setup::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_Conv_IntToText_ReturnValue) == 0x000198, "Member 'PerkUpgradeButton_C_Setup::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_BooleanAND_ReturnValue) == 0x0001B0, "Member 'PerkUpgradeButton_C_Setup::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, K2Node_Select_Default_1) == 0x0001B1, "Member 'PerkUpgradeButton_C_Setup::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, K2Node_Select_Default_2) == 0x0001B2, "Member 'PerkUpgradeButton_C_Setup::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_Not_PreBool_ReturnValue) == 0x0001B3, "Member 'PerkUpgradeButton_C_Setup::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, CallFunc_BooleanAND_ReturnValue_1) == 0x0001B4, "Member 'PerkUpgradeButton_C_Setup::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, K2Node_Select_Default_3) == 0x0001B5, "Member 'PerkUpgradeButton_C_Setup::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(PerkUpgradeButton_C_Setup, K2Node_Select_Default_4) == 0x0001B6, "Member 'PerkUpgradeButton_C_Setup::K2Node_Select_Default_4' has a wrong offset!");
 
 // Function PerkUpgradeButton.PerkUpgradeButton_C.IsElementEmpty
 // 0x0001 (0x0001 - 0x0000)

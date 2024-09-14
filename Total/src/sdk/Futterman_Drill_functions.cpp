@@ -78,10 +78,10 @@ bool UFutterman_Drill_C::Received_NotifyEnd(class USkeletalMeshComponent* MeshCo
 // Parameters:
 // class USkeletalMeshComponent*           Mesh_Comp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Drill_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_DrillManual                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    DrillManual_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UFutterman_Drill_C::TryToSetFuttermanDrillVariable(class USkeletalMeshComponent* Mesh_Comp, bool Drill_Value, bool Param_DrillManual, bool* Result) const
+void UFutterman_Drill_C::TryToSetFuttermanDrillVariable(class USkeletalMeshComponent* Mesh_Comp, bool Drill_Value, bool DrillManual_0, bool* Result) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -92,7 +92,7 @@ void UFutterman_Drill_C::TryToSetFuttermanDrillVariable(class USkeletalMeshCompo
 
 	Parms.Mesh_Comp = Mesh_Comp;
 	Parms.Drill_Value = Drill_Value;
-	Parms.Param_DrillManual = Param_DrillManual;
+	Parms.DrillManual_0 = DrillManual_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

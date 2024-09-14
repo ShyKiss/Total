@@ -22,77 +22,77 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass RBPlayer_BP.RBPlayer_BP_C
-// 0x0230 (0x79B0 - 0x7780)
+// 0x0230 (0x7BA0 - 0x7970)
 class ARBPlayer_BP_C final : public ARBPlayer
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x7780(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Ngr_PlayerDamaged_Electric;                        // 0x7788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Ngr_AcidCamSplash;                                 // 0x7790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               UnderwaterBubbles;                                 // 0x7798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Watch;                                             // 0x77A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Ngr_UnderwaterBubble;                              // 0x77A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Ngr_TraproomGas;                                   // 0x77B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Lens_R;                                            // 0x77B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Lens_L;                                            // 0x77C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 NightVision1P;                                     // 0x77C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        ProxyLightDir;                                     // 0x77D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   ShadowPickupStatic;                                // 0x77D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 ShadowPickupSkeletal;                              // 0x77E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Ngr_ElectricHit;                                   // 0x77E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URBPlayerSkelMeshComponent*             ESOP;                                              // 0x77F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   ESOP_Battery;                                      // 0x77F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   ESOP_Apparatus;                                    // 0x7800(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 HeadCap1P;                                         // 0x7808(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 HairMesh3P;                                        // 0x7810(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 GloveMesh3P;                                       // 0x7818(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    ProxyLight;                                        // 0x7820(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 Straps;                                            // 0x7828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 NightVision;                                       // 0x7830(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 LegsMesh3P;                                        // 0x7838(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 TorsoMesh3P;                                       // 0x7840(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 HeadMesh3P;                                        // 0x7848(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPlayerVisualDamageStruct>      DamagedBones;                                      // 0x7850(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
-	FMulticastInlineDelegateProperty_             Deleteme;                                          // 0x7860(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class USceneComponent*>                ShadowMesh_Visual;                                 // 0x7870(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UPrimitiveComponent*>            ShadowMesh_Shadow;                                 // 0x7880(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class USkeletalMeshComponent*>         ExtraCustomizationMeshes;                          // 0x7890(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	bool                                          CreatedShadowMesh;                                 // 0x78A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          HasInitReplicated;                                 // 0x78A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          HasReceivedInitialCustomization;                   // 0x78A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B81[0x5];                                     // 0x78A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             ShadowMeshCompleted;                               // 0x78A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	float                                         CorpseSearchBloodHandStartTime;                    // 0x78B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DesiredRightHandBloodIntensity;                    // 0x78BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CorpseSearchBloodDuration;                         // 0x78C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CurrentRightHandBloodIntensity;                    // 0x78C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HandBloodInterpSpeed;                              // 0x78C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B82[0x4];                                     // 0x78CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class USkeletalMesh>           DefaultNV1PMesh;                                   // 0x78D0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	float                                         NextBloodDripDelay;                                // 0x78F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LastBloodDripTimestamp;                            // 0x78FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LastDownedStateSmearTimestamp;                     // 0x7900(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B83[0x4];                                     // 0x7904(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInstanceConstant*>      DynamicBloodSplatterMaterials;                     // 0x7908(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UMaterialInstanceConstant*>      DynamicBloodSplatterMaterials_Shuffled;            // 0x7918(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                         NextDownedStateSmearDelay;                         // 0x7928(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B84[0x4];                                     // 0x792C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInstanceConstant*>      DynamicStraightBloodSmearMaterials;                // 0x7930(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                         TravelledDist;                                     // 0x7940(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DamageVisualPreviousLocation;                      // 0x7944(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               DamageVisualPreviousRotation;                      // 0x7950(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B85[0x4];                                     // 0x795C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInstanceConstant*>      DynamicRoundBloodSmearMaterials;                   // 0x7960(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UPoseAsset*                             FacePoseAsset;                                     // 0x7970(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LastLocationDataTimestamp;                         // 0x7978(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NextLongBloodDripDelay;                            // 0x797C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LastLongBloodDripTimestamp;                        // 0x7980(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B86[0x4];                                     // 0x7984(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   ApparatusShadowMesh;                               // 0x7988(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 MainShadowMesh;                                    // 0x7990(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HealthRatio_Local;                                 // 0x7998(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B87[0x4];                                     // 0x799C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPrimitiveComponent*>            CharacterBloodReleventVisualComponents;            // 0x79A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x7970(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Ngr_PlayerDamaged_Electric;                        // 0x7978(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Ngr_AcidCamSplash;                                 // 0x7980(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               UnderwaterBubbles;                                 // 0x7988(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Watch;                                             // 0x7990(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Ngr_UnderwaterBubble;                              // 0x7998(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Ngr_TraproomGas;                                   // 0x79A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Lens_R;                                            // 0x79A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Lens_L;                                            // 0x79B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 NightVision1P;                                     // 0x79B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        ProxyLightDir;                                     // 0x79C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ShadowPickupStatic;                                // 0x79C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 ShadowPickupSkeletal;                              // 0x79D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Ngr_ElectricHit;                                   // 0x79D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class URBPlayerSkelMeshComponent*             ESOP;                                              // 0x79E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ESOP_Battery;                                      // 0x79E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ESOP_Apparatus;                                    // 0x79F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 HeadCap1P;                                         // 0x79F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 HairMesh3P;                                        // 0x7A00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 GloveMesh3P;                                       // 0x7A08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    ProxyLight;                                        // 0x7A10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 Straps;                                            // 0x7A18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 NightVision;                                       // 0x7A20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 LegsMesh3P;                                        // 0x7A28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 TorsoMesh3P;                                       // 0x7A30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 HeadMesh3P;                                        // 0x7A38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPlayerVisualDamageStruct>      DamagedBones;                                      // 0x7A40(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
+	FMulticastInlineDelegateProperty_             Deleteme;                                          // 0x7A50(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<class USceneComponent*>                ShadowMesh_Visual;                                 // 0x7A60(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UPrimitiveComponent*>            ShadowMesh_Shadow;                                 // 0x7A70(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class USkeletalMeshComponent*>         ExtraCustomizationMeshes;                          // 0x7A80(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	bool                                          CreatedShadowMesh;                                 // 0x7A90(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          HasInitReplicated;                                 // 0x7A91(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          HasReceivedInitialCustomization;                   // 0x7A92(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7A93[0x5];                                     // 0x7A93(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             ShadowMeshCompleted;                               // 0x7A98(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	float                                         CorpseSearchBloodHandStartTime;                    // 0x7AA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DesiredRightHandBloodIntensity;                    // 0x7AAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CorpseSearchBloodDuration;                         // 0x7AB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CurrentRightHandBloodIntensity;                    // 0x7AB4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HandBloodInterpSpeed;                              // 0x7AB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7ABC[0x4];                                     // 0x7ABC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class USkeletalMesh>           DefaultNV1PMesh;                                   // 0x7AC0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	float                                         NextBloodDripDelay;                                // 0x7AE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LastBloodDripTimestamp;                            // 0x7AEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LastDownedStateSmearTimestamp;                     // 0x7AF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7AF4[0x4];                                     // 0x7AF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInstanceConstant*>      DynamicBloodSplatterMaterials;                     // 0x7AF8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UMaterialInstanceConstant*>      DynamicBloodSplatterMaterials_Shuffled;            // 0x7B08(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         NextDownedStateSmearDelay;                         // 0x7B18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7B1C[0x4];                                     // 0x7B1C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInstanceConstant*>      DynamicStraightBloodSmearMaterials;                // 0x7B20(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         TravelledDist;                                     // 0x7B30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DamageVisualPreviousLocation;                      // 0x7B34(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               DamageVisualPreviousRotation;                      // 0x7B40(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7B4C[0x4];                                     // 0x7B4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInstanceConstant*>      DynamicRoundBloodSmearMaterials;                   // 0x7B50(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UPoseAsset*                             FacePoseAsset;                                     // 0x7B60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LastLocationDataTimestamp;                         // 0x7B68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NextLongBloodDripDelay;                            // 0x7B6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LastLongBloodDripTimestamp;                        // 0x7B70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7B74[0x4];                                     // 0x7B74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   ApparatusShadowMesh;                               // 0x7B78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 MainShadowMesh;                                    // 0x7B80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HealthRatio_Local;                                 // 0x7B88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7B8C[0x4];                                     // 0x7B8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPrimitiveComponent*>            CharacterBloodReleventVisualComponents;            // 0x7B90(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void Deleteme__DelegateSignature();
@@ -102,7 +102,7 @@ public:
 	void Event_OnActiveSkillRestrictionStarted();
 	void SkinnerMan();
 	void Event_OnRemainingRespawnIncreased();
-	void Event_OnActiveSkillActorChanged(class AActor* Param_ActiveSkillActor);
+	void Event_OnActiveSkillActorChanged(class AActor* ActiveSkillActor_0);
 	void Event_OnHealthRestored();
 	void UnderwaterStateChanged(bool bIsUnderwater);
 	void ApplyDefaultNV();
@@ -162,6 +162,7 @@ public:
 	void UpdateESOPVisibility();
 	void UpdateShadowActiveSkill();
 	void CopyMaterialsToShadowMesh(class UMeshComponent* PlayerMesh, class UMeshComponent* ShadowMesh);
+	void CopyPrimitiveDataToShadowMesh(class UMeshComponent* PlayerMesh, class UMeshComponent* ShadowMesh);
 	void UpdateUnderwaterFX();
 	void DebugShadowMesh();
 	void OnRep_DamagedBones();
@@ -186,67 +187,67 @@ public:
 	}
 };
 static_assert(alignof(ARBPlayer_BP_C) == 0x000010, "Wrong alignment on ARBPlayer_BP_C");
-static_assert(sizeof(ARBPlayer_BP_C) == 0x0079B0, "Wrong size on ARBPlayer_BP_C");
-static_assert(offsetof(ARBPlayer_BP_C, UberGraphFrame) == 0x007780, "Member 'ARBPlayer_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Ngr_PlayerDamaged_Electric) == 0x007788, "Member 'ARBPlayer_BP_C::Ngr_PlayerDamaged_Electric' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Ngr_AcidCamSplash) == 0x007790, "Member 'ARBPlayer_BP_C::Ngr_AcidCamSplash' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, UnderwaterBubbles) == 0x007798, "Member 'ARBPlayer_BP_C::UnderwaterBubbles' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Watch) == 0x0077A0, "Member 'ARBPlayer_BP_C::Watch' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Ngr_UnderwaterBubble) == 0x0077A8, "Member 'ARBPlayer_BP_C::Ngr_UnderwaterBubble' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Ngr_TraproomGas) == 0x0077B0, "Member 'ARBPlayer_BP_C::Ngr_TraproomGas' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Lens_R) == 0x0077B8, "Member 'ARBPlayer_BP_C::Lens_R' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Lens_L) == 0x0077C0, "Member 'ARBPlayer_BP_C::Lens_L' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, NightVision1P) == 0x0077C8, "Member 'ARBPlayer_BP_C::NightVision1P' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ProxyLightDir) == 0x0077D0, "Member 'ARBPlayer_BP_C::ProxyLightDir' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ShadowPickupStatic) == 0x0077D8, "Member 'ARBPlayer_BP_C::ShadowPickupStatic' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ShadowPickupSkeletal) == 0x0077E0, "Member 'ARBPlayer_BP_C::ShadowPickupSkeletal' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Ngr_ElectricHit) == 0x0077E8, "Member 'ARBPlayer_BP_C::Ngr_ElectricHit' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ESOP) == 0x0077F0, "Member 'ARBPlayer_BP_C::ESOP' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ESOP_Battery) == 0x0077F8, "Member 'ARBPlayer_BP_C::ESOP_Battery' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ESOP_Apparatus) == 0x007800, "Member 'ARBPlayer_BP_C::ESOP_Apparatus' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, HeadCap1P) == 0x007808, "Member 'ARBPlayer_BP_C::HeadCap1P' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, HairMesh3P) == 0x007810, "Member 'ARBPlayer_BP_C::HairMesh3P' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, GloveMesh3P) == 0x007818, "Member 'ARBPlayer_BP_C::GloveMesh3P' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ProxyLight) == 0x007820, "Member 'ARBPlayer_BP_C::ProxyLight' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Straps) == 0x007828, "Member 'ARBPlayer_BP_C::Straps' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, NightVision) == 0x007830, "Member 'ARBPlayer_BP_C::NightVision' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, LegsMesh3P) == 0x007838, "Member 'ARBPlayer_BP_C::LegsMesh3P' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, TorsoMesh3P) == 0x007840, "Member 'ARBPlayer_BP_C::TorsoMesh3P' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, HeadMesh3P) == 0x007848, "Member 'ARBPlayer_BP_C::HeadMesh3P' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, DamagedBones) == 0x007850, "Member 'ARBPlayer_BP_C::DamagedBones' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, Deleteme) == 0x007860, "Member 'ARBPlayer_BP_C::Deleteme' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ShadowMesh_Visual) == 0x007870, "Member 'ARBPlayer_BP_C::ShadowMesh_Visual' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ShadowMesh_Shadow) == 0x007880, "Member 'ARBPlayer_BP_C::ShadowMesh_Shadow' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ExtraCustomizationMeshes) == 0x007890, "Member 'ARBPlayer_BP_C::ExtraCustomizationMeshes' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, CreatedShadowMesh) == 0x0078A0, "Member 'ARBPlayer_BP_C::CreatedShadowMesh' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, HasInitReplicated) == 0x0078A1, "Member 'ARBPlayer_BP_C::HasInitReplicated' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, HasReceivedInitialCustomization) == 0x0078A2, "Member 'ARBPlayer_BP_C::HasReceivedInitialCustomization' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ShadowMeshCompleted) == 0x0078A8, "Member 'ARBPlayer_BP_C::ShadowMeshCompleted' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, CorpseSearchBloodHandStartTime) == 0x0078B8, "Member 'ARBPlayer_BP_C::CorpseSearchBloodHandStartTime' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, DesiredRightHandBloodIntensity) == 0x0078BC, "Member 'ARBPlayer_BP_C::DesiredRightHandBloodIntensity' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, CorpseSearchBloodDuration) == 0x0078C0, "Member 'ARBPlayer_BP_C::CorpseSearchBloodDuration' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, CurrentRightHandBloodIntensity) == 0x0078C4, "Member 'ARBPlayer_BP_C::CurrentRightHandBloodIntensity' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, HandBloodInterpSpeed) == 0x0078C8, "Member 'ARBPlayer_BP_C::HandBloodInterpSpeed' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, DefaultNV1PMesh) == 0x0078D0, "Member 'ARBPlayer_BP_C::DefaultNV1PMesh' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, NextBloodDripDelay) == 0x0078F8, "Member 'ARBPlayer_BP_C::NextBloodDripDelay' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, LastBloodDripTimestamp) == 0x0078FC, "Member 'ARBPlayer_BP_C::LastBloodDripTimestamp' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, LastDownedStateSmearTimestamp) == 0x007900, "Member 'ARBPlayer_BP_C::LastDownedStateSmearTimestamp' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, DynamicBloodSplatterMaterials) == 0x007908, "Member 'ARBPlayer_BP_C::DynamicBloodSplatterMaterials' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, DynamicBloodSplatterMaterials_Shuffled) == 0x007918, "Member 'ARBPlayer_BP_C::DynamicBloodSplatterMaterials_Shuffled' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, NextDownedStateSmearDelay) == 0x007928, "Member 'ARBPlayer_BP_C::NextDownedStateSmearDelay' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, DynamicStraightBloodSmearMaterials) == 0x007930, "Member 'ARBPlayer_BP_C::DynamicStraightBloodSmearMaterials' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, TravelledDist) == 0x007940, "Member 'ARBPlayer_BP_C::TravelledDist' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, DamageVisualPreviousLocation) == 0x007944, "Member 'ARBPlayer_BP_C::DamageVisualPreviousLocation' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, DamageVisualPreviousRotation) == 0x007950, "Member 'ARBPlayer_BP_C::DamageVisualPreviousRotation' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, DynamicRoundBloodSmearMaterials) == 0x007960, "Member 'ARBPlayer_BP_C::DynamicRoundBloodSmearMaterials' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, FacePoseAsset) == 0x007970, "Member 'ARBPlayer_BP_C::FacePoseAsset' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, LastLocationDataTimestamp) == 0x007978, "Member 'ARBPlayer_BP_C::LastLocationDataTimestamp' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, NextLongBloodDripDelay) == 0x00797C, "Member 'ARBPlayer_BP_C::NextLongBloodDripDelay' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, LastLongBloodDripTimestamp) == 0x007980, "Member 'ARBPlayer_BP_C::LastLongBloodDripTimestamp' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, ApparatusShadowMesh) == 0x007988, "Member 'ARBPlayer_BP_C::ApparatusShadowMesh' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, MainShadowMesh) == 0x007990, "Member 'ARBPlayer_BP_C::MainShadowMesh' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, HealthRatio_Local) == 0x007998, "Member 'ARBPlayer_BP_C::HealthRatio_Local' has a wrong offset!");
-static_assert(offsetof(ARBPlayer_BP_C, CharacterBloodReleventVisualComponents) == 0x0079A0, "Member 'ARBPlayer_BP_C::CharacterBloodReleventVisualComponents' has a wrong offset!");
+static_assert(sizeof(ARBPlayer_BP_C) == 0x007BA0, "Wrong size on ARBPlayer_BP_C");
+static_assert(offsetof(ARBPlayer_BP_C, UberGraphFrame) == 0x007970, "Member 'ARBPlayer_BP_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Ngr_PlayerDamaged_Electric) == 0x007978, "Member 'ARBPlayer_BP_C::Ngr_PlayerDamaged_Electric' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Ngr_AcidCamSplash) == 0x007980, "Member 'ARBPlayer_BP_C::Ngr_AcidCamSplash' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, UnderwaterBubbles) == 0x007988, "Member 'ARBPlayer_BP_C::UnderwaterBubbles' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Watch) == 0x007990, "Member 'ARBPlayer_BP_C::Watch' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Ngr_UnderwaterBubble) == 0x007998, "Member 'ARBPlayer_BP_C::Ngr_UnderwaterBubble' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Ngr_TraproomGas) == 0x0079A0, "Member 'ARBPlayer_BP_C::Ngr_TraproomGas' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Lens_R) == 0x0079A8, "Member 'ARBPlayer_BP_C::Lens_R' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Lens_L) == 0x0079B0, "Member 'ARBPlayer_BP_C::Lens_L' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, NightVision1P) == 0x0079B8, "Member 'ARBPlayer_BP_C::NightVision1P' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ProxyLightDir) == 0x0079C0, "Member 'ARBPlayer_BP_C::ProxyLightDir' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ShadowPickupStatic) == 0x0079C8, "Member 'ARBPlayer_BP_C::ShadowPickupStatic' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ShadowPickupSkeletal) == 0x0079D0, "Member 'ARBPlayer_BP_C::ShadowPickupSkeletal' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Ngr_ElectricHit) == 0x0079D8, "Member 'ARBPlayer_BP_C::Ngr_ElectricHit' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ESOP) == 0x0079E0, "Member 'ARBPlayer_BP_C::ESOP' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ESOP_Battery) == 0x0079E8, "Member 'ARBPlayer_BP_C::ESOP_Battery' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ESOP_Apparatus) == 0x0079F0, "Member 'ARBPlayer_BP_C::ESOP_Apparatus' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, HeadCap1P) == 0x0079F8, "Member 'ARBPlayer_BP_C::HeadCap1P' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, HairMesh3P) == 0x007A00, "Member 'ARBPlayer_BP_C::HairMesh3P' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, GloveMesh3P) == 0x007A08, "Member 'ARBPlayer_BP_C::GloveMesh3P' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ProxyLight) == 0x007A10, "Member 'ARBPlayer_BP_C::ProxyLight' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Straps) == 0x007A18, "Member 'ARBPlayer_BP_C::Straps' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, NightVision) == 0x007A20, "Member 'ARBPlayer_BP_C::NightVision' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, LegsMesh3P) == 0x007A28, "Member 'ARBPlayer_BP_C::LegsMesh3P' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, TorsoMesh3P) == 0x007A30, "Member 'ARBPlayer_BP_C::TorsoMesh3P' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, HeadMesh3P) == 0x007A38, "Member 'ARBPlayer_BP_C::HeadMesh3P' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, DamagedBones) == 0x007A40, "Member 'ARBPlayer_BP_C::DamagedBones' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, Deleteme) == 0x007A50, "Member 'ARBPlayer_BP_C::Deleteme' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ShadowMesh_Visual) == 0x007A60, "Member 'ARBPlayer_BP_C::ShadowMesh_Visual' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ShadowMesh_Shadow) == 0x007A70, "Member 'ARBPlayer_BP_C::ShadowMesh_Shadow' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ExtraCustomizationMeshes) == 0x007A80, "Member 'ARBPlayer_BP_C::ExtraCustomizationMeshes' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, CreatedShadowMesh) == 0x007A90, "Member 'ARBPlayer_BP_C::CreatedShadowMesh' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, HasInitReplicated) == 0x007A91, "Member 'ARBPlayer_BP_C::HasInitReplicated' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, HasReceivedInitialCustomization) == 0x007A92, "Member 'ARBPlayer_BP_C::HasReceivedInitialCustomization' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ShadowMeshCompleted) == 0x007A98, "Member 'ARBPlayer_BP_C::ShadowMeshCompleted' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, CorpseSearchBloodHandStartTime) == 0x007AA8, "Member 'ARBPlayer_BP_C::CorpseSearchBloodHandStartTime' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, DesiredRightHandBloodIntensity) == 0x007AAC, "Member 'ARBPlayer_BP_C::DesiredRightHandBloodIntensity' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, CorpseSearchBloodDuration) == 0x007AB0, "Member 'ARBPlayer_BP_C::CorpseSearchBloodDuration' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, CurrentRightHandBloodIntensity) == 0x007AB4, "Member 'ARBPlayer_BP_C::CurrentRightHandBloodIntensity' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, HandBloodInterpSpeed) == 0x007AB8, "Member 'ARBPlayer_BP_C::HandBloodInterpSpeed' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, DefaultNV1PMesh) == 0x007AC0, "Member 'ARBPlayer_BP_C::DefaultNV1PMesh' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, NextBloodDripDelay) == 0x007AE8, "Member 'ARBPlayer_BP_C::NextBloodDripDelay' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, LastBloodDripTimestamp) == 0x007AEC, "Member 'ARBPlayer_BP_C::LastBloodDripTimestamp' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, LastDownedStateSmearTimestamp) == 0x007AF0, "Member 'ARBPlayer_BP_C::LastDownedStateSmearTimestamp' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, DynamicBloodSplatterMaterials) == 0x007AF8, "Member 'ARBPlayer_BP_C::DynamicBloodSplatterMaterials' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, DynamicBloodSplatterMaterials_Shuffled) == 0x007B08, "Member 'ARBPlayer_BP_C::DynamicBloodSplatterMaterials_Shuffled' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, NextDownedStateSmearDelay) == 0x007B18, "Member 'ARBPlayer_BP_C::NextDownedStateSmearDelay' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, DynamicStraightBloodSmearMaterials) == 0x007B20, "Member 'ARBPlayer_BP_C::DynamicStraightBloodSmearMaterials' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, TravelledDist) == 0x007B30, "Member 'ARBPlayer_BP_C::TravelledDist' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, DamageVisualPreviousLocation) == 0x007B34, "Member 'ARBPlayer_BP_C::DamageVisualPreviousLocation' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, DamageVisualPreviousRotation) == 0x007B40, "Member 'ARBPlayer_BP_C::DamageVisualPreviousRotation' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, DynamicRoundBloodSmearMaterials) == 0x007B50, "Member 'ARBPlayer_BP_C::DynamicRoundBloodSmearMaterials' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, FacePoseAsset) == 0x007B60, "Member 'ARBPlayer_BP_C::FacePoseAsset' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, LastLocationDataTimestamp) == 0x007B68, "Member 'ARBPlayer_BP_C::LastLocationDataTimestamp' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, NextLongBloodDripDelay) == 0x007B6C, "Member 'ARBPlayer_BP_C::NextLongBloodDripDelay' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, LastLongBloodDripTimestamp) == 0x007B70, "Member 'ARBPlayer_BP_C::LastLongBloodDripTimestamp' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, ApparatusShadowMesh) == 0x007B78, "Member 'ARBPlayer_BP_C::ApparatusShadowMesh' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, MainShadowMesh) == 0x007B80, "Member 'ARBPlayer_BP_C::MainShadowMesh' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, HealthRatio_Local) == 0x007B88, "Member 'ARBPlayer_BP_C::HealthRatio_Local' has a wrong offset!");
+static_assert(offsetof(ARBPlayer_BP_C, CharacterBloodReleventVisualComponents) == 0x007B90, "Member 'ARBPlayer_BP_C::CharacterBloodReleventVisualComponents' has a wrong offset!");
 
 }
 

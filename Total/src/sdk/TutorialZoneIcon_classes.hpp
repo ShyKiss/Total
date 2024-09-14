@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TutorialZoneIcon.TutorialZoneIcon_C
-// 0x0010 (0x0350 - 0x0340)
+// 0x0010 (0x0360 - 0x0350)
 class UTutorialZoneIcon_C final : public UURBHUDTutorialZoneIcon
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0340(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Icon;                                              // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Icon;                                              // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_TutorialZoneIcon(int32 EntryPoint);
@@ -43,9 +43,9 @@ public:
 	}
 };
 static_assert(alignof(UTutorialZoneIcon_C) == 0x000008, "Wrong alignment on UTutorialZoneIcon_C");
-static_assert(sizeof(UTutorialZoneIcon_C) == 0x000350, "Wrong size on UTutorialZoneIcon_C");
-static_assert(offsetof(UTutorialZoneIcon_C, UberGraphFrame) == 0x000340, "Member 'UTutorialZoneIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTutorialZoneIcon_C, Icon) == 0x000348, "Member 'UTutorialZoneIcon_C::Icon' has a wrong offset!");
+static_assert(sizeof(UTutorialZoneIcon_C) == 0x000360, "Wrong size on UTutorialZoneIcon_C");
+static_assert(offsetof(UTutorialZoneIcon_C, UberGraphFrame) == 0x000350, "Member 'UTutorialZoneIcon_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTutorialZoneIcon_C, Icon) == 0x000358, "Member 'UTutorialZoneIcon_C::Icon' has a wrong offset!");
 
 }
 

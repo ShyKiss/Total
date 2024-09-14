@@ -37,6 +37,20 @@ void UTasksMenu_C::ExecuteUbergraph_TasksMenu(int32 EntryPoint)
 }
 
 
+// Function TasksMenu.TasksMenu_C.OnPopShortcutPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UTasksMenu_C::OnPopShortcutPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksMenu_C", "OnPopShortcutPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function TasksMenu.TasksMenu_C.BndEvt__TasksMenu_ExitButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:

@@ -20,9 +20,9 @@ namespace SDK
 // Function SocialMenu_ContextualMenu_Action.SocialMenu_ContextualMenu_Action_C.OnActionTriggered__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ERBSocialMenuEntryAction                Param_Action                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ERBSocialMenuEntryAction                Action_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USocialMenu_ContextualMenu_Action_C::OnActionTriggered__DelegateSignature(ERBSocialMenuEntryAction Param_Action)
+void USocialMenu_ContextualMenu_Action_C::OnActionTriggered__DelegateSignature(ERBSocialMenuEntryAction Action_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void USocialMenu_ContextualMenu_Action_C::OnActionTriggered__DelegateSignature(E
 
 	Params::SocialMenu_ContextualMenu_Action_C_OnActionTriggered__DelegateSignature Parms{};
 
-	Parms.Param_Action = Param_Action;
+	Parms.Action_0 = Action_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

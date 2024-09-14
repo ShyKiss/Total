@@ -41,12 +41,12 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2AD1[0x1];                                     // 0x0027(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_27[0x1];                                       // 0x0027(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue_1;             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AD2[0x2];                                     // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_PostEventGlobal_ReturnValue;              // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -77,46 +77,96 @@ static_assert(sizeof(RBMenuButton_C_PreConstruct) == 0x000001, "Wrong size on RB
 static_assert(offsetof(RBMenuButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'RBMenuButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function RBMenuButton.RBMenuButton_C.UpdateInputImage
-// 0x0040 (0x0040 - 0x0000)
+// 0x007C (0x007C - 0x0000)
 struct RBMenuButton_C_UpdateInputImage final
 {
 public:
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AD3[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin_1;                        // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable;                               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_1;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable_2;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_3;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_3;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable_4;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_4;                              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable_5;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_6;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_5;                              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_6;                              // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default;                             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default_1;                           // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x003C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0044(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue_2;                  // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x004F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         K2Node_Select_Default_2;                           // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default_3;                           // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default_4;                           // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default_5;                           // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_6;                           // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RBMenuButton_C_UpdateInputImage) == 0x000008, "Wrong alignment on RBMenuButton_C_UpdateInputImage");
-static_assert(sizeof(RBMenuButton_C_UpdateInputImage) == 0x000040, "Wrong size on RBMenuButton_C_UpdateInputImage");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_MakeStruct_Margin) == 0x000000, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_bool_Variable) == 0x000010, "Member 'RBMenuButton_C_UpdateInputImage::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_byte_Variable) == 0x000011, "Member 'RBMenuButton_C_UpdateInputImage::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_byte_Variable_1) == 0x000012, "Member 'RBMenuButton_C_UpdateInputImage::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanAND_ReturnValue) == 0x000013, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000018, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_MakeStruct_Margin_1) == 0x000020, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_MakeStruct_Margin_1' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_Conv_StringToName_ReturnValue) == 0x000030, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000038, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_Not_PreBool_ReturnValue) == 0x000039, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_IsEmpty_ReturnValue) == 0x00003A, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanAND_ReturnValue_1) == 0x00003B, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanOR_ReturnValue) == 0x00003C, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanAND_ReturnValue_2) == 0x00003D, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanOR_ReturnValue_1) == 0x00003E, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_Select_Default) == 0x00003F, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_Select_Default' has a wrong offset!");
+static_assert(alignof(RBMenuButton_C_UpdateInputImage) == 0x000004, "Wrong alignment on RBMenuButton_C_UpdateInputImage");
+static_assert(sizeof(RBMenuButton_C_UpdateInputImage) == 0x00007C, "Wrong size on RBMenuButton_C_UpdateInputImage");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_bool_Variable) == 0x000000, "Member 'RBMenuButton_C_UpdateInputImage::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_float_Variable) == 0x000004, "Member 'RBMenuButton_C_UpdateInputImage::Temp_float_Variable' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_float_Variable_1) == 0x000008, "Member 'RBMenuButton_C_UpdateInputImage::Temp_float_Variable_1' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_bool_Variable_1) == 0x00000C, "Member 'RBMenuButton_C_UpdateInputImage::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_float_Variable_2) == 0x000010, "Member 'RBMenuButton_C_UpdateInputImage::Temp_float_Variable_2' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_float_Variable_3) == 0x000014, "Member 'RBMenuButton_C_UpdateInputImage::Temp_float_Variable_3' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_bool_Variable_2) == 0x000018, "Member 'RBMenuButton_C_UpdateInputImage::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_bool_Variable_3) == 0x000019, "Member 'RBMenuButton_C_UpdateInputImage::Temp_bool_Variable_3' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_float_Variable_4) == 0x00001C, "Member 'RBMenuButton_C_UpdateInputImage::Temp_float_Variable_4' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_bool_Variable_4) == 0x000020, "Member 'RBMenuButton_C_UpdateInputImage::Temp_bool_Variable_4' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_float_Variable_5) == 0x000024, "Member 'RBMenuButton_C_UpdateInputImage::Temp_float_Variable_5' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_float_Variable_6) == 0x000028, "Member 'RBMenuButton_C_UpdateInputImage::Temp_float_Variable_6' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_bool_Variable_5) == 0x00002C, "Member 'RBMenuButton_C_UpdateInputImage::Temp_bool_Variable_5' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_bool_Variable_6) == 0x00002D, "Member 'RBMenuButton_C_UpdateInputImage::Temp_bool_Variable_6' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_byte_Variable) == 0x00002E, "Member 'RBMenuButton_C_UpdateInputImage::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, Temp_byte_Variable_1) == 0x00002F, "Member 'RBMenuButton_C_UpdateInputImage::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_Select_Default) == 0x000030, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_Select_Default_1) == 0x000034, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanAND_ReturnValue) == 0x000038, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_MakeVector2D_ReturnValue) == 0x00003C, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_Conv_StringToName_ReturnValue) == 0x000044, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_IsVisible_ReturnValue) == 0x00004C, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_IsVisible_ReturnValue_1) == 0x00004D, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_IsVisible_ReturnValue_2) == 0x00004E, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_IsVisible_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x00004F, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_Select_Default_2) == 0x000050, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_Not_PreBool_ReturnValue) == 0x000054, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_Select_Default_3) == 0x000058, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanAND_ReturnValue_1) == 0x00005C, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_Select_Default_4) == 0x000060, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_Select_Default_4' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanOR_ReturnValue) == 0x000064, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_Select_Default_5) == 0x000068, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_Select_Default_5' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanAND_ReturnValue_2) == 0x00006C, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_MakeVector2D_ReturnValue_1) == 0x000070, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_BooleanOR_ReturnValue_1) == 0x000078, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, K2Node_Select_Default_6) == 0x000079, "Member 'RBMenuButton_C_UpdateInputImage::K2Node_Select_Default_6' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_UpdateInputImage, CallFunc_IsEmpty_ReturnValue) == 0x00007A, "Member 'RBMenuButton_C_UpdateInputImage::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
 
 // Function RBMenuButton.RBMenuButton_C.UpdateButtonText
 // 0x0020 (0x0020 - 0x0000)
@@ -144,11 +194,11 @@ static_assert(offsetof(RBMenuButton_C_UpdateButtonText, K2Node_Select_Default) =
 struct RBMenuButton_C_SetActionName final
 {
 public:
-	class FString                                 Param_ActionName;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 ActionName_0;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RBMenuButton_C_SetActionName) == 0x000008, "Wrong alignment on RBMenuButton_C_SetActionName");
 static_assert(sizeof(RBMenuButton_C_SetActionName) == 0x000010, "Wrong size on RBMenuButton_C_SetActionName");
-static_assert(offsetof(RBMenuButton_C_SetActionName, Param_ActionName) == 0x000000, "Member 'RBMenuButton_C_SetActionName::Param_ActionName' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_SetActionName, ActionName_0) == 0x000000, "Member 'RBMenuButton_C_SetActionName::ActionName_0' has a wrong offset!");
 
 // Function RBMenuButton.RBMenuButton_C.UpdateButtonTextIcon
 // 0x0010 (0x0010 - 0x0000)
@@ -156,7 +206,7 @@ struct RBMenuButton_C_UpdateButtonTextIcon final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AD4[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RBMenuButton_C_UpdateButtonTextIcon) == 0x000008, "Wrong alignment on RBMenuButton_C_UpdateButtonTextIcon");
@@ -169,15 +219,15 @@ static_assert(offsetof(RBMenuButton_C_UpdateButtonTextIcon, CallFunc_SlotAsHoriz
 struct RBMenuButton_C_SetButtonIconDetails final
 {
 public:
-	class UTexture2D*                             Param_ButtonIconTexture;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Param_ButtonIconSize;                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                Param_ButtonIconPadding;                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UTexture2D*                             ButtonIconTexture_0;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ButtonIconSize_0;                                  // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                ButtonIconPadding_0;                               // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(RBMenuButton_C_SetButtonIconDetails) == 0x000008, "Wrong alignment on RBMenuButton_C_SetButtonIconDetails");
 static_assert(sizeof(RBMenuButton_C_SetButtonIconDetails) == 0x000020, "Wrong size on RBMenuButton_C_SetButtonIconDetails");
-static_assert(offsetof(RBMenuButton_C_SetButtonIconDetails, Param_ButtonIconTexture) == 0x000000, "Member 'RBMenuButton_C_SetButtonIconDetails::Param_ButtonIconTexture' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_SetButtonIconDetails, Param_ButtonIconSize) == 0x000008, "Member 'RBMenuButton_C_SetButtonIconDetails::Param_ButtonIconSize' has a wrong offset!");
-static_assert(offsetof(RBMenuButton_C_SetButtonIconDetails, Param_ButtonIconPadding) == 0x000010, "Member 'RBMenuButton_C_SetButtonIconDetails::Param_ButtonIconPadding' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_SetButtonIconDetails, ButtonIconTexture_0) == 0x000000, "Member 'RBMenuButton_C_SetButtonIconDetails::ButtonIconTexture_0' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_SetButtonIconDetails, ButtonIconSize_0) == 0x000008, "Member 'RBMenuButton_C_SetButtonIconDetails::ButtonIconSize_0' has a wrong offset!");
+static_assert(offsetof(RBMenuButton_C_SetButtonIconDetails, ButtonIconPadding_0) == 0x000010, "Member 'RBMenuButton_C_SetButtonIconDetails::ButtonIconPadding_0' has a wrong offset!");
 
 // Function RBMenuButton.RBMenuButton_C.SetIsNew
 // 0x0005 (0x0005 - 0x0000)

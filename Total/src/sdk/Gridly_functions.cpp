@@ -126,10 +126,10 @@ class UGridlyTask_DownloadLocalizedTexts* UGridlyTask_DownloadLocalizedTexts::Do
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                          WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UGridlyDataTable*                 Param_GridlyDataTable                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UGridlyDataTable*                 GridlyDataTable_0                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UGridlyTask_ImportDataTableFromGridly*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UGridlyTask_ImportDataTableFromGridly* UGridlyTask_ImportDataTableFromGridly::ImportDataTableFromGridly(const class UObject* WorldContextObject, class UGridlyDataTable* Param_GridlyDataTable)
+class UGridlyTask_ImportDataTableFromGridly* UGridlyTask_ImportDataTableFromGridly::ImportDataTableFromGridly(const class UObject* WorldContextObject, class UGridlyDataTable* GridlyDataTable_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -139,7 +139,7 @@ class UGridlyTask_ImportDataTableFromGridly* UGridlyTask_ImportDataTableFromGrid
 	Params::GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
-	Parms.Param_GridlyDataTable = Param_GridlyDataTable;
+	Parms.GridlyDataTable_0 = GridlyDataTable_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

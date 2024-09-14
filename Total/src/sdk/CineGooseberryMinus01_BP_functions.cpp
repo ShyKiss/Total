@@ -41,6 +41,28 @@ void ACineGooseberryMinus01_BP_C::GetFuttermanAnimation(class USkeletalMeshCompo
 }
 
 
+// Function CineGooseberry-01_BP.CineGooseberry-01_BP_C.SetDrillOn
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    DrillOn                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                                   DrillRate                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACineGooseberryMinus01_BP_C::SetDrillOn(bool DrillOn, float DrillRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CineGooseberry-01_BP_C", "SetDrillOn");
+
+	Params::CineGooseberryMinus01_BP_C_SetDrillOn Parms{};
+
+	Parms.DrillOn = DrillOn;
+	Parms.DrillRate = DrillRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function CineGooseberry-01_BP.CineGooseberry-01_BP_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 

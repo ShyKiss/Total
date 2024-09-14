@@ -20,9 +20,9 @@ namespace SDK
 // Function NewsWidgetDot.NewsWidgetDot_C.SetIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UNewsWidgetDot_C::SetIndex(int32 Param_Index)
+void UNewsWidgetDot_C::SetIndex(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UNewsWidgetDot_C::SetIndex(int32 Param_Index)
 
 	Params::NewsWidgetDot_C_SetIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -94,9 +94,9 @@ void UNewsWidgetDot_C::ExecuteUbergraph_NewsWidgetDot(int32 EntryPoint)
 // Function NewsWidgetDot.NewsWidgetDot_C.DotClicked__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UNewsWidgetDot_C::DotClicked__DelegateSignature(int32 Param_Index)
+void UNewsWidgetDot_C::DotClicked__DelegateSignature(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -105,7 +105,7 @@ void UNewsWidgetDot_C::DotClicked__DelegateSignature(int32 Param_Index)
 
 	Params::NewsWidgetDot_C_DotClicked__DelegateSignature Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

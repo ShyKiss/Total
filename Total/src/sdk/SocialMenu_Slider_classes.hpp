@@ -36,7 +36,7 @@ public:
 	class UTextBlock*                             Value;                                             // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnValueUpdated;                                    // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bEnabled;                                          // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D71[0x7];                                     // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            EnabledIcon;                                       // 0x02D0(0x0088)(Edit, BlueprintVisible)
 	struct FSlateBrush                            DisabledIcon;                                      // 0x0358(0x0088)(Edit, BlueprintVisible)
 	struct FSlateBrush                            EnabledZeroValueIcon;                              // 0x03E0(0x0088)(Edit, BlueprintVisible)
@@ -44,13 +44,13 @@ public:
 	bool                                          bUpdateValue;                                      // 0x046C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bUpdatePlus;                                       // 0x046D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bHovered;                                          // 0x046E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D72[0x1];                                     // 0x046F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46F[0x1];                                      // 0x046F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LastAnalogValue;                                   // 0x0470(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LastInitialLRInputTimestamp;                       // 0x0474(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LastLRInputPressedTimestamp;                       // 0x0478(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnValueUpdated__DelegateSignature(float Param_Value);
+	void OnValueUpdated__DelegateSignature(float Value_0);
 	void ExecuteUbergraph_SocialMenu_Slider(int32 EntryPoint);
 	void BndEvt__SocialMenu_Slider_RightArrowButton_K2Node_ComponentBoundEvent_14_OnUnhovered__DelegateSignature();
 	void BndEvt__SocialMenu_Slider_RightArrowButton_K2Node_ComponentBoundEvent_13_OnHovered__DelegateSignature();
@@ -64,12 +64,12 @@ public:
 	void BndEvt__SocialMenu_Slider_HoveringDetection_K2Node_ComponentBoundEvent_7_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__SocialMenu_Slider_HoveringDetection_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
 	void PreConstruct(bool IsDesignTime);
-	void BndEvt__SliderValue_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Param_Value);
+	void BndEvt__SliderValue_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value_0);
 	void Setup();
 	void SetEnabled(bool bInEnabled);
-	void SetValue(float Param_Value);
+	void SetValue(float Value_0);
 	void SetValueText();
-	void OnValueChanged(float Param_CurrentValue);
+	void OnValueChanged(float CurrentValue_0);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 	void SetHovered(bool bInHovered);
 	void RefreshDisplay();

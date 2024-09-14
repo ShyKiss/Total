@@ -283,9 +283,9 @@ struct FEventReply USocialMenu_PartyOption_C::OnFocusReceived(const struct FGeom
 // Function SocialMenu_PartyOption.SocialMenu_PartyOption_C.HandleLeftRightNavigation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USocialMenu_PartyOption_C::HandleLeftRightNavigation(EUINavigation Param_Navigation)
+void USocialMenu_PartyOption_C::HandleLeftRightNavigation(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -294,7 +294,7 @@ void USocialMenu_PartyOption_C::HandleLeftRightNavigation(EUINavigation Param_Na
 
 	Params::SocialMenu_PartyOption_C_HandleLeftRightNavigation Parms{};
 
-	Parms.Param_Navigation = Param_Navigation;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -117,10 +117,10 @@ class FText USocialMenu_ContextualMenu_C::GetActionText(ERBSocialMenuEntryAction
 // Function SocialMenu_ContextualMenu.SocialMenu_ContextualMenu_C.DoCustomNavigation_0
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* USocialMenu_ContextualMenu_C::DoCustomNavigation_0(EUINavigation Param_Navigation)
+class UWidget* USocialMenu_ContextualMenu_C::DoCustomNavigation_0(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -129,7 +129,7 @@ class UWidget* USocialMenu_ContextualMenu_C::DoCustomNavigation_0(EUINavigation 
 
 	Params::SocialMenu_ContextualMenu_C_DoCustomNavigation_0 Parms{};
 
-	Parms.Param_Navigation = Param_Navigation;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

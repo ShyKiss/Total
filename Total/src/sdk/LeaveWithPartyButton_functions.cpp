@@ -184,9 +184,9 @@ void ULeaveWithPartyButton_C::SetEnabled(bool bInEnabled)
 // Function LeaveWithPartyButton.LeaveWithPartyButton_C.SetButtonText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_ButtonText                                       (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             ButtonText_0                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void ULeaveWithPartyButton_C::SetButtonText(const class FText& Param_ButtonText)
+void ULeaveWithPartyButton_C::SetButtonText(const class FText& ButtonText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -195,7 +195,7 @@ void ULeaveWithPartyButton_C::SetButtonText(const class FText& Param_ButtonText)
 
 	Params::LeaveWithPartyButton_C_SetButtonText Parms{};
 
-	Parms.Param_ButtonText = std::move(Param_ButtonText);
+	Parms.ButtonText_0 = std::move(ButtonText_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

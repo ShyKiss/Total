@@ -54,7 +54,7 @@ void UTaskProgressionHudWidget_C::Hide()
 // Function TaskProgressionHudWidget.TaskProgressionHudWidget_C.Show
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRBTaskHudProgressDisplayDetails Details                                                (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FRBTaskHudProgressDisplayDetails Details                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UTaskProgressionHudWidget_C::Show(const struct FRBTaskHudProgressDisplayDetails& Details)
 {

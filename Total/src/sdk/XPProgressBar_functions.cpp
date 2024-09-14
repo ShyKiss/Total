@@ -68,11 +68,11 @@ void UXPProgressBar_C::Finished_9C6F7CD84E0F470B1412B4BAA721AA7E()
 // Function XPProgressBar.XPProgressBar_C.Init
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_PlayerLevel                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_StartXp                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_CurrentXp                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PlayerLevel_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   StartXp_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentXp_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UXPProgressBar_C::Init(int32 Param_PlayerLevel, int32 Param_StartXp, int32 Param_CurrentXp)
+void UXPProgressBar_C::Init(int32 PlayerLevel_0, int32 StartXp_0, int32 CurrentXp_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -81,9 +81,9 @@ void UXPProgressBar_C::Init(int32 Param_PlayerLevel, int32 Param_StartXp, int32 
 
 	Params::XPProgressBar_C_Init Parms{};
 
-	Parms.Param_PlayerLevel = Param_PlayerLevel;
-	Parms.Param_StartXp = Param_StartXp;
-	Parms.Param_CurrentXp = Param_CurrentXp;
+	Parms.PlayerLevel_0 = PlayerLevel_0;
+	Parms.StartXp_0 = StartXp_0;
+	Parms.CurrentXp_0 = CurrentXp_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -128,11 +128,11 @@ void UXPProgressBar_C::InitProgressBar(class UProgressBar* ProgressBar, int32 Xp
 // Function XPProgressBar.XPProgressBar_C.Update
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_PlayerLevel                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_StartXp                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_CurrentXp                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PlayerLevel_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   StartXp_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentXp_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UXPProgressBar_C::Update(int32 Param_PlayerLevel, int32 Param_StartXp, int32 Param_CurrentXp)
+void UXPProgressBar_C::Update(int32 PlayerLevel_0, int32 StartXp_0, int32 CurrentXp_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -141,9 +141,9 @@ void UXPProgressBar_C::Update(int32 Param_PlayerLevel, int32 Param_StartXp, int3
 
 	Params::XPProgressBar_C_Update Parms{};
 
-	Parms.Param_PlayerLevel = Param_PlayerLevel;
-	Parms.Param_StartXp = Param_StartXp;
-	Parms.Param_CurrentXp = Param_CurrentXp;
+	Parms.PlayerLevel_0 = PlayerLevel_0;
+	Parms.StartXp_0 = StartXp_0;
+	Parms.CurrentXp_0 = CurrentXp_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

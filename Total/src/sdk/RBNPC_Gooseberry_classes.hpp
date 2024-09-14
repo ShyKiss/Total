@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass RBNPC_Gooseberry.RBNPC_Gooseberry_C
-// 0x0050 (0x5920 - 0x58D0)
+// 0x0050 (0x59B0 - 0x5960)
 class ARBNPC_Gooseberry_C final : public ARBNPC_BP_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_RBNPC_Gooseberry_C;                 // 0x58D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USkeletalMeshComponent*                 Futterman;                                         // 0x58D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 Gooseberry_Skirt;                                  // 0x58E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 Head;                                              // 0x58E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 FullBodyMesh;                                      // 0x58F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         TimeToPlayNextIdleBreaker;                         // 0x58F8(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3127[0x4];                                     // 0x58FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             PlayFuttermanIdleBreaker;                          // 0x5900(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          bFaceFXUseFuttermanHead;                           // 0x5910(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_RBNPC_Gooseberry_C;                 // 0x5960(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USkeletalMeshComponent*                 Futterman;                                         // 0x5968(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 Gooseberry_Skirt;                                  // 0x5970(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 Head;                                              // 0x5978(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 FullBodyMesh;                                      // 0x5980(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         TimeToPlayNextIdleBreaker;                         // 0x5988(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_598C[0x4];                                     // 0x598C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             PlayFuttermanIdleBreaker;                          // 0x5990(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          bFaceFXUseFuttermanHead;                           // 0x59A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void PlayFuttermanIdleBreaker__DelegateSignature();
@@ -58,15 +58,15 @@ public:
 	}
 };
 static_assert(alignof(ARBNPC_Gooseberry_C) == 0x000010, "Wrong alignment on ARBNPC_Gooseberry_C");
-static_assert(sizeof(ARBNPC_Gooseberry_C) == 0x005920, "Wrong size on ARBNPC_Gooseberry_C");
-static_assert(offsetof(ARBNPC_Gooseberry_C, UberGraphFrame_RBNPC_Gooseberry_C) == 0x0058D0, "Member 'ARBNPC_Gooseberry_C::UberGraphFrame_RBNPC_Gooseberry_C' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Gooseberry_C, Futterman) == 0x0058D8, "Member 'ARBNPC_Gooseberry_C::Futterman' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Gooseberry_C, Gooseberry_Skirt) == 0x0058E0, "Member 'ARBNPC_Gooseberry_C::Gooseberry_Skirt' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Gooseberry_C, Head) == 0x0058E8, "Member 'ARBNPC_Gooseberry_C::Head' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Gooseberry_C, FullBodyMesh) == 0x0058F0, "Member 'ARBNPC_Gooseberry_C::FullBodyMesh' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Gooseberry_C, TimeToPlayNextIdleBreaker) == 0x0058F8, "Member 'ARBNPC_Gooseberry_C::TimeToPlayNextIdleBreaker' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Gooseberry_C, PlayFuttermanIdleBreaker) == 0x005900, "Member 'ARBNPC_Gooseberry_C::PlayFuttermanIdleBreaker' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Gooseberry_C, bFaceFXUseFuttermanHead) == 0x005910, "Member 'ARBNPC_Gooseberry_C::bFaceFXUseFuttermanHead' has a wrong offset!");
+static_assert(sizeof(ARBNPC_Gooseberry_C) == 0x0059B0, "Wrong size on ARBNPC_Gooseberry_C");
+static_assert(offsetof(ARBNPC_Gooseberry_C, UberGraphFrame_RBNPC_Gooseberry_C) == 0x005960, "Member 'ARBNPC_Gooseberry_C::UberGraphFrame_RBNPC_Gooseberry_C' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Gooseberry_C, Futterman) == 0x005968, "Member 'ARBNPC_Gooseberry_C::Futterman' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Gooseberry_C, Gooseberry_Skirt) == 0x005970, "Member 'ARBNPC_Gooseberry_C::Gooseberry_Skirt' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Gooseberry_C, Head) == 0x005978, "Member 'ARBNPC_Gooseberry_C::Head' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Gooseberry_C, FullBodyMesh) == 0x005980, "Member 'ARBNPC_Gooseberry_C::FullBodyMesh' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Gooseberry_C, TimeToPlayNextIdleBreaker) == 0x005988, "Member 'ARBNPC_Gooseberry_C::TimeToPlayNextIdleBreaker' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Gooseberry_C, PlayFuttermanIdleBreaker) == 0x005990, "Member 'ARBNPC_Gooseberry_C::PlayFuttermanIdleBreaker' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Gooseberry_C, bFaceFXUseFuttermanHead) == 0x0059A0, "Member 'ARBNPC_Gooseberry_C::bFaceFXUseFuttermanHead' has a wrong offset!");
 
 }
 

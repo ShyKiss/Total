@@ -20,41 +20,54 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SelectableRewardWidget.SelectableRewardWidget_C
-// 0x0068 (0x02C8 - 0x0260)
+// 0x00B0 (0x0310 - 0x0260)
 class USelectableRewardWidget_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UButton*                                InteractionButton;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SelectionBorder;                                   // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USingleRewardWidget_C*                  SingleRewardWidget;                                // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bFocused;                                          // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bHovered;                                          // 0x0281(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bIsGamepad;                                        // 0x0282(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2A[0x5];                                     // 0x0283(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             OnHovered;                                         // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnUnhovered;                                       // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FRewardUIData                          Reward;                                            // 0x02A8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UImage*                                 FocussedBottomLeftBracket_6;                       // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FocussedBottomRightBracket_6;                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FocussedTopLeftBracket_6;                          // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FocussedTopRightBracket_6;                         // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                InteractionButton;                                 // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SelectionBorder;                                   // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               SelectionOverlay;                                  // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USingleRewardWidget_C*                  SingleRewardWidget;                                // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_0;                                         // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bFocused;                                          // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bHovered;                                          // 0x02B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsGamepad;                                        // 0x02B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2B3[0x5];                                      // 0x02B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnHovered;                                         // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnUnhovered;                                       // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FRewardUIData                          Reward;                                            // 0x02D8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	float                                         Size;                                              // 0x02F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInverseColors;                                    // 0x02FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FD[0x3];                                      // 0x02FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnHovered__DelegateSignature(const struct FRewardUIData& Param_Reward);
-	void OnUnhovered__DelegateSignature(const struct FRewardUIData& Param_Reward);
+	void OnHovered__DelegateSignature(const struct FRewardUIData& Reward_0, class USelectableRewardWidget_C* Widget);
+	void OnUnhovered__DelegateSignature(const struct FRewardUIData& Reward_0, class USelectableRewardWidget_C* Widget);
+	void OnClicked__DelegateSignature();
 	void ExecuteUbergraph_SelectableRewardWidget(int32 EntryPoint);
+	void BndEvt__SelectableRewardWidget_InteractionButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
+	void PreConstruct(bool IsDesignTime);
 	void Destruct();
 	void OnMenuInputSourceChanged();
 	void Construct();
 	void BndEvt__PerkCategoryButton_InteractionButton_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__PerkCategoryButton_InteractionButton_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature();
-	void Init(const struct FRewardUIData& Param_Reward);
+	void Init(const struct FRewardUIData& Reward_0);
 	void CanMergeWith(const struct FRewardUIData& RewardUIData, bool* bCanMergeWith);
 	void MergeWith(const struct FRewardUIData& RewardUIData);
 	void PlayNewRewardAnimation();
 	void Refresh();
-	void SetHovered(bool Param_IsHovered);
+	void SetHovered(bool IsHovered_0);
 	void SetFocused(bool bInFocused);
 	void IsConsideredHovered(bool* bConsideredHovered);
-	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
 	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 
 public:
 	static class UClass* StaticClass()
@@ -67,17 +80,26 @@ public:
 	}
 };
 static_assert(alignof(USelectableRewardWidget_C) == 0x000008, "Wrong alignment on USelectableRewardWidget_C");
-static_assert(sizeof(USelectableRewardWidget_C) == 0x0002C8, "Wrong size on USelectableRewardWidget_C");
+static_assert(sizeof(USelectableRewardWidget_C) == 0x000310, "Wrong size on USelectableRewardWidget_C");
 static_assert(offsetof(USelectableRewardWidget_C, UberGraphFrame) == 0x000260, "Member 'USelectableRewardWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USelectableRewardWidget_C, InteractionButton) == 0x000268, "Member 'USelectableRewardWidget_C::InteractionButton' has a wrong offset!");
-static_assert(offsetof(USelectableRewardWidget_C, SelectionBorder) == 0x000270, "Member 'USelectableRewardWidget_C::SelectionBorder' has a wrong offset!");
-static_assert(offsetof(USelectableRewardWidget_C, SingleRewardWidget) == 0x000278, "Member 'USelectableRewardWidget_C::SingleRewardWidget' has a wrong offset!");
-static_assert(offsetof(USelectableRewardWidget_C, bFocused) == 0x000280, "Member 'USelectableRewardWidget_C::bFocused' has a wrong offset!");
-static_assert(offsetof(USelectableRewardWidget_C, bHovered) == 0x000281, "Member 'USelectableRewardWidget_C::bHovered' has a wrong offset!");
-static_assert(offsetof(USelectableRewardWidget_C, bIsGamepad) == 0x000282, "Member 'USelectableRewardWidget_C::bIsGamepad' has a wrong offset!");
-static_assert(offsetof(USelectableRewardWidget_C, OnHovered) == 0x000288, "Member 'USelectableRewardWidget_C::OnHovered' has a wrong offset!");
-static_assert(offsetof(USelectableRewardWidget_C, OnUnhovered) == 0x000298, "Member 'USelectableRewardWidget_C::OnUnhovered' has a wrong offset!");
-static_assert(offsetof(USelectableRewardWidget_C, Reward) == 0x0002A8, "Member 'USelectableRewardWidget_C::Reward' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, FocussedBottomLeftBracket_6) == 0x000268, "Member 'USelectableRewardWidget_C::FocussedBottomLeftBracket_6' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, FocussedBottomRightBracket_6) == 0x000270, "Member 'USelectableRewardWidget_C::FocussedBottomRightBracket_6' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, FocussedTopLeftBracket_6) == 0x000278, "Member 'USelectableRewardWidget_C::FocussedTopLeftBracket_6' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, FocussedTopRightBracket_6) == 0x000280, "Member 'USelectableRewardWidget_C::FocussedTopRightBracket_6' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, InteractionButton) == 0x000288, "Member 'USelectableRewardWidget_C::InteractionButton' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, SelectionBorder) == 0x000290, "Member 'USelectableRewardWidget_C::SelectionBorder' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, SelectionOverlay) == 0x000298, "Member 'USelectableRewardWidget_C::SelectionOverlay' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, SingleRewardWidget) == 0x0002A0, "Member 'USelectableRewardWidget_C::SingleRewardWidget' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, SizeBox_0) == 0x0002A8, "Member 'USelectableRewardWidget_C::SizeBox_0' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, bFocused) == 0x0002B0, "Member 'USelectableRewardWidget_C::bFocused' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, bHovered) == 0x0002B1, "Member 'USelectableRewardWidget_C::bHovered' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, bIsGamepad) == 0x0002B2, "Member 'USelectableRewardWidget_C::bIsGamepad' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, OnHovered) == 0x0002B8, "Member 'USelectableRewardWidget_C::OnHovered' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, OnUnhovered) == 0x0002C8, "Member 'USelectableRewardWidget_C::OnUnhovered' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, Reward) == 0x0002D8, "Member 'USelectableRewardWidget_C::Reward' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, Size) == 0x0002F8, "Member 'USelectableRewardWidget_C::Size' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, bInverseColors) == 0x0002FC, "Member 'USelectableRewardWidget_C::bInverseColors' has a wrong offset!");
+static_assert(offsetof(USelectableRewardWidget_C, OnClicked) == 0x000300, "Member 'USelectableRewardWidget_C::OnClicked' has a wrong offset!");
 
 }
 

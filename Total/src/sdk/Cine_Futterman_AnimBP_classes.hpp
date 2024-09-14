@@ -20,31 +20,50 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C
-// 0x05F0 (0x08B0 - 0x02C0)
+// 0x0CA0 (0x0F60 - 0x02C0)
 class UCine_Futterman_AnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_314D[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x02F8(0x0080)()
-	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x0378(0x00C0)()
-	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x0438(0x01D8)(ContainsInstancedReference)
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x0610(0x0020)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0630(0x0020)()
-	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x0650(0x0108)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0758(0x0080)()
-	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool;                     // 0x07D8(0x00A8)()
-	class UAnimSequence*                          AnimSequence;                                      // 0x0880(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Position;                                          // 0x0888(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               HeadPosition;                                      // 0x088C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class USkeletalMeshComponent*                 Mesh;                                              // 0x0898(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ResetRoot;                                         // 0x08A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x02F8(0x0080)()
+	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend_1;                  // 0x0378(0x00C0)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_1;             // 0x0438(0x0020)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_1;             // 0x0458(0x0020)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0478(0x0080)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x04F8(0x0080)()
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_1;                   // 0x0578(0x00A8)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_1;                        // 0x0620(0x0108)()
+	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x0728(0x00C0)()
+	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x07E8(0x01D8)(ContainsInstancedReference)
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x09C0(0x0020)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x09E0(0x0020)()
+	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose_1;                    // 0x0A00(0x0158)()
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool;                     // 0x0B58(0x00A8)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x0C00(0x0108)()
+	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose;                      // 0x0D08(0x0158)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_2;                     // 0x0E60(0x0028)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_1;                     // 0x0E88(0x0028)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0x0EB0(0x0028)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0ED8(0x0048)()
+	class UAnimSequence*                          AnimSequence;                                      // 0x0F20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Position;                                          // 0x0F28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               HeadPosition;                                      // 0x0F2C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class USkeletalMeshComponent*                 Mesh;                                              // 0x0F38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ResetRoot;                                         // 0x0F40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IsDrilling;                                        // 0x0F41(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F42[0x2];                                      // 0x0F42(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               DrillRotating;                                     // 0x0F44(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	float                                         DrillRotationRate;                                 // 0x0F50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ManualDrill;                                       // 0x0F54(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          NewVar_0;                                          // 0x0F55(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_Cine_Futterman_AnimBP(int32 EntryPoint);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void BlueprintInitializeAnimation();
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()
@@ -57,22 +76,39 @@ public:
 	}
 };
 static_assert(alignof(UCine_Futterman_AnimBP_C) == 0x000010, "Wrong alignment on UCine_Futterman_AnimBP_C");
-static_assert(sizeof(UCine_Futterman_AnimBP_C) == 0x0008B0, "Wrong size on UCine_Futterman_AnimBP_C");
+static_assert(sizeof(UCine_Futterman_AnimBP_C) == 0x000F60, "Wrong size on UCine_Futterman_AnimBP_C");
 static_assert(offsetof(UCine_Futterman_AnimBP_C, UberGraphFrame) == 0x0002C0, "Member 'UCine_Futterman_AnimBP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_SequencePlayer_1) == 0x0002F8, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_LayeredBoneBlend) == 0x000378, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_LayeredBoneBlend' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_CopyPoseFromMesh) == 0x000438, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_CopyPoseFromMesh' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_LocalToComponentSpace) == 0x000610, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_LocalToComponentSpace' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_ComponentToLocalSpace) == 0x000630, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_ModifyBone) == 0x000650, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_ModifyBone' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_SequencePlayer) == 0x000758, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_BlendListByBool) == 0x0007D8, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimSequence) == 0x000880, "Member 'UCine_Futterman_AnimBP_C::AnimSequence' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, Position) == 0x000888, "Member 'UCine_Futterman_AnimBP_C::Position' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, HeadPosition) == 0x00088C, "Member 'UCine_Futterman_AnimBP_C::HeadPosition' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, Mesh) == 0x000898, "Member 'UCine_Futterman_AnimBP_C::Mesh' has a wrong offset!");
-static_assert(offsetof(UCine_Futterman_AnimBP_C, ResetRoot) == 0x0008A0, "Member 'UCine_Futterman_AnimBP_C::ResetRoot' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_SequencePlayer_2) == 0x0002F8, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_LayeredBoneBlend_1) == 0x000378, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_LayeredBoneBlend_1' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_LocalToComponentSpace_1) == 0x000438, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_LocalToComponentSpace_1' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_ComponentToLocalSpace_1) == 0x000458, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_ComponentToLocalSpace_1' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_SequencePlayer_1) == 0x000478, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_SequencePlayer) == 0x0004F8, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_BlendListByBool_1) == 0x000578, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_BlendListByBool_1' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_ModifyBone_1) == 0x000620, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_ModifyBone_1' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_LayeredBoneBlend) == 0x000728, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_LayeredBoneBlend' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_CopyPoseFromMesh) == 0x0007E8, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_CopyPoseFromMesh' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_LocalToComponentSpace) == 0x0009C0, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_LocalToComponentSpace' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_ComponentToLocalSpace) == 0x0009E0, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_SaveCachedPose_1) == 0x000A00, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_SaveCachedPose_1' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_BlendListByBool) == 0x000B58, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_ModifyBone) == 0x000C00, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_ModifyBone' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_SaveCachedPose) == 0x000D08, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_UseCachedPose_2) == 0x000E60, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_UseCachedPose_2' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_UseCachedPose_1) == 0x000E88, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_UseCachedPose_1' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_UseCachedPose) == 0x000EB0, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimGraphNode_Slot) == 0x000ED8, "Member 'UCine_Futterman_AnimBP_C::AnimGraphNode_Slot' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, AnimSequence) == 0x000F20, "Member 'UCine_Futterman_AnimBP_C::AnimSequence' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, Position) == 0x000F28, "Member 'UCine_Futterman_AnimBP_C::Position' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, HeadPosition) == 0x000F2C, "Member 'UCine_Futterman_AnimBP_C::HeadPosition' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, Mesh) == 0x000F38, "Member 'UCine_Futterman_AnimBP_C::Mesh' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, ResetRoot) == 0x000F40, "Member 'UCine_Futterman_AnimBP_C::ResetRoot' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, IsDrilling) == 0x000F41, "Member 'UCine_Futterman_AnimBP_C::IsDrilling' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, DrillRotating) == 0x000F44, "Member 'UCine_Futterman_AnimBP_C::DrillRotating' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, DrillRotationRate) == 0x000F50, "Member 'UCine_Futterman_AnimBP_C::DrillRotationRate' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, ManualDrill) == 0x000F54, "Member 'UCine_Futterman_AnimBP_C::ManualDrill' has a wrong offset!");
+static_assert(offsetof(UCine_Futterman_AnimBP_C, NewVar_0) == 0x000F55, "Member 'UCine_Futterman_AnimBP_C::NewVar_0' has a wrong offset!");
 
 }
 

@@ -159,9 +159,9 @@ struct FEventReply USocialSettingsSubmenu_C::OnFocusReceived(const struct FGeome
 // Function SocialSettingsSubmenu.SocialSettingsSubmenu_C.GetPrivacyValue
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_PrivacyValue                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PrivacyValue_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USocialSettingsSubmenu_C::GetPrivacyValue(int32* Param_PrivacyValue) const
+void USocialSettingsSubmenu_C::GetPrivacyValue(int32* PrivacyValue_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -172,17 +172,17 @@ void USocialSettingsSubmenu_C::GetPrivacyValue(int32* Param_PrivacyValue) const
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_PrivacyValue != nullptr)
-		*Param_PrivacyValue = Parms.Param_PrivacyValue;
+	if (PrivacyValue_0 != nullptr)
+		*PrivacyValue_0 = Parms.PrivacyValue_0;
 }
 
 
 // Function SocialSettingsSubmenu.SocialSettingsSubmenu_C.GetPartyMembersCanInviteValue
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_PrivacyValue                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PrivacyValue_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USocialSettingsSubmenu_C::GetPartyMembersCanInviteValue(int32* Param_PrivacyValue) const
+void USocialSettingsSubmenu_C::GetPartyMembersCanInviteValue(int32* PrivacyValue_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -193,17 +193,17 @@ void USocialSettingsSubmenu_C::GetPartyMembersCanInviteValue(int32* Param_Privac
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_PrivacyValue != nullptr)
-		*Param_PrivacyValue = Parms.Param_PrivacyValue;
+	if (PrivacyValue_0 != nullptr)
+		*PrivacyValue_0 = Parms.PrivacyValue_0;
 }
 
 
 // Function SocialSettingsSubmenu.SocialSettingsSubmenu_C.GetIgnoreInviteRequestsValue
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_PrivacyValue                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PrivacyValue_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USocialSettingsSubmenu_C::GetIgnoreInviteRequestsValue(int32* Param_PrivacyValue) const
+void USocialSettingsSubmenu_C::GetIgnoreInviteRequestsValue(int32* PrivacyValue_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -214,8 +214,8 @@ void USocialSettingsSubmenu_C::GetIgnoreInviteRequestsValue(int32* Param_Privacy
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_PrivacyValue != nullptr)
-		*Param_PrivacyValue = Parms.Param_PrivacyValue;
+	if (PrivacyValue_0 != nullptr)
+		*PrivacyValue_0 = Parms.PrivacyValue_0;
 }
 
 }

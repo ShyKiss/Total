@@ -18,25 +18,30 @@ namespace SDK::Params
 {
 
 // Function MainMenuButton.MainMenuButton_C.OnFocusReceived
-// 0x01D0 (0x01D0 - 0x0000)
+// 0x01E0 (0x01E0 - 0x0000)
 struct MainMenuButton_C_OnFocusReceived final
 {
 public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00F8(0x0018)()
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0118(0x00B8)()
+	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0108(0x0018)()
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0128(0x00B8)()
 };
 static_assert(alignof(MainMenuButton_C_OnFocusReceived) == 0x000008, "Wrong alignment on MainMenuButton_C_OnFocusReceived");
-static_assert(sizeof(MainMenuButton_C_OnFocusReceived) == 0x0001D0, "Wrong size on MainMenuButton_C_OnFocusReceived");
+static_assert(sizeof(MainMenuButton_C_OnFocusReceived) == 0x0001E0, "Wrong size on MainMenuButton_C_OnFocusReceived");
 static_assert(offsetof(MainMenuButton_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'MainMenuButton_C_OnFocusReceived::MyGeometry' has a wrong offset!");
 static_assert(offsetof(MainMenuButton_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'MainMenuButton_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
 static_assert(offsetof(MainMenuButton_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'MainMenuButton_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuButton_C_OnFocusReceived, CallFunc_MakeLiteralText_ReturnValue) == 0x0000F8, "Member 'MainMenuButton_C_OnFocusReceived::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuButton_C_OnFocusReceived, CallFunc_MakeLiteralName_ReturnValue) == 0x000110, "Member 'MainMenuButton_C_OnFocusReceived::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuButton_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x000118, "Member 'MainMenuButton_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenuButton_C_OnFocusReceived, CallFunc_GetMenuManager_ReturnValue) == 0x0000F8, "Member 'MainMenuButton_C_OnFocusReceived::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenuButton_C_OnFocusReceived, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000100, "Member 'MainMenuButton_C_OnFocusReceived::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenuButton_C_OnFocusReceived, CallFunc_MakeLiteralText_ReturnValue) == 0x000108, "Member 'MainMenuButton_C_OnFocusReceived::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenuButton_C_OnFocusReceived, CallFunc_MakeLiteralName_ReturnValue) == 0x000120, "Member 'MainMenuButton_C_OnFocusReceived::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenuButton_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x000128, "Member 'MainMenuButton_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function MainMenuButton.MainMenuButton_C.Get Button Enabled
 // 0x0002 (0x0002 - 0x0000)
@@ -56,11 +61,11 @@ static_assert(offsetof(MainMenuButton_C_Get_Button_Enabled, CallFunc_GetIsEnable
 struct MainMenuButton_C_SetText final
 {
 public:
-	class FText                                   Param_Text;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   Text_0;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(MainMenuButton_C_SetText) == 0x000008, "Wrong alignment on MainMenuButton_C_SetText");
 static_assert(sizeof(MainMenuButton_C_SetText) == 0x000018, "Wrong size on MainMenuButton_C_SetText");
-static_assert(offsetof(MainMenuButton_C_SetText, Param_Text) == 0x000000, "Member 'MainMenuButton_C_SetText::Param_Text' has a wrong offset!");
+static_assert(offsetof(MainMenuButton_C_SetText, Text_0) == 0x000000, "Member 'MainMenuButton_C_SetText::Text_0' has a wrong offset!");
 
 // Function MainMenuButton.MainMenuButton_C.Set Button Enabled
 // 0x0014 (0x0014 - 0x0000)
@@ -73,7 +78,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A3F[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable_1;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_1;                           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -119,7 +124,7 @@ struct MainMenuButton_C_ExecuteUbergraph_MainMenuButton final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A40[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0018(0x0008)(NoDestructor)

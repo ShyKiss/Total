@@ -39,7 +39,7 @@ public:
 	void ExecuteUbergraph_LevelIndicatorWidget(int32 EntryPoint);
 	void LevelAnimationFinished();
 	void Construct();
-	void Init(int32 Param_Level, int32 ReleaseCount);
+	void Init(int32 Level_0, int32 ReleaseCount);
 	void PlayerLevelUpAnimation();
 
 public:

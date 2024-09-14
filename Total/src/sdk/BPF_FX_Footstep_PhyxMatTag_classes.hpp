@@ -21,8 +21,8 @@ namespace SDK
 class UBPF_FX_Footstep_PhyxMatTag_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void Footstep_FX_Run(class ARBPawn* Pawn, const struct FFootstepData& FootstepData, class UObject* __WorldContext, int32* Param_Index);
-	static void Footstep_FX_Landing(class ARBPawn* Pawn, class UObject* __WorldContext, int32* Param_Index);
+	static void Footstep_FX(const struct FFootstepData& FootstepData, class UObject* __WorldContext);
+	static void Footstep_FX_Landing(class ARBPawn* Pawn, class UObject* __WorldContext, int32* Index_0);
 	static void TmpPlayVFX(struct FVector& TestPosition, TMap<class UPhysicalMaterial*, class UNiagaraSystem*>& PhysicsMaterialsToSystems, class UNiagaraSystem* DefaultSystem, class UObject* __WorldContext);
 	static void TmpPlayFootstepFX(bool& IsLeftFoot, class UObject* __WorldContext);
 	static void TmpPlayLandingFX(class UObject* __WorldContext);

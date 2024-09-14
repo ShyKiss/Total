@@ -37,6 +37,76 @@ void UDoorBlocker_GhostAnimBP_C::ExecuteUbergraph_DoorBlocker_GhostAnimBP(int32 
 }
 
 
+// Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.OnNetworkDesyncResolved
+// (Event, Public, BlueprintEvent)
+
+void UDoorBlocker_GhostAnimBP_C::OnNetworkDesyncResolved()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DoorBlocker_GhostAnimBP_C", "OnNetworkDesyncResolved");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.AnimNotify_Finishing
+// (BlueprintCallable, BlueprintEvent)
+
+void UDoorBlocker_GhostAnimBP_C::AnimNotify_Finishing()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DoorBlocker_GhostAnimBP_C", "AnimNotify_Finishing");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.AnimNotify_Finished
+// (BlueprintCallable, BlueprintEvent)
+
+void UDoorBlocker_GhostAnimBP_C::AnimNotify_Finished()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DoorBlocker_GhostAnimBP_C", "AnimNotify_Finished");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.AnimNotify_Leave
+// (BlueprintCallable, BlueprintEvent)
+
+void UDoorBlocker_GhostAnimBP_C::AnimNotify_Leave()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DoorBlocker_GhostAnimBP_C", "AnimNotify_Leave");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.AnimNotify_Start
+// (BlueprintCallable, BlueprintEvent)
+
+void UDoorBlocker_GhostAnimBP_C::AnimNotify_Start()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DoorBlocker_GhostAnimBP_C", "AnimNotify_Start");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.BlueprintUpdateAnimation
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -71,20 +141,6 @@ void UDoorBlocker_GhostAnimBP_C::AnimNotify_Holding()
 }
 
 
-// Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.AnimNotify_Finish
-// (BlueprintCallable, BlueprintEvent)
-
-void UDoorBlocker_GhostAnimBP_C::AnimNotify_Finish()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DoorBlocker_GhostAnimBP_C", "AnimNotify_Finish");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.BP_ClearGhost
 // (Event, Protected, BlueprintEvent)
 
@@ -108,6 +164,20 @@ void UDoorBlocker_GhostAnimBP_C::BP_InitializeGhost()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("DoorBlocker_GhostAnimBP_C", "BP_InitializeGhost");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_DoorBlocker_GhostAnimBP_AnimGraphNode_TransitionResult_1A5C132A44ED37CCAC1AA98B59A48CBF
+// (BlueprintEvent)
+
+void UDoorBlocker_GhostAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_DoorBlocker_GhostAnimBP_AnimGraphNode_TransitionResult_1A5C132A44ED37CCAC1AA98B59A48CBF()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DoorBlocker_GhostAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_DoorBlocker_GhostAnimBP_AnimGraphNode_TransitionResult_1A5C132A44ED37CCAC1AA98B59A48CBF");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -138,12 +208,26 @@ bool UDoorBlocker_GhostAnimBP_C::FinishGhost(EGhostFinishReason FinishReason, in
 }
 
 
+// Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.InitializeBarricadeVariables
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UDoorBlocker_GhostAnimBP_C::InitializeBarricadeVariables()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DoorBlocker_GhostAnimBP_C", "InitializeBarricadeVariables");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink                        Param_AnimGraph                                        (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UDoorBlocker_GhostAnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
+void UDoorBlocker_GhostAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -154,8 +238,8 @@ void UDoorBlocker_GhostAnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_AnimGraph != nullptr)
-		*Param_AnimGraph = std::move(Parms.Param_AnimGraph);
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

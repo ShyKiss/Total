@@ -29,11 +29,12 @@ public:
 	class UAnimSequence*                          FuttermanAnimation;                                // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FuttermanPosition;                                 // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          OverrideHeadRotation;                              // 0x02A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31BC[0x3];                                     // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A5[0x3];                                      // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               HeadRotation;                                      // 0x02A8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void GetFuttermanAnimation(class USkeletalMeshComponent* NewParam, class UAnimSequence** Animation);
+	void SetDrillOn(bool DrillOn, float DrillRate);
 	void UserConstructionScript();
 	void GetCineFaceAnimBP(class UCineFace_AnimBP_C** CineFaceAnimBP);
 	void GetPoseAsset(class UPoseAsset** PoseAsset);

@@ -17,12 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Base_NonPickable_RBPickup_BP.Base_NonPickable_RBPickup_BP_C
-// 0x0010 (0x0A20 - 0x0A10)
+// 0x0010 (0x0A70 - 0x0A60)
 #pragma pack(push, 0x1)
 class alignas(0x10) ABase_NonPickable_RBPickup_BP_C : public ARBPickup
 {
 public:
-	class UStaticMeshComponent*                   GasCanisterMesh;                                   // 0x0A10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A58[0x8];                                      // 0x0A58(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   GasCanisterMesh;                                   // 0x0A60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -36,8 +37,8 @@ public:
 };
 #pragma pack(pop)
 static_assert(alignof(ABase_NonPickable_RBPickup_BP_C) == 0x000010, "Wrong alignment on ABase_NonPickable_RBPickup_BP_C");
-static_assert(sizeof(ABase_NonPickable_RBPickup_BP_C) == 0x000A20, "Wrong size on ABase_NonPickable_RBPickup_BP_C");
-static_assert(offsetof(ABase_NonPickable_RBPickup_BP_C, GasCanisterMesh) == 0x000A10, "Member 'ABase_NonPickable_RBPickup_BP_C::GasCanisterMesh' has a wrong offset!");
+static_assert(sizeof(ABase_NonPickable_RBPickup_BP_C) == 0x000A70, "Wrong size on ABase_NonPickable_RBPickup_BP_C");
+static_assert(offsetof(ABase_NonPickable_RBPickup_BP_C, GasCanisterMesh) == 0x000A60, "Member 'ABase_NonPickable_RBPickup_BP_C::GasCanisterMesh' has a wrong offset!");
 
 }
 

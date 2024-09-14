@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SplineMeshData_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SplineMeshData_structs.hpp"
 #include "MeshIndex_structs.hpp"
 #include "OPP_classes.hpp"
 
@@ -30,16 +30,16 @@ public:
 	TArray<struct FSplineMeshData>                Meshes;                                            // 0x02C8(0x0010)(Edit, BlueprintVisible)
 	TArray<struct FMeshIndex>                     OverwriteMeshes;                                   // 0x02D8(0x0010)(Edit, BlueprintVisible)
 	bool                                          UseDetailsMesh;                                    // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3181[0x7];                                     // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E9[0x7];                                      // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMesh*                            DetailsStaticMesh;                                 // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseCollision;                                      // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3182[0x3];                                     // 0x02F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F9[0x3];                                      // 0x02F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DetailsMeshesDistance;                             // 0x02FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESplineMeshAxis                               FowardAxis;                                        // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3183[0x7];                                     // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInterface*>             MaterialOvewrite;                                  // 0x0308(0x0010)(Edit, BlueprintVisible)
 	bool                                          CloseLoop;                                         // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3184[0x3];                                     // 0x0319(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_319[0x3];                                      // 0x0319(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                MeshesScale;                                       // 0x031C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                LastLocation;                                      // 0x0328(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                SplinePointsPositions;                             // 0x0334(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,35 +47,35 @@ public:
 	struct FVector                                LastTangent;                                       // 0x0350(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         EndDistance;                                       // 0x035C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SkipMesh;                                          // 0x0360(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3185[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_361[0x7];                                      // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMesh*                            CurrentStaticMesh;                                 // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          FloorTangent;                                      // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          SnapOnGrid;                                        // 0x0371(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3186[0x2];                                     // 0x0372(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_372[0x2];                                      // 0x0372(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         GridSize;                                          // 0x0374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESplineCoordinateSpace                        GridSizeSpace;                                     // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3187[0x3];                                     // 0x0379(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_379[0x3];                                      // 0x0379(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DetailsMeshOffset;                                 // 0x037C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<int32>                                 SkipMeshAtPoint;                                   // 0x0380(0x0010)(Edit, BlueprintVisible)
 	bool                                          SkipLastMesh;                                      // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3188[0x3];                                     // 0x0391(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_391[0x3];                                      // 0x0391(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                LastFirstPointPosition;                            // 0x0394(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                NewWorldPosition;                                  // 0x03A0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Zero;                                              // 0x03AC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector2D>                      DetailsVoid;                                       // 0x03B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          SkipDetailMesh;                                    // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3189[0x3];                                     // 0x03C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C9[0x3];                                      // 0x03C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaxDrawDistance;                                   // 0x03CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CastStaticShadow;                                  // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FLightingChannels                      LightingChannels;                                  // 0x03D1(0x0001)(Edit, BlueprintVisible, NoDestructor)
 	ELightmapType                                 LightmapType;                                      // 0x03D2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseMaterialDynamicDataForUV;                       // 0x03D3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_318A[0x4];                                     // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D4[0x4];                                      // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ASplineMeshBase_BP_C*                   Target;                                            // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class USplineMeshComponent*>           SpawnedSplineMeshes;                               // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UStaticMeshComponent*>           DetailStaticMeshes;                                // 0x03F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                         NumberOfPoint;                                     // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_318B[0x4];                                     // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        AllPointsPositions;                                // 0x0408(0x0010)(Edit, BlueprintVisible)
 	bool                                          UseReoderPointOnAdd;                               // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -84,13 +84,13 @@ public:
 	void PostToggled(bool bToggleEnabled);
 	void UserConstructionScript();
 	void AddDetailsMeshes(float Distance, const struct FVector& Location, const struct FRotator& Relative_Transform_Rotation);
-	void AddStaticMesh(const struct FVector& StartPos, const struct FVector& StartTangent, const struct FVector& EndPos, const struct FVector& EndTangent, class UStaticMesh* NewMesh, int32 Param_Index);
-	void FindClosetMeshes(int32 A, class USplineComponent* Param_Target, TArray<struct FSplineMeshData>& Param_Meshes, int32* Param_Index);
-	void SnapPointOnGrid(class USplineComponent* Param_Spline);
+	void AddStaticMesh(const struct FVector& StartPos, const struct FVector& StartTangent, const struct FVector& EndPos, const struct FVector& EndTangent, class UStaticMesh* NewMesh, int32 Index_0);
+	void FindClosetMeshes(int32 A, class USplineComponent* Target_0, TArray<struct FSplineMeshData>& Meshes_0, int32* Index_0);
+	void SnapPointOnGrid(class USplineComponent* Spline_0);
 	void Construct_Spline_Meshes();
 	void ClearGeneratedMeshes();
 	void SetSplinePosition();
-	void FlattenTangent(class USplineComponent* Param_Spline);
+	void FlattenTangent(class USplineComponent* Spline_0);
 	void Snap();
 	void Reorder_Point();
 	void GetAllPointsPositions();

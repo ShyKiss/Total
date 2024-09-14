@@ -214,10 +214,10 @@ void UWaitingForPlayersCountdownWidget_C::UpdateGameInstallText(float Percent)
 // Function WaitingForPlayersCountdownWidget.WaitingForPlayersCountdownWidget_C.ShouldShowWaitingForInstall
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_ShouldShow                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    ShouldShow_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                                   DownloadPercent                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWaitingForPlayersCountdownWidget_C::ShouldShowWaitingForInstall(bool* Param_ShouldShow, float* DownloadPercent)
+void UWaitingForPlayersCountdownWidget_C::ShouldShowWaitingForInstall(bool* ShouldShow_0, float* DownloadPercent)
 {
 	static class UFunction* Func = nullptr;
 
@@ -228,8 +228,8 @@ void UWaitingForPlayersCountdownWidget_C::ShouldShowWaitingForInstall(bool* Para
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_ShouldShow != nullptr)
-		*Param_ShouldShow = Parms.Param_ShouldShow;
+	if (ShouldShow_0 != nullptr)
+		*ShouldShow_0 = Parms.ShouldShow_0;
 
 	if (DownloadPercent != nullptr)
 		*DownloadPercent = Parms.DownloadPercent;

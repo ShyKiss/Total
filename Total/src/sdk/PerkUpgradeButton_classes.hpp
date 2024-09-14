@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PerkUpgradeButton.PerkUpgradeButton_C
-// 0x01C8 (0x0428 - 0x0260)
+// 0x0230 (0x0490 - 0x0260)
 class UPerkUpgradeButton_C final : public UUserWidget
 {
 public:
@@ -29,28 +29,29 @@ public:
 	class UTextBlock*                             CostAmountText;                                    // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 CurrencyTypeImage;                                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 EquippedImage;                                     // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnClickedEvent;                                    // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnHoveredEvent;                                    // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnUnhoveredEvent;                                  // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FMenuUpgradeItemInfo                   ItemInfo;                                          // 0x02B8(0x0128)(Edit, BlueprintVisible)
-	bool                                          bIsLoadout;                                        // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DB7[0x7];                                     // 0x03E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             OnPressedEvent;                                    // 0x03E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnReleasedEvent;                                   // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	int32                                         SlotIndex;                                         // 0x0408(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSlot;                                           // 0x040C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bIsLockedSlot;                                     // 0x040D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bIsEquipped;                                       // 0x040E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bEnableLoadoutHoverEvents;                         // 0x040F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	FMulticastInlineDelegateProperty_             OnBuyAnimationEndedEvent;                          // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          bIsSelf;                                           // 0x0420(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UImage*                                 LockImage;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnClickedEvent;                                    // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnHoveredEvent;                                    // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnUnhoveredEvent;                                  // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FMenuUpgradeItemInfo                   ItemInfo;                                          // 0x02C0(0x0188)(Edit, BlueprintVisible)
+	bool                                          bIsLoadout;                                        // 0x0448(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_449[0x7];                                      // 0x0449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnPressedEvent;                                    // 0x0450(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnReleasedEvent;                                   // 0x0460(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	int32                                         SlotIndex;                                         // 0x0470(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSlot;                                           // 0x0474(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bIsLockedSlot;                                     // 0x0475(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bIsEquipped;                                       // 0x0476(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bEnableLoadoutHoverEvents;                         // 0x0477(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	FMulticastInlineDelegateProperty_             OnBuyAnimationEndedEvent;                          // 0x0478(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          bIsSelf;                                           // 0x0488(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void OnClickedEvent__DelegateSignature(class UPerkUpgradeButton_C* Button);
 	void OnHoveredEvent__DelegateSignature(class UPerkUpgradeButton_C* Button);
 	void OnUnhoveredEvent__DelegateSignature(class UPerkUpgradeButton_C* Button);
-	void OnPressedEvent__DelegateSignature(const struct FMenuUpgradeItemInfo& Param_ItemInfo);
-	void OnReleasedEvent__DelegateSignature(const struct FMenuUpgradeItemInfo& Param_ItemInfo);
+	void OnPressedEvent__DelegateSignature(const struct FMenuUpgradeItemInfo& ItemInfo_0);
+	void OnReleasedEvent__DelegateSignature(const struct FMenuUpgradeItemInfo& ItemInfo_0);
 	void OnBuyAnimationEndedEvent__DelegateSignature(class UPerkUpgradeButton_C* PerkUpgradeButton);
 	void ExecuteUbergraph_PerkUpgradeButton(int32 EntryPoint);
 	void BndEvt__PerkUpgradeButton_CategoryButtonWidget_K2Node_ComponentBoundEvent_6_Event_HasSeenItem__DelegateSignature();
@@ -84,26 +85,27 @@ public:
 	}
 };
 static_assert(alignof(UPerkUpgradeButton_C) == 0x000008, "Wrong alignment on UPerkUpgradeButton_C");
-static_assert(sizeof(UPerkUpgradeButton_C) == 0x000428, "Wrong size on UPerkUpgradeButton_C");
+static_assert(sizeof(UPerkUpgradeButton_C) == 0x000490, "Wrong size on UPerkUpgradeButton_C");
 static_assert(offsetof(UPerkUpgradeButton_C, UberGraphFrame) == 0x000260, "Member 'UPerkUpgradeButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPerkUpgradeButton_C, CategoryButtonWidget) == 0x000268, "Member 'UPerkUpgradeButton_C::CategoryButtonWidget' has a wrong offset!");
 static_assert(offsetof(UPerkUpgradeButton_C, CostAmountText) == 0x000270, "Member 'UPerkUpgradeButton_C::CostAmountText' has a wrong offset!");
 static_assert(offsetof(UPerkUpgradeButton_C, CurrencyTypeImage) == 0x000278, "Member 'UPerkUpgradeButton_C::CurrencyTypeImage' has a wrong offset!");
 static_assert(offsetof(UPerkUpgradeButton_C, EquippedImage) == 0x000280, "Member 'UPerkUpgradeButton_C::EquippedImage' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, OnClickedEvent) == 0x000288, "Member 'UPerkUpgradeButton_C::OnClickedEvent' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, OnHoveredEvent) == 0x000298, "Member 'UPerkUpgradeButton_C::OnHoveredEvent' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, OnUnhoveredEvent) == 0x0002A8, "Member 'UPerkUpgradeButton_C::OnUnhoveredEvent' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, ItemInfo) == 0x0002B8, "Member 'UPerkUpgradeButton_C::ItemInfo' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, bIsLoadout) == 0x0003E0, "Member 'UPerkUpgradeButton_C::bIsLoadout' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, OnPressedEvent) == 0x0003E8, "Member 'UPerkUpgradeButton_C::OnPressedEvent' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, OnReleasedEvent) == 0x0003F8, "Member 'UPerkUpgradeButton_C::OnReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, SlotIndex) == 0x000408, "Member 'UPerkUpgradeButton_C::SlotIndex' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, bIsSlot) == 0x00040C, "Member 'UPerkUpgradeButton_C::bIsSlot' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, bIsLockedSlot) == 0x00040D, "Member 'UPerkUpgradeButton_C::bIsLockedSlot' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, bIsEquipped) == 0x00040E, "Member 'UPerkUpgradeButton_C::bIsEquipped' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, bEnableLoadoutHoverEvents) == 0x00040F, "Member 'UPerkUpgradeButton_C::bEnableLoadoutHoverEvents' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, OnBuyAnimationEndedEvent) == 0x000410, "Member 'UPerkUpgradeButton_C::OnBuyAnimationEndedEvent' has a wrong offset!");
-static_assert(offsetof(UPerkUpgradeButton_C, bIsSelf) == 0x000420, "Member 'UPerkUpgradeButton_C::bIsSelf' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, LockImage) == 0x000288, "Member 'UPerkUpgradeButton_C::LockImage' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, OnClickedEvent) == 0x000290, "Member 'UPerkUpgradeButton_C::OnClickedEvent' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, OnHoveredEvent) == 0x0002A0, "Member 'UPerkUpgradeButton_C::OnHoveredEvent' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, OnUnhoveredEvent) == 0x0002B0, "Member 'UPerkUpgradeButton_C::OnUnhoveredEvent' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, ItemInfo) == 0x0002C0, "Member 'UPerkUpgradeButton_C::ItemInfo' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, bIsLoadout) == 0x000448, "Member 'UPerkUpgradeButton_C::bIsLoadout' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, OnPressedEvent) == 0x000450, "Member 'UPerkUpgradeButton_C::OnPressedEvent' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, OnReleasedEvent) == 0x000460, "Member 'UPerkUpgradeButton_C::OnReleasedEvent' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, SlotIndex) == 0x000470, "Member 'UPerkUpgradeButton_C::SlotIndex' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, bIsSlot) == 0x000474, "Member 'UPerkUpgradeButton_C::bIsSlot' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, bIsLockedSlot) == 0x000475, "Member 'UPerkUpgradeButton_C::bIsLockedSlot' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, bIsEquipped) == 0x000476, "Member 'UPerkUpgradeButton_C::bIsEquipped' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, bEnableLoadoutHoverEvents) == 0x000477, "Member 'UPerkUpgradeButton_C::bEnableLoadoutHoverEvents' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, OnBuyAnimationEndedEvent) == 0x000478, "Member 'UPerkUpgradeButton_C::OnBuyAnimationEndedEvent' has a wrong offset!");
+static_assert(offsetof(UPerkUpgradeButton_C, bIsSelf) == 0x000488, "Member 'UPerkUpgradeButton_C::bIsSelf' has a wrong offset!");
 
 }
 

@@ -19,22 +19,22 @@ namespace SDK::Params
 struct RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature final
 {
 public:
-	bool                                          Param_CheckRequiredXP;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CheckRequiredXP_0;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature) == 0x000001, "Wrong alignment on RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature");
 static_assert(sizeof(RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature) == 0x000001, "Wrong size on RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature");
-static_assert(offsetof(RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature, Param_CheckRequiredXP) == 0x000000, "Member 'RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature::Param_CheckRequiredXP' has a wrong offset!");
+static_assert(offsetof(RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature, CheckRequiredXP_0) == 0x000000, "Member 'RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature::CheckRequiredXP_0' has a wrong offset!");
 
 // Function RBMainMenuGameMode_BP.RBMainMenuGameMode_BP_C.SetCheckRequiredXP
 // 0x0001 (0x0001 - 0x0000)
 struct RBMainMenuGameMode_BP_C_SetCheckRequiredXP final
 {
 public:
-	bool                                          Param_CheckRequiredXP;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CheckRequiredXP_0;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(RBMainMenuGameMode_BP_C_SetCheckRequiredXP) == 0x000001, "Wrong alignment on RBMainMenuGameMode_BP_C_SetCheckRequiredXP");
 static_assert(sizeof(RBMainMenuGameMode_BP_C_SetCheckRequiredXP) == 0x000001, "Wrong size on RBMainMenuGameMode_BP_C_SetCheckRequiredXP");
-static_assert(offsetof(RBMainMenuGameMode_BP_C_SetCheckRequiredXP, Param_CheckRequiredXP) == 0x000000, "Member 'RBMainMenuGameMode_BP_C_SetCheckRequiredXP::Param_CheckRequiredXP' has a wrong offset!");
+static_assert(offsetof(RBMainMenuGameMode_BP_C_SetCheckRequiredXP, CheckRequiredXP_0) == 0x000000, "Member 'RBMainMenuGameMode_BP_C_SetCheckRequiredXP::CheckRequiredXP_0' has a wrong offset!");
 
 }
 

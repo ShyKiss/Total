@@ -74,10 +74,10 @@ void UTextChatEntry_C::WidgetAnimationEvt_HideAnim_K2Node_WidgetAnimationEvent_0
 // Function TextChatEntry.TextChatEntry_C.Setup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRBTextChatMessage               Param_Message                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-// class UTextChatWidget_BP_C*             Param_Parent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRBTextChatMessage               Message_0                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UTextChatWidget_BP_C*             Parent_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTextChatEntry_C::Setup(const struct FRBTextChatMessage& Param_Message, class UTextChatWidget_BP_C* Param_Parent)
+void UTextChatEntry_C::Setup(const struct FRBTextChatMessage& Message_0, class UTextChatWidget_BP_C* Parent_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -86,8 +86,8 @@ void UTextChatEntry_C::Setup(const struct FRBTextChatMessage& Param_Message, cla
 
 	Params::TextChatEntry_C_Setup Parms{};
 
-	Parms.Param_Message = std::move(Param_Message);
-	Parms.Param_Parent = Param_Parent;
+	Parms.Message_0 = std::move(Message_0);
+	Parms.Parent_0 = Parent_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

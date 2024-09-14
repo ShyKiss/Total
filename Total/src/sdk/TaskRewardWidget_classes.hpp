@@ -29,7 +29,7 @@ public:
 	class USingleRewardWidget_C*                  SingleRewardWidget;                                // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<struct FRewardUIData>                  Rewards;                                           // 0x0280(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          bAnimated;                                         // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D0D[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_291[0x3];                                      // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CurrentRewardIndex;                                // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -37,8 +37,8 @@ public:
 	void Animate();
 	void Finished_FE3476BC4677FFD9574C21B61B4C3100();
 	void Finished_06C8D1BA4A83DEE7EEB540A7F6355A36();
-	void Init(TArray<struct FRewardUIData>& Param_Rewards);
-	void SetAnimated(bool Param_bAnimated);
+	void Init(TArray<struct FRewardUIData>& Rewards_0);
+	void SetAnimated(bool bAnimated_0);
 
 public:
 	static class UClass* StaticClass()

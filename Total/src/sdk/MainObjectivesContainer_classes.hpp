@@ -28,10 +28,10 @@ public:
 	class UMainObjectiveWidget_C*                 MainObjectiveWidget;                               // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMainObjectiveWidget_C*                 MainObjectiveWidget_177;                           // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMainObjectiveWidget_C*                 MainObjectiveWidget_250;                           // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_20;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           ObjectivesVBox;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          IsCurrentObjectiveVisible;                         // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bPauseMenu;                                        // 0x0321(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F14[0x6];                                     // 0x0322(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_322[0x6];                                      // 0x0322(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARBBaseObjectiveCoordinator*>    CoordinatorsWaitingToBeAdded;                      // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	bool                                          RetainObjectives;                                  // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -41,7 +41,7 @@ public:
 	void Event_Show();
 	void PreConstruct(bool IsDesignTime);
 	void Add_Objective(class ARBBaseObjectiveCoordinator* Coordinator);
-	void OnMainObjectiveVisibilityChanged(bool Param_IsVisible);
+	void OnMainObjectiveVisibilityChanged(bool IsVisible_0);
 	void RefreshObjectivesTexts();
 	void RegisterCoordinator(class ARBBaseObjectiveCoordinator* Coordinator);
 	void AddWaitingCoordinators();
@@ -66,7 +66,7 @@ static_assert(offsetof(UMainObjectivesContainer_C, InvalidationBox_MainObjective
 static_assert(offsetof(UMainObjectivesContainer_C, MainObjectiveWidget) == 0x000300, "Member 'UMainObjectivesContainer_C::MainObjectiveWidget' has a wrong offset!");
 static_assert(offsetof(UMainObjectivesContainer_C, MainObjectiveWidget_177) == 0x000308, "Member 'UMainObjectivesContainer_C::MainObjectiveWidget_177' has a wrong offset!");
 static_assert(offsetof(UMainObjectivesContainer_C, MainObjectiveWidget_250) == 0x000310, "Member 'UMainObjectivesContainer_C::MainObjectiveWidget_250' has a wrong offset!");
-static_assert(offsetof(UMainObjectivesContainer_C, VerticalBox_20) == 0x000318, "Member 'UMainObjectivesContainer_C::VerticalBox_20' has a wrong offset!");
+static_assert(offsetof(UMainObjectivesContainer_C, ObjectivesVBox) == 0x000318, "Member 'UMainObjectivesContainer_C::ObjectivesVBox' has a wrong offset!");
 static_assert(offsetof(UMainObjectivesContainer_C, IsCurrentObjectiveVisible) == 0x000320, "Member 'UMainObjectivesContainer_C::IsCurrentObjectiveVisible' has a wrong offset!");
 static_assert(offsetof(UMainObjectivesContainer_C, bPauseMenu) == 0x000321, "Member 'UMainObjectivesContainer_C::bPauseMenu' has a wrong offset!");
 static_assert(offsetof(UMainObjectivesContainer_C, CoordinatorsWaitingToBeAdded) == 0x000328, "Member 'UMainObjectivesContainer_C::CoordinatorsWaitingToBeAdded' has a wrong offset!");

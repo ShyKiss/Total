@@ -229,9 +229,9 @@ class UUserWidget* UMenuTutorials_C::OnGetUserMenuContent_0()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget*                          AnchorInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCanvasPanelSlot*                 Param_Slot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCanvasPanelSlot*                 Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMenuTutorials_C::SetAnchorInfo(class UWidget* AnchorInfo, class UCanvasPanelSlot* Param_Slot)
+void UMenuTutorials_C::SetAnchorInfo(class UWidget* AnchorInfo, class UCanvasPanelSlot* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -241,7 +241,7 @@ void UMenuTutorials_C::SetAnchorInfo(class UWidget* AnchorInfo, class UCanvasPan
 	Params::MenuTutorials_C_SetAnchorInfo Parms{};
 
 	Parms.AnchorInfo = AnchorInfo;
-	Parms.Param_Slot = Param_Slot;
+	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -278,9 +278,9 @@ void UMenuTutorials_C::Refresh(const class FText& TutorialText, class UWidget* P
 // Function MenuTutorials.MenuTutorials_C.isShowingTutorial
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsShowingTutorial                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsShowingTutorial_0                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMenuTutorials_C::IsShowingTutorial(bool* Param_IsShowingTutorial)
+void UMenuTutorials_C::IsShowingTutorial(bool* IsShowingTutorial_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -291,8 +291,8 @@ void UMenuTutorials_C::IsShowingTutorial(bool* Param_IsShowingTutorial)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_IsShowingTutorial != nullptr)
-		*Param_IsShowingTutorial = Parms.Param_IsShowingTutorial;
+	if (IsShowingTutorial_0 != nullptr)
+		*IsShowingTutorial_0 = Parms.IsShowingTutorial_0;
 }
 
 

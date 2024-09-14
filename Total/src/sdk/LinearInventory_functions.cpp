@@ -553,6 +553,20 @@ void ULinearInventory_C::SequenceEvent__ENTRYPOINTLinearInventory_0()
 }
 
 
+// Function LinearInventory.LinearInventory_C.SequenceEvent__ENTRYPOINTLinearInventory_1
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ULinearInventory_C::SequenceEvent__ENTRYPOINTLinearInventory_1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LinearInventory_C", "SequenceEvent__ENTRYPOINTLinearInventory_1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function LinearInventory.LinearInventory_C.ShouldShow
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:

@@ -27,34 +27,34 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0004(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1;                          // 0x0014(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2FE1[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRBStageID                             K2Node_CustomEvent_stageID;                        // 0x0040(0x0028)(ConstParm)
 	struct FRBMissionID                           K2Node_CustomEvent_missionID;                      // 0x0068(0x0028)(ConstParm)
 	bool                                          K2Node_CustomEvent_isFail;                         // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FE2[0x6];                                     // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_CustomEvent_gameMessage;                    // 0x0098(0x0018)(ConstParm)
 	EGameMessageCategory                          K2Node_CustomEvent_messageCategory;                // 0x00B0(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FE3[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameMessageAudioParams                K2Node_CustomEvent_audioParams;                    // 0x00B8(0x0010)(ConstParm, NoDestructor)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue;                       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EHudMode                                      K2Node_Event_newHudMode;                           // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FE4[0x2];                                     // 0x00E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E2[0x2];                                       // 0x00E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class FText& GameMessage, EGameMessageCategory MessageCategory, struct FGameMessageAudioParams& AudioParams)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x00E4(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsInValidHudMode_ReturnValue;             // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FE5[0x2];                                     // 0x00F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F6[0x2];                                       // 0x00F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(struct FRBStageID& StageID, struct FRBMissionID& MissionID, bool IsFail)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x00F8(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FE6[0x2];                                     // 0x010A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10A[0x2];                                      // 0x010A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_PostEventGlobal_ReturnValue;              // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEventGlobal_ReturnValue_1;            // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FE7[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -110,7 +110,7 @@ struct HUDGameMessages_C_OnShowGameMessage_Event_0 final
 public:
 	class FText                                   GameMessage;                                       // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	EGameMessageCategory                          MessageCategory;                                   // 0x0018(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FE8[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameMessageAudioParams                AudioParams;                                       // 0x0020(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
 static_assert(alignof(HUDGameMessages_C_OnShowGameMessage_Event_0) == 0x000008, "Wrong alignment on HUDGameMessages_C_OnShowGameMessage_Event_0");
@@ -139,26 +139,26 @@ static_assert(offsetof(HUDGameMessages_C_OnStageEnded_Event_0, IsFail) == 0x0000
 struct HUDGameMessages_C_InitializeMessage final
 {
 public:
-	class FText                                   Param_Message;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   Message_0;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	EGameMessageCategory                          MessageCategory;                                   // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FE9[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameMessageAudioParams                AudioParams;                                       // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	class FText                                   Temp_text_Variable;                                // 0x0030(0x0018)()
 	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FEA[0x5];                                     // 0x004B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B[0x5];                                       // 0x004B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable_1;                              // 0x0050(0x0018)()
 	bool                                          Temp_bool_Variable_1;                              // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsInValidHudMode_ReturnValue;             // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FEB[0x5];                                     // 0x006B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6B[0x5];                                       // 0x006B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0070(0x0018)()
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HUDGameMessages_C_InitializeMessage) == 0x000008, "Wrong alignment on HUDGameMessages_C_InitializeMessage");
 static_assert(sizeof(HUDGameMessages_C_InitializeMessage) == 0x000090, "Wrong size on HUDGameMessages_C_InitializeMessage");
-static_assert(offsetof(HUDGameMessages_C_InitializeMessage, Param_Message) == 0x000000, "Member 'HUDGameMessages_C_InitializeMessage::Param_Message' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_InitializeMessage, Message_0) == 0x000000, "Member 'HUDGameMessages_C_InitializeMessage::Message_0' has a wrong offset!");
 static_assert(offsetof(HUDGameMessages_C_InitializeMessage, MessageCategory) == 0x000018, "Member 'HUDGameMessages_C_InitializeMessage::MessageCategory' has a wrong offset!");
 static_assert(offsetof(HUDGameMessages_C_InitializeMessage, AudioParams) == 0x000020, "Member 'HUDGameMessages_C_InitializeMessage::AudioParams' has a wrong offset!");
 static_assert(offsetof(HUDGameMessages_C_InitializeMessage, Temp_text_Variable) == 0x000030, "Member 'HUDGameMessages_C_InitializeMessage::Temp_text_Variable' has a wrong offset!");

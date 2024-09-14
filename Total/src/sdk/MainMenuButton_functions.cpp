@@ -66,9 +66,9 @@ void UMainMenuButton_C::Get_Button_Enabled(bool* Enabled)
 // Function MainMenuButton.MainMenuButton_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Text                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Text_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UMainMenuButton_C::SetText(const class FText& Param_Text)
+void UMainMenuButton_C::SetText(const class FText& Text_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -77,7 +77,7 @@ void UMainMenuButton_C::SetText(const class FText& Param_Text)
 
 	Params::MainMenuButton_C_SetText Parms{};
 
-	Parms.Param_Text = std::move(Param_Text);
+	Parms.Text_0 = std::move(Text_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

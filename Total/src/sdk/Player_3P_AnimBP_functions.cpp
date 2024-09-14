@@ -244,9 +244,9 @@ void UPlayer_3P_AnimBP_C::IsValidUpperBodyAnimationForLookAt(class ARBPawn* Play
 // Function player_3P_AnimBP.player_3P_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink                        Param_AnimGraph                                        (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UPlayer_3P_AnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
+void UPlayer_3P_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -257,8 +257,8 @@ void UPlayer_3P_AnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_AnimGraph != nullptr)
-		*Param_AnimGraph = std::move(Parms.Param_AnimGraph);
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

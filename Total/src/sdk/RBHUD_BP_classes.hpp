@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass RBHUD_BP.RBHUD_BP_C
-// 0x0020 (0x0690 - 0x0670)
+// 0x0020 (0x06F8 - 0x06D8)
 class ARBHUD_BP_C final : public ARBHUD
 {
 public:
-	class UPostProcessComponent*                  PostProcessFP;                                     // 0x0670(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0678(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         ArrowForwardOffet;                                 // 0x0680(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              PointerSize_0;                                     // 0x0684(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPostProcessComponent*                  PostProcessFP;                                     // 0x06D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x06E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         ArrowForwardOffet;                                 // 0x06E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              PointerSize_0;                                     // 0x06EC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -38,11 +38,11 @@ public:
 	}
 };
 static_assert(alignof(ARBHUD_BP_C) == 0x000008, "Wrong alignment on ARBHUD_BP_C");
-static_assert(sizeof(ARBHUD_BP_C) == 0x000690, "Wrong size on ARBHUD_BP_C");
-static_assert(offsetof(ARBHUD_BP_C, PostProcessFP) == 0x000670, "Member 'ARBHUD_BP_C::PostProcessFP' has a wrong offset!");
-static_assert(offsetof(ARBHUD_BP_C, DefaultSceneRoot) == 0x000678, "Member 'ARBHUD_BP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ARBHUD_BP_C, ArrowForwardOffet) == 0x000680, "Member 'ARBHUD_BP_C::ArrowForwardOffet' has a wrong offset!");
-static_assert(offsetof(ARBHUD_BP_C, PointerSize_0) == 0x000684, "Member 'ARBHUD_BP_C::PointerSize_0' has a wrong offset!");
+static_assert(sizeof(ARBHUD_BP_C) == 0x0006F8, "Wrong size on ARBHUD_BP_C");
+static_assert(offsetof(ARBHUD_BP_C, PostProcessFP) == 0x0006D8, "Member 'ARBHUD_BP_C::PostProcessFP' has a wrong offset!");
+static_assert(offsetof(ARBHUD_BP_C, DefaultSceneRoot) == 0x0006E0, "Member 'ARBHUD_BP_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(ARBHUD_BP_C, ArrowForwardOffet) == 0x0006E8, "Member 'ARBHUD_BP_C::ArrowForwardOffet' has a wrong offset!");
+static_assert(offsetof(ARBHUD_BP_C, PointerSize_0) == 0x0006EC, "Member 'ARBHUD_BP_C::PointerSize_0' has a wrong offset!");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass biggrunt_AnimBP.biggrunt_AnimBP_C
-// 0x0000 (0x83D0 - 0x83D0)
+// 0x0000 (0x8460 - 0x8460)
 class Ubiggrunt_AnimBP_C : public Ubiggrunt_abstract_AnimBP_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(Ubiggrunt_AnimBP_C) == 0x000010, "Wrong alignment on Ubiggrunt_AnimBP_C");
-static_assert(sizeof(Ubiggrunt_AnimBP_C) == 0x0083D0, "Wrong size on Ubiggrunt_AnimBP_C");
+static_assert(sizeof(Ubiggrunt_AnimBP_C) == 0x008460, "Wrong size on Ubiggrunt_AnimBP_C");
 
 }
 

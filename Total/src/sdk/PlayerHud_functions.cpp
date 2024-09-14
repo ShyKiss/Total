@@ -51,6 +51,46 @@ void UPlayerHud_C::ExecuteUbergraph_PlayerHud(int32 EntryPoint)
 }
 
 
+// Function PlayerHud.PlayerHud_C.Event_UpdateTerminalPromptDisplay
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bHasUnseenTerminalElements                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UPlayerHud_C::Event_UpdateTerminalPromptDisplay(const bool bHasUnseenTerminalElements)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerHud_C", "Event_UpdateTerminalPromptDisplay");
+
+	Params::PlayerHud_C_Event_UpdateTerminalPromptDisplay Parms{};
+
+	Parms.bHasUnseenTerminalElements = bHasUnseenTerminalElements;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PlayerHud.PlayerHud_C.Event_UpdateNewsPromptDisplay
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bHasUnseenNews                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UPlayerHud_C::Event_UpdateNewsPromptDisplay(const bool bHasUnseenNews)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerHud_C", "Event_UpdateNewsPromptDisplay");
+
+	Params::PlayerHud_C_Event_UpdateNewsPromptDisplay Parms{};
+
+	Parms.bHasUnseenNews = bHasUnseenNews;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function PlayerHud.PlayerHud_C.OnObjectiveStartedMessageSent
 // (BlueprintCallable, BlueprintEvent)
 
@@ -208,9 +248,9 @@ void UPlayerHud_C::TransitionFeedbackFinished()
 // Function PlayerHud.PlayerHud_C.Event_StartTransitionFeedback
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float                                   Param_blackoutDuration                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   blackoutDuration_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPlayerHud_C::Event_StartTransitionFeedback(float Param_blackoutDuration)
+void UPlayerHud_C::Event_StartTransitionFeedback(float blackoutDuration_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -219,7 +259,7 @@ void UPlayerHud_C::Event_StartTransitionFeedback(float Param_blackoutDuration)
 
 	Params::PlayerHud_C_Event_StartTransitionFeedback Parms{};
 
-	Parms.Param_blackoutDuration = Param_blackoutDuration;
+	Parms.blackoutDuration_0 = blackoutDuration_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -301,37 +341,43 @@ void UPlayerHud_C::Event_HideBadgeProgress()
 }
 
 
-// Function PlayerHud.PlayerHud_C.Event_ShowTaskProgress
+// Function PlayerHud.PlayerHud_C.Event_ShowTrialDetailsNotification
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRBTaskHudProgressDisplayDetails Progress                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// struct FRBTrialHudNotificationDetails   Details                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void UPlayerHud_C::Event_ShowTaskProgress(const struct FRBTaskHudProgressDisplayDetails& Progress)
+void UPlayerHud_C::Event_ShowTrialDetailsNotification(const struct FRBTrialHudNotificationDetails& Details)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerHud_C", "Event_ShowTaskProgress");
+		Func = Class->GetFunction("PlayerHud_C", "Event_ShowTrialDetailsNotification");
 
-	Params::PlayerHud_C_Event_ShowTaskProgress Parms{};
+	Params::PlayerHud_C_Event_ShowTrialDetailsNotification Parms{};
 
-	Parms.Progress = std::move(Progress);
+	Parms.Details = std::move(Details);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function PlayerHud.PlayerHud_C.Event_HideTaskProgress
+// Function PlayerHud.PlayerHud_C.Event_HideTrialDetailsNotification
 // (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bPlayTransition                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UPlayerHud_C::Event_HideTaskProgress()
+void UPlayerHud_C::Event_HideTrialDetailsNotification(bool bPlayTransition)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerHud_C", "Event_HideTaskProgress");
+		Func = Class->GetFunction("PlayerHud_C", "Event_HideTrialDetailsNotification");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::PlayerHud_C_Event_HideTrialDetailsNotification Parms{};
+
+	Parms.bPlayTransition = bPlayTransition;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

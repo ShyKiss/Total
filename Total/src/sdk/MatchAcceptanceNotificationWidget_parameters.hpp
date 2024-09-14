@@ -29,14 +29,14 @@ public:
 	float                                         K2Node_Event_displayTime;                          // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_totalDisplayTime;                     // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3041[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3042[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3043[0x3];                                     // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00A4(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(MatchAcceptanceNotificationWidget_C_ExecuteUbergraph_MatchAcceptanceNotificationWidget) == 0x000008, "Wrong alignment on MatchAcceptanceNotificationWidget_C_ExecuteUbergraph_MatchAcceptanceNotificationWidget");
@@ -62,12 +62,12 @@ struct MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime final
 {
 public:
 	float                                         DisplayTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_TotalDisplayTime;                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TotalDisplayTime_0;                                // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime) == 0x000004, "Wrong alignment on MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime");
 static_assert(sizeof(MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime) == 0x000008, "Wrong size on MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime");
 static_assert(offsetof(MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime, DisplayTime) == 0x000000, "Member 'MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime::DisplayTime' has a wrong offset!");
-static_assert(offsetof(MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime, Param_TotalDisplayTime) == 0x000004, "Member 'MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime::Param_TotalDisplayTime' has a wrong offset!");
+static_assert(offsetof(MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime, TotalDisplayTime_0) == 0x000004, "Member 'MatchAcceptanceNotificationWidget_C_Event_UpdateDisplayTime::TotalDisplayTime_0' has a wrong offset!");
 
 }
 

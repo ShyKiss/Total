@@ -22,7 +22,7 @@ struct CineCharacterBase_BP_C_ExecuteUbergraph_CineCharacterBase_BP final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31BB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBTrialAsyncData*                      K2Node_CustomEvent_asyncData;                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CineCharacterBase_BP_C_ExecuteUbergraph_CineCharacterBase_BP) == 0x000008, "Wrong alignment on CineCharacterBase_BP_C_ExecuteUbergraph_CineCharacterBase_BP");
@@ -68,13 +68,13 @@ static_assert(offsetof(CineCharacterBase_BP_C_PreviewSequence, K2Node_MakeStruct
 struct CineCharacterBase_BP_C_SetPreviewSequenceData final
 {
 public:
-	class UAnimSequence*                          Param_Anim;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_Time;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimSequence*                          Anim_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Time_0;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CineCharacterBase_BP_C_SetPreviewSequenceData) == 0x000008, "Wrong alignment on CineCharacterBase_BP_C_SetPreviewSequenceData");
 static_assert(sizeof(CineCharacterBase_BP_C_SetPreviewSequenceData) == 0x000010, "Wrong size on CineCharacterBase_BP_C_SetPreviewSequenceData");
-static_assert(offsetof(CineCharacterBase_BP_C_SetPreviewSequenceData, Param_Anim) == 0x000000, "Member 'CineCharacterBase_BP_C_SetPreviewSequenceData::Param_Anim' has a wrong offset!");
-static_assert(offsetof(CineCharacterBase_BP_C_SetPreviewSequenceData, Param_Time) == 0x000008, "Member 'CineCharacterBase_BP_C_SetPreviewSequenceData::Param_Time' has a wrong offset!");
+static_assert(offsetof(CineCharacterBase_BP_C_SetPreviewSequenceData, Anim_0) == 0x000000, "Member 'CineCharacterBase_BP_C_SetPreviewSequenceData::Anim_0' has a wrong offset!");
+static_assert(offsetof(CineCharacterBase_BP_C_SetPreviewSequenceData, Time_0) == 0x000008, "Member 'CineCharacterBase_BP_C_SetPreviewSequenceData::Time_0' has a wrong offset!");
 
 // Function CineCharacterBase_BP.CineCharacterBase_BP_C.GetCineFaceAnimBP
 // 0x0008 (0x0008 - 0x0000)
@@ -104,12 +104,12 @@ struct CineCharacterBase_BP_C_GetBodyAnimation final
 {
 public:
 	class USkeletalMeshComponent*                 Mesh;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimSequence*                          Param_Anim;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimSequence*                          Anim_0;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CineCharacterBase_BP_C_GetBodyAnimation) == 0x000008, "Wrong alignment on CineCharacterBase_BP_C_GetBodyAnimation");
 static_assert(sizeof(CineCharacterBase_BP_C_GetBodyAnimation) == 0x000010, "Wrong size on CineCharacterBase_BP_C_GetBodyAnimation");
 static_assert(offsetof(CineCharacterBase_BP_C_GetBodyAnimation, Mesh) == 0x000000, "Member 'CineCharacterBase_BP_C_GetBodyAnimation::Mesh' has a wrong offset!");
-static_assert(offsetof(CineCharacterBase_BP_C_GetBodyAnimation, Param_Anim) == 0x000008, "Member 'CineCharacterBase_BP_C_GetBodyAnimation::Param_Anim' has a wrong offset!");
+static_assert(offsetof(CineCharacterBase_BP_C_GetBodyAnimation, Anim_0) == 0x000008, "Member 'CineCharacterBase_BP_C_GetBodyAnimation::Anim_0' has a wrong offset!");
 
 // Function CineCharacterBase_BP.CineCharacterBase_BP_C.GetFacialAnimation
 // 0x0010 (0x0010 - 0x0000)
@@ -117,12 +117,12 @@ struct CineCharacterBase_BP_C_GetFacialAnimation final
 {
 public:
 	class USkeletalMeshComponent*                 Mesh;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimSequence*                          Param_Anim;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimSequence*                          Anim_0;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CineCharacterBase_BP_C_GetFacialAnimation) == 0x000008, "Wrong alignment on CineCharacterBase_BP_C_GetFacialAnimation");
 static_assert(sizeof(CineCharacterBase_BP_C_GetFacialAnimation) == 0x000010, "Wrong size on CineCharacterBase_BP_C_GetFacialAnimation");
 static_assert(offsetof(CineCharacterBase_BP_C_GetFacialAnimation, Mesh) == 0x000000, "Member 'CineCharacterBase_BP_C_GetFacialAnimation::Mesh' has a wrong offset!");
-static_assert(offsetof(CineCharacterBase_BP_C_GetFacialAnimation, Param_Anim) == 0x000008, "Member 'CineCharacterBase_BP_C_GetFacialAnimation::Param_Anim' has a wrong offset!");
+static_assert(offsetof(CineCharacterBase_BP_C_GetFacialAnimation, Anim_0) == 0x000008, "Member 'CineCharacterBase_BP_C_GetFacialAnimation::Anim_0' has a wrong offset!");
 
 }
 

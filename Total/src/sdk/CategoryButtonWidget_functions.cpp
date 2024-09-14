@@ -242,9 +242,9 @@ void UCategoryButtonWidget_C::OnBuyAnimationEnded()
 // Function CategoryButtonWidget.CategoryButtonWidget_C.SetSelected
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsSelected                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsSelected_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UCategoryButtonWidget_C::SetSelected(bool Param_IsSelected)
+void UCategoryButtonWidget_C::SetSelected(bool IsSelected_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -253,7 +253,7 @@ void UCategoryButtonWidget_C::SetSelected(bool Param_IsSelected)
 
 	Params::CategoryButtonWidget_C_SetSelected Parms{};
 
-	Parms.Param_IsSelected = Param_IsSelected;
+	Parms.IsSelected_0 = IsSelected_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -262,9 +262,9 @@ void UCategoryButtonWidget_C::SetSelected(bool Param_IsSelected)
 // Function CategoryButtonWidget.CategoryButtonWidget_C.SetState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ECategoryButtonState                    Param_State                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ECategoryButtonState                    State_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UCategoryButtonWidget_C::SetState(ECategoryButtonState Param_State)
+void UCategoryButtonWidget_C::SetState(ECategoryButtonState State_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -273,7 +273,7 @@ void UCategoryButtonWidget_C::SetState(ECategoryButtonState Param_State)
 
 	Params::CategoryButtonWidget_C_SetState Parms{};
 
-	Parms.Param_State = Param_State;
+	Parms.State_0 = State_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -282,10 +282,10 @@ void UCategoryButtonWidget_C::SetState(ECategoryButtonState Param_State)
 // Function CategoryButtonWidget.CategoryButtonWidget_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       Param_Icon                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Icon_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    MatchSize                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UCategoryButtonWidget_C::Set_Icon(class UTexture2D* Param_Icon, bool MatchSize)
+void UCategoryButtonWidget_C::Set_Icon(class UTexture2D* Icon_0, bool MatchSize)
 {
 	static class UFunction* Func = nullptr;
 
@@ -294,7 +294,7 @@ void UCategoryButtonWidget_C::Set_Icon(class UTexture2D* Param_Icon, bool MatchS
 
 	Params::CategoryButtonWidget_C_Set_Icon Parms{};
 
-	Parms.Param_Icon = Param_Icon;
+	Parms.Icon_0 = Icon_0;
 	Parms.MatchSize = MatchSize;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -304,9 +304,9 @@ void UCategoryButtonWidget_C::Set_Icon(class UTexture2D* Param_Icon, bool MatchS
 // Function CategoryButtonWidget.CategoryButtonWidget_C.SetCanShowIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_CanShowIcon                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    CanShowIcon_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UCategoryButtonWidget_C::SetCanShowIcon(bool Param_CanShowIcon)
+void UCategoryButtonWidget_C::SetCanShowIcon(bool CanShowIcon_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -315,7 +315,7 @@ void UCategoryButtonWidget_C::SetCanShowIcon(bool Param_CanShowIcon)
 
 	Params::CategoryButtonWidget_C_SetCanShowIcon Parms{};
 
-	Parms.Param_CanShowIcon = Param_CanShowIcon;
+	Parms.CanShowIcon_0 = CanShowIcon_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

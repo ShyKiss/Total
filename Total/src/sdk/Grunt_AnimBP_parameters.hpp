@@ -32,14 +32,14 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ShouldReactToLight_ShouldReactToLight;    // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30B9[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ShouldAimWeapon_AimWeapon;                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30BA[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_TryGetPawnOwner_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30BB[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBNPC*                                 K2Node_DynamicCast_AsRB_NPC;                       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -86,7 +86,7 @@ static_assert(offsetof(Grunt_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0
 struct Grunt_AnimBP_C_ShouldReactToLight final
 {
 public:
-	bool                                          Param_ShouldReactToLight;                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          ShouldReactToLight_0;                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue_1;      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanNOR_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -96,7 +96,7 @@ public:
 };
 static_assert(alignof(Grunt_AnimBP_C_ShouldReactToLight) == 0x000001, "Wrong alignment on Grunt_AnimBP_C_ShouldReactToLight");
 static_assert(sizeof(Grunt_AnimBP_C_ShouldReactToLight) == 0x000007, "Wrong size on Grunt_AnimBP_C_ShouldReactToLight");
-static_assert(offsetof(Grunt_AnimBP_C_ShouldReactToLight, Param_ShouldReactToLight) == 0x000000, "Member 'Grunt_AnimBP_C_ShouldReactToLight::Param_ShouldReactToLight' has a wrong offset!");
+static_assert(offsetof(Grunt_AnimBP_C_ShouldReactToLight, ShouldReactToLight_0) == 0x000000, "Member 'Grunt_AnimBP_C_ShouldReactToLight::ShouldReactToLight_0' has a wrong offset!");
 static_assert(offsetof(Grunt_AnimBP_C_ShouldReactToLight, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000001, "Member 'Grunt_AnimBP_C_ShouldReactToLight::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Grunt_AnimBP_C_ShouldReactToLight, CallFunc_EqualEqual_FloatFloat_ReturnValue_1) == 0x000002, "Member 'Grunt_AnimBP_C_ShouldReactToLight::CallFunc_EqualEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(Grunt_AnimBP_C_ShouldReactToLight, CallFunc_BooleanNOR_ReturnValue) == 0x000003, "Member 'Grunt_AnimBP_C_ShouldReactToLight::CallFunc_BooleanNOR_ReturnValue' has a wrong offset!");
@@ -124,11 +124,11 @@ static_assert(offsetof(Grunt_AnimBP_C_ShouldAimWeapon, CallFunc_BooleanAND_Retur
 struct Grunt_AnimBP_C_AnimGraph final
 {
 public:
-	struct FPoseLink                              Param_AnimGraph;                                   // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(Grunt_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on Grunt_AnimBP_C_AnimGraph");
 static_assert(sizeof(Grunt_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on Grunt_AnimBP_C_AnimGraph");
-static_assert(offsetof(Grunt_AnimBP_C_AnimGraph, Param_AnimGraph) == 0x000000, "Member 'Grunt_AnimBP_C_AnimGraph::Param_AnimGraph' has a wrong offset!");
+static_assert(offsetof(Grunt_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'Grunt_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 // Function grunt_AnimBP.grunt_AnimBP_C.NightHunter_InLight
 // 0x0020 (0x0020 - 0x0000)
@@ -136,12 +136,12 @@ struct Grunt_AnimBP_C_NightHunter_InLight final
 {
 public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              Param_NightHunter_InLight;                         // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              NightHunter_InLight_0;                             // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(Grunt_AnimBP_C_NightHunter_InLight) == 0x000008, "Wrong alignment on Grunt_AnimBP_C_NightHunter_InLight");
 static_assert(sizeof(Grunt_AnimBP_C_NightHunter_InLight) == 0x000020, "Wrong size on Grunt_AnimBP_C_NightHunter_InLight");
 static_assert(offsetof(Grunt_AnimBP_C_NightHunter_InLight, InPose) == 0x000000, "Member 'Grunt_AnimBP_C_NightHunter_InLight::InPose' has a wrong offset!");
-static_assert(offsetof(Grunt_AnimBP_C_NightHunter_InLight, Param_NightHunter_InLight) == 0x000010, "Member 'Grunt_AnimBP_C_NightHunter_InLight::Param_NightHunter_InLight' has a wrong offset!");
+static_assert(offsetof(Grunt_AnimBP_C_NightHunter_InLight, NightHunter_InLight_0) == 0x000010, "Member 'Grunt_AnimBP_C_NightHunter_InLight::NightHunter_InLight_0' has a wrong offset!");
 
 // Function grunt_AnimBP.grunt_AnimBP_C.NightHunter_EnterLight
 // 0x0020 (0x0020 - 0x0000)
@@ -149,12 +149,12 @@ struct Grunt_AnimBP_C_NightHunter_EnterLight final
 {
 public:
 	struct FPoseLink                              Input;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              Param_NightHunter_EnterLight;                      // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              NightHunter_EnterLight_0;                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(Grunt_AnimBP_C_NightHunter_EnterLight) == 0x000008, "Wrong alignment on Grunt_AnimBP_C_NightHunter_EnterLight");
 static_assert(sizeof(Grunt_AnimBP_C_NightHunter_EnterLight) == 0x000020, "Wrong size on Grunt_AnimBP_C_NightHunter_EnterLight");
 static_assert(offsetof(Grunt_AnimBP_C_NightHunter_EnterLight, Input) == 0x000000, "Member 'Grunt_AnimBP_C_NightHunter_EnterLight::Input' has a wrong offset!");
-static_assert(offsetof(Grunt_AnimBP_C_NightHunter_EnterLight, Param_NightHunter_EnterLight) == 0x000010, "Member 'Grunt_AnimBP_C_NightHunter_EnterLight::Param_NightHunter_EnterLight' has a wrong offset!");
+static_assert(offsetof(Grunt_AnimBP_C_NightHunter_EnterLight, NightHunter_EnterLight_0) == 0x000010, "Member 'Grunt_AnimBP_C_NightHunter_EnterLight::NightHunter_EnterLight_0' has a wrong offset!");
 
 // Function grunt_AnimBP.grunt_AnimBP_C.RangedWeaponLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -162,12 +162,12 @@ struct Grunt_AnimBP_C_RangedWeaponLayer final
 {
 public:
 	struct FPoseLink                              Base_Locomotion;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              Param_RangedWeaponLayer;                           // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              RangedWeaponLayer_0;                               // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(Grunt_AnimBP_C_RangedWeaponLayer) == 0x000008, "Wrong alignment on Grunt_AnimBP_C_RangedWeaponLayer");
 static_assert(sizeof(Grunt_AnimBP_C_RangedWeaponLayer) == 0x000020, "Wrong size on Grunt_AnimBP_C_RangedWeaponLayer");
 static_assert(offsetof(Grunt_AnimBP_C_RangedWeaponLayer, Base_Locomotion) == 0x000000, "Member 'Grunt_AnimBP_C_RangedWeaponLayer::Base_Locomotion' has a wrong offset!");
-static_assert(offsetof(Grunt_AnimBP_C_RangedWeaponLayer, Param_RangedWeaponLayer) == 0x000010, "Member 'Grunt_AnimBP_C_RangedWeaponLayer::Param_RangedWeaponLayer' has a wrong offset!");
+static_assert(offsetof(Grunt_AnimBP_C_RangedWeaponLayer, RangedWeaponLayer_0) == 0x000010, "Member 'Grunt_AnimBP_C_RangedWeaponLayer::RangedWeaponLayer_0' has a wrong offset!");
 
 }
 

@@ -55,12 +55,12 @@ static_assert(offsetof(InputBindingEntryWidget_C_UpdateRebindStatus, bIsRebindIn
 struct InputBindingEntryWidget_C_Init final
 {
 public:
-	class UInputBindingsMenu_C*                   Param_ParentMenu;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UInputBindingsMenu_C*                   ParentMenu_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(InputBindingEntryWidget_C_Init) == 0x000008, "Wrong alignment on InputBindingEntryWidget_C_Init");
 static_assert(sizeof(InputBindingEntryWidget_C_Init) == 0x000010, "Wrong size on InputBindingEntryWidget_C_Init");
-static_assert(offsetof(InputBindingEntryWidget_C_Init, Param_ParentMenu) == 0x000000, "Member 'InputBindingEntryWidget_C_Init::Param_ParentMenu' has a wrong offset!");
+static_assert(offsetof(InputBindingEntryWidget_C_Init, ParentMenu_0) == 0x000000, "Member 'InputBindingEntryWidget_C_Init::ParentMenu_0' has a wrong offset!");
 static_assert(offsetof(InputBindingEntryWidget_C_Init, CallFunc_FTrunc_ReturnValue) == 0x000008, "Member 'InputBindingEntryWidget_C_Init::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
 
 // Function InputBindingEntryWidget.InputBindingEntryWidget_C.RefreshValue
@@ -82,9 +82,9 @@ struct InputBindingEntryWidget_C_Highlight final
 {
 public:
 	bool                                          CallFunc_Key_IsValid_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_28C7[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28C8[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0018(0x0028)()
 };
 static_assert(alignof(InputBindingEntryWidget_C_Highlight) == 0x000008, "Wrong alignment on InputBindingEntryWidget_C_Highlight");
@@ -99,9 +99,9 @@ struct InputBindingEntryWidget_C_Downplay final
 {
 public:
 	bool                                          CallFunc_Key_IsValid_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_28C9[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28CA[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0018(0x0028)()
 };
 static_assert(alignof(InputBindingEntryWidget_C_Downplay) == 0x000008, "Wrong alignment on InputBindingEntryWidget_C_Downplay");

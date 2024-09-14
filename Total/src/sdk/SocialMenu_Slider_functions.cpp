@@ -20,9 +20,9 @@ namespace SDK
 // Function SocialMenu_Slider.SocialMenu_Slider_C.OnValueUpdated__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Param_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Value_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USocialMenu_Slider_C::OnValueUpdated__DelegateSignature(float Param_Value)
+void USocialMenu_Slider_C::OnValueUpdated__DelegateSignature(float Value_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void USocialMenu_Slider_C::OnValueUpdated__DelegateSignature(float Param_Value)
 
 	Params::SocialMenu_Slider_C_OnValueUpdated__DelegateSignature Parms{};
 
-	Parms.Param_Value = Param_Value;
+	Parms.Value_0 = Value_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -246,9 +246,9 @@ void USocialMenu_Slider_C::PreConstruct(bool IsDesignTime)
 // Function SocialMenu_Slider.SocialMenu_Slider_C.BndEvt__SliderValue_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// float                                   Param_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Value_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USocialMenu_Slider_C::BndEvt__SliderValue_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Param_Value)
+void USocialMenu_Slider_C::BndEvt__SliderValue_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -257,7 +257,7 @@ void USocialMenu_Slider_C::BndEvt__SliderValue_K2Node_ComponentBoundEvent_0_OnFl
 
 	Params::SocialMenu_Slider_C_BndEvt__SliderValue_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature Parms{};
 
-	Parms.Param_Value = Param_Value;
+	Parms.Value_0 = Value_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -300,9 +300,9 @@ void USocialMenu_Slider_C::SetEnabled(bool bInEnabled)
 // Function SocialMenu_Slider.SocialMenu_Slider_C.SetValue
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Param_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Value_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USocialMenu_Slider_C::SetValue(float Param_Value)
+void USocialMenu_Slider_C::SetValue(float Value_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -311,7 +311,7 @@ void USocialMenu_Slider_C::SetValue(float Param_Value)
 
 	Params::SocialMenu_Slider_C_SetValue Parms{};
 
-	Parms.Param_Value = Param_Value;
+	Parms.Value_0 = Value_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -334,9 +334,9 @@ void USocialMenu_Slider_C::SetValueText()
 // Function SocialMenu_Slider.SocialMenu_Slider_C.OnValueChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Param_CurrentValue                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CurrentValue_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USocialMenu_Slider_C::OnValueChanged(float Param_CurrentValue)
+void USocialMenu_Slider_C::OnValueChanged(float CurrentValue_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -345,7 +345,7 @@ void USocialMenu_Slider_C::OnValueChanged(float Param_CurrentValue)
 
 	Params::SocialMenu_Slider_C_OnValueChanged Parms{};
 
-	Parms.Param_CurrentValue = Param_CurrentValue;
+	Parms.CurrentValue_0 = CurrentValue_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

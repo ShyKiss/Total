@@ -42,6 +42,7 @@ public:
 
 	void ButtonScrollUp(class UScrollBox* ScrollBox, float AmountToScroll, class UObject* __WorldContext);
 	void ButtonScrollDown(class UScrollBox* ScrollBox, float AmountToScroll, class UObject* __WorldContext);
+	void HandleScrollOnAnalogInputEvent(const struct FAnalogInputEvent& AnalogInputEvent, class UScrollBox* ScrollBoxWidget, float BaseMultiplier, float& SpeedAccumulator, class UObject* __WorldContext, bool* Handled);
 
 public:
 	static class UClass* StaticClass()

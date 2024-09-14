@@ -54,9 +54,9 @@ void UCine_Body_AnimBP_C::BlueprintInitializeAnimation()
 // Function Cine_Body_AnimBP.Cine_Body_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink                        Param_AnimGraph                                        (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UCine_Body_AnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
+void UCine_Body_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67,8 +67,8 @@ void UCine_Body_AnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_AnimGraph != nullptr)
-		*Param_AnimGraph = std::move(Parms.Param_AnimGraph);
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

@@ -37,6 +37,40 @@ void UTasksWidget_C::ShowTasks(class FName GroupID)
 }
 
 
+// Function TasksWidget.TasksWidget_C.OnCategoryFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             GroupID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTasksWidget_C::OnCategoryFocused(class FName GroupID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "OnCategoryFocused");
+
+	Params::TasksWidget_C_OnCategoryFocused Parms{};
+
+	Parms.GroupID = GroupID;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TasksWidget.TasksWidget_C.RefreshTasks
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UTasksWidget_C::RefreshTasks()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "RefreshTasks");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function TasksWidget.TasksWidget_C.OnTaskClicked
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -50,6 +84,26 @@ void UTasksWidget_C::OnTaskClicked(const struct FRBTaskMenuEntry& Entry)
 		Func = Class->GetFunction("TasksWidget_C", "OnTaskClicked");
 
 	Params::TasksWidget_C_OnTaskClicked Parms{};
+
+	Parms.Entry = std::move(Entry);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TasksWidget.TasksWidget_C.OnTaskFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FRBTaskMenuEntry                 Entry                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UTasksWidget_C::OnTaskFocused(const struct FRBTaskMenuEntry& Entry)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "OnTaskFocused");
+
+	Params::TasksWidget_C_OnTaskFocused Parms{};
 
 	Parms.Entry = std::move(Entry);
 
@@ -127,10 +181,10 @@ struct FEventReply UTasksWidget_C::OnFocusReceived(const struct FGeometry& MyGeo
 // Function TasksWidget.TasksWidget_C.NavToSelectedGroup
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UTasksWidget_C::NavToSelectedGroup(EUINavigation Param_Navigation)
+class UWidget* UTasksWidget_C::NavToSelectedGroup(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -139,30 +193,7 @@ class UWidget* UTasksWidget_C::NavToSelectedGroup(EUINavigation Param_Navigation
 
 	Params::TasksWidget_C_NavToSelectedGroup Parms{};
 
-	Parms.Param_Navigation = Param_Navigation;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function TasksWidget.TasksWidget_C.NavToTasks
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UTasksWidget_C::NavToTasks(EUINavigation Param_Navigation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TasksWidget_C", "NavToTasks");
-
-	Params::TasksWidget_C_NavToTasks Parms{};
-
-	Parms.Param_Navigation = Param_Navigation;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -188,6 +219,140 @@ void UTasksWidget_C::GetSelectedGroupWidget(class UTaskCategoryButton_C** Select
 
 	if (SelectedCategoryWidget != nullptr)
 		*SelectedCategoryWidget = Parms.SelectedCategoryWidget;
+}
+
+
+// Function TasksWidget.TasksWidget_C.NavToLastTaskGroup
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UTasksWidget_C::NavToLastTaskGroup(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "NavToLastTaskGroup");
+
+	Params::TasksWidget_C_NavToLastTaskGroup Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TasksWidget.TasksWidget_C.NavToFirstTaskGroup
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UTasksWidget_C::NavToFirstTaskGroup(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "NavToFirstTaskGroup");
+
+	Params::TasksWidget_C_NavToFirstTaskGroup Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TasksWidget.TasksWidget_C.NavToLastTask
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UTasksWidget_C::NavToLastTask(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "NavToLastTask");
+
+	Params::TasksWidget_C_NavToLastTask Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TasksWidget.TasksWidget_C.NavToLastFocusedTask
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UTasksWidget_C::NavToLastFocusedTask(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "NavToLastFocusedTask");
+
+	Params::TasksWidget_C_NavToLastFocusedTask Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TasksWidget.TasksWidget_C.UpdateCapTextVisibility
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UTasksWidget_C::UpdateCapTextVisibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "UpdateCapTextVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TasksWidget.TasksWidget_C.ScrollToSelectedGroup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UTasksWidget_C::ScrollToSelectedGroup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "ScrollToSelectedGroup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TasksWidget.TasksWidget_C.ScrollToSelectedTask
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UTasksWidget_C::ScrollToSelectedTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "ScrollToSelectedTask");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

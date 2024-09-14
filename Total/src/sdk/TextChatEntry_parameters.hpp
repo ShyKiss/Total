@@ -45,8 +45,8 @@ static_assert(offsetof(TextChatEntry_C_ExecuteUbergraph_TextChatEntry, EntryPoin
 struct TextChatEntry_C_Setup final
 {
 public:
-	struct FRBTextChatMessage                     Param_Message;                                     // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UTextChatWidget_BP_C*                   Param_Parent;                                      // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRBTextChatMessage                     Message_0;                                         // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UTextChatWidget_BP_C*                   Parent_0;                                          // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            TalkWheelColor;                                    // 0x0048(0x0028)(Edit, BlueprintVisible)
 	struct FSlateColor                            NotificationColor;                                 // 0x0070(0x0028)(Edit, BlueprintVisible)
 	struct FSlateColor                            GlobalColor;                                       // 0x0098(0x0028)(Edit, BlueprintVisible)
@@ -59,8 +59,8 @@ public:
 };
 static_assert(alignof(TextChatEntry_C_Setup) == 0x000008, "Wrong alignment on TextChatEntry_C_Setup");
 static_assert(sizeof(TextChatEntry_C_Setup) == 0x000170, "Wrong size on TextChatEntry_C_Setup");
-static_assert(offsetof(TextChatEntry_C_Setup, Param_Message) == 0x000000, "Member 'TextChatEntry_C_Setup::Param_Message' has a wrong offset!");
-static_assert(offsetof(TextChatEntry_C_Setup, Param_Parent) == 0x000040, "Member 'TextChatEntry_C_Setup::Param_Parent' has a wrong offset!");
+static_assert(offsetof(TextChatEntry_C_Setup, Message_0) == 0x000000, "Member 'TextChatEntry_C_Setup::Message_0' has a wrong offset!");
+static_assert(offsetof(TextChatEntry_C_Setup, Parent_0) == 0x000040, "Member 'TextChatEntry_C_Setup::Parent_0' has a wrong offset!");
 static_assert(offsetof(TextChatEntry_C_Setup, TalkWheelColor) == 0x000048, "Member 'TextChatEntry_C_Setup::TalkWheelColor' has a wrong offset!");
 static_assert(offsetof(TextChatEntry_C_Setup, NotificationColor) == 0x000070, "Member 'TextChatEntry_C_Setup::NotificationColor' has a wrong offset!");
 static_assert(offsetof(TextChatEntry_C_Setup, GlobalColor) == 0x000098, "Member 'TextChatEntry_C_Setup::GlobalColor' has a wrong offset!");

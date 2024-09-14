@@ -37,6 +37,26 @@ void UDetectionCrosshair_C::ExecuteUbergraph_DetectionCrosshair(int32 EntryPoint
 }
 
 
+// Function DetectionCrosshair.DetectionCrosshair_C.OnPlayerActionStatusChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPlayerActionStatus                     Status                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UDetectionCrosshair_C::OnPlayerActionStatusChanged(EPlayerActionStatus Status)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DetectionCrosshair_C", "OnPlayerActionStatusChanged");
+
+	Params::DetectionCrosshair_C_OnPlayerActionStatusChanged Parms{};
+
+	Parms.Status = Status;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function DetectionCrosshair.DetectionCrosshair_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 

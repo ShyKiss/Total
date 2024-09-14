@@ -34,7 +34,7 @@ public:
 	bool                                          bHovered;                                          // 0x02A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void OnActionTriggered__DelegateSignature(ERBSocialMenuEntryAction Param_Action);
+	void OnActionTriggered__DelegateSignature(ERBSocialMenuEntryAction Action_0);
 	void ExecuteUbergraph_SocialMenu_ContextualMenu_Action(int32 EntryPoint);
 	void BndEvt__SocialMenu_ContextualMenu_Action_btn_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__SocialMenu_ContextualMenu_Action_btn_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();

@@ -24,24 +24,26 @@ struct MateHealthBar_C_ExecuteUbergraph_MateHealthBar final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B01[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar) == 0x000008, "Wrong alignment on MateHealthBar_C_ExecuteUbergraph_MateHealthBar");
 static_assert(sizeof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar) == 0x000028, "Wrong size on MateHealthBar_C_ExecuteUbergraph_MateHealthBar");
 static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, EntryPoint) == 0x000000, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, Temp_int_Array_Index_Variable) == 0x000004, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, K2Node_Event_IsDesignTime) == 0x000010, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, K2Node_Event_IsDesignTime) == 0x000008, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, CallFunc_Array_Get_Item) == 0x000018, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ExecuteUbergraph_MateHealthBar, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'MateHealthBar_C_ExecuteUbergraph_MateHealthBar::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MateHealthBar.MateHealthBar_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -61,104 +63,109 @@ struct MateHealthBar_C_ProcessHealthEvent final
 public:
 	float                                         NewHealth;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SkipAnims;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B02[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SuperiorLimit;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InferiorLimit;                                     // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Decreasing;                                        // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Increasing;                                        // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B03[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CurrentBracket;                                    // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         StartingBracket;                                   // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B04[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_1;                              // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F[0x1];                                       // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B05[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B06[0x2];                                     // 0x004A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_float_Variable;                               // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable_1;                             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B07[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_FloatToString_ReturnValue;           // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_FloatToString_ReturnValue_1;         // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B08[0x4];                                     // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B09[0x4];                                     // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B0A[0x3];                                     // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B0B[0x4];                                     // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item;                           // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B0C[0x3];                                     // 0x012D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue_2;                  // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B0D[0x2];                                     // 0x013A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Min_ReturnValue;                          // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue_1;                      // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B0E[0x3];                                     // 0x0165(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B0F[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item_1;                         // 0x0178(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B10[0x3];                                     // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue_1;    // 0x018C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B11[0x3];                                     // 0x018D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item_2;                         // 0x0190(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue_3;                  // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B12[0x3];                                     // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B13[0x4];                                     // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item_3;                         // 0x01B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B14[0x3];                                     // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B15[0x3];                                     // 0x01C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x01CC(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         K2Node_Select_Default;                             // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default_1;                           // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B16[0x4];                                     // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item_4;                         // 0x01E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable;                               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_1;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_FloatToString_ReturnValue;           // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_FloatToString_ReturnValue_1;         // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item;                           // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue_2;                  // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_149[0x3];                                      // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Min_ReturnValue;                          // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue_1;                      // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x017D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_17E[0x2];                                      // 0x017E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item_1;                         // 0x0180(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x018C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x018D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x018E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_18F[0x1];                                      // 0x018F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue_1;    // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_195[0x3];                                      // 0x0195(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item_2;                         // 0x0198(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x01A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A3[0x1];                                      // 0x01A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue_3;                  // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item_3;                         // 0x01A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x01B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x01B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B7[0x1];                                      // 0x01B7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C5[0x3];                                      // 0x01C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x01C8(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         K2Node_Select_Default;                             // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default_1;                           // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item_4;                         // 0x01E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_2;         // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MateHealthBar_C_ProcessHealthEvent) == 0x000008, "Wrong alignment on MateHealthBar_C_ProcessHealthEvent");
 static_assert(sizeof(MateHealthBar_C_ProcessHealthEvent) == 0x0001F0, "Wrong size on MateHealthBar_C_ProcessHealthEvent");
@@ -170,77 +177,85 @@ static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Decreasing) == 0x0000
 static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Increasing) == 0x000011, "Member 'MateHealthBar_C_ProcessHealthEvent::Increasing' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CurrentBracket) == 0x000014, "Member 'MateHealthBar_C_ProcessHealthEvent::CurrentBracket' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, StartingBracket) == 0x000018, "Member 'MateHealthBar_C_ProcessHealthEvent::StartingBracket' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x00001C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_bool_Variable) == 0x00001C, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x00001D, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_bool_Variable_1) == 0x00001E, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_SelectFloat_ReturnValue) == 0x000020, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000024, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_IntToString_ReturnValue) == 0x000028, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000038, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_bool_Variable) == 0x000048, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_bool_Variable_1) == 0x000049, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_float_Variable) == 0x00004C, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_float_Variable_1) == 0x000050, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_FloatToString_ReturnValue) == 0x000058, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_FloatToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_FloatToString_ReturnValue_1) == 0x000068, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_FloatToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue) == 0x000078, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000088, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000098, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0000A8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_int_Variable) == 0x0000B8, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0000C0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue) == 0x0000D0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_5) == 0x0000D8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_6) == 0x0000E8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_int_Variable_1) == 0x0000F8, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000FC, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue) == 0x000100, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000104, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_int_Array_Index_Variable) == 0x000108, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_1) == 0x00010C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Max_ReturnValue) == 0x000110, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue) == 0x000114, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_LastIndex_ReturnValue) == 0x000118, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item) == 0x000120, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000128, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_IsVisible_ReturnValue) == 0x00012C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_2) == 0x000130, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_LastIndex_ReturnValue_1) == 0x000134, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000138, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000139, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Min_ReturnValue) == 0x00013C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Min_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_2) == 0x000140, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000144, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_FTrunc_ReturnValue) == 0x000148, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Clamp_ReturnValue) == 0x00014C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000150, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_FTrunc_ReturnValue_1) == 0x000154, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Clamp_ReturnValue_1) == 0x000158, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Clamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00015C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x000160, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue) == 0x000164, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000168, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_FMax_ReturnValue) == 0x00016C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue) == 0x000170, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item_1) == 0x000178, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_IsVisible_ReturnValue_1) == 0x000180, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Length_ReturnValue) == 0x000184, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000188, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_GreaterEqual_FloatFloat_ReturnValue_1) == 0x00018C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_GreaterEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item_2) == 0x000190, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_int_Loop_Counter_Variable) == 0x000198, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_3) == 0x00019C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_3) == 0x0001A0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001A4, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_4) == 0x0001A8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item_3) == 0x0001B0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0001B8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x0001BC, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x0001C0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x0001C4, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0001C8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, K2Node_CreateDelegate_OutputDelegate) == 0x0001CC, "Member 'MateHealthBar_C_ProcessHealthEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, K2Node_Select_Default) == 0x0001DC, "Member 'MateHealthBar_C_ProcessHealthEvent::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, K2Node_Select_Default_1) == 0x0001E0, "Member 'MateHealthBar_C_ProcessHealthEvent::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item_4) == 0x0001E8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_float_Variable) == 0x000024, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_float_Variable' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_float_Variable_1) == 0x000028, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_float_Variable_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_FloatToString_ReturnValue) == 0x000030, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_FloatToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue) == 0x000040, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_FloatToString_ReturnValue_1) == 0x000050, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_FloatToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000060, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000070, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000080, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_int_Array_Index_Variable) == 0x000090, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_IntToString_ReturnValue) == 0x000098, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_int_Variable) == 0x0000A8, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0000B0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue) == 0x0000C0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_5) == 0x0000C8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_int_Variable_1) == 0x0000D8, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000DC, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_IntToString_ReturnValue_1) == 0x0000E0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000F0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Concat_StrStr_ReturnValue_6) == 0x0000F8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue) == 0x000108, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00010C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, Temp_int_Loop_Counter_Variable) == 0x000110, "Member 'MateHealthBar_C_ProcessHealthEvent::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_1) == 0x000114, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Max_ReturnValue) == 0x000118, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Max_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_2) == 0x00011C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue) == 0x000120, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_LastIndex_ReturnValue) == 0x000124, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_IsEmpty_ReturnValue) == 0x000128, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item) == 0x000130, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_IsVisible_ReturnValue) == 0x000138, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x00013C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_LastIndex_ReturnValue_1) == 0x000140, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_2) == 0x000144, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000148, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00014C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_FTrunc_ReturnValue) == 0x000150, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Min_ReturnValue) == 0x000154, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Min_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Clamp_ReturnValue) == 0x000158, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Clamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_3) == 0x00015C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000160, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000164, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_FTrunc_ReturnValue_1) == 0x000168, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Clamp_ReturnValue_1) == 0x00016C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Clamp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x000170, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000174, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_FMax_ReturnValue) == 0x000178, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue) == 0x00017C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue) == 0x00017D, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item_1) == 0x000180, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Length_ReturnValue) == 0x000188, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_IsValid_ReturnValue) == 0x00018C, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_1) == 0x00018D, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_IsVisible_ReturnValue_1) == 0x00018E, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000190, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_GreaterEqual_FloatFloat_ReturnValue_1) == 0x000194, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_GreaterEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item_2) == 0x000198, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_IsValid_ReturnValue_1) == 0x0001A0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001A1, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x0001A2, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_3) == 0x0001A4, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item_3) == 0x0001A8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_4) == 0x0001B0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_IsValid_ReturnValue_2) == 0x0001B4, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x0001B5, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0001B6, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x0001B8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x0001BC, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x0001C0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0001C4, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, K2Node_CreateDelegate_OutputDelegate) == 0x0001C8, "Member 'MateHealthBar_C_ProcessHealthEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, K2Node_Select_Default) == 0x0001D8, "Member 'MateHealthBar_C_ProcessHealthEvent::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, K2Node_Select_Default_1) == 0x0001DC, "Member 'MateHealthBar_C_ProcessHealthEvent::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_Get_Item_4) == 0x0001E0, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_Array_IsValidIndex_ReturnValue_2) == 0x0001E8, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_Array_IsValidIndex_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ProcessHealthEvent, CallFunc_IsValid_ReturnValue_3) == 0x0001E9, "Member 'MateHealthBar_C_ProcessHealthEvent::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
 
 // Function MateHealthBar.MateHealthBar_C.ChainTweens
 // 0x0080 (0x0080 - 0x0000)
@@ -249,49 +264,50 @@ struct MateHealthBar_C_ChainTweens final
 public:
 	int32                                         CurrentBracket;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B17[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable_1;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B18[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_1;                               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B19[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable_2;                              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B1A[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         K2Node_Select_Default;                             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B1B[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_1;                           // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B1C[0x2];                                     // 0x0066(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default_2;                           // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B1D[0x3];                                     // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MateHealthBar_C_ChainTweens) == 0x000008, "Wrong alignment on MateHealthBar_C_ChainTweens");
 static_assert(sizeof(MateHealthBar_C_ChainTweens) == 0x000080, "Wrong size on MateHealthBar_C_ChainTweens");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, CurrentBracket) == 0x000000, "Member 'MateHealthBar_C_ChainTweens::CurrentBracket' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, Temp_bool_Variable) == 0x000004, "Member 'MateHealthBar_C_ChainTweens::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ChainTweens, Temp_bool_Variable_1) == 0x000005, "Member 'MateHealthBar_C_ChainTweens::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, Temp_float_Variable) == 0x000008, "Member 'MateHealthBar_C_ChainTweens::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, Temp_float_Variable_1) == 0x00000C, "Member 'MateHealthBar_C_ChainTweens::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ChainTweens, Temp_bool_Variable_2) == 0x000010, "Member 'MateHealthBar_C_ChainTweens::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ChainTweens, Temp_bool_Variable_1) == 0x000010, "Member 'MateHealthBar_C_ChainTweens::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, Temp_int_Variable) == 0x000014, "Member 'MateHealthBar_C_ChainTweens::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, Temp_int_Variable_1) == 0x000018, "Member 'MateHealthBar_C_ChainTweens::Temp_int_Variable_1' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'MateHealthBar_C_ChainTweens::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'MateHealthBar_C_ChainTweens::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ChainTweens, Temp_bool_Variable_2) == 0x00002C, "Member 'MateHealthBar_C_ChainTweens::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002D, "Member 'MateHealthBar_C_ChainTweens::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000030, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000034, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000038, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
@@ -300,13 +316,14 @@ static_assert(offsetof(MateHealthBar_C_ChainTweens, K2Node_CreateDelegate_Output
 static_assert(offsetof(MateHealthBar_C_ChainTweens, K2Node_Select_Default) == 0x000050, "Member 'MateHealthBar_C_ChainTweens::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Array_Get_Item) == 0x000058, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, K2Node_Select_Default_1) == 0x000060, "Member 'MateHealthBar_C_ChainTweens::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000064, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Less_IntInt_ReturnValue_1) == 0x000065, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_IsValid_ReturnValue) == 0x000064, "Member 'MateHealthBar_C_ChainTweens::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000065, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Less_IntInt_ReturnValue_1) == 0x000066, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, K2Node_Select_Default_2) == 0x000068, "Member 'MateHealthBar_C_ChainTweens::K2Node_Select_Default_2' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00006C, "Member 'MateHealthBar_C_ChainTweens::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Add_IntInt_ReturnValue) == 0x000070, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_Array_Find_ReturnValue) == 0x000074, "Member 'MateHealthBar_C_ChainTweens::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'MateHealthBar_C_ChainTweens::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_ChainTweens, CallFunc_IsValid_ReturnValue_1) == 0x000078, "Member 'MateHealthBar_C_ChainTweens::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function MateHealthBar.MateHealthBar_C.UpdateFifthBarVisibility
 // 0x0018 (0x0018 - 0x0000)
@@ -317,7 +334,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B1E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -336,19 +353,19 @@ struct MateHealthBar_C_TryConstructBracketsArray final
 {
 public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B1F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B20[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B21[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x001C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMateHealthBarElement_C*                CallFunc_Create_ReturnValue;                       // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B22[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MateHealthBar_C_TryConstructBracketsArray) == 0x000008, "Wrong alignment on MateHealthBar_C_TryConstructBracketsArray");
@@ -366,7 +383,7 @@ static_assert(offsetof(MateHealthBar_C_TryConstructBracketsArray, CallFunc_Array
 static_assert(offsetof(MateHealthBar_C_TryConstructBracketsArray, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000040, "Member 'MateHealthBar_C_TryConstructBracketsArray::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
 
 // Function MateHealthBar.MateHealthBar_C.OnMaxHealthUpdated
-// 0x0038 (0x0038 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct MateHealthBar_C_OnMaxHealthUpdated final
 {
 public:
@@ -374,38 +391,43 @@ public:
 	int32                                         NumberOfBars;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B23[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B[0x1];                                        // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B24[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMateHealthBarElement_C*                CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B25[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBSettings_Gameplay*                   CallFunc_GetRBSettings_Gameplay_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MateHealthBar_C_OnMaxHealthUpdated) == 0x000008, "Wrong alignment on MateHealthBar_C_OnMaxHealthUpdated");
-static_assert(sizeof(MateHealthBar_C_OnMaxHealthUpdated) == 0x000038, "Wrong size on MateHealthBar_C_OnMaxHealthUpdated");
+static_assert(sizeof(MateHealthBar_C_OnMaxHealthUpdated) == 0x000040, "Wrong size on MateHealthBar_C_OnMaxHealthUpdated");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, MaxHealth) == 0x000000, "Member 'MateHealthBar_C_OnMaxHealthUpdated::MaxHealth' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, NumberOfBars) == 0x000004, "Member 'MateHealthBar_C_OnMaxHealthUpdated::NumberOfBars' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, Temp_byte_Variable) == 0x000008, "Member 'MateHealthBar_C_OnMaxHealthUpdated::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, Temp_byte_Variable_1) == 0x000009, "Member 'MateHealthBar_C_OnMaxHealthUpdated::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, Temp_bool_Variable) == 0x00000A, "Member 'MateHealthBar_C_OnMaxHealthUpdated::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, Temp_int_Variable) == 0x00000C, "Member 'MateHealthBar_C_OnMaxHealthUpdated::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000010, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_Array_Get_Item) == 0x000018, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, Temp_bool_Variable) == 0x000021, "Member 'MateHealthBar_C_OnMaxHealthUpdated::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_Greater_IntInt_ReturnValue) == 0x000022, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, K2Node_Select_Default) == 0x000023, "Member 'MateHealthBar_C_OnMaxHealthUpdated::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, K2Node_Select_Default) == 0x000022, "Member 'MateHealthBar_C_OnMaxHealthUpdated::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000023, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_GetRBSettings_Gameplay_ReturnValue) == 0x000028, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_GetRBSettings_Gameplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000030, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_FCeil_ReturnValue) == 0x000034, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_FCeil_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_Greater_IntInt_ReturnValue) == 0x000030, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000034, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MateHealthBar_C_OnMaxHealthUpdated, CallFunc_FCeil_ReturnValue) == 0x000038, "Member 'MateHealthBar_C_OnMaxHealthUpdated::CallFunc_FCeil_ReturnValue' has a wrong offset!");
 
 }
 

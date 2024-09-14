@@ -26,7 +26,7 @@ public:
 public:
 	bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float AnimDeltaTime, float TotalDuration) const;
 	bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float AnimDeltaTime) const;
-	void TryToSetFuttermanDrillVariable(class USkeletalMeshComponent* Mesh_Comp, bool Drill_Value, bool Param_DrillManual, bool* Result) const;
+	void TryToSetFuttermanDrillVariable(class USkeletalMeshComponent* Mesh_Comp, bool Drill_Value, bool DrillManual_0, bool* Result) const;
 	class FString GetNotifyName() const;
 
 public:

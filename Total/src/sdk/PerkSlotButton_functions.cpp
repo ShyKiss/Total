@@ -34,10 +34,10 @@ void UPerkSlotButton_C::Setup()
 // Function PerkSlotButton.PerkSlotButton_C.Init
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Slot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPerkCategory                           Param_PerkCategory                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPerkCategory                           PerkCategory_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPerkSlotButton_C::Init(int32 Param_Slot, EPerkCategory Param_PerkCategory)
+void UPerkSlotButton_C::Init(int32 Slot_0, EPerkCategory PerkCategory_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -46,8 +46,8 @@ void UPerkSlotButton_C::Init(int32 Param_Slot, EPerkCategory Param_PerkCategory)
 
 	Params::PerkSlotButton_C_Init Parms{};
 
-	Parms.Param_Slot = Param_Slot;
-	Parms.Param_PerkCategory = Param_PerkCategory;
+	Parms.Slot_0 = Slot_0;
+	Parms.PerkCategory_0 = PerkCategory_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

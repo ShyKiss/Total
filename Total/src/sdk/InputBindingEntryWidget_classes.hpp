@@ -27,7 +27,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UActionIconWidget_C*                    ActionIconWidget;                                  // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UButton*                                HoveringDetection;                                 // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Name_InputBindingEntryWidget_C;                    // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Name_0;                                            // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UButton*                                RebindButton;                                      // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 RebindingImage;                                    // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 TitleBackground;                                   // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,7 +45,7 @@ public:
 	void BndEvt__HoveringDetection_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__HoveringDetection_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__Button_131_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void Init(class UInputBindingsMenu_C* Param_ParentMenu);
+	void Init(class UInputBindingsMenu_C* ParentMenu_0);
 	void RefreshValue();
 	void Highlight();
 	void Downplay();
@@ -65,7 +65,7 @@ static_assert(sizeof(UInputBindingEntryWidget_C) == 0x000388, "Wrong size on UIn
 static_assert(offsetof(UInputBindingEntryWidget_C, UberGraphFrame) == 0x0002B8, "Member 'UInputBindingEntryWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UInputBindingEntryWidget_C, ActionIconWidget) == 0x0002C0, "Member 'UInputBindingEntryWidget_C::ActionIconWidget' has a wrong offset!");
 static_assert(offsetof(UInputBindingEntryWidget_C, HoveringDetection) == 0x0002C8, "Member 'UInputBindingEntryWidget_C::HoveringDetection' has a wrong offset!");
-static_assert(offsetof(UInputBindingEntryWidget_C, Name_InputBindingEntryWidget_C) == 0x0002D0, "Member 'UInputBindingEntryWidget_C::Name_InputBindingEntryWidget_C' has a wrong offset!");
+static_assert(offsetof(UInputBindingEntryWidget_C, Name_0) == 0x0002D0, "Member 'UInputBindingEntryWidget_C::Name_0' has a wrong offset!");
 static_assert(offsetof(UInputBindingEntryWidget_C, RebindButton) == 0x0002D8, "Member 'UInputBindingEntryWidget_C::RebindButton' has a wrong offset!");
 static_assert(offsetof(UInputBindingEntryWidget_C, RebindingImage) == 0x0002E0, "Member 'UInputBindingEntryWidget_C::RebindingImage' has a wrong offset!");
 static_assert(offsetof(UInputBindingEntryWidget_C, TitleBackground) == 0x0002E8, "Member 'UInputBindingEntryWidget_C::TitleBackground' has a wrong offset!");

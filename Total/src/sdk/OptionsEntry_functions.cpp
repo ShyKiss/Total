@@ -332,9 +332,9 @@ void UOptionsEntry_C::PreConstruct(bool IsDesignTime)
 // Function OptionsEntry.OptionsEntry_C.SetValue
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_OptionValue                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             OptionValue_0                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UOptionsEntry_C::SetValue(const class FText& Param_OptionValue)
+void UOptionsEntry_C::SetValue(const class FText& OptionValue_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -343,7 +343,7 @@ void UOptionsEntry_C::SetValue(const class FText& Param_OptionValue)
 
 	Params::OptionsEntry_C_SetValue Parms{};
 
-	Parms.Param_OptionValue = std::move(Param_OptionValue);
+	Parms.OptionValue_0 = std::move(OptionValue_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -354,9 +354,9 @@ void UOptionsEntry_C::SetValue(const class FText& Param_OptionValue)
 // Parameters:
 // bool                                    IsSubEntry                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                             _Optionnal_SubEntryTitle                               (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    Param_IsSlider                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsSlider_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOptionsEntry_C::Set_Button_Type(bool IsSubEntry, const class FText& _Optionnal_SubEntryTitle, bool Param_IsSlider)
+void UOptionsEntry_C::Set_Button_Type(bool IsSubEntry, const class FText& _Optionnal_SubEntryTitle, bool IsSlider_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -367,7 +367,7 @@ void UOptionsEntry_C::Set_Button_Type(bool IsSubEntry, const class FText& _Optio
 
 	Parms.IsSubEntry = IsSubEntry;
 	Parms._Optionnal_SubEntryTitle = std::move(_Optionnal_SubEntryTitle);
-	Parms.Param_IsSlider = Param_IsSlider;
+	Parms.IsSlider_0 = IsSlider_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

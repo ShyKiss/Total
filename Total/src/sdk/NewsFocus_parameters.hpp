@@ -10,72 +10,49 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function NewsFocus.NewsFocus_C.ExecuteUbergraph_NewsFocus
-// 0x00D8 (0x00D8 - 0x0000)
-struct NewsFocus_C_ExecuteUbergraph_NewsFocus final
+// Function NewsFocus.NewsFocus_C.OnFocusReceived
+// 0x01B0 (0x01B0 - 0x0000)
+struct NewsFocus_C_OnFocusReceived final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 Index)>                  K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNewsWidgetDot_C*                       CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A41[0x2];                                     // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_Index;                          // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A42[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2DDynamic*                      CallFunc_GetImage_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetTitle_ReturnValue;                     // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0058(0x0018)()
-	class FString                                 CallFunc_GetDescription_ReturnValue;               // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetHeaderBackgroundColor_ReturnValue;     // 0x0080(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0090(0x0018)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00A8(0x0028)()
-	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(NewsFocus_C_ExecuteUbergraph_NewsFocus) == 0x000008, "Wrong alignment on NewsFocus_C_ExecuteUbergraph_NewsFocus");
-static_assert(sizeof(NewsFocus_C_ExecuteUbergraph_NewsFocus) == 0x0000D8, "Wrong size on NewsFocus_C_ExecuteUbergraph_NewsFocus");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, EntryPoint) == 0x000000, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::EntryPoint' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, Temp_int_Variable) == 0x000004, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetNumItems_ReturnValue) == 0x00001C, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Create_ReturnValue) == 0x000020, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Subtract_IntInt_ReturnValue) == 0x000028, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00002C, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Greater_IntInt_ReturnValue) == 0x00002D, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, K2Node_CustomEvent_Index) == 0x000030, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::K2Node_CustomEvent_Index' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_AddChild_ReturnValue) == 0x000038, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetImage_ReturnValue) == 0x000040, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetTitle_ReturnValue) == 0x000048, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetTitle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Conv_StringToText_ReturnValue) == 0x000058, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetDescription_ReturnValue) == 0x000070, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetHeaderBackgroundColor_ReturnValue) == 0x000080, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetHeaderBackgroundColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000090, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, K2Node_MakeStruct_SlateColor) == 0x0000A8, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_HasAnyUserFocus_ReturnValue) == 0x0000D0, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
+static_assert(alignof(NewsFocus_C_OnFocusReceived) == 0x000008, "Wrong alignment on NewsFocus_C_OnFocusReceived");
+static_assert(sizeof(NewsFocus_C_OnFocusReceived) == 0x0001B0, "Wrong size on NewsFocus_C_OnFocusReceived");
+static_assert(offsetof(NewsFocus_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'NewsFocus_C_OnFocusReceived::MyGeometry' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'NewsFocus_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'NewsFocus_C_OnFocusReceived::ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x0000F8, "Member 'NewsFocus_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
-// Function NewsFocus.NewsFocus_C.OnDotButtonClicked
-// 0x0004 (0x0004 - 0x0000)
-struct NewsFocus_C_OnDotButtonClicked final
+// Function NewsFocus.NewsFocus_C.OnAnalogValueChanged
+// 0x01F0 (0x01F0 - 0x0000)
+struct NewsFocus_C_OnAnalogValueChanged final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FAnalogInputEvent                      InAnalogInputEvent;                                // 0x0038(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0078(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0130(0x00B8)()
+	bool                                          CallFunc_HandleScrollOnAnalogInputEvent_Handled;   // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(NewsFocus_C_OnDotButtonClicked) == 0x000004, "Wrong alignment on NewsFocus_C_OnDotButtonClicked");
-static_assert(sizeof(NewsFocus_C_OnDotButtonClicked) == 0x000004, "Wrong size on NewsFocus_C_OnDotButtonClicked");
-static_assert(offsetof(NewsFocus_C_OnDotButtonClicked, Param_Index) == 0x000000, "Member 'NewsFocus_C_OnDotButtonClicked::Param_Index' has a wrong offset!");
+static_assert(alignof(NewsFocus_C_OnAnalogValueChanged) == 0x000008, "Wrong alignment on NewsFocus_C_OnAnalogValueChanged");
+static_assert(sizeof(NewsFocus_C_OnAnalogValueChanged) == 0x0001F0, "Wrong size on NewsFocus_C_OnAnalogValueChanged");
+static_assert(offsetof(NewsFocus_C_OnAnalogValueChanged, MyGeometry) == 0x000000, "Member 'NewsFocus_C_OnAnalogValueChanged::MyGeometry' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_OnAnalogValueChanged, InAnalogInputEvent) == 0x000038, "Member 'NewsFocus_C_OnAnalogValueChanged::InAnalogInputEvent' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_OnAnalogValueChanged, ReturnValue) == 0x000078, "Member 'NewsFocus_C_OnAnalogValueChanged::ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_OnAnalogValueChanged, CallFunc_Unhandled_ReturnValue) == 0x000130, "Member 'NewsFocus_C_OnAnalogValueChanged::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_OnAnalogValueChanged, CallFunc_HandleScrollOnAnalogInputEvent_Handled) == 0x0001E8, "Member 'NewsFocus_C_OnAnalogValueChanged::CallFunc_HandleScrollOnAnalogInputEvent_Handled' has a wrong offset!");
 
 // Function NewsFocus.NewsFocus_C.UpdateDots
 // 0x0048 (0x0048 - 0x0000)
@@ -88,10 +65,10 @@ public:
 	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue;          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A43[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A44[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNewsWidgetDot_C*                       K2Node_DynamicCast_AsNews_Widget_Dot;              // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -110,21 +87,110 @@ static_assert(offsetof(NewsFocus_C_UpdateDots, K2Node_DynamicCast_AsNews_Widget_
 static_assert(offsetof(NewsFocus_C_UpdateDots, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'NewsFocus_C_UpdateDots::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(NewsFocus_C_UpdateDots, CallFunc_Less_IntInt_ReturnValue) == 0x000041, "Member 'NewsFocus_C_UpdateDots::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
-// Function NewsFocus.NewsFocus_C.UpdateMenuFocusAction
-// 0x0028 (0x0028 - 0x0000)
-struct NewsFocus_C_UpdateMenuFocusAction final
+// Function NewsFocus.NewsFocus_C.OnDotButtonClicked
+// 0x0004 (0x0004 - 0x0000)
+struct NewsFocus_C_OnDotButtonClicked final
 {
 public:
-	bool                                          CallFunc_HasCTA_ReturnValue;                       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A45[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0018)()
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NewsFocus_C_UpdateMenuFocusAction) == 0x000008, "Wrong alignment on NewsFocus_C_UpdateMenuFocusAction");
-static_assert(sizeof(NewsFocus_C_UpdateMenuFocusAction) == 0x000028, "Wrong size on NewsFocus_C_UpdateMenuFocusAction");
-static_assert(offsetof(NewsFocus_C_UpdateMenuFocusAction, CallFunc_HasCTA_ReturnValue) == 0x000000, "Member 'NewsFocus_C_UpdateMenuFocusAction::CallFunc_HasCTA_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_UpdateMenuFocusAction, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'NewsFocus_C_UpdateMenuFocusAction::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NewsFocus_C_UpdateMenuFocusAction, CallFunc_MakeLiteralName_ReturnValue) == 0x000020, "Member 'NewsFocus_C_UpdateMenuFocusAction::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
+static_assert(alignof(NewsFocus_C_OnDotButtonClicked) == 0x000004, "Wrong alignment on NewsFocus_C_OnDotButtonClicked");
+static_assert(sizeof(NewsFocus_C_OnDotButtonClicked) == 0x000004, "Wrong size on NewsFocus_C_OnDotButtonClicked");
+static_assert(offsetof(NewsFocus_C_OnDotButtonClicked, Index_0) == 0x000000, "Member 'NewsFocus_C_OnDotButtonClicked::Index_0' has a wrong offset!");
+
+// Function NewsFocus.NewsFocus_C.ExecuteUbergraph_NewsFocus
+// 0x0158 (0x0158 - 0x0000)
+struct NewsFocus_C_ExecuteUbergraph_NewsFocus final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNewsWidgetDot_C*                       CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F[0x1];                                       // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_Index;                          // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2DDynamic*                      CallFunc_GetImage_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetTitle_ReturnValue;                     // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0058(0x0018)()
+	class FString                                 CallFunc_GetDescription_ReturnValue;               // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0080(0x0018)()
+	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue_1;        // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetCategoryBackgroundColor_ReturnValue;   // 0x009C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00B0(0x0028)()
+	class FString                                 CallFunc_GetCategoryTitle_ReturnValue;             // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x00F0(0x0018)()
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(int32 Index)>                  K2Node_CreateDelegate_OutputDelegate;              // 0x010C(0x0010)(ZeroConstructor, NoDestructor)
+	struct FLinearColor                           CallFunc_GetCategoryTextColor_ReturnValue;         // 0x011C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0130(0x0028)()
+};
+static_assert(alignof(NewsFocus_C_ExecuteUbergraph_NewsFocus) == 0x000008, "Wrong alignment on NewsFocus_C_ExecuteUbergraph_NewsFocus");
+static_assert(sizeof(NewsFocus_C_ExecuteUbergraph_NewsFocus) == 0x000158, "Wrong size on NewsFocus_C_ExecuteUbergraph_NewsFocus");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, EntryPoint) == 0x000000, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::EntryPoint' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetCurrentItemIndex_ReturnValue) == 0x000004, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetCurrentItemIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, Temp_bool_Variable) == 0x000008, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, Temp_byte_Variable) == 0x000009, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, Temp_byte_Variable_1) == 0x00000A, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, Temp_bool_Variable_1) == 0x00000B, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, Temp_byte_Variable_2) == 0x00000C, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, Temp_byte_Variable_3) == 0x00000D, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, Temp_int_Variable) == 0x000010, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetNumItems_ReturnValue) == 0x000018, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Create_ReturnValue) == 0x000020, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Subtract_IntInt_ReturnValue) == 0x000028, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00002C, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Greater_IntInt_ReturnValue) == 0x00002D, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, K2Node_Select_Default) == 0x00002E, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, K2Node_CustomEvent_Index) == 0x000030, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::K2Node_CustomEvent_Index' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetImage_ReturnValue) == 0x000038, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetImage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_AddChild_ReturnValue) == 0x000040, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetTitle_ReturnValue) == 0x000048, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetTitle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Conv_StringToText_ReturnValue) == 0x000058, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetDescription_ReturnValue) == 0x000070, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000080, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetCurrentItemIndex_ReturnValue_1) == 0x000098, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetCurrentItemIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetCategoryBackgroundColor_ReturnValue) == 0x00009C, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetCategoryBackgroundColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, K2Node_MakeStruct_SlateColor) == 0x0000B0, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetCategoryTitle_ReturnValue) == 0x0000D8, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetCategoryTitle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_IsEmpty_ReturnValue) == 0x0000E8, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_Conv_StringToText_ReturnValue_2) == 0x0000F0, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, K2Node_Select_Default_1) == 0x000108, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, K2Node_CreateDelegate_OutputDelegate) == 0x00010C, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, CallFunc_GetCategoryTextColor_ReturnValue) == 0x00011C, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::CallFunc_GetCategoryTextColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(NewsFocus_C_ExecuteUbergraph_NewsFocus, K2Node_MakeStruct_SlateColor_1) == 0x000130, "Member 'NewsFocus_C_ExecuteUbergraph_NewsFocus::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+
+// Function NewsFocus.NewsFocus_C.ActiveItemSet__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct NewsFocus_C_ActiveItemSet__DelegateSignature final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(NewsFocus_C_ActiveItemSet__DelegateSignature) == 0x000004, "Wrong alignment on NewsFocus_C_ActiveItemSet__DelegateSignature");
+static_assert(sizeof(NewsFocus_C_ActiveItemSet__DelegateSignature) == 0x000004, "Wrong size on NewsFocus_C_ActiveItemSet__DelegateSignature");
+static_assert(offsetof(NewsFocus_C_ActiveItemSet__DelegateSignature, Index_0) == 0x000000, "Member 'NewsFocus_C_ActiveItemSet__DelegateSignature::Index_0' has a wrong offset!");
 
 }
 

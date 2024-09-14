@@ -70,13 +70,13 @@ struct GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UGridlyDataTable*                       Param_GridlyDataTable;                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UGridlyDataTable*                       GridlyDataTable_0;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGridlyTask_ImportDataTableFromGridly*  ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly) == 0x000008, "Wrong alignment on GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly");
 static_assert(sizeof(GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly) == 0x000018, "Wrong size on GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly");
 static_assert(offsetof(GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly, WorldContextObject) == 0x000000, "Member 'GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly, Param_GridlyDataTable) == 0x000008, "Member 'GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly::Param_GridlyDataTable' has a wrong offset!");
+static_assert(offsetof(GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly, GridlyDataTable_0) == 0x000008, "Member 'GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly::GridlyDataTable_0' has a wrong offset!");
 static_assert(offsetof(GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly, ReturnValue) == 0x000010, "Member 'GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly::ReturnValue' has a wrong offset!");
 
 }

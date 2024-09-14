@@ -305,6 +305,30 @@ void ARBNPC_Big_BP_C::OnReceivedMeshIndex()
 }
 
 
+// Function RBNPC_Big_BP.RBNPC_Big_BP_C.GetCustomizationIndexFromId
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName                             ID                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARBNPC_Big_BP_C::GetCustomizationIndexFromId(class FName ID, int32* Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RBNPC_Big_BP_C", "GetCustomizationIndexFromId");
+
+	Params::RBNPC_Big_BP_C_GetCustomizationIndexFromId Parms{};
+
+	Parms.ID = ID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Index_0 != nullptr)
+		*Index_0 = Parms.Index_0;
+}
+
+
 // Function RBNPC_Big_BP.RBNPC_Big_BP_C.GetFaceFXSkeletalMeshComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:

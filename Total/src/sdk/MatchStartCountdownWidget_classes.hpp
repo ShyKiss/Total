@@ -28,30 +28,30 @@ public:
 	float                                         MatchStartServerTime;                              // 0x02F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MatchCountdownActive;                              // 0x02FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IsStartingSoon;                                    // 0x02FD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F0B[0x2];                                     // 0x02FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FE[0x2];                                      // 0x02FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MatchCountdownStartServerTime;                     // 0x0300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReadyToTravelToMatch;                              // 0x0304(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          FindPartyActive;                                   // 0x0305(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	EFindPartyTicketState                         FindPartyTicketState;                              // 0x0306(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsRelease;                                        // 0x0307(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class FName                                   Program_Id;                                        // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Trial_Id;                                          // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ProgramId;                                         // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EProgramDifficulty                            ProgramDifficulty;                                 // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MatchStartCountdownWidget(int32 EntryPoint);
-	void OnFindPartyTicketStateUpdatedEvent(EFindPartyTicketState Param_FindPartyTicketState);
+	void OnFindPartyTicketStateUpdatedEvent(EFindPartyTicketState FindPartyTicketState_0);
 	void OnFindPartyStateUpdatedEvent(class ARBLobbyPlayerState* RBLobbyPlayerState, const struct FFindPartyState& FindPartyState);
 	void OnMatchStateUpdatedEvent(class ARBLobbyPlayerState* RBLobbyPlayerState, const struct FMatchState& MatchState);
 	void Destruct();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void Construct();
-	void StartMatchCountdown(float MatchCancelationGracePeriodServerTime, float Param_MatchStartServerTime, bool bReadyToTravelToMatch);
+	void StartMatchCountdown(float MatchCancelationGracePeriodServerTime, float MatchStartServerTime_0, bool bReadyToTravelToMatch);
 	void CancelMatchCountdown();
 	void SetIsRightAligned(bool IsRightAligned);
 	void OnMatchStateUpdated(const struct FMatchState& MatchState);
 	void UpdateText();
 	void OnFindPartyStateUpdated(const struct FFindPartyState& FindPartyState);
-	void OnFindPartyTicketStateUpdated(EFindPartyTicketState Param_FindPartyTicketState);
+	void OnFindPartyTicketStateUpdated(EFindPartyTicketState FindPartyTicketState_0);
 	void UpdateCountdownText();
 	class FText GetFindPartySearchingText();
 
@@ -79,8 +79,8 @@ static_assert(offsetof(UMatchStartCountdownWidget_C, ReadyToTravelToMatch) == 0x
 static_assert(offsetof(UMatchStartCountdownWidget_C, FindPartyActive) == 0x000305, "Member 'UMatchStartCountdownWidget_C::FindPartyActive' has a wrong offset!");
 static_assert(offsetof(UMatchStartCountdownWidget_C, FindPartyTicketState) == 0x000306, "Member 'UMatchStartCountdownWidget_C::FindPartyTicketState' has a wrong offset!");
 static_assert(offsetof(UMatchStartCountdownWidget_C, bIsRelease) == 0x000307, "Member 'UMatchStartCountdownWidget_C::bIsRelease' has a wrong offset!");
-static_assert(offsetof(UMatchStartCountdownWidget_C, Program_Id) == 0x000308, "Member 'UMatchStartCountdownWidget_C::Program_Id' has a wrong offset!");
-static_assert(offsetof(UMatchStartCountdownWidget_C, Trial_Id) == 0x000310, "Member 'UMatchStartCountdownWidget_C::Trial_Id' has a wrong offset!");
+static_assert(offsetof(UMatchStartCountdownWidget_C, ProgramId) == 0x000308, "Member 'UMatchStartCountdownWidget_C::ProgramId' has a wrong offset!");
+static_assert(offsetof(UMatchStartCountdownWidget_C, ProgramDifficulty) == 0x000310, "Member 'UMatchStartCountdownWidget_C::ProgramDifficulty' has a wrong offset!");
 
 }
 

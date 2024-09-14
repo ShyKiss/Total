@@ -13,62 +13,91 @@
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "OPP_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function DetectionCrosshair.DetectionCrosshair_C.ExecuteUbergraph_DetectionCrosshair
-// 0x0098 (0x0098 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FEC[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(bool NewAimingState)>          K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0018(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FED[0x2];                                     // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              K2Node_Event_oldPlayer;                            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0083(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_newAimingState;                 // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0085(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FEE[0x2];                                     // 0x0086(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetCrosshairDisplay_ReturnValue;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(bool NewAimingState)>          K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EPlayerActionStatus Status)>   K2Node_CreateDelegate_OutputDelegate_1;            // 0x002C(0x0010)(ZeroConstructor, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x003C(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue;          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              K2Node_Event_oldPlayer;                            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_newAimingState;                 // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue;                       // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPlayerActionStatus                           K2Node_CustomEvent_status;                         // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair) == 0x000008, "Wrong alignment on DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair");
-static_assert(sizeof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair) == 0x000098, "Wrong size on DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair");
+static_assert(sizeof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair) == 0x0000D0, "Wrong size on DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair");
 static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, EntryPoint) == 0x000000, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, Temp_byte_Variable) == 0x000004, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_MyGeometry) == 0x000018, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_InDeltaTime) == 0x000050, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, Temp_bool_Variable) == 0x000054, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_IsDesignTime) == 0x000055, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000058, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_PlayAnimationForward_ReturnValue) == 0x000060, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_GetRBGameStateLobby_ReturnValue) == 0x000068, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_GetRBGameStateLobby_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_oldPlayer) == 0x000070, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_oldPlayer' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_newPlayer) == 0x000078, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_newPlayer' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_IsValid_ReturnValue_1) == 0x000081, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_IsValid_ReturnValue_2) == 0x000082, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, Temp_byte_Variable_1) == 0x000083, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_CustomEvent_newAimingState) == 0x000084, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_CustomEvent_newAimingState' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Select_Default) == 0x000085, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000088, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_IsValid_ReturnValue_3) == 0x000090, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_GetRBGameUserPreferences_ReturnValue) == 0x000008, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_GetRBGameUserPreferences_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, Temp_byte_Variable) == 0x000010, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_GetCrosshairDisplay_ReturnValue) == 0x000014, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_GetCrosshairDisplay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000018, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_CreateDelegate_OutputDelegate_1) == 0x00002C, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_MyGeometry) == 0x00003C, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_InDeltaTime) == 0x000074, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, Temp_bool_Variable) == 0x000078, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_IsDesignTime) == 0x000079, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000080, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_PlayAnimationForward_ReturnValue) == 0x000088, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_GetRBGameStateLobby_ReturnValue) == 0x000090, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_GetRBGameStateLobby_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_oldPlayer) == 0x000098, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_oldPlayer' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Event_newPlayer) == 0x0000A0, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Event_newPlayer' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_IsValid_ReturnValue_1) == 0x0000A9, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_IsValid_ReturnValue_2) == 0x0000AA, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_CustomEvent_newAimingState) == 0x0000AB, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_CustomEvent_newAimingState' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_GetWatchedPlayer_ReturnValue) == 0x0000B0, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_IsValid_ReturnValue_3) == 0x0000B8, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_GetHUD_ReturnValue) == 0x0000C0, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_GetHUD_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_CustomEvent_status) == 0x0000C8, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_CustomEvent_status' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C9, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, Temp_byte_Variable_1) == 0x0000CA, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair, K2Node_Select_Default) == 0x0000CB, "Member 'DetectionCrosshair_C_ExecuteUbergraph_DetectionCrosshair::K2Node_Select_Default' has a wrong offset!");
+
+// Function DetectionCrosshair.DetectionCrosshair_C.OnPlayerActionStatusChanged
+// 0x0001 (0x0001 - 0x0000)
+struct DetectionCrosshair_C_OnPlayerActionStatusChanged final
+{
+public:
+	EPlayerActionStatus                           Status;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(DetectionCrosshair_C_OnPlayerActionStatusChanged) == 0x000001, "Wrong alignment on DetectionCrosshair_C_OnPlayerActionStatusChanged");
+static_assert(sizeof(DetectionCrosshair_C_OnPlayerActionStatusChanged) == 0x000001, "Wrong size on DetectionCrosshair_C_OnPlayerActionStatusChanged");
+static_assert(offsetof(DetectionCrosshair_C_OnPlayerActionStatusChanged, Status) == 0x000000, "Member 'DetectionCrosshair_C_OnPlayerActionStatusChanged::Status' has a wrong offset!");
 
 // Function DetectionCrosshair.DetectionCrosshair_C.OnIsAimingThowableChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -129,15 +158,15 @@ public:
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FEF[0x2];                                     // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FF0[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FInterpTo_Constant_ReturnValue;           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FF1[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_FInterpTo_Constant_ReturnValue_1;         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -164,19 +193,19 @@ struct DetectionCrosshair_C_UpdateSoundFeedback final
 {
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FF2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNoiseDisplay_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FF3[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FF4[0x1];                                     // 0x0033(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33[0x1];                                       // 0x0033(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0034(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FF5[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -211,26 +240,26 @@ public:
 	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetDarknessDisplay_ReturnValue;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FF6[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FF7[0x2];                                     // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_2;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_3;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SelectFloat_ReturnValue_1;                // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue_1;     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FF8[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FF9[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             CallFunc_Array_Get_Item;                           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DetectionCrosshair_C_Update_CrosshairV2) == 0x000008, "Wrong alignment on DetectionCrosshair_C_Update_CrosshairV2");
@@ -265,7 +294,7 @@ struct DetectionCrosshair_C_UpdateFeedbackProgressBar final
 public:
 	class UProgressBar*                           FeedbackProgressBar;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Increasing;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FFA[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DeltaTime;                                         // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -288,14 +317,14 @@ struct DetectionCrosshair_C_UpdateVisualDetection final
 {
 public:
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FFB[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FFC[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DetectionCrosshair_C_UpdateVisualDetection) == 0x000008, "Wrong alignment on DetectionCrosshair_C_UpdateVisualDetection");
@@ -315,12 +344,12 @@ struct DetectionCrosshair_C_UpdateCrosshairV3 final
 {
 public:
 	bool                                          ShouldAnimate;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FFD[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetCrosshairDisplay_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FFE[0x2];                                     // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -345,50 +374,62 @@ static_assert(offsetof(DetectionCrosshair_C_UpdateCrosshairV3, CallFunc_BooleanA
 static_assert(offsetof(DetectionCrosshair_C_UpdateCrosshairV3, CallFunc_BooleanOR_ReturnValue) == 0x000033, "Member 'DetectionCrosshair_C_UpdateCrosshairV3::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function DetectionCrosshair.DetectionCrosshair_C.ShouldShow
-// 0x0040 (0x0040 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct DetectionCrosshair_C_ShouldShow final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FFF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_ShouldDisplayCursorForCurrentMinigame_ReturnValue; // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetStaminaDisplay_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetCrosshairDisplay_ReturnValue;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3000[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetNoiseDisplay_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3001[0x5];                                     // 0x002B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetIsAimingThrowable_ReturnValue;         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetStaminaDisplay_ReturnValue;            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetCrosshairDisplay_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F[0x1];                                       // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetNoiseDisplay_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetIsAimingThrowable_ReturnValue;         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(DetectionCrosshair_C_ShouldShow) == 0x000008, "Wrong alignment on DetectionCrosshair_C_ShouldShow");
-static_assert(sizeof(DetectionCrosshair_C_ShouldShow) == 0x000040, "Wrong size on DetectionCrosshair_C_ShouldShow");
+static_assert(sizeof(DetectionCrosshair_C_ShouldShow) == 0x000048, "Wrong size on DetectionCrosshair_C_ShouldShow");
 static_assert(offsetof(DetectionCrosshair_C_ShouldShow, ReturnValue) == 0x000000, "Member 'DetectionCrosshair_C_ShouldShow::ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_ShouldDisplayCursorForCurrentMinigame_ReturnValue) == 0x000001, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_ShouldDisplayCursorForCurrentMinigame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000002, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetRBGameUserPreferences_ReturnValue) == 0x000008, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetRBGameUserPreferences_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetStaminaDisplay_ReturnValue) == 0x000010, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetStaminaDisplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetCrosshairDisplay_ReturnValue) == 0x000014, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetCrosshairDisplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_Greater_IntInt_ReturnValue) == 0x000018, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000019, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00001A, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetNoiseDisplay_ReturnValue) == 0x00001C, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetNoiseDisplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000020, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000028, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanOR_ReturnValue) == 0x00002A, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x000030, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetIsAimingThrowable_ReturnValue) == 0x000038, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetIsAimingThrowable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanAND_ReturnValue) == 0x000039, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_1) == 0x00003A, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_2) == 0x00003B, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanOR_ReturnValue) == 0x000010, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetStaminaDisplay_ReturnValue) == 0x000014, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetStaminaDisplay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetCrosshairDisplay_ReturnValue) == 0x000018, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetCrosshairDisplay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_Greater_IntInt_ReturnValue) == 0x00001C, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001D, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00001E, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetNoiseDisplay_ReturnValue) == 0x000020, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetNoiseDisplay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000024, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000028, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_1) == 0x000030, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x000038, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_GetIsAimingThrowable_ReturnValue) == 0x000040, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_GetIsAimingThrowable_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanAND_ReturnValue) == 0x000041, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_2) == 0x000042, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_3) == 0x000043, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_1) == 0x000044, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DetectionCrosshair_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_2) == 0x000045, "Member 'DetectionCrosshair_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
 
 }
 

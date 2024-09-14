@@ -206,11 +206,11 @@ void UHUDGameMessages_C::Finished_1D4430144A0F9FAAAB764FB894A8E54F()
 // Function HUDGameMessages.HUDGameMessages_C.InitializeMessage
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Message                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Message_0                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 // EGameMessageCategory                    MessageCategory                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameMessageAudioParams          AudioParams                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UHUDGameMessages_C::InitializeMessage(const class FText& Param_Message, EGameMessageCategory MessageCategory, const struct FGameMessageAudioParams& AudioParams)
+void UHUDGameMessages_C::InitializeMessage(const class FText& Message_0, EGameMessageCategory MessageCategory, const struct FGameMessageAudioParams& AudioParams)
 {
 	static class UFunction* Func = nullptr;
 
@@ -219,7 +219,7 @@ void UHUDGameMessages_C::InitializeMessage(const class FText& Param_Message, EGa
 
 	Params::HUDGameMessages_C_InitializeMessage Parms{};
 
-	Parms.Param_Message = std::move(Param_Message);
+	Parms.Message_0 = std::move(Message_0);
 	Parms.MessageCategory = MessageCategory;
 	Parms.AudioParams = std::move(AudioParams);
 

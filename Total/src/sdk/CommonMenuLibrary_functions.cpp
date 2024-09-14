@@ -486,5 +486,39 @@ void UCommonMenuLibrary_C::ButtonScrollDown(class UScrollBox* ScrollBox, float A
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function CommonMenuLibrary.CommonMenuLibrary_C.HandleScrollOnAnalogInputEvent
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FAnalogInputEvent                AnalogInputEvent                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class UScrollBox*                       ScrollBoxWidget                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   BaseMultiplier                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   SpeedAccumulator                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Handled                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UCommonMenuLibrary_C::HandleScrollOnAnalogInputEvent(const struct FAnalogInputEvent& AnalogInputEvent, class UScrollBox* ScrollBoxWidget, float BaseMultiplier, float& SpeedAccumulator, class UObject* __WorldContext, bool* Handled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CommonMenuLibrary_C", "HandleScrollOnAnalogInputEvent");
+
+	Params::CommonMenuLibrary_C_HandleScrollOnAnalogInputEvent Parms{};
+
+	Parms.AnalogInputEvent = std::move(AnalogInputEvent);
+	Parms.ScrollBoxWidget = ScrollBoxWidget;
+	Parms.BaseMultiplier = BaseMultiplier;
+	Parms.SpeedAccumulator = SpeedAccumulator;
+	Parms.__WorldContext = __WorldContext;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	SpeedAccumulator = Parms.SpeedAccumulator;
+
+	if (Handled != nullptr)
+		*Handled = Parms.Handled;
+}
+
 }
 

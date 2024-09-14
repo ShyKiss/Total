@@ -348,5 +348,25 @@ void UOverheadInfo_C::Event_InventoryUpdated(EInventoryUpdateEventType Inventory
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function OverheadInfo.OverheadInfo_C.UpdateActiveSkillIconDisplay
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EActiveSkillType                        Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOverheadInfo_C::UpdateActiveSkillIconDisplay(EActiveSkillType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OverheadInfo_C", "UpdateActiveSkillIconDisplay");
+
+	Params::OverheadInfo_C_UpdateActiveSkillIconDisplay Parms{};
+
+	Parms.Type = Type;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

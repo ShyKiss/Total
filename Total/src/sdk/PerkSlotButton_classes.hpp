@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PerkSlotButton.PerkSlotButton_C
-// 0x0158 (0x03B8 - 0x0260)
+// 0x01B8 (0x0418 - 0x0260)
 class UPerkSlotButton_C final : public UUserWidget
 {
 public:
@@ -26,18 +26,18 @@ public:
 	class UPerkUpgradeButton_C*                   PerkUpgradeButton;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         SlotIndex;                                         // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         AvailablePerkSlots;                                // 0x0274(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMenuUpgradeItemInfo                   UpgradeInfo;                                       // 0x0278(0x0128)(Edit, BlueprintVisible)
-	bool                                          DisplayPlus;                                       // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          DisplayTitle;                                      // 0x03A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_2DD9[0x6];                                     // 0x03A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayerState*                         RBPlayerState;                                     // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          ShouldUseMenuLoadout;                              // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	EPerkCategory                                 PerkCategory;                                      // 0x03B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLoadout;                                        // 0x03B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FMenuUpgradeItemInfo                   UpgradeInfo;                                       // 0x0278(0x0188)(Edit, BlueprintVisible)
+	bool                                          DisplayPlus;                                       // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          DisplayTitle;                                      // 0x0401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_402[0x6];                                      // 0x0402(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayerState*                         RBPlayerState;                                     // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          ShouldUseMenuLoadout;                              // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	EPerkCategory                                 PerkCategory;                                      // 0x0411(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLoadout;                                        // 0x0412(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
 	void Setup();
-	void Init(int32 Param_Slot, EPerkCategory Param_PerkCategory);
+	void Init(int32 Slot_0, EPerkCategory PerkCategory_0);
 	void Refresh();
 	void SetHovered(bool bHovered);
 
@@ -52,18 +52,18 @@ public:
 	}
 };
 static_assert(alignof(UPerkSlotButton_C) == 0x000008, "Wrong alignment on UPerkSlotButton_C");
-static_assert(sizeof(UPerkSlotButton_C) == 0x0003B8, "Wrong size on UPerkSlotButton_C");
+static_assert(sizeof(UPerkSlotButton_C) == 0x000418, "Wrong size on UPerkSlotButton_C");
 static_assert(offsetof(UPerkSlotButton_C, PerkNameText) == 0x000260, "Member 'UPerkSlotButton_C::PerkNameText' has a wrong offset!");
 static_assert(offsetof(UPerkSlotButton_C, PerkUpgradeButton) == 0x000268, "Member 'UPerkSlotButton_C::PerkUpgradeButton' has a wrong offset!");
 static_assert(offsetof(UPerkSlotButton_C, SlotIndex) == 0x000270, "Member 'UPerkSlotButton_C::SlotIndex' has a wrong offset!");
 static_assert(offsetof(UPerkSlotButton_C, AvailablePerkSlots) == 0x000274, "Member 'UPerkSlotButton_C::AvailablePerkSlots' has a wrong offset!");
 static_assert(offsetof(UPerkSlotButton_C, UpgradeInfo) == 0x000278, "Member 'UPerkSlotButton_C::UpgradeInfo' has a wrong offset!");
-static_assert(offsetof(UPerkSlotButton_C, DisplayPlus) == 0x0003A0, "Member 'UPerkSlotButton_C::DisplayPlus' has a wrong offset!");
-static_assert(offsetof(UPerkSlotButton_C, DisplayTitle) == 0x0003A1, "Member 'UPerkSlotButton_C::DisplayTitle' has a wrong offset!");
-static_assert(offsetof(UPerkSlotButton_C, RBPlayerState) == 0x0003A8, "Member 'UPerkSlotButton_C::RBPlayerState' has a wrong offset!");
-static_assert(offsetof(UPerkSlotButton_C, ShouldUseMenuLoadout) == 0x0003B0, "Member 'UPerkSlotButton_C::ShouldUseMenuLoadout' has a wrong offset!");
-static_assert(offsetof(UPerkSlotButton_C, PerkCategory) == 0x0003B1, "Member 'UPerkSlotButton_C::PerkCategory' has a wrong offset!");
-static_assert(offsetof(UPerkSlotButton_C, bIsLoadout) == 0x0003B2, "Member 'UPerkSlotButton_C::bIsLoadout' has a wrong offset!");
+static_assert(offsetof(UPerkSlotButton_C, DisplayPlus) == 0x000400, "Member 'UPerkSlotButton_C::DisplayPlus' has a wrong offset!");
+static_assert(offsetof(UPerkSlotButton_C, DisplayTitle) == 0x000401, "Member 'UPerkSlotButton_C::DisplayTitle' has a wrong offset!");
+static_assert(offsetof(UPerkSlotButton_C, RBPlayerState) == 0x000408, "Member 'UPerkSlotButton_C::RBPlayerState' has a wrong offset!");
+static_assert(offsetof(UPerkSlotButton_C, ShouldUseMenuLoadout) == 0x000410, "Member 'UPerkSlotButton_C::ShouldUseMenuLoadout' has a wrong offset!");
+static_assert(offsetof(UPerkSlotButton_C, PerkCategory) == 0x000411, "Member 'UPerkSlotButton_C::PerkCategory' has a wrong offset!");
+static_assert(offsetof(UPerkSlotButton_C, bIsLoadout) == 0x000412, "Member 'UPerkSlotButton_C::bIsLoadout' has a wrong offset!");
 
 }
 

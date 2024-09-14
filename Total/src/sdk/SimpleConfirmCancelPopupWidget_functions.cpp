@@ -157,11 +157,11 @@ void USimpleConfirmCancelPopupWidget_C::BndEvt__SimpleConfirmCancelPopupWidget_C
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // class FText                             TitleText                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class FText                             Param_MainText                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FText                             MainText_0                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class FText                             ConfirmText                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class FText                             CancelText                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void USimpleConfirmCancelPopupWidget_C::Event_InitializePopup(const class FText& TitleText, const class FText& Param_MainText, const class FText& ConfirmText, const class FText& CancelText)
+void USimpleConfirmCancelPopupWidget_C::Event_InitializePopup(const class FText& TitleText, const class FText& MainText_0, const class FText& ConfirmText, const class FText& CancelText)
 {
 	static class UFunction* Func = nullptr;
 
@@ -171,7 +171,7 @@ void USimpleConfirmCancelPopupWidget_C::Event_InitializePopup(const class FText&
 	Params::SimpleConfirmCancelPopupWidget_C_Event_InitializePopup Parms{};
 
 	Parms.TitleText = std::move(TitleText);
-	Parms.Param_MainText = std::move(Param_MainText);
+	Parms.MainText_0 = std::move(MainText_0);
 	Parms.ConfirmText = std::move(ConfirmText);
 	Parms.CancelText = std::move(CancelText);
 

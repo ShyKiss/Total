@@ -31,6 +31,34 @@ void UExperimentBoardActionButton_C::OnClicked__DelegateSignature()
 }
 
 
+// Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.OnPressed__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UExperimentBoardActionButton_C::OnPressed__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ExperimentBoardActionButton_C", "OnPressed__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.OnReleased__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UExperimentBoardActionButton_C::OnReleased__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ExperimentBoardActionButton_C", "OnReleased__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.ExecuteUbergraph_ExperimentBoardActionButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +76,34 @@ void UExperimentBoardActionButton_C::ExecuteUbergraph_ExperimentBoardActionButto
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.BndEvt__ExperimentBoardActionButton_SelectButton_K2Node_ComponentBoundEvent_2_OnButtonReleasedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UExperimentBoardActionButton_C::BndEvt__ExperimentBoardActionButton_SelectButton_K2Node_ComponentBoundEvent_2_OnButtonReleasedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ExperimentBoardActionButton_C", "BndEvt__ExperimentBoardActionButton_SelectButton_K2Node_ComponentBoundEvent_2_OnButtonReleasedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.BndEvt__ExperimentBoardActionButton_SelectButton_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UExperimentBoardActionButton_C::BndEvt__ExperimentBoardActionButton_SelectButton_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ExperimentBoardActionButton_C", "BndEvt__ExperimentBoardActionButton_SelectButton_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -246,9 +302,9 @@ void UExperimentBoardActionButton_C::SetEnabled(bool bInEnabled)
 // Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.SetButtonText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_ButtonText                                       (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             ButtonText_0                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UExperimentBoardActionButton_C::SetButtonText(const class FText& Param_ButtonText)
+void UExperimentBoardActionButton_C::SetButtonText(const class FText& ButtonText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -257,7 +313,7 @@ void UExperimentBoardActionButton_C::SetButtonText(const class FText& Param_Butt
 
 	Params::ExperimentBoardActionButton_C_SetButtonText Parms{};
 
-	Parms.Param_ButtonText = std::move(Param_ButtonText);
+	Parms.ButtonText_0 = std::move(ButtonText_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -291,9 +347,9 @@ struct FEventReply UExperimentBoardActionButton_C::OnFocusReceived(const struct 
 // Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.SetHovered
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_Hovered                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Hovered_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UExperimentBoardActionButton_C::SetHovered(bool Param_Hovered)
+void UExperimentBoardActionButton_C::SetHovered(bool Hovered_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -302,7 +358,7 @@ void UExperimentBoardActionButton_C::SetHovered(bool Param_Hovered)
 
 	Params::ExperimentBoardActionButton_C_SetHovered Parms{};
 
-	Parms.Param_Hovered = Param_Hovered;
+	Parms.Hovered_0 = Hovered_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -345,6 +401,34 @@ void UExperimentBoardActionButton_C::OnButtonClicked()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ExperimentBoardActionButton_C", "OnButtonClicked");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.OnButtonPressed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UExperimentBoardActionButton_C::OnButtonPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ExperimentBoardActionButton_C", "OnButtonPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ExperimentBoardActionButton.ExperimentBoardActionButton_C.OnButtonReleased
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UExperimentBoardActionButton_C::OnButtonReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ExperimentBoardActionButton_C", "OnButtonReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

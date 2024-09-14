@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function PerkSlotButton.PerkSlotButton_C.Setup
-// 0x0250 (0x0250 - 0x0000)
+// 0x02D0 (0x02D0 - 0x0000)
 struct PerkSlotButton_C_Setup final
 {
 public:
@@ -29,20 +29,20 @@ public:
 	class URBPlayerProgressionData*               CallFunc_GetPlayerProgressionData_ReturnValue;     // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBPlayerProgressionData*               CallFunc_GetPlayerProgressionData_ReturnValue_1;   // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetPerkSlotRequiredLevel_ReturnValue;     // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DDA[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0090(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00D0(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E0(0x0018)()
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DDB[0x6];                                     // 0x00FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRBItemProgressionData                 CallFunc_GetItemProgressionData_ReturnValue;       // 0x0100(0x00E8)(ConstParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x01E8(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0228(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0238(0x0018)()
+	uint8                                         Pad_FA[0x6];                                       // 0x00FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBItemProgressionData                 CallFunc_GetItemProgressionData_ReturnValue;       // 0x0100(0x0168)(ConstParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0268(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x02A8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x02B8(0x0018)()
 };
 static_assert(alignof(PerkSlotButton_C_Setup) == 0x000008, "Wrong alignment on PerkSlotButton_C_Setup");
-static_assert(sizeof(PerkSlotButton_C_Setup) == 0x000250, "Wrong size on PerkSlotButton_C_Setup");
+static_assert(sizeof(PerkSlotButton_C_Setup) == 0x0002D0, "Wrong size on PerkSlotButton_C_Setup");
 static_assert(offsetof(PerkSlotButton_C_Setup, K2Node_MakeStruct_SlateColor) == 0x000000, "Member 'PerkSlotButton_C_Setup::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Setup, K2Node_MakeStruct_SlateColor_1) == 0x000028, "Member 'PerkSlotButton_C_Setup::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Setup, K2Node_MakeStruct_SlateColor_2) == 0x000050, "Member 'PerkSlotButton_C_Setup::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
@@ -55,82 +55,82 @@ static_assert(offsetof(PerkSlotButton_C_Setup, CallFunc_Format_ReturnValue) == 0
 static_assert(offsetof(PerkSlotButton_C_Setup, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000F8, "Member 'PerkSlotButton_C_Setup::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Setup, CallFunc_Greater_IntInt_ReturnValue) == 0x0000F9, "Member 'PerkSlotButton_C_Setup::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Setup, CallFunc_GetItemProgressionData_ReturnValue) == 0x000100, "Member 'PerkSlotButton_C_Setup::CallFunc_GetItemProgressionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Setup, K2Node_MakeStruct_FormatArgumentData_1) == 0x0001E8, "Member 'PerkSlotButton_C_Setup::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Setup, K2Node_MakeArray_Array_1) == 0x000228, "Member 'PerkSlotButton_C_Setup::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Setup, CallFunc_Format_ReturnValue_1) == 0x000238, "Member 'PerkSlotButton_C_Setup::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Setup, K2Node_MakeStruct_FormatArgumentData_1) == 0x000268, "Member 'PerkSlotButton_C_Setup::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Setup, K2Node_MakeArray_Array_1) == 0x0002A8, "Member 'PerkSlotButton_C_Setup::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Setup, CallFunc_Format_ReturnValue_1) == 0x0002B8, "Member 'PerkSlotButton_C_Setup::CallFunc_Format_ReturnValue_1' has a wrong offset!");
 
 // Function PerkSlotButton.PerkSlotButton_C.Init
 // 0x0018 (0x0018 - 0x0000)
 struct PerkSlotButton_C_Init final
 {
 public:
-	int32                                         Param_Slot;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPerkCategory                                 Param_PerkCategory;                                // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DDC[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Slot_0;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPerkCategory                                 PerkCategory_0;                                    // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PerkSlotButton_C_Init) == 0x000008, "Wrong alignment on PerkSlotButton_C_Init");
 static_assert(sizeof(PerkSlotButton_C_Init) == 0x000018, "Wrong size on PerkSlotButton_C_Init");
-static_assert(offsetof(PerkSlotButton_C_Init, Param_Slot) == 0x000000, "Member 'PerkSlotButton_C_Init::Param_Slot' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Init, Param_PerkCategory) == 0x000004, "Member 'PerkSlotButton_C_Init::Param_PerkCategory' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Init, Slot_0) == 0x000000, "Member 'PerkSlotButton_C_Init::Slot_0' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Init, PerkCategory_0) == 0x000004, "Member 'PerkSlotButton_C_Init::PerkCategory_0' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Init, CallFunc_GetLocalPlayerState_ReturnValue) == 0x000008, "Member 'PerkSlotButton_C_Init::CallFunc_GetLocalPlayerState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Init, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'PerkSlotButton_C_Init::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function PerkSlotButton.PerkSlotButton_C.Refresh
-// 0x03C8 (0x03C8 - 0x0000)
+// 0x0508 (0x0508 - 0x0000)
 struct PerkSlotButton_C_Refresh final
 {
 public:
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DDD[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DDE[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMenuUpgradeItemInfo                   K2Node_MakeStruct_MenuUpgradeItemInfo;             // 0x0010(0x0128)()
-	class URBPlayerProgressionData*               CallFunc_GetLocalPlayerProgressionData_ReturnValue; // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DDF[0x4];                                     // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FRBItemProgressionData>         CallFunc_FilterItemProgressionData_ReturnValue;    // 0x0148(0x0010)(ReferenceParm)
-	struct FRBItemProgressionData                 CallFunc_Array_Get_Item;                           // 0x0158(0x00E8)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0244(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DE0[0x3];                                     // 0x0245(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMenuUpgradeItemInfo                   CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue;  // 0x0248(0x0128)()
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DE1[0x3];                                     // 0x0371(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0374(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRBPlayerLoadout                       CallFunc_GetPlayerLoadout_ReturnValue;             // 0x0378(0x0018)(ConstParm)
-	int32                                         CallFunc_GetUnlockedPerkSlots_ReturnValue;         // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DE2[0x4];                                     // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRBPlayerLoadout                       CallFunc_GetMenuLoadout_ReturnValue;               // 0x0398(0x0018)()
-	TArray<class FName>                           K2Node_Select_Default;                             // 0x03B0(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x03C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMenuUpgradeItemInfo                   K2Node_MakeStruct_MenuUpgradeItemInfo;             // 0x0010(0x0188)()
+	class URBPlayerProgressionData*               CallFunc_GetLocalPlayerProgressionData_ReturnValue; // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FRBItemProgressionData>         CallFunc_FilterItemProgressionData_ReturnValue;    // 0x01A8(0x0010)(ReferenceParm)
+	struct FRBItemProgressionData                 CallFunc_Array_Get_Item;                           // 0x01B8(0x0168)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0324(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_325[0x3];                                      // 0x0325(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMenuUpgradeItemInfo                   CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue;  // 0x0328(0x0188)()
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x04B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4B1[0x3];                                      // 0x04B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x04B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRBPlayerLoadout                       CallFunc_GetPlayerLoadout_ReturnValue;             // 0x04B8(0x0018)(ConstParm)
+	int32                                         CallFunc_GetUnlockedPerkSlots_ReturnValue;         // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D4[0x4];                                      // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBPlayerLoadout                       CallFunc_GetMenuLoadout_ReturnValue;               // 0x04D8(0x0018)()
+	TArray<class FName>                           K2Node_Select_Default;                             // 0x04F0(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0504(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PerkSlotButton_C_Refresh) == 0x000008, "Wrong alignment on PerkSlotButton_C_Refresh");
-static_assert(sizeof(PerkSlotButton_C_Refresh) == 0x0003C8, "Wrong size on PerkSlotButton_C_Refresh");
+static_assert(sizeof(PerkSlotButton_C_Refresh) == 0x000508, "Wrong size on PerkSlotButton_C_Refresh");
 static_assert(offsetof(PerkSlotButton_C_Refresh, Temp_bool_True_if_break_was_hit_Variable) == 0x000000, "Member 'PerkSlotButton_C_Refresh::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Refresh, Temp_int_Array_Index_Variable) == 0x000004, "Member 'PerkSlotButton_C_Refresh::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'PerkSlotButton_C_Refresh::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Refresh, Temp_bool_Variable) == 0x000009, "Member 'PerkSlotButton_C_Refresh::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(PerkSlotButton_C_Refresh, K2Node_MakeStruct_MenuUpgradeItemInfo) == 0x000010, "Member 'PerkSlotButton_C_Refresh::K2Node_MakeStruct_MenuUpgradeItemInfo' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetLocalPlayerProgressionData_ReturnValue) == 0x000138, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetLocalPlayerProgressionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, Temp_int_Loop_Counter_Variable) == 0x000140, "Member 'PerkSlotButton_C_Refresh::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_FilterItemProgressionData_ReturnValue) == 0x000148, "Member 'PerkSlotButton_C_Refresh::CallFunc_FilterItemProgressionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Array_Get_Item) == 0x000158, "Member 'PerkSlotButton_C_Refresh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Array_Length_ReturnValue) == 0x000240, "Member 'PerkSlotButton_C_Refresh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Less_IntInt_ReturnValue) == 0x000244, "Member 'PerkSlotButton_C_Refresh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue) == 0x000248, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_BooleanAND_ReturnValue) == 0x000370, "Member 'PerkSlotButton_C_Refresh::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Add_IntInt_ReturnValue) == 0x000374, "Member 'PerkSlotButton_C_Refresh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetPlayerLoadout_ReturnValue) == 0x000378, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetPlayerLoadout_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetUnlockedPerkSlots_ReturnValue) == 0x000390, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetUnlockedPerkSlots_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetMenuLoadout_ReturnValue) == 0x000398, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetMenuLoadout_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, K2Node_Select_Default) == 0x0003B0, "Member 'PerkSlotButton_C_Refresh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Array_Find_ReturnValue) == 0x0003C0, "Member 'PerkSlotButton_C_Refresh::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0003C4, "Member 'PerkSlotButton_C_Refresh::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetLocalPlayerProgressionData_ReturnValue) == 0x000198, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetLocalPlayerProgressionData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, Temp_int_Loop_Counter_Variable) == 0x0001A0, "Member 'PerkSlotButton_C_Refresh::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_FilterItemProgressionData_ReturnValue) == 0x0001A8, "Member 'PerkSlotButton_C_Refresh::CallFunc_FilterItemProgressionData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Array_Get_Item) == 0x0001B8, "Member 'PerkSlotButton_C_Refresh::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Array_Length_ReturnValue) == 0x000320, "Member 'PerkSlotButton_C_Refresh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Less_IntInt_ReturnValue) == 0x000324, "Member 'PerkSlotButton_C_Refresh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue) == 0x000328, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetUpgradeItemInfoForPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_BooleanAND_ReturnValue) == 0x0004B0, "Member 'PerkSlotButton_C_Refresh::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Add_IntInt_ReturnValue) == 0x0004B4, "Member 'PerkSlotButton_C_Refresh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetPlayerLoadout_ReturnValue) == 0x0004B8, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetPlayerLoadout_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetUnlockedPerkSlots_ReturnValue) == 0x0004D0, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetUnlockedPerkSlots_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GetMenuLoadout_ReturnValue) == 0x0004D8, "Member 'PerkSlotButton_C_Refresh::CallFunc_GetMenuLoadout_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, K2Node_Select_Default) == 0x0004F0, "Member 'PerkSlotButton_C_Refresh::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_Array_Find_ReturnValue) == 0x000500, "Member 'PerkSlotButton_C_Refresh::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PerkSlotButton_C_Refresh, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000504, "Member 'PerkSlotButton_C_Refresh::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function PerkSlotButton.PerkSlotButton_C.SetHovered
 // 0x0001 (0x0001 - 0x0000)

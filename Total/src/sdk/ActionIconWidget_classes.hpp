@@ -63,9 +63,8 @@ public:
 	class UMaterialInstanceDynamic*               BorderMaterial_Gamepad;                            // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWidget*>                        CurrentlyVisibleWidgets;                           // 0x0398(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                          ShowOnlyGamepad;                                   // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          ShowOnlyKBM;                                       // 0x03A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          ShouldIntersect;                                   // 0x03AA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AB5[0x5];                                     // 0x03AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          ShouldIntersect;                                   // 0x03A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3AA[0x6];                                      // 0x03AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               BorderMaterial_Keyboard;                           // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bShowOnGamepad;                                    // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bShowOnKBM;                                        // 0x03B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -75,7 +74,7 @@ public:
 	void ExecuteUbergraph_ActionIconWidget(int32 EntryPoint);
 	void ForceRefreshIcon();
 	void OnHudActionProgressChanged(float NewProgress, EActionProgressContext Context);
-	void OnMenuActionProgressChanged(const class FName& Param_ActionName, float NewProgress);
+	void OnMenuActionProgressChanged(const class FName& ActionName_0, float NewProgress);
 	void OnMenuInputSourceChanged();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void Construct();
@@ -84,7 +83,7 @@ public:
 	void RefreshActionIcon();
 	void HideIcons();
 	void ShowContainer(class UPanelWidget* Container);
-	void SetDesiredHeight(float Param_DesiredHeight);
+	void SetDesiredHeight(float DesiredHeight_0);
 	void UpdateSize();
 	void SetWidgetVisible(class UWidget* Widget);
 	void ResetVisibleIcons();
@@ -140,8 +139,7 @@ static_assert(offsetof(UActionIconWidget_C, BorderMaterial_Mouse) == 0x000388, "
 static_assert(offsetof(UActionIconWidget_C, BorderMaterial_Gamepad) == 0x000390, "Member 'UActionIconWidget_C::BorderMaterial_Gamepad' has a wrong offset!");
 static_assert(offsetof(UActionIconWidget_C, CurrentlyVisibleWidgets) == 0x000398, "Member 'UActionIconWidget_C::CurrentlyVisibleWidgets' has a wrong offset!");
 static_assert(offsetof(UActionIconWidget_C, ShowOnlyGamepad) == 0x0003A8, "Member 'UActionIconWidget_C::ShowOnlyGamepad' has a wrong offset!");
-static_assert(offsetof(UActionIconWidget_C, ShowOnlyKBM) == 0x0003A9, "Member 'UActionIconWidget_C::ShowOnlyKBM' has a wrong offset!");
-static_assert(offsetof(UActionIconWidget_C, ShouldIntersect) == 0x0003AA, "Member 'UActionIconWidget_C::ShouldIntersect' has a wrong offset!");
+static_assert(offsetof(UActionIconWidget_C, ShouldIntersect) == 0x0003A9, "Member 'UActionIconWidget_C::ShouldIntersect' has a wrong offset!");
 static_assert(offsetof(UActionIconWidget_C, BorderMaterial_Keyboard) == 0x0003B0, "Member 'UActionIconWidget_C::BorderMaterial_Keyboard' has a wrong offset!");
 static_assert(offsetof(UActionIconWidget_C, bShowOnGamepad) == 0x0003B8, "Member 'UActionIconWidget_C::bShowOnGamepad' has a wrong offset!");
 static_assert(offsetof(UActionIconWidget_C, bShowOnKBM) == 0x0003B9, "Member 'UActionIconWidget_C::bShowOnKBM' has a wrong offset!");

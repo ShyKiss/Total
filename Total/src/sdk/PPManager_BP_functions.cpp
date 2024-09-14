@@ -37,6 +37,20 @@ void APPManager_BP_C::ExecuteUbergraph_PPManager_BP(int32 EntryPoint)
 }
 
 
+// Function PPManager_BP.PPManager_BP_C.FX_SetMansionDOFDisabled
+// (BlueprintCallable, BlueprintEvent)
+
+void APPManager_BP_C::FX_SetMansionDOFDisabled()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PPManager_BP_C", "FX_SetMansionDOFDisabled");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function PPManager_BP.PPManager_BP_C.FX_Hit
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:

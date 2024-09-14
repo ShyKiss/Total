@@ -216,9 +216,9 @@ void UCommonNotificationWidget_C::UpdateProgress(float Progress)
 // Function CommonNotificationWidget.CommonNotificationWidget_C.SetMessage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Message                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Message_0                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UCommonNotificationWidget_C::SetMessage(const class FText& Param_Message)
+void UCommonNotificationWidget_C::SetMessage(const class FText& Message_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -227,7 +227,7 @@ void UCommonNotificationWidget_C::SetMessage(const class FText& Param_Message)
 
 	Params::CommonNotificationWidget_C_SetMessage Parms{};
 
-	Parms.Param_Message = std::move(Param_Message);
+	Parms.Message_0 = std::move(Message_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -24,9 +24,10 @@ struct PlayerHud_C_ExecuteUbergraph_PlayerHud final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E07[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_Event_bHasUnseenTerminalElements;           // 0x0004(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,24 +36,26 @@ public:
 	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E08[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Event_message;                              // 0x0048(0x0018)(ConstParm)
 	EGameMessageCategory                          K2Node_Event_gameMessageCategory;                  // 0x0060(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E09[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue_1;                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E0A[0x3];                                     // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_Map_Find_Value;                           // 0x007C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_Show;                           // 0x008D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x008E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bHasUnseenNews;                       // 0x008F(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PlayerHud_C_ExecuteUbergraph_PlayerHud) == 0x000008, "Wrong alignment on PlayerHud_C_ExecuteUbergraph_PlayerHud");
 static_assert(sizeof(PlayerHud_C_ExecuteUbergraph_PlayerHud) == 0x000090, "Wrong size on PlayerHud_C_ExecuteUbergraph_PlayerHud");
 static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, EntryPoint) == 0x000000, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, Temp_byte_Variable) == 0x000004, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, Temp_byte_Variable_1) == 0x000005, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, K2Node_Event_bHasUnseenTerminalElements) == 0x000004, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::K2Node_Event_bHasUnseenTerminalElements' has a wrong offset!");
+static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, Temp_byte_Variable) == 0x000005, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, Temp_byte_Variable_1) == 0x000006, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000028, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
@@ -70,6 +73,29 @@ static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, CallFunc_Map_Find
 static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, CallFunc_Map_Find_ReturnValue) == 0x00008C, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, K2Node_CustomEvent_Show) == 0x00008D, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::K2Node_CustomEvent_Show' has a wrong offset!");
 static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, K2Node_Select_Default) == 0x00008E, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PlayerHud_C_ExecuteUbergraph_PlayerHud, K2Node_Event_bHasUnseenNews) == 0x00008F, "Member 'PlayerHud_C_ExecuteUbergraph_PlayerHud::K2Node_Event_bHasUnseenNews' has a wrong offset!");
+
+// Function PlayerHud.PlayerHud_C.Event_UpdateTerminalPromptDisplay
+// 0x0001 (0x0001 - 0x0000)
+struct PlayerHud_C_Event_UpdateTerminalPromptDisplay final
+{
+public:
+	bool                                          bHasUnseenTerminalElements;                        // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerHud_C_Event_UpdateTerminalPromptDisplay) == 0x000001, "Wrong alignment on PlayerHud_C_Event_UpdateTerminalPromptDisplay");
+static_assert(sizeof(PlayerHud_C_Event_UpdateTerminalPromptDisplay) == 0x000001, "Wrong size on PlayerHud_C_Event_UpdateTerminalPromptDisplay");
+static_assert(offsetof(PlayerHud_C_Event_UpdateTerminalPromptDisplay, bHasUnseenTerminalElements) == 0x000000, "Member 'PlayerHud_C_Event_UpdateTerminalPromptDisplay::bHasUnseenTerminalElements' has a wrong offset!");
+
+// Function PlayerHud.PlayerHud_C.Event_UpdateNewsPromptDisplay
+// 0x0001 (0x0001 - 0x0000)
+struct PlayerHud_C_Event_UpdateNewsPromptDisplay final
+{
+public:
+	bool                                          bHasUnseenNews;                                    // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerHud_C_Event_UpdateNewsPromptDisplay) == 0x000001, "Wrong alignment on PlayerHud_C_Event_UpdateNewsPromptDisplay");
+static_assert(sizeof(PlayerHud_C_Event_UpdateNewsPromptDisplay) == 0x000001, "Wrong size on PlayerHud_C_Event_UpdateNewsPromptDisplay");
+static_assert(offsetof(PlayerHud_C_Event_UpdateNewsPromptDisplay, bHasUnseenNews) == 0x000000, "Member 'PlayerHud_C_Event_UpdateNewsPromptDisplay::bHasUnseenNews' has a wrong offset!");
 
 // Function PlayerHud.PlayerHud_C.ChangeCrosshairVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -100,11 +126,11 @@ static_assert(offsetof(PlayerHud_C_Event_ShowInteractionMessage, GameMessageCate
 struct PlayerHud_C_Event_StartTransitionFeedback final
 {
 public:
-	float                                         Param_blackoutDuration;                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         blackoutDuration_0;                                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PlayerHud_C_Event_StartTransitionFeedback) == 0x000004, "Wrong alignment on PlayerHud_C_Event_StartTransitionFeedback");
 static_assert(sizeof(PlayerHud_C_Event_StartTransitionFeedback) == 0x000004, "Wrong size on PlayerHud_C_Event_StartTransitionFeedback");
-static_assert(offsetof(PlayerHud_C_Event_StartTransitionFeedback, Param_blackoutDuration) == 0x000000, "Member 'PlayerHud_C_Event_StartTransitionFeedback::Param_blackoutDuration' has a wrong offset!");
+static_assert(offsetof(PlayerHud_C_Event_StartTransitionFeedback, blackoutDuration_0) == 0x000000, "Member 'PlayerHud_C_Event_StartTransitionFeedback::blackoutDuration_0' has a wrong offset!");
 
 // Function PlayerHud.PlayerHud_C.PlayTransitionFeedback
 // 0x0008 (0x0008 - 0x0000)
@@ -128,16 +154,27 @@ static_assert(alignof(PlayerHud_C_Event_ShowBadgeProgress) == 0x000004, "Wrong a
 static_assert(sizeof(PlayerHud_C_Event_ShowBadgeProgress) == 0x000008, "Wrong size on PlayerHud_C_Event_ShowBadgeProgress");
 static_assert(offsetof(PlayerHud_C_Event_ShowBadgeProgress, Progress) == 0x000000, "Member 'PlayerHud_C_Event_ShowBadgeProgress::Progress' has a wrong offset!");
 
-// Function PlayerHud.PlayerHud_C.Event_ShowTaskProgress
-// 0x0008 (0x0008 - 0x0000)
-struct PlayerHud_C_Event_ShowTaskProgress final
+// Function PlayerHud.PlayerHud_C.Event_ShowTrialDetailsNotification
+// 0x0014 (0x0014 - 0x0000)
+struct PlayerHud_C_Event_ShowTrialDetailsNotification final
 {
 public:
-	struct FRBTaskHudProgressDisplayDetails       Progress;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FRBTrialHudNotificationDetails         Details;                                           // 0x0000(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PlayerHud_C_Event_ShowTaskProgress) == 0x000004, "Wrong alignment on PlayerHud_C_Event_ShowTaskProgress");
-static_assert(sizeof(PlayerHud_C_Event_ShowTaskProgress) == 0x000008, "Wrong size on PlayerHud_C_Event_ShowTaskProgress");
-static_assert(offsetof(PlayerHud_C_Event_ShowTaskProgress, Progress) == 0x000000, "Member 'PlayerHud_C_Event_ShowTaskProgress::Progress' has a wrong offset!");
+static_assert(alignof(PlayerHud_C_Event_ShowTrialDetailsNotification) == 0x000004, "Wrong alignment on PlayerHud_C_Event_ShowTrialDetailsNotification");
+static_assert(sizeof(PlayerHud_C_Event_ShowTrialDetailsNotification) == 0x000014, "Wrong size on PlayerHud_C_Event_ShowTrialDetailsNotification");
+static_assert(offsetof(PlayerHud_C_Event_ShowTrialDetailsNotification, Details) == 0x000000, "Member 'PlayerHud_C_Event_ShowTrialDetailsNotification::Details' has a wrong offset!");
+
+// Function PlayerHud.PlayerHud_C.Event_HideTrialDetailsNotification
+// 0x0001 (0x0001 - 0x0000)
+struct PlayerHud_C_Event_HideTrialDetailsNotification final
+{
+public:
+	bool                                          bPlayTransition;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerHud_C_Event_HideTrialDetailsNotification) == 0x000001, "Wrong alignment on PlayerHud_C_Event_HideTrialDetailsNotification");
+static_assert(sizeof(PlayerHud_C_Event_HideTrialDetailsNotification) == 0x000001, "Wrong size on PlayerHud_C_Event_HideTrialDetailsNotification");
+static_assert(offsetof(PlayerHud_C_Event_HideTrialDetailsNotification, bPlayTransition) == 0x000000, "Member 'PlayerHud_C_Event_HideTrialDetailsNotification::bPlayTransition' has a wrong offset!");
 
 }
 

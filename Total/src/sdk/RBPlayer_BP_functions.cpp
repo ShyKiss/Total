@@ -124,9 +124,9 @@ void ARBPlayer_BP_C::Event_OnRemainingRespawnIncreased()
 // Function RBPlayer_BP.RBPlayer_BP_C.Event_OnActiveSkillActorChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class AActor*                           Param_ActiveSkillActor                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ActiveSkillActor_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARBPlayer_BP_C::Event_OnActiveSkillActorChanged(class AActor* Param_ActiveSkillActor)
+void ARBPlayer_BP_C::Event_OnActiveSkillActorChanged(class AActor* ActiveSkillActor_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -135,7 +135,7 @@ void ARBPlayer_BP_C::Event_OnActiveSkillActorChanged(class AActor* Param_ActiveS
 
 	Params::RBPlayer_BP_C_Event_OnActiveSkillActorChanged Parms{};
 
-	Parms.Param_ActiveSkillActor = Param_ActiveSkillActor;
+	Parms.ActiveSkillActor_0 = ActiveSkillActor_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1209,6 +1209,28 @@ void ARBPlayer_BP_C::CopyMaterialsToShadowMesh(class UMeshComponent* PlayerMesh,
 		Func = Class->GetFunction("RBPlayer_BP_C", "CopyMaterialsToShadowMesh");
 
 	Params::RBPlayer_BP_C_CopyMaterialsToShadowMesh Parms{};
+
+	Parms.PlayerMesh = PlayerMesh;
+	Parms.ShadowMesh = ShadowMesh;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function RBPlayer_BP.RBPlayer_BP_C.CopyPrimitiveDataToShadowMesh
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UMeshComponent*                   PlayerMesh                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMeshComponent*                   ShadowMesh                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARBPlayer_BP_C::CopyPrimitiveDataToShadowMesh(class UMeshComponent* PlayerMesh, class UMeshComponent* ShadowMesh)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RBPlayer_BP_C", "CopyPrimitiveDataToShadowMesh");
+
+	Params::RBPlayer_BP_C_CopyPrimitiveDataToShadowMesh Parms{};
 
 	Parms.PlayerMesh = PlayerMesh;
 	Parms.ShadowMesh = ShadowMesh;

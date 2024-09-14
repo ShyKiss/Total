@@ -28,7 +28,7 @@ public:
 	TDelegate<void(bool bIsOpen)>                 K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2AE1[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_1;  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,11 +36,11 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_bIsOpen;                        // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AE2[0x5];                                     // 0x006B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6B[0x5];                                       // 0x006B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0078(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2AE3[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -96,7 +96,7 @@ public:
 	class FText                                   TutorialText;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UWidget*                                PopUpAnchorInfo;                                   // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMenuPlacement                                PopupPlacement;                                    // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2AE4[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                FocusAnchorInfo;                                   // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowBorder;                                        // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -105,7 +105,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2AE5[0x1];                                     // 0x0037(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37[0x1];                                       // 0x0037(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue_1;           // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue_2;           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -148,7 +148,7 @@ struct MenuTutorials_C_SetAnchorInfo final
 {
 public:
 	class UWidget*                                AnchorInfo;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       Param_Slot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       Slot_0;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetViewportScale_ReturnValue;             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                              CallFunc_GetCachedGeometry_ReturnValue;            // 0x0014(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
 	struct FVector2D                              CallFunc_GetAbsoluteSize_ReturnValue;              // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -159,7 +159,7 @@ public:
 static_assert(alignof(MenuTutorials_C_SetAnchorInfo) == 0x000008, "Wrong alignment on MenuTutorials_C_SetAnchorInfo");
 static_assert(sizeof(MenuTutorials_C_SetAnchorInfo) == 0x000070, "Wrong size on MenuTutorials_C_SetAnchorInfo");
 static_assert(offsetof(MenuTutorials_C_SetAnchorInfo, AnchorInfo) == 0x000000, "Member 'MenuTutorials_C_SetAnchorInfo::AnchorInfo' has a wrong offset!");
-static_assert(offsetof(MenuTutorials_C_SetAnchorInfo, Param_Slot) == 0x000008, "Member 'MenuTutorials_C_SetAnchorInfo::Param_Slot' has a wrong offset!");
+static_assert(offsetof(MenuTutorials_C_SetAnchorInfo, Slot_0) == 0x000008, "Member 'MenuTutorials_C_SetAnchorInfo::Slot_0' has a wrong offset!");
 static_assert(offsetof(MenuTutorials_C_SetAnchorInfo, CallFunc_GetViewportScale_ReturnValue) == 0x000010, "Member 'MenuTutorials_C_SetAnchorInfo::CallFunc_GetViewportScale_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MenuTutorials_C_SetAnchorInfo, CallFunc_GetCachedGeometry_ReturnValue) == 0x000014, "Member 'MenuTutorials_C_SetAnchorInfo::CallFunc_GetCachedGeometry_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MenuTutorials_C_SetAnchorInfo, CallFunc_GetAbsoluteSize_ReturnValue) == 0x00004C, "Member 'MenuTutorials_C_SetAnchorInfo::CallFunc_GetAbsoluteSize_ReturnValue' has a wrong offset!");
@@ -175,7 +175,7 @@ public:
 	class FText                                   TutorialText;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UWidget*                                PopUpAnchorInfo;                                   // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMenuPlacement                                PopupPlacement;                                    // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2AE6[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                FocusAnchorInfo;                                   // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowBorder;                                        // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -192,11 +192,11 @@ static_assert(offsetof(MenuTutorials_C_Refresh, ShowBorder) == 0x000030, "Member
 struct MenuTutorials_C_IsShowingTutorial final
 {
 public:
-	bool                                          Param_IsShowingTutorial;                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsShowingTutorial_0;                               // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MenuTutorials_C_IsShowingTutorial) == 0x000001, "Wrong alignment on MenuTutorials_C_IsShowingTutorial");
 static_assert(sizeof(MenuTutorials_C_IsShowingTutorial) == 0x000001, "Wrong size on MenuTutorials_C_IsShowingTutorial");
-static_assert(offsetof(MenuTutorials_C_IsShowingTutorial, Param_IsShowingTutorial) == 0x000000, "Member 'MenuTutorials_C_IsShowingTutorial::Param_IsShowingTutorial' has a wrong offset!");
+static_assert(offsetof(MenuTutorials_C_IsShowingTutorial, IsShowingTutorial_0) == 0x000000, "Member 'MenuTutorials_C_IsShowingTutorial::IsShowingTutorial_0' has a wrong offset!");
 
 // Function MenuTutorials.MenuTutorials_C.UpdateMaterialParams
 // 0x0110 (0x0110 - 0x0000)
@@ -209,7 +209,7 @@ public:
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsZero2D_ReturnValue;                     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AE7[0x1];                                     // 0x0013(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13[0x1];                                       // 0x0013(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue_1;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -38,6 +38,7 @@ public:
 
 	bool ShouldBeIgnoredForLots() const;
 	bool IsStateA() const;
+	bool IsStateSetAndStateA() const;
 
 public:
 	static class UClass* StaticClass()

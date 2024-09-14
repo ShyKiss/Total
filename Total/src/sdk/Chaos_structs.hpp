@@ -308,7 +308,7 @@ struct FSolverCollisionFilterSettings final
 {
 public:
 	bool                                          FilterEnabled;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A11[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MinMass;                                           // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinSpeed;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinImpulse;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -326,7 +326,7 @@ struct FSolverBreakingFilterSettings final
 {
 public:
 	bool                                          FilterEnabled;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A12[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MinMass;                                           // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinSpeed;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinVolume;                                         // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -344,7 +344,7 @@ struct FSolverTrailingFilterSettings final
 {
 public:
 	bool                                          FilterEnabled;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A13[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MinMass;                                           // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinSpeed;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinVolume;                                         // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -373,16 +373,16 @@ public:
 	float                                         ClusterConnectionFactor;                           // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EClusterUnionMethod                           ClusterUnionConnectionType;                        // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bGenerateCollisionData;                            // 0x0029(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A14[0x2];                                     // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSolverCollisionFilterSettings         CollisionFilterSettings;                           // 0x002C(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bGenerateBreakData;                                // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A15[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSolverBreakingFilterSettings          BreakingFilterSettings;                            // 0x0040(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bGenerateTrailingData;                             // 0x0050(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A16[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSolverTrailingFilterSettings          TrailingFilterSettings;                            // 0x0054(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bGenerateContactGraph;                             // 0x0064(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A17[0x3];                                     // 0x0065(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FChaosSolverConfiguration) == 0x000004, "Wrong alignment on FChaosSolverConfiguration");
 static_assert(sizeof(FChaosSolverConfiguration) == 0x000068, "Wrong size on FChaosSolverConfiguration");
@@ -404,6 +404,27 @@ static_assert(offsetof(FChaosSolverConfiguration, BreakingFilterSettings) == 0x0
 static_assert(offsetof(FChaosSolverConfiguration, bGenerateTrailingData) == 0x000050, "Member 'FChaosSolverConfiguration::bGenerateTrailingData' has a wrong offset!");
 static_assert(offsetof(FChaosSolverConfiguration, TrailingFilterSettings) == 0x000054, "Member 'FChaosSolverConfiguration::TrailingFilterSettings' has a wrong offset!");
 static_assert(offsetof(FChaosSolverConfiguration, bGenerateContactGraph) == 0x000064, "Member 'FChaosSolverConfiguration::bGenerateContactGraph' has a wrong offset!");
+
+// ScriptStruct Chaos.SolverTrailingData
+// 0x0030 (0x0030 - 0x0000)
+struct FSolverTrailingData final
+{
+public:
+	struct FVector                                Location;                                          // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Velocity;                                          // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                AngularVelocity;                                   // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Mass;                                              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ParticleIndex;                                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ParticleIndexMesh;                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FSolverTrailingData) == 0x000004, "Wrong alignment on FSolverTrailingData");
+static_assert(sizeof(FSolverTrailingData) == 0x000030, "Wrong size on FSolverTrailingData");
+static_assert(offsetof(FSolverTrailingData, Location) == 0x000000, "Member 'FSolverTrailingData::Location' has a wrong offset!");
+static_assert(offsetof(FSolverTrailingData, Velocity) == 0x00000C, "Member 'FSolverTrailingData::Velocity' has a wrong offset!");
+static_assert(offsetof(FSolverTrailingData, AngularVelocity) == 0x000018, "Member 'FSolverTrailingData::AngularVelocity' has a wrong offset!");
+static_assert(offsetof(FSolverTrailingData, Mass) == 0x000024, "Member 'FSolverTrailingData::Mass' has a wrong offset!");
+static_assert(offsetof(FSolverTrailingData, ParticleIndex) == 0x000028, "Member 'FSolverTrailingData::ParticleIndex' has a wrong offset!");
+static_assert(offsetof(FSolverTrailingData, ParticleIndexMesh) == 0x00002C, "Member 'FSolverTrailingData::ParticleIndexMesh' has a wrong offset!");
 
 // ScriptStruct Chaos.SolverCollisionData
 // 0x006C (0x006C - 0x0000)
@@ -461,27 +482,6 @@ static_assert(offsetof(FSolverBreakingData, Mass) == 0x000024, "Member 'FSolverB
 static_assert(offsetof(FSolverBreakingData, ParticleIndex) == 0x000028, "Member 'FSolverBreakingData::ParticleIndex' has a wrong offset!");
 static_assert(offsetof(FSolverBreakingData, ParticleIndexMesh) == 0x00002C, "Member 'FSolverBreakingData::ParticleIndexMesh' has a wrong offset!");
 
-// ScriptStruct Chaos.SolverTrailingData
-// 0x0030 (0x0030 - 0x0000)
-struct FSolverTrailingData final
-{
-public:
-	struct FVector                                Location;                                          // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Velocity;                                          // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                AngularVelocity;                                   // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Mass;                                              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ParticleIndex;                                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ParticleIndexMesh;                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FSolverTrailingData) == 0x000004, "Wrong alignment on FSolverTrailingData");
-static_assert(sizeof(FSolverTrailingData) == 0x000030, "Wrong size on FSolverTrailingData");
-static_assert(offsetof(FSolverTrailingData, Location) == 0x000000, "Member 'FSolverTrailingData::Location' has a wrong offset!");
-static_assert(offsetof(FSolverTrailingData, Velocity) == 0x00000C, "Member 'FSolverTrailingData::Velocity' has a wrong offset!");
-static_assert(offsetof(FSolverTrailingData, AngularVelocity) == 0x000018, "Member 'FSolverTrailingData::AngularVelocity' has a wrong offset!");
-static_assert(offsetof(FSolverTrailingData, Mass) == 0x000024, "Member 'FSolverTrailingData::Mass' has a wrong offset!");
-static_assert(offsetof(FSolverTrailingData, ParticleIndex) == 0x000028, "Member 'FSolverTrailingData::ParticleIndex' has a wrong offset!");
-static_assert(offsetof(FSolverTrailingData, ParticleIndexMesh) == 0x00002C, "Member 'FSolverTrailingData::ParticleIndexMesh' has a wrong offset!");
-
 // ScriptStruct Chaos.RecordedFrame
 // 0x00B8 (0x00B8 - 0x0000)
 struct FRecordedFrame final
@@ -495,7 +495,7 @@ public:
 	TArray<struct FSolverBreakingData>            Breakings;                                         // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TSet<struct FSolverTrailingData>              Trailings;                                         // 0x0060(0x0050)(NativeAccessSpecifierPublic)
 	float                                         Timestamp;                                         // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A18[0x4];                                     // 0x00B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRecordedFrame) == 0x000008, "Wrong alignment on FRecordedFrame");
 static_assert(sizeof(FRecordedFrame) == 0x0000B8, "Wrong size on FRecordedFrame");

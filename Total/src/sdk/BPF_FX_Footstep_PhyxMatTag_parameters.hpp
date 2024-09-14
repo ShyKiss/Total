@@ -18,52 +18,33 @@
 namespace SDK::Params
 {
 
-// Function BPF_FX_Footstep_PhyxMatTag.BPF_FX_Footstep_PhyxMatTag_C.Footstep FX Run
-// 0x00B0 (0x00B0 - 0x0000)
-struct BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run final
+// Function BPF_FX_Footstep_PhyxMatTag.BPF_FX_Footstep_PhyxMatTag_C.Footstep FX
+// 0x0058 (0x0058 - 0x0000)
+struct BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX final
 {
 public:
-	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFootstepData                          FootstepData;                                      // 0x0008(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	class UObject*                                __WorldContext;                                    // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A53[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPhysicalMaterial*>              PhyxMat_Array;                                     // 0x0040(0x0010)(Edit, BlueprintVisible)
+	struct FFootstepData                          FootstepData;                                      // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class UObject*                                __WorldContext;                                    // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                         VFX;                                               // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_1;      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_2;      // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_3;      // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_4;      // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_5;      // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_6;      // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_7;      // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPhysicalMaterial*>              K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A54[0x3];                                     // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_1;                 // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run) == 0x000008, "Wrong alignment on BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run");
-static_assert(sizeof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run) == 0x0000B0, "Wrong size on BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, Pawn) == 0x000000, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::Pawn' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, FootstepData) == 0x000008, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::FootstepData' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, __WorldContext) == 0x000030, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, Param_Index) == 0x000038, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::Param_Index' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, PhyxMat_Array) == 0x000040, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::PhyxMat_Array' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_SpawnSystemAtLocation_ReturnValue) == 0x000050, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_SpawnSystemAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_SpawnSystemAtLocation_ReturnValue_1) == 0x000058, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_SpawnSystemAtLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_SpawnSystemAtLocation_ReturnValue_2) == 0x000060, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_SpawnSystemAtLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_SpawnSystemAtLocation_ReturnValue_3) == 0x000068, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_SpawnSystemAtLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_SpawnSystemAtLocation_ReturnValue_4) == 0x000070, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_SpawnSystemAtLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_SpawnSystemAtLocation_ReturnValue_5) == 0x000078, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_SpawnSystemAtLocation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_SpawnSystemAtLocation_ReturnValue_6) == 0x000080, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_SpawnSystemAtLocation_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_SpawnSystemAtLocation_ReturnValue_7) == 0x000088, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_SpawnSystemAtLocation_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, K2Node_MakeArray_Array) == 0x000090, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_Array_Contains_ReturnValue) == 0x0000A0, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, CallFunc_Array_Find_ReturnValue) == 0x0000A4, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, K2Node_SwitchInteger_CmpSuccess) == 0x0000A8, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run, K2Node_SwitchInteger_CmpSuccess_1) == 0x0000A9, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
+static_assert(alignof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX) == 0x000008, "Wrong alignment on BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX");
+static_assert(sizeof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX) == 0x000058, "Wrong size on BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX, FootstepData) == 0x000000, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX::FootstepData' has a wrong offset!");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX, __WorldContext) == 0x000038, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX::__WorldContext' has a wrong offset!");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX, VFX) == 0x000040, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX::VFX' has a wrong offset!");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX, CallFunc_IsValid_ReturnValue_1) == 0x000049, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX, K2Node_SwitchEnum_CmpSuccess) == 0x00004A, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX, K2Node_SwitchEnum_CmpSuccess_1) == 0x00004B, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX, CallFunc_IsValid_ReturnValue_2) == 0x00004C, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX, CallFunc_SpawnSystemAtLocation_ReturnValue) == 0x000050, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX::CallFunc_SpawnSystemAtLocation_ReturnValue' has a wrong offset!");
 
 // Function BPF_FX_Footstep_PhyxMatTag.BPF_FX_Footstep_PhyxMatTag_C.Footstep FX Landing
 // 0x01B8 (0x01B8 - 0x0000)
@@ -72,12 +53,12 @@ struct BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing final
 public:
 	class ARBPawn*                                Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A55[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPhysicalMaterial*>              PhyxMat_Array;                                     // 0x0018(0x0010)(Edit, BlueprintVisible)
 	TArray<class UPhysicalMaterial*>              K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A56[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0048(0x0010)(ConstParm, ReferenceParm)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0058(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0064(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -85,14 +66,14 @@ public:
 	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A57[0x1];                                     // 0x00FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FB[0x1];                                       // 0x00FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0104(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A58[0x4];                                     // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -102,13 +83,13 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0164(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0170(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A59[0x4];                                     // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x0180(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A5A[0x3];                                     // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_189[0x3];                                      // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A5B[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_1;      // 0x0198(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_2;      // 0x01A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_3;      // 0x01A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -118,7 +99,7 @@ static_assert(alignof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing) == 0x000
 static_assert(sizeof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing) == 0x0001B8, "Wrong size on BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing");
 static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing, Pawn) == 0x000000, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing::Pawn' has a wrong offset!");
 static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing, __WorldContext) == 0x000008, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing, Param_Index) == 0x000010, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing::Param_Index' has a wrong offset!");
+static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing, Index_0) == 0x000010, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing::Index_0' has a wrong offset!");
 static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing, PhyxMat_Array) == 0x000018, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing::PhyxMat_Array' has a wrong offset!");
 static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing, K2Node_MakeArray_Array) == 0x000028, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000038, "Member 'BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Landing::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
@@ -159,26 +140,26 @@ struct BPF_FX_Footstep_PhyxMatTag_C_TmpPlayVFX final
 {
 public:
 	struct FVector                                TestPosition;                                      // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A5C[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class UPhysicalMaterial*, class UNiagaraSystem*> PhysicsMaterialsToSystems;                         // 0x0010(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UNiagaraSystem*                         DefaultSystem;                                     // 0x0060(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraSystem*                         System;                                            // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0078(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A5D[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0088(0x0010)(ConstParm, ReferenceParm)
 	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x0098(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A5E[0x1];                                     // 0x0123(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_123[0x1];                                      // 0x0123(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x012C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0138(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A5F[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0170(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -188,10 +169,10 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x018C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0198(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A60[0x4];                                     // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraSystem*                         CallFunc_Map_Find_Value;                           // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A61[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BPF_FX_Footstep_PhyxMatTag_C_TmpPlayVFX) == 0x000008, "Wrong alignment on BPF_FX_Footstep_PhyxMatTag_C_TmpPlayVFX");
@@ -232,7 +213,7 @@ struct BPF_FX_Footstep_PhyxMatTag_C_TmpPlayFootstepFX final
 {
 public:
 	bool                                          IsLeftFoot;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A62[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   SocketName;                                        // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<class UPhysicalMaterial*, class UNiagaraSystem*> MaterialsToSystems;                                // 0x0018(0x0050)(Edit, BlueprintVisible)

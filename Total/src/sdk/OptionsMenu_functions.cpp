@@ -37,6 +37,20 @@ void UOptionsMenu_C::ExecuteUbergraph_OptionsMenu(int32 EntryPoint)
 }
 
 
+// Function OptionsMenu.OptionsMenu_C.Event_MenuCancel_Pressed
+// (Event, Public, BlueprintEvent)
+
+void UOptionsMenu_C::Event_MenuCancel_Pressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "Event_MenuCancel_Pressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function OptionsMenu.OptionsMenu_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -133,29 +147,29 @@ void UOptionsMenu_C::OnFullscreenOrDesktopSettingsChanged()
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.OnReleasedReset
+// Function OptionsMenu.OptionsMenu_C.OnPressedReset
 // (BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenu_C::OnReleasedReset()
+void UOptionsMenu_C::OnPressedReset()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnReleasedReset");
+		Func = Class->GetFunction("OptionsMenu_C", "OnPressedReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.OnReleasedApply
+// Function OptionsMenu.OptionsMenu_C.OnPressedApply
 // (BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenu_C::OnReleasedApply()
+void UOptionsMenu_C::OnPressedApply()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnReleasedApply");
+		Func = Class->GetFunction("OptionsMenu_C", "OnPressedApply");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -348,9 +362,9 @@ void UOptionsMenu_C::OnSubButtonClicked(class URBMenuOptionsEntry* Entry)
 // Function OptionsMenu.OptionsMenu_C.Event_UpdateNavigation
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_CanExitMenu                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    CanExitMenu_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOptionsMenu_C::Event_UpdateNavigation(bool Param_CanExitMenu)
+void UOptionsMenu_C::Event_UpdateNavigation(bool CanExitMenu_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -359,7 +373,7 @@ void UOptionsMenu_C::Event_UpdateNavigation(bool Param_CanExitMenu)
 
 	Params::OptionsMenu_C_Event_UpdateNavigation Parms{};
 
-	Parms.Param_CanExitMenu = Param_CanExitMenu;
+	Parms.CanExitMenu_0 = CanExitMenu_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

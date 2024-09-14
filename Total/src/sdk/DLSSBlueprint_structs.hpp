@@ -26,7 +26,7 @@ enum class EUDLSSMode : uint8
 	Balanced                                 = 5,
 	Performance                              = 6,
 	UltraPerformance                         = 7,
-	Max                                      = 8,
+	MAX                                      = 8,
 };
 
 // Enum DLSSBlueprint.UDLSSSupport

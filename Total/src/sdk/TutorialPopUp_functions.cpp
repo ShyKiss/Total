@@ -88,9 +88,9 @@ void UTutorialPopUp_C::Construct()
 // Function TutorialPopUp.TutorialPopUp_C.Initialize
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Text                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Text_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UTutorialPopUp_C::Initialize(const class FText& Param_Text)
+void UTutorialPopUp_C::Initialize(const class FText& Text_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -99,7 +99,7 @@ void UTutorialPopUp_C::Initialize(const class FText& Param_Text)
 
 	Params::TutorialPopUp_C_Initialize Parms{};
 
-	Parms.Param_Text = std::move(Param_Text);
+	Parms.Text_0 = std::move(Text_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

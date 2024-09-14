@@ -21,44 +21,48 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RewardMenu.RewardMenu_C
-// 0x00D8 (0x03F8 - 0x0320)
+// 0x00E8 (0x0410 - 0x0328)
 class URewardMenu_C final : public URBRewardMenu
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       LevelUp;                                           // 0x0328(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Background_1;                                      // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             DescriptionText;                                   // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URBMenuButton_C*                        ExitButton;                                        // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_78;                                          // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULevelIndicatorWidget_C*                LevelIndicatorWidget;                              // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Line_2;                                            // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Line_3;                                            // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             RequiredXpText;                                    // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             RewardDescription;                                 // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         RewardHorizontalBox;                               // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USelectableRewardWidget_C*              SelectableRewardWidget;                            // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USelectableRewardWidget_C*              SelectableRewardWidget_1;                          // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USelectableRewardWidget_C*              SelectableRewardWidget_2;                          // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USelectableRewardWidget_C*              SelectableRewardWidget_3;                          // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USelectableRewardWidget_C*              SelectableRewardWidget_4;                          // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TrialCompletionTypeText_1;                         // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UXPProgressBar_C*                       XPProgressBar;                                     // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           XPTrackingContainer;                               // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<struct FRewardUIData>                  PendingRewards;                                    // 0x03C0(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
-	int32                                         ProgressionAnimationIndex;                         // 0x03D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ProgressionAnimationXpToGive;                      // 0x03D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ProgressionAnimationStartXp;                       // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ProgressionAnimationCurrentXp;                     // 0x03DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ProgressionAnimationCurrentLevel;                  // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ProgressionAnimationXp;                            // 0x03E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ProgressionLevelUpRewardIndex;                     // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bPlayingScoreLinesSound;                           // 0x03EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2C[0x3];                                     // 0x03ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TimeUntilNextProgressionAnimation;                 // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       LevelUp;                                           // 0x0330(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Background_1;                                      // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             DescriptionText;                                   // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URBMenuButton_C*                        ExitButton;                                        // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             HeaderText;                                        // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_78;                                          // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULevelIndicatorWidget_C*                LevelIndicatorWidget;                              // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Line_2;                                            // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Line_3;                                            // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             RequiredXpText;                                    // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             RewardDescription;                                 // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         RewardHorizontalBox;                               // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              RewardScaleBox;                                    // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USelectableRewardWidget_C*              SelectableRewardWidget;                            // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USelectableRewardWidget_C*              SelectableRewardWidget_1;                          // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USelectableRewardWidget_C*              SelectableRewardWidget_2;                          // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USelectableRewardWidget_C*              SelectableRewardWidget_3;                          // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USelectableRewardWidget_C*              SelectableRewardWidget_4;                          // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TrialCompletionTypeText_1;                         // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UXPProgressBar_C*                       XPProgressBar;                                     // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           XPTrackingContainer;                               // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<struct FRewardUIData>                  PendingRewards;                                    // 0x03D8(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
+	int32                                         ExtraRewardCount;                                  // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ProgressionAnimationIndex;                         // 0x03EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ProgressionAnimationXpToGive;                      // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ProgressionAnimationStartXp;                       // 0x03F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ProgressionAnimationCurrentXp;                     // 0x03F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ProgressionAnimationCurrentLevel;                  // 0x03FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ProgressionAnimationXp;                            // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ProgressionLevelUpRewardIndex;                     // 0x0404(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bPlayingScoreLinesSound;                           // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_409[0x3];                                      // 0x0409(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TimeUntilNextProgressionAnimation;                 // 0x040C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_RewardMenu(int32 EntryPoint);
+	void Event_MenuConfirm_Pressed();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void BndEvt__RewardMenu_ExitButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
 	void Construct();
@@ -70,10 +74,14 @@ public:
 	void StartXpSound();
 	void StopXpSound();
 	void GetRewardWidget(const struct FRewardUIData& RewardUIData, class USelectableRewardWidget_C** RewardWidget, bool* bCreated);
-	void OnRewardHovered(const struct FRewardUIData& Reward);
-	void OnRewardUnhovered(const struct FRewardUIData& Reward);
+	void OnRewardHovered(const struct FRewardUIData& Reward, class USelectableRewardWidget_C* Widget);
+	void OnRewardUnhovered(const struct FRewardUIData& Reward, class USelectableRewardWidget_C* Widget);
+	void OnRewardClicked();
 	void HandleRewardFocus();
 	void SetupDescriptionText();
+	void SelectBackground();
+	void SetupHeaderText();
+	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 
 public:
 	static class UClass* StaticClass()
@@ -86,37 +94,40 @@ public:
 	}
 };
 static_assert(alignof(URewardMenu_C) == 0x000008, "Wrong alignment on URewardMenu_C");
-static_assert(sizeof(URewardMenu_C) == 0x0003F8, "Wrong size on URewardMenu_C");
-static_assert(offsetof(URewardMenu_C, UberGraphFrame) == 0x000320, "Member 'URewardMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, LevelUp) == 0x000328, "Member 'URewardMenu_C::LevelUp' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, Background_1) == 0x000330, "Member 'URewardMenu_C::Background_1' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, DescriptionText) == 0x000338, "Member 'URewardMenu_C::DescriptionText' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, ExitButton) == 0x000340, "Member 'URewardMenu_C::ExitButton' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, Image_78) == 0x000348, "Member 'URewardMenu_C::Image_78' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, LevelIndicatorWidget) == 0x000350, "Member 'URewardMenu_C::LevelIndicatorWidget' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, Line_2) == 0x000358, "Member 'URewardMenu_C::Line_2' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, Line_3) == 0x000360, "Member 'URewardMenu_C::Line_3' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, RequiredXpText) == 0x000368, "Member 'URewardMenu_C::RequiredXpText' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, RewardDescription) == 0x000370, "Member 'URewardMenu_C::RewardDescription' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, RewardHorizontalBox) == 0x000378, "Member 'URewardMenu_C::RewardHorizontalBox' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, SelectableRewardWidget) == 0x000380, "Member 'URewardMenu_C::SelectableRewardWidget' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, SelectableRewardWidget_1) == 0x000388, "Member 'URewardMenu_C::SelectableRewardWidget_1' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, SelectableRewardWidget_2) == 0x000390, "Member 'URewardMenu_C::SelectableRewardWidget_2' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, SelectableRewardWidget_3) == 0x000398, "Member 'URewardMenu_C::SelectableRewardWidget_3' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, SelectableRewardWidget_4) == 0x0003A0, "Member 'URewardMenu_C::SelectableRewardWidget_4' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, TrialCompletionTypeText_1) == 0x0003A8, "Member 'URewardMenu_C::TrialCompletionTypeText_1' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, XPProgressBar) == 0x0003B0, "Member 'URewardMenu_C::XPProgressBar' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, XPTrackingContainer) == 0x0003B8, "Member 'URewardMenu_C::XPTrackingContainer' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, PendingRewards) == 0x0003C0, "Member 'URewardMenu_C::PendingRewards' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, ProgressionAnimationIndex) == 0x0003D0, "Member 'URewardMenu_C::ProgressionAnimationIndex' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, ProgressionAnimationXpToGive) == 0x0003D4, "Member 'URewardMenu_C::ProgressionAnimationXpToGive' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, ProgressionAnimationStartXp) == 0x0003D8, "Member 'URewardMenu_C::ProgressionAnimationStartXp' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, ProgressionAnimationCurrentXp) == 0x0003DC, "Member 'URewardMenu_C::ProgressionAnimationCurrentXp' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, ProgressionAnimationCurrentLevel) == 0x0003E0, "Member 'URewardMenu_C::ProgressionAnimationCurrentLevel' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, ProgressionAnimationXp) == 0x0003E4, "Member 'URewardMenu_C::ProgressionAnimationXp' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, ProgressionLevelUpRewardIndex) == 0x0003E8, "Member 'URewardMenu_C::ProgressionLevelUpRewardIndex' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, bPlayingScoreLinesSound) == 0x0003EC, "Member 'URewardMenu_C::bPlayingScoreLinesSound' has a wrong offset!");
-static_assert(offsetof(URewardMenu_C, TimeUntilNextProgressionAnimation) == 0x0003F0, "Member 'URewardMenu_C::TimeUntilNextProgressionAnimation' has a wrong offset!");
+static_assert(sizeof(URewardMenu_C) == 0x000410, "Wrong size on URewardMenu_C");
+static_assert(offsetof(URewardMenu_C, UberGraphFrame) == 0x000328, "Member 'URewardMenu_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, LevelUp) == 0x000330, "Member 'URewardMenu_C::LevelUp' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, Background_1) == 0x000338, "Member 'URewardMenu_C::Background_1' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, DescriptionText) == 0x000340, "Member 'URewardMenu_C::DescriptionText' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, ExitButton) == 0x000348, "Member 'URewardMenu_C::ExitButton' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, HeaderText) == 0x000350, "Member 'URewardMenu_C::HeaderText' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, Image_78) == 0x000358, "Member 'URewardMenu_C::Image_78' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, LevelIndicatorWidget) == 0x000360, "Member 'URewardMenu_C::LevelIndicatorWidget' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, Line_2) == 0x000368, "Member 'URewardMenu_C::Line_2' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, Line_3) == 0x000370, "Member 'URewardMenu_C::Line_3' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, RequiredXpText) == 0x000378, "Member 'URewardMenu_C::RequiredXpText' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, RewardDescription) == 0x000380, "Member 'URewardMenu_C::RewardDescription' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, RewardHorizontalBox) == 0x000388, "Member 'URewardMenu_C::RewardHorizontalBox' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, RewardScaleBox) == 0x000390, "Member 'URewardMenu_C::RewardScaleBox' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, SelectableRewardWidget) == 0x000398, "Member 'URewardMenu_C::SelectableRewardWidget' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, SelectableRewardWidget_1) == 0x0003A0, "Member 'URewardMenu_C::SelectableRewardWidget_1' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, SelectableRewardWidget_2) == 0x0003A8, "Member 'URewardMenu_C::SelectableRewardWidget_2' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, SelectableRewardWidget_3) == 0x0003B0, "Member 'URewardMenu_C::SelectableRewardWidget_3' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, SelectableRewardWidget_4) == 0x0003B8, "Member 'URewardMenu_C::SelectableRewardWidget_4' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, TrialCompletionTypeText_1) == 0x0003C0, "Member 'URewardMenu_C::TrialCompletionTypeText_1' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, XPProgressBar) == 0x0003C8, "Member 'URewardMenu_C::XPProgressBar' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, XPTrackingContainer) == 0x0003D0, "Member 'URewardMenu_C::XPTrackingContainer' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, PendingRewards) == 0x0003D8, "Member 'URewardMenu_C::PendingRewards' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, ExtraRewardCount) == 0x0003E8, "Member 'URewardMenu_C::ExtraRewardCount' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, ProgressionAnimationIndex) == 0x0003EC, "Member 'URewardMenu_C::ProgressionAnimationIndex' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, ProgressionAnimationXpToGive) == 0x0003F0, "Member 'URewardMenu_C::ProgressionAnimationXpToGive' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, ProgressionAnimationStartXp) == 0x0003F4, "Member 'URewardMenu_C::ProgressionAnimationStartXp' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, ProgressionAnimationCurrentXp) == 0x0003F8, "Member 'URewardMenu_C::ProgressionAnimationCurrentXp' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, ProgressionAnimationCurrentLevel) == 0x0003FC, "Member 'URewardMenu_C::ProgressionAnimationCurrentLevel' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, ProgressionAnimationXp) == 0x000400, "Member 'URewardMenu_C::ProgressionAnimationXp' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, ProgressionLevelUpRewardIndex) == 0x000404, "Member 'URewardMenu_C::ProgressionLevelUpRewardIndex' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, bPlayingScoreLinesSound) == 0x000408, "Member 'URewardMenu_C::bPlayingScoreLinesSound' has a wrong offset!");
+static_assert(offsetof(URewardMenu_C, TimeUntilNextProgressionAnimation) == 0x00040C, "Member 'URewardMenu_C::TimeUntilNextProgressionAnimation' has a wrong offset!");
 
 }
 

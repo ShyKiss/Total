@@ -10,60 +10,63 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 #include "OPP_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function TasksWidget.TasksWidget_C.ShowTasks
-// 0x02E8 (0x02E8 - 0x0000)
+// 0x0330 (0x0330 - 0x0000)
 struct TasksWidget_C_ShowTasks final
 {
 public:
 	class FName                                   GroupID;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CurrentSectionId;                                  // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DC0[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRBTaskMenuEntry>               CallFunc_GetTasks_ReturnValue;                     // 0x0018(0x0010)(ConstParm, ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DC1[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DC2[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTaskButton_C*                          CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRBTaskMenuEntry                       CallFunc_Array_Get_Item;                           // 0x0048(0x01B0)()
-	class UTaskListSection_C*                     CallFunc_Create_ReturnValue_1;                     // 0x01F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0200(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DC3[0x7];                                     // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetGroupName_ReturnValue;                 // 0x0210(0x0018)(ConstParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0228(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0268(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0278(0x0018)()
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0290(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWidget*                                CallFunc_Array_Get_Item_1;                         // 0x02A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DC4[0x4];                                     // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTaskCategoryButton_C*                  K2Node_DynamicCast_AsTask_Category_Button;         // 0x02B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DC5[0x7];                                     // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x02C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x02CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x02CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DC6[0x2];                                     // 0x02CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FRBTaskMenuEntry& Entry)> K2Node_CreateDelegate_OutputDelegate;              // 0x02D4(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_CanConsumeRewards_ReturnValue;            // 0x02E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRBTaskMenuEntry                       CallFunc_Array_Get_Item;                           // 0x0048(0x01D8)()
+	TDelegate<void(const struct FRBTaskMenuEntry& Entry)> K2Node_CreateDelegate_OutputDelegate;              // 0x0220(0x0010)(ZeroConstructor, NoDestructor)
+	class FName                                   CallFunc_GetSelectedGroupId_ReturnValue;           // 0x0230(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetGroupName_ReturnValue;                 // 0x0238(0x0018)(ConstParm)
+	class FName                                   CallFunc_GetSelectedGroupId_ReturnValue_1;         // 0x0250(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0258(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0298(0x0010)(ReferenceParm)
+	class UTaskListSection_C*                     CallFunc_Create_ReturnValue_1;                     // 0x02A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02B0(0x0018)()
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x02C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x02D8(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWidget*                                CallFunc_Array_Get_Item_1;                         // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x02F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTaskCategoryButton_C*                  K2Node_DynamicCast_AsTask_Category_Button;         // 0x02F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_301[0x3];                                      // 0x0301(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0304(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_309[0x3];                                      // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FRBTaskMenuEntry& Entry)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0310(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_321[0x3];                                      // 0x0321(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0324(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanConsumeRewards_ReturnValue;            // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(TasksWidget_C_ShowTasks) == 0x000008, "Wrong alignment on TasksWidget_C_ShowTasks");
-static_assert(sizeof(TasksWidget_C_ShowTasks) == 0x0002E8, "Wrong size on TasksWidget_C_ShowTasks");
+static_assert(sizeof(TasksWidget_C_ShowTasks) == 0x000330, "Wrong size on TasksWidget_C_ShowTasks");
 static_assert(offsetof(TasksWidget_C_ShowTasks, GroupID) == 0x000000, "Member 'TasksWidget_C_ShowTasks::GroupID' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_ShowTasks, CurrentSectionId) == 0x000008, "Member 'TasksWidget_C_ShowTasks::CurrentSectionId' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_ShowTasks, Temp_int_Array_Index_Variable) == 0x000010, "Member 'TasksWidget_C_ShowTasks::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -75,215 +78,304 @@ static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Add_IntInt_ReturnValue)
 static_assert(offsetof(TasksWidget_C_ShowTasks, Temp_int_Array_Index_Variable_1) == 0x000038, "Member 'TasksWidget_C_ShowTasks::Temp_int_Array_Index_Variable_1' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Create_ReturnValue) == 0x000040, "Member 'TasksWidget_C_ShowTasks::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Array_Get_Item) == 0x000048, "Member 'TasksWidget_C_ShowTasks::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Create_ReturnValue_1) == 0x0001F8, "Member 'TasksWidget_C_ShowTasks::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_AddChild_ReturnValue) == 0x000200, "Member 'TasksWidget_C_ShowTasks::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_NotEqual_NameName_ReturnValue) == 0x000208, "Member 'TasksWidget_C_ShowTasks::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_GetGroupName_ReturnValue) == 0x000210, "Member 'TasksWidget_C_ShowTasks::CallFunc_GetGroupName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_MakeStruct_FormatArgumentData) == 0x000228, "Member 'TasksWidget_C_ShowTasks::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_MakeArray_Array) == 0x000268, "Member 'TasksWidget_C_ShowTasks::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Format_ReturnValue) == 0x000278, "Member 'TasksWidget_C_ShowTasks::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_GetAllChildren_ReturnValue) == 0x000290, "Member 'TasksWidget_C_ShowTasks::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Array_Get_Item_1) == 0x0002A0, "Member 'TasksWidget_C_ShowTasks::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Array_Length_ReturnValue_1) == 0x0002A8, "Member 'TasksWidget_C_ShowTasks::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_DynamicCast_AsTask_Category_Button) == 0x0002B0, "Member 'TasksWidget_C_ShowTasks::K2Node_DynamicCast_AsTask_Category_Button' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_DynamicCast_bSuccess) == 0x0002B8, "Member 'TasksWidget_C_ShowTasks::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_AddChild_ReturnValue_1) == 0x0002C0, "Member 'TasksWidget_C_ShowTasks::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, Temp_int_Loop_Counter_Variable_1) == 0x0002C8, "Member 'TasksWidget_C_ShowTasks::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0002CC, "Member 'TasksWidget_C_ShowTasks::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Less_IntInt_ReturnValue_1) == 0x0002CD, "Member 'TasksWidget_C_ShowTasks::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Add_IntInt_ReturnValue_1) == 0x0002D0, "Member 'TasksWidget_C_ShowTasks::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_CreateDelegate_OutputDelegate) == 0x0002D4, "Member 'TasksWidget_C_ShowTasks::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_CanConsumeRewards_ReturnValue) == 0x0002E4, "Member 'TasksWidget_C_ShowTasks::CallFunc_CanConsumeRewards_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_CreateDelegate_OutputDelegate) == 0x000220, "Member 'TasksWidget_C_ShowTasks::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_GetSelectedGroupId_ReturnValue) == 0x000230, "Member 'TasksWidget_C_ShowTasks::CallFunc_GetSelectedGroupId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_GetGroupName_ReturnValue) == 0x000238, "Member 'TasksWidget_C_ShowTasks::CallFunc_GetGroupName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_GetSelectedGroupId_ReturnValue_1) == 0x000250, "Member 'TasksWidget_C_ShowTasks::CallFunc_GetSelectedGroupId_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_MakeStruct_FormatArgumentData) == 0x000258, "Member 'TasksWidget_C_ShowTasks::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_MakeArray_Array) == 0x000298, "Member 'TasksWidget_C_ShowTasks::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Create_ReturnValue_1) == 0x0002A8, "Member 'TasksWidget_C_ShowTasks::CallFunc_Create_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Format_ReturnValue) == 0x0002B0, "Member 'TasksWidget_C_ShowTasks::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_AddChild_ReturnValue) == 0x0002C8, "Member 'TasksWidget_C_ShowTasks::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_NotEqual_NameName_ReturnValue) == 0x0002D0, "Member 'TasksWidget_C_ShowTasks::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_GetAllChildren_ReturnValue) == 0x0002D8, "Member 'TasksWidget_C_ShowTasks::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Array_Get_Item_1) == 0x0002E8, "Member 'TasksWidget_C_ShowTasks::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_AddChild_ReturnValue_1) == 0x0002F0, "Member 'TasksWidget_C_ShowTasks::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_DynamicCast_AsTask_Category_Button) == 0x0002F8, "Member 'TasksWidget_C_ShowTasks::K2Node_DynamicCast_AsTask_Category_Button' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_DynamicCast_bSuccess) == 0x000300, "Member 'TasksWidget_C_ShowTasks::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Array_Length_ReturnValue_1) == 0x000304, "Member 'TasksWidget_C_ShowTasks::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000308, "Member 'TasksWidget_C_ShowTasks::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, Temp_int_Loop_Counter_Variable_1) == 0x00030C, "Member 'TasksWidget_C_ShowTasks::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, K2Node_CreateDelegate_OutputDelegate_1) == 0x000310, "Member 'TasksWidget_C_ShowTasks::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Less_IntInt_ReturnValue_1) == 0x000320, "Member 'TasksWidget_C_ShowTasks::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_Add_IntInt_ReturnValue_1) == 0x000324, "Member 'TasksWidget_C_ShowTasks::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ShowTasks, CallFunc_CanConsumeRewards_ReturnValue) == 0x000328, "Member 'TasksWidget_C_ShowTasks::CallFunc_CanConsumeRewards_ReturnValue' has a wrong offset!");
+
+// Function TasksWidget.TasksWidget_C.OnCategoryFocused
+// 0x0014 (0x0014 - 0x0000)
+struct TasksWidget_C_OnCategoryFocused final
+{
+public:
+	class FName                                   GroupID;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CurrentSectionId;                                  // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(TasksWidget_C_OnCategoryFocused) == 0x000004, "Wrong alignment on TasksWidget_C_OnCategoryFocused");
+static_assert(sizeof(TasksWidget_C_OnCategoryFocused) == 0x000014, "Wrong size on TasksWidget_C_OnCategoryFocused");
+static_assert(offsetof(TasksWidget_C_OnCategoryFocused, GroupID) == 0x000000, "Member 'TasksWidget_C_OnCategoryFocused::GroupID' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnCategoryFocused, CurrentSectionId) == 0x000008, "Member 'TasksWidget_C_OnCategoryFocused::CurrentSectionId' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnCategoryFocused, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000010, "Member 'TasksWidget_C_OnCategoryFocused::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+
+// Function TasksWidget.TasksWidget_C.RefreshTasks
+// 0x0068 (0x0068 - 0x0000)
+struct TasksWidget_C_RefreshTasks final
+{
+public:
+	class FName                                   CurrentSectionId;                                  // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTaskButton_C*                          K2Node_DynamicCast_AsTask_Button;                  // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBTaskProgressionEntry                CallFunc_GetTaskProgression_ReturnValue;           // 0x004C(0x001C)(NoDestructor)
+};
+static_assert(alignof(TasksWidget_C_RefreshTasks) == 0x000008, "Wrong alignment on TasksWidget_C_RefreshTasks");
+static_assert(sizeof(TasksWidget_C_RefreshTasks) == 0x000068, "Wrong size on TasksWidget_C_RefreshTasks");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, CurrentSectionId) == 0x000000, "Member 'TasksWidget_C_RefreshTasks::CurrentSectionId' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, Temp_int_Array_Index_Variable) == 0x000008, "Member 'TasksWidget_C_RefreshTasks::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'TasksWidget_C_RefreshTasks::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'TasksWidget_C_RefreshTasks::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, CallFunc_GetAllChildren_ReturnValue) == 0x000018, "Member 'TasksWidget_C_RefreshTasks::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'TasksWidget_C_RefreshTasks::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, CallFunc_Array_Get_Item) == 0x000030, "Member 'TasksWidget_C_RefreshTasks::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'TasksWidget_C_RefreshTasks::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, K2Node_DynamicCast_AsTask_Button) == 0x000040, "Member 'TasksWidget_C_RefreshTasks::K2Node_DynamicCast_AsTask_Button' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'TasksWidget_C_RefreshTasks::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_RefreshTasks, CallFunc_GetTaskProgression_ReturnValue) == 0x00004C, "Member 'TasksWidget_C_RefreshTasks::CallFunc_GetTaskProgression_ReturnValue' has a wrong offset!");
 
 // Function TasksWidget.TasksWidget_C.OnTaskClicked
-// 0x01B0 (0x01B0 - 0x0000)
+// 0x01D8 (0x01D8 - 0x0000)
 struct TasksWidget_C_OnTaskClicked final
 {
 public:
-	struct FRBTaskMenuEntry                       Entry;                                             // 0x0000(0x01B0)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FRBTaskMenuEntry                       Entry;                                             // 0x0000(0x01D8)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(TasksWidget_C_OnTaskClicked) == 0x000008, "Wrong alignment on TasksWidget_C_OnTaskClicked");
-static_assert(sizeof(TasksWidget_C_OnTaskClicked) == 0x0001B0, "Wrong size on TasksWidget_C_OnTaskClicked");
+static_assert(sizeof(TasksWidget_C_OnTaskClicked) == 0x0001D8, "Wrong size on TasksWidget_C_OnTaskClicked");
 static_assert(offsetof(TasksWidget_C_OnTaskClicked, Entry) == 0x000000, "Member 'TasksWidget_C_OnTaskClicked::Entry' has a wrong offset!");
 
+// Function TasksWidget.TasksWidget_C.OnTaskFocused
+// 0x01D8 (0x01D8 - 0x0000)
+struct TasksWidget_C_OnTaskFocused final
+{
+public:
+	struct FRBTaskMenuEntry                       Entry;                                             // 0x0000(0x01D8)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(TasksWidget_C_OnTaskFocused) == 0x000008, "Wrong alignment on TasksWidget_C_OnTaskFocused");
+static_assert(sizeof(TasksWidget_C_OnTaskFocused) == 0x0001D8, "Wrong size on TasksWidget_C_OnTaskFocused");
+static_assert(offsetof(TasksWidget_C_OnTaskFocused, Entry) == 0x000000, "Member 'TasksWidget_C_OnTaskFocused::Entry' has a wrong offset!");
+
 // Function TasksWidget.TasksWidget_C.UpdateRefreshTime
-// 0x00E8 (0x00E8 - 0x0000)
+// 0x0100 (0x0100 - 0x0000)
 struct TasksWidget_C_UpdateRefreshTime final
 {
 public:
-	int32                                         CallFunc_GetDaysUntilRefresh_ReturnValue;          // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GroupHasRefreshTimer_ReturnValue;         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DC7[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DC8[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0060(0x0018)()
-	int32                                         CallFunc_GetHoursUntilRefresh_ReturnValue;         // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DC9[0x3];                                     // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0080(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x00C0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x00D0(0x0018)()
+	class FName                                   CallFunc_GetSelectedGroupId_ReturnValue;           // 0x0000(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetSelectedGroupId_ReturnValue_1;         // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetDaysUntilRefresh_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GroupHasRefreshTimer_ReturnValue;         // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0018(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0018)()
+	int32                                         CallFunc_GetHoursUntilRefresh_ReturnValue;         // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0090(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x00D0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x00E0(0x0018)()
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(TasksWidget_C_UpdateRefreshTime) == 0x000008, "Wrong alignment on TasksWidget_C_UpdateRefreshTime");
-static_assert(sizeof(TasksWidget_C_UpdateRefreshTime) == 0x0000E8, "Wrong size on TasksWidget_C_UpdateRefreshTime");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_GetDaysUntilRefresh_ReturnValue) == 0x000000, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_GetDaysUntilRefresh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_GroupHasRefreshTimer_ReturnValue) == 0x000004, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_GroupHasRefreshTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'TasksWidget_C_UpdateRefreshTime::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, K2Node_MakeArray_Array) == 0x000048, "Member 'TasksWidget_C_UpdateRefreshTime::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_Greater_IntInt_ReturnValue) == 0x000058, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_Format_ReturnValue) == 0x000060, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_GetHoursUntilRefresh_ReturnValue) == 0x000078, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_GetHoursUntilRefresh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00007C, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, K2Node_MakeStruct_FormatArgumentData_1) == 0x000080, "Member 'TasksWidget_C_UpdateRefreshTime::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, K2Node_MakeArray_Array_1) == 0x0000C0, "Member 'TasksWidget_C_UpdateRefreshTime::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_Format_ReturnValue_1) == 0x0000D0, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(sizeof(TasksWidget_C_UpdateRefreshTime) == 0x000100, "Wrong size on TasksWidget_C_UpdateRefreshTime");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_GetSelectedGroupId_ReturnValue) == 0x000000, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_GetSelectedGroupId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_GetSelectedGroupId_ReturnValue_1) == 0x000008, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_GetSelectedGroupId_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_GetDaysUntilRefresh_ReturnValue) == 0x000010, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_GetDaysUntilRefresh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_GroupHasRefreshTimer_ReturnValue) == 0x000014, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_GroupHasRefreshTimer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'TasksWidget_C_UpdateRefreshTime::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, K2Node_MakeArray_Array) == 0x000058, "Member 'TasksWidget_C_UpdateRefreshTime::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_Greater_IntInt_ReturnValue) == 0x000068, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_Format_ReturnValue) == 0x000070, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_GetHoursUntilRefresh_ReturnValue) == 0x000088, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_GetHoursUntilRefresh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, K2Node_MakeStruct_FormatArgumentData_1) == 0x000090, "Member 'TasksWidget_C_UpdateRefreshTime::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, K2Node_MakeArray_Array_1) == 0x0000D0, "Member 'TasksWidget_C_UpdateRefreshTime::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_Format_ReturnValue_1) == 0x0000E0, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateRefreshTime, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0000F8, "Member 'TasksWidget_C_UpdateRefreshTime::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function TasksWidget.TasksWidget_C.Event_Refresh
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct TasksWidget_C_Event_Refresh final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DCA[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DCB[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTaskCategoryButton_C*                  K2Node_DynamicCast_AsTask_Category_Button;         // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DCC[0x2];                                     // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetHoursUntilRefresh_ReturnValue;         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetDaysUntilRefresh_ReturnValue;          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GroupHasRefreshTimer_ReturnValue;         // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasCompletedTasksPendingConsume_ReturnValue; // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTaskCategoryButton_C*                  K2Node_DynamicCast_AsTask_Category_Button;         // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasCompletedTasksPendingConsume_ReturnValue; // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasSeenTaskGroup_ReturnValue;             // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasClaimedAllTasks_ReturnValue;           // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_GetHoursUntilRefresh_ReturnValue;         // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetDaysUntilRefresh_ReturnValue;          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GroupHasRefreshTimer_ReturnValue;         // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(TasksWidget_C_Event_Refresh) == 0x000008, "Wrong alignment on TasksWidget_C_Event_Refresh");
-static_assert(sizeof(TasksWidget_C_Event_Refresh) == 0x000048, "Wrong size on TasksWidget_C_Event_Refresh");
+static_assert(sizeof(TasksWidget_C_Event_Refresh) == 0x000050, "Wrong size on TasksWidget_C_Event_Refresh");
 static_assert(offsetof(TasksWidget_C_Event_Refresh, Temp_int_Array_Index_Variable) == 0x000000, "Member 'TasksWidget_C_Event_Refresh::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_Event_Refresh, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'TasksWidget_C_Event_Refresh::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'TasksWidget_C_Event_Refresh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_GetAllChildren_ReturnValue) == 0x000010, "Member 'TasksWidget_C_Event_Refresh::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_Array_Get_Item) == 0x000020, "Member 'TasksWidget_C_Event_Refresh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'TasksWidget_C_Event_Refresh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Refresh, K2Node_DynamicCast_AsTask_Category_Button) == 0x000030, "Member 'TasksWidget_C_Event_Refresh::K2Node_DynamicCast_AsTask_Category_Button' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Refresh, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'TasksWidget_C_Event_Refresh::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_Less_IntInt_ReturnValue) == 0x000039, "Member 'TasksWidget_C_Event_Refresh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_GetHoursUntilRefresh_ReturnValue) == 0x00003C, "Member 'TasksWidget_C_Event_Refresh::CallFunc_GetHoursUntilRefresh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_GetDaysUntilRefresh_ReturnValue) == 0x000040, "Member 'TasksWidget_C_Event_Refresh::CallFunc_GetDaysUntilRefresh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_GroupHasRefreshTimer_ReturnValue) == 0x000044, "Member 'TasksWidget_C_Event_Refresh::CallFunc_GroupHasRefreshTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_HasCompletedTasksPendingConsume_ReturnValue) == 0x000045, "Member 'TasksWidget_C_Event_Refresh::CallFunc_HasCompletedTasksPendingConsume_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'TasksWidget_C_Event_Refresh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_Array_Get_Item) == 0x000028, "Member 'TasksWidget_C_Event_Refresh::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'TasksWidget_C_Event_Refresh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, K2Node_DynamicCast_AsTask_Category_Button) == 0x000038, "Member 'TasksWidget_C_Event_Refresh::K2Node_DynamicCast_AsTask_Category_Button' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'TasksWidget_C_Event_Refresh::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_HasCompletedTasksPendingConsume_ReturnValue) == 0x000041, "Member 'TasksWidget_C_Event_Refresh::CallFunc_HasCompletedTasksPendingConsume_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_HasSeenTaskGroup_ReturnValue) == 0x000042, "Member 'TasksWidget_C_Event_Refresh::CallFunc_HasSeenTaskGroup_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_HasClaimedAllTasks_ReturnValue) == 0x000043, "Member 'TasksWidget_C_Event_Refresh::CallFunc_HasClaimedAllTasks_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_GetHoursUntilRefresh_ReturnValue) == 0x000044, "Member 'TasksWidget_C_Event_Refresh::CallFunc_GetHoursUntilRefresh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_GetDaysUntilRefresh_ReturnValue) == 0x000048, "Member 'TasksWidget_C_Event_Refresh::CallFunc_GetDaysUntilRefresh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Refresh, CallFunc_GroupHasRefreshTimer_ReturnValue) == 0x00004C, "Member 'TasksWidget_C_Event_Refresh::CallFunc_GroupHasRefreshTimer_ReturnValue' has a wrong offset!");
 
 // Function TasksWidget.TasksWidget_C.Event_Build
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct TasksWidget_C_Event_Build final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DCD[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTaskCategoryButton_C*                  CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           CallFunc_GetActiveGroupIds_ReturnValue;            // 0x0018(0x0010)(ConstParm, ReferenceParm)
-	class FName                                   CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetHoursUntilRefresh_ReturnValue;         // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DCE[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetDaysUntilRefresh_ReturnValue;          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GroupHasRefreshTimer_ReturnValue;         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DCF[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetGroupIcon_ReturnValue;                 // 0x0048(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-	bool                                          CallFunc_HasCompletedTasksPendingConsume_ReturnValue; // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DD0[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetGroupName_ReturnValue;                 // 0x0078(0x0018)(ConstParm)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName ID)>               K2Node_CreateDelegate_OutputDelegate;              // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void(class FName ID)>               K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor)
+	class FName                                   CallFunc_GetSelectedGroupId_ReturnValue;           // 0x001C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTaskCategoryButton_C*                  CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           CallFunc_GetActiveGroupIds_ReturnValue;            // 0x0030(0x0010)(ConstParm, ReferenceParm)
+	class FName                                   CallFunc_Array_Get_Item;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasSeenTaskGroup_ReturnValue;             // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasClaimedAllTasks_ReturnValue;           // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetHoursUntilRefresh_ReturnValue;         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetDaysUntilRefresh_ReturnValue;          // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GroupHasRefreshTimer_ReturnValue;         // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetGroupIcon_ReturnValue;                 // 0x0060(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_HasCompletedTasksPendingConsume_ReturnValue; // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetGroupName_ReturnValue;                 // 0x0090(0x0018)(ConstParm)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName ID)>               K2Node_CreateDelegate_OutputDelegate_1;            // 0x00B0(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(TasksWidget_C_Event_Build) == 0x000008, "Wrong alignment on TasksWidget_C_Event_Build");
-static_assert(sizeof(TasksWidget_C_Event_Build) == 0x0000B0, "Wrong size on TasksWidget_C_Event_Build");
+static_assert(sizeof(TasksWidget_C_Event_Build) == 0x0000C0, "Wrong size on TasksWidget_C_Event_Build");
 static_assert(offsetof(TasksWidget_C_Event_Build, Temp_int_Array_Index_Variable) == 0x000000, "Member 'TasksWidget_C_Event_Build::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_Event_Build, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'TasksWidget_C_Event_Build::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'TasksWidget_C_Event_Build::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x00000C, "Member 'TasksWidget_C_Event_Build::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_Create_ReturnValue) == 0x000010, "Member 'TasksWidget_C_Event_Build::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetActiveGroupIds_ReturnValue) == 0x000018, "Member 'TasksWidget_C_Event_Build::CallFunc_GetActiveGroupIds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_Array_Get_Item) == 0x000028, "Member 'TasksWidget_C_Event_Build::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'TasksWidget_C_Event_Build::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetHoursUntilRefresh_ReturnValue) == 0x000034, "Member 'TasksWidget_C_Event_Build::CallFunc_GetHoursUntilRefresh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'TasksWidget_C_Event_Build::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetDaysUntilRefresh_ReturnValue) == 0x00003C, "Member 'TasksWidget_C_Event_Build::CallFunc_GetDaysUntilRefresh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GroupHasRefreshTimer_ReturnValue) == 0x000040, "Member 'TasksWidget_C_Event_Build::CallFunc_GroupHasRefreshTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetGroupIcon_ReturnValue) == 0x000048, "Member 'TasksWidget_C_Event_Build::CallFunc_GetGroupIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_HasCompletedTasksPendingConsume_ReturnValue) == 0x000070, "Member 'TasksWidget_C_Event_Build::CallFunc_HasCompletedTasksPendingConsume_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetGroupName_ReturnValue) == 0x000078, "Member 'TasksWidget_C_Event_Build::CallFunc_GetGroupName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_AddChild_ReturnValue) == 0x000090, "Member 'TasksWidget_C_Event_Build::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, K2Node_CreateDelegate_OutputDelegate) == 0x000098, "Member 'TasksWidget_C_Event_Build::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0000A8, "Member 'TasksWidget_C_Event_Build::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'TasksWidget_C_Event_Build::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetSelectedGroupId_ReturnValue) == 0x00001C, "Member 'TasksWidget_C_Event_Build::CallFunc_GetSelectedGroupId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000024, "Member 'TasksWidget_C_Event_Build::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_Create_ReturnValue) == 0x000028, "Member 'TasksWidget_C_Event_Build::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetActiveGroupIds_ReturnValue) == 0x000030, "Member 'TasksWidget_C_Event_Build::CallFunc_GetActiveGroupIds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_Array_Get_Item) == 0x000040, "Member 'TasksWidget_C_Event_Build::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'TasksWidget_C_Event_Build::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_HasSeenTaskGroup_ReturnValue) == 0x00004C, "Member 'TasksWidget_C_Event_Build::CallFunc_HasSeenTaskGroup_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_Less_IntInt_ReturnValue) == 0x00004D, "Member 'TasksWidget_C_Event_Build::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_HasClaimedAllTasks_ReturnValue) == 0x00004E, "Member 'TasksWidget_C_Event_Build::CallFunc_HasClaimedAllTasks_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetHoursUntilRefresh_ReturnValue) == 0x000050, "Member 'TasksWidget_C_Event_Build::CallFunc_GetHoursUntilRefresh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetDaysUntilRefresh_ReturnValue) == 0x000054, "Member 'TasksWidget_C_Event_Build::CallFunc_GetDaysUntilRefresh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GroupHasRefreshTimer_ReturnValue) == 0x000058, "Member 'TasksWidget_C_Event_Build::CallFunc_GroupHasRefreshTimer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetGroupIcon_ReturnValue) == 0x000060, "Member 'TasksWidget_C_Event_Build::CallFunc_GetGroupIcon_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_HasCompletedTasksPendingConsume_ReturnValue) == 0x000088, "Member 'TasksWidget_C_Event_Build::CallFunc_HasCompletedTasksPendingConsume_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_GetGroupName_ReturnValue) == 0x000090, "Member 'TasksWidget_C_Event_Build::CallFunc_GetGroupName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, CallFunc_AddChild_ReturnValue) == 0x0000A8, "Member 'TasksWidget_C_Event_Build::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_Event_Build, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000B0, "Member 'TasksWidget_C_Event_Build::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 
 // Function TasksWidget.TasksWidget_C.OnFocusReceived
-// 0x0280 (0x0280 - 0x0000)
+// 0x0378 (0x0378 - 0x0000)
 struct TasksWidget_C_OnFocusReceived final
 {
 public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
-	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DD1[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0100(0x00B8)()
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x01B8(0x00B8)()
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0270(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetSelectedTaskId_ReturnValue;            // 0x0104(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0110(0x00B8)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x01C8(0x00B8)()
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0280(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0288(0x0010)(ReferenceParm, ContainsInstancedReference)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x02A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTaskButton_C*                          K2Node_DynamicCast_AsTask_Button;                  // 0x02A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2B1[0x3];                                      // 0x02B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x02B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x02BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BB[0x5];                                      // 0x02BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue_1;                  // 0x02C0(0x00B8)()
 };
 static_assert(alignof(TasksWidget_C_OnFocusReceived) == 0x000008, "Wrong alignment on TasksWidget_C_OnFocusReceived");
-static_assert(sizeof(TasksWidget_C_OnFocusReceived) == 0x000280, "Wrong size on TasksWidget_C_OnFocusReceived");
+static_assert(sizeof(TasksWidget_C_OnFocusReceived) == 0x000378, "Wrong size on TasksWidget_C_OnFocusReceived");
 static_assert(offsetof(TasksWidget_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'TasksWidget_C_OnFocusReceived::MyGeometry' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'TasksWidget_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'TasksWidget_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x0000F8, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_Unhandled_ReturnValue) == 0x000100, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x0001B8, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_GetChildAt_ReturnValue) == 0x000270, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_IsValid_ReturnValue) == 0x000278, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, Temp_int_Loop_Counter_Variable) == 0x0000F8, "Member 'TasksWidget_C_OnFocusReceived::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_Add_IntInt_ReturnValue) == 0x0000FC, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, Temp_int_Array_Index_Variable) == 0x000100, "Member 'TasksWidget_C_OnFocusReceived::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_GetSelectedTaskId_ReturnValue) == 0x000104, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_GetSelectedTaskId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_Unhandled_ReturnValue) == 0x000110, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x0001C8, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_GetChildAt_ReturnValue) == 0x000280, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_GetAllChildren_ReturnValue) == 0x000288, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_IsValid_ReturnValue) == 0x000298, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_Array_Get_Item) == 0x0002A0, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, K2Node_DynamicCast_AsTask_Button) == 0x0002A8, "Member 'TasksWidget_C_OnFocusReceived::K2Node_DynamicCast_AsTask_Button' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, K2Node_DynamicCast_bSuccess) == 0x0002B0, "Member 'TasksWidget_C_OnFocusReceived::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_Array_Length_ReturnValue) == 0x0002B4, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_Less_IntInt_ReturnValue) == 0x0002B8, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0002B9, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x0002BA, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_OnFocusReceived, CallFunc_Unhandled_ReturnValue_1) == 0x0002C0, "Member 'TasksWidget_C_OnFocusReceived::CallFunc_Unhandled_ReturnValue_1' has a wrong offset!");
 
 // Function TasksWidget.TasksWidget_C.NavToSelectedGroup
 // 0x0018 (0x0018 - 0x0000)
 struct TasksWidget_C_NavToSelectedGroup final
 {
 public:
-	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DD2[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTaskCategoryButton_C*                  CallFunc_GetSelectedGroupWidget_selectedCategoryWidget; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TasksWidget_C_NavToSelectedGroup) == 0x000008, "Wrong alignment on TasksWidget_C_NavToSelectedGroup");
 static_assert(sizeof(TasksWidget_C_NavToSelectedGroup) == 0x000018, "Wrong size on TasksWidget_C_NavToSelectedGroup");
-static_assert(offsetof(TasksWidget_C_NavToSelectedGroup, Param_Navigation) == 0x000000, "Member 'TasksWidget_C_NavToSelectedGroup::Param_Navigation' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToSelectedGroup, Navigation_0) == 0x000000, "Member 'TasksWidget_C_NavToSelectedGroup::Navigation_0' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_NavToSelectedGroup, ReturnValue) == 0x000008, "Member 'TasksWidget_C_NavToSelectedGroup::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_NavToSelectedGroup, CallFunc_GetSelectedGroupWidget_selectedCategoryWidget) == 0x000010, "Member 'TasksWidget_C_NavToSelectedGroup::CallFunc_GetSelectedGroupWidget_selectedCategoryWidget' has a wrong offset!");
-
-// Function TasksWidget.TasksWidget_C.NavToTasks
-// 0x0018 (0x0018 - 0x0000)
-struct TasksWidget_C_NavToTasks final
-{
-public:
-	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DD3[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(TasksWidget_C_NavToTasks) == 0x000008, "Wrong alignment on TasksWidget_C_NavToTasks");
-static_assert(sizeof(TasksWidget_C_NavToTasks) == 0x000018, "Wrong size on TasksWidget_C_NavToTasks");
-static_assert(offsetof(TasksWidget_C_NavToTasks, Param_Navigation) == 0x000000, "Member 'TasksWidget_C_NavToTasks::Param_Navigation' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_NavToTasks, ReturnValue) == 0x000008, "Member 'TasksWidget_C_NavToTasks::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TasksWidget_C_NavToTasks, CallFunc_GetChildAt_ReturnValue) == 0x000010, "Member 'TasksWidget_C_NavToTasks::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
 
 // Function TasksWidget.TasksWidget_C.GetSelectedGroupWidget
 // 0x0060 (0x0060 - 0x0000)
@@ -293,19 +385,19 @@ public:
 	class UTaskCategoryButton_C*                  SelectedCategoryWidget;                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTaskCategoryButton_C*                  SelectedWidget;                                    // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DD4[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DD5[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DD6[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DD7[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DD8[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTaskCategoryButton_C*                  K2Node_DynamicCast_AsTask_Category_Button;         // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -328,6 +420,225 @@ static_assert(offsetof(TasksWidget_C_GetSelectedGroupWidget, K2Node_DynamicCast_
 static_assert(offsetof(TasksWidget_C_GetSelectedGroupWidget, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'TasksWidget_C_GetSelectedGroupWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_GetSelectedGroupWidget, CallFunc_BooleanAND_ReturnValue) == 0x000059, "Member 'TasksWidget_C_GetSelectedGroupWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TasksWidget_C_GetSelectedGroupWidget, CallFunc_IsSelected_bSelected) == 0x00005A, "Member 'TasksWidget_C_GetSelectedGroupWidget::CallFunc_IsSelected_bSelected' has a wrong offset!");
+
+// Function TasksWidget.TasksWidget_C.NavToLastTaskGroup
+// 0x0030 (0x0030 - 0x0000)
+struct TasksWidget_C_NavToLastTaskGroup final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TasksWidget_C_NavToLastTaskGroup) == 0x000008, "Wrong alignment on TasksWidget_C_NavToLastTaskGroup");
+static_assert(sizeof(TasksWidget_C_NavToLastTaskGroup) == 0x000030, "Wrong size on TasksWidget_C_NavToLastTaskGroup");
+static_assert(offsetof(TasksWidget_C_NavToLastTaskGroup, Navigation_0) == 0x000000, "Member 'TasksWidget_C_NavToLastTaskGroup::Navigation_0' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastTaskGroup, ReturnValue) == 0x000008, "Member 'TasksWidget_C_NavToLastTaskGroup::ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastTaskGroup, CallFunc_GetAllChildren_ReturnValue) == 0x000010, "Member 'TasksWidget_C_NavToLastTaskGroup::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastTaskGroup, CallFunc_Array_LastIndex_ReturnValue) == 0x000020, "Member 'TasksWidget_C_NavToLastTaskGroup::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastTaskGroup, CallFunc_Array_Get_Item) == 0x000028, "Member 'TasksWidget_C_NavToLastTaskGroup::CallFunc_Array_Get_Item' has a wrong offset!");
+
+// Function TasksWidget.TasksWidget_C.NavToFirstTaskGroup
+// 0x0018 (0x0018 - 0x0000)
+struct TasksWidget_C_NavToFirstTaskGroup final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TasksWidget_C_NavToFirstTaskGroup) == 0x000008, "Wrong alignment on TasksWidget_C_NavToFirstTaskGroup");
+static_assert(sizeof(TasksWidget_C_NavToFirstTaskGroup) == 0x000018, "Wrong size on TasksWidget_C_NavToFirstTaskGroup");
+static_assert(offsetof(TasksWidget_C_NavToFirstTaskGroup, Navigation_0) == 0x000000, "Member 'TasksWidget_C_NavToFirstTaskGroup::Navigation_0' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToFirstTaskGroup, ReturnValue) == 0x000008, "Member 'TasksWidget_C_NavToFirstTaskGroup::ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToFirstTaskGroup, CallFunc_GetChildAt_ReturnValue) == 0x000010, "Member 'TasksWidget_C_NavToFirstTaskGroup::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
+
+// Function TasksWidget.TasksWidget_C.NavToLastTask
+// 0x0030 (0x0030 - 0x0000)
+struct TasksWidget_C_NavToLastTask final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TasksWidget_C_NavToLastTask) == 0x000008, "Wrong alignment on TasksWidget_C_NavToLastTask");
+static_assert(sizeof(TasksWidget_C_NavToLastTask) == 0x000030, "Wrong size on TasksWidget_C_NavToLastTask");
+static_assert(offsetof(TasksWidget_C_NavToLastTask, Navigation_0) == 0x000000, "Member 'TasksWidget_C_NavToLastTask::Navigation_0' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastTask, ReturnValue) == 0x000008, "Member 'TasksWidget_C_NavToLastTask::ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastTask, CallFunc_GetAllChildren_ReturnValue) == 0x000010, "Member 'TasksWidget_C_NavToLastTask::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastTask, CallFunc_Array_LastIndex_ReturnValue) == 0x000020, "Member 'TasksWidget_C_NavToLastTask::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastTask, CallFunc_Array_Get_Item) == 0x000028, "Member 'TasksWidget_C_NavToLastTask::CallFunc_Array_Get_Item' has a wrong offset!");
+
+// Function TasksWidget.TasksWidget_C.NavToLastFocusedTask
+// 0x0090 (0x0090 - 0x0000)
+struct TasksWidget_C_NavToLastFocusedTask final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetSelectedGroupId_ReturnValue;           // 0x0028(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetLastSelectedTaskId_ReturnValue;        // 0x0030(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0038(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTaskButton_C*                          K2Node_DynamicCast_AsTask_Button;                  // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item_1;                         // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTaskButton_C*                          K2Node_DynamicCast_AsTask_Button_1;                // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(TasksWidget_C_NavToLastFocusedTask) == 0x000008, "Wrong alignment on TasksWidget_C_NavToLastFocusedTask");
+static_assert(sizeof(TasksWidget_C_NavToLastFocusedTask) == 0x000090, "Wrong size on TasksWidget_C_NavToLastFocusedTask");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, Navigation_0) == 0x000000, "Member 'TasksWidget_C_NavToLastFocusedTask::Navigation_0' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, ReturnValue) == 0x000008, "Member 'TasksWidget_C_NavToLastFocusedTask::ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, Temp_int_Array_Index_Variable) == 0x000010, "Member 'TasksWidget_C_NavToLastFocusedTask::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'TasksWidget_C_NavToLastFocusedTask::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, Temp_int_Array_Index_Variable_1) == 0x00001C, "Member 'TasksWidget_C_NavToLastFocusedTask::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, Temp_int_Loop_Counter_Variable_1) == 0x000020, "Member 'TasksWidget_C_NavToLastFocusedTask::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_Add_IntInt_ReturnValue_1) == 0x000024, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_GetSelectedGroupId_ReturnValue) == 0x000028, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_GetSelectedGroupId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_GetLastSelectedTaskId_ReturnValue) == 0x000030, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_GetLastSelectedTaskId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_GetAllChildren_ReturnValue) == 0x000038, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_Array_Get_Item) == 0x000050, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, K2Node_DynamicCast_AsTask_Button) == 0x000060, "Member 'TasksWidget_C_NavToLastFocusedTask::K2Node_DynamicCast_AsTask_Button' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'TasksWidget_C_NavToLastFocusedTask::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_Array_Get_Item_1) == 0x000070, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_Array_Length_ReturnValue_1) == 0x000078, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, K2Node_DynamicCast_AsTask_Button_1) == 0x000080, "Member 'TasksWidget_C_NavToLastFocusedTask::K2Node_DynamicCast_AsTask_Button_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, K2Node_DynamicCast_bSuccess_1) == 0x000088, "Member 'TasksWidget_C_NavToLastFocusedTask::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_Less_IntInt_ReturnValue_1) == 0x000089, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_NavToLastFocusedTask, CallFunc_EqualEqual_NameName_ReturnValue) == 0x00008A, "Member 'TasksWidget_C_NavToLastFocusedTask::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+
+// Function TasksWidget.TasksWidget_C.UpdateCapTextVisibility
+// 0x0090 (0x0090 - 0x0000)
+struct TasksWidget_C_UpdateCapTextVisibility final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECurrencyType                                 Temp_byte_Variable_2;                              // 0x0003(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBSettings_Gameplay*                   CallFunc_GetRBSettings_Gameplay_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCurencySettings                       CallFunc_Map_Find_Value;                           // 0x0020(0x0060)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetCurrency_ReturnValue;                  // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TasksWidget_C_UpdateCapTextVisibility) == 0x000008, "Wrong alignment on TasksWidget_C_UpdateCapTextVisibility");
+static_assert(sizeof(TasksWidget_C_UpdateCapTextVisibility) == 0x000090, "Wrong size on TasksWidget_C_UpdateCapTextVisibility");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, Temp_bool_Variable) == 0x000000, "Member 'TasksWidget_C_UpdateCapTextVisibility::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, Temp_byte_Variable) == 0x000001, "Member 'TasksWidget_C_UpdateCapTextVisibility::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, Temp_byte_Variable_1) == 0x000002, "Member 'TasksWidget_C_UpdateCapTextVisibility::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, Temp_byte_Variable_2) == 0x000003, "Member 'TasksWidget_C_UpdateCapTextVisibility::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, CallFunc_GetRBSettings_Gameplay_ReturnValue) == 0x000008, "Member 'TasksWidget_C_UpdateCapTextVisibility::CallFunc_GetRBSettings_Gameplay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, CallFunc_GetLocalPlayerState_ReturnValue) == 0x000010, "Member 'TasksWidget_C_UpdateCapTextVisibility::CallFunc_GetLocalPlayerState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'TasksWidget_C_UpdateCapTextVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, CallFunc_Map_Find_Value) == 0x000020, "Member 'TasksWidget_C_UpdateCapTextVisibility::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, CallFunc_Map_Find_ReturnValue) == 0x000080, "Member 'TasksWidget_C_UpdateCapTextVisibility::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, CallFunc_GetCurrency_ReturnValue) == 0x000084, "Member 'TasksWidget_C_UpdateCapTextVisibility::CallFunc_GetCurrency_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000088, "Member 'TasksWidget_C_UpdateCapTextVisibility::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_UpdateCapTextVisibility, K2Node_Select_Default) == 0x000089, "Member 'TasksWidget_C_UpdateCapTextVisibility::K2Node_Select_Default' has a wrong offset!");
+
+// Function TasksWidget.TasksWidget_C.ScrollToSelectedGroup
+// 0x0048 (0x0048 - 0x0000)
+struct TasksWidget_C_ScrollToSelectedGroup final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetSelectedGroupId_ReturnValue;           // 0x000C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTaskCategoryButton_C*                  K2Node_DynamicCast_AsTask_Category_Button;         // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(TasksWidget_C_ScrollToSelectedGroup) == 0x000008, "Wrong alignment on TasksWidget_C_ScrollToSelectedGroup");
+static_assert(sizeof(TasksWidget_C_ScrollToSelectedGroup) == 0x000048, "Wrong size on TasksWidget_C_ScrollToSelectedGroup");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, Temp_int_Array_Index_Variable) == 0x000000, "Member 'TasksWidget_C_ScrollToSelectedGroup::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'TasksWidget_C_ScrollToSelectedGroup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'TasksWidget_C_ScrollToSelectedGroup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, CallFunc_GetSelectedGroupId_ReturnValue) == 0x00000C, "Member 'TasksWidget_C_ScrollToSelectedGroup::CallFunc_GetSelectedGroupId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, CallFunc_GetAllChildren_ReturnValue) == 0x000018, "Member 'TasksWidget_C_ScrollToSelectedGroup::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, CallFunc_Array_Get_Item) == 0x000028, "Member 'TasksWidget_C_ScrollToSelectedGroup::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'TasksWidget_C_ScrollToSelectedGroup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, K2Node_DynamicCast_AsTask_Category_Button) == 0x000038, "Member 'TasksWidget_C_ScrollToSelectedGroup::K2Node_DynamicCast_AsTask_Category_Button' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'TasksWidget_C_ScrollToSelectedGroup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, CallFunc_Less_IntInt_ReturnValue) == 0x000041, "Member 'TasksWidget_C_ScrollToSelectedGroup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedGroup, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000042, "Member 'TasksWidget_C_ScrollToSelectedGroup::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+
+// Function TasksWidget.TasksWidget_C.ScrollToSelectedTask
+// 0x0050 (0x0050 - 0x0000)
+struct TasksWidget_C_ScrollToSelectedTask final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetSelectedTaskId_ReturnValue;            // 0x000C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTaskButton_C*                          K2Node_DynamicCast_AsTask_Button;                  // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(TasksWidget_C_ScrollToSelectedTask) == 0x000008, "Wrong alignment on TasksWidget_C_ScrollToSelectedTask");
+static_assert(sizeof(TasksWidget_C_ScrollToSelectedTask) == 0x000050, "Wrong size on TasksWidget_C_ScrollToSelectedTask");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, Temp_int_Array_Index_Variable) == 0x000000, "Member 'TasksWidget_C_ScrollToSelectedTask::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'TasksWidget_C_ScrollToSelectedTask::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'TasksWidget_C_ScrollToSelectedTask::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, CallFunc_GetSelectedTaskId_ReturnValue) == 0x00000C, "Member 'TasksWidget_C_ScrollToSelectedTask::CallFunc_GetSelectedTaskId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, CallFunc_GetAllChildren_ReturnValue) == 0x000018, "Member 'TasksWidget_C_ScrollToSelectedTask::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'TasksWidget_C_ScrollToSelectedTask::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, CallFunc_Array_Get_Item) == 0x000030, "Member 'TasksWidget_C_ScrollToSelectedTask::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'TasksWidget_C_ScrollToSelectedTask::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, K2Node_DynamicCast_AsTask_Button) == 0x000040, "Member 'TasksWidget_C_ScrollToSelectedTask::K2Node_DynamicCast_AsTask_Button' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'TasksWidget_C_ScrollToSelectedTask::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TasksWidget_C_ScrollToSelectedTask, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000049, "Member 'TasksWidget_C_ScrollToSelectedTask::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 
 }
 

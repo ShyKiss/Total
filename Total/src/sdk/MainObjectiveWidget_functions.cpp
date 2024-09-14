@@ -44,8 +44,9 @@ void UMainObjectiveWidget_C::ExecuteUbergraph_MainObjectiveWidget(int32 EntryPoi
 // float                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsPositiveProgress                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                             ObjectiveText                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    bForceShow                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainObjectiveWidget_C::Event_ProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, float Progress, bool IsPositiveProgress, const class FText& ObjectiveText)
+void UMainObjectiveWidget_C::Event_ProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, float Progress, bool IsPositiveProgress, const class FText& ObjectiveText, bool bForceShow)
 {
 	static class UFunction* Func = nullptr;
 
@@ -58,6 +59,7 @@ void UMainObjectiveWidget_C::Event_ProgressChanged(class ARBBaseObjectiveCoordin
 	Parms.Progress = Progress;
 	Parms.IsPositiveProgress = IsPositiveProgress;
 	Parms.ObjectiveText = std::move(ObjectiveText);
+	Parms.bForceShow = bForceShow;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -102,9 +104,9 @@ void UMainObjectiveWidget_C::Tick(const struct FGeometry& MyGeometry, float InDe
 // Function MainObjectiveWidget.MainObjectiveWidget_C.Event_IsMakingPositiveProgress
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsMakingPositiveProgress                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsMakingPositiveProgress_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainObjectiveWidget_C::Event_IsMakingPositiveProgress(bool Param_IsMakingPositiveProgress)
+void UMainObjectiveWidget_C::Event_IsMakingPositiveProgress(bool IsMakingPositiveProgress_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -113,7 +115,7 @@ void UMainObjectiveWidget_C::Event_IsMakingPositiveProgress(bool Param_IsMakingP
 
 	Params::MainObjectiveWidget_C_Event_IsMakingPositiveProgress Parms{};
 
-	Parms.Param_IsMakingPositiveProgress = Param_IsMakingPositiveProgress;
+	Parms.IsMakingPositiveProgress_0 = IsMakingPositiveProgress_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -170,9 +172,9 @@ void UMainObjectiveWidget_C::Finished_8A3EC16D4EBA343192A93F85CA6E35E3()
 // Function MainObjectiveWidget.MainObjectiveWidget_C.SetIsMakingPositiveProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsMakingPositiveProgress                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsMakingPositiveProgress_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainObjectiveWidget_C::SetIsMakingPositiveProgress(bool Param_IsMakingPositiveProgress)
+void UMainObjectiveWidget_C::SetIsMakingPositiveProgress(bool IsMakingPositiveProgress_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -181,7 +183,7 @@ void UMainObjectiveWidget_C::SetIsMakingPositiveProgress(bool Param_IsMakingPosi
 
 	Params::MainObjectiveWidget_C_SetIsMakingPositiveProgress Parms{};
 
-	Parms.Param_IsMakingPositiveProgress = Param_IsMakingPositiveProgress;
+	Parms.IsMakingPositiveProgress_0 = IsMakingPositiveProgress_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -265,9 +267,9 @@ void UMainObjectiveWidget_C::Initialize(class ARBBaseObjectiveCoordinator* Coord
 // Function MainObjectiveWidget.MainObjectiveWidget_C.GetRemoveAnimation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UWidgetAnimation*                 Param_RemoveAnimation                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidgetAnimation*                 RemoveAnimation_0                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainObjectiveWidget_C::GetRemoveAnimation(class UWidgetAnimation** Param_RemoveAnimation)
+void UMainObjectiveWidget_C::GetRemoveAnimation(class UWidgetAnimation** RemoveAnimation_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -278,8 +280,28 @@ void UMainObjectiveWidget_C::GetRemoveAnimation(class UWidgetAnimation** Param_R
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_RemoveAnimation != nullptr)
-		*Param_RemoveAnimation = Parms.Param_RemoveAnimation;
+	if (RemoveAnimation_0 != nullptr)
+		*RemoveAnimation_0 = Parms.RemoveAnimation_0;
+}
+
+
+// Function MainObjectiveWidget.MainObjectiveWidget_C.ShouldShow
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UMainObjectiveWidget_C::ShouldShow() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainObjectiveWidget_C", "ShouldShow");
+
+	Params::MainObjectiveWidget_C_ShouldShow Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

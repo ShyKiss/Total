@@ -28,10 +28,10 @@ public:
 	float                                         MatchStartServerTime;                              // 0x02F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bCountdownActive;                                  // 0x02FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IsStartingSoon;                                    // 0x02FD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EF2[0x2];                                     // 0x02FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FE[0x2];                                      // 0x02FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MatchCountdownStartServerTime;                     // 0x0300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReadyToTravelToMatch;                              // 0x0304(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EF3[0x3];                                     // 0x0305(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_305[0x3];                                      // 0x0305(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   FinishInstallText;                                 // 0x0308(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         InstallationPercent;                               // 0x0320(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -47,7 +47,7 @@ public:
 	void HideCountdown();
 	void OnGamePhaseUpdated(EGamePhase GamePhase, bool bDrugSequenceCompleted);
 	void UpdateGameInstallText(float Percent);
-	void ShouldShowWaitingForInstall(bool* Param_ShouldShow, float* DownloadPercent);
+	void ShouldShowWaitingForInstall(bool* ShouldShow_0, float* DownloadPercent);
 
 	bool ShouldShow() const;
 

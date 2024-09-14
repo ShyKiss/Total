@@ -19,11 +19,11 @@ namespace SDK::Params
 struct NewsWidgetDot_C_SetIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(NewsWidgetDot_C_SetIndex) == 0x000004, "Wrong alignment on NewsWidgetDot_C_SetIndex");
 static_assert(sizeof(NewsWidgetDot_C_SetIndex) == 0x000004, "Wrong size on NewsWidgetDot_C_SetIndex");
-static_assert(offsetof(NewsWidgetDot_C_SetIndex, Param_Index) == 0x000000, "Member 'NewsWidgetDot_C_SetIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(NewsWidgetDot_C_SetIndex, Index_0) == 0x000000, "Member 'NewsWidgetDot_C_SetIndex::Index_0' has a wrong offset!");
 
 // Function NewsWidgetDot.NewsWidgetDot_C.SetActive
 // 0x0001 (0x0001 - 0x0000)
@@ -52,11 +52,11 @@ static_assert(offsetof(NewsWidgetDot_C_ExecuteUbergraph_NewsWidgetDot, EntryPoin
 struct NewsWidgetDot_C_DotClicked__DelegateSignature final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(NewsWidgetDot_C_DotClicked__DelegateSignature) == 0x000004, "Wrong alignment on NewsWidgetDot_C_DotClicked__DelegateSignature");
 static_assert(sizeof(NewsWidgetDot_C_DotClicked__DelegateSignature) == 0x000004, "Wrong size on NewsWidgetDot_C_DotClicked__DelegateSignature");
-static_assert(offsetof(NewsWidgetDot_C_DotClicked__DelegateSignature, Param_Index) == 0x000000, "Member 'NewsWidgetDot_C_DotClicked__DelegateSignature::Param_Index' has a wrong offset!");
+static_assert(offsetof(NewsWidgetDot_C_DotClicked__DelegateSignature, Index_0) == 0x000000, "Member 'NewsWidgetDot_C_DotClicked__DelegateSignature::Index_0' has a wrong offset!");
 
 }
 

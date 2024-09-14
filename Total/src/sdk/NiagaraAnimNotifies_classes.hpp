@@ -27,11 +27,11 @@ public:
 	struct FRotator                               RotationOffset;                                    // 0x004C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                Scale;                                             // 0x0058(0x000C)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAbsoluteScale;                                    // 0x0064(0x0001)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E2D[0x1B];                                     // 0x0065(0x001B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_65[0x1B];                                      // 0x0065(0x001B)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         Attached : 1;                                      // 0x0080(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E2E[0x3];                                      // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   SocketName;                                        // 0x0084(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E2F[0x4];                                      // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UFXSystemComponent* GetSpawnedEffect() const;
@@ -65,7 +65,7 @@ public:
 	struct FVector                                LocationOffset;                                    // 0x0040(0x000C)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               RotationOffset;                                    // 0x004C(0x000C)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bDestroyAtEnd;                                     // 0x0058(0x0001)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E30[0x7];                                      // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UFXSystemComponent* GetSpawnedEffect(class UMeshComponent* MeshComp) const;
@@ -93,7 +93,7 @@ static_assert(offsetof(UAnimNotifyState_TimedNiagaraEffect, bDestroyAtEnd) == 0x
 class UAnimNotifyState_TimedNiagaraEffectAdvanced final : public UAnimNotifyState_TimedNiagaraEffect
 {
 public:
-	uint8                                         Pad_E31[0x50];                                     // 0x0060(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x50];                                      // 0x0060(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float GetNotifyProgress(class UMeshComponent* MeshComp) const;

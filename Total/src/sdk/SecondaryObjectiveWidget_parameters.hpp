@@ -20,13 +20,14 @@ struct SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget fina
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C58[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBBaseObjectiveCoordinator*            K2Node_Event_coordinator;                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_progress;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_isPositiveProgress;                   // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C59[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Event_objectiveText;                        // 0x0018(0x0018)(ConstParm)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bForceShow;                           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget) == 0x000008, "Wrong alignment on SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget");
 static_assert(sizeof(SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget) == 0x000038, "Wrong size on SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget");
@@ -35,36 +36,39 @@ static_assert(offsetof(SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObje
 static_assert(offsetof(SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget, K2Node_Event_progress) == 0x000010, "Member 'SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget::K2Node_Event_progress' has a wrong offset!");
 static_assert(offsetof(SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget, K2Node_Event_isPositiveProgress) == 0x000014, "Member 'SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget::K2Node_Event_isPositiveProgress' has a wrong offset!");
 static_assert(offsetof(SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget, K2Node_Event_objectiveText) == 0x000018, "Member 'SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget::K2Node_Event_objectiveText' has a wrong offset!");
-static_assert(offsetof(SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000030, "Member 'SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget, K2Node_Event_bForceShow) == 0x000030, "Member 'SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget::K2Node_Event_bForceShow' has a wrong offset!");
+static_assert(offsetof(SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000031, "Member 'SecondaryObjectiveWidget_C_ExecuteUbergraph_SecondaryObjectiveWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.Event_ProgressChanged
-// 0x0028 (0x0028 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct SecondaryObjectiveWidget_C_Event_ProgressChanged final
 {
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Progress;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPositiveProgress;                                // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C5A[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Param_ObjectiveText;                               // 0x0010(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ObjectiveText_0;                                   // 0x0010(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          bForceShow;                                        // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(SecondaryObjectiveWidget_C_Event_ProgressChanged) == 0x000008, "Wrong alignment on SecondaryObjectiveWidget_C_Event_ProgressChanged");
-static_assert(sizeof(SecondaryObjectiveWidget_C_Event_ProgressChanged) == 0x000028, "Wrong size on SecondaryObjectiveWidget_C_Event_ProgressChanged");
+static_assert(sizeof(SecondaryObjectiveWidget_C_Event_ProgressChanged) == 0x000030, "Wrong size on SecondaryObjectiveWidget_C_Event_ProgressChanged");
 static_assert(offsetof(SecondaryObjectiveWidget_C_Event_ProgressChanged, Coordinator) == 0x000000, "Member 'SecondaryObjectiveWidget_C_Event_ProgressChanged::Coordinator' has a wrong offset!");
 static_assert(offsetof(SecondaryObjectiveWidget_C_Event_ProgressChanged, Progress) == 0x000008, "Member 'SecondaryObjectiveWidget_C_Event_ProgressChanged::Progress' has a wrong offset!");
 static_assert(offsetof(SecondaryObjectiveWidget_C_Event_ProgressChanged, IsPositiveProgress) == 0x00000C, "Member 'SecondaryObjectiveWidget_C_Event_ProgressChanged::IsPositiveProgress' has a wrong offset!");
-static_assert(offsetof(SecondaryObjectiveWidget_C_Event_ProgressChanged, Param_ObjectiveText) == 0x000010, "Member 'SecondaryObjectiveWidget_C_Event_ProgressChanged::Param_ObjectiveText' has a wrong offset!");
+static_assert(offsetof(SecondaryObjectiveWidget_C_Event_ProgressChanged, ObjectiveText_0) == 0x000010, "Member 'SecondaryObjectiveWidget_C_Event_ProgressChanged::ObjectiveText_0' has a wrong offset!");
+static_assert(offsetof(SecondaryObjectiveWidget_C_Event_ProgressChanged, bForceShow) == 0x000028, "Member 'SecondaryObjectiveWidget_C_Event_ProgressChanged::bForceShow' has a wrong offset!");
 
 // Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.HandleVisibilityEvent
 // 0x0001 (0x0001 - 0x0000)
 struct SecondaryObjectiveWidget_C_HandleVisibilityEvent final
 {
 public:
-	bool                                          Param_IsVisible;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsVisible_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(SecondaryObjectiveWidget_C_HandleVisibilityEvent) == 0x000001, "Wrong alignment on SecondaryObjectiveWidget_C_HandleVisibilityEvent");
 static_assert(sizeof(SecondaryObjectiveWidget_C_HandleVisibilityEvent) == 0x000001, "Wrong size on SecondaryObjectiveWidget_C_HandleVisibilityEvent");
-static_assert(offsetof(SecondaryObjectiveWidget_C_HandleVisibilityEvent, Param_IsVisible) == 0x000000, "Member 'SecondaryObjectiveWidget_C_HandleVisibilityEvent::Param_IsVisible' has a wrong offset!");
+static_assert(offsetof(SecondaryObjectiveWidget_C_HandleVisibilityEvent, IsVisible_0) == 0x000000, "Member 'SecondaryObjectiveWidget_C_HandleVisibilityEvent::IsVisible_0' has a wrong offset!");
 
 // Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.GetFadeInAnimation
 // 0x0008 (0x0008 - 0x0000)
@@ -110,12 +114,12 @@ struct SecondaryObjectiveWidget_C_ShouldShow final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C5B[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetSecondaryObjectiveDisplay_ReturnValue; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetObjectiveDisplay_ReturnValue;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C5C[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

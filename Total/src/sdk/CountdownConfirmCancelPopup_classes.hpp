@@ -25,7 +25,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_CountdownConfirmCancelPopup_C;      // 0x03F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class FText                                   DisplayedText;                                     // 0x0400(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         TimeToCountdown;                                   // 0x0418(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E79[0x4];                                     // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CountdownTimer;                                    // 0x0420(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:

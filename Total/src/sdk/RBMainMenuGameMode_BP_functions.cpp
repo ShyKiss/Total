@@ -20,9 +20,9 @@ namespace SDK
 // Function RBMainMenuGameMode_BP.RBMainMenuGameMode_BP_C.CheckRequiredXPChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_CheckRequiredXP                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    CheckRequiredXP_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ARBMainMenuGameMode_BP_C::CheckRequiredXPChanged__DelegateSignature(bool Param_CheckRequiredXP)
+void ARBMainMenuGameMode_BP_C::CheckRequiredXPChanged__DelegateSignature(bool CheckRequiredXP_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void ARBMainMenuGameMode_BP_C::CheckRequiredXPChanged__DelegateSignature(bool Pa
 
 	Params::RBMainMenuGameMode_BP_C_CheckRequiredXPChanged__DelegateSignature Parms{};
 
-	Parms.Param_CheckRequiredXP = Param_CheckRequiredXP;
+	Parms.CheckRequiredXP_0 = CheckRequiredXP_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -40,9 +40,9 @@ void ARBMainMenuGameMode_BP_C::CheckRequiredXPChanged__DelegateSignature(bool Pa
 // Function RBMainMenuGameMode_BP.RBMainMenuGameMode_BP_C.SetCheckRequiredXP
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_CheckRequiredXP                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    CheckRequiredXP_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ARBMainMenuGameMode_BP_C::SetCheckRequiredXP(bool Param_CheckRequiredXP)
+void ARBMainMenuGameMode_BP_C::SetCheckRequiredXP(bool CheckRequiredXP_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +51,7 @@ void ARBMainMenuGameMode_BP_C::SetCheckRequiredXP(bool Param_CheckRequiredXP)
 
 	Params::RBMainMenuGameMode_BP_C_SetCheckRequiredXP Parms{};
 
-	Parms.Param_CheckRequiredXP = Param_CheckRequiredXP;
+	Parms.CheckRequiredXP_0 = CheckRequiredXP_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

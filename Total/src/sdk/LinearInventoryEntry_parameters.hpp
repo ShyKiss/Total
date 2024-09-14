@@ -64,7 +64,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C4D[0x5];                                     // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -87,7 +87,7 @@ public:
 	EUMGSequencePlayMode                          Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EUMGSequencePlayMode                          K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C4E[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(LinearInventoryEntry_C_SetSelected) == 0x000008, "Wrong alignment on LinearInventoryEntry_C_SetSelected");
@@ -101,15 +101,15 @@ static_assert(offsetof(LinearInventoryEntry_C_SetSelected, K2Node_Select_Default
 static_assert(offsetof(LinearInventoryEntry_C_SetSelected, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'LinearInventoryEntry_C_SetSelected::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function LinearInventoryEntry.LinearInventoryEntry_C.UpdateInfo
-// 0x0080 (0x0080 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct LinearInventoryEntry_C_UpdateInfo final
 {
 public:
-	struct FUILinearInventoryItem                 Param_ItemInfo;                                    // 0x0000(0x0080)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FUILinearInventoryItem                 ItemInfo_0;                                        // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(LinearInventoryEntry_C_UpdateInfo) == 0x000008, "Wrong alignment on LinearInventoryEntry_C_UpdateInfo");
-static_assert(sizeof(LinearInventoryEntry_C_UpdateInfo) == 0x000080, "Wrong size on LinearInventoryEntry_C_UpdateInfo");
-static_assert(offsetof(LinearInventoryEntry_C_UpdateInfo, Param_ItemInfo) == 0x000000, "Member 'LinearInventoryEntry_C_UpdateInfo::Param_ItemInfo' has a wrong offset!");
+static_assert(sizeof(LinearInventoryEntry_C_UpdateInfo) == 0x000088, "Wrong size on LinearInventoryEntry_C_UpdateInfo");
+static_assert(offsetof(LinearInventoryEntry_C_UpdateInfo, ItemInfo_0) == 0x000000, "Member 'LinearInventoryEntry_C_UpdateInfo::ItemInfo_0' has a wrong offset!");
 
 // Function LinearInventoryEntry.LinearInventoryEntry_C.UpdatePrompt
 // 0x0018 (0x0018 - 0x0000)
@@ -117,10 +117,10 @@ struct LinearInventoryEntry_C_UpdatePrompt final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C4F[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable;                                // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C50[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Select_Default;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(LinearInventoryEntry_C_UpdatePrompt) == 0x000004, "Wrong alignment on LinearInventoryEntry_C_UpdatePrompt");

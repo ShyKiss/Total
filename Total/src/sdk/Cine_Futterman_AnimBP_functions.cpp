@@ -37,6 +37,26 @@ void UCine_Futterman_AnimBP_C::ExecuteUbergraph_Cine_Futterman_AnimBP(int32 Entr
 }
 
 
+// Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.BlueprintUpdateAnimation
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UCine_Futterman_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cine_Futterman_AnimBP_C", "BlueprintUpdateAnimation");
+
+	Params::Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation Parms{};
+
+	Parms.DeltaTimeX = DeltaTimeX;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.BlueprintInitializeAnimation
 // (Event, Public, BlueprintEvent)
 
@@ -54,9 +74,9 @@ void UCine_Futterman_AnimBP_C::BlueprintInitializeAnimation()
 // Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink                        Param_AnimGraph                                        (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UCine_Futterman_AnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
+void UCine_Futterman_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67,8 +87,8 @@ void UCine_Futterman_AnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_AnimGraph != nullptr)
-		*Param_AnimGraph = std::move(Parms.Param_AnimGraph);
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

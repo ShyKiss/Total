@@ -282,9 +282,9 @@ void URBMenuButton_C::UpdateButtonText(const class FText& Text)
 // Function RBMenuButton.RBMenuButton_C.SetActionName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Param_ActionName                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           ActionName_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void URBMenuButton_C::SetActionName(const class FString& Param_ActionName)
+void URBMenuButton_C::SetActionName(const class FString& ActionName_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -293,7 +293,7 @@ void URBMenuButton_C::SetActionName(const class FString& Param_ActionName)
 
 	Params::RBMenuButton_C_SetActionName Parms{};
 
-	Parms.Param_ActionName = std::move(Param_ActionName);
+	Parms.ActionName_0 = std::move(ActionName_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -316,11 +316,11 @@ void URBMenuButton_C::UpdateButtonTextIcon()
 // Function RBMenuButton.RBMenuButton_C.SetButtonIconDetails
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       Param_ButtonIconTexture                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Param_ButtonIconSize                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMargin                          Param_ButtonIconPadding                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UTexture2D*                       ButtonIconTexture_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                        ButtonIconSize_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FMargin                          ButtonIconPadding_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URBMenuButton_C::SetButtonIconDetails(class UTexture2D* Param_ButtonIconTexture, const struct FVector2D& Param_ButtonIconSize, const struct FMargin& Param_ButtonIconPadding)
+void URBMenuButton_C::SetButtonIconDetails(class UTexture2D* ButtonIconTexture_0, const struct FVector2D& ButtonIconSize_0, const struct FMargin& ButtonIconPadding_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -329,9 +329,9 @@ void URBMenuButton_C::SetButtonIconDetails(class UTexture2D* Param_ButtonIconTex
 
 	Params::RBMenuButton_C_SetButtonIconDetails Parms{};
 
-	Parms.Param_ButtonIconTexture = Param_ButtonIconTexture;
-	Parms.Param_ButtonIconSize = std::move(Param_ButtonIconSize);
-	Parms.Param_ButtonIconPadding = std::move(Param_ButtonIconPadding);
+	Parms.ButtonIconTexture_0 = ButtonIconTexture_0;
+	Parms.ButtonIconSize_0 = std::move(ButtonIconSize_0);
+	Parms.ButtonIconPadding_0 = std::move(ButtonIconPadding_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

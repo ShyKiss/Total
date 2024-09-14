@@ -128,9 +128,9 @@ void ULinearInventoryEntry_C::SetSelected(bool IsSelected)
 // Function LinearInventoryEntry.LinearInventoryEntry_C.UpdateInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUILinearInventoryItem           Param_ItemInfo                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FUILinearInventoryItem           ItemInfo_0                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void ULinearInventoryEntry_C::UpdateInfo(const struct FUILinearInventoryItem& Param_ItemInfo)
+void ULinearInventoryEntry_C::UpdateInfo(const struct FUILinearInventoryItem& ItemInfo_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -139,7 +139,7 @@ void ULinearInventoryEntry_C::UpdateInfo(const struct FUILinearInventoryItem& Pa
 
 	Params::LinearInventoryEntry_C_UpdateInfo Parms{};
 
-	Parms.Param_ItemInfo = std::move(Param_ItemInfo);
+	Parms.ItemInfo_0 = std::move(ItemInfo_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

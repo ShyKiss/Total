@@ -46,15 +46,15 @@ class UMotoSynthSource final : public UObject
 {
 public:
 	bool                                          bConvertTo8Bit;                                    // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12D8[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DownSampleFactor;                                  // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRuntimeFloatCurve                     RPMCurve;                                          // 0x0030(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<float>                                 SourceData;                                        // 0x00B8(0x0010)(ZeroConstructor, Deprecated, Protected, NativeAccessSpecifierProtected)
 	TArray<int16>                                 SourceDataPCM;                                     // 0x00C8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	int32                                         SourceSampleRate;                                  // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12D9[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FGrainTableEntry>               GrainTable;                                        // 0x00E0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12DA[0x8];                                     // 0x00F0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F0[0x8];                                       // 0x00F0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -83,7 +83,7 @@ class USynthComponentMoto final : public USynthComponent
 public:
 	class UMotoSynthPreset*                       MotoSynthPreset;                                   // 0x06D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RPM;                                               // 0x06D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12DB[0xB4];                                    // 0x06DC(0x00B4)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6DC[0xB4];                                     // 0x06DC(0x00B4)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GetRPMRange(float* OutMinRPM, float* OutMaxRPM);

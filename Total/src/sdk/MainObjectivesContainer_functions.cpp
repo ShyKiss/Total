@@ -86,7 +86,7 @@ void UMainObjectivesContainer_C::PreConstruct(bool IsDesignTime)
 
 
 // Function MainObjectivesContainer.MainObjectivesContainer_C.Add Objective
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ARBBaseObjectiveCoordinator*      Coordinator                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -108,9 +108,9 @@ void UMainObjectivesContainer_C::Add_Objective(class ARBBaseObjectiveCoordinator
 // Function MainObjectivesContainer.MainObjectivesContainer_C.OnMainObjectiveVisibilityChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsVisible                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainObjectivesContainer_C::OnMainObjectiveVisibilityChanged(bool Param_IsVisible)
+void UMainObjectivesContainer_C::OnMainObjectiveVisibilityChanged(bool IsVisible_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -119,7 +119,7 @@ void UMainObjectivesContainer_C::OnMainObjectiveVisibilityChanged(bool Param_IsV
 
 	Params::MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged Parms{};
 
-	Parms.Param_IsVisible = Param_IsVisible;
+	Parms.IsVisible_0 = IsVisible_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -160,7 +160,7 @@ void UMainObjectivesContainer_C::RegisterCoordinator(class ARBBaseObjectiveCoord
 
 
 // Function MainObjectivesContainer.MainObjectivesContainer_C.AddWaitingCoordinators
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
 void UMainObjectivesContainer_C::AddWaitingCoordinators()
 {

@@ -71,8 +71,8 @@ public:
 	void BndEvt__Button_112_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__SubEntryBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
 	void PreConstruct(bool IsDesignTime);
-	void SetValue(const class FText& Param_OptionValue);
-	void Set_Button_Type(bool IsSubEntry, const class FText& _Optionnal_SubEntryTitle, bool Param_IsSlider);
+	void SetValue(const class FText& OptionValue_0);
+	void Set_Button_Type(bool IsSubEntry, const class FText& _Optionnal_SubEntryTitle, bool IsSlider_0);
 	void SetSliderButton(bool IsSliderEntry);
 	void HighlightEntry();
 	void DownplayEntry();

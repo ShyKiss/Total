@@ -27,6 +27,26 @@ static_assert(sizeof(CineGooseberryMinus01_BP_C_GetFuttermanAnimation) == 0x0000
 static_assert(offsetof(CineGooseberryMinus01_BP_C_GetFuttermanAnimation, NewParam) == 0x000000, "Member 'CineGooseberryMinus01_BP_C_GetFuttermanAnimation::NewParam' has a wrong offset!");
 static_assert(offsetof(CineGooseberryMinus01_BP_C_GetFuttermanAnimation, Animation) == 0x000008, "Member 'CineGooseberryMinus01_BP_C_GetFuttermanAnimation::Animation' has a wrong offset!");
 
+// Function CineGooseberry-01_BP.CineGooseberry-01_BP_C.SetDrillOn
+// 0x0020 (0x0020 - 0x0000)
+struct CineGooseberryMinus01_BP_C_SetDrillOn final
+{
+public:
+	bool                                          DrillOn;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DrillRate;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCine_Futterman_AnimBP_C*               K2Node_DynamicCast_AsCine_Futterman_Anim_BP;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(CineGooseberryMinus01_BP_C_SetDrillOn) == 0x000008, "Wrong alignment on CineGooseberryMinus01_BP_C_SetDrillOn");
+static_assert(sizeof(CineGooseberryMinus01_BP_C_SetDrillOn) == 0x000020, "Wrong size on CineGooseberryMinus01_BP_C_SetDrillOn");
+static_assert(offsetof(CineGooseberryMinus01_BP_C_SetDrillOn, DrillOn) == 0x000000, "Member 'CineGooseberryMinus01_BP_C_SetDrillOn::DrillOn' has a wrong offset!");
+static_assert(offsetof(CineGooseberryMinus01_BP_C_SetDrillOn, DrillRate) == 0x000004, "Member 'CineGooseberryMinus01_BP_C_SetDrillOn::DrillRate' has a wrong offset!");
+static_assert(offsetof(CineGooseberryMinus01_BP_C_SetDrillOn, CallFunc_GetAnimInstance_ReturnValue) == 0x000008, "Member 'CineGooseberryMinus01_BP_C_SetDrillOn::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CineGooseberryMinus01_BP_C_SetDrillOn, K2Node_DynamicCast_AsCine_Futterman_Anim_BP) == 0x000010, "Member 'CineGooseberryMinus01_BP_C_SetDrillOn::K2Node_DynamicCast_AsCine_Futterman_Anim_BP' has a wrong offset!");
+static_assert(offsetof(CineGooseberryMinus01_BP_C_SetDrillOn, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'CineGooseberryMinus01_BP_C_SetDrillOn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
 // Function CineGooseberry-01_BP.CineGooseberry-01_BP_C.GetCineFaceAnimBP
 // 0x0020 (0x0020 - 0x0000)
 struct CineGooseberryMinus01_BP_C_GetCineFaceAnimBP final

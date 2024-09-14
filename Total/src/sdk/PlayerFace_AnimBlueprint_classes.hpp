@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Player_Face_States_structs.hpp"
+#include "Engine_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
 #include "Shared_Face_BaseEmotion_Enum_structs.hpp"
@@ -94,7 +94,7 @@ public:
 	class UAnimSequence*                          LipSyncAnim;                                       // 0x2208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasPoses;                                          // 0x2210(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsExpressing;                                      // 0x2211(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AAE[0x6];                                     // 0x2212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2212[0x6];                                     // 0x2212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          ScriptedFaceAnim;                                  // 0x2218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDead;                                            // 0x2220(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsSleeping;                                        // 0x2221(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -116,7 +116,7 @@ public:
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_PlayerFace_AnimBlueprint_AnimGraphNode_TransitionResult_906E9C5C4AE767841E8623BAFD40A08F();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_PlayerFace_AnimBlueprint_AnimGraphNode_TransitionResult_50F1F86C468D09FE8EA9C184C3541823();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_PlayerFace_AnimBlueprint_AnimGraphNode_TransitionResult_136AC66C4A8A31FE4BA347BFBD036A74();
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

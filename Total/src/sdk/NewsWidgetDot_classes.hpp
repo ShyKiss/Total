@@ -29,16 +29,16 @@ public:
 	struct FSlateBrush                            ActiveBrush;                                       // 0x0278(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateBrush                            InactiveBrush;                                     // 0x0300(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UNewsWidget_C*                          Parent;                                            // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Index_NewsWidgetDot_C;                             // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C0D[0x4];                                     // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_394[0x4];                                      // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             DotClicked;                                        // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void SetIndex(int32 Param_Index);
+	void SetIndex(int32 Index_0);
 	void SetActive(bool bActive);
 	void BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void ExecuteUbergraph_NewsWidgetDot(int32 EntryPoint);
-	void DotClicked__DelegateSignature(int32 Param_Index);
+	void DotClicked__DelegateSignature(int32 Index_0);
 
 public:
 	static class UClass* StaticClass()
@@ -58,7 +58,7 @@ static_assert(offsetof(UNewsWidgetDot_C, State) == 0x000270, "Member 'UNewsWidge
 static_assert(offsetof(UNewsWidgetDot_C, ActiveBrush) == 0x000278, "Member 'UNewsWidgetDot_C::ActiveBrush' has a wrong offset!");
 static_assert(offsetof(UNewsWidgetDot_C, InactiveBrush) == 0x000300, "Member 'UNewsWidgetDot_C::InactiveBrush' has a wrong offset!");
 static_assert(offsetof(UNewsWidgetDot_C, Parent) == 0x000388, "Member 'UNewsWidgetDot_C::Parent' has a wrong offset!");
-static_assert(offsetof(UNewsWidgetDot_C, Index_NewsWidgetDot_C) == 0x000390, "Member 'UNewsWidgetDot_C::Index_NewsWidgetDot_C' has a wrong offset!");
+static_assert(offsetof(UNewsWidgetDot_C, Index_0) == 0x000390, "Member 'UNewsWidgetDot_C::Index_0' has a wrong offset!");
 static_assert(offsetof(UNewsWidgetDot_C, DotClicked) == 0x000398, "Member 'UNewsWidgetDot_C::DotClicked' has a wrong offset!");
 
 }

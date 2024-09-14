@@ -18,27 +18,50 @@ namespace SDK::Params
 {
 
 // Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.ExecuteUbergraph_DoorBlocker_GhostAnimBP
-// 0x0020 (0x0020 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GhostAnimTransition_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3113[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaTimeX;                           // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3114[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPickup*                              CallFunc_GetHoldConsumeActionItem_ReturnValue;     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BP_GetHoldConsumeActionProgress_ReturnValue; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRelevantAnimTimeRemaining_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GhostAnimTransition_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaTimeX;                           // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BP_GetHoldConsumeActionProgress_ReturnValue; // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UESOP_Barricade_AnimBP_C*               K2Node_DynamicCast_AsESOP_Barricade_Anim_BP;       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP) == 0x000008, "Wrong alignment on DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP");
-static_assert(sizeof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP) == 0x000020, "Wrong size on DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP");
+static_assert(sizeof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP) == 0x000040, "Wrong size on DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP");
 static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, EntryPoint) == 0x000000, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_GhostAnimTransition_ReturnValue) == 0x000004, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_GhostAnimTransition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, K2Node_Event_DeltaTimeX) == 0x000008, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
-static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_GetHoldConsumeActionItem_ReturnValue) == 0x000010, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_GetHoldConsumeActionItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_BP_GetHoldConsumeActionProgress_ReturnValue) == 0x000018, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_BP_GetHoldConsumeActionProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue) == 0x000004, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_Less_FloatFloat_ReturnValue) == 0x000008, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_GhostAnimTransition_ReturnValue) == 0x000009, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_GhostAnimTransition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, K2Node_Event_DeltaTimeX) == 0x00000C, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_BP_GetHoldConsumeActionProgress_ReturnValue) == 0x000014, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_BP_GetHoldConsumeActionProgress_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000018, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x00001C, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_IsValid_ReturnValue_1) == 0x00001D, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_IsValid_ReturnValue_2) == 0x00001E, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_IsValid_ReturnValue_3) == 0x00001F, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_IsValid_ReturnValue_4) == 0x000020, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_GetAnimInstance_ReturnValue) == 0x000028, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, K2Node_DynamicCast_AsESOP_Barricade_Anim_BP) == 0x000030, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::K2Node_DynamicCast_AsESOP_Barricade_Anim_BP' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP, CallFunc_BooleanOR_ReturnValue) == 0x000039, "Member 'DoorBlocker_GhostAnimBP_C_ExecuteUbergraph_DoorBlocker_GhostAnimBP::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -57,7 +80,7 @@ struct DoorBlocker_GhostAnimBP_C_FinishGhost final
 {
 public:
 	EGhostFinishReason                            FinishReason;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3115[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         GhostFinishCustomReason;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -69,16 +92,39 @@ static_assert(offsetof(DoorBlocker_GhostAnimBP_C_FinishGhost, GhostFinishCustomR
 static_assert(offsetof(DoorBlocker_GhostAnimBP_C_FinishGhost, ReturnValue) == 0x000008, "Member 'DoorBlocker_GhostAnimBP_C_FinishGhost::ReturnValue' has a wrong offset!");
 static_assert(offsetof(DoorBlocker_GhostAnimBP_C_FinishGhost, K2Node_SwitchEnum_CmpSuccess) == 0x000009, "Member 'DoorBlocker_GhostAnimBP_C_FinishGhost::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
+// Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.InitializeBarricadeVariables
+// 0x0028 (0x0028 - 0x0000)
+struct DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPickup*                              CallFunc_GetHoldConsumeActionItem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ADoorBlocker_SkillItem_BP_C*            K2Node_DynamicCast_AsDoor_Blocker_Skill_Item_BP;   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_InitializeAnimationInstance_bInitializedTriggered; // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UESOP_Barricade_AnimBP_C*               CallFunc_InitializeAnimationInstance_ESOPAnimInstance; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables) == 0x000008, "Wrong alignment on DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables");
+static_assert(sizeof(DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables) == 0x000028, "Wrong size on DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables, CallFunc_GetHoldConsumeActionItem_ReturnValue) == 0x000008, "Member 'DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables::CallFunc_GetHoldConsumeActionItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables, K2Node_DynamicCast_AsDoor_Blocker_Skill_Item_BP) == 0x000010, "Member 'DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables::K2Node_DynamicCast_AsDoor_Blocker_Skill_Item_BP' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables, CallFunc_InitializeAnimationInstance_bInitializedTriggered) == 0x000019, "Member 'DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables::CallFunc_InitializeAnimationInstance_bInitializedTriggered' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables, CallFunc_InitializeAnimationInstance_ESOPAnimInstance) == 0x000020, "Member 'DoorBlocker_GhostAnimBP_C_InitializeBarricadeVariables::CallFunc_InitializeAnimationInstance_ESOPAnimInstance' has a wrong offset!");
+
 // Function DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
 struct DoorBlocker_GhostAnimBP_C_AnimGraph final
 {
 public:
-	struct FPoseLink                              Param_AnimGraph;                                   // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(DoorBlocker_GhostAnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on DoorBlocker_GhostAnimBP_C_AnimGraph");
 static_assert(sizeof(DoorBlocker_GhostAnimBP_C_AnimGraph) == 0x000010, "Wrong size on DoorBlocker_GhostAnimBP_C_AnimGraph");
-static_assert(offsetof(DoorBlocker_GhostAnimBP_C_AnimGraph, Param_AnimGraph) == 0x000000, "Member 'DoorBlocker_GhostAnimBP_C_AnimGraph::Param_AnimGraph' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_GhostAnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'DoorBlocker_GhostAnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 }
 

@@ -37,6 +37,20 @@ void UHUDObjectives_C::ExecuteUbergraph_HUDObjectives(int32 EntryPoint)
 }
 
 
+// Function HUDObjectives.HUDObjectives_C.OnRequestDisplayObjectiveHUD
+// (BlueprintCallable, BlueprintEvent)
+
+void UHUDObjectives_C::OnRequestDisplayObjectiveHUD()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HUDObjectives_C", "OnRequestDisplayObjectiveHUD");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function HUDObjectives.HUDObjectives_C.OnSingleCompletedObjectiveReverted
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -90,8 +104,9 @@ void UHUDObjectives_C::OnSingleObjectiveCompleted(class ARBBaseObjectiveCoordina
 // float                                   ProgressRatio                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsPositiveProgress                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                             ObjectiveText                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    bForceShow                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UHUDObjectives_C::OnProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, float ProgressRatio, bool IsPositiveProgress, const class FText& ObjectiveText)
+void UHUDObjectives_C::OnProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, float ProgressRatio, bool IsPositiveProgress, const class FText& ObjectiveText, bool bForceShow)
 {
 	static class UFunction* Func = nullptr;
 
@@ -104,6 +119,7 @@ void UHUDObjectives_C::OnProgressChanged(class ARBBaseObjectiveCoordinator* Coor
 	Parms.ProgressRatio = ProgressRatio;
 	Parms.IsPositiveProgress = IsPositiveProgress;
 	Parms.ObjectiveText = std::move(ObjectiveText);
+	Parms.bForceShow = bForceShow;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -130,20 +146,6 @@ void UHUDObjectives_C::OnCompletionInProgressChanged(class ARBBaseObjectiveCoord
 	Parms.IsCompletedByLocalPlayer = IsCompletedByLocalPlayer;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HUDObjectives.HUDObjectives_C.OnRequestDisplayObjectiveHUD
-// (BlueprintCallable, BlueprintEvent)
-
-void UHUDObjectives_C::OnRequestDisplayObjectiveHUD()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUDObjectives_C", "OnRequestDisplayObjectiveHUD");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

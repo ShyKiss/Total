@@ -10,6 +10,8 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
+
 
 namespace SDK::Params
 {
@@ -21,17 +23,17 @@ struct MainObjectivesContainer_C_ExecuteUbergraph_MainObjectivesContainer final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F15[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable_1;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F16[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_FindParentWidgetOfType_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHUDObjectives_C*                       K2Node_DynamicCast_AsHUD_Objectives;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F17[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MainObjectivesContainer_C_ExecuteUbergraph_MainObjectivesContainer) == 0x000008, "Wrong alignment on MainObjectivesContainer_C_ExecuteUbergraph_MainObjectivesContainer");
@@ -60,34 +62,50 @@ static_assert(sizeof(MainObjectivesContainer_C_PreConstruct) == 0x000001, "Wrong
 static_assert(offsetof(MainObjectivesContainer_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'MainObjectivesContainer_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function MainObjectivesContainer.MainObjectivesContainer_C.Add Objective
-// 0x0030 (0x0030 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct MainObjectivesContainer_C_Add_Objective final
 {
 public:
 	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMainObjectiveWidget_C*                 CreatedWidget;                                     // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMainObjectiveWidget_C*                 CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool IsVisible)>               K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0050(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x00A0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B0(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x00C8(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UMainObjectiveWidget_C*                 CallFunc_Create_ReturnValue;                       // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(bool IsVisible)>               K2Node_CreateDelegate_OutputDelegate;              // 0x0108(0x0010)(ZeroConstructor, NoDestructor)
+	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MainObjectivesContainer_C_Add_Objective) == 0x000008, "Wrong alignment on MainObjectivesContainer_C_Add_Objective");
-static_assert(sizeof(MainObjectivesContainer_C_Add_Objective) == 0x000030, "Wrong size on MainObjectivesContainer_C_Add_Objective");
+static_assert(sizeof(MainObjectivesContainer_C_Add_Objective) == 0x000120, "Wrong size on MainObjectivesContainer_C_Add_Objective");
 static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, Coordinator) == 0x000000, "Member 'MainObjectivesContainer_C_Add_Objective::Coordinator' has a wrong offset!");
 static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, CreatedWidget) == 0x000008, "Member 'MainObjectivesContainer_C_Add_Objective::CreatedWidget' has a wrong offset!");
-static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, CallFunc_Create_ReturnValue) == 0x000010, "Member 'MainObjectivesContainer_C_Add_Objective::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'MainObjectivesContainer_C_Add_Objective::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000028, "Member 'MainObjectivesContainer_C_Add_Objective::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, K2Node_MakeStruct_FormatArgumentData) == 0x000010, "Member 'MainObjectivesContainer_C_Add_Objective::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, K2Node_MakeStruct_FormatArgumentData_1) == 0x000050, "Member 'MainObjectivesContainer_C_Add_Objective::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, K2Node_MakeArray_Array) == 0x000090, "Member 'MainObjectivesContainer_C_Add_Objective::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, K2Node_MakeArray_Array_1) == 0x0000A0, "Member 'MainObjectivesContainer_C_Add_Objective::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, CallFunc_Format_ReturnValue) == 0x0000B0, "Member 'MainObjectivesContainer_C_Add_Objective::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, CallFunc_Format_ReturnValue_1) == 0x0000C8, "Member 'MainObjectivesContainer_C_Add_Objective::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, CallFunc_Conv_TextToString_ReturnValue) == 0x0000E0, "Member 'MainObjectivesContainer_C_Add_Objective::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000F0, "Member 'MainObjectivesContainer_C_Add_Objective::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, CallFunc_Create_ReturnValue) == 0x000100, "Member 'MainObjectivesContainer_C_Add_Objective::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, K2Node_CreateDelegate_OutputDelegate) == 0x000108, "Member 'MainObjectivesContainer_C_Add_Objective::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_Add_Objective, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000118, "Member 'MainObjectivesContainer_C_Add_Objective::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function MainObjectivesContainer.MainObjectivesContainer_C.OnMainObjectiveVisibilityChanged
 // 0x0001 (0x0001 - 0x0000)
 struct MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged final
 {
 public:
-	bool                                          Param_IsVisible;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsVisible_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged) == 0x000001, "Wrong alignment on MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged");
 static_assert(sizeof(MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged) == 0x000001, "Wrong size on MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged");
-static_assert(offsetof(MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged, Param_IsVisible) == 0x000000, "Member 'MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged::Param_IsVisible' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged, IsVisible_0) == 0x000000, "Member 'MainObjectivesContainer_C_OnMainObjectiveVisibilityChanged::IsVisible_0' has a wrong offset!");
 
 // Function MainObjectivesContainer.MainObjectivesContainer_C.RefreshObjectivesTexts
 // 0x0048 (0x0048 - 0x0000)
@@ -97,13 +115,13 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F18[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F19[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F1A[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMainObjectiveWidget_C*                 K2Node_DynamicCast_AsMain_Objective_Widget;        // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -135,28 +153,38 @@ static_assert(offsetof(MainObjectivesContainer_C_RegisterCoordinator, Coordinato
 static_assert(offsetof(MainObjectivesContainer_C_RegisterCoordinator, CallFunc_Array_AddUnique_ReturnValue) == 0x000008, "Member 'MainObjectivesContainer_C_RegisterCoordinator::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
 
 // Function MainObjectivesContainer.MainObjectivesContainer_C.AddWaitingCoordinators
-// 0x0020 (0x0020 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct MainObjectivesContainer_C_AddWaitingCoordinators final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F1B[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBBaseObjectiveCoordinator*            CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0018)()
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MainObjectivesContainer_C_AddWaitingCoordinators) == 0x000008, "Wrong alignment on MainObjectivesContainer_C_AddWaitingCoordinators");
-static_assert(sizeof(MainObjectivesContainer_C_AddWaitingCoordinators) == 0x000020, "Wrong size on MainObjectivesContainer_C_AddWaitingCoordinators");
+static_assert(sizeof(MainObjectivesContainer_C_AddWaitingCoordinators) == 0x0000A0, "Wrong size on MainObjectivesContainer_C_AddWaitingCoordinators");
 static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, Temp_int_Array_Index_Variable) == 0x000000, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, CallFunc_Array_Get_Item) == 0x000010, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, CallFunc_Less_IntInt_ReturnValue) == 0x00001C, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00001D, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, K2Node_MakeArray_Array) == 0x000060, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, CallFunc_Format_ReturnValue) == 0x000070, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000088, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectivesContainer_C_AddWaitingCoordinators, CallFunc_Conv_TextToString_ReturnValue) == 0x000090, "Member 'MainObjectivesContainer_C_AddWaitingCoordinators::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function MainObjectivesContainer.MainObjectivesContainer_C.ShouldShow
 // 0x0018 (0x0018 - 0x0000)
@@ -164,7 +192,7 @@ struct MainObjectivesContainer_C_ShouldShow final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F1C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetObjectiveDisplay_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

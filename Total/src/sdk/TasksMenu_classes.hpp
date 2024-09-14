@@ -36,6 +36,7 @@ public:
 
 public:
 	void ExecuteUbergraph_TasksMenu(int32 EntryPoint);
+	void OnPopShortcutPressed();
 	void BndEvt__TasksMenu_ExitButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
 	void Event_OnFocusMenu();
 	void Event_OnUnfocusMenu(bool bShouldHide);

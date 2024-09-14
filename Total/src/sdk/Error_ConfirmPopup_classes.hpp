@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "OPP_classes.hpp"
 
 
@@ -18,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Error_ConfirmPopup.Error_ConfirmPopup_C
-// 0x0060 (0x03B0 - 0x0350)
+// 0x0088 (0x03D8 - 0x0350)
 class UError_ConfirmPopup_C final : public URBErrorConfirmPopUpWidget
 {
 public:
@@ -34,9 +35,11 @@ public:
 	class UTextBlock*                             PopupSecondaryText;                                // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             PopupText;                                         // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TitleTxt;                                          // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSlateColor                            HeaderColor;                                       // 0x03B0(0x0028)(Edit, BlueprintVisible)
 
 public:
 	void ExecuteUbergraph_Error_ConfirmPopup(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
 	void Event_InputSourceChanged(bool bIsGamepad);
 	void Event_OnFocusMenu();
 	void BndEvt__ConfirmMenuButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
@@ -54,7 +57,7 @@ public:
 	}
 };
 static_assert(alignof(UError_ConfirmPopup_C) == 0x000008, "Wrong alignment on UError_ConfirmPopup_C");
-static_assert(sizeof(UError_ConfirmPopup_C) == 0x0003B0, "Wrong size on UError_ConfirmPopup_C");
+static_assert(sizeof(UError_ConfirmPopup_C) == 0x0003D8, "Wrong size on UError_ConfirmPopup_C");
 static_assert(offsetof(UError_ConfirmPopup_C, UberGraphFrame) == 0x000350, "Member 'UError_ConfirmPopup_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UError_ConfirmPopup_C, Background_1) == 0x000358, "Member 'UError_ConfirmPopup_C::Background_1' has a wrong offset!");
 static_assert(offsetof(UError_ConfirmPopup_C, ConfirmMenuButton) == 0x000360, "Member 'UError_ConfirmPopup_C::ConfirmMenuButton' has a wrong offset!");
@@ -67,6 +70,7 @@ static_assert(offsetof(UError_ConfirmPopup_C, PopUpIconImage) == 0x000390, "Memb
 static_assert(offsetof(UError_ConfirmPopup_C, PopupSecondaryText) == 0x000398, "Member 'UError_ConfirmPopup_C::PopupSecondaryText' has a wrong offset!");
 static_assert(offsetof(UError_ConfirmPopup_C, PopupText) == 0x0003A0, "Member 'UError_ConfirmPopup_C::PopupText' has a wrong offset!");
 static_assert(offsetof(UError_ConfirmPopup_C, TitleTxt) == 0x0003A8, "Member 'UError_ConfirmPopup_C::TitleTxt' has a wrong offset!");
+static_assert(offsetof(UError_ConfirmPopup_C, HeaderColor) == 0x0003B0, "Member 'UError_ConfirmPopup_C::HeaderColor' has a wrong offset!");
 
 }
 

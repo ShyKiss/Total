@@ -34,26 +34,26 @@ static_assert(offsetof(LevelIndicatorWidget_C_ExecuteUbergraph_LevelIndicatorWid
 struct LevelIndicatorWidget_C_Init final
 {
 public:
-	int32                                         Param_Level;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Level_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ReleaseCount;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D27[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_2;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_3;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D28[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable_4;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D29[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             K2Node_Select_Default_1;                           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0058(0x0018)()
 };
 static_assert(alignof(LevelIndicatorWidget_C_Init) == 0x000008, "Wrong alignment on LevelIndicatorWidget_C_Init");
 static_assert(sizeof(LevelIndicatorWidget_C_Init) == 0x000070, "Wrong size on LevelIndicatorWidget_C_Init");
-static_assert(offsetof(LevelIndicatorWidget_C_Init, Param_Level) == 0x000000, "Member 'LevelIndicatorWidget_C_Init::Param_Level' has a wrong offset!");
+static_assert(offsetof(LevelIndicatorWidget_C_Init, Level_0) == 0x000000, "Member 'LevelIndicatorWidget_C_Init::Level_0' has a wrong offset!");
 static_assert(offsetof(LevelIndicatorWidget_C_Init, ReleaseCount) == 0x000004, "Member 'LevelIndicatorWidget_C_Init::ReleaseCount' has a wrong offset!");
 static_assert(offsetof(LevelIndicatorWidget_C_Init, Temp_int_Variable) == 0x000008, "Member 'LevelIndicatorWidget_C_Init::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(LevelIndicatorWidget_C_Init, Temp_object_Variable) == 0x000010, "Member 'LevelIndicatorWidget_C_Init::Temp_object_Variable' has a wrong offset!");

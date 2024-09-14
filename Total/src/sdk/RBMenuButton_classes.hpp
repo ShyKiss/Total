@@ -22,37 +22,40 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RBMenuButton.RBMenuButton_C
-// 0x00F8 (0x0360 - 0x0268)
+// 0x0110 (0x0378 - 0x0268)
 class URBMenuButton_C final : public URBUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UActionIconWidget_C*                    ActionIconWidget;                                  // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 buttonBackground;                                  // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ButtonTextIcon;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             ButtonTxt;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UInvalidationBox*                       InvalidationBox_RBMenuButton;                      // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                MainButton;                                        // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Tag_new;                                           // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class FText                                   ButtonText;                                        // 0x02B8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FString                                 ActionName;                                        // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          ShowInputForKBM;                                   // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_2ACE[0x7];                                     // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          OnClickedSound;                                    // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShowHoldPrompt;                                    // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          ShowBackground;                                    // 0x02F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2ACF[0x6];                                     // 0x02F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             OnPressed;                                         // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnReleased;                                        // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnHovered;                                         // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnUnhovered;                                       // 0x0328(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          ShowInputOnGamepad;                                // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          IsVisualPromptOnly;                                // 0x0339(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AD0[0x6];                                     // 0x033A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             ButtonIconTexture;                                 // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ButtonIconSize;                                    // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                ButtonIconPadding;                                 // 0x0350(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UCanvasPanel*                           ButtonPanel;                                       // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ButtonTextIcon;                                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             ButtonTxt;                                         // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                MainButton;                                        // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                Spacer_ActionIcon;                                 // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                Spacer_Text;                                       // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Tag_new;                                           // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class FText                                   ButtonText;                                        // 0x02D0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FString                                 ActionName;                                        // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          ShowInputForKBM;                                   // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_2F9[0x7];                                      // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          OnClickedSound;                                    // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ShowHoldPrompt;                                    // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          ShowBackground;                                    // 0x0309(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_30A[0x6];                                      // 0x030A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnPressed;                                         // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnReleased;                                        // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnHovered;                                         // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnUnhovered;                                       // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          ShowInputOnGamepad;                                // 0x0350(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsVisualPromptOnly;                                // 0x0351(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_352[0x6];                                      // 0x0352(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             ButtonIconTexture;                                 // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ButtonIconSize;                                    // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                ButtonIconPadding;                                 // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void OnClicked__DelegateSignature(class URBMenuButton_C* Button);
@@ -72,9 +75,9 @@ public:
 	void Construct();
 	void UpdateInputImage();
 	void UpdateButtonText(const class FText& Text);
-	void SetActionName(const class FString& Param_ActionName);
+	void SetActionName(const class FString& ActionName_0);
 	void UpdateButtonTextIcon();
-	void SetButtonIconDetails(class UTexture2D* Param_ButtonIconTexture, const struct FVector2D& Param_ButtonIconSize, const struct FMargin& Param_ButtonIconPadding);
+	void SetButtonIconDetails(class UTexture2D* ButtonIconTexture_0, const struct FVector2D& ButtonIconSize_0, const struct FMargin& ButtonIconPadding_0);
 	void SetIsNew(bool IsNew);
 
 public:
@@ -88,31 +91,34 @@ public:
 	}
 };
 static_assert(alignof(URBMenuButton_C) == 0x000008, "Wrong alignment on URBMenuButton_C");
-static_assert(sizeof(URBMenuButton_C) == 0x000360, "Wrong size on URBMenuButton_C");
+static_assert(sizeof(URBMenuButton_C) == 0x000378, "Wrong size on URBMenuButton_C");
 static_assert(offsetof(URBMenuButton_C, UberGraphFrame) == 0x000268, "Member 'URBMenuButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URBMenuButton_C, ActionIconWidget) == 0x000270, "Member 'URBMenuButton_C::ActionIconWidget' has a wrong offset!");
 static_assert(offsetof(URBMenuButton_C, buttonBackground) == 0x000278, "Member 'URBMenuButton_C::buttonBackground' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ButtonTextIcon) == 0x000280, "Member 'URBMenuButton_C::ButtonTextIcon' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ButtonTxt) == 0x000288, "Member 'URBMenuButton_C::ButtonTxt' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, InvalidationBox_RBMenuButton) == 0x000290, "Member 'URBMenuButton_C::InvalidationBox_RBMenuButton' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, MainButton) == 0x000298, "Member 'URBMenuButton_C::MainButton' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, Tag_new) == 0x0002A0, "Member 'URBMenuButton_C::Tag_new' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, OnClicked) == 0x0002A8, "Member 'URBMenuButton_C::OnClicked' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ButtonText) == 0x0002B8, "Member 'URBMenuButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ActionName) == 0x0002D0, "Member 'URBMenuButton_C::ActionName' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ShowInputForKBM) == 0x0002E0, "Member 'URBMenuButton_C::ShowInputForKBM' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, OnClickedSound) == 0x0002E8, "Member 'URBMenuButton_C::OnClickedSound' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ShowHoldPrompt) == 0x0002F0, "Member 'URBMenuButton_C::ShowHoldPrompt' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ShowBackground) == 0x0002F1, "Member 'URBMenuButton_C::ShowBackground' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, OnPressed) == 0x0002F8, "Member 'URBMenuButton_C::OnPressed' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, OnReleased) == 0x000308, "Member 'URBMenuButton_C::OnReleased' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, OnHovered) == 0x000318, "Member 'URBMenuButton_C::OnHovered' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, OnUnhovered) == 0x000328, "Member 'URBMenuButton_C::OnUnhovered' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ShowInputOnGamepad) == 0x000338, "Member 'URBMenuButton_C::ShowInputOnGamepad' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, IsVisualPromptOnly) == 0x000339, "Member 'URBMenuButton_C::IsVisualPromptOnly' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ButtonIconTexture) == 0x000340, "Member 'URBMenuButton_C::ButtonIconTexture' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ButtonIconSize) == 0x000348, "Member 'URBMenuButton_C::ButtonIconSize' has a wrong offset!");
-static_assert(offsetof(URBMenuButton_C, ButtonIconPadding) == 0x000350, "Member 'URBMenuButton_C::ButtonIconPadding' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ButtonPanel) == 0x000280, "Member 'URBMenuButton_C::ButtonPanel' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ButtonTextIcon) == 0x000288, "Member 'URBMenuButton_C::ButtonTextIcon' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ButtonTxt) == 0x000290, "Member 'URBMenuButton_C::ButtonTxt' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, CanvasPanel_0) == 0x000298, "Member 'URBMenuButton_C::CanvasPanel_0' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, MainButton) == 0x0002A0, "Member 'URBMenuButton_C::MainButton' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, Spacer_ActionIcon) == 0x0002A8, "Member 'URBMenuButton_C::Spacer_ActionIcon' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, Spacer_Text) == 0x0002B0, "Member 'URBMenuButton_C::Spacer_Text' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, Tag_new) == 0x0002B8, "Member 'URBMenuButton_C::Tag_new' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, OnClicked) == 0x0002C0, "Member 'URBMenuButton_C::OnClicked' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ButtonText) == 0x0002D0, "Member 'URBMenuButton_C::ButtonText' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ActionName) == 0x0002E8, "Member 'URBMenuButton_C::ActionName' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ShowInputForKBM) == 0x0002F8, "Member 'URBMenuButton_C::ShowInputForKBM' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, OnClickedSound) == 0x000300, "Member 'URBMenuButton_C::OnClickedSound' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ShowHoldPrompt) == 0x000308, "Member 'URBMenuButton_C::ShowHoldPrompt' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ShowBackground) == 0x000309, "Member 'URBMenuButton_C::ShowBackground' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, OnPressed) == 0x000310, "Member 'URBMenuButton_C::OnPressed' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, OnReleased) == 0x000320, "Member 'URBMenuButton_C::OnReleased' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, OnHovered) == 0x000330, "Member 'URBMenuButton_C::OnHovered' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, OnUnhovered) == 0x000340, "Member 'URBMenuButton_C::OnUnhovered' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ShowInputOnGamepad) == 0x000350, "Member 'URBMenuButton_C::ShowInputOnGamepad' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, IsVisualPromptOnly) == 0x000351, "Member 'URBMenuButton_C::IsVisualPromptOnly' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ButtonIconTexture) == 0x000358, "Member 'URBMenuButton_C::ButtonIconTexture' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ButtonIconSize) == 0x000360, "Member 'URBMenuButton_C::ButtonIconSize' has a wrong offset!");
+static_assert(offsetof(URBMenuButton_C, ButtonIconPadding) == 0x000368, "Member 'URBMenuButton_C::ButtonIconPadding' has a wrong offset!");
 
 }
 

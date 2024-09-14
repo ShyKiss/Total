@@ -32,7 +32,7 @@ public:
 	class UButton*                                InteractionButton;                                 // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                LoadingContainer;                                  // 0x04A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULoadingVideoWidget_C*                  LoadingVideoWidget;                                // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Name_SocialMenu_Entry_Party_C;                     // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Name_0;                                            // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 PartyLeaderIcon;                                   // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 PendingNotificationIcon;                           // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 PlatformIcon;                                      // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -43,7 +43,7 @@ public:
 	bool                                          bIsGamepad;                                        // 0x04F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bHovered;                                          // 0x04F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bFocused;                                          // 0x04F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C11[0x5];                                     // 0x04F3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4F3[0x5];                                      // 0x04F3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class USocialMenu_ContextualMenu_C*           ContextualMenu;                                    // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -96,7 +96,7 @@ static_assert(offsetof(USocialMenu_Entry_Party_C, ContextualMenuButton) == 0x000
 static_assert(offsetof(USocialMenu_Entry_Party_C, InteractionButton) == 0x000498, "Member 'USocialMenu_Entry_Party_C::InteractionButton' has a wrong offset!");
 static_assert(offsetof(USocialMenu_Entry_Party_C, LoadingContainer) == 0x0004A0, "Member 'USocialMenu_Entry_Party_C::LoadingContainer' has a wrong offset!");
 static_assert(offsetof(USocialMenu_Entry_Party_C, LoadingVideoWidget) == 0x0004A8, "Member 'USocialMenu_Entry_Party_C::LoadingVideoWidget' has a wrong offset!");
-static_assert(offsetof(USocialMenu_Entry_Party_C, Name_SocialMenu_Entry_Party_C) == 0x0004B0, "Member 'USocialMenu_Entry_Party_C::Name_SocialMenu_Entry_Party_C' has a wrong offset!");
+static_assert(offsetof(USocialMenu_Entry_Party_C, Name_0) == 0x0004B0, "Member 'USocialMenu_Entry_Party_C::Name_0' has a wrong offset!");
 static_assert(offsetof(USocialMenu_Entry_Party_C, PartyLeaderIcon) == 0x0004B8, "Member 'USocialMenu_Entry_Party_C::PartyLeaderIcon' has a wrong offset!");
 static_assert(offsetof(USocialMenu_Entry_Party_C, PendingNotificationIcon) == 0x0004C0, "Member 'USocialMenu_Entry_Party_C::PendingNotificationIcon' has a wrong offset!");
 static_assert(offsetof(USocialMenu_Entry_Party_C, PlatformIcon) == 0x0004C8, "Member 'USocialMenu_Entry_Party_C::PlatformIcon' has a wrong offset!");

@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HUDObjectives.HUDObjectives_C
-// 0x0048 (0x0330 - 0x02E8)
+// 0x0058 (0x0340 - 0x02E8)
 class UHUDObjectives_C final : public URBHUDElementWidget
 {
 public:
@@ -31,16 +31,17 @@ public:
 	class USecondaryObjectiveWidget_C*            SecondaryObjectiveWidget_335;                      // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           SubobjectivesBox;                                  // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bPauseMenu;                                        // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F7A[0x7];                                     // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBBaseObjectiveCoordinator*            ForcedShownCoordinator;                            // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class USecondaryObjectiveWidget_C*>    SecondaryObjectivesWidgets;                        // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void ExecuteUbergraph_HUDObjectives(int32 EntryPoint);
+	void OnRequestDisplayObjectiveHUD();
 	void OnSingleCompletedObjectiveReverted(class ARBBaseObjectiveCoordinator* Coordinator, class AActor* Objective);
 	void OnSingleObjectiveCompleted(class ARBBaseObjectiveCoordinator* Coordinator, class AActor* Player, class AActor* Objective);
-	void OnProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, float ProgressRatio, bool IsPositiveProgress, const class FText& ObjectiveText);
+	void OnProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, float ProgressRatio, bool IsPositiveProgress, const class FText& ObjectiveText, bool bForceShow);
 	void OnCompletionInProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, bool IsProgressionInProgress, bool IsCompletedByLocalPlayer);
-	void OnRequestDisplayObjectiveHUD();
 	void StateChanged(class ARBBaseObjectiveCoordinator* Coordinator, EObjectiveCoordinatorState State);
 	void Construct();
 	void OnObjectiveStarted(class ARBBaseObjectiveCoordinator* Coordinator);
@@ -61,7 +62,7 @@ public:
 	}
 };
 static_assert(alignof(UHUDObjectives_C) == 0x000008, "Wrong alignment on UHUDObjectives_C");
-static_assert(sizeof(UHUDObjectives_C) == 0x000330, "Wrong size on UHUDObjectives_C");
+static_assert(sizeof(UHUDObjectives_C) == 0x000340, "Wrong size on UHUDObjectives_C");
 static_assert(offsetof(UHUDObjectives_C, UberGraphFrame) == 0x0002E8, "Member 'UHUDObjectives_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHUDObjectives_C, HudWidgetFadeIn) == 0x0002F0, "Member 'UHUDObjectives_C::HudWidgetFadeIn' has a wrong offset!");
 static_assert(offsetof(UHUDObjectives_C, InvalidationBox_HUDObjectives) == 0x0002F8, "Member 'UHUDObjectives_C::InvalidationBox_HUDObjectives' has a wrong offset!");
@@ -71,6 +72,7 @@ static_assert(offsetof(UHUDObjectives_C, SecondaryObjectiveWidget_335) == 0x0003
 static_assert(offsetof(UHUDObjectives_C, SubobjectivesBox) == 0x000318, "Member 'UHUDObjectives_C::SubobjectivesBox' has a wrong offset!");
 static_assert(offsetof(UHUDObjectives_C, bPauseMenu) == 0x000320, "Member 'UHUDObjectives_C::bPauseMenu' has a wrong offset!");
 static_assert(offsetof(UHUDObjectives_C, ForcedShownCoordinator) == 0x000328, "Member 'UHUDObjectives_C::ForcedShownCoordinator' has a wrong offset!");
+static_assert(offsetof(UHUDObjectives_C, SecondaryObjectivesWidgets) == 0x000330, "Member 'UHUDObjectives_C::SecondaryObjectivesWidgets' has a wrong offset!");
 
 }
 

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainMenu_C::ExecuteUbergraph_MainMenu(int32 EntryPoint)
+void AMainMenu_C::ExecuteUbergraph_MainMenu(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
@@ -37,489 +37,203 @@ void UMainMenu_C::ExecuteUbergraph_MainMenu(int32 EntryPoint)
 }
 
 
-// Function MainMenu.MainMenu_C.TryCTA
+// Function MainMenu.MainMenu_C.ForceFranco
 // (BlueprintCallable, BlueprintEvent)
 
-void UMainMenu_C::TryCTA()
+void AMainMenu_C::ForceFranco()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "TryCTA");
+		Func = Class->GetFunction("MainMenu_C", "ForceFranco");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function MainMenu.MainMenu_C.RequestPageLeft
+// Function MainMenu.MainMenu_C.SetEventFeature
 // (BlueprintCallable, BlueprintEvent)
 
-void UMainMenu_C::RequestPageLeft()
+void AMainMenu_C::SetEventFeature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "RequestPageLeft");
+		Func = Class->GetFunction("MainMenu_C", "SetEventFeature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function MainMenu.MainMenu_C.RequestPageRight
+// Function MainMenu.MainMenu_C.ToggleXPCheck
 // (BlueprintCallable, BlueprintEvent)
 
-void UMainMenu_C::RequestPageRight()
+void AMainMenu_C::ToggleXPCheck()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "RequestPageRight");
+		Func = Class->GetFunction("MainMenu_C", "ToggleXPCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function MainMenu.MainMenu_C.Event_OnFocusMenu
-// (Event, Public, BlueprintEvent)
+// Function MainMenu.MainMenu_C.MM_ScratchClose
+// (BlueprintCallable, BlueprintEvent)
 
-void UMainMenu_C::Event_OnFocusMenu()
+void AMainMenu_C::MM_ScratchClose()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "Event_OnFocusMenu");
+		Func = Class->GetFunction("MainMenu_C", "MM_ScratchClose");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function MainMenu.MainMenu_C.Event_OnUnfocusMenu
-// (Event, Public, BlueprintEvent)
+// Function MainMenu.MainMenu_C.MM_Scratch
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainMenu_C::MM_Scratch()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenu_C", "MM_Scratch");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenu.MainMenu_C.OnMainMenuStageChanged
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bShouldHide                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// EMainMenuState                          MainMenuState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainMenu_C::Event_OnUnfocusMenu(bool bShouldHide)
+void AMainMenu_C::OnMainMenuStageChanged(EMainMenuState MainMenuState)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "Event_OnUnfocusMenu");
+		Func = Class->GetFunction("MainMenu_C", "OnMainMenuStageChanged");
 
-	Params::MainMenu_C_Event_OnUnfocusMenu Parms{};
+	Params::MainMenu_C_OnMainMenuStageChanged Parms{};
 
-	Parms.bShouldHide = bShouldHide;
+	Parms.MainMenuState = MainMenuState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function MainMenu.MainMenu_C.OnPlayerProgressionDetailsRetrieved
+// Function MainMenu.MainMenu_C.MM_StopCamera-02
 // (BlueprintCallable, BlueprintEvent)
 
-void UMainMenu_C::OnPlayerProgressionDetailsRetrieved()
+void AMainMenu_C::MM_StopCameraMinus02()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "OnPlayerProgressionDetailsRetrieved");
+		Func = Class->GetFunction("MainMenu_C", "MM_StopCamera-02");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function MainMenu.MainMenu_C.Event_InputSourceChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsGamepad                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function MainMenu.MainMenu_C.MM_StopCamera01
+// (BlueprintCallable, BlueprintEvent)
 
-void UMainMenu_C::Event_InputSourceChanged(bool bIsGamepad)
+void AMainMenu_C::MM_StopCamera01()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "Event_InputSourceChanged");
+		Func = Class->GetFunction("MainMenu_C", "MM_StopCamera01");
 
-	Params::MainMenu_C_Event_InputSourceChanged Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsGamepad = bIsGamepad;
+
+// Function MainMenu.MainMenu_C.MM_PlayCamera-02
+// (Net, NetClient, BlueprintCallable, BlueprintEvent)
+
+void AMainMenu_C::MM_PlayCameraMinus02()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenu_C", "MM_PlayCamera-02");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenu.MainMenu_C.MM_PlayCamera01
+// (Net, NetClient, BlueprintCallable, BlueprintEvent)
+
+void AMainMenu_C::MM_PlayCamera01()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenu_C", "MM_PlayCamera01");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenu.MainMenu_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainMenu_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenu_C", "ReceiveEndPlay");
+
+	Params::MainMenu_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function MainMenu.MainMenu_C.BndEvt__MainMenu_NewsWidget_K2Node_ComponentBoundEvent_3_NewsUpdated__DelegateSignature
-// (BlueprintEvent)
+// Function MainMenu.MainMenu_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void UMainMenu_C::BndEvt__MainMenu_NewsWidget_K2Node_ComponentBoundEvent_3_NewsUpdated__DelegateSignature()
+void AMainMenu_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "BndEvt__MainMenu_NewsWidget_K2Node_ComponentBoundEvent_3_NewsUpdated__DelegateSignature");
+		Func = Class->GetFunction("MainMenu_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function MainMenu.MainMenu_C.DisplayNewsFocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UMainMenu_C::DisplayNewsFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "DisplayNewsFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainMenu_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "Tick");
-
-	Params::MainMenu_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainMenu.MainMenu_C.OnMainMenuFocused
-// (BlueprintCallable, BlueprintEvent)
-
-void UMainMenu_C::OnMainMenuFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "OnMainMenuFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.BndEvt__MainMenu_TutorialButton_K2Node_ComponentBoundEvent_2_Event_Clicked__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenu_C::BndEvt__MainMenu_TutorialButton_K2Node_ComponentBoundEvent_2_Event_Clicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "BndEvt__MainMenu_TutorialButton_K2Node_ComponentBoundEvent_2_Event_Clicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.BndEvt__RejoinSoloGameSessionButton_K2Node_ComponentBoundEvent_1_Event_Clicked__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenu_C::BndEvt__RejoinSoloGameSessionButton_K2Node_ComponentBoundEvent_1_Event_Clicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "BndEvt__RejoinSoloGameSessionButton_K2Node_ComponentBoundEvent_1_Event_Clicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.BndEvt__RejoinPartyButton_K2Node_ComponentBoundEvent_0_Event_Clicked__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenu_C::BndEvt__RejoinPartyButton_K2Node_ComponentBoundEvent_0_Event_Clicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "BndEvt__RejoinPartyButton_K2Node_ComponentBoundEvent_0_Event_Clicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.BndEvt__QuitButton_K2Node_ComponentBoundEvent_7_Event_Clicked__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenu_C::BndEvt__QuitButton_K2Node_ComponentBoundEvent_7_Event_Clicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "BndEvt__QuitButton_K2Node_ComponentBoundEvent_7_Event_Clicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.BndEvt__CreditsButton_K2Node_ComponentBoundEvent_6_Event_Clicked__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenu_C::BndEvt__CreditsButton_K2Node_ComponentBoundEvent_6_Event_Clicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "BndEvt__CreditsButton_K2Node_ComponentBoundEvent_6_Event_Clicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.BndEvt__OptionsButton_K2Node_ComponentBoundEvent_5_Event_Clicked__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenu_C::BndEvt__OptionsButton_K2Node_ComponentBoundEvent_5_Event_Clicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "BndEvt__OptionsButton_K2Node_ComponentBoundEvent_5_Event_Clicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.BndEvt__EnterButton_K2Node_ComponentBoundEvent_4_Event_Clicked__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenu_C::BndEvt__EnterButton_K2Node_ComponentBoundEvent_4_Event_Clicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "BndEvt__EnterButton_K2Node_ComponentBoundEvent_4_Event_Clicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UMainMenu_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.Get_SpectateGridPanel_Visibility_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-ESlateVisibility UMainMenu_C::Get_SpectateGridPanel_Visibility_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "Get_SpectateGridPanel_Visibility_0");
-
-	Params::MainMenu_C_Get_SpectateGridPanel_Visibility_0 Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MainMenu.MainMenu_C.GetChangelist
+// Function MainMenu.MainMenu_C.OnWorldPopulateFinishedTimeSliced
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
-class FString UMainMenu_C::GetChangelist()
+bool AMainMenu_C::OnWorldPopulateFinishedTimeSliced()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "GetChangelist");
+		Func = Class->GetFunction("MainMenu_C", "OnWorldPopulateFinishedTimeSliced");
 
-	Params::MainMenu_C_GetChangelist Parms{};
+	Params::MainMenu_C_OnWorldPopulateFinishedTimeSliced Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function MainMenu.MainMenu_C.StartGame
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UMainMenu_C::StartGame()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "StartGame");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.Get_Crossplay_Text_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText UMainMenu_C::Get_Crossplay_Text_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "Get_Crossplay_Text_0");
-
-	Params::MainMenu_C_Get_Crossplay_Text_0 Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MainMenu.MainMenu_C.GetRejoinPartyButtonVisibility
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-ESlateVisibility UMainMenu_C::GetRejoinPartyButtonVisibility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "GetRejoinPartyButtonVisibility");
-
-	Params::MainMenu_C_GetRejoinPartyButtonVisibility Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MainMenu.MainMenu_C.GetRejoinSoloGameSessionButtonVisibility
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-ESlateVisibility UMainMenu_C::GetRejoinSoloGameSessionButtonVisibility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "GetRejoinSoloGameSessionButtonVisibility");
-
-	Params::MainMenu_C_GetRejoinSoloGameSessionButtonVisibility Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MainMenu.MainMenu_C.Get_EnterButton_Visibility_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-ESlateVisibility UMainMenu_C::Get_EnterButton_Visibility_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "Get_EnterButton_Visibility_0");
-
-	Params::MainMenu_C_Get_EnterButton_Visibility_0 Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MainMenu.MainMenu_C.Get_TutorialButton_Visibility_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-ESlateVisibility UMainMenu_C::Get_TutorialButton_Visibility_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "Get_TutorialButton_Visibility_0");
-
-	Params::MainMenu_C_Get_TutorialButton_Visibility_0 Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MainMenu.MainMenu_C.OnFocusReceived
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// struct FFocusEvent                      InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UMainMenu_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "OnFocusReceived");
-
-	Params::MainMenu_C_OnFocusReceived Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InFocusEvent = std::move(InFocusEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MainMenu.MainMenu_C.GetFirstDisplayedEntry
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UMainMenuButton_C*                NewParam                                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainMenu_C::GetFirstDisplayedEntry(class UMainMenuButton_C** NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "GetFirstDisplayedEntry");
-
-	Params::MainMenu_C_GetFirstDisplayedEntry Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
 }
 
 }

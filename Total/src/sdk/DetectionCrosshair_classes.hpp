@@ -12,6 +12,7 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
 #include "UMG_structs.hpp"
 
@@ -46,9 +47,11 @@ public:
 	float                                         NPCVisualDetectionSmoothed;                        // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DarknessDetectionSmoothed;                         // 0x039C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DetectedDisplay;                                   // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bShouldShow;                                       // 0x03A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_DetectionCrosshair(int32 EntryPoint);
+	void OnPlayerActionStatusChanged(EPlayerActionStatus Status);
 	void Destruct();
 	void OnIsAimingThowableChanged(bool NewAimingState);
 	void Event_OnWatchedPlayerChanged(class ARBPlayer* OldPlayer, class ARBPlayer* NewPlayer);
@@ -100,6 +103,7 @@ static_assert(offsetof(UDetectionCrosshair_C, DarknessDetectionImages) == 0x0003
 static_assert(offsetof(UDetectionCrosshair_C, NPCVisualDetectionSmoothed) == 0x000398, "Member 'UDetectionCrosshair_C::NPCVisualDetectionSmoothed' has a wrong offset!");
 static_assert(offsetof(UDetectionCrosshair_C, DarknessDetectionSmoothed) == 0x00039C, "Member 'UDetectionCrosshair_C::DarknessDetectionSmoothed' has a wrong offset!");
 static_assert(offsetof(UDetectionCrosshair_C, DetectedDisplay) == 0x0003A0, "Member 'UDetectionCrosshair_C::DetectedDisplay' has a wrong offset!");
+static_assert(offsetof(UDetectionCrosshair_C, bShouldShow) == 0x0003A1, "Member 'UDetectionCrosshair_C::bShouldShow' has a wrong offset!");
 
 }
 

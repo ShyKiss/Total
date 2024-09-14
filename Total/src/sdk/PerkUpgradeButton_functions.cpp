@@ -80,9 +80,9 @@ void UPerkUpgradeButton_C::OnUnhoveredEvent__DelegateSignature(class UPerkUpgrad
 // Function PerkUpgradeButton.PerkUpgradeButton_C.OnPressedEvent__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FMenuUpgradeItemInfo             Param_ItemInfo                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FMenuUpgradeItemInfo             ItemInfo_0                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UPerkUpgradeButton_C::OnPressedEvent__DelegateSignature(const struct FMenuUpgradeItemInfo& Param_ItemInfo)
+void UPerkUpgradeButton_C::OnPressedEvent__DelegateSignature(const struct FMenuUpgradeItemInfo& ItemInfo_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -91,7 +91,7 @@ void UPerkUpgradeButton_C::OnPressedEvent__DelegateSignature(const struct FMenuU
 
 	Params::PerkUpgradeButton_C_OnPressedEvent__DelegateSignature Parms{};
 
-	Parms.Param_ItemInfo = std::move(Param_ItemInfo);
+	Parms.ItemInfo_0 = std::move(ItemInfo_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -100,9 +100,9 @@ void UPerkUpgradeButton_C::OnPressedEvent__DelegateSignature(const struct FMenuU
 // Function PerkUpgradeButton.PerkUpgradeButton_C.OnReleasedEvent__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FMenuUpgradeItemInfo             Param_ItemInfo                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FMenuUpgradeItemInfo             ItemInfo_0                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UPerkUpgradeButton_C::OnReleasedEvent__DelegateSignature(const struct FMenuUpgradeItemInfo& Param_ItemInfo)
+void UPerkUpgradeButton_C::OnReleasedEvent__DelegateSignature(const struct FMenuUpgradeItemInfo& ItemInfo_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -111,7 +111,7 @@ void UPerkUpgradeButton_C::OnReleasedEvent__DelegateSignature(const struct FMenu
 
 	Params::PerkUpgradeButton_C_OnReleasedEvent__DelegateSignature Parms{};
 
-	Parms.Param_ItemInfo = std::move(Param_ItemInfo);
+	Parms.ItemInfo_0 = std::move(ItemInfo_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

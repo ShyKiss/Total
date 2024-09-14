@@ -61,21 +61,24 @@ static_assert(sizeof(UGridlyDataTable) == 0x0000C0, "Wrong size on UGridlyDataTa
 static_assert(offsetof(UGridlyDataTable, ViewId) == 0x0000B0, "Member 'UGridlyDataTable::ViewId' has a wrong offset!");
 
 // Class Gridly.GridlyGameSettings
-// 0x00B0 (0x00D8 - 0x0028)
+// 0x00B8 (0x00E0 - 0x0028)
 class UGridlyGameSettings final : public UObject
 {
 public:
 	class FString                                 ImportApiKey;                                      // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ExportApiKey;                                      // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseCombinedNamespaceId;                           // 0x0048(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAlsoExportNamespaceColumn;                        // 0x0049(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F0E[0x6];                                      // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 NamespaceColumnId;                                 // 0x0050(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SourceLanguageColumnIdPrefix;                      // 0x0060(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 TargetLanguageColumnIdPrefix;                      // 0x0070(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseCustomCultureMapping;                          // 0x0080(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F0F[0x7];                                      // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, class FString>            CustomCultureMapping;                              // 0x0088(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, Config, NativeAccessSpecifierPublic)
+	int32                                         ImportMaxRecordsPerRequest;                        // 0x0038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ExportApiKey;                                      // 0x0040(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExportMaxRecordsPerRequest;                        // 0x0050(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseCombinedNamespaceId;                           // 0x0054(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAlsoExportNamespaceColumn;                        // 0x0055(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_56[0x2];                                       // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 NamespaceColumnId;                                 // 0x0058(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SourceLanguageColumnIdPrefix;                      // 0x0068(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 TargetLanguageColumnIdPrefix;                      // 0x0078(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseCustomCultureMapping;                          // 0x0088(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, class FString>            CustomCultureMapping;                              // 0x0090(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, Config, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -88,16 +91,18 @@ public:
 	}
 };
 static_assert(alignof(UGridlyGameSettings) == 0x000008, "Wrong alignment on UGridlyGameSettings");
-static_assert(sizeof(UGridlyGameSettings) == 0x0000D8, "Wrong size on UGridlyGameSettings");
+static_assert(sizeof(UGridlyGameSettings) == 0x0000E0, "Wrong size on UGridlyGameSettings");
 static_assert(offsetof(UGridlyGameSettings, ImportApiKey) == 0x000028, "Member 'UGridlyGameSettings::ImportApiKey' has a wrong offset!");
-static_assert(offsetof(UGridlyGameSettings, ExportApiKey) == 0x000038, "Member 'UGridlyGameSettings::ExportApiKey' has a wrong offset!");
-static_assert(offsetof(UGridlyGameSettings, bUseCombinedNamespaceId) == 0x000048, "Member 'UGridlyGameSettings::bUseCombinedNamespaceId' has a wrong offset!");
-static_assert(offsetof(UGridlyGameSettings, bAlsoExportNamespaceColumn) == 0x000049, "Member 'UGridlyGameSettings::bAlsoExportNamespaceColumn' has a wrong offset!");
-static_assert(offsetof(UGridlyGameSettings, NamespaceColumnId) == 0x000050, "Member 'UGridlyGameSettings::NamespaceColumnId' has a wrong offset!");
-static_assert(offsetof(UGridlyGameSettings, SourceLanguageColumnIdPrefix) == 0x000060, "Member 'UGridlyGameSettings::SourceLanguageColumnIdPrefix' has a wrong offset!");
-static_assert(offsetof(UGridlyGameSettings, TargetLanguageColumnIdPrefix) == 0x000070, "Member 'UGridlyGameSettings::TargetLanguageColumnIdPrefix' has a wrong offset!");
-static_assert(offsetof(UGridlyGameSettings, bUseCustomCultureMapping) == 0x000080, "Member 'UGridlyGameSettings::bUseCustomCultureMapping' has a wrong offset!");
-static_assert(offsetof(UGridlyGameSettings, CustomCultureMapping) == 0x000088, "Member 'UGridlyGameSettings::CustomCultureMapping' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, ImportMaxRecordsPerRequest) == 0x000038, "Member 'UGridlyGameSettings::ImportMaxRecordsPerRequest' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, ExportApiKey) == 0x000040, "Member 'UGridlyGameSettings::ExportApiKey' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, ExportMaxRecordsPerRequest) == 0x000050, "Member 'UGridlyGameSettings::ExportMaxRecordsPerRequest' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, bUseCombinedNamespaceId) == 0x000054, "Member 'UGridlyGameSettings::bUseCombinedNamespaceId' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, bAlsoExportNamespaceColumn) == 0x000055, "Member 'UGridlyGameSettings::bAlsoExportNamespaceColumn' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, NamespaceColumnId) == 0x000058, "Member 'UGridlyGameSettings::NamespaceColumnId' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, SourceLanguageColumnIdPrefix) == 0x000068, "Member 'UGridlyGameSettings::SourceLanguageColumnIdPrefix' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, TargetLanguageColumnIdPrefix) == 0x000078, "Member 'UGridlyGameSettings::TargetLanguageColumnIdPrefix' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, bUseCustomCultureMapping) == 0x000088, "Member 'UGridlyGameSettings::bUseCustomCultureMapping' has a wrong offset!");
+static_assert(offsetof(UGridlyGameSettings, CustomCultureMapping) == 0x000090, "Member 'UGridlyGameSettings::CustomCultureMapping' has a wrong offset!");
 
 // Class Gridly.GridlyTask_DownloadLocalizedTexts
 // 0x00B8 (0x00E8 - 0x0030)
@@ -107,7 +112,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnProgress;                                        // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F10[0x88];                                     // 0x0060(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x88];                                      // 0x0060(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGridlyTask_DownloadLocalizedTexts* DownloadLocalizedTexts(const class UObject* WorldContextObject, const class FString& ViewId);
@@ -136,11 +141,11 @@ public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnProgress;                                        // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F11[0x78];                                     // 0x0060(0x0078)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x78];                                      // 0x0060(0x0078)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGridlyDataTable*                       GridlyDataTable;                                   // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
-	static class UGridlyTask_ImportDataTableFromGridly* ImportDataTableFromGridly(const class UObject* WorldContextObject, class UGridlyDataTable* Param_GridlyDataTable);
+	static class UGridlyTask_ImportDataTableFromGridly* ImportDataTableFromGridly(const class UObject* WorldContextObject, class UGridlyDataTable* GridlyDataTable_0);
 
 public:
 	static class UClass* StaticClass()

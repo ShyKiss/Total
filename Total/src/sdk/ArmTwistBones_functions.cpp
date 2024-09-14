@@ -41,9 +41,9 @@ void UArmTwistBones_C::ExecuteUbergraph_ArmTwistBones(int32 EntryPoint)
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FPoseLink                        InPose                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink                        Param_AnimGraph                                        (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UArmTwistBones_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* Param_AnimGraph)
+void UArmTwistBones_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -56,8 +56,8 @@ void UArmTwistBones_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLin
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_AnimGraph != nullptr)
-		*Param_AnimGraph = std::move(Parms.Param_AnimGraph);
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

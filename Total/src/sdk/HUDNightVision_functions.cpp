@@ -260,9 +260,9 @@ void UHUDNightVision_C::Event_Show()
 // Function HUDNightVision.HUDNightVision_C.SetIsNVActive
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsNvActive                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsNvActive_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UHUDNightVision_C::SetIsNVActive(bool Param_IsNvActive)
+void UHUDNightVision_C::SetIsNVActive(bool IsNvActive_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -271,7 +271,7 @@ void UHUDNightVision_C::SetIsNVActive(bool Param_IsNvActive)
 
 	Params::HUDNightVision_C_SetIsNVActive Parms{};
 
-	Parms.Param_IsNvActive = Param_IsNvActive;
+	Parms.IsNvActive_0 = IsNvActive_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -321,9 +321,9 @@ void UHUDNightVision_C::GetBatteryBoosterValue(float* StaminaBoosterValue)
 // Function HUDNightVision.HUDNightVision_C.HandleMaxBatteryChange
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Param_Max_Battery                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Max_Battery_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UHUDNightVision_C::HandleMaxBatteryChange(float Param_Max_Battery)
+void UHUDNightVision_C::HandleMaxBatteryChange(float Max_Battery_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -332,7 +332,7 @@ void UHUDNightVision_C::HandleMaxBatteryChange(float Param_Max_Battery)
 
 	Params::HUDNightVision_C_HandleMaxBatteryChange Parms{};
 
-	Parms.Param_Max_Battery = Param_Max_Battery;
+	Parms.Max_Battery_0 = Max_Battery_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

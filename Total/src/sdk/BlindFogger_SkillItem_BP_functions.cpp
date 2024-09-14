@@ -37,20 +37,6 @@ void ABlindFogger_SkillItem_BP_C::ExecuteUbergraph_BlindFogger_SkillItem_BP(int3
 }
 
 
-// Function BlindFogger_SkillItem_BP.BlindFogger_SkillItem_BP_C.toto
-// (BlueprintCallable, BlueprintEvent)
-
-void ABlindFogger_SkillItem_BP_C::Toto()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlindFogger_SkillItem_BP_C", "toto");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BlindFogger_SkillItem_BP.BlindFogger_SkillItem_BP_C.On Skill Deactivate FX
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:

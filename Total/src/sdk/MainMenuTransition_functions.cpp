@@ -55,9 +55,9 @@ void UMainMenuTransition_C::Construct()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Fade                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_FadeSpeed                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   FadeSpeed_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainMenuTransition_C::Play(float Fade, float Param_FadeSpeed)
+void UMainMenuTransition_C::Play(float Fade, float FadeSpeed_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67,7 +67,7 @@ void UMainMenuTransition_C::Play(float Fade, float Param_FadeSpeed)
 	Params::MainMenuTransition_C_Play Parms{};
 
 	Parms.Fade = Fade;
-	Parms.Param_FadeSpeed = Param_FadeSpeed;
+	Parms.FadeSpeed_0 = FadeSpeed_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

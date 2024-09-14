@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "Slate_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Slate_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,7 +25,7 @@ struct XPProgressBar_C_ExecuteUbergraph_XPProgressBar final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2D23[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,15 +45,15 @@ static_assert(offsetof(XPProgressBar_C_ExecuteUbergraph_XPProgressBar, CallFunc_
 struct XPProgressBar_C_Init final
 {
 public:
-	int32                                         Param_PlayerLevel;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_StartXp;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_CurrentXp;                                   // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PlayerLevel_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         StartXp_0;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentXp_0;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(XPProgressBar_C_Init) == 0x000004, "Wrong alignment on XPProgressBar_C_Init");
 static_assert(sizeof(XPProgressBar_C_Init) == 0x00000C, "Wrong size on XPProgressBar_C_Init");
-static_assert(offsetof(XPProgressBar_C_Init, Param_PlayerLevel) == 0x000000, "Member 'XPProgressBar_C_Init::Param_PlayerLevel' has a wrong offset!");
-static_assert(offsetof(XPProgressBar_C_Init, Param_StartXp) == 0x000004, "Member 'XPProgressBar_C_Init::Param_StartXp' has a wrong offset!");
-static_assert(offsetof(XPProgressBar_C_Init, Param_CurrentXp) == 0x000008, "Member 'XPProgressBar_C_Init::Param_CurrentXp' has a wrong offset!");
+static_assert(offsetof(XPProgressBar_C_Init, PlayerLevel_0) == 0x000000, "Member 'XPProgressBar_C_Init::PlayerLevel_0' has a wrong offset!");
+static_assert(offsetof(XPProgressBar_C_Init, StartXp_0) == 0x000004, "Member 'XPProgressBar_C_Init::StartXp_0' has a wrong offset!");
+static_assert(offsetof(XPProgressBar_C_Init, CurrentXp_0) == 0x000008, "Member 'XPProgressBar_C_Init::CurrentXp_0' has a wrong offset!");
 
 // Function XPProgressBar.XPProgressBar_C.Refresh
 // 0x0058 (0x0058 - 0x0000)
@@ -67,7 +67,7 @@ public:
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetMaxPlayerLevel_ReturnValue;            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D24[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_FMax_ReturnValue;                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x003C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x0044(0x0010)(NoDestructor)
@@ -94,13 +94,13 @@ public:
 	int32                                         Xp;                                                // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D25[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBPlayerProgressionData*               CallFunc_GetPlayerProgressionData_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetPlayerLevelRequiredXP_ReturnValue;     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D26[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(XPProgressBar_C_InitProgressBar) == 0x000008, "Wrong alignment on XPProgressBar_C_InitProgressBar");
@@ -121,15 +121,15 @@ static_assert(offsetof(XPProgressBar_C_InitProgressBar, CallFunc_Divide_FloatFlo
 struct XPProgressBar_C_Update final
 {
 public:
-	int32                                         Param_PlayerLevel;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_StartXp;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_CurrentXp;                                   // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PlayerLevel_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         StartXp_0;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentXp_0;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(XPProgressBar_C_Update) == 0x000004, "Wrong alignment on XPProgressBar_C_Update");
 static_assert(sizeof(XPProgressBar_C_Update) == 0x00000C, "Wrong size on XPProgressBar_C_Update");
-static_assert(offsetof(XPProgressBar_C_Update, Param_PlayerLevel) == 0x000000, "Member 'XPProgressBar_C_Update::Param_PlayerLevel' has a wrong offset!");
-static_assert(offsetof(XPProgressBar_C_Update, Param_StartXp) == 0x000004, "Member 'XPProgressBar_C_Update::Param_StartXp' has a wrong offset!");
-static_assert(offsetof(XPProgressBar_C_Update, Param_CurrentXp) == 0x000008, "Member 'XPProgressBar_C_Update::Param_CurrentXp' has a wrong offset!");
+static_assert(offsetof(XPProgressBar_C_Update, PlayerLevel_0) == 0x000000, "Member 'XPProgressBar_C_Update::PlayerLevel_0' has a wrong offset!");
+static_assert(offsetof(XPProgressBar_C_Update, StartXp_0) == 0x000004, "Member 'XPProgressBar_C_Update::StartXp_0' has a wrong offset!");
+static_assert(offsetof(XPProgressBar_C_Update, CurrentXp_0) == 0x000008, "Member 'XPProgressBar_C_Update::CurrentXp_0' has a wrong offset!");
 
 }
 

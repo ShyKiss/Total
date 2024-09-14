@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MessageWidget.MessageWidget_C
-// 0x0078 (0x0360 - 0x02E8)
+// 0x0080 (0x0368 - 0x02E8)
 class UMessageWidget_C final : public URBHUDElementWidget
 {
 public:
@@ -36,9 +36,12 @@ public:
 	float                                         LinePadding;                                       // 0x0348(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color;                                             // 0x034C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         MaxNumberMessages;                                 // 0x035C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bShouldShow;                                       // 0x0360(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_MessageWidget(int32 EntryPoint);
+	void OnHideTalkWheel();
+	void OnShowTalkWheel();
 	void Event_Hide();
 	void Event_Show();
 	void PreConstruct(bool IsDesignTime);
@@ -48,6 +51,8 @@ public:
 	void OninputChanged();
 	void HandleItemsIconsDisplay();
 	void HideIcons();
+
+	bool ShouldShow() const;
 
 public:
 	static class UClass* StaticClass()
@@ -60,7 +65,7 @@ public:
 	}
 };
 static_assert(alignof(UMessageWidget_C) == 0x000008, "Wrong alignment on UMessageWidget_C");
-static_assert(sizeof(UMessageWidget_C) == 0x000360, "Wrong size on UMessageWidget_C");
+static_assert(sizeof(UMessageWidget_C) == 0x000368, "Wrong size on UMessageWidget_C");
 static_assert(offsetof(UMessageWidget_C, UberGraphFrame) == 0x0002E8, "Member 'UMessageWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMessageWidget_C, FadeIn) == 0x0002F0, "Member 'UMessageWidget_C::FadeIn' has a wrong offset!");
 static_assert(offsetof(UMessageWidget_C, InvalidationBox_MessageWidget) == 0x0002F8, "Member 'UMessageWidget_C::InvalidationBox_MessageWidget' has a wrong offset!");
@@ -74,6 +79,7 @@ static_assert(offsetof(UMessageWidget_C, Text) == 0x000330, "Member 'UMessageWid
 static_assert(offsetof(UMessageWidget_C, LinePadding) == 0x000348, "Member 'UMessageWidget_C::LinePadding' has a wrong offset!");
 static_assert(offsetof(UMessageWidget_C, Color) == 0x00034C, "Member 'UMessageWidget_C::Color' has a wrong offset!");
 static_assert(offsetof(UMessageWidget_C, MaxNumberMessages) == 0x00035C, "Member 'UMessageWidget_C::MaxNumberMessages' has a wrong offset!");
+static_assert(offsetof(UMessageWidget_C, bShouldShow) == 0x000360, "Member 'UMessageWidget_C::bShouldShow' has a wrong offset!");
 
 }
 

@@ -76,10 +76,10 @@ void UActionIconWidget_C::OnHudActionProgressChanged(float NewProgress, EActionP
 // Function ActionIconWidget.ActionIconWidget_C.OnMenuActionProgressChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_ActionName                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ActionName_0                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   NewProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UActionIconWidget_C::OnMenuActionProgressChanged(const class FName& Param_ActionName, float NewProgress)
+void UActionIconWidget_C::OnMenuActionProgressChanged(const class FName& ActionName_0, float NewProgress)
 {
 	static class UFunction* Func = nullptr;
 
@@ -88,7 +88,7 @@ void UActionIconWidget_C::OnMenuActionProgressChanged(const class FName& Param_A
 
 	Params::ActionIconWidget_C_OnMenuActionProgressChanged Parms{};
 
-	Parms.Param_ActionName = Param_ActionName;
+	Parms.ActionName_0 = ActionName_0;
 	Parms.NewProgress = NewProgress;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -238,9 +238,9 @@ void UActionIconWidget_C::ShowContainer(class UPanelWidget* Container)
 // Function ActionIconWidget.ActionIconWidget_C.SetDesiredHeight
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Param_DesiredHeight                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DesiredHeight_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UActionIconWidget_C::SetDesiredHeight(float Param_DesiredHeight)
+void UActionIconWidget_C::SetDesiredHeight(float DesiredHeight_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -249,7 +249,7 @@ void UActionIconWidget_C::SetDesiredHeight(float Param_DesiredHeight)
 
 	Params::ActionIconWidget_C_SetDesiredHeight Parms{};
 
-	Parms.Param_DesiredHeight = Param_DesiredHeight;
+	Parms.DesiredHeight_0 = DesiredHeight_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

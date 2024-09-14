@@ -20,9 +20,10 @@ namespace SDK
 // Function SelectableRewardWidget.SelectableRewardWidget_C.OnHovered__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRewardUIData                    Param_Reward                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FRewardUIData                    Reward_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// class USelectableRewardWidget_C*        Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USelectableRewardWidget_C::OnHovered__DelegateSignature(const struct FRewardUIData& Param_Reward)
+void USelectableRewardWidget_C::OnHovered__DelegateSignature(const struct FRewardUIData& Reward_0, class USelectableRewardWidget_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +32,8 @@ void USelectableRewardWidget_C::OnHovered__DelegateSignature(const struct FRewar
 
 	Params::SelectableRewardWidget_C_OnHovered__DelegateSignature Parms{};
 
-	Parms.Param_Reward = std::move(Param_Reward);
+	Parms.Reward_0 = std::move(Reward_0);
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -40,9 +42,10 @@ void USelectableRewardWidget_C::OnHovered__DelegateSignature(const struct FRewar
 // Function SelectableRewardWidget.SelectableRewardWidget_C.OnUnhovered__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRewardUIData                    Param_Reward                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FRewardUIData                    Reward_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// class USelectableRewardWidget_C*        Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USelectableRewardWidget_C::OnUnhovered__DelegateSignature(const struct FRewardUIData& Param_Reward)
+void USelectableRewardWidget_C::OnUnhovered__DelegateSignature(const struct FRewardUIData& Reward_0, class USelectableRewardWidget_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,14 +54,29 @@ void USelectableRewardWidget_C::OnUnhovered__DelegateSignature(const struct FRew
 
 	Params::SelectableRewardWidget_C_OnUnhovered__DelegateSignature Parms{};
 
-	Parms.Param_Reward = std::move(Param_Reward);
+	Parms.Reward_0 = std::move(Reward_0);
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
+// Function SelectableRewardWidget.SelectableRewardWidget_C.OnClicked__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void USelectableRewardWidget_C::OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SelectableRewardWidget_C", "OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SelectableRewardWidget.SelectableRewardWidget_C.ExecuteUbergraph_SelectableRewardWidget
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -72,6 +90,40 @@ void USelectableRewardWidget_C::ExecuteUbergraph_SelectableRewardWidget(int32 En
 	Params::SelectableRewardWidget_C_ExecuteUbergraph_SelectableRewardWidget Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SelectableRewardWidget.SelectableRewardWidget_C.BndEvt__SelectableRewardWidget_InteractionButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void USelectableRewardWidget_C::BndEvt__SelectableRewardWidget_InteractionButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SelectableRewardWidget_C", "BndEvt__SelectableRewardWidget_InteractionButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SelectableRewardWidget.SelectableRewardWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void USelectableRewardWidget_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SelectableRewardWidget_C", "PreConstruct");
+
+	Params::SelectableRewardWidget_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -150,9 +202,9 @@ void USelectableRewardWidget_C::BndEvt__PerkCategoryButton_InteractionButton_K2N
 // Function SelectableRewardWidget.SelectableRewardWidget_C.Init
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRewardUIData                    Param_Reward                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FRewardUIData                    Reward_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void USelectableRewardWidget_C::Init(const struct FRewardUIData& Param_Reward)
+void USelectableRewardWidget_C::Init(const struct FRewardUIData& Reward_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -161,7 +213,7 @@ void USelectableRewardWidget_C::Init(const struct FRewardUIData& Param_Reward)
 
 	Params::SelectableRewardWidget_C_Init Parms{};
 
-	Parms.Param_Reward = std::move(Param_Reward);
+	Parms.Reward_0 = std::move(Reward_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -242,9 +294,9 @@ void USelectableRewardWidget_C::Refresh()
 // Function SelectableRewardWidget.SelectableRewardWidget_C.SetHovered
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsHovered                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsHovered_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void USelectableRewardWidget_C::SetHovered(bool Param_IsHovered)
+void USelectableRewardWidget_C::SetHovered(bool IsHovered_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -253,7 +305,7 @@ void USelectableRewardWidget_C::SetHovered(bool Param_IsHovered)
 
 	Params::SelectableRewardWidget_C_SetHovered Parms{};
 
-	Parms.Param_IsHovered = Param_IsHovered;
+	Parms.IsHovered_0 = IsHovered_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -300,26 +352,6 @@ void USelectableRewardWidget_C::IsConsideredHovered(bool* bConsideredHovered)
 }
 
 
-// Function SelectableRewardWidget.SelectableRewardWidget_C.OnAddedToFocusPath
-// (BlueprintCosmetic, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FFocusEvent                      InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void USelectableRewardWidget_C::OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SelectableRewardWidget_C", "OnAddedToFocusPath");
-
-	Params::SelectableRewardWidget_C_OnAddedToFocusPath Parms{};
-
-	Parms.InFocusEvent = std::move(InFocusEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function SelectableRewardWidget.SelectableRewardWidget_C.OnRemovedFromFocusPath
 // (BlueprintCosmetic, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -337,6 +369,31 @@ void USelectableRewardWidget_C::OnRemovedFromFocusPath(const struct FFocusEvent&
 	Parms.InFocusEvent = std::move(InFocusEvent);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SelectableRewardWidget.SelectableRewardWidget_C.OnFocusReceived
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// struct FFocusEvent                      InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply USelectableRewardWidget_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SelectableRewardWidget_C", "OnFocusReceived");
+
+	Params::SelectableRewardWidget_C_OnFocusReceived Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InFocusEvent = std::move(InFocusEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

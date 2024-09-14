@@ -20,7 +20,7 @@ struct TutorialPopUp_C_ExecuteUbergraph_TutorialPopUp final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2ADC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TutorialPopUp_C_ExecuteUbergraph_TutorialPopUp) == 0x000008, "Wrong alignment on TutorialPopUp_C_ExecuteUbergraph_TutorialPopUp");
@@ -44,12 +44,12 @@ static_assert(offsetof(TutorialPopUp_C_BndEvt__RBMenuButton_K2Node_ComponentBoun
 struct TutorialPopUp_C_Initialize final
 {
 public:
-	class FText                                   Param_Text;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   Text_0;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   CallFunc_FormatTextForDecorator_ReturnValue;       // 0x0018(0x0018)()
 };
 static_assert(alignof(TutorialPopUp_C_Initialize) == 0x000008, "Wrong alignment on TutorialPopUp_C_Initialize");
 static_assert(sizeof(TutorialPopUp_C_Initialize) == 0x000030, "Wrong size on TutorialPopUp_C_Initialize");
-static_assert(offsetof(TutorialPopUp_C_Initialize, Param_Text) == 0x000000, "Member 'TutorialPopUp_C_Initialize::Param_Text' has a wrong offset!");
+static_assert(offsetof(TutorialPopUp_C_Initialize, Text_0) == 0x000000, "Member 'TutorialPopUp_C_Initialize::Text_0' has a wrong offset!");
 static_assert(offsetof(TutorialPopUp_C_Initialize, CallFunc_FormatTextForDecorator_ReturnValue) == 0x000018, "Member 'TutorialPopUp_C_Initialize::CallFunc_FormatTextForDecorator_ReturnValue' has a wrong offset!");
 
 }

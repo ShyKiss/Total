@@ -360,38 +360,16 @@ static HRESULT WINAPI hkCreateSwapChainForComposition(IDXGIFactory* pFactory,
 
 namespace DX12 {
     void Hook(HWND hwnd) {
-        //Console::Alloc( );
-       // AllocConsole( );
         if (!CreateDeviceD3D12(GetConsoleWindow())) {
             LOG("[!] CreateDeviceD3D12() failed.\n");
-          //  Console::Free( );
             return;
         }
-        //PostMessage(GetConsoleWindow( ), WM_CLOSE, 0, 0);
-        //FreeConsole( );
     
         LOG("[+] DirectX12: g_pd3dDevice: 0x%p\n", g_pd3dDevice);
         LOG("[+] DirectX12: g_dxgiFactory: 0x%p\n", g_dxgiFactory);
         LOG("[+] DirectX12: g_pd3dCommandQueue: 0x%p\n", g_pd3dCommandQueue);
         LOG("[+] DirectX12: g_pSwapChain: 0x%p\n", g_pSwapChain);
 
-        //Console::Free( );
-
-        //SDK::UOPPEngine* Engine = static_cast<SDK::UOPPEngine*>(SDK::UOPPEngine::GetEngine( ));
-       // SDK::UWorld* World = SDK::UWorld::GetWorld( );
-
-        //while (!SDK::UKismetSystemLibrary::IsValid(Engine) || !SDK::UKismetSystemLibrary::IsValid(World)) {
-        //}
-
-        //SDK::UInputSettings::GetDefaultObj( )->ConsoleKeys[0].KeyName = SDK::UKismetStringLibrary::Conv_StringToName(L"F2");
-
-        /* Creates a new UObject of class-type specified by Engine->ConsoleClass */
-        //SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(Engine->ConsoleClass, Engine->GameViewport);
-        // SDK::UObject* NewCheatManager = SDK::UGameplayStatics::SpawnObject(SDK::UCheatManager::StaticClass(), SDK::UCheatManager::StaticClass()->Super);
-
-        /* The Object we created is a subclass of UConsole, so this cast is **safe**. */
-        //Engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
-        // World->OwningGameInstance->LocalPlayers[0]->PlayerController->CheatManager = static_cast<SDK::UCheatManager*>(NewCheatManager);
 
         if (g_pd3dDevice) {
             Menu::InitializeContext(hwnd);
@@ -461,7 +439,7 @@ namespace DX12 {
 
         CleanupDeviceD3D12( );
     }
-} // namespace DX12
+}
 
 static void CleanupRenderTarget( ) {
     for (UINT i = 0; i < NUM_BACK_BUFFERS; ++i)
@@ -512,24 +490,7 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
                 ImGui::GetIO( ).WantCaptureMouse || ImGui::GetIO( ).WantTextInput || ImGui::GetIO( ).WantCaptureKeyboard;
                 ImGui::GetIO( ).ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
                 ImGui::GetIO( ).Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\Consolab.ttf", 12.0f, NULL, ImGui::GetIO( ).Fonts->GetGlyphRangesCyrillic( ));
-                ImWchar rangesd[] = {0x1, 0x1FFFF, 0};
-                ImVector<ImWchar> ranges;
-                ImFontGlyphRangesBuilder builder;
-
-                builder.AddRanges(rangesd);
-               //builder.AddRanges(ImGui::GetIO( ).Fonts->GetGlyphRangesChineseFull());
-               //builder.AddRanges(ImGui::GetIO( ).Fonts->GetGlyphRangesDefault( ));
-               //builder.AddRanges(ImGui::GetIO( ).Fonts->GetGlyphRangesCyrillic( ));
-               //builder.AddRanges(ImGui::GetIO( ).Fonts->GetGlyphRangesChineseSimplifiedCommon( ));
-               //builder.AddRanges(ImGui::GetIO( ).Fonts->GetGlyphRangesGreek());
-               //builder.AddRanges(ImGui::GetIO( ).Fonts->GetGlyphRangesKorean());
-               //builder.AddRanges(ImGui::GetIO( ).Fonts->GetGlyphRangesThai( ));
-               //builder.AddRanges(ImGui::GetIO( ).Fonts->GetGlyphRangesVietnamese( ));
-               //builder.AddRanges(ImGui::GetIO( ).Fonts->GetGlyphRangesJapanese( )); // Add one of the default ranges
-                builder.BuildRanges(&ranges);
-                ImGui::GetIO( ).Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\l_10646.ttf", 16.0f, nullptr, ranges.Data);
                 ImGui::GetIO( ).Fonts->Build( );
-               // l_10646.ttf
 
                 D3D12_DESCRIPTOR_HEAP_DESC desc = { };
                 desc.Type = D3D12_DESCRIPTOR_HEAP_TYPE_RTV;
@@ -745,9 +706,6 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
             ImGui::NewFrame( );
 
             Menu::Render( );
-
-            //LoadFromResourceName( )
-
             ImGui::Render( );
 
             UINT backBufferIdx = pSwapChain->GetCurrentBackBufferIndex( );
@@ -770,13 +728,7 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
             barrier.Transition.StateBefore = D3D12_RESOURCE_STATE_RENDER_TARGET;
             barrier.Transition.StateAfter = D3D12_RESOURCE_STATE_PRESENT;
             g_pd3dCommandList->ResourceBarrier(1, &barrier);
-            g_pd3dCommandList->Close( );
-
-
-            //g_pSwapChain->Present(1, 0);
-
-            //Sleep(3000);
-
+            g_pd3dCommandList->Close();
             g_pd3dCommandQueue->ExecuteCommandLists(1, reinterpret_cast<ID3D12CommandList* const*>(&g_pd3dCommandList));
         }
     }
@@ -791,5 +743,5 @@ bool IsValid(const SDK::UObject* Object) {
 namespace DX12 {
     void Hook(HWND hwnd) { LOG("[!] DirectX12 backend is not enabled!\n"); }
     void Unhook( ) { }
-} // namespace DX12
+}
 #endif

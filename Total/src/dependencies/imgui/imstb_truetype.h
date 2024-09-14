@@ -4177,8 +4177,8 @@ STBTT_DEF int stbtt_PackFontRangesGatherRects(stbtt_pack_context *spc, const stb
                                             scale * spc->v_oversample,
                                             0,0,
                                             &x0,&y0,&x1,&y1);
-            rects[k].w = (stbrp_coord) (x1-x0 + spc->padding + spc->h_oversample-1);
-            rects[k].h = (stbrp_coord) (y1-y0 + spc->padding + spc->v_oversample-1);
+            rects[k].w = (stbrp_coord) (x1-x0 + spc->padding + spc->h_oversample-1 + 1);
+            rects[k].h = (stbrp_coord) (y1-y0 + spc->padding + spc->v_oversample-1 + 2);
             if (glyph == 0)
                missing_glyph_added = 1;
          }

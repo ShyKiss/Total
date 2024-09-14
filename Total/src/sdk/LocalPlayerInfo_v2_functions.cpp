@@ -37,12 +37,46 @@ void ULocalPlayerInfo_v2_C::ExecuteUbergraph_LocalPlayerInfo_v2(int32 EntryPoint
 }
 
 
+// Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void ULocalPlayerInfo_v2_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LocalPlayerInfo_v2_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ULocalPlayerInfo_v2_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LocalPlayerInfo_v2_C", "PreConstruct");
+
+	Params::LocalPlayerInfo_v2_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.LoadAndApplyPlayerIcon
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class URBPlayerIconCustomizationOption* Param_PlayerIcon                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class URBPlayerIconCustomizationOption* PlayerIcon_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULocalPlayerInfo_v2_C::LoadAndApplyPlayerIcon(class URBPlayerIconCustomizationOption* Param_PlayerIcon)
+void ULocalPlayerInfo_v2_C::LoadAndApplyPlayerIcon(class URBPlayerIconCustomizationOption* PlayerIcon_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +85,7 @@ void ULocalPlayerInfo_v2_C::LoadAndApplyPlayerIcon(class URBPlayerIconCustomizat
 
 	Params::LocalPlayerInfo_v2_C_LoadAndApplyPlayerIcon Parms{};
 
-	Parms.Param_PlayerIcon = Param_PlayerIcon;
+	Parms.PlayerIcon_0 = PlayerIcon_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -202,6 +236,76 @@ void ULocalPlayerInfo_v2_C::SetLevel(int32 Value)
 	Params::LocalPlayerInfo_v2_C_SetLevel Parms{};
 
 	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.FilterVisibleCurrencies
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<ECurrencyType>                   Types                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ULocalPlayerInfo_v2_C::FilterVisibleCurrencies(TArray<ECurrencyType>& Types)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LocalPlayerInfo_v2_C", "FilterVisibleCurrencies");
+
+	Params::LocalPlayerInfo_v2_C_FilterVisibleCurrencies Parms{};
+
+	Parms.Types = std::move(Types);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Types = std::move(Parms.Types);
+}
+
+
+// Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.RefreshVisibleCurrencies
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ULocalPlayerInfo_v2_C::RefreshVisibleCurrencies()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LocalPlayerInfo_v2_C", "RefreshVisibleCurrencies");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.OnLocalPlayerLevelChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ULocalPlayerInfo_v2_C::OnLocalPlayerLevelChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LocalPlayerInfo_v2_C", "OnLocalPlayerLevelChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LocalPlayerInfo_v2.LocalPlayerInfo_v2_C.UpdateIconFrame
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ReleaseCount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ULocalPlayerInfo_v2_C::UpdateIconFrame(int32 ReleaseCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LocalPlayerInfo_v2_C", "UpdateIconFrame");
+
+	Params::LocalPlayerInfo_v2_C_UpdateIconFrame Parms{};
+
+	Parms.ReleaseCount = ReleaseCount;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

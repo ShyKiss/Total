@@ -37,6 +37,26 @@ void UError_ConfirmPopup_C::ExecuteUbergraph_Error_ConfirmPopup(int32 EntryPoint
 }
 
 
+// Function Error_ConfirmPopup.Error_ConfirmPopup_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UError_ConfirmPopup_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Error_ConfirmPopup_C", "PreConstruct");
+
+	Params::Error_ConfirmPopup_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Error_ConfirmPopup.Error_ConfirmPopup_C.Event_InputSourceChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:

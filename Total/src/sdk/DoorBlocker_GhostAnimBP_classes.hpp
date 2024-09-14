@@ -20,47 +20,57 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass DoorBlocker_GhostAnimBP.DoorBlocker_GhostAnimBP_C
-// 0x06E0 (0x09D0 - 0x02F0)
+// 0x0730 (0x0A20 - 0x02F0)
 class UDoorBlocker_GhostAnimBP_C final : public URBGhostAnimInstance
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02F8(0x0030)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_4;                  // 0x0328(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_3;                  // 0x0350(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_2;                  // 0x0378(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_1;                  // 0x03A0(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult;                    // 0x03C8(0x0028)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_5;                    // 0x03F0(0x0080)()
-	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool;                     // 0x0470(0x00A8)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_4;                    // 0x0518(0x0080)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_5;                       // 0x0598(0x0030)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_3;                    // 0x05C8(0x0080)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_4;                       // 0x0648(0x0030)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x0678(0x0080)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_3;                       // 0x06F8(0x0030)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0728(0x0080)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_2;                       // 0x07A8(0x0030)()
-	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator;                   // 0x07D8(0x0050)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_1;                       // 0x0828(0x0030)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0858(0x0080)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult;                         // 0x08D8(0x0030)()
-	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x0908(0x00B0)()
-	bool                                          Finished;                                          // 0x09B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Stopped;                                           // 0x09B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3112[0x6];                                     // 0x09BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPickup*                              HoldConsumeActionItem;                             // 0x09C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Progress;                                          // 0x09C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_6;                  // 0x0328(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_5;                  // 0x0350(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_4;                  // 0x0378(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_3;                  // 0x03A0(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_2;                  // 0x03C8(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_1;                  // 0x03F0(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult;                    // 0x0418(0x0028)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_4;                    // 0x0440(0x0080)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_6;                       // 0x04C0(0x0030)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_3;                    // 0x04F0(0x0080)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_5;                       // 0x0570(0x0030)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x05A0(0x0080)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_4;                       // 0x0620(0x0030)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer;                    // 0x0650(0x00E8)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_3;                       // 0x0738(0x0030)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0768(0x0080)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_2;                       // 0x07E8(0x0030)()
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator;                   // 0x0818(0x0050)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_1;                       // 0x0868(0x0030)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0898(0x0080)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult;                         // 0x0918(0x0030)()
+	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x0948(0x00B0)()
+	bool                                          Finished;                                          // 0x09F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Stopped;                                           // 0x09F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9FA[0x6];                                      // 0x09FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ADoorBlocker_SkillItem_BP_C*            BarricadeSkillItem;                                // 0x0A00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HoldProgressExplicitTime;                          // 0x0A08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A0C[0x4];                                      // 0x0A0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UESOP_Barricade_AnimBP_C*               ESOPBarricadeAnimBP;                               // 0x0A10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_DoorBlocker_GhostAnimBP(int32 EntryPoint);
+	void OnNetworkDesyncResolved();
+	void AnimNotify_Finishing();
+	void AnimNotify_Finished();
+	void AnimNotify_Leave();
+	void AnimNotify_Start();
 	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void AnimNotify_Holding();
-	void AnimNotify_Finish();
 	void BP_ClearGhost();
 	void BP_InitializeGhost();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_DoorBlocker_GhostAnimBP_AnimGraphNode_TransitionResult_1A5C132A44ED37CCAC1AA98B59A48CBF();
 	bool FinishGhost(EGhostFinishReason FinishReason, int32 GhostFinishCustomReason);
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
+	void InitializeBarricadeVariables();
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()
@@ -73,33 +83,36 @@ public:
 	}
 };
 static_assert(alignof(UDoorBlocker_GhostAnimBP_C) == 0x000010, "Wrong alignment on UDoorBlocker_GhostAnimBP_C");
-static_assert(sizeof(UDoorBlocker_GhostAnimBP_C) == 0x0009D0, "Wrong size on UDoorBlocker_GhostAnimBP_C");
+static_assert(sizeof(UDoorBlocker_GhostAnimBP_C) == 0x000A20, "Wrong size on UDoorBlocker_GhostAnimBP_C");
 static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, UberGraphFrame) == 0x0002F0, "Member 'UDoorBlocker_GhostAnimBP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_Root) == 0x0002F8, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_4) == 0x000328, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_3) == 0x000350, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_2) == 0x000378, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_1) == 0x0003A0, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult) == 0x0003C8, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer_5) == 0x0003F0, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer_5' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_BlendListByBool) == 0x000470, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer_4) == 0x000518, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer_4' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_5) == 0x000598, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_5' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer_3) == 0x0005C8, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_4) == 0x000648, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer_2) == 0x000678, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_3) == 0x0006F8, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer_1) == 0x000728, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_2) == 0x0007A8, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequenceEvaluator) == 0x0007D8, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequenceEvaluator' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_1) == 0x000828, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer) == 0x000858, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult) == 0x0008D8, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateMachine) == 0x000908, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, Finished) == 0x0009B8, "Member 'UDoorBlocker_GhostAnimBP_C::Finished' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, Stopped) == 0x0009B9, "Member 'UDoorBlocker_GhostAnimBP_C::Stopped' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, HoldConsumeActionItem) == 0x0009C0, "Member 'UDoorBlocker_GhostAnimBP_C::HoldConsumeActionItem' has a wrong offset!");
-static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, Progress) == 0x0009C8, "Member 'UDoorBlocker_GhostAnimBP_C::Progress' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_6) == 0x000328, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_5) == 0x000350, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_4) == 0x000378, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_3) == 0x0003A0, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_2) == 0x0003C8, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult_1) == 0x0003F0, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_TransitionResult) == 0x000418, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_TransitionResult' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer_4) == 0x000440, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer_4' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_6) == 0x0004C0, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_6' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer_3) == 0x0004F0, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_5) == 0x000570, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_5' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer_2) == 0x0005A0, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_4) == 0x000620, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_4' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_BlendSpacePlayer) == 0x000650, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_3) == 0x000738, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_3' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer_1) == 0x000768, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_2) == 0x0007E8, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_2' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequenceEvaluator) == 0x000818, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequenceEvaluator' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult_1) == 0x000868, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult_1' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_SequencePlayer) == 0x000898, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateResult) == 0x000918, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateResult' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, AnimGraphNode_StateMachine) == 0x000948, "Member 'UDoorBlocker_GhostAnimBP_C::AnimGraphNode_StateMachine' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, Finished) == 0x0009F8, "Member 'UDoorBlocker_GhostAnimBP_C::Finished' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, Stopped) == 0x0009F9, "Member 'UDoorBlocker_GhostAnimBP_C::Stopped' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, BarricadeSkillItem) == 0x000A00, "Member 'UDoorBlocker_GhostAnimBP_C::BarricadeSkillItem' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, HoldProgressExplicitTime) == 0x000A08, "Member 'UDoorBlocker_GhostAnimBP_C::HoldProgressExplicitTime' has a wrong offset!");
+static_assert(offsetof(UDoorBlocker_GhostAnimBP_C, ESOPBarricadeAnimBP) == 0x000A10, "Member 'UDoorBlocker_GhostAnimBP_C::ESOPBarricadeAnimBP' has a wrong offset!");
 
 }
 

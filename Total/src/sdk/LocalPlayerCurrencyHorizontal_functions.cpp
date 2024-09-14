@@ -230,9 +230,9 @@ void ULocalPlayerCurrencyHorizontal_C::StopPreviewing()
 // Function LocalPlayerCurrencyHorizontal.LocalPlayerCurrencyHorizontal_C.SetValueDirectly
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_NewValue                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewValue_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULocalPlayerCurrencyHorizontal_C::SetValueDirectly(int32 Param_NewValue)
+void ULocalPlayerCurrencyHorizontal_C::SetValueDirectly(int32 NewValue_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -241,7 +241,7 @@ void ULocalPlayerCurrencyHorizontal_C::SetValueDirectly(int32 Param_NewValue)
 
 	Params::LocalPlayerCurrencyHorizontal_C_SetValueDirectly Parms{};
 
-	Parms.Param_NewValue = Param_NewValue;
+	Parms.NewValue_0 = NewValue_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

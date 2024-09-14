@@ -179,9 +179,9 @@ void UPartyInviteHudWidget_C::Event_Hide()
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // float                                   DisplayTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_TotalDisplayTime                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   TotalDisplayTime_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPartyInviteHudWidget_C::Event_UpdateDisplayTime(float DisplayTime, float Param_TotalDisplayTime)
+void UPartyInviteHudWidget_C::Event_UpdateDisplayTime(float DisplayTime, float TotalDisplayTime_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -191,7 +191,7 @@ void UPartyInviteHudWidget_C::Event_UpdateDisplayTime(float DisplayTime, float P
 	Params::PartyInviteHudWidget_C_Event_UpdateDisplayTime Parms{};
 
 	Parms.DisplayTime = DisplayTime;
-	Parms.Param_TotalDisplayTime = Param_TotalDisplayTime;
+	Parms.TotalDisplayTime_0 = TotalDisplayTime_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -25,7 +25,7 @@ struct ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B68[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -34,11 +34,11 @@ public:
 	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_isCompletingObjective;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B69[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBObjectiveActorComponent*             CallFunc_GetComponentByClass_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetBoolValue_ReturnValue;                 // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B6A[0x2];                                     // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld) == 0x000008, "Wrong alignment on ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld");
@@ -94,73 +94,65 @@ static_assert(sizeof(ObjectiveInWorld_C_PreConstruct) == 0x000001, "Wrong size o
 static_assert(offsetof(ObjectiveInWorld_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ObjectiveInWorld_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ObjectiveInWorld.ObjectiveInWorld_C.UpdateDistanceEffects
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct ObjectiveInWorld_C_UpdateDistanceEffects final
 {
 public:
 	struct FRBWorldIconUpdateContext              UpdateContext;                                     // 0x0000(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference)
 	bool                                          IsPinged;                                          // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsOwningActorPinged_ReturnValue;          // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B6B[0x5];                                     // 0x0063(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X;                          // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y;                          // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetFloatValue_ReturnValue;                // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B6C[0x3];                                     // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetFloatValue_ReturnValue_1;              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue_1;       // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B6D[0x1];                                     // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRenderOpacity_ReturnValue;             // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B6E[0x3];                                     // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_ProcessOpacity_TargetOpacity;             // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsOwningActorPinged_ReturnValue;          // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X;                          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y;                          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetFloatValue_ReturnValue;                // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetFloatValue_ReturnValue_1;              // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue_1;       // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRenderOpacity_ReturnValue;             // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MapRangeClamped_ReturnValue;              // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_ProcessOpacity_TargetOpacity;             // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue_1;                // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue_2;                // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColor_ToNewOpacity_ReturnValue;     // 0x00C4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColor_ToNewOpacity_ReturnValue;     // 0x00B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue_1;                // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue_2;                // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ObjectiveInWorld_C_UpdateDistanceEffects) == 0x000008, "Wrong alignment on ObjectiveInWorld_C_UpdateDistanceEffects");
-static_assert(sizeof(ObjectiveInWorld_C_UpdateDistanceEffects) == 0x0000D8, "Wrong size on ObjectiveInWorld_C_UpdateDistanceEffects");
+static_assert(sizeof(ObjectiveInWorld_C_UpdateDistanceEffects) == 0x0000C8, "Wrong size on ObjectiveInWorld_C_UpdateDistanceEffects");
 static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, UpdateContext) == 0x000000, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::UpdateContext' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, IsPinged) == 0x000060, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::IsPinged' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, Temp_bool_Variable) == 0x000061, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_IsOwningActorPinged_ReturnValue) == 0x000062, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_IsOwningActorPinged_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000068, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000070, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_BreakVector2D_X) == 0x000074, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_BreakVector2D_Y) == 0x000078, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_FInterpTo_ReturnValue) == 0x00007C, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_MakeVector2D_ReturnValue) == 0x000080, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetFloatValue_ReturnValue) == 0x000088, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetFloatValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x00008C, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetFloatValue_ReturnValue_1) == 0x000090, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetFloatValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_LessEqual_FloatFloat_ReturnValue_1) == 0x000094, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_LessEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_IsValid_ReturnValue) == 0x000095, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_BooleanOR_ReturnValue) == 0x000096, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x000098, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetRenderOpacity_ReturnValue) == 0x00009C, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetRenderOpacity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_FInterpTo_ReturnValue_1) == 0x0000A0, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_FInterpTo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_Less_FloatFloat_ReturnValue) == 0x0000A4, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_ProcessOpacity_TargetOpacity) == 0x000064, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_ProcessOpacity_TargetOpacity' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_IsOwningActorPinged_ReturnValue) == 0x000068, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_IsOwningActorPinged_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_SelectFloat_ReturnValue) == 0x00006C, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000070, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000078, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_BreakVector2D_X) == 0x00007C, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_BreakVector2D_Y) == 0x000080, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_FInterpTo_ReturnValue) == 0x000084, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_MakeVector2D_ReturnValue) == 0x000088, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetFloatValue_ReturnValue) == 0x000090, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetFloatValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetFloatValue_ReturnValue_1) == 0x000094, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetFloatValue_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000098, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_LessEqual_FloatFloat_ReturnValue_1) == 0x000099, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_LessEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_BooleanOR_ReturnValue) == 0x00009A, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_IsValid_ReturnValue) == 0x00009B, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x00009C, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_GetRenderOpacity_ReturnValue) == 0x0000A0, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_GetRenderOpacity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_FInterpTo_ReturnValue_1) == 0x0000A4, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_FInterpTo_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_MapRangeClamped_ReturnValue) == 0x0000A8, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, K2Node_Select_Default) == 0x0000AC, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_Lerp_ReturnValue) == 0x0000B0, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_ProcessOpacity_TargetOpacity) == 0x0000B4, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_ProcessOpacity_TargetOpacity' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_SelectFloat_ReturnValue) == 0x0000B8, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_SelectFloat_ReturnValue_1) == 0x0000BC, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_SelectFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_SelectFloat_ReturnValue_2) == 0x0000C0, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_SelectFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_LinearColor_ToNewOpacity_ReturnValue) == 0x0000C4, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_LinearColor_ToNewOpacity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_Lerp_ReturnValue) == 0x0000AC, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_LinearColor_ToNewOpacity_ReturnValue) == 0x0000B0, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_LinearColor_ToNewOpacity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_SelectFloat_ReturnValue_1) == 0x0000C0, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_SelectFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_UpdateDistanceEffects, CallFunc_SelectFloat_ReturnValue_2) == 0x0000C4, "Member 'ObjectiveInWorld_C_UpdateDistanceEffects::CallFunc_SelectFloat_ReturnValue_2' has a wrong offset!");
 
 // Function ObjectiveInWorld.ObjectiveInWorld_C.UpdateIcon
 // 0x0001 (0x0001 - 0x0000)
@@ -197,7 +189,7 @@ public:
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B6F[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ObjectiveInWorld_C_SetupRipple) == 0x000008, "Wrong alignment on ObjectiveInWorld_C_SetupRipple");
@@ -233,7 +225,7 @@ public:
 	bool                                          CallFunc_ShouldShow_ReturnValue;                   // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsOwningActorPinged_ReturnValue;          // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B70[0x2];                                     // 0x0066(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_66[0x2];                                       // 0x0066(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue_1;           // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -259,52 +251,52 @@ struct ObjectiveInWorld_C_ProcessOpacity final
 {
 public:
 	float                                         Distance;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_TargetOpacity;                               // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TargetOpacity_0;                                   // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_1;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_2;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_3;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_4;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B71[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetFloatValue_ReturnValue;                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetFloatValue_ReturnValue_1;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B72[0x1];                                     // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F[0x1];                                       // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetFloatValue_ReturnValue_2;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B73[0x2];                                     // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetFloatValue_ReturnValue_3;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B74[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetFloatValue_ReturnValue_4;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B75[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetFloatValue_ReturnValue_5;              // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_3;         // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B76[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B77[0x3];                                     // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default_1;                           // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_2;                           // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_3;                           // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue_2;            // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B78[0x2];                                     // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_56[0x2];                                       // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_MapRangeClamped_ReturnValue;              // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B79[0x3];                                     // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_4;                           // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ObjectiveInWorld_C_ProcessOpacity) == 0x000004, "Wrong alignment on ObjectiveInWorld_C_ProcessOpacity");
 static_assert(sizeof(ObjectiveInWorld_C_ProcessOpacity) == 0x000068, "Wrong size on ObjectiveInWorld_C_ProcessOpacity");
 static_assert(offsetof(ObjectiveInWorld_C_ProcessOpacity, Distance) == 0x000000, "Member 'ObjectiveInWorld_C_ProcessOpacity::Distance' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ProcessOpacity, Param_TargetOpacity) == 0x000004, "Member 'ObjectiveInWorld_C_ProcessOpacity::Param_TargetOpacity' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ProcessOpacity, TargetOpacity_0) == 0x000004, "Member 'ObjectiveInWorld_C_ProcessOpacity::TargetOpacity_0' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_ProcessOpacity, Temp_float_Variable) == 0x000008, "Member 'ObjectiveInWorld_C_ProcessOpacity::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_ProcessOpacity, Temp_bool_Variable) == 0x00000C, "Member 'ObjectiveInWorld_C_ProcessOpacity::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_ProcessOpacity, Temp_bool_Variable_1) == 0x00000D, "Member 'ObjectiveInWorld_C_ProcessOpacity::Temp_bool_Variable_1' has a wrong offset!");
@@ -338,38 +330,36 @@ static_assert(offsetof(ObjectiveInWorld_C_ProcessOpacity, CallFunc_Lerp_ReturnVa
 static_assert(offsetof(ObjectiveInWorld_C_ProcessOpacity, K2Node_Select_Default_4) == 0x000064, "Member 'ObjectiveInWorld_C_ProcessOpacity::K2Node_Select_Default_4' has a wrong offset!");
 
 // Function ObjectiveInWorld.ObjectiveInWorld_C.ShouldShow
-// 0x0058 (0x0058 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct ObjectiveInWorld_C_ShouldShow final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_ShouldShow_ReturnValue;                   // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsOwningActorPinged_ReturnValue;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B7A[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select_Default;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_ProcessOpacity_TargetOpacity;             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B7B[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B7C[0x5];                                     // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayer*                              CallFunc_GetLocalPawn_ReturnValue;                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsInPsychosis_ReturnValue;                // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsInSAS_ReturnValue;                      // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_4;                  // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_ShouldShow_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_ProcessOpacity_TargetOpacity;             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsOwningActorPinged_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              CallFunc_GetLocalPawn_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsInPsychosis_ReturnValue;                // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsInSAS_ReturnValue;                      // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_4;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayerState*                         CallFunc_GetRBPlayerState_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -378,45 +368,39 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetBoolValue_ReturnValue;                 // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GetBoolValue_ReturnValue_1;               // 0x0047(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x0047(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_5;                  // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_6;                  // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_7;                // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_5;                 // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_6;                 // 0x004F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_7;                 // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_8;                 // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_5;                  // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_5;                 // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_6;                 // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_7;                 // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_8;                 // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ObjectiveInWorld_C_ShouldShow) == 0x000008, "Wrong alignment on ObjectiveInWorld_C_ShouldShow");
-static_assert(sizeof(ObjectiveInWorld_C_ShouldShow) == 0x000058, "Wrong size on ObjectiveInWorld_C_ShouldShow");
+static_assert(sizeof(ObjectiveInWorld_C_ShouldShow) == 0x000050, "Wrong size on ObjectiveInWorld_C_ShouldShow");
 static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, ReturnValue) == 0x000000, "Member 'ObjectiveInWorld_C_ShouldShow::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, Temp_bool_Variable) == 0x000001, "Member 'ObjectiveInWorld_C_ShouldShow::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_ShouldShow_ReturnValue) == 0x000002, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_ShouldShow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsOwningActorPinged_ReturnValue) == 0x000003, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsOwningActorPinged_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Less_FloatFloat_ReturnValue) == 0x000004, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, K2Node_Select_Default) == 0x000008, "Member 'ObjectiveInWorld_C_ShouldShow::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_ProcessOpacity_TargetOpacity) == 0x00000C, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_ProcessOpacity_TargetOpacity' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000010, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue) == 0x000012, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue) == 0x000013, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000018, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_1) == 0x000020, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_1) == 0x000021, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_1) == 0x000022, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_GetLocalPawn_ReturnValue) == 0x000028, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_GetLocalPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_2) == 0x000030, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_3) == 0x000032, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsInPsychosis_ReturnValue) == 0x000033, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsInPsychosis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsInSAS_ReturnValue) == 0x000034, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsInSAS_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_2) == 0x000035, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_3) == 0x000036, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_4) == 0x000037, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_ShouldShow_ReturnValue) == 0x000001, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_ShouldShow_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_ProcessOpacity_TargetOpacity) == 0x000004, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_ProcessOpacity_TargetOpacity' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsOwningActorPinged_ReturnValue) == 0x000008, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsOwningActorPinged_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000009, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue) == 0x00000A, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000B, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000010, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue) == 0x000018, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue) == 0x000019, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_1) == 0x00001A, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_1) == 0x00001B, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_GetLocalPawn_ReturnValue) == 0x000020, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_GetLocalPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_1) == 0x000028, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_2) == 0x00002A, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_3) == 0x00002B, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsInPsychosis_ReturnValue) == 0x00002C, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsInPsychosis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsInSAS_ReturnValue) == 0x00002D, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsInSAS_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_2) == 0x00002E, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_3) == 0x00002F, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_4) == 0x000030, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_GetRBPlayerState_ReturnValue) == 0x000038, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_GetRBPlayerState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_IsValid_ReturnValue_2) == 0x000041, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
@@ -425,17 +409,14 @@ static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_Retur
 static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_2) == 0x000044, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_3) == 0x000045, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_GetBoolValue_ReturnValue) == 0x000046, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_GetBoolValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_GetBoolValue_ReturnValue_1) == 0x000047, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_GetBoolValue_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_4) == 0x000047, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
 static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_5) == 0x000048, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_6) == 0x000049, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_5) == 0x00004A, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_6) == 0x00004B, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_4) == 0x00004C, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_7) == 0x00004D, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_5) == 0x00004E, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_6) == 0x00004F, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_7) == 0x000050, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_8) == 0x000051, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_5) == 0x000049, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_6) == 0x00004A, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_5) == 0x00004B, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_6) == 0x00004C, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_7) == 0x00004D, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_8) == 0x00004E, "Member 'ObjectiveInWorld_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_8' has a wrong offset!");
 
 }
 

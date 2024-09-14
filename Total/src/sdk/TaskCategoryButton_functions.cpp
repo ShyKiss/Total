@@ -20,9 +20,9 @@ namespace SDK
 // Function TaskCategoryButton.TaskCategoryButton_C.OnClicked__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_ID                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ID_0                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTaskCategoryButton_C::OnClicked__DelegateSignature(class FName Param_ID)
+void UTaskCategoryButton_C::OnClicked__DelegateSignature(class FName ID_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,27 @@ void UTaskCategoryButton_C::OnClicked__DelegateSignature(class FName Param_ID)
 
 	Params::TaskCategoryButton_C_OnClicked__DelegateSignature Parms{};
 
-	Parms.Param_ID = Param_ID;
+	Parms.ID_0 = ID_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TaskCategoryButton.TaskCategoryButton_C.OnFocused__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ID_0                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTaskCategoryButton_C::OnFocused__DelegateSignature(class FName ID_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TaskCategoryButton_C", "OnFocused__DelegateSignature");
+
+	Params::TaskCategoryButton_C_OnFocused__DelegateSignature Parms{};
+
+	Parms.ID_0 = ID_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -184,15 +204,17 @@ void UTaskCategoryButton_C::OnLoaded_DB41A6CB40D5CBDE4EA03AB9C7E72F12(class UObj
 // Function TaskCategoryButton.TaskCategoryButton_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_ID                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ID_0                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    Param_bHasCompletedTasksPendingConsume                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TSoftObjectPtr<class UTexture2D>        Param_Icon                                             (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool                                    Param_bHasRefreshTimer                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Param_DaysUntilRefresh                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_HoursUntilRefresh                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHasSeenTaskGroup_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bHasCompletedTasksPendingConsume_0                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// TSoftObjectPtr<class UTexture2D>        Icon_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool                                    bHasRefreshTimer_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   DaysUntilRefresh_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   HoursUntilRefresh_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHasClaimedAllTasks_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTaskCategoryButton_C::Setup(class FName Param_ID, const class FText& Text, bool Param_bHasCompletedTasksPendingConsume, TSoftObjectPtr<class UTexture2D> Param_Icon, bool Param_bHasRefreshTimer, int32 Param_DaysUntilRefresh, int32 Param_HoursUntilRefresh)
+void UTaskCategoryButton_C::Setup(class FName ID_0, const class FText& Text, bool bHasSeenTaskGroup_0, bool bHasCompletedTasksPendingConsume_0, TSoftObjectPtr<class UTexture2D> Icon_0, bool bHasRefreshTimer_0, int32 DaysUntilRefresh_0, int32 HoursUntilRefresh_0, bool bHasClaimedAllTasks_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -201,13 +223,15 @@ void UTaskCategoryButton_C::Setup(class FName Param_ID, const class FText& Text,
 
 	Params::TaskCategoryButton_C_Setup Parms{};
 
-	Parms.Param_ID = Param_ID;
+	Parms.ID_0 = ID_0;
 	Parms.Text = std::move(Text);
-	Parms.Param_bHasCompletedTasksPendingConsume = Param_bHasCompletedTasksPendingConsume;
-	Parms.Param_Icon = Param_Icon;
-	Parms.Param_bHasRefreshTimer = Param_bHasRefreshTimer;
-	Parms.Param_DaysUntilRefresh = Param_DaysUntilRefresh;
-	Parms.Param_HoursUntilRefresh = Param_HoursUntilRefresh;
+	Parms.bHasSeenTaskGroup_0 = bHasSeenTaskGroup_0;
+	Parms.bHasCompletedTasksPendingConsume_0 = bHasCompletedTasksPendingConsume_0;
+	Parms.Icon_0 = Icon_0;
+	Parms.bHasRefreshTimer_0 = bHasRefreshTimer_0;
+	Parms.DaysUntilRefresh_0 = DaysUntilRefresh_0;
+	Parms.HoursUntilRefresh_0 = HoursUntilRefresh_0;
+	Parms.bHasClaimedAllTasks_0 = bHasClaimedAllTasks_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -216,12 +240,14 @@ void UTaskCategoryButton_C::Setup(class FName Param_ID, const class FText& Text,
 // Function TaskCategoryButton.TaskCategoryButton_C.Update
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bHasCompletedTasksPendingConsume                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    HasSeenTaskGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bHasCompletedTasksPendingConsume_0                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    HasRefreshTimer                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Param_DaysUntilRefresh                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_HoursUntilRefresh                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   DaysUntilRefresh_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   HoursUntilRefresh_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHasClaimedAllTasks_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTaskCategoryButton_C::Update(bool Param_bHasCompletedTasksPendingConsume, bool HasRefreshTimer, int32 Param_DaysUntilRefresh, int32 Param_HoursUntilRefresh)
+void UTaskCategoryButton_C::Update(bool HasSeenTaskGroup, bool bHasCompletedTasksPendingConsume_0, bool HasRefreshTimer, int32 DaysUntilRefresh_0, int32 HoursUntilRefresh_0, bool bHasClaimedAllTasks_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -230,10 +256,12 @@ void UTaskCategoryButton_C::Update(bool Param_bHasCompletedTasksPendingConsume, 
 
 	Params::TaskCategoryButton_C_Update Parms{};
 
-	Parms.Param_bHasCompletedTasksPendingConsume = Param_bHasCompletedTasksPendingConsume;
+	Parms.HasSeenTaskGroup = HasSeenTaskGroup;
+	Parms.bHasCompletedTasksPendingConsume_0 = bHasCompletedTasksPendingConsume_0;
 	Parms.HasRefreshTimer = HasRefreshTimer;
-	Parms.Param_DaysUntilRefresh = Param_DaysUntilRefresh;
-	Parms.Param_HoursUntilRefresh = Param_HoursUntilRefresh;
+	Parms.DaysUntilRefresh_0 = DaysUntilRefresh_0;
+	Parms.HoursUntilRefresh_0 = HoursUntilRefresh_0;
+	Parms.bHasClaimedAllTasks_0 = bHasClaimedAllTasks_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -256,9 +284,9 @@ void UTaskCategoryButton_C::Refresh()
 // Function TaskCategoryButton.TaskCategoryButton_C.SetHovered
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsHovered                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsHovered_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTaskCategoryButton_C::SetHovered(bool Param_IsHovered)
+void UTaskCategoryButton_C::SetHovered(bool IsHovered_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -267,7 +295,7 @@ void UTaskCategoryButton_C::SetHovered(bool Param_IsHovered)
 
 	Params::TaskCategoryButton_C_SetHovered Parms{};
 
-	Parms.Param_IsHovered = Param_IsHovered;
+	Parms.IsHovered_0 = IsHovered_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -357,9 +385,9 @@ void UTaskCategoryButton_C::OnAddedToFocusPath(const struct FFocusEvent& InFocus
 // Function TaskCategoryButton.TaskCategoryButton_C.SetSelected
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsSelected                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsSelected_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTaskCategoryButton_C::SetSelected(bool Param_IsSelected)
+void UTaskCategoryButton_C::SetSelected(bool IsSelected_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -368,7 +396,7 @@ void UTaskCategoryButton_C::SetSelected(bool Param_IsSelected)
 
 	Params::TaskCategoryButton_C_SetSelected Parms{};
 
-	Parms.Param_IsSelected = Param_IsSelected;
+	Parms.IsSelected_0 = IsSelected_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -391,9 +419,9 @@ void UTaskCategoryButton_C::UpdateMenuFocusAction()
 // Function TaskCategoryButton.TaskCategoryButton_C.IsSelected
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_bSelected                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bSelected_0                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTaskCategoryButton_C::IsSelected(bool* Param_bSelected)
+void UTaskCategoryButton_C::IsSelected(bool* bSelected_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -404,8 +432,8 @@ void UTaskCategoryButton_C::IsSelected(bool* Param_bSelected)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_bSelected != nullptr)
-		*Param_bSelected = Parms.Param_bSelected;
+	if (bSelected_0 != nullptr)
+		*bSelected_0 = Parms.bSelected_0;
 }
 
 }

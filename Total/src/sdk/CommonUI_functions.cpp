@@ -133,9 +133,9 @@ void UCommonVisibilitySwitcher::SetActiveWidget(const class UWidget* Widget)
 // Function CommonUI.CommonVisibilitySwitcher.SetActiveWidgetIndex
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCommonVisibilitySwitcher::SetActiveWidgetIndex(int32 Param_Index)
+void UCommonVisibilitySwitcher::SetActiveWidgetIndex(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -144,7 +144,7 @@ void UCommonVisibilitySwitcher::SetActiveWidgetIndex(int32 Param_Index)
 
 	Params::CommonVisibilitySwitcher_SetActiveWidgetIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2841,10 +2841,10 @@ int32 UCommonButtonGroupBase::FindButtonIndex(const class UCommonButtonBase* But
 // Function CommonUI.CommonButtonGroupBase.GetButtonBaseAtIndex
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UCommonButtonBase*                ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UCommonButtonBase* UCommonButtonGroupBase::GetButtonBaseAtIndex(int32 Param_Index) const
+class UCommonButtonBase* UCommonButtonGroupBase::GetButtonBaseAtIndex(int32 Index_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -2853,7 +2853,7 @@ class UCommonButtonBase* UCommonButtonGroupBase::GetButtonBaseAtIndex(int32 Para
 
 	Params::CommonButtonGroupBase_GetButtonBaseAtIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3873,9 +3873,9 @@ void ICommonPoolableWidgetInterface::OnReleaseToPool()
 // Function CommonUI.CommonRotator.BP_OnOptionSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCommonRotator::BP_OnOptionSelected(int32 Param_Index)
+void UCommonRotator::BP_OnOptionSelected(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3884,7 +3884,7 @@ void UCommonRotator::BP_OnOptionSelected(int32 Param_Index)
 
 	Params::CommonRotator_BP_OnOptionSelected Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -4671,10 +4671,10 @@ int32 UCommonTabListWidgetBase::GetTabCount() const
 // Function CommonUI.CommonTabListWidgetBase.GetTabIdAtIndex
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FName UCommonTabListWidgetBase::GetTabIdAtIndex(int32 Param_Index) const
+class FName UCommonTabListWidgetBase::GetTabIdAtIndex(int32 Index_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -4683,7 +4683,7 @@ class FName UCommonTabListWidgetBase::GetTabIdAtIndex(int32 Param_Index) const
 
 	Params::CommonTabListWidgetBase_GetTabIdAtIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4987,9 +4987,9 @@ void UCommonWidgetCarousel::SetActiveWidget(class UWidget* Widget)
 // Function CommonUI.CommonWidgetCarousel.SetActiveWidgetIndex
 // (Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCommonWidgetCarousel::SetActiveWidgetIndex(int32 Param_Index)
+void UCommonWidgetCarousel::SetActiveWidgetIndex(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4998,7 +4998,7 @@ void UCommonWidgetCarousel::SetActiveWidgetIndex(int32 Param_Index)
 
 	Params::CommonWidgetCarousel_SetActiveWidgetIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5037,10 +5037,10 @@ int32 UCommonWidgetCarousel::GetActiveWidgetIndex() const
 // Function CommonUI.CommonWidgetCarousel.GetWidgetAtIndex
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UWidget*                          ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UWidget* UCommonWidgetCarousel::GetWidgetAtIndex(int32 Param_Index) const
+class UWidget* UCommonWidgetCarousel::GetWidgetAtIndex(int32 Index_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -5049,7 +5049,7 @@ class UWidget* UCommonWidgetCarousel::GetWidgetAtIndex(int32 Param_Index) const
 
 	Params::CommonWidgetCarousel_GetWidgetAtIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

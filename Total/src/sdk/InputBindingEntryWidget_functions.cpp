@@ -102,9 +102,9 @@ void UInputBindingEntryWidget_C::BndEvt__Button_131_K2Node_ComponentBoundEvent_0
 // Function InputBindingEntryWidget.InputBindingEntryWidget_C.Init
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UInputBindingsMenu_C*             Param_ParentMenu                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UInputBindingsMenu_C*             ParentMenu_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UInputBindingEntryWidget_C::Init(class UInputBindingsMenu_C* Param_ParentMenu)
+void UInputBindingEntryWidget_C::Init(class UInputBindingsMenu_C* ParentMenu_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -113,7 +113,7 @@ void UInputBindingEntryWidget_C::Init(class UInputBindingsMenu_C* Param_ParentMe
 
 	Params::InputBindingEntryWidget_C_Init Parms{};
 
-	Parms.Param_ParentMenu = Param_ParentMenu;
+	Parms.ParentMenu_0 = ParentMenu_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,31 +17,25 @@
 namespace SDK
 {
 
-// Function BPF_FX_Footstep_PhyxMatTag.BPF_FX_Footstep_PhyxMatTag_C.Footstep FX Run
-// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BPF_FX_Footstep_PhyxMatTag.BPF_FX_Footstep_PhyxMatTag_C.Footstep FX
+// (Static, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ARBPawn*                          Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFootstepData                    FootstepData                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPF_FX_Footstep_PhyxMatTag_C::Footstep_FX_Run(class ARBPawn* Pawn, const struct FFootstepData& FootstepData, class UObject* __WorldContext, int32* Param_Index)
+void UBPF_FX_Footstep_PhyxMatTag_C::Footstep_FX(const struct FFootstepData& FootstepData, class UObject* __WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPF_FX_Footstep_PhyxMatTag_C", "Footstep FX Run");
+		Func = StaticClass()->GetFunction("BPF_FX_Footstep_PhyxMatTag_C", "Footstep FX");
 
-	Params::BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX_Run Parms{};
+	Params::BPF_FX_Footstep_PhyxMatTag_C_Footstep_FX Parms{};
 
-	Parms.Pawn = Pawn;
 	Parms.FootstepData = std::move(FootstepData);
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	if (Param_Index != nullptr)
-		*Param_Index = Parms.Param_Index;
 }
 
 
@@ -50,9 +44,9 @@ void UBPF_FX_Footstep_PhyxMatTag_C::Footstep_FX_Run(class ARBPawn* Pawn, const s
 // Parameters:
 // class ARBPawn*                          Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPF_FX_Footstep_PhyxMatTag_C::Footstep_FX_Landing(class ARBPawn* Pawn, class UObject* __WorldContext, int32* Param_Index)
+void UBPF_FX_Footstep_PhyxMatTag_C::Footstep_FX_Landing(class ARBPawn* Pawn, class UObject* __WorldContext, int32* Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -66,8 +60,8 @@ void UBPF_FX_Footstep_PhyxMatTag_C::Footstep_FX_Landing(class ARBPawn* Pawn, cla
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Param_Index != nullptr)
-		*Param_Index = Parms.Param_Index;
+	if (Index_0 != nullptr)
+		*Index_0 = Parms.Index_0;
 }
 
 

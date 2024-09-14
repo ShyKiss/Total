@@ -31,11 +31,11 @@ using namespace UC;
 */
 namespace Offsets
 {
-	constexpr int32 GObjects          = 0x05C348C0;
-	constexpr int32 AppendString      = 0x0092D4EC;
-	constexpr int32 GNames            = 0x05DAE9C0;
-	constexpr int32 GWorld            = 0x05C84470;
-	constexpr int32 ProcessEvent      = 0x008C82A4;
+	constexpr int32 GObjects          = 0x05CFAC40;
+	constexpr int32 AppendString      = 0x0081C9BC;
+	constexpr int32 GNames            = 0x05E763C0;
+	constexpr int32 GWorld            = 0x05D4A4C0;
+	constexpr int32 ProcessEvent      = 0x007D3400;
 	constexpr int32 ProcessEventIdx   = 0x00000044;
 }
 
@@ -84,7 +84,7 @@ class UClass;
 class UObject;
 class UFunction;
 
-struct FName;
+class FName;
 
 namespace BasicFilesImpleUtils
 {
@@ -181,7 +181,7 @@ struct FUObjectItem final
 {
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
-	uint8                                         Pad_0[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FUObjectItem) == 0x000008, "Wrong alignment on FUObjectItem");
 static_assert(sizeof(FUObjectItem) == 0x000018, "Wrong size on FUObjectItem");
@@ -424,7 +424,7 @@ namespace FTextImpl
 class FTextData final
 {
 public:
-	uint8                                         Pad_1[0x28];                                       // 0x0000(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 TextSource;                                        // 0x0028(0x0010)(NOT AUTO-GENERATED PROPERTY)
 };
 static_assert(alignof(FTextData) == 0x000008, "Wrong alignment on FTextData");
@@ -438,7 +438,7 @@ class FText final
 {
 public:
 	class FTextImpl::FTextData*                   TextData;                                          // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
-	uint8                                         Pad_2[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	const class FString& GetStringRef() const
@@ -712,12 +712,13 @@ public:
 
 
 // Predefined struct TDelegate
-// 0x0000 (0x0000 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 template<typename FunctionSignature>
 class TDelegate
 {
 public:
 	struct InvalidUseOfTDelegate                  TemplateParamIsNotAFunctionSignature;              // 0x0000(0x0000)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 
 // Predefined struct TDelegate<Ret(Args...)>
@@ -1000,7 +1001,7 @@ public:
 	uint64                                        Id;                                                // 0x0008(0x0008)(NOT AUTO-GENERATED PROPERTY)
 	uint64                                        CastFlags;                                         // 0x0010(0x0008)(NOT AUTO-GENERATED PROPERTY)
 	EClassFlags                                   ClassFlags;                                        // 0x0018(0x0004)(NOT AUTO-GENERATED PROPERTY)
-	uint8                                         Pad_3[0x4];                                        // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FFieldClass*                            SuperClass;                                        // 0x0020(0x0008)(NOT AUTO-GENERATED PROPERTY)
 };
 static_assert(alignof(FFieldClass) == 0x000008, "Wrong alignment on FFieldClass");
@@ -1055,9 +1056,9 @@ public:
 	int32                                         ArrayDim;                                          // 0x0038(0x0004)(NOT AUTO-GENERATED PROPERTY)
 	int32                                         ElementSize;                                       // 0x003C(0x0004)(NOT AUTO-GENERATED PROPERTY)
 	uint64                                        PropertyFlags;                                     // 0x0040(0x0008)(NOT AUTO-GENERATED PROPERTY)
-	uint8                                         Pad_4[0x4];                                        // 0x0048(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48[0x4];                                       // 0x0048(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Offset;                                            // 0x004C(0x0004)(NOT AUTO-GENERATED PROPERTY)
-	uint8                                         Pad_5[0x28];                                       // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x28];                                      // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FProperty) == 0x000008, "Wrong alignment on FProperty");
 static_assert(sizeof(FProperty) == 0x000078, "Wrong size on FProperty");

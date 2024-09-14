@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function Client_InGameMenu.Client_InGameMenu_C.ExecuteUbergraph_Client_InGameMenu
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -32,6 +32,62 @@ void UClient_InGameMenu_C::ExecuteUbergraph_Client_InGameMenu(int32 EntryPoint)
 	Params::Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__Client_InGameMenu_PartyWidget_K2Node_ComponentBoundEvent_7_OnSocialMenuEntryActionRequested__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class URBSocialMenuEntry*               Entry                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ERBSocialMenuEntryAction                Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UClient_InGameMenu_C::BndEvt__Client_InGameMenu_PartyWidget_K2Node_ComponentBoundEvent_7_OnSocialMenuEntryActionRequested__DelegateSignature(class URBSocialMenuEntry* Entry, ERBSocialMenuEntryAction Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "BndEvt__Client_InGameMenu_PartyWidget_K2Node_ComponentBoundEvent_7_OnSocialMenuEntryActionRequested__DelegateSignature");
+
+	Params::Client_InGameMenu_C_BndEvt__Client_InGameMenu_PartyWidget_K2Node_ComponentBoundEvent_7_OnSocialMenuEntryActionRequested__DelegateSignature Parms{};
+
+	Parms.Entry = Entry;
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.OnVariatorUnhovered
+// (BlueprintCallable, BlueprintEvent)
+
+void UClient_InGameMenu_C::OnVariatorUnhovered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "OnVariatorUnhovered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.OnVariatorHovered
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             Description                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UClient_InGameMenu_C::OnVariatorHovered(const class FText& Description)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "OnVariatorHovered");
+
+	Params::Client_InGameMenu_C_OnVariatorHovered Parms{};
+
+	Parms.Description = std::move(Description);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -647,6 +703,73 @@ void UClient_InGameMenu_C::ShowTasksMenu()
 		Func = Class->GetFunction("Client_InGameMenu_C", "ShowTasksMenu");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.ShouldDisplayVariators
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    bShouldDisplayVariators                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UClient_InGameMenu_C::ShouldDisplayVariators(bool* bShouldDisplayVariators)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "ShouldDisplayVariators");
+
+	Params::Client_InGameMenu_C_ShouldDisplayVariators Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bShouldDisplayVariators != nullptr)
+		*bShouldDisplayVariators = Parms.bShouldDisplayVariators;
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.GamepadNav_LeftToVariators
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UClient_InGameMenu_C::GamepadNav_LeftToVariators(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "GamepadNav_LeftToVariators");
+
+	Params::Client_InGameMenu_C_GamepadNav_LeftToVariators Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Client_InGameMenu.Client_InGameMenu_C.GamepadNav_VariatorsToLeft
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UClient_InGameMenu_C::GamepadNav_VariatorsToLeft(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "GamepadNav_VariatorsToLeft");
+
+	Params::Client_InGameMenu_C_GamepadNav_VariatorsToLeft Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // UserDefinedStruct NPCSkinData.NPCSkinData
-// 0x00B8 (0x00B8 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct FNPCSkinData final
 {
 public:
@@ -25,15 +25,17 @@ public:
 	TArray<TSoftObjectPtr<class USkeletalMesh>>   ExtraBodyMeshes_28_1566464147D3B561A7F05CAF09340C28; // 0x0078(0x0010)(Edit, BlueprintVisible)
 	TSoftObjectPtr<class UPoseAsset>              FacePoses_23_0DC0F466467315AA98BDCEB4FD27BC36;     // 0x0088(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	class FName                                   FoleyTypeSwitch_12_FD0671B84738FC37A2A31682A2E19595; // 0x00B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CustoId_32_94E8BAFD4C7A30B0016EADBAC1DF2A2B;       // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FNPCSkinData) == 0x000008, "Wrong alignment on FNPCSkinData");
-static_assert(sizeof(FNPCSkinData) == 0x0000B8, "Wrong size on FNPCSkinData");
+static_assert(sizeof(FNPCSkinData) == 0x0000C0, "Wrong size on FNPCSkinData");
 static_assert(offsetof(FNPCSkinData, Body_19_F0B9AD72489F136FA88F1CB7C5A0967F) == 0x000000, "Member 'FNPCSkinData::Body_19_F0B9AD72489F136FA88F1CB7C5A0967F' has a wrong offset!");
 static_assert(offsetof(FNPCSkinData, Head_21_60798B714A0D854309821F8331AD738A) == 0x000028, "Member 'FNPCSkinData::Head_21_60798B714A0D854309821F8331AD738A' has a wrong offset!");
 static_assert(offsetof(FNPCSkinData, Hair_22_DA3335004EB9C8BA309DE1A5CB7AA853) == 0x000050, "Member 'FNPCSkinData::Hair_22_DA3335004EB9C8BA309DE1A5CB7AA853' has a wrong offset!");
 static_assert(offsetof(FNPCSkinData, ExtraBodyMeshes_28_1566464147D3B561A7F05CAF09340C28) == 0x000078, "Member 'FNPCSkinData::ExtraBodyMeshes_28_1566464147D3B561A7F05CAF09340C28' has a wrong offset!");
 static_assert(offsetof(FNPCSkinData, FacePoses_23_0DC0F466467315AA98BDCEB4FD27BC36) == 0x000088, "Member 'FNPCSkinData::FacePoses_23_0DC0F466467315AA98BDCEB4FD27BC36' has a wrong offset!");
 static_assert(offsetof(FNPCSkinData, FoleyTypeSwitch_12_FD0671B84738FC37A2A31682A2E19595) == 0x0000B0, "Member 'FNPCSkinData::FoleyTypeSwitch_12_FD0671B84738FC37A2A31682A2E19595' has a wrong offset!");
+static_assert(offsetof(FNPCSkinData, CustoId_32_94E8BAFD4C7A30B0016EADBAC1DF2A2B) == 0x0000B8, "Member 'FNPCSkinData::CustoId_32_94E8BAFD4C7A30B0016EADBAC1DF2A2B' has a wrong offset!");
 
 }
 

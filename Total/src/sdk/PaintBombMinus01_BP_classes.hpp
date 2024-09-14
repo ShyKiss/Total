@@ -36,17 +36,17 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         Timeline_0_NewTrack_0_35EB4F934C318FB144B7CEA72B3FBFEB; // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Timeline_0__Direction_35EB4F934C318FB144B7CEA72B3FBFEB; // 0x028C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30A7[0x3];                                     // 0x028D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28D[0x3];                                      // 0x028D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Timeline_0;                                        // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MistTimeline_NewTrack_0_25BE09A44DE7BD92D095759D8ACFA6DC; // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            MistTimeline__Direction_25BE09A44DE7BD92D095759D8ACFA6DC; // 0x029C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30A8[0x3];                                     // 0x029D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29D[0x3];                                      // 0x029D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     MistTimeline;                                      // 0x02A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector>                        LineTraces;                                        // 0x02A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UMaterialInstanceConstant*>      DecalsList;                                        // 0x02B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UDecalComponent*>                GroundDecals;                                      // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	struct FVector                                DecalSizeCustom;                                   // 0x02D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30A9[0x4];                                     // 0x02E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E4[0x4];                                      // 0x02E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AOrientedDecalActor_C*>          DecalActors;                                       // 0x02E8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	struct FLinearColor                           DecalColor;                                        // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        ParticleEmitter;                                   // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -55,16 +55,16 @@ public:
 
 public:
 	void ExecuteUbergraph_PaintBombMinus01_BP(int32 EntryPoint);
-	void Mist(float Time, float Param_Radius);
-	void SetDecal(float Duration, float Param_Radius);
-	void Boom(float Duration, float Param_Radius, const struct FLinearColor& Color, class APawn* TriggeringPawn);
+	void Mist(float Time, float Radius_0);
+	void SetDecal(float Duration, float Radius_0);
+	void Boom(float Duration, float Radius_0, const struct FLinearColor& Color, class APawn* TriggeringPawn);
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
 	void MistTimeline__UpdateFunc();
 	void MistTimeline__FinishedFunc();
 	void UserConstructionScript();
 	void AddDecals(const struct FVector& Location, const struct FVector& Normal);
-	void UpdateFog(float Density, float Param_Radius);
+	void UpdateFog(float Density, float Radius_0);
 
 public:
 	static class UClass* StaticClass()

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass player_female_3P_AnimBP.player_female_3P_AnimBP_C
-// 0x0000 (0xFB60 - 0xFB60)
+// 0x0000 (0x108B0 - 0x108B0)
 class UPlayer_female_3P_AnimBP_C final : public UPlayer_3P_AnimBP_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UPlayer_female_3P_AnimBP_C) == 0x000010, "Wrong alignment on UPlayer_female_3P_AnimBP_C");
-static_assert(sizeof(UPlayer_female_3P_AnimBP_C) == 0x00FB60, "Wrong size on UPlayer_female_3P_AnimBP_C");
+static_assert(sizeof(UPlayer_female_3P_AnimBP_C) == 0x0108B0, "Wrong size on UPlayer_female_3P_AnimBP_C");
 
 }
 

@@ -35,7 +35,7 @@ public:
 	int32                                         PrivacyValue;                                      // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PartyMembersCanInviteValue;                        // 0x02AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         IgnoreInviteRequestsValue;                         // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E1C[0x4];                                     // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USocialMenu_PartyWidget_C*              SocialMenuPartyWidget;                             // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
@@ -47,9 +47,9 @@ public:
 	void BndEvt__PrivacyOption_K2Node_ComponentBoundEvent_0_OnValueUpdated__DelegateSignature(int32 Value);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 
-	void GetPrivacyValue(int32* Param_PrivacyValue) const;
-	void GetPartyMembersCanInviteValue(int32* Param_PrivacyValue) const;
-	void GetIgnoreInviteRequestsValue(int32* Param_PrivacyValue) const;
+	void GetPrivacyValue(int32* PrivacyValue_0) const;
+	void GetPartyMembersCanInviteValue(int32* PrivacyValue_0) const;
+	void GetIgnoreInviteRequestsValue(int32* PrivacyValue_0) const;
 
 public:
 	static class UClass* StaticClass()

@@ -41,9 +41,9 @@ void APaintBombMinus01_BP_C::ExecuteUbergraph_PaintBombMinus01_BP(int32 EntryPoi
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Time                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_Radius                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Radius_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APaintBombMinus01_BP_C::Mist(float Time, float Param_Radius)
+void APaintBombMinus01_BP_C::Mist(float Time, float Radius_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -53,7 +53,7 @@ void APaintBombMinus01_BP_C::Mist(float Time, float Param_Radius)
 	Params::PaintBombMinus01_BP_C_Mist Parms{};
 
 	Parms.Time = Time;
-	Parms.Param_Radius = Param_Radius;
+	Parms.Radius_0 = Radius_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -63,9 +63,9 @@ void APaintBombMinus01_BP_C::Mist(float Time, float Param_Radius)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Duration                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_Radius                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Radius_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APaintBombMinus01_BP_C::SetDecal(float Duration, float Param_Radius)
+void APaintBombMinus01_BP_C::SetDecal(float Duration, float Radius_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -75,7 +75,7 @@ void APaintBombMinus01_BP_C::SetDecal(float Duration, float Param_Radius)
 	Params::PaintBombMinus01_BP_C_SetDecal Parms{};
 
 	Parms.Duration = Duration;
-	Parms.Param_Radius = Param_Radius;
+	Parms.Radius_0 = Radius_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -85,11 +85,11 @@ void APaintBombMinus01_BP_C::SetDecal(float Duration, float Param_Radius)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Duration                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_Radius                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Radius_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                            TriggeringPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APaintBombMinus01_BP_C::Boom(float Duration, float Param_Radius, const struct FLinearColor& Color, class APawn* TriggeringPawn)
+void APaintBombMinus01_BP_C::Boom(float Duration, float Radius_0, const struct FLinearColor& Color, class APawn* TriggeringPawn)
 {
 	static class UFunction* Func = nullptr;
 
@@ -99,7 +99,7 @@ void APaintBombMinus01_BP_C::Boom(float Duration, float Param_Radius, const stru
 	Params::PaintBombMinus01_BP_C_Boom Parms{};
 
 	Parms.Duration = Duration;
-	Parms.Param_Radius = Param_Radius;
+	Parms.Radius_0 = Radius_0;
 	Parms.Color = std::move(Color);
 	Parms.TriggeringPawn = TriggeringPawn;
 
@@ -203,9 +203,9 @@ void APaintBombMinus01_BP_C::AddDecals(const struct FVector& Location, const str
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Density                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_Radius                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Radius_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APaintBombMinus01_BP_C::UpdateFog(float Density, float Param_Radius)
+void APaintBombMinus01_BP_C::UpdateFog(float Density, float Radius_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -215,7 +215,7 @@ void APaintBombMinus01_BP_C::UpdateFog(float Density, float Param_Radius)
 	Params::PaintBombMinus01_BP_C_UpdateFog Parms{};
 
 	Parms.Density = Density;
-	Parms.Param_Radius = Param_Radius;
+	Parms.Radius_0 = Radius_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

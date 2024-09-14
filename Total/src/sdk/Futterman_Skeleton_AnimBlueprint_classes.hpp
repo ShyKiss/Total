@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "Face_AllList_Enum_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Shared_Face_BaseEmotion_Struct_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
-#include "Shared_Face_Expression_Struct_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Face_AllList_Enum_structs.hpp"
 #include "OPP_structs.hpp"
+#include "Shared_Face_Expression_Struct_structs.hpp"
 
 
 namespace SDK
@@ -28,7 +28,7 @@ namespace SDK
 class UFutterman_Skeleton_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_312C[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x02F8(0x01D8)(ContainsInstancedReference)
@@ -117,23 +117,23 @@ public:
 	struct FRotator                               BowTieRotation;                                    // 0x3418(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Futterman_Speaking;                                // 0x3424(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsIdleBreaker;                                     // 0x3425(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_312D[0x2];                                     // 0x3426(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3426[0x2];                                     // 0x3426(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGooseberry_AnimBP_C*                   Gooseberry_Anim_BP;                                // 0x3428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UEnemyFace_AnimBlueprint_C*             Enemy_Face_BP;                                     // 0x3430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	float                                         TimeToPlayNextIdleBreaker;                         // 0x3438(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDrilling;                                        // 0x343C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_312E[0x3];                                     // 0x343D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_343D[0x3];                                     // 0x343D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               DrillRotating;                                     // 0x3440(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                         DrillRotationRate;                                 // 0x344C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ManualDrill;                                       // 0x3450(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	EFace_AllList_Enum                            WhichFace;                                         // 0x3451(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ENPCSpecificGesture                           WhichExpression;                                   // 0x3452(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_312F[0x5];                                     // 0x3453(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3453[0x5];                                     // 0x3453(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FShared_Face_Expression_Struct         ExpressionList;                                    // 0x3458(0x04B0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FShared_Face_BaseEmotion_Struct        BaseEmotionList;                                   // 0x3908(0x0320)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	ENPCBaseEmotion                               WhichBaseEmotion;                                  // 0x3C28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsExpressing;                                      // 0x3C29(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3130[0x6];                                     // 0x3C2A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C2A[0x6];                                     // 0x3C2A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          LipSyncAnim;                                       // 0x3C30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequence*                          ScriptedAnim;                                      // 0x3C38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequence*                          SlotAnim;                                          // 0x3C40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -159,7 +159,7 @@ public:
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Futterman_Skeleton_AnimBlueprint_AnimGraphNode_SequencePlayer_388A64914133A4C943F73A9792D4016C();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Futterman_Skeleton_AnimBlueprint_AnimGraphNode_LayeredBoneBlend_7FF57B2F4E8D211123C08DB2D570A18C();
 	void IsSlotAnimationPlaying(class UAnimSequence* Sequence);
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

@@ -20,9 +20,9 @@ namespace SDK
 // Function TaskButton.TaskButton_C.OnClicked__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRBTaskMenuEntry                 Param_Entry                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FRBTaskMenuEntry                 Entry_0                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UTaskButton_C::OnClicked__DelegateSignature(const struct FRBTaskMenuEntry& Param_Entry)
+void UTaskButton_C::OnClicked__DelegateSignature(const struct FRBTaskMenuEntry& Entry_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,27 @@ void UTaskButton_C::OnClicked__DelegateSignature(const struct FRBTaskMenuEntry& 
 
 	Params::TaskButton_C_OnClicked__DelegateSignature Parms{};
 
-	Parms.Param_Entry = std::move(Param_Entry);
+	Parms.Entry_0 = std::move(Entry_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TaskButton.TaskButton_C.OnFocused__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FRBTaskMenuEntry                 Entry_0                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UTaskButton_C::OnFocused__DelegateSignature(const struct FRBTaskMenuEntry& Entry_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TaskButton_C", "OnFocused__DelegateSignature");
+
+	Params::TaskButton_C_OnFocused__DelegateSignature Parms{};
+
+	Parms.Entry_0 = std::move(Entry_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -144,10 +164,10 @@ void UTaskButton_C::BndEvt__PerkCategoryButton_InteractionButton_K2Node_Componen
 // Function TaskButton.TaskButton_C.Setup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRBTaskMenuEntry                 Param_Entry                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FRBTaskMenuEntry                 Entry_0                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                                    bCanConsume                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTaskButton_C::Setup(const struct FRBTaskMenuEntry& Param_Entry, bool bCanConsume)
+void UTaskButton_C::Setup(const struct FRBTaskMenuEntry& Entry_0, bool bCanConsume)
 {
 	static class UFunction* Func = nullptr;
 
@@ -156,7 +176,7 @@ void UTaskButton_C::Setup(const struct FRBTaskMenuEntry& Param_Entry, bool bCanC
 
 	Params::TaskButton_C_Setup Parms{};
 
-	Parms.Param_Entry = std::move(Param_Entry);
+	Parms.Entry_0 = std::move(Entry_0);
 	Parms.bCanConsume = bCanConsume;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -166,9 +186,9 @@ void UTaskButton_C::Setup(const struct FRBTaskMenuEntry& Param_Entry, bool bCanC
 // Function TaskButton.TaskButton_C.UpdateProgression
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRBTaskProgressionEntry          Param_Progression                                      (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FRBTaskProgressionEntry          Progression_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UTaskButton_C::UpdateProgression(const struct FRBTaskProgressionEntry& Param_Progression)
+void UTaskButton_C::UpdateProgression(const struct FRBTaskProgressionEntry& Progression_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -177,7 +197,7 @@ void UTaskButton_C::UpdateProgression(const struct FRBTaskProgressionEntry& Para
 
 	Params::TaskButton_C_UpdateProgression Parms{};
 
-	Parms.Param_Progression = std::move(Param_Progression);
+	Parms.Progression_0 = std::move(Progression_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -200,9 +220,9 @@ void UTaskButton_C::Refresh()
 // Function TaskButton.TaskButton_C.SetHovered
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsHovered                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsHovered_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTaskButton_C::SetHovered(bool Param_IsHovered)
+void UTaskButton_C::SetHovered(bool IsHovered_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -211,7 +231,7 @@ void UTaskButton_C::SetHovered(bool Param_IsHovered)
 
 	Params::TaskButton_C_SetHovered Parms{};
 
-	Parms.Param_IsHovered = Param_IsHovered;
+	Parms.IsHovered_0 = IsHovered_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -322,9 +342,9 @@ void UTaskButton_C::CanConsume(bool* bCanConsume)
 // Function TaskButton.TaskButton_C.SetupReward
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             RewardDataId                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class FName>                     RewardDataIds                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UTaskButton_C::SetupReward(const class FName& RewardDataId)
+void UTaskButton_C::SetupReward(const TArray<class FName>& RewardDataIds)
 {
 	static class UFunction* Func = nullptr;
 
@@ -333,7 +353,7 @@ void UTaskButton_C::SetupReward(const class FName& RewardDataId)
 
 	Params::TaskButton_C_SetupReward Parms{};
 
-	Parms.RewardDataId = RewardDataId;
+	Parms.RewardDataIds = std::move(RewardDataIds);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

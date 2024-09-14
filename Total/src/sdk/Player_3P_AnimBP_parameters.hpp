@@ -31,60 +31,60 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESpecialMove                                  CallFunc_BP_GetSpecialMove_ReturnValue;            // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9C[0x5];                                     // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                CallFunc_GetCurrentValue_ScheduledUObject_ReturnValue; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9D[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPickup*                              K2Node_DynamicCast_AsRB_Pickup;                    // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9E[0x3];                                     // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_TryGetPawnOwner_ReturnValue_1;            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_TryGetPawnOwner_ReturnValue_2;            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer_BP_C*                         K2Node_DynamicCast_AsRB_Player_BP;                 // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9F[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer_BP_C*                         K2Node_DynamicCast_AsRB_Player_BP_1;               // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA0[0x5];                                     // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_73[0x5];                                       // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue_1;            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPlayerFace_AnimBlueprint_C*            K2Node_DynamicCast_AsPlayer_Face_Anim_Blueprint;   // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA1[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPlayerFace_AnimBlueprint_C*            K2Node_DynamicCast_AsPlayer_Face_Anim_Blueprint_1; // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ShouldIgnoreLookAround_ReturnValue;       // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA2[0x2];                                     // 0x00A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A2[0x2];                                       // 0x00A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00B0(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00C0(0x0008)(NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2AA3[0x4];                                     // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue;          // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA4[0x7];                                     // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBPlayerCustomizationInfo             Temp_struct_Variable;                              // 0x00E0(0x0038)()
 	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA5[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue_1;        // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA6[0x6];                                     // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12A[0x6];                                      // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_TryGetPawnOwner_ReturnValue_3;            // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARBPlayer*                              K2Node_DynamicCast_AsRB_Player_1;                  // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA7[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IRBPlayerCustomizationOwner> K2Node_DynamicCast_AsRB_Player_Customization_Owner; // 0x0148(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA8[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRBPlayerCustomizationInfo             CallFunc_GetPlayerCustomizationInfo_ReturnValue;   // 0x0160(0x0038)()
 };
 static_assert(alignof(Player_3P_AnimBP_C_ExecuteUbergraph_player_3P_AnimBP) == 0x000008, "Wrong alignment on Player_3P_AnimBP_C_ExecuteUbergraph_player_3P_AnimBP");
@@ -203,7 +203,7 @@ static_assert(offsetof(Player_3P_AnimBP_C_ToggleAFK, CallFunc_BooleanOR_ReturnVa
 static_assert(offsetof(Player_3P_AnimBP_C_ToggleAFK, CallFunc_BooleanOR_ReturnValue_1) == 0x000001, "Member 'Player_3P_AnimBP_C_ToggleAFK::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
 
 // Function player_3P_AnimBP.player_3P_AnimBP_C.IsValidUpperBodyAnimationForLookAt
-// 0x0018 (0x0018 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt final
 {
 public:
@@ -217,11 +217,18 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_2;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_3;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EUpperBodyAnimationType                       Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Select_Default;                             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_4;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_5;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_6;                              // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_7;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_8;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_9;                              // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_10;                             // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EUpperBodyAnimationType                       Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Select_Default;                             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt) == 0x000008, "Wrong alignment on Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt");
-static_assert(sizeof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt) == 0x000018, "Wrong size on Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt");
+static_assert(sizeof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt) == 0x000020, "Wrong size on Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt");
 static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Player) == 0x000000, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Player' has a wrong offset!");
 static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, bValid) == 0x000008, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::bValid' has a wrong offset!");
 static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable) == 0x000009, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable' has a wrong offset!");
@@ -232,19 +239,26 @@ static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Ca
 static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_1) == 0x00000E, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_2) == 0x00000F, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_2' has a wrong offset!");
 static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_3) == 0x000010, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_byte_Variable) == 0x000011, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, K2Node_Select_Default) == 0x000012, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_4) == 0x000011, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_4' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_5) == 0x000012, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_5' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_6) == 0x000013, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_6' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_7) == 0x000014, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_7' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_8) == 0x000015, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_8' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_9) == 0x000016, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_9' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_bool_Variable_10) == 0x000017, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_bool_Variable_10' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, Temp_byte_Variable) == 0x000018, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt, K2Node_Select_Default) == 0x000019, "Member 'Player_3P_AnimBP_C_IsValidUpperBodyAnimationForLookAt::K2Node_Select_Default' has a wrong offset!");
 
 // Function player_3P_AnimBP.player_3P_AnimBP_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
 struct Player_3P_AnimBP_C_AnimGraph final
 {
 public:
-	struct FPoseLink                              Param_AnimGraph;                                   // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(Player_3P_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on Player_3P_AnimBP_C_AnimGraph");
 static_assert(sizeof(Player_3P_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on Player_3P_AnimBP_C_AnimGraph");
-static_assert(offsetof(Player_3P_AnimBP_C_AnimGraph, Param_AnimGraph) == 0x000000, "Member 'Player_3P_AnimBP_C_AnimGraph::Param_AnimGraph' has a wrong offset!");
+static_assert(offsetof(Player_3P_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'Player_3P_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 }
 

@@ -8,7 +8,7 @@
 using namespace std;
 
 #define _CRT_SECURE_NO_DEPRECATE
-#define WIN32_LEAN_AND_MEAN // ADVANCED WINAPI
+#define WIN32_LEAN_AND_MEAN
 #define CREATE_THREAD_ACCESS (PROCESS_CREATE_THREAD | PROCESS_QUERY_INFORMATION | PROCESS_VM_OPERATION | PROCESS_VM_WRITE | PROCESS_VM_READ)
 
 BOOL Inject(DWORD pID, const char* DLL_NAME);
@@ -16,7 +16,7 @@ DWORD GetTargetThreadIDFromProcName(const char* ProcName);
 string random_string(string::size_type length);
 
 int main(int argc, char* argv[]) {
-    DWORD pID = GetTargetThreadIDFromProcName("TOTClient-Win64-Shipping.exe"); // Получаем ID процесса
+    DWORD pID = GetTargetThreadIDFromProcName("TOTClient-Win64-Shipping.exe");
     char path[MAX_PATH] = {0};
     char pathtemp[MAX_PATH] = {0};
     char name_of_dll[64] = "Total-x64.dll";
@@ -39,16 +39,7 @@ int main(int argc, char* argv[]) {
     int res = (outfile.write((char*)dllBuffer, dllSize)) ? 0 : 7;
     outfile.close( );
 
-    GetFullPathName(name_of_dll, MAX_PATH, path, NULL); // Нахождение патча, где находится инъектор
-
-    ////////////////////////////////////////////
-    /*
-    ** Здесь идет проверка процесса,
-    ** запущен ли он?
-    ** Если он запущен - проводим инъекцию,
-    ** в противном случае ждем
-    */
-    ////////////////////////////////////////////
+    GetFullPathName(name_of_dll, MAX_PATH, path, NULL);
 
     DWORD* ptr_pID = &pID;
     if (*ptr_pID == NULL) {
@@ -61,8 +52,6 @@ int main(int argc, char* argv[]) {
         } while (*ptr_pID == NULL);
     }
 
-    // Инъекция
-
     if (!Inject(pID, path)) {
         puts("Not Loaded!");
     } else {
@@ -74,7 +63,7 @@ BOOL Inject(DWORD pID, const char* DLL_NAME) {
     HANDLE Proc;
     HMODULE hLib;
     char buf[50] = {0};
-    LPVOID RemoteString, LoadLibraryEx; // Указатель (typedef void far *LPVOID;)
+    LPVOID RemoteString, LoadLibraryEx;
 
     if (!pID)
         return false;
@@ -85,14 +74,9 @@ BOOL Inject(DWORD pID, const char* DLL_NAME) {
     }
 
     LoadLibraryEx = (LPVOID)GetProcAddress(GetModuleHandle("kernel32.dll"), "LoadLibraryA");
-
-    // Выделение места в процессе для нашей dll
     RemoteString = (LPVOID)VirtualAllocEx(Proc, NULL, strlen(DLL_NAME), MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
 
-    // Запись имени строки нашей дллки в выделенной заранее памяти
     WriteProcessMemory(Proc, (LPVOID)RemoteString, DLL_NAME, strlen(DLL_NAME), NULL);
-
-    // Загрузка длл
     CreateRemoteThread(Proc, NULL, NULL, (LPTHREAD_START_ROUTINE)LoadLibraryEx, (LPVOID)RemoteString, NULL, NULL);
 
     CloseHandle(Proc);
@@ -119,22 +103,4 @@ DWORD GetTargetThreadIDFromProcName(const char* ProcName) {
         retval = Process32Next(thSnapShot, &pe);
     }
     return 0;
-}
-
-string random_string(string::size_type length) {
-    static auto& chrs = "0123456789"
-                        "abcdefghijklmnopqrstuvwxyz"
-                        "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    thread_local static mt19937 rg{random_device{ }( )};
-    thread_local static uniform_int_distribution<string::size_type> pick(0, sizeof(chrs) - 2);
-
-    string s;
-
-    s.reserve(length);
-
-    while (length--)
-        s += chrs[pick(rg)];
-
-    return s;
 }

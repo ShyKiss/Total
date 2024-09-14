@@ -11,17 +11,17 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "OPP_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
-#include "OPP_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SingleRewardWidget.SingleRewardWidget_C
-// 0x00A0 (0x0300 - 0x0260)
+// 0x00A8 (0x0308 - 0x0260)
 class USingleRewardWidget_C final : public UUserWidget
 {
 public:
@@ -35,10 +35,11 @@ public:
 	class UImage*                                 Image_163;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 STAMP;                                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Amount;                                            // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D10[0x4];                                     // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2AC[0x4];                                      // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             IconTexture;                                       // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRewardUIData                          Reward_UI_Data;                                    // 0x02B8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FSlateColor                            IconTintColor;                                     // 0x02D8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          bInverseColors;                                    // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_SingleRewardWidget(int32 EntryPoint);
@@ -64,7 +65,7 @@ public:
 	}
 };
 static_assert(alignof(USingleRewardWidget_C) == 0x000008, "Wrong alignment on USingleRewardWidget_C");
-static_assert(sizeof(USingleRewardWidget_C) == 0x000300, "Wrong size on USingleRewardWidget_C");
+static_assert(sizeof(USingleRewardWidget_C) == 0x000308, "Wrong size on USingleRewardWidget_C");
 static_assert(offsetof(USingleRewardWidget_C, UberGraphFrame) == 0x000260, "Member 'USingleRewardWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USingleRewardWidget_C, NewReward) == 0x000268, "Member 'USingleRewardWidget_C::NewReward' has a wrong offset!");
 static_assert(offsetof(USingleRewardWidget_C, AmountText) == 0x000270, "Member 'USingleRewardWidget_C::AmountText' has a wrong offset!");
@@ -78,6 +79,7 @@ static_assert(offsetof(USingleRewardWidget_C, Amount) == 0x0002A8, "Member 'USin
 static_assert(offsetof(USingleRewardWidget_C, IconTexture) == 0x0002B0, "Member 'USingleRewardWidget_C::IconTexture' has a wrong offset!");
 static_assert(offsetof(USingleRewardWidget_C, Reward_UI_Data) == 0x0002B8, "Member 'USingleRewardWidget_C::Reward_UI_Data' has a wrong offset!");
 static_assert(offsetof(USingleRewardWidget_C, IconTintColor) == 0x0002D8, "Member 'USingleRewardWidget_C::IconTintColor' has a wrong offset!");
+static_assert(offsetof(USingleRewardWidget_C, bInverseColors) == 0x000300, "Member 'USingleRewardWidget_C::bInverseColors' has a wrong offset!");
 
 }
 

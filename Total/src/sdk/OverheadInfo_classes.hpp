@@ -59,6 +59,7 @@ public:
 	void Event_ImposterUpdated();
 	void Event_PlayerHealthChanged(float NewHealth, bool bSkipAnims);
 	void Event_InventoryUpdated(EInventoryUpdateEventType InventoryEventType);
+	void UpdateActiveSkillIconDisplay(EActiveSkillType Type);
 
 public:
 	static class UClass* StaticClass()

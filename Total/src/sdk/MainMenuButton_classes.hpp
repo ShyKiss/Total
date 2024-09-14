@@ -36,7 +36,7 @@ public:
 public:
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 	void Get_Button_Enabled(bool* Enabled);
-	void SetText(const class FText& Param_Text);
+	void SetText(const class FText& Text_0);
 	void Set_Button_Enabled(bool IsEnabled);
 	void PreConstruct(bool IsDesignTime);
 	void BndEvt__Button_32_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
