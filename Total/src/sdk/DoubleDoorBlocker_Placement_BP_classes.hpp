@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DoubleDoorBlocker_Placement_BP.DoubleDoorBlocker_Placement_BP_C
-// 0x0010 (0x0288 - 0x0278)
+// 0x0010 (0x0290 - 0x0280)
 class ADoubleDoorBlocker_Placement_BP_C final : public ARBDoorBlockerPlacementActor
 {
 public:
-	class UBillboardComponent*                    Icon1;                                             // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Icon;                                              // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Icon1;                                             // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Icon;                                              // 0x0288(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -35,9 +35,9 @@ public:
 	}
 };
 static_assert(alignof(ADoubleDoorBlocker_Placement_BP_C) == 0x000008, "Wrong alignment on ADoubleDoorBlocker_Placement_BP_C");
-static_assert(sizeof(ADoubleDoorBlocker_Placement_BP_C) == 0x000288, "Wrong size on ADoubleDoorBlocker_Placement_BP_C");
-static_assert(offsetof(ADoubleDoorBlocker_Placement_BP_C, Icon1) == 0x000278, "Member 'ADoubleDoorBlocker_Placement_BP_C::Icon1' has a wrong offset!");
-static_assert(offsetof(ADoubleDoorBlocker_Placement_BP_C, Icon) == 0x000280, "Member 'ADoubleDoorBlocker_Placement_BP_C::Icon' has a wrong offset!");
+static_assert(sizeof(ADoubleDoorBlocker_Placement_BP_C) == 0x000290, "Wrong size on ADoubleDoorBlocker_Placement_BP_C");
+static_assert(offsetof(ADoubleDoorBlocker_Placement_BP_C, Icon1) == 0x000280, "Member 'ADoubleDoorBlocker_Placement_BP_C::Icon1' has a wrong offset!");
+static_assert(offsetof(ADoubleDoorBlocker_Placement_BP_C, Icon) == 0x000288, "Member 'ADoubleDoorBlocker_Placement_BP_C::Icon' has a wrong offset!");
 
 }
 

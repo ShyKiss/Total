@@ -215,18 +215,31 @@ static_assert(alignof(MovieSceneSubSection_GetSequence) == 0x000008, "Wrong alig
 static_assert(sizeof(MovieSceneSubSection_GetSequence) == 0x000008, "Wrong size on MovieSceneSubSection_GetSequence");
 static_assert(offsetof(MovieSceneSubSection_GetSequence, ReturnValue) == 0x000000, "Member 'MovieSceneSubSection_GetSequence::ReturnValue' has a wrong offset!");
 
-// Function MovieScene.MovieSceneEasingFunction.OnEvaluate
-// 0x0008 (0x0008 - 0x0000)
-struct MovieSceneEasingFunction_OnEvaluate final
+// Function MovieScene.MovieSceneSequence.FindBindingByTag
+// 0x0020 (0x0020 - 0x0000)
+struct MovieSceneSequence_FindBindingByTag final
 {
 public:
-	float                                         Interp;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   InBindingName;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMovieSceneObjectBindingID             ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneEasingFunction_OnEvaluate) == 0x000004, "Wrong alignment on MovieSceneEasingFunction_OnEvaluate");
-static_assert(sizeof(MovieSceneEasingFunction_OnEvaluate) == 0x000008, "Wrong size on MovieSceneEasingFunction_OnEvaluate");
-static_assert(offsetof(MovieSceneEasingFunction_OnEvaluate, Interp) == 0x000000, "Member 'MovieSceneEasingFunction_OnEvaluate::Interp' has a wrong offset!");
-static_assert(offsetof(MovieSceneEasingFunction_OnEvaluate, ReturnValue) == 0x000004, "Member 'MovieSceneEasingFunction_OnEvaluate::ReturnValue' has a wrong offset!");
+static_assert(alignof(MovieSceneSequence_FindBindingByTag) == 0x000004, "Wrong alignment on MovieSceneSequence_FindBindingByTag");
+static_assert(sizeof(MovieSceneSequence_FindBindingByTag) == 0x000020, "Wrong size on MovieSceneSequence_FindBindingByTag");
+static_assert(offsetof(MovieSceneSequence_FindBindingByTag, InBindingName) == 0x000000, "Member 'MovieSceneSequence_FindBindingByTag::InBindingName' has a wrong offset!");
+static_assert(offsetof(MovieSceneSequence_FindBindingByTag, ReturnValue) == 0x000008, "Member 'MovieSceneSequence_FindBindingByTag::ReturnValue' has a wrong offset!");
+
+// Function MovieScene.MovieSceneSequence.FindBindingsByTag
+// 0x0018 (0x0018 - 0x0000)
+struct MovieSceneSequence_FindBindingsByTag final
+{
+public:
+	class FName                                   InBindingName;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FMovieSceneObjectBindingID>     ReturnValue;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MovieSceneSequence_FindBindingsByTag) == 0x000008, "Wrong alignment on MovieSceneSequence_FindBindingsByTag");
+static_assert(sizeof(MovieSceneSequence_FindBindingsByTag) == 0x000018, "Wrong size on MovieSceneSequence_FindBindingsByTag");
+static_assert(offsetof(MovieSceneSequence_FindBindingsByTag, InBindingName) == 0x000000, "Member 'MovieSceneSequence_FindBindingsByTag::InBindingName' has a wrong offset!");
+static_assert(offsetof(MovieSceneSequence_FindBindingsByTag, ReturnValue) == 0x000008, "Member 'MovieSceneSequence_FindBindingsByTag::ReturnValue' has a wrong offset!");
 
 // Function MovieScene.MovieSceneSequencePlayer.GetBoundObjects
 // 0x0028 (0x0028 - 0x0000)
@@ -613,32 +626,6 @@ static_assert(alignof(MovieSceneSequencePlayer_IsReversed) == 0x000001, "Wrong a
 static_assert(sizeof(MovieSceneSequencePlayer_IsReversed) == 0x000001, "Wrong size on MovieSceneSequencePlayer_IsReversed");
 static_assert(offsetof(MovieSceneSequencePlayer_IsReversed, ReturnValue) == 0x000000, "Member 'MovieSceneSequencePlayer_IsReversed::ReturnValue' has a wrong offset!");
 
-// Function MovieScene.MovieSceneSequence.FindBindingByTag
-// 0x0020 (0x0020 - 0x0000)
-struct MovieSceneSequence_FindBindingByTag final
-{
-public:
-	class FName                                   InBindingName;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMovieSceneObjectBindingID             ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MovieSceneSequence_FindBindingByTag) == 0x000004, "Wrong alignment on MovieSceneSequence_FindBindingByTag");
-static_assert(sizeof(MovieSceneSequence_FindBindingByTag) == 0x000020, "Wrong size on MovieSceneSequence_FindBindingByTag");
-static_assert(offsetof(MovieSceneSequence_FindBindingByTag, InBindingName) == 0x000000, "Member 'MovieSceneSequence_FindBindingByTag::InBindingName' has a wrong offset!");
-static_assert(offsetof(MovieSceneSequence_FindBindingByTag, ReturnValue) == 0x000008, "Member 'MovieSceneSequence_FindBindingByTag::ReturnValue' has a wrong offset!");
-
-// Function MovieScene.MovieSceneSequence.FindBindingsByTag
-// 0x0018 (0x0018 - 0x0000)
-struct MovieSceneSequence_FindBindingsByTag final
-{
-public:
-	class FName                                   InBindingName;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FMovieSceneObjectBindingID>     ReturnValue;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MovieSceneSequence_FindBindingsByTag) == 0x000008, "Wrong alignment on MovieSceneSequence_FindBindingsByTag");
-static_assert(sizeof(MovieSceneSequence_FindBindingsByTag) == 0x000018, "Wrong size on MovieSceneSequence_FindBindingsByTag");
-static_assert(offsetof(MovieSceneSequence_FindBindingsByTag, InBindingName) == 0x000000, "Member 'MovieSceneSequence_FindBindingsByTag::InBindingName' has a wrong offset!");
-static_assert(offsetof(MovieSceneSequence_FindBindingsByTag, ReturnValue) == 0x000008, "Member 'MovieSceneSequence_FindBindingsByTag::ReturnValue' has a wrong offset!");
-
 // Function MovieScene.MovieSceneCustomClockSource.OnRequestCurrentTime
 // 0x001C (0x001C - 0x0000)
 struct MovieSceneCustomClockSource_OnRequestCurrentTime final
@@ -688,6 +675,19 @@ static_assert(alignof(MovieSceneCustomClockSource_OnTick) == 0x000004, "Wrong al
 static_assert(sizeof(MovieSceneCustomClockSource_OnTick) == 0x000008, "Wrong size on MovieSceneCustomClockSource_OnTick");
 static_assert(offsetof(MovieSceneCustomClockSource_OnTick, DeltaSeconds) == 0x000000, "Member 'MovieSceneCustomClockSource_OnTick::DeltaSeconds' has a wrong offset!");
 static_assert(offsetof(MovieSceneCustomClockSource_OnTick, InPlayRate) == 0x000004, "Member 'MovieSceneCustomClockSource_OnTick::InPlayRate' has a wrong offset!");
+
+// Function MovieScene.MovieSceneEasingFunction.OnEvaluate
+// 0x0008 (0x0008 - 0x0000)
+struct MovieSceneEasingFunction_OnEvaluate final
+{
+public:
+	float                                         Interp;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MovieSceneEasingFunction_OnEvaluate) == 0x000004, "Wrong alignment on MovieSceneEasingFunction_OnEvaluate");
+static_assert(sizeof(MovieSceneEasingFunction_OnEvaluate) == 0x000008, "Wrong size on MovieSceneEasingFunction_OnEvaluate");
+static_assert(offsetof(MovieSceneEasingFunction_OnEvaluate, Interp) == 0x000000, "Member 'MovieSceneEasingFunction_OnEvaluate::Interp' has a wrong offset!");
+static_assert(offsetof(MovieSceneEasingFunction_OnEvaluate, ReturnValue) == 0x000004, "Member 'MovieSceneEasingFunction_OnEvaluate::ReturnValue' has a wrong offset!");
 
 }
 

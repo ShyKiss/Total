@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass FistPickupItem.FistPickupItem_C
-// 0x0000 (0x0A60 - 0x0A60)
+// 0x0000 (0x0A70 - 0x0A70)
 class AFistPickupItem_C final : public ARBPickup
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AFistPickupItem_C) == 0x000010, "Wrong alignment on AFistPickupItem_C");
-static_assert(sizeof(AFistPickupItem_C) == 0x000A60, "Wrong size on AFistPickupItem_C");
+static_assert(sizeof(AFistPickupItem_C) == 0x000A70, "Wrong size on AFistPickupItem_C");
 
 }
 

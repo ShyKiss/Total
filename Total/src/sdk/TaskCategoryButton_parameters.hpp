@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -164,33 +164,37 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0030(0x0028)()
-	bool                                          Temp_bool_Variable_1;                              // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_2;                              // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_2;                    // 0x0060(0x0028)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_3;                    // 0x0088(0x0028)()
-	bool                                          Temp_bool_Variable_2;                              // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_3;                              // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_3;                              // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_4;                              // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_1;                            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_4;                              // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_5;                              // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_6;                              // 0x00CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_8;                              // 0x00CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_9;                              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D2[0x6];                                       // 0x00D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_Select_Default;                             // 0x00D8(0x0028)()
-	struct FSlateColor                            K2Node_Select_Default_1;                           // 0x0100(0x0028)()
+	bool                                          Temp_bool_Variable_5;                              // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_6;                              // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_8;                              // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_9;                              // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D3[0x5];                                       // 0x00D3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_Select_Default_1;                           // 0x00D8(0x0028)()
+	struct FSlateColor                            K2Node_Select_Default_2;                           // 0x0100(0x0028)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0128(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -202,44 +206,46 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x01E0(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x01F0(0x0018)()
 	bool                                          Temp_bool_Variable_7;                              // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x020A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x020B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Select_Default_4;                           // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_5;                           // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_6;                           // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsConsideredHovered_bConsideredHovered;   // 0x021A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_7;                           // 0x021B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_4;                           // 0x020A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20B[0x5];                                      // 0x020B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default_5;                           // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_6;                           // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsConsideredHovered_bConsideredHovered;   // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_7;                           // 0x021A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TaskCategoryButton_C_Refresh) == 0x000008, "Wrong alignment on TaskCategoryButton_C_Refresh");
 static_assert(sizeof(TaskCategoryButton_C_Refresh) == 0x000220, "Wrong size on TaskCategoryButton_C_Refresh");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable) == 0x000000, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_1) == 0x000001, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable) == 0x000002, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_2) == 0x000003, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_3) == 0x000004, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_1) == 0x000005, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'TaskCategoryButton_C_Refresh::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_MakeStruct_SlateColor_1) == 0x000030, "Member 'TaskCategoryButton_C_Refresh::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_1) == 0x000058, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_2) == 0x000058, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_2' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_MakeStruct_SlateColor_2) == 0x000060, "Member 'TaskCategoryButton_C_Refresh::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_MakeStruct_SlateColor_3) == 0x000088, "Member 'TaskCategoryButton_C_Refresh::K2Node_MakeStruct_SlateColor_3' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_2) == 0x0000B0, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_2) == 0x0000B1, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_3) == 0x0000B2, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_3) == 0x0000B3, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_3' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_3) == 0x0000B0, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_3' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_4) == 0x0000B1, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_5) == 0x0000B2, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_4) == 0x0000B3, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_4' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_object_Variable) == 0x0000B8, "Member 'TaskCategoryButton_C_Refresh::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_object_Variable_1) == 0x0000C0, "Member 'TaskCategoryButton_C_Refresh::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_4) == 0x0000C8, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_4) == 0x0000C9, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_5) == 0x0000CA, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_5) == 0x0000CB, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_6) == 0x0000CC, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_7) == 0x0000CD, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_6) == 0x0000CE, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_8) == 0x0000CF, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_9) == 0x0000D0, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_Not_PreBool_ReturnValue) == 0x0000D1, "Member 'TaskCategoryButton_C_Refresh::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default) == 0x0000D8, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_1) == 0x000100, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_5) == 0x0000C8, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_5' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_6) == 0x0000C9, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_6' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_7) == 0x0000CA, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_7' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_6) == 0x0000CB, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_6' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_8) == 0x0000CC, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_8' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_byte_Variable_9) == 0x0000CD, "Member 'TaskCategoryButton_C_Refresh::Temp_byte_Variable_9' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_Not_PreBool_ReturnValue) == 0x0000CE, "Member 'TaskCategoryButton_C_Refresh::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_BooleanOR_ReturnValue) == 0x0000CF, "Member 'TaskCategoryButton_C_Refresh::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000D0, "Member 'TaskCategoryButton_C_Refresh::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default) == 0x0000D1, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_BooleanAND_ReturnValue) == 0x0000D2, "Member 'TaskCategoryButton_C_Refresh::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_1) == 0x0000D8, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_2) == 0x000100, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_2' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_MakeStruct_FormatArgumentData) == 0x000128, "Member 'TaskCategoryButton_C_Refresh::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_Greater_IntInt_ReturnValue) == 0x000168, "Member 'TaskCategoryButton_C_Refresh::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_MakeArray_Array) == 0x000170, "Member 'TaskCategoryButton_C_Refresh::K2Node_MakeArray_Array' has a wrong offset!");
@@ -249,14 +255,12 @@ static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_Greater_IntInt_Ret
 static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_MakeArray_Array_1) == 0x0001E0, "Member 'TaskCategoryButton_C_Refresh::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_Format_ReturnValue_1) == 0x0001F0, "Member 'TaskCategoryButton_C_Refresh::CallFunc_Format_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(TaskCategoryButton_C_Refresh, Temp_bool_Variable_7) == 0x000208, "Member 'TaskCategoryButton_C_Refresh::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_2) == 0x000209, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_3) == 0x00020A, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_BooleanOR_ReturnValue) == 0x00020B, "Member 'TaskCategoryButton_C_Refresh::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_4) == 0x000210, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_5) == 0x000218, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_6) == 0x000219, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_IsConsideredHovered_bConsideredHovered) == 0x00021A, "Member 'TaskCategoryButton_C_Refresh::CallFunc_IsConsideredHovered_bConsideredHovered' has a wrong offset!");
-static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_7) == 0x00021B, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_7' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_3) == 0x000209, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_4) == 0x00020A, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_4' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_5) == 0x000210, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_5' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_6) == 0x000218, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_6' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, CallFunc_IsConsideredHovered_bConsideredHovered) == 0x000219, "Member 'TaskCategoryButton_C_Refresh::CallFunc_IsConsideredHovered_bConsideredHovered' has a wrong offset!");
+static_assert(offsetof(TaskCategoryButton_C_Refresh, K2Node_Select_Default_7) == 0x00021A, "Member 'TaskCategoryButton_C_Refresh::K2Node_Select_Default_7' has a wrong offset!");
 
 // Function TaskCategoryButton.TaskCategoryButton_C.SetHovered
 // 0x0003 (0x0003 - 0x0000)

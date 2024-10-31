@@ -250,22 +250,6 @@ static_assert(offsetof(FLandscapeLayer, BlendMode) == 0x000024, "Member 'FLandsc
 static_assert(offsetof(FLandscapeLayer, Brushes) == 0x000028, "Member 'FLandscapeLayer::Brushes' has a wrong offset!");
 static_assert(offsetof(FLandscapeLayer, WeightmapLayerAllocationBlend) == 0x000038, "Member 'FLandscapeLayer::WeightmapLayerAllocationBlend' has a wrong offset!");
 
-// ScriptStruct Landscape.LandscapeSplineSegmentConnection
-// 0x0018 (0x0018 - 0x0000)
-struct FLandscapeSplineSegmentConnection final
-{
-public:
-	class ULandscapeSplineControlPoint*           ControlPoint;                                      // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TangentLen;                                        // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SocketName;                                        // 0x000C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FLandscapeSplineSegmentConnection) == 0x000008, "Wrong alignment on FLandscapeSplineSegmentConnection");
-static_assert(sizeof(FLandscapeSplineSegmentConnection) == 0x000018, "Wrong size on FLandscapeSplineSegmentConnection");
-static_assert(offsetof(FLandscapeSplineSegmentConnection, ControlPoint) == 0x000000, "Member 'FLandscapeSplineSegmentConnection::ControlPoint' has a wrong offset!");
-static_assert(offsetof(FLandscapeSplineSegmentConnection, TangentLen) == 0x000008, "Member 'FLandscapeSplineSegmentConnection::TangentLen' has a wrong offset!");
-static_assert(offsetof(FLandscapeSplineSegmentConnection, SocketName) == 0x00000C, "Member 'FLandscapeSplineSegmentConnection::SocketName' has a wrong offset!");
-
 // ScriptStruct Landscape.HeightmapData
 // 0x0008 (0x0008 - 0x0000)
 struct FHeightmapData final
@@ -334,30 +318,6 @@ static_assert(alignof(FLandscapeComponentMaterialOverride) == 0x000008, "Wrong a
 static_assert(sizeof(FLandscapeComponentMaterialOverride) == 0x000010, "Wrong size on FLandscapeComponentMaterialOverride");
 static_assert(offsetof(FLandscapeComponentMaterialOverride, LODIndex) == 0x000000, "Member 'FLandscapeComponentMaterialOverride::LODIndex' has a wrong offset!");
 static_assert(offsetof(FLandscapeComponentMaterialOverride, Material) == 0x000008, "Member 'FLandscapeComponentMaterialOverride::Material' has a wrong offset!");
-
-// ScriptStruct Landscape.LayerBlendInput
-// 0x0048 (0x0048 - 0x0000)
-struct FLayerBlendInput final
-{
-public:
-	class FName                                   LayerName;                                         // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ELandscapeLayerBlendType                      BlendType;                                         // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FExpressionInput                       LayerInput;                                        // 0x000C(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
-	struct FExpressionInput                       HeightInput;                                       // 0x0020(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
-	float                                         PreviewWeight;                                     // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ConstLayerInput;                                   // 0x0038(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ConstHeightInput;                                  // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FLayerBlendInput) == 0x000004, "Wrong alignment on FLayerBlendInput");
-static_assert(sizeof(FLayerBlendInput) == 0x000048, "Wrong size on FLayerBlendInput");
-static_assert(offsetof(FLayerBlendInput, LayerName) == 0x000000, "Member 'FLayerBlendInput::LayerName' has a wrong offset!");
-static_assert(offsetof(FLayerBlendInput, BlendType) == 0x000008, "Member 'FLayerBlendInput::BlendType' has a wrong offset!");
-static_assert(offsetof(FLayerBlendInput, LayerInput) == 0x00000C, "Member 'FLayerBlendInput::LayerInput' has a wrong offset!");
-static_assert(offsetof(FLayerBlendInput, HeightInput) == 0x000020, "Member 'FLayerBlendInput::HeightInput' has a wrong offset!");
-static_assert(offsetof(FLayerBlendInput, PreviewWeight) == 0x000034, "Member 'FLayerBlendInput::PreviewWeight' has a wrong offset!");
-static_assert(offsetof(FLayerBlendInput, ConstLayerInput) == 0x000038, "Member 'FLayerBlendInput::ConstLayerInput' has a wrong offset!");
-static_assert(offsetof(FLayerBlendInput, ConstHeightInput) == 0x000044, "Member 'FLayerBlendInput::ConstHeightInput' has a wrong offset!");
 
 // ScriptStruct Landscape.LandscapeEditToolRenderData
 // 0x0038 (0x0038 - 0x0000)
@@ -496,20 +456,6 @@ public:
 static_assert(alignof(FLandscapeImportLayerInfo) == 0x000001, "Wrong alignment on FLandscapeImportLayerInfo");
 static_assert(sizeof(FLandscapeImportLayerInfo) == 0x000001, "Wrong size on FLandscapeImportLayerInfo");
 
-// ScriptStruct Landscape.PhysicalMaterialInput
-// 0x0020 (0x0020 - 0x0000)
-struct FPhysicalMaterialInput final
-{
-public:
-	class UPhysicalMaterial*                      PhysicalMaterial;                                  // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FExpressionInput                       Input;                                             // 0x0008(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FPhysicalMaterialInput) == 0x000008, "Wrong alignment on FPhysicalMaterialInput");
-static_assert(sizeof(FPhysicalMaterialInput) == 0x000020, "Wrong size on FPhysicalMaterialInput");
-static_assert(offsetof(FPhysicalMaterialInput, PhysicalMaterial) == 0x000000, "Member 'FPhysicalMaterialInput::PhysicalMaterial' has a wrong offset!");
-static_assert(offsetof(FPhysicalMaterialInput, Input) == 0x000008, "Member 'FPhysicalMaterialInput::Input' has a wrong offset!");
-
 // ScriptStruct Landscape.LandscapeLayerStruct
 // 0x0008 (0x0008 - 0x0000)
 struct FLandscapeLayerStruct final
@@ -602,6 +548,22 @@ static_assert(offsetof(FLandscapeSplineMeshEntry, Orientation) == 0x000034, "Mem
 static_assert(offsetof(FLandscapeSplineMeshEntry, ForwardAxis) == 0x000035, "Member 'FLandscapeSplineMeshEntry::ForwardAxis' has a wrong offset!");
 static_assert(offsetof(FLandscapeSplineMeshEntry, UpAxis) == 0x000036, "Member 'FLandscapeSplineMeshEntry::UpAxis' has a wrong offset!");
 
+// ScriptStruct Landscape.LandscapeSplineSegmentConnection
+// 0x0018 (0x0018 - 0x0000)
+struct FLandscapeSplineSegmentConnection final
+{
+public:
+	class ULandscapeSplineControlPoint*           ControlPoint;                                      // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TangentLen;                                        // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SocketName;                                        // 0x000C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FLandscapeSplineSegmentConnection) == 0x000008, "Wrong alignment on FLandscapeSplineSegmentConnection");
+static_assert(sizeof(FLandscapeSplineSegmentConnection) == 0x000018, "Wrong size on FLandscapeSplineSegmentConnection");
+static_assert(offsetof(FLandscapeSplineSegmentConnection, ControlPoint) == 0x000000, "Member 'FLandscapeSplineSegmentConnection::ControlPoint' has a wrong offset!");
+static_assert(offsetof(FLandscapeSplineSegmentConnection, TangentLen) == 0x000008, "Member 'FLandscapeSplineSegmentConnection::TangentLen' has a wrong offset!");
+static_assert(offsetof(FLandscapeSplineSegmentConnection, SocketName) == 0x00000C, "Member 'FLandscapeSplineSegmentConnection::SocketName' has a wrong offset!");
+
 // ScriptStruct Landscape.LandscapeSplineInterpPoint
 // 0x0070 (0x0070 - 0x0000)
 struct FLandscapeSplineInterpPoint final
@@ -646,6 +608,44 @@ static_assert(sizeof(FGrassInput) == 0x000028, "Wrong size on FGrassInput");
 static_assert(offsetof(FGrassInput, Name) == 0x000000, "Member 'FGrassInput::Name' has a wrong offset!");
 static_assert(offsetof(FGrassInput, GrassType) == 0x000008, "Member 'FGrassInput::GrassType' has a wrong offset!");
 static_assert(offsetof(FGrassInput, Input) == 0x000010, "Member 'FGrassInput::Input' has a wrong offset!");
+
+// ScriptStruct Landscape.LayerBlendInput
+// 0x0048 (0x0048 - 0x0000)
+struct FLayerBlendInput final
+{
+public:
+	class FName                                   LayerName;                                         // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ELandscapeLayerBlendType                      BlendType;                                         // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FExpressionInput                       LayerInput;                                        // 0x000C(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
+	struct FExpressionInput                       HeightInput;                                       // 0x0020(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
+	float                                         PreviewWeight;                                     // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ConstLayerInput;                                   // 0x0038(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ConstHeightInput;                                  // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FLayerBlendInput) == 0x000004, "Wrong alignment on FLayerBlendInput");
+static_assert(sizeof(FLayerBlendInput) == 0x000048, "Wrong size on FLayerBlendInput");
+static_assert(offsetof(FLayerBlendInput, LayerName) == 0x000000, "Member 'FLayerBlendInput::LayerName' has a wrong offset!");
+static_assert(offsetof(FLayerBlendInput, BlendType) == 0x000008, "Member 'FLayerBlendInput::BlendType' has a wrong offset!");
+static_assert(offsetof(FLayerBlendInput, LayerInput) == 0x00000C, "Member 'FLayerBlendInput::LayerInput' has a wrong offset!");
+static_assert(offsetof(FLayerBlendInput, HeightInput) == 0x000020, "Member 'FLayerBlendInput::HeightInput' has a wrong offset!");
+static_assert(offsetof(FLayerBlendInput, PreviewWeight) == 0x000034, "Member 'FLayerBlendInput::PreviewWeight' has a wrong offset!");
+static_assert(offsetof(FLayerBlendInput, ConstLayerInput) == 0x000038, "Member 'FLayerBlendInput::ConstLayerInput' has a wrong offset!");
+static_assert(offsetof(FLayerBlendInput, ConstHeightInput) == 0x000044, "Member 'FLayerBlendInput::ConstHeightInput' has a wrong offset!");
+
+// ScriptStruct Landscape.PhysicalMaterialInput
+// 0x0020 (0x0020 - 0x0000)
+struct FPhysicalMaterialInput final
+{
+public:
+	class UPhysicalMaterial*                      PhysicalMaterial;                                  // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FExpressionInput                       Input;                                             // 0x0008(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FPhysicalMaterialInput) == 0x000008, "Wrong alignment on FPhysicalMaterialInput");
+static_assert(sizeof(FPhysicalMaterialInput) == 0x000020, "Wrong size on FPhysicalMaterialInput");
+static_assert(offsetof(FPhysicalMaterialInput, PhysicalMaterial) == 0x000000, "Member 'FPhysicalMaterialInput::PhysicalMaterial' has a wrong offset!");
+static_assert(offsetof(FPhysicalMaterialInput, Input) == 0x000008, "Member 'FPhysicalMaterialInput::Input' has a wrong offset!");
 
 }
 

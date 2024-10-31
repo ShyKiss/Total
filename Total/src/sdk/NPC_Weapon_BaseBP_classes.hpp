@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NPC_Weapon_BaseBP.NPC_Weapon_BaseBP_C
-// 0x0008 (0x0428 - 0x0420)
+// 0x0008 (0x0440 - 0x0438)
 class ANPC_Weapon_BaseBP_C final : public ARBNPCWeapon
 {
 public:
-	class USceneComponent*                        BloodEffectLocator;                                // 0x0420(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        BloodEffectLocator;                                // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(ANPC_Weapon_BaseBP_C) == 0x000008, "Wrong alignment on ANPC_Weapon_BaseBP_C");
-static_assert(sizeof(ANPC_Weapon_BaseBP_C) == 0x000428, "Wrong size on ANPC_Weapon_BaseBP_C");
-static_assert(offsetof(ANPC_Weapon_BaseBP_C, BloodEffectLocator) == 0x000420, "Member 'ANPC_Weapon_BaseBP_C::BloodEffectLocator' has a wrong offset!");
+static_assert(sizeof(ANPC_Weapon_BaseBP_C) == 0x000440, "Wrong size on ANPC_Weapon_BaseBP_C");
+static_assert(offsetof(ANPC_Weapon_BaseBP_C, BloodEffectLocator) == 0x000438, "Member 'ANPC_Weapon_BaseBP_C::BloodEffectLocator' has a wrong offset!");
 
 }
 

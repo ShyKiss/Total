@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BrainAmp_SkillItem_BP.BrainAmp_SkillItem_BP_C
-// 0x0010 (0x0C70 - 0x0C60)
+// 0x0010 (0x0CF0 - 0x0CE0)
 class ABrainAmp_SkillItem_BP_C final : public ABaseAmp_SkillItem_BP_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BrainAmp_SkillItem_BP_C;            // 0x0C58(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               Ptc_AmpExplo;                                      // 0x0C60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BrainAmp_SkillItem_BP_C;            // 0x0CD8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystemComponent*               Ptc_AmpExplo;                                      // 0x0CE0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BrainAmp_SkillItem_BP(int32 EntryPoint);
@@ -42,9 +42,9 @@ public:
 	}
 };
 static_assert(alignof(ABrainAmp_SkillItem_BP_C) == 0x000010, "Wrong alignment on ABrainAmp_SkillItem_BP_C");
-static_assert(sizeof(ABrainAmp_SkillItem_BP_C) == 0x000C70, "Wrong size on ABrainAmp_SkillItem_BP_C");
-static_assert(offsetof(ABrainAmp_SkillItem_BP_C, UberGraphFrame_BrainAmp_SkillItem_BP_C) == 0x000C58, "Member 'ABrainAmp_SkillItem_BP_C::UberGraphFrame_BrainAmp_SkillItem_BP_C' has a wrong offset!");
-static_assert(offsetof(ABrainAmp_SkillItem_BP_C, Ptc_AmpExplo) == 0x000C60, "Member 'ABrainAmp_SkillItem_BP_C::Ptc_AmpExplo' has a wrong offset!");
+static_assert(sizeof(ABrainAmp_SkillItem_BP_C) == 0x000CF0, "Wrong size on ABrainAmp_SkillItem_BP_C");
+static_assert(offsetof(ABrainAmp_SkillItem_BP_C, UberGraphFrame_BrainAmp_SkillItem_BP_C) == 0x000CD8, "Member 'ABrainAmp_SkillItem_BP_C::UberGraphFrame_BrainAmp_SkillItem_BP_C' has a wrong offset!");
+static_assert(offsetof(ABrainAmp_SkillItem_BP_C, Ptc_AmpExplo) == 0x000CE0, "Member 'ABrainAmp_SkillItem_BP_C::Ptc_AmpExplo' has a wrong offset!");
 
 }
 

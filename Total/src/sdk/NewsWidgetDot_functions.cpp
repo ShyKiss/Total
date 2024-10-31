@@ -17,57 +17,23 @@
 namespace SDK
 {
 
-// Function NewsWidgetDot.NewsWidgetDot_C.SetIndex
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function NewsWidgetDot.NewsWidgetDot_C.DotClicked__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UNewsWidgetDot_C::SetIndex(int32 Index_0)
+void UNewsWidgetDot_C::DotClicked__DelegateSignature(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidgetDot_C", "SetIndex");
+		Func = Class->GetFunction("NewsWidgetDot_C", "DotClicked__DelegateSignature");
 
-	Params::NewsWidgetDot_C_SetIndex Parms{};
+	Params::NewsWidgetDot_C_DotClicked__DelegateSignature Parms{};
 
 	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function NewsWidgetDot.NewsWidgetDot_C.SetActive
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bActive                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UNewsWidgetDot_C::SetActive(bool bActive)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidgetDot_C", "SetActive");
-
-	Params::NewsWidgetDot_C_SetActive Parms{};
-
-	Parms.bActive = bActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function NewsWidgetDot.NewsWidgetDot_C.BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UNewsWidgetDot_C::BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidgetDot_C", "BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -91,19 +57,53 @@ void UNewsWidgetDot_C::ExecuteUbergraph_NewsWidgetDot(int32 EntryPoint)
 }
 
 
-// Function NewsWidgetDot.NewsWidgetDot_C.DotClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function NewsWidgetDot.NewsWidgetDot_C.BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
 
-void UNewsWidgetDot_C::DotClicked__DelegateSignature(int32 Index_0)
+void UNewsWidgetDot_C::BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NewsWidgetDot_C", "DotClicked__DelegateSignature");
+		Func = Class->GetFunction("NewsWidgetDot_C", "BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
-	Params::NewsWidgetDot_C_DotClicked__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function NewsWidgetDot.NewsWidgetDot_C.SetActive
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bActive                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UNewsWidgetDot_C::SetActive(bool bActive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NewsWidgetDot_C", "SetActive");
+
+	Params::NewsWidgetDot_C_SetActive Parms{};
+
+	Parms.bActive = bActive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function NewsWidgetDot.NewsWidgetDot_C.SetIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UNewsWidgetDot_C::SetIndex(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NewsWidgetDot_C", "SetIndex");
+
+	Params::NewsWidgetDot_C_SetIndex Parms{};
 
 	Parms.Index_0 = Index_0;
 

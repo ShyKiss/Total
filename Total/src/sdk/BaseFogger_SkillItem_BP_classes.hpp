@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BaseFogger_SkillItem_BP.BaseFogger_SkillItem_BP_C
-// 0x0060 (0x0C10 - 0x0BB0)
-class ABaseFogger_SkillItem_BP_C : public ARBDeployableSkillItem
+// 0x0060 (0x0C20 - 0x0BC0)
+class ABaseFogger_SkillItem_BP_C : public ARBBlindMineSkillItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0BB0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPointLightComponent*                   Light_Marker;                                      // 0x0BB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Ngr_Marker;                                        // 0x0BC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URBSoundComponent*                      SoundComponent;                                    // 0x0BC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           PaintColor;                                        // 0x0BD0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           MineLightColor;                                    // 0x0BE0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         SpawnedActors;                                     // 0x0BF0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, Transient, DisableEditOnInstance)
-	class UAkAudioEvent*                          StartBeepingSFX;                                   // 0x0C00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEvent*                          StopBeepingSFX;                                    // 0x0C08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0BC0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPointLightComponent*                   Light_Marker;                                      // 0x0BC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Ngr_Marker;                                        // 0x0BD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class URBSoundComponent*                      SoundComponent;                                    // 0x0BD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           PaintColor;                                        // 0x0BE0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           MineLightColor;                                    // 0x0BF0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         SpawnedActors;                                     // 0x0C00(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, Transient, DisableEditOnInstance)
+	class UAkAudioEvent*                          StartBeepingSFX;                                   // 0x0C10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                          StopBeepingSFX;                                    // 0x0C18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BaseFogger_SkillItem_BP(int32 EntryPoint);
@@ -58,16 +58,16 @@ public:
 	}
 };
 static_assert(alignof(ABaseFogger_SkillItem_BP_C) == 0x000010, "Wrong alignment on ABaseFogger_SkillItem_BP_C");
-static_assert(sizeof(ABaseFogger_SkillItem_BP_C) == 0x000C10, "Wrong size on ABaseFogger_SkillItem_BP_C");
-static_assert(offsetof(ABaseFogger_SkillItem_BP_C, UberGraphFrame) == 0x000BB0, "Member 'ABaseFogger_SkillItem_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABaseFogger_SkillItem_BP_C, Light_Marker) == 0x000BB8, "Member 'ABaseFogger_SkillItem_BP_C::Light_Marker' has a wrong offset!");
-static_assert(offsetof(ABaseFogger_SkillItem_BP_C, Ngr_Marker) == 0x000BC0, "Member 'ABaseFogger_SkillItem_BP_C::Ngr_Marker' has a wrong offset!");
-static_assert(offsetof(ABaseFogger_SkillItem_BP_C, SoundComponent) == 0x000BC8, "Member 'ABaseFogger_SkillItem_BP_C::SoundComponent' has a wrong offset!");
-static_assert(offsetof(ABaseFogger_SkillItem_BP_C, PaintColor) == 0x000BD0, "Member 'ABaseFogger_SkillItem_BP_C::PaintColor' has a wrong offset!");
-static_assert(offsetof(ABaseFogger_SkillItem_BP_C, MineLightColor) == 0x000BE0, "Member 'ABaseFogger_SkillItem_BP_C::MineLightColor' has a wrong offset!");
-static_assert(offsetof(ABaseFogger_SkillItem_BP_C, SpawnedActors) == 0x000BF0, "Member 'ABaseFogger_SkillItem_BP_C::SpawnedActors' has a wrong offset!");
-static_assert(offsetof(ABaseFogger_SkillItem_BP_C, StartBeepingSFX) == 0x000C00, "Member 'ABaseFogger_SkillItem_BP_C::StartBeepingSFX' has a wrong offset!");
-static_assert(offsetof(ABaseFogger_SkillItem_BP_C, StopBeepingSFX) == 0x000C08, "Member 'ABaseFogger_SkillItem_BP_C::StopBeepingSFX' has a wrong offset!");
+static_assert(sizeof(ABaseFogger_SkillItem_BP_C) == 0x000C20, "Wrong size on ABaseFogger_SkillItem_BP_C");
+static_assert(offsetof(ABaseFogger_SkillItem_BP_C, UberGraphFrame) == 0x000BC0, "Member 'ABaseFogger_SkillItem_BP_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ABaseFogger_SkillItem_BP_C, Light_Marker) == 0x000BC8, "Member 'ABaseFogger_SkillItem_BP_C::Light_Marker' has a wrong offset!");
+static_assert(offsetof(ABaseFogger_SkillItem_BP_C, Ngr_Marker) == 0x000BD0, "Member 'ABaseFogger_SkillItem_BP_C::Ngr_Marker' has a wrong offset!");
+static_assert(offsetof(ABaseFogger_SkillItem_BP_C, SoundComponent) == 0x000BD8, "Member 'ABaseFogger_SkillItem_BP_C::SoundComponent' has a wrong offset!");
+static_assert(offsetof(ABaseFogger_SkillItem_BP_C, PaintColor) == 0x000BE0, "Member 'ABaseFogger_SkillItem_BP_C::PaintColor' has a wrong offset!");
+static_assert(offsetof(ABaseFogger_SkillItem_BP_C, MineLightColor) == 0x000BF0, "Member 'ABaseFogger_SkillItem_BP_C::MineLightColor' has a wrong offset!");
+static_assert(offsetof(ABaseFogger_SkillItem_BP_C, SpawnedActors) == 0x000C00, "Member 'ABaseFogger_SkillItem_BP_C::SpawnedActors' has a wrong offset!");
+static_assert(offsetof(ABaseFogger_SkillItem_BP_C, StartBeepingSFX) == 0x000C10, "Member 'ABaseFogger_SkillItem_BP_C::StartBeepingSFX' has a wrong offset!");
+static_assert(offsetof(ABaseFogger_SkillItem_BP_C, StopBeepingSFX) == 0x000C18, "Member 'ABaseFogger_SkillItem_BP_C::StopBeepingSFX' has a wrong offset!");
 
 }
 

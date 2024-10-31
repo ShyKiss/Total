@@ -258,15 +258,19 @@
     </ClCompile>
     <ClCompile Include="src\sdk\Basic.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\sdk\CoreUObject_functions.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\sdk\Engine_functions.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\sdk\OPP_functions.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\utils\utils.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
@@ -298,6 +302,7 @@
     <ClInclude Include="src\hooks\hooks.hpp" />
     <ClInclude Include="src\menu\menu.hpp" />
     <ClInclude Include="src\PropertyFixup.hpp" />
+    <ClInclude Include="src\SDK.hpp" />
     <ClInclude Include="src\sdk\Basic.hpp" />
     <ClInclude Include="src\sdk\CoreUObject_classes.hpp" />
     <ClInclude Include="src\sdk\CoreUObject_parameters.hpp" />
@@ -359,6 +364,17 @@
     <Image Include="src\icons\inventory\ticket.png" />
     <Image Include="src\icons\inventory\transmitter.png" />
     <Image Include="src\icons\inventory\TriggerIcon.png" />
+    <Image Include="src\icons\largepickups\gas_canister.png" />
+    <Image Include="src\icons\largepickups\item_acidbottle.png" />
+    <Image Include="src\icons\largepickups\item_acidbucket.png" />
+    <Image Include="src\icons\largepickups\item_diapo.png" />
+    <Image Include="src\icons\largepickups\item_kids.png" />
+    <Image Include="src\icons\largepickups\item_object.png" />
+    <Image Include="src\icons\other\item_enemy.png" />
+    <Image Include="src\icons\other\item_evidence.png" />
+    <Image Include="src\icons\other\item_Mk_folder.png" />
+    <Image Include="src\icons\other\item_valve.png" />
+    <Image Include="src\icons\other\objectif_base_03.png" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />

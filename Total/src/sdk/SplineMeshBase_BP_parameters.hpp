@@ -155,7 +155,7 @@ static_assert(offsetof(SplineMeshBase_BP_C_AddDetailsMeshes, CallFunc_SetStaticM
 static_assert(offsetof(SplineMeshBase_BP_C_AddDetailsMeshes, CallFunc_Array_AddUnique_ReturnValue) == 0x0000E0, "Member 'SplineMeshBase_BP_C_AddDetailsMeshes::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
 
 // Function SplineMeshBase_BP.SplineMeshBase_BP_C.AddStaticMesh
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct SplineMeshBase_BP_C_AddStaticMesh final
 {
 public:
@@ -178,24 +178,22 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0064(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x007C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x0078(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_84[0xC];                                       // 0x0084(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0090(0x0030)(IsPlainOldData, NoDestructor)
 	class USplineMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C9[0x3];                                       // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x00D6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D7[0x1];                                       // 0x00D7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SplineMeshBase_BP_C_AddStaticMesh) == 0x000010, "Wrong alignment on SplineMeshBase_BP_C_AddStaticMesh");
-static_assert(sizeof(SplineMeshBase_BP_C_AddStaticMesh) == 0x0000F0, "Wrong size on SplineMeshBase_BP_C_AddStaticMesh");
+static_assert(sizeof(SplineMeshBase_BP_C_AddStaticMesh) == 0x0000E0, "Wrong size on SplineMeshBase_BP_C_AddStaticMesh");
 static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, StartPos) == 0x000000, "Member 'SplineMeshBase_BP_C_AddStaticMesh::StartPos' has a wrong offset!");
 static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, StartTangent) == 0x00000C, "Member 'SplineMeshBase_BP_C_AddStaticMesh::StartTangent' has a wrong offset!");
 static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, EndPos) == 0x000018, "Member 'SplineMeshBase_BP_C_AddStaticMesh::EndPos' has a wrong offset!");
@@ -214,17 +212,17 @@ static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Divide_FloatF
 static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x000060, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, K2Node_MakeStruct_LinearColor) == 0x000064, "Member 'SplineMeshBase_BP_C_AddStaticMesh::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'SplineMeshBase_BP_C_AddStaticMesh::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Add_IntInt_ReturnValue_1) == 0x000078, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, Temp_name_Variable) == 0x00007C, "Member 'SplineMeshBase_BP_C_AddStaticMesh::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, Temp_name_Variable) == 0x000078, "Member 'SplineMeshBase_BP_C_AddStaticMesh::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Add_IntInt_ReturnValue_1) == 0x000080, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_MakeTransform_ReturnValue) == 0x000090, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_AddComponent_ReturnValue) == 0x0000C0, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_SetStaticMesh_ReturnValue) == 0x0000C8, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Array_Add_ReturnValue) == 0x0000CC, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Array_AddUnique_ReturnValue) == 0x0000D0, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_IsValid_ReturnValue) == 0x0000E0, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Array_Length_ReturnValue) == 0x0000E4, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Less_IntInt_ReturnValue) == 0x0000E8, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Array_Length_ReturnValue) == 0x0000D0, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_IsValid_ReturnValue) == 0x0000D4, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Less_IntInt_ReturnValue) == 0x0000D5, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_SetStaticMesh_ReturnValue) == 0x0000D6, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Array_AddUnique_ReturnValue) == 0x0000D8, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SplineMeshBase_BP_C_AddStaticMesh, CallFunc_Array_Add_ReturnValue) == 0x0000DC, "Member 'SplineMeshBase_BP_C_AddStaticMesh::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function SplineMeshBase_BP.SplineMeshBase_BP_C.FindClosetMeshes
 // 0x00B0 (0x00B0 - 0x0000)

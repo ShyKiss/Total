@@ -10,37 +10,37 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
 #include "Slate_structs.hpp"
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "OPP_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function TaskButton.TaskButton_C.OnClicked__DelegateSignature
-// 0x01D8 (0x01D8 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct TaskButton_C_OnClicked__DelegateSignature final
 {
 public:
-	struct FRBTaskMenuEntry                       Entry_0;                                           // 0x0000(0x01D8)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FRBTaskMenuEntry                       Entry_0;                                           // 0x0000(0x01E8)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(TaskButton_C_OnClicked__DelegateSignature) == 0x000008, "Wrong alignment on TaskButton_C_OnClicked__DelegateSignature");
-static_assert(sizeof(TaskButton_C_OnClicked__DelegateSignature) == 0x0001D8, "Wrong size on TaskButton_C_OnClicked__DelegateSignature");
+static_assert(sizeof(TaskButton_C_OnClicked__DelegateSignature) == 0x0001E8, "Wrong size on TaskButton_C_OnClicked__DelegateSignature");
 static_assert(offsetof(TaskButton_C_OnClicked__DelegateSignature, Entry_0) == 0x000000, "Member 'TaskButton_C_OnClicked__DelegateSignature::Entry_0' has a wrong offset!");
 
 // Function TaskButton.TaskButton_C.OnFocused__DelegateSignature
-// 0x01D8 (0x01D8 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct TaskButton_C_OnFocused__DelegateSignature final
 {
 public:
-	struct FRBTaskMenuEntry                       Entry_0;                                           // 0x0000(0x01D8)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FRBTaskMenuEntry                       Entry_0;                                           // 0x0000(0x01E8)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(TaskButton_C_OnFocused__DelegateSignature) == 0x000008, "Wrong alignment on TaskButton_C_OnFocused__DelegateSignature");
-static_assert(sizeof(TaskButton_C_OnFocused__DelegateSignature) == 0x0001D8, "Wrong size on TaskButton_C_OnFocused__DelegateSignature");
+static_assert(sizeof(TaskButton_C_OnFocused__DelegateSignature) == 0x0001E8, "Wrong size on TaskButton_C_OnFocused__DelegateSignature");
 static_assert(offsetof(TaskButton_C_OnFocused__DelegateSignature, Entry_0) == 0x000000, "Member 'TaskButton_C_OnFocused__DelegateSignature::Entry_0' has a wrong offset!");
 
 // Function TaskButton.TaskButton_C.ExecuteUbergraph_TaskButton
@@ -70,56 +70,56 @@ static_assert(offsetof(TaskButton_C_ExecuteUbergraph_TaskButton, CallFunc_BP_IsU
 static_assert(offsetof(TaskButton_C_ExecuteUbergraph_TaskButton, CallFunc_BooleanAND_ReturnValue) == 0x000023, "Member 'TaskButton_C_ExecuteUbergraph_TaskButton::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function TaskButton.TaskButton_C.Setup
-// 0x0340 (0x0340 - 0x0000)
+// 0x0350 (0x0350 - 0x0000)
 struct TaskButton_C_Setup final
 {
 public:
-	struct FRBTaskMenuEntry                       Entry_0;                                           // 0x0000(0x01D8)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          bCanConsume;                                       // 0x01D8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   NewLocalVar_0;                                     // 0x01DC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x01E8(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0200(0x0018)()
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0218(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0230(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0248(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0288(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02C8(0x0010)(ReferenceParm)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x02D8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02E8(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0300(0x0018)()
-	bool                                          Temp_bool_Variable;                                // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0319(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x031A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x031B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue;           // 0x031C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31D[0x3];                                      // 0x031D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0320(0x0018)()
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRBTaskMenuEntry                       Entry_0;                                           // 0x0000(0x01E8)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          bCanConsume;                                       // 0x01E8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   NewLocalVar_0;                                     // 0x01EC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x01F8(0x0018)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0210(0x0018)()
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0228(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0240(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0258(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0298(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02D8(0x0010)(ReferenceParm)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x02E8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02F8(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0310(0x0018)()
+	bool                                          Temp_bool_Variable;                                // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0329(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x032A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x032B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue;           // 0x032C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32D[0x3];                                      // 0x032D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x0330(0x0018)()
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TaskButton_C_Setup) == 0x000008, "Wrong alignment on TaskButton_C_Setup");
-static_assert(sizeof(TaskButton_C_Setup) == 0x000340, "Wrong size on TaskButton_C_Setup");
+static_assert(sizeof(TaskButton_C_Setup) == 0x000350, "Wrong size on TaskButton_C_Setup");
 static_assert(offsetof(TaskButton_C_Setup, Entry_0) == 0x000000, "Member 'TaskButton_C_Setup::Entry_0' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, bCanConsume) == 0x0001D8, "Member 'TaskButton_C_Setup::bCanConsume' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, NewLocalVar_0) == 0x0001DC, "Member 'TaskButton_C_Setup::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, Temp_text_Variable) == 0x0001E8, "Member 'TaskButton_C_Setup::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, Temp_text_Variable_1) == 0x000200, "Member 'TaskButton_C_Setup::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, CallFunc_Conv_NameToText_ReturnValue) == 0x000218, "Member 'TaskButton_C_Setup::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, CallFunc_Conv_IntToText_ReturnValue) == 0x000230, "Member 'TaskButton_C_Setup::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, K2Node_MakeStruct_FormatArgumentData) == 0x000248, "Member 'TaskButton_C_Setup::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, K2Node_MakeStruct_FormatArgumentData_1) == 0x000288, "Member 'TaskButton_C_Setup::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, K2Node_MakeArray_Array) == 0x0002C8, "Member 'TaskButton_C_Setup::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, K2Node_MakeArray_Array_1) == 0x0002D8, "Member 'TaskButton_C_Setup::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, CallFunc_Format_ReturnValue) == 0x0002E8, "Member 'TaskButton_C_Setup::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, CallFunc_Format_ReturnValue_1) == 0x000300, "Member 'TaskButton_C_Setup::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, Temp_bool_Variable) == 0x000318, "Member 'TaskButton_C_Setup::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, Temp_byte_Variable) == 0x000319, "Member 'TaskButton_C_Setup::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, Temp_byte_Variable_1) == 0x00031A, "Member 'TaskButton_C_Setup::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, Temp_bool_Variable_1) == 0x00031B, "Member 'TaskButton_C_Setup::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, CallFunc_CheckFeatureSwitch_ReturnValue) == 0x00031C, "Member 'TaskButton_C_Setup::CallFunc_CheckFeatureSwitch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, K2Node_Select_Default) == 0x000320, "Member 'TaskButton_C_Setup::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TaskButton_C_Setup, K2Node_Select_Default_1) == 0x000338, "Member 'TaskButton_C_Setup::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, bCanConsume) == 0x0001E8, "Member 'TaskButton_C_Setup::bCanConsume' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, NewLocalVar_0) == 0x0001EC, "Member 'TaskButton_C_Setup::NewLocalVar_0' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, Temp_text_Variable) == 0x0001F8, "Member 'TaskButton_C_Setup::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, Temp_text_Variable_1) == 0x000210, "Member 'TaskButton_C_Setup::Temp_text_Variable_1' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, CallFunc_Conv_NameToText_ReturnValue) == 0x000228, "Member 'TaskButton_C_Setup::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, CallFunc_Conv_IntToText_ReturnValue) == 0x000240, "Member 'TaskButton_C_Setup::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, K2Node_MakeStruct_FormatArgumentData) == 0x000258, "Member 'TaskButton_C_Setup::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, K2Node_MakeStruct_FormatArgumentData_1) == 0x000298, "Member 'TaskButton_C_Setup::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, K2Node_MakeArray_Array) == 0x0002D8, "Member 'TaskButton_C_Setup::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, K2Node_MakeArray_Array_1) == 0x0002E8, "Member 'TaskButton_C_Setup::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, CallFunc_Format_ReturnValue) == 0x0002F8, "Member 'TaskButton_C_Setup::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, CallFunc_Format_ReturnValue_1) == 0x000310, "Member 'TaskButton_C_Setup::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, Temp_bool_Variable) == 0x000328, "Member 'TaskButton_C_Setup::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, Temp_byte_Variable) == 0x000329, "Member 'TaskButton_C_Setup::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, Temp_byte_Variable_1) == 0x00032A, "Member 'TaskButton_C_Setup::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, Temp_bool_Variable_1) == 0x00032B, "Member 'TaskButton_C_Setup::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, CallFunc_CheckFeatureSwitch_ReturnValue) == 0x00032C, "Member 'TaskButton_C_Setup::CallFunc_CheckFeatureSwitch_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, K2Node_Select_Default) == 0x000330, "Member 'TaskButton_C_Setup::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(TaskButton_C_Setup, K2Node_Select_Default_1) == 0x000348, "Member 'TaskButton_C_Setup::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function TaskButton.TaskButton_C.UpdateProgression
 // 0x0024 (0x0024 - 0x0000)

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CinematicCamera_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -255,17 +255,6 @@ static_assert(alignof(FDatasmithRetessellationOptions) == 0x000004, "Wrong align
 static_assert(sizeof(FDatasmithRetessellationOptions) == 0x000014, "Wrong size on FDatasmithRetessellationOptions");
 static_assert(offsetof(FDatasmithRetessellationOptions, RetessellationRule) == 0x000010, "Member 'FDatasmithRetessellationOptions::RetessellationRule' has a wrong offset!");
 
-// ScriptStruct DatasmithContent.DatasmithAssetImportOptions
-// 0x0008 (0x0008 - 0x0000)
-struct FDatasmithAssetImportOptions final
-{
-public:
-	class FName                                   PackagePath;                                       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FDatasmithAssetImportOptions) == 0x000004, "Wrong alignment on FDatasmithAssetImportOptions");
-static_assert(sizeof(FDatasmithAssetImportOptions) == 0x000008, "Wrong size on FDatasmithAssetImportOptions");
-static_assert(offsetof(FDatasmithAssetImportOptions, PackagePath) == 0x000000, "Member 'FDatasmithAssetImportOptions::PackagePath' has a wrong offset!");
-
 // ScriptStruct DatasmithContent.DatasmithStaticMeshImportOptions
 // 0x0004 (0x0004 - 0x0000)
 struct FDatasmithStaticMeshImportOptions final
@@ -282,6 +271,17 @@ static_assert(offsetof(FDatasmithStaticMeshImportOptions, MinLightmapResolution)
 static_assert(offsetof(FDatasmithStaticMeshImportOptions, MaxLightmapResolution) == 0x000001, "Member 'FDatasmithStaticMeshImportOptions::MaxLightmapResolution' has a wrong offset!");
 static_assert(offsetof(FDatasmithStaticMeshImportOptions, bGenerateLightmapUVs) == 0x000002, "Member 'FDatasmithStaticMeshImportOptions::bGenerateLightmapUVs' has a wrong offset!");
 static_assert(offsetof(FDatasmithStaticMeshImportOptions, bRemoveDegenerates) == 0x000003, "Member 'FDatasmithStaticMeshImportOptions::bRemoveDegenerates' has a wrong offset!");
+
+// ScriptStruct DatasmithContent.DatasmithAssetImportOptions
+// 0x0008 (0x0008 - 0x0000)
+struct FDatasmithAssetImportOptions final
+{
+public:
+	class FName                                   PackagePath;                                       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FDatasmithAssetImportOptions) == 0x000004, "Wrong alignment on FDatasmithAssetImportOptions");
+static_assert(sizeof(FDatasmithAssetImportOptions) == 0x000008, "Wrong size on FDatasmithAssetImportOptions");
+static_assert(offsetof(FDatasmithAssetImportOptions, PackagePath) == 0x000000, "Member 'FDatasmithAssetImportOptions::PackagePath' has a wrong offset!");
 
 // ScriptStruct DatasmithContent.DatasmithImportBaseOptions
 // 0x0014 (0x0014 - 0x0000)

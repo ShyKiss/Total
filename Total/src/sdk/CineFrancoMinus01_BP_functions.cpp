@@ -17,93 +17,24 @@
 namespace SDK
 {
 
-// Function CineFranco-01_BP.CineFranco-01_BP_C.ExecuteUbergraph_CineFranco-01_BP
-// (Final, UbergraphFunction)
+// Function CineFranco-01_BP.CineFranco-01_BP_C.GetPoseAsset
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPoseAsset*                       PoseAsset                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACineFrancoMinus01_BP_C::ExecuteUbergraph_CineFrancoMinus01_BP(int32 EntryPoint)
+void ACineFrancoMinus01_BP_C::GetPoseAsset(class UPoseAsset** PoseAsset)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CineFranco-01_BP_C", "ExecuteUbergraph_CineFranco-01_BP");
+		Func = Class->GetFunction("CineFranco-01_BP_C", "GetPoseAsset");
 
-	Params::CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::CineFrancoMinus01_BP_C_GetPoseAsset Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function CineFranco-01_BP.CineFranco-01_BP_C.Shoot
-// (BlueprintCallable, BlueprintEvent)
-
-void ACineFrancoMinus01_BP_C::Shoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineFranco-01_BP_C", "Shoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function CineFranco-01_BP.CineFranco-01_BP_C.MuzzleLight_TL__UpdateFunc
-// (BlueprintEvent)
-
-void ACineFrancoMinus01_BP_C::MuzzleLight_TL__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineFranco-01_BP_C", "MuzzleLight_TL__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function CineFranco-01_BP.CineFranco-01_BP_C.MuzzleLight_TL__FinishedFunc
-// (BlueprintEvent)
-
-void ACineFrancoMinus01_BP_C::MuzzleLight_TL__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineFranco-01_BP_C", "MuzzleLight_TL__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function CineFranco-01_BP.CineFranco-01_BP_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ACineFrancoMinus01_BP_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineFranco-01_BP_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function CineFranco-01_BP.CineFranco-01_BP_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ACineFrancoMinus01_BP_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineFranco-01_BP_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	if (PoseAsset != nullptr)
+		*PoseAsset = Parms.PoseAsset;
 }
 
 
@@ -128,24 +59,93 @@ void ACineFrancoMinus01_BP_C::GetCineFaceAnimBP(class UCineFace_AnimBP_C** CineF
 }
 
 
-// Function CineFranco-01_BP.CineFranco-01_BP_C.GetPoseAsset
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPoseAsset*                       PoseAsset                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function CineFranco-01_BP.CineFranco-01_BP_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ACineFrancoMinus01_BP_C::GetPoseAsset(class UPoseAsset** PoseAsset)
+void ACineFrancoMinus01_BP_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CineFranco-01_BP_C", "GetPoseAsset");
+		Func = Class->GetFunction("CineFranco-01_BP_C", "UserConstructionScript");
 
-	Params::CineFrancoMinus01_BP_C_GetPoseAsset Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CineFranco-01_BP.CineFranco-01_BP_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ACineFrancoMinus01_BP_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CineFranco-01_BP_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CineFranco-01_BP.CineFranco-01_BP_C.MuzzleLight_TL__FinishedFunc
+// (BlueprintEvent)
+
+void ACineFrancoMinus01_BP_C::MuzzleLight_TL__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CineFranco-01_BP_C", "MuzzleLight_TL__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CineFranco-01_BP.CineFranco-01_BP_C.MuzzleLight_TL__UpdateFunc
+// (BlueprintEvent)
+
+void ACineFrancoMinus01_BP_C::MuzzleLight_TL__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CineFranco-01_BP_C", "MuzzleLight_TL__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CineFranco-01_BP.CineFranco-01_BP_C.Shoot
+// (BlueprintCallable, BlueprintEvent)
+
+void ACineFrancoMinus01_BP_C::Shoot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CineFranco-01_BP_C", "Shoot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CineFranco-01_BP.CineFranco-01_BP_C.ExecuteUbergraph_CineFranco-01_BP
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACineFrancoMinus01_BP_C::ExecuteUbergraph_CineFrancoMinus01_BP(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CineFranco-01_BP_C", "ExecuteUbergraph_CineFranco-01_BP");
+
+	Params::CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (PoseAsset != nullptr)
-		*PoseAsset = Parms.PoseAsset;
 }
 
 }

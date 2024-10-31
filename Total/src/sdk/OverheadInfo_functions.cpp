@@ -294,7 +294,7 @@ void UOverheadInfo_C::Event_PlayerStateUpdated()
 
 
 // Function OverheadInfo.OverheadInfo_C.Event_ImposterUpdated
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 
 void UOverheadInfo_C::Event_ImposterUpdated()
 {

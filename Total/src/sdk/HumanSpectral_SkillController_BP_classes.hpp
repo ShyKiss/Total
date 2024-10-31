@@ -18,13 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass HumanSpectral_SkillController_BP.HumanSpectral_SkillController_BP_C
-// 0x0010 (0x0A80 - 0x0A70)
+// 0x0010 (0x0A90 - 0x0A80)
 class AHumanSpectral_SkillController_BP_C final : public ARBActiveSkillController
 {
 public:
-	uint8                                         Pad_A6C[0x4];                                      // 0x0A6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A70(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Ngr_SkillDeactivate;                               // 0x0A78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A80(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Ngr_SkillDeactivate;                               // 0x0A88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HumanSpectral_SkillController_BP(int32 EntryPoint);
@@ -41,9 +40,9 @@ public:
 	}
 };
 static_assert(alignof(AHumanSpectral_SkillController_BP_C) == 0x000010, "Wrong alignment on AHumanSpectral_SkillController_BP_C");
-static_assert(sizeof(AHumanSpectral_SkillController_BP_C) == 0x000A80, "Wrong size on AHumanSpectral_SkillController_BP_C");
-static_assert(offsetof(AHumanSpectral_SkillController_BP_C, UberGraphFrame) == 0x000A70, "Member 'AHumanSpectral_SkillController_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AHumanSpectral_SkillController_BP_C, Ngr_SkillDeactivate) == 0x000A78, "Member 'AHumanSpectral_SkillController_BP_C::Ngr_SkillDeactivate' has a wrong offset!");
+static_assert(sizeof(AHumanSpectral_SkillController_BP_C) == 0x000A90, "Wrong size on AHumanSpectral_SkillController_BP_C");
+static_assert(offsetof(AHumanSpectral_SkillController_BP_C, UberGraphFrame) == 0x000A80, "Member 'AHumanSpectral_SkillController_BP_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AHumanSpectral_SkillController_BP_C, Ngr_SkillDeactivate) == 0x000A88, "Member 'AHumanSpectral_SkillController_BP_C::Ngr_SkillDeactivate' has a wrong offset!");
 
 }
 

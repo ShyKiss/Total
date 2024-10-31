@@ -316,7 +316,7 @@ static_assert(alignof(PPManager_BP_C_Remove_PP_Override) == 0x000008, "Wrong ali
 static_assert(sizeof(PPManager_BP_C_Remove_PP_Override) == 0x000008, "Wrong size on PPManager_BP_C_Remove_PP_Override");
 static_assert(offsetof(PPManager_BP_C_Remove_PP_Override, CallFunc_GetFXManager_ReturnValue) == 0x000000, "Member 'PPManager_BP_C_Remove_PP_Override::CallFunc_GetFXManager_ReturnValue' has a wrong offset!");
 
-// Function PPManager_BP.PPManager_BP_C.debug
+// Function PPManager_BP.PPManager_BP_C.Debug
 // 0x01E0 (0x01E0 - 0x0000)
 struct PPManager_BP_C_Debug final
 {

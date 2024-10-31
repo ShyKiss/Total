@@ -14,6 +14,8 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved) {
         }
         else U::SetRenderingBackend(DIRECTX11);
 
+        Utils::TotalInstance = hinstDLL;
+
         HANDLE hHandle = CreateThread(NULL, 0, OnProcessAttach, hinstDLL, 0, NULL);
         if (hHandle != NULL) {
             CloseHandle(hHandle);

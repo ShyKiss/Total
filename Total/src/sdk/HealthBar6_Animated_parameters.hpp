@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "OPP_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function HealthBar6_Animated.HealthBar6_Animated_C.ExecuteUbergraph_HealthBar6_Animated
-// 0x01E0 (0x01E0 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated final
 {
 public:
@@ -30,120 +30,126 @@ public:
 	TDelegate<void(float NewBleedingLeft, float NewHealth)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(float Duration)>               K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPlayerBarState                               Temp_byte_Variable_2;                              // 0x002C(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPlayerIndicatorType PlayerIndicatorType)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayer*                              K2Node_Event_oldPlayer;                            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x005E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5F[0x1];                                       // 0x005F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_CustomEvent_newHealth_1;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bIncreased;                     // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0067(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EPlayerIndicatorType                          K2Node_CustomEvent_PlayerIndicatorType;            // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(float MaxHealth)>              K2Node_CreateDelegate_OutputDelegate_3;            // 0x006C(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_FadeIfNecessary_PlayAnim;                 // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_FadeIfNecessary_PlayAnim_1;               // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(float NewHealth, bool bIncreased)> K2Node_CreateDelegate_OutputDelegate_4;            // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         K2Node_CustomEvent_maxHealth;                      // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UHudBarElement_Animated_C*>      K2Node_MakeArray_Array;                            // 0x00A0(0x0010)(ReferenceParm, ContainsInstancedReference)
-	struct FSlateColor                            CallFunc_Map_Find_Value;                           // 0x00B0(0x0028)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            CallFunc_Map_Find_Value_1;                         // 0x00E0(0x0028)()
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            CallFunc_Map_Find_Value_2;                         // 0x0110(0x0028)()
-	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0140(0x0028)()
-	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item;                           // 0x0168(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(float NewHealth, bool bIncreased)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x0180(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPlayerIndicatorType PlayerIndicatorType)> K2Node_CreateDelegate_OutputDelegate_6;            // 0x0194(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(float MaxHealth)>              K2Node_CreateDelegate_OutputDelegate_7;            // 0x01A4(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         K2Node_CustomEvent_newBleedingLeft;                // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_newHealth;                      // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_duration;                       // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1CE[0x2];                                      // 0x01CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsConsideredKnockedDown_ReturnValue;      // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(float MaxHealth)>              K2Node_CreateDelegate_OutputDelegate_2;            // 0x002C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EPlayerIndicatorType PlayerIndicatorType)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              K2Node_Event_oldPlayer;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_CustomEvent_newHealth_1;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bIncreased;                     // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x006E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x006F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EPlayerBarState                               Temp_byte_Variable_2;                              // 0x0070(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPlayerIndicatorType                          K2Node_CustomEvent_PlayerIndicatorType;            // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_FadeIfNecessary_PlayAnim;                 // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_FadeIfNecessary_PlayAnim_1;               // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void(float NewHealth, bool bIncreased)> K2Node_CreateDelegate_OutputDelegate_4;            // 0x0074(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         K2Node_CustomEvent_maxHealth;                      // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UHudBarElement_Animated_C*>      K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm, ContainsInstancedReference)
+	struct FSlateColor                            CallFunc_Map_Find_Value;                           // 0x00A0(0x0028)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            CallFunc_Map_Find_Value_1;                         // 0x00D0(0x0028)()
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            CallFunc_Map_Find_Value_2;                         // 0x0100(0x0028)()
+	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0130(0x0028)()
+	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item;                           // 0x0158(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(float NewHealth, bool bIncreased)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x0170(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EPlayerIndicatorType PlayerIndicatorType)> K2Node_CreateDelegate_OutputDelegate_6;            // 0x0184(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(float MaxHealth)>              K2Node_CreateDelegate_OutputDelegate_7;            // 0x0194(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         K2Node_CustomEvent_newBleedingLeft;                // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_newHealth;                      // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_duration;                       // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B9[0x3];                                      // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsConsideredKnockedDown_ReturnValue;      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C1[0x3];                                      // 0x01C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C9[0x3];                                      // 0x01C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_2;           // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_2;            // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated) == 0x000008, "Wrong alignment on HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated");
-static_assert(sizeof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated) == 0x0001E0, "Wrong size on HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated");
+static_assert(sizeof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated) == 0x0001E8, "Wrong size on HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated");
 static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, EntryPoint) == 0x000000, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, Temp_byte_Variable) == 0x000004, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, Temp_byte_Variable_1) == 0x000005, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, Temp_int_Array_Index_Variable) == 0x000028, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, Temp_byte_Variable_2) == 0x00002C, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_2) == 0x000030, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_Event_IsDesignTime) == 0x000040, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_Event_oldPlayer) == 0x000048, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_Event_oldPlayer' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_Event_newPlayer) == 0x000050, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_Event_newPlayer' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000058, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue) == 0x00005C, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue_1) == 0x00005D, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue_2) == 0x00005E, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_newHealth_1) == 0x000060, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_newHealth_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_bIncreased) == 0x000064, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_bIncreased' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Not_PreBool_ReturnValue) == 0x000065, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000066, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_BooleanAND_ReturnValue) == 0x000067, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_PlayerIndicatorType) == 0x000068, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_PlayerIndicatorType' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_3) == 0x00006C, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_FadeIfNecessary_PlayAnim) == 0x00007C, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_FadeIfNecessary_PlayAnim' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_FadeIfNecessary_PlayAnim_1) == 0x00007D, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_FadeIfNecessary_PlayAnim_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_4) == 0x000080, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_maxHealth) == 0x000090, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_maxHealth' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000098, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_MakeArray_Array) == 0x0000A0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_Value) == 0x0000B0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_ReturnValue) == 0x0000D8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_Value_1) == 0x0000E0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_ReturnValue_1) == 0x000108, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_Value_2) == 0x000110, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_Value_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_ReturnValue_2) == 0x000138, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_MakeStruct_SlateColor) == 0x000140, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Array_Get_Item) == 0x000168, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Array_Length_ReturnValue) == 0x000170, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000178, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_5) == 0x000180, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue_3) == 0x000190, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_6) == 0x000194, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_7) == 0x0001A4, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_newBleedingLeft) == 0x0001B4, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_newBleedingLeft' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_newHealth) == 0x0001B8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_newHealth' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_duration) == 0x0001BC, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_duration' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x0001C0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, Temp_int_Loop_Counter_Variable) == 0x0001C8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue_4) == 0x0001CC, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Less_IntInt_ReturnValue) == 0x0001CD, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Add_IntInt_ReturnValue) == 0x0001D0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsConsideredKnockedDown_ReturnValue) == 0x0001D4, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsConsideredKnockedDown_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x0001D8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_2) == 0x00002C, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_3) == 0x00003C, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_Event_IsDesignTime) == 0x00004C, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_Event_oldPlayer) == 0x000050, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_Event_oldPlayer' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_Event_newPlayer) == 0x000058, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_Event_newPlayer' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000060, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue) == 0x000064, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue_1) == 0x000065, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue_2) == 0x000066, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_newHealth_1) == 0x000068, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_newHealth_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_bIncreased) == 0x00006C, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_bIncreased' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Not_PreBool_ReturnValue) == 0x00006D, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x00006E, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_BooleanAND_ReturnValue) == 0x00006F, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, Temp_byte_Variable_2) == 0x000070, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_PlayerIndicatorType) == 0x000071, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_PlayerIndicatorType' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_FadeIfNecessary_PlayAnim) == 0x000072, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_FadeIfNecessary_PlayAnim' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_FadeIfNecessary_PlayAnim_1) == 0x000073, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_FadeIfNecessary_PlayAnim_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_4) == 0x000074, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_maxHealth) == 0x000084, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_maxHealth' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000088, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_MakeArray_Array) == 0x000090, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_Value) == 0x0000A0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_ReturnValue) == 0x0000C8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_Value_1) == 0x0000D0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_Value_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_ReturnValue_1) == 0x0000F8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_Value_2) == 0x000100, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_Value_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Map_Find_ReturnValue_2) == 0x000128, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_MakeStruct_SlateColor) == 0x000130, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Array_Get_Item) == 0x000158, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Array_Length_ReturnValue) == 0x000160, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000168, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_5) == 0x000170, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue_3) == 0x000180, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_6) == 0x000184, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CreateDelegate_OutputDelegate_7) == 0x000194, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_newBleedingLeft) == 0x0001A4, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_newBleedingLeft' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_newHealth) == 0x0001A8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_newHealth' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, K2Node_CustomEvent_duration) == 0x0001AC, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::K2Node_CustomEvent_duration' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x0001B0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue_4) == 0x0001B8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x0001BC, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsConsideredKnockedDown_ReturnValue) == 0x0001C0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsConsideredKnockedDown_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, Temp_int_Loop_Counter_Variable) == 0x0001C4, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Less_IntInt_ReturnValue) == 0x0001C8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Add_IntInt_ReturnValue) == 0x0001CC, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_GetWatchedPlayer_ReturnValue_2) == 0x0001D0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_GetWatchedPlayer_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_IsValid_ReturnValue_5) == 0x0001D8, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Conv_IntToFloat_ReturnValue_2) == 0x0001DC, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Conv_IntToFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0001E0, "Member 'HealthBar6_Animated_C_ExecuteUbergraph_HealthBar6_Animated::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function HealthBar6_Animated.HealthBar6_Animated_C.OnForceShowHealthBar
 // 0x0004 (0x0004 - 0x0000)
@@ -229,7 +235,7 @@ static_assert(sizeof(HealthBar6_Animated_C_PreConstruct) == 0x000001, "Wrong siz
 static_assert(offsetof(HealthBar6_Animated_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HealthBar6_Animated_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function HealthBar6_Animated.HealthBar6_Animated_C.ProcessHealthEvent
-// 0x01B0 (0x01B0 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct HealthBar6_Animated_C_ProcessHealthEvent final
 {
 public:
@@ -265,115 +271,123 @@ public:
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_5;                              // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESpecialMove                                  CallFunc_BP_GetSpecialMove_ReturnValue;            // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue_1;         // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue_1;      // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A2[0x2];                                       // 0x00A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_3;             // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BP_GetMaxHealth_ReturnValue;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_FMin_ReturnValue;                         // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_5;                              // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESpecialMove                                  CallFunc_BP_GetSpecialMove_ReturnValue;            // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_82[0x2];                                       // 0x0082(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue_1;         // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue_1;      // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B6[0x2];                                       // 0x00B6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue_2;                  // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_4;             // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C9[0x3];                                       // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue_3;                  // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item;                           // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default_1;                           // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E3[0x5];                                       // 0x00E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_1;                         // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue_4;                  // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x00FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_5;             // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_6;                              // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_FE[0x2];                                       // 0x00FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_2;                         // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_6;             // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x010A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x010B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue_5;                  // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_3;                         // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_3;             // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue_2;                  // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_4;             // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue_3;                  // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item;                           // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default_1;                           // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FB[0x5];                                       // 0x00FB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_1;                         // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue_4;                  // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_5;             // 0x011B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_6;                              // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_2;                         // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_6;             // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x012B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_12D[0x3];                                      // 0x012D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue_5;                  // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0140(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         K2Node_Select_Default_2;                           // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_7;             // 0x0155(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_156[0x2];                                      // 0x0156(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select_Default_3;                           // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x015D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_8;             // 0x015E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x015F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_4;                         // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default_4;                           // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_6;                // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_172[0x2];                                      // 0x0172(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select_Default_5;                           // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default_6;                           // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17D[0x3];                                      // 0x017D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_2;            // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_4;          // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x018C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_18D[0x3];                                      // 0x018D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0190(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_5;                         // 0x01A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_3;                         // 0x0150(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0160(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         K2Node_Select_Default_2;                           // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_7;             // 0x0175(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_176[0x2];                                      // 0x0176(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default_3;                           // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x017D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_8;             // 0x017E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x017F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_4;                         // 0x0180(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default_4;                           // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_6;                // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_192[0x2];                                      // 0x0192(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default_5;                           // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default_6;                           // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x019C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19D[0x3];                                      // 0x019D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_2;            // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_4;          // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1AD[0x3];                                      // 0x01AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x01B0(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_5;                         // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HealthBar6_Animated_C_ProcessHealthEvent) == 0x000008, "Wrong alignment on HealthBar6_Animated_C_ProcessHealthEvent");
-static_assert(sizeof(HealthBar6_Animated_C_ProcessHealthEvent) == 0x0001B0, "Wrong size on HealthBar6_Animated_C_ProcessHealthEvent");
+static_assert(sizeof(HealthBar6_Animated_C_ProcessHealthEvent) == 0x0001D0, "Wrong size on HealthBar6_Animated_C_ProcessHealthEvent");
 static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, NewHealth) == 0x000000, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::NewHealth' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, Increased) == 0x000004, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::Increased' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, SkipAnims) == 0x000005, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::SkipAnims' has a wrong offset!");
@@ -400,91 +414,95 @@ static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Add_In
 static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, Temp_int_Array_Index_Variable) == 0x00004C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, Temp_int_Array_Index_Variable_1) == 0x000050, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::Temp_int_Array_Index_Variable_1' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000058, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_LastIndex_ReturnValue) == 0x000064, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_LastIndex_ReturnValue_1) == 0x000068, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, Temp_bool_Variable_5) == 0x00006C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BP_GetSpecialMove_ReturnValue) == 0x00006D, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BP_GetSpecialMove_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000070, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000074, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000078, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue) == 0x00007C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000080, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue) == 0x000084, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Percent_FloatFloat_ReturnValue) == 0x000088, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x00008C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000090, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_FTrunc_ReturnValue) == 0x000094, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue) == 0x000098, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Percent_FloatFloat_ReturnValue_1) == 0x00009C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Percent_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0000A0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_FloatFloat_ReturnValue_1) == 0x0000A1, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue) == 0x0000A4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0000A8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_2) == 0x0000AC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_FTrunc_ReturnValue_1) == 0x0000B0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_1) == 0x0000B4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x0000B8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default) == 0x0000BC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_3) == 0x0000C0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_2) == 0x0000C4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_4) == 0x0000C8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_3) == 0x0000CC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item) == 0x0000D0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_1) == 0x0000D8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Length_ReturnValue) == 0x0000DC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanOR_ReturnValue) == 0x0000E0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000E1, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_2) == 0x0000E2, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_1) == 0x0000E8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_4) == 0x0000F0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_3) == 0x0000F4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Not_PreBool_ReturnValue) == 0x0000F8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanAND_ReturnValue) == 0x0000F9, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanAND_ReturnValue_1) == 0x0000FA, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanOR_ReturnValue_1) == 0x0000FB, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_5) == 0x0000FC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, Temp_bool_Variable_6) == 0x0000FD, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_2) == 0x000100, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_6) == 0x000108, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Not_PreBool_ReturnValue_1) == 0x000109, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanAND_ReturnValue_2) == 0x00010A, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanAND_ReturnValue_3) == 0x00010B, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanOR_ReturnValue_2) == 0x00010C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_5) == 0x000110, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x000114, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000118, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x00011C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x000120, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000124, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, Temp_int_Loop_Counter_Variable_1) == 0x000128, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_3) == 0x000130, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_3) == 0x000138, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_4) == 0x00013C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_CreateDelegate_OutputDelegate) == 0x000140, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_2) == 0x000150, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000154, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_7) == 0x000155, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_3) == 0x000158, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Not_PreBool_ReturnValue_2) == 0x00015C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_4) == 0x00015D, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_8) == 0x00015E, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_5) == 0x00015F, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_4) == 0x000160, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_4) == 0x000168, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Length_ReturnValue_1) == 0x00016C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_6) == 0x000170, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000171, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_5) == 0x000174, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_6) == 0x000178, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x00017C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue_2) == 0x000180, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_4) == 0x000184, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x000188, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x00018C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_CreateDelegate_OutputDelegate_1) == 0x000190, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanOR_ReturnValue_3) == 0x0001A0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_5) == 0x0001A8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_5' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BP_GetMaxHealth_ReturnValue) == 0x000060, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BP_GetMaxHealth_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x000068, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_FMin_ReturnValue) == 0x000074, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_FMin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_LastIndex_ReturnValue) == 0x000078, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_LastIndex_ReturnValue_1) == 0x00007C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, Temp_bool_Variable_5) == 0x000080, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::Temp_bool_Variable_5' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BP_GetSpecialMove_ReturnValue) == 0x000081, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BP_GetSpecialMove_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000084, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000088, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00008C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue) == 0x000090, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000094, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue) == 0x000098, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Percent_FloatFloat_ReturnValue) == 0x00009C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0000A0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0000A4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_FTrunc_ReturnValue) == 0x0000A8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000AC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Percent_FloatFloat_ReturnValue_1) == 0x0000B0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Percent_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0000B4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_FloatFloat_ReturnValue_1) == 0x0000B5, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue) == 0x0000B8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0000BC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_2) == 0x0000C0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_FTrunc_ReturnValue_1) == 0x0000C4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_1) == 0x0000C8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x0000CC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default) == 0x0000D0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_3) == 0x0000D4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_2) == 0x0000D8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_4) == 0x0000DC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_3) == 0x0000E0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item) == 0x0000E8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_1) == 0x0000F0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Length_ReturnValue) == 0x0000F4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanOR_ReturnValue) == 0x0000F8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000F9, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_2) == 0x0000FA, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_1) == 0x000100, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000108, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_4) == 0x00010C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Not_PreBool_ReturnValue) == 0x000110, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_3) == 0x000114, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanAND_ReturnValue) == 0x000118, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanAND_ReturnValue_1) == 0x000119, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanOR_ReturnValue_1) == 0x00011A, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_5) == 0x00011B, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, Temp_bool_Variable_6) == 0x00011C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::Temp_bool_Variable_6' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_2) == 0x000120, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_6) == 0x000128, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Not_PreBool_ReturnValue_1) == 0x000129, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanAND_ReturnValue_2) == 0x00012A, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanAND_ReturnValue_3) == 0x00012B, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanOR_ReturnValue_2) == 0x00012C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_SelectInt_ReturnValue_5) == 0x000130, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_SelectInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x000134, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000138, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x00013C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x000140, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000144, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, Temp_int_Loop_Counter_Variable_1) == 0x000148, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_3) == 0x000150, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_3) == 0x000158, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Add_IntInt_ReturnValue_4) == 0x00015C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_CreateDelegate_OutputDelegate) == 0x000160, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_2) == 0x000170, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000174, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_7) == 0x000175, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_3) == 0x000178, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Not_PreBool_ReturnValue_2) == 0x00017C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_4) == 0x00017D, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Greater_IntInt_ReturnValue_8) == 0x00017E, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Greater_IntInt_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_5) == 0x00017F, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_4) == 0x000180, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_4) == 0x000188, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_4' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Length_ReturnValue_1) == 0x00018C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Less_IntInt_ReturnValue_6) == 0x000190, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Less_IntInt_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000191, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_5) == 0x000194, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_5' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_Select_Default_6) == 0x000198, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_Select_Default_6' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x00019C, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Conv_IntToFloat_ReturnValue_2) == 0x0001A0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Conv_IntToFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Divide_FloatFloat_ReturnValue_4) == 0x0001A4, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Divide_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x0001A8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x0001AC, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, K2Node_CreateDelegate_OutputDelegate_1) == 0x0001B0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_BooleanOR_ReturnValue_3) == 0x0001C0, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ProcessHealthEvent, CallFunc_Array_Get_Item_5) == 0x0001C8, "Member 'HealthBar6_Animated_C_ProcessHealthEvent::CallFunc_Array_Get_Item_5' has a wrong offset!");
 
 // Function HealthBar6_Animated.HealthBar6_Animated_C.ChainTweens
 // 0x0040 (0x0040 - 0x0000)
@@ -704,94 +722,102 @@ static_assert(offsetof(HealthBar6_Animated_C_ProcessBleedingChangedEvent, Health
 static_assert(offsetof(HealthBar6_Animated_C_ProcessBleedingChangedEvent, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000008, "Member 'HealthBar6_Animated_C_ProcessBleedingChangedEvent::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function HealthBar6_Animated.HealthBar6_Animated_C.ShouldShow
-// 0x00A0 (0x00A0 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct HealthBar6_Animated_C_ShouldShow final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          bIsHealthSicknessActive;                           // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBVariatorManager*                     CallFunc_GetVariatorManager_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class URBVariatorInfo*>                CallFunc_GetCurrentVariatorConfigs_ReturnValue;    // 0x0030(0x0010)(ConstParm, ReferenceParm)
-	int32                                         CallFunc_GetHealthDisplay_ReturnValue;             // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBVariatorInfo*                        CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue_1;   // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetHealthDisplay_ReturnValue_1;           // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue_1;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_83[0x1];                                       // 0x0083(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsBleeding_ReturnValue;                   // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BP_GetMaxHealth_ReturnValue;              // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBSettings_Gameplay*                   CallFunc_GetRBSettings_Gameplay_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetFloatValue_ReturnValue;                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBVariatorManager*                     CallFunc_GetVariatorManager_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue;     // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class URBVariatorInfo*>                CallFunc_GetCurrentVariatorConfigs_ReturnValue;    // 0x0040(0x0010)(ConstParm, ReferenceParm)
+	int32                                         CallFunc_GetHealthDisplay_ReturnValue;             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBVariatorInfo*                        CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGameUserPreferences*                 CallFunc_GetRBGameUserPreferences_ReturnValue_1;   // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetHealthDisplay_ReturnValue_1;           // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue_1;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_93[0x1];                                       // 0x0093(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue_1;           // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsBleeding_ReturnValue;                   // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BP_GetMaxHealth_ReturnValue;              // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HealthBar6_Animated_C_ShouldShow) == 0x000008, "Wrong alignment on HealthBar6_Animated_C_ShouldShow");
-static_assert(sizeof(HealthBar6_Animated_C_ShouldShow) == 0x0000A0, "Wrong size on HealthBar6_Animated_C_ShouldShow");
+static_assert(sizeof(HealthBar6_Animated_C_ShouldShow) == 0x0000B0, "Wrong size on HealthBar6_Animated_C_ShouldShow");
 static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, ReturnValue) == 0x000000, "Member 'HealthBar6_Animated_C_ShouldShow::ReturnValue' has a wrong offset!");
 static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, bIsHealthSicknessActive) == 0x000001, "Member 'HealthBar6_Animated_C_ShouldShow::bIsHealthSicknessActive' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, Temp_int_Array_Index_Variable) == 0x000004, "Member 'HealthBar6_Animated_C_ShouldShow::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetRBGameState_ReturnValue) == 0x000008, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetRBGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000010, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, Temp_bool_True_if_break_was_hit_Variable) == 0x00001A, "Member 'HealthBar6_Animated_C_ShouldShow::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00001B, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue) == 0x00001C, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetVariatorManager_ReturnValue) == 0x000020, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetVariatorManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetRBGameUserPreferences_ReturnValue) == 0x000028, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetRBGameUserPreferences_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetCurrentVariatorConfigs_ReturnValue) == 0x000030, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetCurrentVariatorConfigs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetHealthDisplay_ReturnValue) == 0x000040, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetHealthDisplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Array_Get_Item) == 0x000048, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000050, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000051, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Array_Length_ReturnValue) == 0x000054, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Array_IsEmpty_ReturnValue) == 0x000058, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Array_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetRBGameUserPreferences_ReturnValue_1) == 0x000060, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetRBGameUserPreferences_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanOR_ReturnValue) == 0x000068, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetHealthDisplay_ReturnValue_1) == 0x00006C, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetHealthDisplay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000070, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'HealthBar6_Animated_C_ShouldShow::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetRBGameState_ReturnValue_1) == 0x000078, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetRBGameState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Less_IntInt_ReturnValue) == 0x000080, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_1) == 0x000081, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanAND_ReturnValue) == 0x000082, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Add_IntInt_ReturnValue) == 0x000084, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x000088, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_IsBleeding_ReturnValue) == 0x000090, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_IsBleeding_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BP_GetMaxHealth_ReturnValue) == 0x000094, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BP_GetMaxHealth_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Less_FloatFloat_ReturnValue) == 0x000098, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_1) == 0x000099, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_1) == 0x00009A, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_2) == 0x00009B, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetRBSettings_Gameplay_ReturnValue) == 0x000008, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetRBSettings_Gameplay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, Temp_int_Array_Index_Variable) == 0x000010, "Member 'HealthBar6_Animated_C_ShouldShow::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetFloatValue_ReturnValue) == 0x000014, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetFloatValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetRBGameState_ReturnValue) == 0x000018, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetRBGameState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000020, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_IsValid_ReturnValue_1) == 0x000029, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, Temp_bool_True_if_break_was_hit_Variable) == 0x00002A, "Member 'HealthBar6_Animated_C_ShouldShow::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00002B, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue) == 0x00002C, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetVariatorManager_ReturnValue) == 0x000030, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetVariatorManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetRBGameUserPreferences_ReturnValue) == 0x000038, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetRBGameUserPreferences_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetCurrentVariatorConfigs_ReturnValue) == 0x000040, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetCurrentVariatorConfigs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetHealthDisplay_ReturnValue) == 0x000050, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetHealthDisplay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Array_Get_Item) == 0x000058, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000060, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000061, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Array_Length_ReturnValue) == 0x000064, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Array_IsEmpty_ReturnValue) == 0x000068, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Array_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetRBGameUserPreferences_ReturnValue_1) == 0x000070, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetRBGameUserPreferences_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanOR_ReturnValue) == 0x000078, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetHealthDisplay_ReturnValue_1) == 0x00007C, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetHealthDisplay_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000080, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, Temp_int_Loop_Counter_Variable) == 0x000084, "Member 'HealthBar6_Animated_C_ShouldShow::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetRBGameState_ReturnValue_1) == 0x000088, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetRBGameState_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Less_IntInt_ReturnValue) == 0x000090, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Not_PreBool_ReturnValue_1) == 0x000091, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanAND_ReturnValue) == 0x000092, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Add_IntInt_ReturnValue) == 0x000094, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_GetWatchedPlayer_ReturnValue_1) == 0x000098, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_GetWatchedPlayer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_IsBleeding_ReturnValue) == 0x0000A0, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_IsBleeding_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BP_GetMaxHealth_ReturnValue) == 0x0000A4, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BP_GetMaxHealth_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000A8, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0000A9, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_1) == 0x0000AA, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanAND_ReturnValue_2) == 0x0000AB, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_1) == 0x0000AC, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HealthBar6_Animated_C_ShouldShow, CallFunc_BooleanOR_ReturnValue_2) == 0x0000AD, "Member 'HealthBar6_Animated_C_ShouldShow::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
 
 }
 

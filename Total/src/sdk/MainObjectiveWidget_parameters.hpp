@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "OPP_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -313,7 +313,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBObjectiveManager*                    CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBObjectiveManager*                    CallFunc_GetRBObjectiveManager_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_BP_GetIntroObjectiveIcon_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -331,7 +331,7 @@ static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_IsValid_Return
 static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_byte_Variable) == 0x000019, "Member 'MainObjectiveWidget_C_Initialize::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_byte_Variable_1) == 0x00001A, "Member 'MainObjectiveWidget_C_Initialize::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_bool_Variable_1) == 0x00001B, "Member 'MainObjectiveWidget_C_Initialize::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue) == 0x000020, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_GetLocalTeamRBObjectiveManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_GetRBObjectiveManager_ReturnValue) == 0x000020, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_GetRBObjectiveManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_BP_GetIntroObjectiveIcon_ReturnValue) == 0x000028, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_BP_GetIntroObjectiveIcon_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_IsValid_ReturnValue_1) == 0x000030, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_Initialize, K2Node_Select_Default) == 0x000031, "Member 'MainObjectiveWidget_C_Initialize::K2Node_Select_Default' has a wrong offset!");

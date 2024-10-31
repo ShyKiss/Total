@@ -37,23 +37,39 @@ void UInputBindingEntryWidget_C::ExecuteUbergraph_InputBindingEntryWidget(int32 
 }
 
 
-// Function InputBindingEntryWidget.InputBindingEntryWidget_C.UpdateRebindStatus
+// Function InputBindingEntryWidget.InputBindingEntryWidget_C.UpdateRemappingStatus
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsRebindInProgress                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsRemappingInProgress                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsRemappingPrimary_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UInputBindingEntryWidget_C::UpdateRebindStatus(bool bIsRebindInProgress)
+void UInputBindingEntryWidget_C::UpdateRemappingStatus(bool bIsRemappingInProgress, bool bIsRemappingPrimary_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InputBindingEntryWidget_C", "UpdateRebindStatus");
+		Func = Class->GetFunction("InputBindingEntryWidget_C", "UpdateRemappingStatus");
 
-	Params::InputBindingEntryWidget_C_UpdateRebindStatus Parms{};
+	Params::InputBindingEntryWidget_C_UpdateRemappingStatus Parms{};
 
-	Parms.bIsRebindInProgress = bIsRebindInProgress;
+	Parms.bIsRemappingInProgress = bIsRemappingInProgress;
+	Parms.bIsRemappingPrimary_0 = bIsRemappingPrimary_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function InputBindingEntryWidget.InputBindingEntryWidget_C.BndEvt__InputBindingEntryWidget_SecondaryRebindButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UInputBindingEntryWidget_C::BndEvt__InputBindingEntryWidget_SecondaryRebindButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InputBindingEntryWidget_C", "BndEvt__InputBindingEntryWidget_SecondaryRebindButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

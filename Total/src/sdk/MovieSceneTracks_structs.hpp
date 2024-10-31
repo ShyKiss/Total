@@ -60,25 +60,6 @@ enum class EParticleKey : uint8
 	EParticleKey_MAX                         = 3,
 };
 
-// ScriptStruct MovieSceneTracks.MovieSceneBoolPropertySectionTemplate
-// 0x0090 (0x00C8 - 0x0038)
-struct FMovieSceneBoolPropertySectionTemplate : public FMovieScenePropertySectionTemplate
-{
-public:
-	struct FMovieSceneBoolChannel                 BoolCurve;                                         // 0x0038(0x0090)(Protected, NativeAccessSpecifierProtected)
-};
-static_assert(alignof(FMovieSceneBoolPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneBoolPropertySectionTemplate");
-static_assert(sizeof(FMovieSceneBoolPropertySectionTemplate) == 0x0000C8, "Wrong size on FMovieSceneBoolPropertySectionTemplate");
-static_assert(offsetof(FMovieSceneBoolPropertySectionTemplate, BoolCurve) == 0x000038, "Member 'FMovieSceneBoolPropertySectionTemplate::BoolCurve' has a wrong offset!");
-
-// ScriptStruct MovieSceneTracks.MovieSceneVisibilitySectionTemplate
-// 0x0000 (0x00C8 - 0x00C8)
-struct FMovieSceneVisibilitySectionTemplate final : public FMovieSceneBoolPropertySectionTemplate
-{
-};
-static_assert(alignof(FMovieSceneVisibilitySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneVisibilitySectionTemplate");
-static_assert(sizeof(FMovieSceneVisibilitySectionTemplate) == 0x0000C8, "Wrong size on FMovieSceneVisibilitySectionTemplate");
-
 // ScriptStruct MovieSceneTracks.MovieScene3DPathSectionTemplate
 // 0x00C0 (0x00E0 - 0x0020)
 struct FMovieScene3DPathSectionTemplate final : public FMovieSceneEvalTemplate
@@ -111,17 +92,6 @@ public:
 static_assert(alignof(FMovieSceneTransformMask) == 0x000004, "Wrong alignment on FMovieSceneTransformMask");
 static_assert(sizeof(FMovieSceneTransformMask) == 0x000004, "Wrong size on FMovieSceneTransformMask");
 static_assert(offsetof(FMovieSceneTransformMask, Mask) == 0x000000, "Member 'FMovieSceneTransformMask::Mask' has a wrong offset!");
-
-// ScriptStruct MovieSceneTracks.MovieSceneSlomoSectionTemplate
-// 0x00A0 (0x00C0 - 0x0020)
-struct FMovieSceneSlomoSectionTemplate final : public FMovieSceneEvalTemplate
-{
-public:
-	struct FMovieSceneFloatChannel                SlomoCurve;                                        // 0x0020(0x00A0)(NativeAccessSpecifierPrivate)
-};
-static_assert(alignof(FMovieSceneSlomoSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneSlomoSectionTemplate");
-static_assert(sizeof(FMovieSceneSlomoSectionTemplate) == 0x0000C0, "Wrong size on FMovieSceneSlomoSectionTemplate");
-static_assert(offsetof(FMovieSceneSlomoSectionTemplate, SlomoCurve) == 0x000020, "Member 'FMovieSceneSlomoSectionTemplate::SlomoCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieScene3DTransformKeyStruct
 // 0x0040 (0x0048 - 0x0008)
@@ -744,16 +714,16 @@ static_assert(alignof(FMovieSceneStringPropertySectionTemplate) == 0x000008, "Wr
 static_assert(sizeof(FMovieSceneStringPropertySectionTemplate) == 0x0000D8, "Wrong size on FMovieSceneStringPropertySectionTemplate");
 static_assert(offsetof(FMovieSceneStringPropertySectionTemplate, StringCurve) == 0x000038, "Member 'FMovieSceneStringPropertySectionTemplate::StringCurve' has a wrong offset!");
 
-// ScriptStruct MovieSceneTracks.LevelVisibilityComponentData
-// 0x0008 (0x0008 - 0x0000)
-struct FLevelVisibilityComponentData final
+// ScriptStruct MovieSceneTracks.MovieSceneBoolPropertySectionTemplate
+// 0x0090 (0x00C8 - 0x0038)
+struct FMovieSceneBoolPropertySectionTemplate : public FMovieScenePropertySectionTemplate
 {
 public:
-	class UMovieSceneLevelVisibilitySection*      Section;                                           // 0x0000(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMovieSceneBoolChannel                 BoolCurve;                                         // 0x0038(0x0090)(Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FLevelVisibilityComponentData) == 0x000008, "Wrong alignment on FLevelVisibilityComponentData");
-static_assert(sizeof(FLevelVisibilityComponentData) == 0x000008, "Wrong size on FLevelVisibilityComponentData");
-static_assert(offsetof(FLevelVisibilityComponentData, Section) == 0x000000, "Member 'FLevelVisibilityComponentData::Section' has a wrong offset!");
+static_assert(alignof(FMovieSceneBoolPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneBoolPropertySectionTemplate");
+static_assert(sizeof(FMovieSceneBoolPropertySectionTemplate) == 0x0000C8, "Wrong size on FMovieSceneBoolPropertySectionTemplate");
+static_assert(offsetof(FMovieSceneBoolPropertySectionTemplate, BoolCurve) == 0x000038, "Member 'FMovieSceneBoolPropertySectionTemplate::BoolCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationParams
 // 0x00D8 (0x00D8 - 0x0000)
@@ -815,6 +785,38 @@ static_assert(alignof(FMovieSceneSkeletalAnimationSectionTemplate) == 0x000008, 
 static_assert(sizeof(FMovieSceneSkeletalAnimationSectionTemplate) == 0x000100, "Wrong size on FMovieSceneSkeletalAnimationSectionTemplate");
 static_assert(offsetof(FMovieSceneSkeletalAnimationSectionTemplate, Params) == 0x000020, "Member 'FMovieSceneSkeletalAnimationSectionTemplate::Params' has a wrong offset!");
 
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimRootMotionTrackParams
+// 0x0030 (0x0030 - 0x0000)
+struct alignas(0x08) FMovieSceneSkeletalAnimRootMotionTrackParams final
+{
+public:
+	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FMovieSceneSkeletalAnimRootMotionTrackParams) == 0x000008, "Wrong alignment on FMovieSceneSkeletalAnimRootMotionTrackParams");
+static_assert(sizeof(FMovieSceneSkeletalAnimRootMotionTrackParams) == 0x000030, "Wrong size on FMovieSceneSkeletalAnimRootMotionTrackParams");
+
+// ScriptStruct MovieSceneTracks.MovieSceneSlomoSectionTemplate
+// 0x00A0 (0x00C0 - 0x0020)
+struct FMovieSceneSlomoSectionTemplate final : public FMovieSceneEvalTemplate
+{
+public:
+	struct FMovieSceneFloatChannel                SlomoCurve;                                        // 0x0020(0x00A0)(NativeAccessSpecifierPrivate)
+};
+static_assert(alignof(FMovieSceneSlomoSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneSlomoSectionTemplate");
+static_assert(sizeof(FMovieSceneSlomoSectionTemplate) == 0x0000C0, "Wrong size on FMovieSceneSlomoSectionTemplate");
+static_assert(offsetof(FMovieSceneSlomoSectionTemplate, SlomoCurve) == 0x000020, "Member 'FMovieSceneSlomoSectionTemplate::SlomoCurve' has a wrong offset!");
+
+// ScriptStruct MovieSceneTracks.LevelVisibilityComponentData
+// 0x0008 (0x0008 - 0x0000)
+struct FLevelVisibilityComponentData final
+{
+public:
+	class UMovieSceneLevelVisibilitySection*      Section;                                           // 0x0000(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FLevelVisibilityComponentData) == 0x000008, "Wrong alignment on FLevelVisibilityComponentData");
+static_assert(sizeof(FLevelVisibilityComponentData) == 0x000008, "Wrong size on FLevelVisibilityComponentData");
+static_assert(offsetof(FLevelVisibilityComponentData, Section) == 0x000000, "Member 'FLevelVisibilityComponentData::Section' has a wrong offset!");
+
 // ScriptStruct MovieSceneTracks.MovieSceneVectorKeyStructBase
 // 0x0020 (0x0028 - 0x0008)
 struct FMovieSceneVectorKeyStructBase : public FMovieSceneKeyStruct
@@ -826,27 +828,6 @@ public:
 static_assert(alignof(FMovieSceneVectorKeyStructBase) == 0x000008, "Wrong alignment on FMovieSceneVectorKeyStructBase");
 static_assert(sizeof(FMovieSceneVectorKeyStructBase) == 0x000028, "Wrong size on FMovieSceneVectorKeyStructBase");
 static_assert(offsetof(FMovieSceneVectorKeyStructBase, Time) == 0x000008, "Member 'FMovieSceneVectorKeyStructBase::Time' has a wrong offset!");
-
-// ScriptStruct MovieSceneTracks.MovieSceneVector2DKeyStruct
-// 0x0008 (0x0030 - 0x0028)
-struct FMovieSceneVector2DKeyStruct final : public FMovieSceneVectorKeyStructBase
-{
-public:
-	struct FVector2D                              Vector;                                            // 0x0028(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMovieSceneVector2DKeyStruct) == 0x000008, "Wrong alignment on FMovieSceneVector2DKeyStruct");
-static_assert(sizeof(FMovieSceneVector2DKeyStruct) == 0x000030, "Wrong size on FMovieSceneVector2DKeyStruct");
-static_assert(offsetof(FMovieSceneVector2DKeyStruct, Vector) == 0x000028, "Member 'FMovieSceneVector2DKeyStruct::Vector' has a wrong offset!");
-
-// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimRootMotionTrackParams
-// 0x0030 (0x0030 - 0x0000)
-struct alignas(0x08) FMovieSceneSkeletalAnimRootMotionTrackParams final
-{
-public:
-	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMovieSceneSkeletalAnimRootMotionTrackParams) == 0x000008, "Wrong alignment on FMovieSceneSkeletalAnimRootMotionTrackParams");
-static_assert(sizeof(FMovieSceneSkeletalAnimRootMotionTrackParams) == 0x000030, "Wrong size on FMovieSceneSkeletalAnimRootMotionTrackParams");
 
 // ScriptStruct MovieSceneTracks.MovieSceneVector4KeyStruct
 // 0x0018 (0x0040 - 0x0028)
@@ -871,6 +852,25 @@ public:
 static_assert(alignof(FMovieSceneVectorKeyStruct) == 0x000008, "Wrong alignment on FMovieSceneVectorKeyStruct");
 static_assert(sizeof(FMovieSceneVectorKeyStruct) == 0x000038, "Wrong size on FMovieSceneVectorKeyStruct");
 static_assert(offsetof(FMovieSceneVectorKeyStruct, Vector) == 0x000028, "Member 'FMovieSceneVectorKeyStruct::Vector' has a wrong offset!");
+
+// ScriptStruct MovieSceneTracks.MovieSceneVector2DKeyStruct
+// 0x0008 (0x0030 - 0x0028)
+struct FMovieSceneVector2DKeyStruct final : public FMovieSceneVectorKeyStructBase
+{
+public:
+	struct FVector2D                              Vector;                                            // 0x0028(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FMovieSceneVector2DKeyStruct) == 0x000008, "Wrong alignment on FMovieSceneVector2DKeyStruct");
+static_assert(sizeof(FMovieSceneVector2DKeyStruct) == 0x000030, "Wrong size on FMovieSceneVector2DKeyStruct");
+static_assert(offsetof(FMovieSceneVector2DKeyStruct, Vector) == 0x000028, "Member 'FMovieSceneVector2DKeyStruct::Vector' has a wrong offset!");
+
+// ScriptStruct MovieSceneTracks.MovieSceneVisibilitySectionTemplate
+// 0x0000 (0x00C8 - 0x00C8)
+struct FMovieSceneVisibilitySectionTemplate final : public FMovieSceneBoolPropertySectionTemplate
+{
+};
+static_assert(alignof(FMovieSceneVisibilitySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneVisibilitySectionTemplate");
+static_assert(sizeof(FMovieSceneVisibilitySectionTemplate) == 0x0000C8, "Wrong size on FMovieSceneVisibilitySectionTemplate");
 
 }
 

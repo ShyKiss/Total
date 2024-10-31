@@ -17,52 +17,6 @@
 namespace SDK
 {
 
-// Function CineGooseberry-01_BP.CineGooseberry-01_BP_C.GetFuttermanAnimation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class USkeletalMeshComponent*           NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimSequence*                    Animation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACineGooseberryMinus01_BP_C::GetFuttermanAnimation(class USkeletalMeshComponent* NewParam, class UAnimSequence** Animation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineGooseberry-01_BP_C", "GetFuttermanAnimation");
-
-	Params::CineGooseberryMinus01_BP_C_GetFuttermanAnimation Parms{};
-
-	Parms.NewParam = NewParam;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Animation != nullptr)
-		*Animation = Parms.Animation;
-}
-
-
-// Function CineGooseberry-01_BP.CineGooseberry-01_BP_C.SetDrillOn
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    DrillOn                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                                   DrillRate                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACineGooseberryMinus01_BP_C::SetDrillOn(bool DrillOn, float DrillRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineGooseberry-01_BP_C", "SetDrillOn");
-
-	Params::CineGooseberryMinus01_BP_C_SetDrillOn Parms{};
-
-	Parms.DrillOn = DrillOn;
-	Parms.DrillRate = DrillRate;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function CineGooseberry-01_BP.CineGooseberry-01_BP_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -116,6 +70,52 @@ void ACineGooseberryMinus01_BP_C::GetPoseAsset(class UPoseAsset** PoseAsset)
 
 	if (PoseAsset != nullptr)
 		*PoseAsset = Parms.PoseAsset;
+}
+
+
+// Function CineGooseberry-01_BP.CineGooseberry-01_BP_C.GetFuttermanAnimation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class USkeletalMeshComponent*           NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimSequence*                    Animation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACineGooseberryMinus01_BP_C::GetFuttermanAnimation(class USkeletalMeshComponent* NewParam, class UAnimSequence** Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CineGooseberry-01_BP_C", "GetFuttermanAnimation");
+
+	Params::CineGooseberryMinus01_BP_C_GetFuttermanAnimation Parms{};
+
+	Parms.NewParam = NewParam;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Animation != nullptr)
+		*Animation = Parms.Animation;
+}
+
+
+// Function CineGooseberry-01_BP.CineGooseberry-01_BP_C.SetDrillOn
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    DrillOn                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                                   DrillRate                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACineGooseberryMinus01_BP_C::SetDrillOn(bool DrillOn, float DrillRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CineGooseberry-01_BP_C", "SetDrillOn");
+
+	Params::CineGooseberryMinus01_BP_C_SetDrillOn Parms{};
+
+	Parms.DrillOn = DrillOn;
+	Parms.DrillRate = DrillRate;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

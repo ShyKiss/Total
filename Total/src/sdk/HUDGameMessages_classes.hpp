@@ -34,7 +34,7 @@ public:
 	class UImage*                                 Icon;                                              // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInvalidationBox*                       InvalidationBox_HUDGameMessages;                   // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Message;                                           // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          NeedIntro;                                         // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bWasInInvalidHUDMode;                              // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsInitialized;                                     // 0x0331(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_332[0x6];                                      // 0x0332(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               IconMaterial;                                      // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,9 +62,8 @@ public:
 	void Event_OnHudModeChanged(EHudMode NewHudMode);
 	void Construct();
 	void ShowMessage();
-	void OnShowGameMessage_Event_0(const class FText& GameMessage, const EGameMessageCategory MessageCategory, const struct FGameMessageAudioParams& AudioParams);
 	void Event_Show();
-	void OnStageEnded_Event_0(const struct FRBStageID& StageID, const struct FRBMissionID& MissionID, bool IsFail);
+	void OnShowGameMessage_Event_0(const class FText& GameMessage, const EGameMessageCategory MessageCategory, const struct FGameMessageAudioParams& AudioParams);
 	void Finished_1D4430144A0F9FAAAB764FB894A8E54F();
 	void InitializeMessage(const class FText& Message_0, EGameMessageCategory MessageCategory, const struct FGameMessageAudioParams& AudioParams);
 
@@ -91,7 +90,7 @@ static_assert(offsetof(UHUDGameMessages_C, CompleteStamp) == 0x000310, "Member '
 static_assert(offsetof(UHUDGameMessages_C, Icon) == 0x000318, "Member 'UHUDGameMessages_C::Icon' has a wrong offset!");
 static_assert(offsetof(UHUDGameMessages_C, InvalidationBox_HUDGameMessages) == 0x000320, "Member 'UHUDGameMessages_C::InvalidationBox_HUDGameMessages' has a wrong offset!");
 static_assert(offsetof(UHUDGameMessages_C, Message) == 0x000328, "Member 'UHUDGameMessages_C::Message' has a wrong offset!");
-static_assert(offsetof(UHUDGameMessages_C, NeedIntro) == 0x000330, "Member 'UHUDGameMessages_C::NeedIntro' has a wrong offset!");
+static_assert(offsetof(UHUDGameMessages_C, bWasInInvalidHUDMode) == 0x000330, "Member 'UHUDGameMessages_C::bWasInInvalidHUDMode' has a wrong offset!");
 static_assert(offsetof(UHUDGameMessages_C, IsInitialized) == 0x000331, "Member 'UHUDGameMessages_C::IsInitialized' has a wrong offset!");
 static_assert(offsetof(UHUDGameMessages_C, IconMaterial) == 0x000338, "Member 'UHUDGameMessages_C::IconMaterial' has a wrong offset!");
 static_assert(offsetof(UHUDGameMessages_C, Sound) == 0x000340, "Member 'UHUDGameMessages_C::Sound' has a wrong offset!");

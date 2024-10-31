@@ -37,6 +37,20 @@ void AVariableSizeBlocker_DoorBlockableActor_BP_C::ExecuteUbergraph_VariableSize
 }
 
 
+// Function VariableSizeBlocker_DoorBlockableActor_BP.VariableSizeBlocker_DoorBlockableActor_BP_C.Event_OnResetStage
+// (Event, Public, BlueprintEvent)
+
+void AVariableSizeBlocker_DoorBlockableActor_BP_C::Event_OnResetStage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("VariableSizeBlocker_DoorBlockableActor_BP_C", "Event_OnResetStage");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function VariableSizeBlocker_DoorBlockableActor_BP.VariableSizeBlocker_DoorBlockableActor_BP_C.BndEvt__VariableSizeBlocker_DoorBlockableActor_BP_DamageableComponent_K2Node_ComponentBoundEvent_0_OnDamageableDamaged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:

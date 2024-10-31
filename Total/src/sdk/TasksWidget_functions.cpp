@@ -126,7 +126,7 @@ void UTasksWidget_C::UpdateRefreshTime()
 
 
 // Function TasksWidget.TasksWidget_C.Event_Refresh
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
 void UTasksWidget_C::Event_Refresh()
 {
@@ -140,7 +140,7 @@ void UTasksWidget_C::Event_Refresh()
 
 
 // Function TasksWidget.TasksWidget_C.Event_Build
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
 void UTasksWidget_C::Event_Build()
 {
@@ -175,6 +175,20 @@ struct FEventReply UTasksWidget_C::OnFocusReceived(const struct FGeometry& MyGeo
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function TasksWidget.TasksWidget_C.Build
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UTasksWidget_C::Build()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TasksWidget_C", "Build");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

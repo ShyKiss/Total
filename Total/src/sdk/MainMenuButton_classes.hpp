@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -34,19 +34,15 @@ public:
 	struct FButtonStyle                           Style;                                             // 0x02B0(0x0278)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
-	void Get_Button_Enabled(bool* Enabled);
-	void SetText(const class FText& Text_0);
-	void Set_Button_Enabled(bool IsEnabled);
-	void PreConstruct(bool IsDesignTime);
-	void BndEvt__Button_32_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
-	void BndEvt__Button_32_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature();
-	void BndEvt__Button_32_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
-	void HighlighButton();
-	void DownplayButton();
-	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
-	void ExecuteUbergraph_MainMenuButton(int32 EntryPoint);
 	void Event_Clicked__DelegateSignature();
+	void ExecuteUbergraph_MainMenuButton(int32 EntryPoint);
+	void BndEvt__Button_32_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__Button_32_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__Button_32_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
+	void PreConstruct(bool IsDesignTime);
+	void Set_Button_Enabled(bool IsEnabled);
+	void SetText(const class FText& Text_0);
+	void Get_Button_Enabled(bool* Enabled);
 
 public:
 	static class UClass* StaticClass()

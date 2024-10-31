@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DoorBlocker_Placement_BP.DoorBlocker_Placement_BP_C
-// 0x0008 (0x0280 - 0x0278)
+// 0x0008 (0x0288 - 0x0280)
 class ADoorBlocker_Placement_BP_C final : public ARBDoorBlockerPlacementActor
 {
 public:
-	class UBillboardComponent*                    Icon;                                              // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Icon;                                              // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(ADoorBlocker_Placement_BP_C) == 0x000008, "Wrong alignment on ADoorBlocker_Placement_BP_C");
-static_assert(sizeof(ADoorBlocker_Placement_BP_C) == 0x000280, "Wrong size on ADoorBlocker_Placement_BP_C");
-static_assert(offsetof(ADoorBlocker_Placement_BP_C, Icon) == 0x000278, "Member 'ADoorBlocker_Placement_BP_C::Icon' has a wrong offset!");
+static_assert(sizeof(ADoorBlocker_Placement_BP_C) == 0x000288, "Wrong size on ADoorBlocker_Placement_BP_C");
+static_assert(offsetof(ADoorBlocker_Placement_BP_C, Icon) == 0x000280, "Member 'ADoorBlocker_Placement_BP_C::Icon' has a wrong offset!");
 
 }
 

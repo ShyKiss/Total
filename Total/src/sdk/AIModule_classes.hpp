@@ -13,59 +13,88 @@
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "AIModule_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "GameplayTasks_classes.hpp"
 #include "NavigationSystem_classes.hpp"
-#include "GameplayTags_structs.hpp"
+#include "GameplayTasks_classes.hpp"
 
 
 namespace SDK
 {
 
-// Class AIModule.AITask
-// 0x0008 (0x0070 - 0x0068)
-class UAITask : public UGameplayTask
+// Class AIModule.AIBlueprintHelperLibrary
+// 0x0000 (0x0028 - 0x0028)
+class UAIBlueprintHelperLibrary final : public UBlueprintFunctionLibrary
 {
 public:
-	class AAIController*                          OwnerController;                                   // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	static class UAIAsyncTaskBlueprintProxy* CreateMoveToProxyObject(class UObject* WorldContextObject, class APawn* Pawn, const struct FVector& Destination, class AActor* TargetActor, float AcceptanceRadius, bool bStopOnOverlap);
+	static class AAIController* GetAIController(class AActor* ControlledActor);
+	static class UBlackboardComponent* GetBlackboard(class AActor* Target);
+	static class UNavigationPath* GetCurrentPath(class AController* Controller);
+	static int32 GetCurrentPathIndex(const class AController* Controller);
+	static const TArray<struct FVector> GetCurrentPathPoints(class AController* Controller);
+	static int32 GetNextNavLinkIndex(const class AController* Controller);
+	static bool IsValidAIDirection(const struct FVector& DirectionVector);
+	static bool IsValidAILocation(const struct FVector& Location);
+	static bool IsValidAIRotation(const struct FRotator& Rotation);
+	static void LockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bLockMovement, bool LockAILogic);
+	static void SendAIMessage(class APawn* Target, class FName Message, class UObject* MessageSource, bool bSuccess);
+	static void SimpleMoveToActor(class AController* Controller, const class AActor* Goal);
+	static void SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal);
+	static class APawn* SpawnAIFromClass(class UObject* WorldContextObject, TSubclassOf<class APawn> PawnClass, class UBehaviorTree* BehaviorTree, const struct FVector& Location, const struct FRotator& Rotation, bool bNoCollisionFail, class AActor* Owner);
+	static void UnlockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bUnlockMovement, bool UnlockAILogic);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AITask">();
+		return StaticClassImpl<"AIBlueprintHelperLibrary">();
 	}
-	static class UAITask* GetDefaultObj()
+	static class UAIBlueprintHelperLibrary* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UAITask>();
+		return GetDefaultObjImpl<UAIBlueprintHelperLibrary>();
 	}
 };
-static_assert(alignof(UAITask) == 0x000008, "Wrong alignment on UAITask");
-static_assert(sizeof(UAITask) == 0x000070, "Wrong size on UAITask");
-static_assert(offsetof(UAITask, OwnerController) == 0x000068, "Member 'UAITask::OwnerController' has a wrong offset!");
+static_assert(alignof(UAIBlueprintHelperLibrary) == 0x000008, "Wrong alignment on UAIBlueprintHelperLibrary");
+static_assert(sizeof(UAIBlueprintHelperLibrary) == 0x000028, "Wrong size on UAIBlueprintHelperLibrary");
 
-// Class AIModule.AITask_RunEQS
-// 0x0078 (0x00E8 - 0x0070)
-class UAITask_RunEQS final : public UAITask
+// Class AIModule.AISenseEvent
+// 0x0000 (0x0028 - 0x0028)
+class UAISenseEvent : public UObject
 {
 public:
-	uint8                                         Pad_70[0x78];                                      // 0x0070(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AISenseEvent">();
+	}
+	static class UAISenseEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAISenseEvent>();
+	}
+};
+static_assert(alignof(UAISenseEvent) == 0x000008, "Wrong alignment on UAISenseEvent");
+static_assert(sizeof(UAISenseEvent) == 0x000028, "Wrong size on UAISenseEvent");
 
+// Class AIModule.AISenseEvent_Hearing
+// 0x0030 (0x0058 - 0x0028)
+class UAISenseEvent_Hearing final : public UAISenseEvent
+{
 public:
-	static class UAITask_RunEQS* RunEQS(class AAIController* Controller, class UEnvQuery* QueryTemplate);
+	struct FAINoiseEvent                          Event;                                             // 0x0028(0x0030)(Edit, BlueprintVisible, NoDestructor, Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AITask_RunEQS">();
+		return StaticClassImpl<"AISenseEvent_Hearing">();
 	}
-	static class UAITask_RunEQS* GetDefaultObj()
+	static class UAISenseEvent_Hearing* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UAITask_RunEQS>();
+		return GetDefaultObjImpl<UAISenseEvent_Hearing>();
 	}
 };
-static_assert(alignof(UAITask_RunEQS) == 0x000008, "Wrong alignment on UAITask_RunEQS");
-static_assert(sizeof(UAITask_RunEQS) == 0x0000E8, "Wrong size on UAITask_RunEQS");
+static_assert(alignof(UAISenseEvent_Hearing) == 0x000008, "Wrong alignment on UAISenseEvent_Hearing");
+static_assert(sizeof(UAISenseEvent_Hearing) == 0x000058, "Wrong size on UAISenseEvent_Hearing");
+static_assert(offsetof(UAISenseEvent_Hearing, Event) == 0x000028, "Member 'UAISenseEvent_Hearing::Event' has a wrong offset!");
 
 // Class AIModule.AIController
 // 0x0090 (0x0338 - 0x02A8)
@@ -136,95 +165,60 @@ static_assert(offsetof(AAIController, CachedGameplayTasksComponent) == 0x000310,
 static_assert(offsetof(AAIController, DefaultNavigationFilterClass) == 0x000318, "Member 'AAIController::DefaultNavigationFilterClass' has a wrong offset!");
 static_assert(offsetof(AAIController, ReceiveMoveCompleted) == 0x000320, "Member 'AAIController::ReceiveMoveCompleted' has a wrong offset!");
 
-// Class AIModule.AIAsyncTaskBlueprintProxy
-// 0x0040 (0x0068 - 0x0028)
-class UAIAsyncTaskBlueprintProxy final : public UObject
+// Class AIModule.AIHotSpotManager
+// 0x0000 (0x0028 - 0x0028)
+class UAIHotSpotManager final : public UObject
 {
 public:
-	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_48[0x20];                                      // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AIHotSpotManager">();
+	}
+	static class UAIHotSpotManager* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIHotSpotManager>();
+	}
+};
+static_assert(alignof(UAIHotSpotManager) == 0x000008, "Wrong alignment on UAIHotSpotManager");
+static_assert(sizeof(UAIHotSpotManager) == 0x000028, "Wrong size on UAIHotSpotManager");
 
+// Class AIModule.AITask
+// 0x0008 (0x0070 - 0x0068)
+class UAITask : public UGameplayTask
+{
 public:
-	void OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult MovementResult);
+	class AAIController*                          OwnerController;                                   // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAsyncTaskBlueprintProxy">();
+		return StaticClassImpl<"AITask">();
 	}
-	static class UAIAsyncTaskBlueprintProxy* GetDefaultObj()
+	static class UAITask* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UAIAsyncTaskBlueprintProxy>();
+		return GetDefaultObjImpl<UAITask>();
 	}
 };
-static_assert(alignof(UAIAsyncTaskBlueprintProxy) == 0x000008, "Wrong alignment on UAIAsyncTaskBlueprintProxy");
-static_assert(sizeof(UAIAsyncTaskBlueprintProxy) == 0x000068, "Wrong size on UAIAsyncTaskBlueprintProxy");
-static_assert(offsetof(UAIAsyncTaskBlueprintProxy, OnSuccess) == 0x000028, "Member 'UAIAsyncTaskBlueprintProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UAIAsyncTaskBlueprintProxy, OnFail) == 0x000038, "Member 'UAIAsyncTaskBlueprintProxy::OnFail' has a wrong offset!");
+static_assert(alignof(UAITask) == 0x000008, "Wrong alignment on UAITask");
+static_assert(sizeof(UAITask) == 0x000070, "Wrong size on UAITask");
+static_assert(offsetof(UAITask, OwnerController) == 0x000068, "Member 'UAITask::OwnerController' has a wrong offset!");
 
-// Class AIModule.BlackboardKeyType
-// 0x0008 (0x0030 - 0x0028)
-class UBlackboardKeyType : public UObject
+// Class AIModule.AITask_LockLogic
+// 0x0000 (0x0070 - 0x0070)
+class UAITask_LockLogic final : public UAITask
 {
-public:
-	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BlackboardKeyType">();
+		return StaticClassImpl<"AITask_LockLogic">();
 	}
-	static class UBlackboardKeyType* GetDefaultObj()
+	static class UAITask_LockLogic* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBlackboardKeyType>();
+		return GetDefaultObjImpl<UAITask_LockLogic>();
 	}
 };
-static_assert(alignof(UBlackboardKeyType) == 0x000008, "Wrong alignment on UBlackboardKeyType");
-static_assert(sizeof(UBlackboardKeyType) == 0x000030, "Wrong size on UBlackboardKeyType");
-
-// Class AIModule.BlackboardKeyType_Object
-// 0x0008 (0x0038 - 0x0030)
-class UBlackboardKeyType_Object final : public UBlackboardKeyType
-{
-public:
-	class UClass*                                 BaseClass;                                         // 0x0030(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BlackboardKeyType_Object">();
-	}
-	static class UBlackboardKeyType_Object* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBlackboardKeyType_Object>();
-	}
-};
-static_assert(alignof(UBlackboardKeyType_Object) == 0x000008, "Wrong alignment on UBlackboardKeyType_Object");
-static_assert(sizeof(UBlackboardKeyType_Object) == 0x000038, "Wrong size on UBlackboardKeyType_Object");
-static_assert(offsetof(UBlackboardKeyType_Object, BaseClass) == 0x000030, "Member 'UBlackboardKeyType_Object::BaseClass' has a wrong offset!");
-
-// Class AIModule.EnvQueryNode
-// 0x0008 (0x0030 - 0x0028)
-class UEnvQueryNode : public UObject
-{
-public:
-	int32                                         VerNum;                                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryNode">();
-	}
-	static class UEnvQueryNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryNode>();
-	}
-};
-static_assert(alignof(UEnvQueryNode) == 0x000008, "Wrong alignment on UEnvQueryNode");
-static_assert(sizeof(UEnvQueryNode) == 0x000030, "Wrong size on UEnvQueryNode");
-static_assert(offsetof(UEnvQueryNode, VerNum) == 0x000028, "Member 'UEnvQueryNode::VerNum' has a wrong offset!");
+static_assert(alignof(UAITask_LockLogic) == 0x000008, "Wrong alignment on UAITask_LockLogic");
+static_assert(sizeof(UAITask_LockLogic) == 0x000070, "Wrong size on UAITask_LockLogic");
 
 // Class AIModule.PathFollowingComponent
 // 0x01A0 (0x0258 - 0x00B8)
@@ -259,40 +253,32 @@ static_assert(sizeof(UPathFollowingComponent) == 0x000258, "Wrong size on UPathF
 static_assert(offsetof(UPathFollowingComponent, MovementComp) == 0x0000F0, "Member 'UPathFollowingComponent::MovementComp' has a wrong offset!");
 static_assert(offsetof(UPathFollowingComponent, MyNavData) == 0x000100, "Member 'UPathFollowingComponent::MyNavData' has a wrong offset!");
 
-// Class AIModule.AIBlueprintHelperLibrary
-// 0x0000 (0x0028 - 0x0028)
-class UAIBlueprintHelperLibrary final : public UBlueprintFunctionLibrary
+// Class AIModule.AIAsyncTaskBlueprintProxy
+// 0x0040 (0x0068 - 0x0028)
+class UAIAsyncTaskBlueprintProxy final : public UObject
 {
 public:
-	static class UAIAsyncTaskBlueprintProxy* CreateMoveToProxyObject(class UObject* WorldContextObject, class APawn* Pawn, const struct FVector& Destination, class AActor* TargetActor, float AcceptanceRadius, bool bStopOnOverlap);
-	static class AAIController* GetAIController(class AActor* ControlledActor);
-	static class UBlackboardComponent* GetBlackboard(class AActor* Target);
-	static class UNavigationPath* GetCurrentPath(class AController* Controller);
-	static int32 GetCurrentPathIndex(const class AController* Controller);
-	static const TArray<struct FVector> GetCurrentPathPoints(class AController* Controller);
-	static int32 GetNextNavLinkIndex(const class AController* Controller);
-	static bool IsValidAIDirection(const struct FVector& DirectionVector);
-	static bool IsValidAILocation(const struct FVector& Location);
-	static bool IsValidAIRotation(const struct FRotator& Rotation);
-	static void LockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bLockMovement, bool LockAILogic);
-	static void SendAIMessage(class APawn* Target, class FName Message, class UObject* MessageSource, bool bSuccess);
-	static void SimpleMoveToActor(class AController* Controller, const class AActor* Goal);
-	static void SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal);
-	static class APawn* SpawnAIFromClass(class UObject* WorldContextObject, TSubclassOf<class APawn> PawnClass, class UBehaviorTree* BehaviorTree, const struct FVector& Location, const struct FRotator& Rotation, bool bNoCollisionFail, class AActor* Owner);
-	static void UnlockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bUnlockMovement, bool UnlockAILogic);
+	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_48[0x20];                                      // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult MovementResult);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIBlueprintHelperLibrary">();
+		return StaticClassImpl<"AIAsyncTaskBlueprintProxy">();
 	}
-	static class UAIBlueprintHelperLibrary* GetDefaultObj()
+	static class UAIAsyncTaskBlueprintProxy* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UAIBlueprintHelperLibrary>();
+		return GetDefaultObjImpl<UAIAsyncTaskBlueprintProxy>();
 	}
 };
-static_assert(alignof(UAIBlueprintHelperLibrary) == 0x000008, "Wrong alignment on UAIBlueprintHelperLibrary");
-static_assert(sizeof(UAIBlueprintHelperLibrary) == 0x000028, "Wrong size on UAIBlueprintHelperLibrary");
+static_assert(alignof(UAIAsyncTaskBlueprintProxy) == 0x000008, "Wrong alignment on UAIAsyncTaskBlueprintProxy");
+static_assert(sizeof(UAIAsyncTaskBlueprintProxy) == 0x000068, "Wrong size on UAIAsyncTaskBlueprintProxy");
+static_assert(offsetof(UAIAsyncTaskBlueprintProxy, OnSuccess) == 0x000028, "Member 'UAIAsyncTaskBlueprintProxy::OnSuccess' has a wrong offset!");
+static_assert(offsetof(UAIAsyncTaskBlueprintProxy, OnFail) == 0x000038, "Member 'UAIAsyncTaskBlueprintProxy::OnFail' has a wrong offset!");
 
 // Class AIModule.AIDataProvider
 // 0x0000 (0x0028 - 0x0028)
@@ -363,23 +349,6 @@ static_assert(alignof(UAIDataProvider_Random) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UAIDataProvider_Random) == 0x000050, "Wrong size on UAIDataProvider_Random");
 static_assert(offsetof(UAIDataProvider_Random, Min) == 0x000040, "Member 'UAIDataProvider_Random::Min' has a wrong offset!");
 static_assert(offsetof(UAIDataProvider_Random, Max) == 0x000044, "Member 'UAIDataProvider_Random::Max' has a wrong offset!");
-
-// Class AIModule.AIHotSpotManager
-// 0x0000 (0x0028 - 0x0028)
-class UAIHotSpotManager final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIHotSpotManager">();
-	}
-	static class UAIHotSpotManager* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIHotSpotManager>();
-	}
-};
-static_assert(alignof(UAIHotSpotManager) == 0x000008, "Wrong alignment on UAIHotSpotManager");
-static_assert(sizeof(UAIHotSpotManager) == 0x000028, "Wrong size on UAIHotSpotManager");
 
 // Class AIModule.AIPerceptionComponent
 // 0x00E0 (0x0198 - 0x00B8)
@@ -996,23 +965,6 @@ public:
 static_assert(alignof(UAISenseConfig_Touch) == 0x000008, "Wrong alignment on UAISenseConfig_Touch");
 static_assert(sizeof(UAISenseConfig_Touch) == 0x000048, "Wrong size on UAISenseConfig_Touch");
 
-// Class AIModule.AISenseEvent
-// 0x0000 (0x0028 - 0x0028)
-class UAISenseEvent : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISenseEvent">();
-	}
-	static class UAISenseEvent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAISenseEvent>();
-	}
-};
-static_assert(alignof(UAISenseEvent) == 0x000008, "Wrong alignment on UAISenseEvent");
-static_assert(sizeof(UAISenseEvent) == 0x000028, "Wrong size on UAISenseEvent");
-
 // Class AIModule.AISenseEvent_Damage
 // 0x0038 (0x0060 - 0x0028)
 class UAISenseEvent_Damage final : public UAISenseEvent
@@ -1033,27 +985,6 @@ public:
 static_assert(alignof(UAISenseEvent_Damage) == 0x000008, "Wrong alignment on UAISenseEvent_Damage");
 static_assert(sizeof(UAISenseEvent_Damage) == 0x000060, "Wrong size on UAISenseEvent_Damage");
 static_assert(offsetof(UAISenseEvent_Damage, Event) == 0x000028, "Member 'UAISenseEvent_Damage::Event' has a wrong offset!");
-
-// Class AIModule.AISenseEvent_Hearing
-// 0x0030 (0x0058 - 0x0028)
-class UAISenseEvent_Hearing final : public UAISenseEvent
-{
-public:
-	struct FAINoiseEvent                          Event;                                             // 0x0028(0x0030)(Edit, BlueprintVisible, NoDestructor, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISenseEvent_Hearing">();
-	}
-	static class UAISenseEvent_Hearing* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAISenseEvent_Hearing>();
-	}
-};
-static_assert(alignof(UAISenseEvent_Hearing) == 0x000008, "Wrong alignment on UAISenseEvent_Hearing");
-static_assert(sizeof(UAISenseEvent_Hearing) == 0x000058, "Wrong size on UAISenseEvent_Hearing");
-static_assert(offsetof(UAISenseEvent_Hearing, Event) == 0x000028, "Member 'UAISenseEvent_Hearing::Event' has a wrong offset!");
 
 // Class AIModule.AISightTargetInterface
 // 0x0000 (0x0028 - 0x0028)
@@ -1137,23 +1068,6 @@ static_assert(offsetof(UAISystem, AllProxyObjects) == 0x0000B8, "Member 'UAISyst
 static_assert(offsetof(UAISystem, HotSpotManager) == 0x0000C8, "Member 'UAISystem::HotSpotManager' has a wrong offset!");
 static_assert(offsetof(UAISystem, NavLocalGrids) == 0x0000D0, "Member 'UAISystem::NavLocalGrids' has a wrong offset!");
 
-// Class AIModule.AITask_LockLogic
-// 0x0000 (0x0070 - 0x0070)
-class UAITask_LockLogic final : public UAITask
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AITask_LockLogic">();
-	}
-	static class UAITask_LockLogic* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAITask_LockLogic>();
-	}
-};
-static_assert(alignof(UAITask_LockLogic) == 0x000008, "Wrong alignment on UAITask_LockLogic");
-static_assert(sizeof(UAITask_LockLogic) == 0x000070, "Wrong size on UAITask_LockLogic");
-
 // Class AIModule.AITask_MoveTo
 // 0x00A0 (0x0110 - 0x0070)
 class UAITask_MoveTo final : public UAITask
@@ -1182,6 +1096,29 @@ static_assert(sizeof(UAITask_MoveTo) == 0x000110, "Wrong size on UAITask_MoveTo"
 static_assert(offsetof(UAITask_MoveTo, OnRequestFailed) == 0x000070, "Member 'UAITask_MoveTo::OnRequestFailed' has a wrong offset!");
 static_assert(offsetof(UAITask_MoveTo, OnMoveFinished) == 0x000080, "Member 'UAITask_MoveTo::OnMoveFinished' has a wrong offset!");
 static_assert(offsetof(UAITask_MoveTo, MoveRequest) == 0x000090, "Member 'UAITask_MoveTo::MoveRequest' has a wrong offset!");
+
+// Class AIModule.AITask_RunEQS
+// 0x0078 (0x00E8 - 0x0070)
+class UAITask_RunEQS final : public UAITask
+{
+public:
+	uint8                                         Pad_70[0x78];                                      // 0x0070(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UAITask_RunEQS* RunEQS(class AAIController* Controller, class UEnvQuery* QueryTemplate);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AITask_RunEQS">();
+	}
+	static class UAITask_RunEQS* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAITask_RunEQS>();
+	}
+};
+static_assert(alignof(UAITask_RunEQS) == 0x000008, "Wrong alignment on UAITask_RunEQS");
+static_assert(sizeof(UAITask_RunEQS) == 0x0000E8, "Wrong size on UAITask_RunEQS");
 
 // Class AIModule.BehaviorTree
 // 0x0040 (0x0068 - 0x0028)
@@ -1421,6 +1358,26 @@ static_assert(sizeof(UBlackboardData) == 0x000050, "Wrong size on UBlackboardDat
 static_assert(offsetof(UBlackboardData, Parent) == 0x000030, "Member 'UBlackboardData::Parent' has a wrong offset!");
 static_assert(offsetof(UBlackboardData, Keys) == 0x000038, "Member 'UBlackboardData::Keys' has a wrong offset!");
 
+// Class AIModule.BlackboardKeyType
+// 0x0008 (0x0030 - 0x0028)
+class UBlackboardKeyType : public UObject
+{
+public:
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BlackboardKeyType">();
+	}
+	static class UBlackboardKeyType* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBlackboardKeyType>();
+	}
+};
+static_assert(alignof(UBlackboardKeyType) == 0x000008, "Wrong alignment on UBlackboardKeyType");
+static_assert(sizeof(UBlackboardKeyType) == 0x000030, "Wrong size on UBlackboardKeyType");
+
 // Class AIModule.BlackboardKeyType_Bool
 // 0x0000 (0x0030 - 0x0030)
 class UBlackboardKeyType_Bool final : public UBlackboardKeyType
@@ -1518,6 +1475,23 @@ public:
 static_assert(alignof(UBlackboardKeyType_Int) == 0x000008, "Wrong alignment on UBlackboardKeyType_Int");
 static_assert(sizeof(UBlackboardKeyType_Int) == 0x000030, "Wrong size on UBlackboardKeyType_Int");
 
+// Class AIModule.VisualLoggerExtension
+// 0x0000 (0x0028 - 0x0028)
+class UVisualLoggerExtension final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"VisualLoggerExtension">();
+	}
+	static class UVisualLoggerExtension* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UVisualLoggerExtension>();
+	}
+};
+static_assert(alignof(UVisualLoggerExtension) == 0x000008, "Wrong alignment on UVisualLoggerExtension");
+static_assert(sizeof(UVisualLoggerExtension) == 0x000028, "Wrong size on UVisualLoggerExtension");
+
 // Class AIModule.BlackboardKeyType_Name
 // 0x0000 (0x0030 - 0x0030)
 class UBlackboardKeyType_Name final : public UBlackboardKeyType
@@ -1557,6 +1531,27 @@ static_assert(alignof(UBlackboardKeyType_NativeEnum) == 0x000008, "Wrong alignme
 static_assert(sizeof(UBlackboardKeyType_NativeEnum) == 0x000048, "Wrong size on UBlackboardKeyType_NativeEnum");
 static_assert(offsetof(UBlackboardKeyType_NativeEnum, EnumName) == 0x000030, "Member 'UBlackboardKeyType_NativeEnum::EnumName' has a wrong offset!");
 static_assert(offsetof(UBlackboardKeyType_NativeEnum, EnumType) == 0x000040, "Member 'UBlackboardKeyType_NativeEnum::EnumType' has a wrong offset!");
+
+// Class AIModule.BlackboardKeyType_Object
+// 0x0008 (0x0038 - 0x0030)
+class UBlackboardKeyType_Object final : public UBlackboardKeyType
+{
+public:
+	class UClass*                                 BaseClass;                                         // 0x0030(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BlackboardKeyType_Object">();
+	}
+	static class UBlackboardKeyType_Object* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBlackboardKeyType_Object>();
+	}
+};
+static_assert(alignof(UBlackboardKeyType_Object) == 0x000008, "Wrong alignment on UBlackboardKeyType_Object");
+static_assert(sizeof(UBlackboardKeyType_Object) == 0x000038, "Wrong size on UBlackboardKeyType_Object");
+static_assert(offsetof(UBlackboardKeyType_Object, BaseClass) == 0x000030, "Member 'UBlackboardKeyType_Object::BaseClass' has a wrong offset!");
 
 // Class AIModule.BlackboardKeyType_Rotator
 // 0x0000 (0x0030 - 0x0030)
@@ -2329,6 +2324,41 @@ public:
 static_assert(alignof(UBTService_BlackboardBase) == 0x000008, "Wrong alignment on UBTService_BlackboardBase");
 static_assert(sizeof(UBTService_BlackboardBase) == 0x000098, "Wrong size on UBTService_BlackboardBase");
 static_assert(offsetof(UBTService_BlackboardBase, BlackboardKey) == 0x000070, "Member 'UBTService_BlackboardBase::BlackboardKey' has a wrong offset!");
+
+// Class AIModule.PawnActionsComponent
+// 0x0038 (0x00F0 - 0x00B8)
+class UPawnActionsComponent final : public UActorComponent
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x00B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<struct FPawnActionStack>               ActionStacks;                                      // 0x00C0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FPawnActionEvent>               ActionEvents;                                      // 0x00D0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	class UPawnAction*                            CurrentAction;                                     // 0x00E0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_E8[0x8];                                       // 0x00E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static bool K2_PerformAction(class APawn* Pawn, class UPawnAction* Action, EAIRequestPriority Priority);
+
+	EPawnActionAbortState K2_AbortAction(class UPawnAction* ActionToAbort);
+	EPawnActionAbortState K2_ForceAbortAction(class UPawnAction* ActionToAbort);
+	bool K2_PushAction(class UPawnAction* NewAction, EAIRequestPriority Priority, class UObject* Instigator);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"PawnActionsComponent">();
+	}
+	static class UPawnActionsComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPawnActionsComponent>();
+	}
+};
+static_assert(alignof(UPawnActionsComponent) == 0x000008, "Wrong alignment on UPawnActionsComponent");
+static_assert(sizeof(UPawnActionsComponent) == 0x0000F0, "Wrong size on UPawnActionsComponent");
+static_assert(offsetof(UPawnActionsComponent, ControlledPawn) == 0x0000B8, "Member 'UPawnActionsComponent::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(UPawnActionsComponent, ActionStacks) == 0x0000C0, "Member 'UPawnActionsComponent::ActionStacks' has a wrong offset!");
+static_assert(offsetof(UPawnActionsComponent, ActionEvents) == 0x0000D0, "Member 'UPawnActionsComponent::ActionEvents' has a wrong offset!");
+static_assert(offsetof(UPawnActionsComponent, CurrentAction) == 0x0000E0, "Member 'UPawnActionsComponent::CurrentAction' has a wrong offset!");
 
 // Class AIModule.BTService_BlueprintBase
 // 0x0028 (0x0098 - 0x0070)
@@ -3106,6 +3136,28 @@ public:
 };
 static_assert(alignof(UEnvQueryDebugHelpers) == 0x000008, "Wrong alignment on UEnvQueryDebugHelpers");
 static_assert(sizeof(UEnvQueryDebugHelpers) == 0x000028, "Wrong size on UEnvQueryDebugHelpers");
+
+// Class AIModule.EnvQueryNode
+// 0x0008 (0x0030 - 0x0028)
+class UEnvQueryNode : public UObject
+{
+public:
+	int32                                         VerNum;                                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryNode">();
+	}
+	static class UEnvQueryNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryNode>();
+	}
+};
+static_assert(alignof(UEnvQueryNode) == 0x000008, "Wrong alignment on UEnvQueryNode");
+static_assert(sizeof(UEnvQueryNode) == 0x000030, "Wrong size on UEnvQueryNode");
+static_assert(offsetof(UEnvQueryNode, VerNum) == 0x000028, "Member 'UEnvQueryNode::VerNum' has a wrong offset!");
 
 // Class AIModule.EnvQueryGenerator
 // 0x0020 (0x0050 - 0x0030)
@@ -4368,41 +4420,6 @@ static_assert(alignof(UPawnAction_Wait) == 0x000008, "Wrong alignment on UPawnAc
 static_assert(sizeof(UPawnAction_Wait) == 0x0000A0, "Wrong size on UPawnAction_Wait");
 static_assert(offsetof(UPawnAction_Wait, TimeToWait) == 0x000090, "Member 'UPawnAction_Wait::TimeToWait' has a wrong offset!");
 
-// Class AIModule.PawnActionsComponent
-// 0x0038 (0x00F0 - 0x00B8)
-class UPawnActionsComponent final : public UActorComponent
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x00B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<struct FPawnActionStack>               ActionStacks;                                      // 0x00C0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FPawnActionEvent>               ActionEvents;                                      // 0x00D0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	class UPawnAction*                            CurrentAction;                                     // 0x00E0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E8[0x8];                                       // 0x00E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static bool K2_PerformAction(class APawn* Pawn, class UPawnAction* Action, EAIRequestPriority Priority);
-
-	EPawnActionAbortState K2_AbortAction(class UPawnAction* ActionToAbort);
-	EPawnActionAbortState K2_ForceAbortAction(class UPawnAction* ActionToAbort);
-	bool K2_PushAction(class UPawnAction* NewAction, EAIRequestPriority Priority, class UObject* Instigator);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PawnActionsComponent">();
-	}
-	static class UPawnActionsComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPawnActionsComponent>();
-	}
-};
-static_assert(alignof(UPawnActionsComponent) == 0x000008, "Wrong alignment on UPawnActionsComponent");
-static_assert(sizeof(UPawnActionsComponent) == 0x0000F0, "Wrong size on UPawnActionsComponent");
-static_assert(offsetof(UPawnActionsComponent, ControlledPawn) == 0x0000B8, "Member 'UPawnActionsComponent::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(UPawnActionsComponent, ActionStacks) == 0x0000C0, "Member 'UPawnActionsComponent::ActionStacks' has a wrong offset!");
-static_assert(offsetof(UPawnActionsComponent, ActionEvents) == 0x0000D0, "Member 'UPawnActionsComponent::ActionEvents' has a wrong offset!");
-static_assert(offsetof(UPawnActionsComponent, CurrentAction) == 0x0000E0, "Member 'UPawnActionsComponent::CurrentAction' has a wrong offset!");
-
 // Class AIModule.PawnSensingComponent
 // 0x0048 (0x0100 - 0x00B8)
 class UPawnSensingComponent final : public UActorComponent
@@ -4454,23 +4471,6 @@ static_assert(offsetof(UPawnSensingComponent, OnSeePawn) == 0x0000D8, "Member 'U
 static_assert(offsetof(UPawnSensingComponent, OnHearNoise) == 0x0000E8, "Member 'UPawnSensingComponent::OnHearNoise' has a wrong offset!");
 static_assert(offsetof(UPawnSensingComponent, PeripheralVisionAngle) == 0x0000F8, "Member 'UPawnSensingComponent::PeripheralVisionAngle' has a wrong offset!");
 static_assert(offsetof(UPawnSensingComponent, PeripheralVisionCosine) == 0x0000FC, "Member 'UPawnSensingComponent::PeripheralVisionCosine' has a wrong offset!");
-
-// Class AIModule.VisualLoggerExtension
-// 0x0000 (0x0028 - 0x0028)
-class UVisualLoggerExtension final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"VisualLoggerExtension">();
-	}
-	static class UVisualLoggerExtension* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UVisualLoggerExtension>();
-	}
-};
-static_assert(alignof(UVisualLoggerExtension) == 0x000008, "Wrong alignment on UVisualLoggerExtension");
-static_assert(sizeof(UVisualLoggerExtension) == 0x000028, "Wrong size on UVisualLoggerExtension");
 
 }
 

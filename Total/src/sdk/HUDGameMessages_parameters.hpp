@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function HUDGameMessages.HUDGameMessages_C.ExecuteUbergraph_HUDGameMessages
-// 0x0130 (0x0130 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages final
 {
 public:
@@ -28,69 +28,53 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1;                          // 0x0014(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRBStageID                             K2Node_CustomEvent_stageID;                        // 0x0040(0x0028)(ConstParm)
-	struct FRBMissionID                           K2Node_CustomEvent_missionID;                      // 0x0068(0x0028)(ConstParm)
-	bool                                          K2Node_CustomEvent_isFail;                         // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_CustomEvent_gameMessage;                    // 0x0098(0x0018)(ConstParm)
-	EGameMessageCategory                          K2Node_CustomEvent_messageCategory;                // 0x00B0(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameMessageAudioParams                K2Node_CustomEvent_audioParams;                    // 0x00B8(0x0010)(ConstParm, NoDestructor)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue;                       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EHudMode                                      K2Node_Event_newHudMode;                           // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E2[0x2];                                       // 0x00E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FText& GameMessage, EGameMessageCategory MessageCategory, struct FGameMessageAudioParams& AudioParams)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x00E4(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsInValidHudMode_ReturnValue;             // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F6[0x2];                                       // 0x00F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(struct FRBStageID& StageID, struct FRBMissionID& MissionID, bool IsFail)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x00F8(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_10A[0x2];                                      // 0x010A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_PostEventGlobal_ReturnValue;              // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEventGlobal_ReturnValue_1;            // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   K2Node_CustomEvent_gameMessage;                    // 0x0038(0x0018)(ConstParm)
+	EGameMessageCategory                          K2Node_CustomEvent_messageCategory;                // 0x0050(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameMessageAudioParams                K2Node_CustomEvent_audioParams;                    // 0x0058(0x0010)(ConstParm, NoDestructor)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBHUD*                                 CallFunc_GetHUD_ReturnValue;                       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EHudMode                                      K2Node_Event_newHudMode;                           // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInValidHudMode_ReturnValue;             // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0083(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void(class FText& GameMessage, EGameMessageCategory MessageCategory, struct FGameMessageAudioParams& AudioParams)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0084(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_96[0x2];                                       // 0x0096(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_PostEventGlobal_ReturnValue;              // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEventGlobal_ReturnValue_1;            // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages) == 0x000008, "Wrong alignment on HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages");
-static_assert(sizeof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages) == 0x000130, "Wrong size on HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages");
+static_assert(sizeof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages) == 0x0000B8, "Wrong size on HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages");
 static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, EntryPoint) == 0x000000, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, Temp_delegate_Variable) == 0x000004, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::Temp_delegate_Variable' has a wrong offset!");
 static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, Temp_delegate_Variable_1) == 0x000014, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::Temp_delegate_Variable_1' has a wrong offset!");
 static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CreateDelegate_OutputDelegate) == 0x000024, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_GetRBGameState_ReturnValue) == 0x000038, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_GetRBGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CustomEvent_stageID) == 0x000040, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CustomEvent_stageID' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CustomEvent_missionID) == 0x000068, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CustomEvent_missionID' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CustomEvent_isFail) == 0x000090, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CustomEvent_isFail' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_IsValid_ReturnValue) == 0x000091, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CustomEvent_gameMessage) == 0x000098, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CustomEvent_gameMessage' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CustomEvent_messageCategory) == 0x0000B0, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CustomEvent_messageCategory' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CustomEvent_audioParams) == 0x0000B8, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CustomEvent_audioParams' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_PlayAnimationForward_ReturnValue) == 0x0000C8, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x0000D0, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_GetHUD_ReturnValue) == 0x0000D8, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_GetHUD_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_Event_newHudMode) == 0x0000E0, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_Event_newHudMode' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_BooleanAND_ReturnValue) == 0x0000E1, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000E4, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_IsInValidHudMode_ReturnValue) == 0x0000F4, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_IsInValidHudMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_BooleanAND_ReturnValue_1) == 0x0000F5, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000F8, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_IsValid_ReturnValue_1) == 0x000108, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_IsValid_ReturnValue_2) == 0x000109, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_PostEventGlobal_ReturnValue) == 0x00010C, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_PostEventGlobal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_PostEventGlobal_ReturnValue_1) == 0x000110, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_PostEventGlobal_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000118, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000120, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_IsValid_ReturnValue_3) == 0x000128, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_SwitchEnum_CmpSuccess) == 0x000129, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CustomEvent_gameMessage) == 0x000038, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CustomEvent_gameMessage' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CustomEvent_messageCategory) == 0x000050, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CustomEvent_messageCategory' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CustomEvent_audioParams) == 0x000058, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CustomEvent_audioParams' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_PlayAnimationForward_ReturnValue) == 0x000068, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000070, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_GetHUD_ReturnValue) == 0x000078, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_GetHUD_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_Event_newHudMode) == 0x000080, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_Event_newHudMode' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_IsInValidHudMode_ReturnValue) == 0x000081, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_IsInValidHudMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_BooleanAND_ReturnValue) == 0x000082, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_BooleanAND_ReturnValue_1) == 0x000083, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_CreateDelegate_OutputDelegate_1) == 0x000084, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_IsValid_ReturnValue) == 0x000094, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_IsValid_ReturnValue_1) == 0x000095, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_PostEventGlobal_ReturnValue) == 0x000098, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_PostEventGlobal_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_PostEventGlobal_ReturnValue_1) == 0x00009C, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_PostEventGlobal_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0000A0, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0000A8, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, CallFunc_IsValid_ReturnValue_2) == 0x0000B0, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages, K2Node_SwitchEnum_CmpSuccess) == 0x0000B1, "Member 'HUDGameMessages_C_ExecuteUbergraph_HUDGameMessages::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function HUDGameMessages.HUDGameMessages_C.Event_OnHudModeChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -118,21 +102,6 @@ static_assert(sizeof(HUDGameMessages_C_OnShowGameMessage_Event_0) == 0x000030, "
 static_assert(offsetof(HUDGameMessages_C_OnShowGameMessage_Event_0, GameMessage) == 0x000000, "Member 'HUDGameMessages_C_OnShowGameMessage_Event_0::GameMessage' has a wrong offset!");
 static_assert(offsetof(HUDGameMessages_C_OnShowGameMessage_Event_0, MessageCategory) == 0x000018, "Member 'HUDGameMessages_C_OnShowGameMessage_Event_0::MessageCategory' has a wrong offset!");
 static_assert(offsetof(HUDGameMessages_C_OnShowGameMessage_Event_0, AudioParams) == 0x000020, "Member 'HUDGameMessages_C_OnShowGameMessage_Event_0::AudioParams' has a wrong offset!");
-
-// Function HUDGameMessages.HUDGameMessages_C.OnStageEnded_Event_0
-// 0x0058 (0x0058 - 0x0000)
-struct HUDGameMessages_C_OnStageEnded_Event_0 final
-{
-public:
-	struct FRBStageID                             StageID;                                           // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FRBMissionID                           MissionID;                                         // 0x0028(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          IsFail;                                            // 0x0050(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(HUDGameMessages_C_OnStageEnded_Event_0) == 0x000008, "Wrong alignment on HUDGameMessages_C_OnStageEnded_Event_0");
-static_assert(sizeof(HUDGameMessages_C_OnStageEnded_Event_0) == 0x000058, "Wrong size on HUDGameMessages_C_OnStageEnded_Event_0");
-static_assert(offsetof(HUDGameMessages_C_OnStageEnded_Event_0, StageID) == 0x000000, "Member 'HUDGameMessages_C_OnStageEnded_Event_0::StageID' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_OnStageEnded_Event_0, MissionID) == 0x000028, "Member 'HUDGameMessages_C_OnStageEnded_Event_0::MissionID' has a wrong offset!");
-static_assert(offsetof(HUDGameMessages_C_OnStageEnded_Event_0, IsFail) == 0x000050, "Member 'HUDGameMessages_C_OnStageEnded_Event_0::IsFail' has a wrong offset!");
 
 // Function HUDGameMessages.HUDGameMessages_C.InitializeMessage
 // 0x0090 (0x0090 - 0x0000)

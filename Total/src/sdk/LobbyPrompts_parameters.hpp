@@ -24,7 +24,7 @@ struct LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FInputActionKeyMapping                 CallFunc_GetInputBinding_ReturnValue;              // 0x0008(0x0028)()
+	struct FInputActionKeyMapping                 CallFunc_GetInputMapping_ReturnValue;              // 0x0008(0x0028)()
 	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsActionMappingValid_ReturnValue;         // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -35,7 +35,7 @@ public:
 static_assert(alignof(LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts) == 0x000008, "Wrong alignment on LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts");
 static_assert(sizeof(LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts) == 0x000068, "Wrong size on LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts");
 static_assert(offsetof(LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts, EntryPoint) == 0x000000, "Member 'LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts, CallFunc_GetInputBinding_ReturnValue) == 0x000008, "Member 'LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts::CallFunc_GetInputBinding_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts, CallFunc_GetInputMapping_ReturnValue) == 0x000008, "Member 'LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts::CallFunc_GetInputMapping_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts, Temp_bool_Variable) == 0x000030, "Member 'LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts, CallFunc_IsActionMappingValid_ReturnValue) == 0x000031, "Member 'LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts::CallFunc_IsActionMappingValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts, Temp_string_Variable) == 0x000038, "Member 'LobbyPrompts_C_ExecuteUbergraph_LobbyPrompts::Temp_string_Variable' has a wrong offset!");

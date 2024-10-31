@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function NavigationSystem.NavModifierVolume.SetAreaClass
-// 0x0008 (0x0008 - 0x0000)
-struct NavModifierVolume_SetAreaClass final
-{
-public:
-	TSubclassOf<class UNavArea>                   NewAreaClass;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(NavModifierVolume_SetAreaClass) == 0x000008, "Wrong alignment on NavModifierVolume_SetAreaClass");
-static_assert(sizeof(NavModifierVolume_SetAreaClass) == 0x000008, "Wrong size on NavModifierVolume_SetAreaClass");
-static_assert(offsetof(NavModifierVolume_SetAreaClass, NewAreaClass) == 0x000000, "Member 'NavModifierVolume_SetAreaClass::NewAreaClass' has a wrong offset!");
-
 // Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy
 // 0x0001 (0x0001 - 0x0000)
 struct NavRelevantComponent_SetNavigationRelevancy final
@@ -38,6 +27,17 @@ public:
 static_assert(alignof(NavRelevantComponent_SetNavigationRelevancy) == 0x000001, "Wrong alignment on NavRelevantComponent_SetNavigationRelevancy");
 static_assert(sizeof(NavRelevantComponent_SetNavigationRelevancy) == 0x000001, "Wrong size on NavRelevantComponent_SetNavigationRelevancy");
 static_assert(offsetof(NavRelevantComponent_SetNavigationRelevancy, bRelevant) == 0x000000, "Member 'NavRelevantComponent_SetNavigationRelevancy::bRelevant' has a wrong offset!");
+
+// Function NavigationSystem.NavModifierVolume.SetAreaClass
+// 0x0008 (0x0008 - 0x0000)
+struct NavModifierVolume_SetAreaClass final
+{
+public:
+	TSubclassOf<class UNavArea>                   NewAreaClass;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(NavModifierVolume_SetAreaClass) == 0x000008, "Wrong alignment on NavModifierVolume_SetAreaClass");
+static_assert(sizeof(NavModifierVolume_SetAreaClass) == 0x000008, "Wrong size on NavModifierVolume_SetAreaClass");
+static_assert(offsetof(NavModifierVolume_SetAreaClass, NewAreaClass) == 0x000000, "Member 'NavModifierVolume_SetAreaClass::NewAreaClass' has a wrong offset!");
 
 // Function NavigationSystem.NavigationPath.EnableDebugDrawing
 // 0x0014 (0x0014 - 0x0000)

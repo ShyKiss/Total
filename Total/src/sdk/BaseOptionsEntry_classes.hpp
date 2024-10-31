@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "OPP_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "OPP_classes.hpp"
 
 
 namespace SDK

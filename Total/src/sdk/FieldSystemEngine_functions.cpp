@@ -332,36 +332,6 @@ void UFieldSystemComponent::ResetFieldSystem()
 }
 
 
-// Function FieldSystemEngine.RadialVector.SetRadialVector
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
-// Parameters:
-// float                                   Magnitude_0                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          Position_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class URadialVector*                    ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class URadialVector* URadialVector::SetRadialVector(float Magnitude_0, const struct FVector& Position_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RadialVector", "SetRadialVector");
-
-	Params::RadialVector_SetRadialVector Parms{};
-
-	Parms.Magnitude_0 = Magnitude_0;
-	Parms.Position_0 = std::move(Position_0);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function FieldSystemEngine.FieldSystemMetaDataIteration.SetMetaDataIteration
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -434,62 +404,6 @@ class UFieldSystemMetaDataFilter* UFieldSystemMetaDataFilter::SetMetaDataFilterT
 	Params::FieldSystemMetaDataFilter_SetMetaDataFilterType Parms{};
 
 	Parms.FilterType_0 = FilterType_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function FieldSystemEngine.ToFloatField.SetToFloatField
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UFieldNodeInt*                    IntegerField                                           (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UToFloatField*                    ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UToFloatField* UToFloatField::SetToFloatField(const class UFieldNodeInt* IntegerField)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToFloatField", "SetToFloatField");
-
-	Params::ToFloatField_SetToFloatField Parms{};
-
-	Parms.IntegerField = IntegerField;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function FieldSystemEngine.RandomVector.SetRandomVector
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// float                                   Magnitude_0                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class URandomVector*                    ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class URandomVector* URandomVector::SetRandomVector(float Magnitude_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RandomVector", "SetRandomVector");
-
-	Params::RandomVector_SetRandomVector Parms{};
-
-	Parms.Magnitude_0 = Magnitude_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -816,6 +730,64 @@ class UUniformVector* UUniformVector::SetUniformVector(float Magnitude_0, const 
 }
 
 
+// Function FieldSystemEngine.RadialVector.SetRadialVector
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// float                                   Magnitude_0                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          Position_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class URadialVector*                    ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class URadialVector* URadialVector::SetRadialVector(float Magnitude_0, const struct FVector& Position_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RadialVector", "SetRadialVector");
+
+	Params::RadialVector_SetRadialVector Parms{};
+
+	Parms.Magnitude_0 = Magnitude_0;
+	Parms.Position_0 = std::move(Position_0);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function FieldSystemEngine.RandomVector.SetRandomVector
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// float                                   Magnitude_0                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class URandomVector*                    ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class URandomVector* URandomVector::SetRandomVector(float Magnitude_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RandomVector", "SetRandomVector");
+
+	Params::RandomVector_SetRandomVector Parms{};
+
+	Parms.Magnitude_0 = Magnitude_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function FieldSystemEngine.OperatorField.SetOperatorField
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -866,6 +838,34 @@ class UToIntegerField* UToIntegerField::SetToIntegerField(const class UFieldNode
 	Params::ToIntegerField_SetToIntegerField Parms{};
 
 	Parms.FloatField_0 = FloatField_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function FieldSystemEngine.ToFloatField.SetToFloatField
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UFieldNodeInt*                    IntegerField                                           (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UToFloatField*                    ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UToFloatField* UToFloatField::SetToFloatField(const class UFieldNodeInt* IntegerField)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ToFloatField", "SetToFloatField");
+
+	Params::ToFloatField_SetToFloatField Parms{};
+
+	Parms.IntegerField = IntegerField;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

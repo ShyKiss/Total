@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -69,6 +69,8 @@ public:
 	bool                                          bShowOnGamepad;                                    // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bShowOnKBM;                                        // 0x03B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bIsUsingGamepad;                                   // 0x03BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bForceSecondaryMapping;                            // 0x03BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bTryToGetValidMapping;                             // 0x03BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_ActionIconWidget(int32 EntryPoint);
@@ -79,7 +81,7 @@ public:
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void Construct();
 	void PreConstruct(bool IsDesignTime);
-	void SetActionName(class FName NewActionName, int32 Value);
+	void SetActionName(class FName NewActionName, int32 Value, bool bForceSecondaryBinding);
 	void RefreshActionIcon();
 	void HideIcons();
 	void ShowContainer(class UPanelWidget* Container);
@@ -144,6 +146,8 @@ static_assert(offsetof(UActionIconWidget_C, BorderMaterial_Keyboard) == 0x0003B0
 static_assert(offsetof(UActionIconWidget_C, bShowOnGamepad) == 0x0003B8, "Member 'UActionIconWidget_C::bShowOnGamepad' has a wrong offset!");
 static_assert(offsetof(UActionIconWidget_C, bShowOnKBM) == 0x0003B9, "Member 'UActionIconWidget_C::bShowOnKBM' has a wrong offset!");
 static_assert(offsetof(UActionIconWidget_C, bIsUsingGamepad) == 0x0003BA, "Member 'UActionIconWidget_C::bIsUsingGamepad' has a wrong offset!");
+static_assert(offsetof(UActionIconWidget_C, bForceSecondaryMapping) == 0x0003BB, "Member 'UActionIconWidget_C::bForceSecondaryMapping' has a wrong offset!");
+static_assert(offsetof(UActionIconWidget_C, bTryToGetValidMapping) == 0x0003BC, "Member 'UActionIconWidget_C::bTryToGetValidMapping' has a wrong offset!");
 
 }
 

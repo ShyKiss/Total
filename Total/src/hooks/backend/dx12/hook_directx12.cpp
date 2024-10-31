@@ -31,30 +31,15 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain);
 
 // We presume here that we have our D3D device pointer in g_pd3dDevice
 
-static bool LoadTextureFromFile(const char* filename, ID3D12Device* d3d_device, D3D12_CPU_DESCRIPTOR_HANDLE srv_cpu_handle) {
-    // Load from disk into a raw RGBA buffer
+static bool LoadTextureFromDll(int name, ID3D12Device* d3d_device, D3D12_CPU_DESCRIPTOR_HANDLE srv_cpu_handle) {
     int image_width = 0;
     int image_height = 0;
-    //HRSRC Image = LoadImage(NULL, MAKEINTRESOURCE(IDB_PNG1), IMAGE_ICON, 0, 0, LR_LOADTRANSPARENT);
-    //unsigned char* image_data = stbi_load(filename, &image_width, &image_height, NULL, 4);
-    //HRSRC hResource = FindResource(NULL, MAKEINTRESOURCE(IDB_PNG1), IMAGE_ICON);
-    //HGLOBAL hGlobal = LoadResource(NULL, hResource);
-    //DWORD dllSize = SizeofResource(NULL, hResource);
-    //void* dllBuffer = LockResource(hGlobal);
-    //std::cout << dllSize << " and " << dllBuffer << std::endl;
-    HRSRC hRsrc = FindResource(NULL, MAKEINTRESOURCE(IDB_PNG1), "PNG");
 
-    HGLOBAL hGlob1 = LoadResource(NULL, hRsrc);
-
-    int size = SizeofResource(NULL, hRsrc);
-
-    HGLOBAL hGlobal = GlobalAlloc(GMEM_FIXED, size);
-
-    unsigned char* data = (unsigned char*)LockResource(hGlob1);
-    //unsigned char* bufferr = new unsigned char[size];
-    //memcpy(bufferr, resPtr, size);
-    //std::cout << data << std::endl;
-    unsigned char* image_data = stbi_load(filename, &image_width, &image_height, NULL, 4);
+    HRSRC hRsrc = FindResource(Utils::TotalInstance, MAKEINTRESOURCE(name), "PNG");
+    HGLOBAL hResource = LoadResource(Utils::TotalInstance, hRsrc);
+    DWORD size = SizeofResource(Utils::TotalInstance, hRsrc);
+    const void* data = LockResource(hResource);
+    unsigned char* image_data = stbi_load_from_memory((const unsigned char*)data, size, &image_width, &image_height, NULL, 4);
     
     if (image_data == NULL)
         return false;
@@ -671,31 +656,31 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
 
             if (HalfInt < 24) {
                 switch (HalfInt) {
-                    case 0:     LoadTextureFromFile("icons\\inventory\\item_bottle.png",            g_pd3dDevice, DX12::BOTTLE_CPU              );  break;
-                    case 1:     LoadTextureFromFile("icons\\inventory\\key.png",                    g_pd3dDevice, DX12::KEY_CPU                 );  break;
-                    case 2:     LoadTextureFromFile("icons\\inventory\\item_brick.png",             g_pd3dDevice, DX12::BRICK_CPU               );  break;
-                    case 3:     LoadTextureFromFile("icons\\inventory\\item_antidote_psy.png",      g_pd3dDevice, DX12::ANTIDOTE_CPU            );  break;
-                    case 4:     LoadTextureFromFile("icons\\inventory\\item_skillcharge.png",       g_pd3dDevice, DX12::SKILLCHARGE_CPU         );  break;
-                    case 5:     LoadTextureFromFile("icons\\inventory\\item_battery.png",           g_pd3dDevice, DX12::BATTERY_CPU             );  break;
-                    case 6:     LoadTextureFromFile("icons\\inventory\\item_battery_small.png",     g_pd3dDevice, DX12::SMALL_BATTERY_CPU       );  break;
-                    case 7:     LoadTextureFromFile("icons\\inventory\\item_heal_drink.png",        g_pd3dDevice, DX12::HEAL_CPU                );  break;
-                    case 8:     LoadTextureFromFile("icons\\inventory\\bloody_heart.png",           g_pd3dDevice, DX12::HEART_CPU               );  break;
-                    case 9:     LoadTextureFromFile("icons\\inventory\\item_pill.png",              g_pd3dDevice, DX12::ADRENALINE_CPU          );  break;
-                    case 10:    LoadTextureFromFile("icons\\inventory\\ticket.png",                 g_pd3dDevice, DX12::TICKET_CPU              );  break;
-                    case 11:    LoadTextureFromFile("icons\\inventory\\item_temp_heal_drink.png",   g_pd3dDevice, DX12::SMALL_HEAL_CPU          );  break;
-                    case 12:    LoadTextureFromFile("icons\\inventory\\item_bandage.png",           g_pd3dDevice, DX12::BANDAGE_CPU             );  break;
-                    case 13:    LoadTextureFromFile("icons\\inventory\\item_lockpick.png",          g_pd3dDevice, DX12::LOCKPICK_CPU            );  break;
-                    case 14:    LoadTextureFromFile("icons\\other\\item_valve.png",                 g_pd3dDevice, DX12::VALVE_CPU               );  break;
-                    case 15:    LoadTextureFromFile("icons\\largepickups\\item_diapo.png",          g_pd3dDevice, DX12::DIAPO_CPU               );  break;
-                    case 16:    LoadTextureFromFile("icons\\other\\item_enemy.png",                 g_pd3dDevice, DX12::ENEMY_CPU               );  break;
-                    case 17:    LoadTextureFromFile("icons\\largepickups\\item_kids.png",           g_pd3dDevice, DX12::KIDS_CPU                );  break;
-                    case 18:    LoadTextureFromFile("icons\\largepickups\\item_acidbottle.png",     g_pd3dDevice, DX12::ACID_BOTTLE_CPU         );  break;
-                    case 19:    LoadTextureFromFile("icons\\largepickups\\item_acidbucket.png",     g_pd3dDevice, DX12::ACID_BUCKET_CPU         );  break;
-                    case 20:    LoadTextureFromFile("icons\\largepickups\\gas_canister.png",        g_pd3dDevice, DX12::CANISTER_CPU            );  break;
-                    case 21:    LoadTextureFromFile("icons\\other\\item_Mk_folder.png",             g_pd3dDevice, DX12::DOCUMENT_CPU            );  break;
-                    case 22:    LoadTextureFromFile("icons\\inventory\\item_evidence.png",          g_pd3dDevice, DX12::EVIDENCE_CPU            );  break;
-                    case 23:    LoadTextureFromFile("icons\\other\\objectif_base_03.png",           g_pd3dDevice, DX12::OBJECTIVE_CPU           );  break;
-                    case 24:    LoadTextureFromFile("icons\\largepickups\\item_object.png",         g_pd3dDevice, DX12::MATERIAL_OBJECT_CPU     );  break;
+                    case 0:     LoadTextureFromDll(IDB_BOTTLE,              g_pd3dDevice, DX12::BOTTLE_CPU              );  break;
+                    case 1:     LoadTextureFromDll(IDB_KEY,                 g_pd3dDevice, DX12::KEY_CPU                 );  break;
+                    case 2:     LoadTextureFromDll(IDB_BRICK,               g_pd3dDevice, DX12::BRICK_CPU               );  break;
+                    case 3:     LoadTextureFromDll(IDB_ANTIDOTE,            g_pd3dDevice, DX12::ANTIDOTE_CPU            );  break;
+                    case 4:     LoadTextureFromDll(IDB_SKILLCHARGE,         g_pd3dDevice, DX12::SKILLCHARGE_CPU         );  break;
+                    case 5:     LoadTextureFromDll(IDB_BATTERY,             g_pd3dDevice, DX12::BATTERY_CPU             );  break;
+                    case 6:     LoadTextureFromDll(IDB_SMALL_BATTERY,       g_pd3dDevice, DX12::SMALL_BATTERY_CPU       );  break;
+                    case 7:     LoadTextureFromDll(IDB_HEAL,                g_pd3dDevice, DX12::HEAL_CPU                );  break;
+                    case 8:     LoadTextureFromDll(IDB_HEART,               g_pd3dDevice, DX12::HEART_CPU               );  break;
+                    case 9:     LoadTextureFromDll(IDB_ADRENALINE,          g_pd3dDevice, DX12::ADRENALINE_CPU          );  break;
+                    case 10:    LoadTextureFromDll(IDB_TICKET,              g_pd3dDevice, DX12::TICKET_CPU              );  break;
+                    case 11:    LoadTextureFromDll(IDB_SMALL_HEAL,          g_pd3dDevice, DX12::SMALL_HEAL_CPU          );  break;
+                    case 12:    LoadTextureFromDll(IDB_BANDAGE,             g_pd3dDevice, DX12::BANDAGE_CPU             );  break;
+                    case 13:    LoadTextureFromDll(IDB_LOCKPICK,            g_pd3dDevice, DX12::LOCKPICK_CPU            );  break;
+                    case 14:    LoadTextureFromDll(IDB_VALVE,               g_pd3dDevice, DX12::VALVE_CPU               );  break;
+                    case 15:    LoadTextureFromDll(IDB_DIAPO,               g_pd3dDevice, DX12::DIAPO_CPU               );  break;
+                    case 16:    LoadTextureFromDll(IDB_ENEMY,               g_pd3dDevice, DX12::ENEMY_CPU               );  break;
+                    case 17:    LoadTextureFromDll(IDB_KIDS,                g_pd3dDevice, DX12::KIDS_CPU                );  break;
+                    case 18:    LoadTextureFromDll(IDB_ACID_BOTTLE,         g_pd3dDevice, DX12::ACID_BOTTLE_CPU         );  break;
+                    case 19:    LoadTextureFromDll(IDB_ACID_BUCKET,         g_pd3dDevice, DX12::ACID_BUCKET_CPU         );  break;
+                    case 20:    LoadTextureFromDll(IDB_CANISTER,            g_pd3dDevice, DX12::CANISTER_CPU            );  break;
+                    case 21:    LoadTextureFromDll(IDB_DOCUMENT,            g_pd3dDevice, DX12::DOCUMENT_CPU            );  break;
+                    case 22:    LoadTextureFromDll(IDB_EVIDENCE,            g_pd3dDevice, DX12::EVIDENCE_CPU            );  break;
+                    case 23:    LoadTextureFromDll(IDB_OBJECTIVE,           g_pd3dDevice, DX12::OBJECTIVE_CPU           );  break;
+                    case 24:    LoadTextureFromDll(IDB_MATERIAL_OBJECT,     g_pd3dDevice, DX12::MATERIAL_OBJECT_CPU     );  break;
                 }
                 HalfInt++;
             }

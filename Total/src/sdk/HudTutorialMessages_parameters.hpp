@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
 
 

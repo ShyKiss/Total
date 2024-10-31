@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -113,6 +113,8 @@ public:
 	void UpdateNewsActionPrompt();
 	void FixupFocus();
 	void RefreshCyclePromptDisplay();
+	void BindNewsCycling();
+	void UnbindNewsCycling();
 	void SequenceEvent__ENTRYPOINTMainMenu_0();
 
 public:

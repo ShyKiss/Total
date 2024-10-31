@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -87,7 +87,7 @@ static_assert(offsetof(HUDStageIntro_C_Tick, MyGeometry) == 0x000000, "Member 'H
 static_assert(offsetof(HUDStageIntro_C_Tick, InDeltaTime) == 0x000038, "Member 'HUDStageIntro_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function HUDStageIntro.HUDStageIntro_C.InitVariators
-// 0x0188 (0x0188 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct HUDStageIntro_C_InitVariators final
 {
 public:
@@ -95,45 +95,35 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0018(0x0010)(ReferenceParm)
-	class UStageIntroVariatorEntry_C*             CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBGameStructureConfig*                 CallFunc_GetGameStructureConfig_ReturnValue;       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetTrialId_ReturnValue;                   // 0x004C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRBTrialInfoRow                        CallFunc_GetTrialInfo_ReturnValue;                 // 0x0058(0x00F0)(ConstParm)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBVariatorManager*                     CallFunc_GetVariatorManager_ReturnValue;           // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class URBVariatorInfo*>                CallFunc_GetCurrentVariatorConfigs_ReturnValue;    // 0x0158(0x0010)(ConstParm, ReferenceParm)
-	class URBVariatorInfo*                        CallFunc_Array_Get_Item;                           // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0175(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_176[0x2];                                      // 0x0176(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBVariatorManager*                     CallFunc_GetVariatorManager_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class URBVariatorInfo*>                CallFunc_GetCurrentVariatorConfigs_ReturnValue;    // 0x0038(0x0010)(ConstParm, ReferenceParm)
+	class URBVariatorInfo*                        CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_56[0x2];                                       // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	class UStageIntroVariatorEntry_C*             CallFunc_Create_ReturnValue;                       // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HUDStageIntro_C_InitVariators) == 0x000008, "Wrong alignment on HUDStageIntro_C_InitVariators");
-static_assert(sizeof(HUDStageIntro_C_InitVariators) == 0x000188, "Wrong size on HUDStageIntro_C_InitVariators");
+static_assert(sizeof(HUDStageIntro_C_InitVariators) == 0x000078, "Wrong size on HUDStageIntro_C_InitVariators");
 static_assert(offsetof(HUDStageIntro_C_InitVariators, TestVariators) == 0x000000, "Member 'HUDStageIntro_C_InitVariators::TestVariators' has a wrong offset!");
 static_assert(offsetof(HUDStageIntro_C_InitVariators, Temp_int_Array_Index_Variable) == 0x000010, "Member 'HUDStageIntro_C_InitVariators::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(HUDStageIntro_C_InitVariators, K2Node_MakeArray_Array) == 0x000018, "Member 'HUDStageIntro_C_InitVariators::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Create_ReturnValue) == 0x000028, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000030, "Member 'HUDStageIntro_C_InitVariators::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_GetGameStructureConfig_ReturnValue) == 0x000038, "Member 'HUDStageIntro_C_InitVariators::CallFunc_GetGameStructureConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_GetRBGameState_ReturnValue) == 0x000040, "Member 'HUDStageIntro_C_InitVariators::CallFunc_GetRBGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, Temp_int_Loop_Counter_Variable) == 0x000048, "Member 'HUDStageIntro_C_InitVariators::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_GetTrialId_ReturnValue) == 0x00004C, "Member 'HUDStageIntro_C_InitVariators::CallFunc_GetTrialId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_GetTrialInfo_ReturnValue) == 0x000058, "Member 'HUDStageIntro_C_InitVariators::CallFunc_GetTrialInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Add_IntInt_ReturnValue) == 0x000148, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_GetVariatorManager_ReturnValue) == 0x000150, "Member 'HUDStageIntro_C_InitVariators::CallFunc_GetVariatorManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_GetCurrentVariatorConfigs_ReturnValue) == 0x000158, "Member 'HUDStageIntro_C_InitVariators::CallFunc_GetCurrentVariatorConfigs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Array_Get_Item) == 0x000168, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Array_Length_ReturnValue) == 0x000170, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_IsValid_ReturnValue) == 0x000174, "Member 'HUDStageIntro_C_InitVariators::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Less_IntInt_ReturnValue) == 0x000175, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_InitVariators, K2Node_CreateDelegate_OutputDelegate) == 0x000178, "Member 'HUDStageIntro_C_InitVariators::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, Temp_int_Loop_Counter_Variable) == 0x000028, "Member 'HUDStageIntro_C_InitVariators::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_GetVariatorManager_ReturnValue) == 0x000030, "Member 'HUDStageIntro_C_InitVariators::CallFunc_GetVariatorManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_GetCurrentVariatorConfigs_ReturnValue) == 0x000038, "Member 'HUDStageIntro_C_InitVariators::CallFunc_GetCurrentVariatorConfigs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Array_Get_Item) == 0x000048, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_IsValid_ReturnValue) == 0x000054, "Member 'HUDStageIntro_C_InitVariators::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Less_IntInt_ReturnValue) == 0x000055, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, K2Node_CreateDelegate_OutputDelegate) == 0x000058, "Member 'HUDStageIntro_C_InitVariators::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_Create_ReturnValue) == 0x000068, "Member 'HUDStageIntro_C_InitVariators::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_InitVariators, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000070, "Member 'HUDStageIntro_C_InitVariators::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
 
 // Function HUDStageIntro.HUDStageIntro_C.ShowNextVariator
 // 0x0070 (0x0070 - 0x0000)
@@ -207,7 +197,7 @@ static_assert(offsetof(HUDStageIntro_C_GetStageName, CallFunc_TextIsEmpty_Return
 static_assert(offsetof(HUDStageIntro_C_GetStageName, K2Node_Select_Default) == 0x000098, "Member 'HUDStageIntro_C_GetStageName::K2Node_Select_Default' has a wrong offset!");
 
 // Function HUDStageIntro.HUDStageIntro_C.GetTrialName
-// 0x01D0 (0x01D0 - 0x0000)
+// 0x01C8 (0x01C8 - 0x0000)
 struct HUDStageIntro_C_GetTrialName final
 {
 public:
@@ -222,17 +212,17 @@ public:
 	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue_1;             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_GetTrialId_ReturnValue;                   // 0x0058(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRBMissionID                           CallFunc_GetMissionID_ReturnValue;                 // 0x0060(0x0028)(ConstParm)
-	struct FRBTrialInfoRow                        CallFunc_GetTrialInfo_ReturnValue;                 // 0x0088(0x00F0)(ConstParm)
-	class URBMissionInfo*                         CallFunc_GetMissionInfo_ReturnValue;               // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_182[0x6];                                      // 0x0182(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0188(0x0018)()
-	class FText                                   K2Node_Select_Default;                             // 0x01A0(0x0018)()
-	class FText                                   K2Node_Select_Default_1;                           // 0x01B8(0x0018)()
+	struct FRBTrialInfoRow                        CallFunc_GetTrialInfo_ReturnValue;                 // 0x0088(0x00E8)(ConstParm)
+	class URBMissionInfo*                         CallFunc_GetMissionInfo_ReturnValue;               // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0179(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_17A[0x6];                                      // 0x017A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0180(0x0018)()
+	class FText                                   K2Node_Select_Default;                             // 0x0198(0x0018)()
+	class FText                                   K2Node_Select_Default_1;                           // 0x01B0(0x0018)()
 };
 static_assert(alignof(HUDStageIntro_C_GetTrialName) == 0x000008, "Wrong alignment on HUDStageIntro_C_GetTrialName");
-static_assert(sizeof(HUDStageIntro_C_GetTrialName) == 0x0001D0, "Wrong size on HUDStageIntro_C_GetTrialName");
+static_assert(sizeof(HUDStageIntro_C_GetTrialName) == 0x0001C8, "Wrong size on HUDStageIntro_C_GetTrialName");
 static_assert(offsetof(HUDStageIntro_C_GetTrialName, StageName_0) == 0x000000, "Member 'HUDStageIntro_C_GetTrialName::StageName_0' has a wrong offset!");
 static_assert(offsetof(HUDStageIntro_C_GetTrialName, Temp_bool_Variable) == 0x000018, "Member 'HUDStageIntro_C_GetTrialName::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(HUDStageIntro_C_GetTrialName, Temp_text_Variable) == 0x000020, "Member 'HUDStageIntro_C_GetTrialName::Temp_text_Variable' has a wrong offset!");
@@ -243,12 +233,12 @@ static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_GetRBGameState_Ret
 static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_GetTrialId_ReturnValue) == 0x000058, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_GetTrialId_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_GetMissionID_ReturnValue) == 0x000060, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_GetMissionID_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_GetTrialInfo_ReturnValue) == 0x000088, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_GetTrialInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_GetMissionInfo_ReturnValue) == 0x000178, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_GetMissionInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_IsValid_ReturnValue) == 0x000180, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_TextIsEmpty_ReturnValue) == 0x000181, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_TextToUpper_ReturnValue) == 0x000188, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_GetTrialName, K2Node_Select_Default) == 0x0001A0, "Member 'HUDStageIntro_C_GetTrialName::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HUDStageIntro_C_GetTrialName, K2Node_Select_Default_1) == 0x0001B8, "Member 'HUDStageIntro_C_GetTrialName::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_GetMissionInfo_ReturnValue) == 0x000170, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_GetMissionInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_IsValid_ReturnValue) == 0x000178, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_TextIsEmpty_ReturnValue) == 0x000179, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_GetTrialName, CallFunc_TextToUpper_ReturnValue) == 0x000180, "Member 'HUDStageIntro_C_GetTrialName::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_GetTrialName, K2Node_Select_Default) == 0x000198, "Member 'HUDStageIntro_C_GetTrialName::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(HUDStageIntro_C_GetTrialName, K2Node_Select_Default_1) == 0x0001B0, "Member 'HUDStageIntro_C_GetTrialName::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function HUDStageIntro.HUDStageIntro_C.UpdateEscalationCount
 // 0x0088 (0x0088 - 0x0000)

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -34,11 +34,11 @@ public:
 	FMulticastInlineDelegateProperty_             DotClicked;                                        // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void SetIndex(int32 Index_0);
-	void SetActive(bool bActive);
-	void BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void ExecuteUbergraph_NewsWidgetDot(int32 EntryPoint);
 	void DotClicked__DelegateSignature(int32 Index_0);
+	void ExecuteUbergraph_NewsWidgetDot(int32 EntryPoint);
+	void BndEvt__Button_70_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void SetActive(bool bActive);
+	void SetIndex(int32 Index_0);
 
 public:
 	static class UClass* StaticClass()

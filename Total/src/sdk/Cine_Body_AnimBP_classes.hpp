@@ -30,9 +30,9 @@ public:
 	float                                         Position;                                          // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_Cine_Body_AnimBP(int32 EntryPoint);
-	void BlueprintInitializeAnimation();
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void BlueprintInitializeAnimation();
+	void ExecuteUbergraph_Cine_Body_AnimBP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

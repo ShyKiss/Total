@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu
-// 0x0398 (0x0398 - 0x0000)
+// 0x0378 (0x0378 - 0x0000)
 struct MainMenu_C_ExecuteUbergraph_MainMenu final
 {
 public:
@@ -40,87 +40,85 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00B8(0x0040)(HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x00F8(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0108(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EUMGSequencePlayMode                          Temp_byte_Variable_2;                              // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          Temp_byte_Variable_3;                              // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x011B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x011D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11E[0x2];                                      // 0x011E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_2;                          // 0x0120(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_PostEventGlobal_ReturnValue_2;            // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetChangelist_ReturnValue;                // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0148(0x0018)()
-	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue;        // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_1;      // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanPlay_ReturnValue;                      // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_2;      // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_3;      // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_4;      // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsConsole_ReturnValue;                    // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0194(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBChunkInstallManager*                 CallFunc_GetChunkInstallManager_ReturnValue;       // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetChunkInstallationStatus_Percent;       // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetChunkInstallationStatus_ReturnValue;   // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FFloor_ReturnValue;                       // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Get_Button_Enabled_enabled;               // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EA[0x2];                                      // 0x01EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_3;                          // 0x01EC(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_4;                          // 0x01FC(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_PostEventGlobal_ReturnValue_3;            // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEventGlobal_ReturnValue_4;            // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0214(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0228(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0268(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0278(0x0018)()
-	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_5;      // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanPlay_ReturnValue_1;                    // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_1;                              // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EUMGSequencePlayMode                          Temp_byte_Variable_2;                              // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          Temp_byte_Variable_3;                              // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x00FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FE[0x2];                                       // 0x00FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_2;                          // 0x0100(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
+	int32                                         CallFunc_PostEventGlobal_ReturnValue_2;            // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetChangelist_ReturnValue;                // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0128(0x0018)()
+	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue;        // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_1;      // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanPlay_ReturnValue;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_2;      // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_3;      // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_4;      // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsConsole_ReturnValue;                    // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0174(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBChunkInstallManager*                 CallFunc_GetChunkInstallManager_ReturnValue;       // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B9[0x3];                                      // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetChunkInstallationStatus_Percent;       // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetChunkInstallationStatus_ReturnValue;   // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C1[0x3];                                      // 0x01C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_FFloor_ReturnValue;                       // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Get_Button_Enabled_enabled;               // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1CA[0x2];                                      // 0x01CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_3;                          // 0x01CC(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_4;                          // 0x01DC(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
+	int32                                         CallFunc_PostEventGlobal_ReturnValue_3;            // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEventGlobal_ReturnValue_4;            // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x01F4(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0208(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0248(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0258(0x0018)()
+	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_5;      // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanPlay_ReturnValue_1;                    // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBChunkInstallManager*                 CallFunc_GetChunkInstallManager_ReturnValue_1;     // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChunkInstallationCompleted_ReturnValue; // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bIsGamepad;                           // 0x0289(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x028A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_28B[0x5];                                      // 0x028B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_6;      // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBChunkInstallManager*                 CallFunc_GetChunkInstallManager_ReturnValue_1;     // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChunkInstallationCompleted_ReturnValue; // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bIsGamepad;                           // 0x02A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AB[0x5];                                      // 0x02AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_6;      // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B9[0x7];                                      // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetPlayerDisplayName_ReturnValue;         // 0x02C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x02D0(0x0018)()
-	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_7;      // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMainMenuProgressionDetails            CallFunc_GetMainMenuProgressionDetails_ReturnValue; // 0x02F0(0x0060)(ConstParm)
-	bool                                          K2Node_Event_bShouldHide;                          // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0351(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0352(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAnimationPlayingForward_ReturnValue;    // 0x0353(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EUMGSequencePlayMode                          K2Node_Select_Default_1;                           // 0x0354(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanXOR_ReturnValue;                   // 0x0355(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_356[0x2];                                      // 0x0356(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue;          // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_Index;                  // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_369[0x7];                                      // 0x0369(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UWidget*                          CallFunc_GetFocusedChild_ReturnValue;              // 0x0370(0x0008)(ConstParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button_1;               // 0x0378(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0380(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetId_ReturnValue;                        // 0x038C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0394(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0395(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FString                                 CallFunc_GetPlayerDisplayName_ReturnValue;         // 0x02A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x02B0(0x0018)()
+	class ARBGameModeMainMenu*                    CallFunc_GetRBGameModeMainMenu_ReturnValue_7;      // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMainMenuProgressionDetails            CallFunc_GetMainMenuProgressionDetails_ReturnValue; // 0x02D0(0x0060)(ConstParm)
+	bool                                          K2Node_Event_bShouldHide;                          // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAnimationPlayingForward_ReturnValue;    // 0x0333(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EUMGSequencePlayMode                          K2Node_Select_Default_1;                           // 0x0334(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanXOR_ReturnValue;                   // 0x0335(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_336[0x2];                                      // 0x0336(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetCurrentItemIndex_ReturnValue;          // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_Index;                  // 0x0344(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_349[0x7];                                      // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UWidget*                          CallFunc_GetFocusedChild_ReturnValue;              // 0x0350(0x0008)(ConstParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button_1;               // 0x0358(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0360(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetId_ReturnValue;                        // 0x036C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0374(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0375(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MainMenu_C_ExecuteUbergraph_MainMenu) == 0x000008, "Wrong alignment on MainMenu_C_ExecuteUbergraph_MainMenu");
-static_assert(sizeof(MainMenu_C_ExecuteUbergraph_MainMenu) == 0x000398, "Wrong size on MainMenu_C_ExecuteUbergraph_MainMenu");
+static_assert(sizeof(MainMenu_C_ExecuteUbergraph_MainMenu) == 0x000378, "Wrong size on MainMenu_C_ExecuteUbergraph_MainMenu");
 static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, EntryPoint) == 0x000000, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_delegate_Variable) == 0x000004, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_delegate_Variable' has a wrong offset!");
 static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_delegate_Variable_1) == 0x000014, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_delegate_Variable_1' has a wrong offset!");
@@ -135,71 +133,69 @@ static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_MakeArray_Ar
 static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Format_ReturnValue) == 0x000090, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000A8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000B8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000F8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate_3) == 0x000108, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_bool_Variable_1) == 0x000118, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable_2) == 0x000119, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable_3) == 0x00011A, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_bool_Variable_2) == 0x00011B, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable_4) == 0x00011C, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable_5) == 0x00011D, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_delegate_Variable_2) == 0x000120, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_delegate_Variable_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_PostEventGlobal_ReturnValue_2) == 0x000130, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_PostEventGlobal_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChangelist_ReturnValue) == 0x000138, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChangelist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Conv_StringToText_ReturnValue) == 0x000148, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue) == 0x000160, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_1) == 0x000168, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_CanPlay_ReturnValue) == 0x000170, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_CanPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_2) == 0x000178, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_3) == 0x000180, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_4) == 0x000188, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsConsole_ReturnValue) == 0x000190, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsConsole_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_MyGeometry) == 0x000194, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_InDeltaTime) == 0x0001CC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChunkInstallManager_ReturnValue) == 0x0001D0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChunkInstallManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Select_Default) == 0x0001D8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChunkInstallationStatus_Percent) == 0x0001DC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChunkInstallationStatus_Percent' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChunkInstallationStatus_ReturnValue) == 0x0001E0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChunkInstallationStatus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_FFloor_ReturnValue) == 0x0001E4, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_FFloor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0001E8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Get_Button_Enabled_enabled) == 0x0001E9, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Get_Button_Enabled_enabled' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_delegate_Variable_3) == 0x0001EC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_delegate_Variable_3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_delegate_Variable_4) == 0x0001FC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_delegate_Variable_4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_PostEventGlobal_ReturnValue_3) == 0x00020C, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_PostEventGlobal_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_PostEventGlobal_ReturnValue_4) == 0x000210, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_PostEventGlobal_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate_4) == 0x000214, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_MakeStruct_FormatArgumentData_2) == 0x000228, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_MakeArray_Array_1) == 0x000268, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Format_ReturnValue_1) == 0x000278, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_5) == 0x000290, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_CanPlay_ReturnValue_1) == 0x000298, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_CanPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChunkInstallManager_ReturnValue_1) == 0x0002A0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChunkInstallManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsChunkInstallationCompleted_ReturnValue) == 0x0002A8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsChunkInstallationCompleted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_bIsGamepad) == 0x0002A9, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_bIsGamepad' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_BooleanAND_ReturnValue) == 0x0002AA, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_6) == 0x0002B0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsValid_ReturnValue) == 0x0002B8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetPlayerDisplayName_ReturnValue) == 0x0002C0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetPlayerDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0002D0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_7) == 0x0002E8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetMainMenuProgressionDetails_ReturnValue) == 0x0002F0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetMainMenuProgressionDetails_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_bShouldHide) == 0x000350, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_bShouldHide' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000351, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Not_PreBool_ReturnValue) == 0x000352, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsAnimationPlayingForward_ReturnValue) == 0x000353, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsAnimationPlayingForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Select_Default_1) == 0x000354, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_BooleanXOR_ReturnValue) == 0x000355, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_BooleanXOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_PlayAnimation_ReturnValue) == 0x000358, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetCurrentItemIndex_ReturnValue) == 0x000360, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetCurrentItemIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Index) == 0x000364, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Index' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Select_Default_2) == 0x000368, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetFocusedChild_ReturnValue) == 0x000370, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetFocusedChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button_1) == 0x000378, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button) == 0x000380, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetNumItems_ReturnValue) == 0x000388, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetId_ReturnValue) == 0x00038C, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Greater_IntInt_ReturnValue) == 0x000394, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_IsDesignTime) == 0x000395, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_bool_Variable_1) == 0x0000F8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable_2) == 0x0000F9, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable_3) == 0x0000FA, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_bool_Variable_2) == 0x0000FB, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable_4) == 0x0000FC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable_5) == 0x0000FD, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_delegate_Variable_2) == 0x000100, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_delegate_Variable_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_PostEventGlobal_ReturnValue_2) == 0x000110, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_PostEventGlobal_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChangelist_ReturnValue) == 0x000118, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChangelist_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Conv_StringToText_ReturnValue) == 0x000128, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue) == 0x000140, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_1) == 0x000148, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_CanPlay_ReturnValue) == 0x000150, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_CanPlay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_2) == 0x000158, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_3) == 0x000160, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_4) == 0x000168, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsConsole_ReturnValue) == 0x000170, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsConsole_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_MyGeometry) == 0x000174, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_InDeltaTime) == 0x0001AC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChunkInstallManager_ReturnValue) == 0x0001B0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChunkInstallManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Select_Default) == 0x0001B8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChunkInstallationStatus_Percent) == 0x0001BC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChunkInstallationStatus_Percent' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChunkInstallationStatus_ReturnValue) == 0x0001C0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChunkInstallationStatus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_FFloor_ReturnValue) == 0x0001C4, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_FFloor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0001C8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Get_Button_Enabled_enabled) == 0x0001C9, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Get_Button_Enabled_enabled' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_delegate_Variable_3) == 0x0001CC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_delegate_Variable_3' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_delegate_Variable_4) == 0x0001DC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_delegate_Variable_4' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_PostEventGlobal_ReturnValue_3) == 0x0001EC, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_PostEventGlobal_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_PostEventGlobal_ReturnValue_4) == 0x0001F0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_PostEventGlobal_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001F4, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_MakeStruct_FormatArgumentData_2) == 0x000208, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_MakeArray_Array_1) == 0x000248, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Format_ReturnValue_1) == 0x000258, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_5) == 0x000270, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_CanPlay_ReturnValue_1) == 0x000278, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_CanPlay_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetChunkInstallManager_ReturnValue_1) == 0x000280, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetChunkInstallManager_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsChunkInstallationCompleted_ReturnValue) == 0x000288, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsChunkInstallationCompleted_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_bIsGamepad) == 0x000289, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_bIsGamepad' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_BooleanAND_ReturnValue) == 0x00028A, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_6) == 0x000290, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsValid_ReturnValue) == 0x000298, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetPlayerDisplayName_ReturnValue) == 0x0002A0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetPlayerDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0002B0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetRBGameModeMainMenu_ReturnValue_7) == 0x0002C8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetRBGameModeMainMenu_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetMainMenuProgressionDetails_ReturnValue) == 0x0002D0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetMainMenuProgressionDetails_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_bShouldHide) == 0x000330, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_bShouldHide' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000331, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Not_PreBool_ReturnValue) == 0x000332, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsAnimationPlayingForward_ReturnValue) == 0x000333, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsAnimationPlayingForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Select_Default_1) == 0x000334, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_BooleanXOR_ReturnValue) == 0x000335, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_BooleanXOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_PlayAnimation_ReturnValue) == 0x000338, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetCurrentItemIndex_ReturnValue) == 0x000340, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetCurrentItemIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Index) == 0x000344, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Index' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Select_Default_2) == 0x000348, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetFocusedChild_ReturnValue) == 0x000350, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetFocusedChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button_1) == 0x000358, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button) == 0x000360, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetNumItems_ReturnValue) == 0x000368, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetId_ReturnValue) == 0x00036C, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Greater_IntInt_ReturnValue) == 0x000374, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_IsDesignTime) == 0x000375, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -643,6 +639,19 @@ static_assert(offsetof(MainMenu_C_RefreshCyclePromptDisplay, CallFunc_GetMenuMan
 static_assert(offsetof(MainMenu_C_RefreshCyclePromptDisplay, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000010, "Member 'MainMenu_C_RefreshCyclePromptDisplay::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainMenu_C_RefreshCyclePromptDisplay, CallFunc_BooleanAND_ReturnValue) == 0x000011, "Member 'MainMenu_C_RefreshCyclePromptDisplay::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainMenu_C_RefreshCyclePromptDisplay, K2Node_Select_Default) == 0x000012, "Member 'MainMenu_C_RefreshCyclePromptDisplay::K2Node_Select_Default' has a wrong offset!");
+
+// Function MainMenu.MainMenu_C.BindNewsCycling
+// 0x0020 (0x0020 - 0x0000)
+struct MainMenu_C_BindNewsCycling final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+};
+static_assert(alignof(MainMenu_C_BindNewsCycling) == 0x000004, "Wrong alignment on MainMenu_C_BindNewsCycling");
+static_assert(sizeof(MainMenu_C_BindNewsCycling) == 0x000020, "Wrong size on MainMenu_C_BindNewsCycling");
+static_assert(offsetof(MainMenu_C_BindNewsCycling, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'MainMenu_C_BindNewsCycling::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_BindNewsCycling, K2Node_CreateDelegate_OutputDelegate_1) == 0x000010, "Member 'MainMenu_C_BindNewsCycling::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 
 }
 

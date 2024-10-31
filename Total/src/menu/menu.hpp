@@ -2,26 +2,22 @@
 #include "../pch.h"
 
 namespace Menu {
-    // using namespace SDK;
-    // using namespace std;
 
     void InitializeContext(HWND hwnd);
     void Render( );
     void Total_EnableConsole( );
     void Total_PlayerBrightnessBoost( );
-    void Total_ShowObjectiveActors(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Coordinators);
-    void Total_ShowGenerators(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Generators);
-    void Total_ShowRadio(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Radio);
-    void Total_ShowPuzzles(UC::TArray<SDK::ARBRoom*> Puzzles);
-    void Total_ShowValves(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Valves);
-    void Total_ShowProjectors(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Projectors, UC::TArray<SDK::ARBGeneratorMultiObjectiveActor*> Generators);
-    void Total_ShowPlayers(UC::TArray<SDK::ARBPlayer*> Players);
-    void Total_ShowDoorTraps(UC::TArray<SDK::ARBDoor*> Doors);
-    void Total_ShowItems(UC::TArray<SDK::ARBPickup*> Pickups, UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Coords);
-    void Total_ShowLargeItems(UC::TArray<SDK::ARBLargePickup*> LargePickups);
+    void Total_ShowDecodables           (UC::TArray<SDK::UObject*> Decodables);
+    void Total_ShowObjectiveActors      (UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Coordinators);
+    void Total_ShowPuzzles              (UC::TArray<SDK::ARBRoom*> Puzzles);
+    void Total_ShowPlayers              (UC::TArray<SDK::ARBPlayer*> Players);
+    void Total_ShowDoorTraps            (UC::TArray<SDK::ARBDoor*> Doors);
+    void Total_ShowItems                (UC::TArray<SDK::ARBPickup*> Pickups, UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Coords);
+    void Total_ShowLargeItems           (UC::TArray<SDK::ARBLargePickup*> LargePickups);
     void Total_GetCheatManager( );
 
     bool IsValid(const SDK::UObject* Object);
+    std::string CalcRatingFromScore(float Score);
     std::string GenerateAllowedItemName(SDK::EItemType Item);
     SDK::FVector GetLocation(SDK::AActor* Actor);
     SDK::FRotator GetRotation(SDK::AActor* Actor);
@@ -30,6 +26,7 @@ namespace Menu {
     std::string GenerateName(SDK::FText Name);
     std::string GenerateNameWithDistance(SDK::FText Name, float DistanceToPlayer);
     std::string GenerateNameWithDistance(SDK::FName Name, float DistanceToPlayer);
+    std::string GenerateNameWithDistance(std::string Name, float DistanceToPlayer);
     std::string GenerateNameWithDistanceAndCaps(SDK::FText Name, float DistanceToPlayer);
     std::string GenerateNameFromIdWithDistance(uint32_t Id, float DistanceToPlayer);
 
@@ -37,11 +34,9 @@ namespace Menu {
     ImVec2 CentralText(std::string PawnName, SDK::FVector2D Location2D, float SizeLocation);
     const char* RandomString(int Length);
 
-    // Random
-
     inline const std::string Total_Version = "1.0";
 
-    inline bool AllowedItems[(int)SDK::EItemType::EItemType_MAX];
+    //inline bool AllowedItems[(int)SDK::EItemType::EItemType_MAX];
 
     inline bool bShowMenu = false;
     inline bool bShowItems = false;
@@ -73,4 +68,8 @@ namespace Menu {
     inline int LevelSeed = 0;
     inline float IconSize = 24;
     inline std::string Passcode;
+    inline float PlayerScore;
+    inline float CalculatedPlayerScore;
+    inline std::string PlayerRating;
+    inline std::string DecodableCodes;
 } // namespace Menu

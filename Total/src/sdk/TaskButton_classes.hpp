@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TaskButton.TaskButton_C
-// 0x02A8 (0x0508 - 0x0260)
+// 0x02B8 (0x0518 - 0x0260)
 class UTaskButton_C final : public UUserWidget
 {
 public:
@@ -46,11 +46,11 @@ public:
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bIsGamepad;                                        // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2F9[0x7];                                      // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRBTaskMenuEntry                       Entry;                                             // 0x0300(0x01D8)(Edit, BlueprintVisible)
-	bool                                          bMenuCanConsume;                                   // 0x04D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4D9[0x3];                                      // 0x04D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRBTaskProgressionEntry                Progression;                                       // 0x04DC(0x001C)(Edit, BlueprintVisible, NoDestructor)
-	FMulticastInlineDelegateProperty_             OnFocused;                                         // 0x04F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FRBTaskMenuEntry                       Entry;                                             // 0x0300(0x01E8)(Edit, BlueprintVisible)
+	bool                                          bMenuCanConsume;                                   // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4E9[0x3];                                      // 0x04E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBTaskProgressionEntry                Progression;                                       // 0x04EC(0x001C)(Edit, BlueprintVisible, NoDestructor)
+	FMulticastInlineDelegateProperty_             OnFocused;                                         // 0x0508(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnClicked__DelegateSignature(const struct FRBTaskMenuEntry& Entry_0);
@@ -85,7 +85,7 @@ public:
 	}
 };
 static_assert(alignof(UTaskButton_C) == 0x000008, "Wrong alignment on UTaskButton_C");
-static_assert(sizeof(UTaskButton_C) == 0x000508, "Wrong size on UTaskButton_C");
+static_assert(sizeof(UTaskButton_C) == 0x000518, "Wrong size on UTaskButton_C");
 static_assert(offsetof(UTaskButton_C, UberGraphFrame) == 0x000260, "Member 'UTaskButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, BackgroundImage) == 0x000268, "Member 'UTaskButton_C::BackgroundImage' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, ClaimableBorder) == 0x000270, "Member 'UTaskButton_C::ClaimableBorder' has a wrong offset!");
@@ -107,9 +107,9 @@ static_assert(offsetof(UTaskButton_C, bHovered) == 0x0002E1, "Member 'UTaskButto
 static_assert(offsetof(UTaskButton_C, OnClicked) == 0x0002E8, "Member 'UTaskButton_C::OnClicked' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, bIsGamepad) == 0x0002F8, "Member 'UTaskButton_C::bIsGamepad' has a wrong offset!");
 static_assert(offsetof(UTaskButton_C, Entry) == 0x000300, "Member 'UTaskButton_C::Entry' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, bMenuCanConsume) == 0x0004D8, "Member 'UTaskButton_C::bMenuCanConsume' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, Progression) == 0x0004DC, "Member 'UTaskButton_C::Progression' has a wrong offset!");
-static_assert(offsetof(UTaskButton_C, OnFocused) == 0x0004F8, "Member 'UTaskButton_C::OnFocused' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, bMenuCanConsume) == 0x0004E8, "Member 'UTaskButton_C::bMenuCanConsume' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, Progression) == 0x0004EC, "Member 'UTaskButton_C::Progression' has a wrong offset!");
+static_assert(offsetof(UTaskButton_C, OnFocused) == 0x000508, "Member 'UTaskButton_C::OnFocused' has a wrong offset!");
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "OPP_classes.hpp"
 #include "Slate_structs.hpp"
+#include "OPP_classes.hpp"
 #include "UMG_structs.hpp"
 
 

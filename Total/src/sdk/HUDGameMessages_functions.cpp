@@ -127,6 +127,20 @@ void UHUDGameMessages_C::ShowMessage()
 }
 
 
+// Function HUDGameMessages.HUDGameMessages_C.Event_Show
+// (Event, Public, BlueprintEvent)
+
+void UHUDGameMessages_C::Event_Show()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HUDGameMessages_C", "Event_Show");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function HUDGameMessages.HUDGameMessages_C.OnShowGameMessage_Event_0
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -146,44 +160,6 @@ void UHUDGameMessages_C::OnShowGameMessage_Event_0(const class FText& GameMessag
 	Parms.GameMessage = std::move(GameMessage);
 	Parms.MessageCategory = MessageCategory;
 	Parms.AudioParams = std::move(AudioParams);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HUDGameMessages.HUDGameMessages_C.Event_Show
-// (Event, Public, BlueprintEvent)
-
-void UHUDGameMessages_C::Event_Show()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUDGameMessages_C", "Event_Show");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HUDGameMessages.HUDGameMessages_C.OnStageEnded_Event_0
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FRBStageID                       StageID                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FRBMissionID                     MissionID                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    IsFail                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UHUDGameMessages_C::OnStageEnded_Event_0(const struct FRBStageID& StageID, const struct FRBMissionID& MissionID, bool IsFail)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUDGameMessages_C", "OnStageEnded_Event_0");
-
-	Params::HUDGameMessages_C_OnStageEnded_Event_0 Parms{};
-
-	Parms.StageID = std::move(StageID);
-	Parms.MissionID = std::move(MissionID);
-	Parms.IsFail = IsFail;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -10,7 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -19,55 +21,58 @@ namespace SDK::Params
 {
 
 // Function ObjectiveInWorld.ObjectiveInWorld_C.ExecuteUbergraph_ObjectiveInWorld
-// 0x0048 (0x0048 - 0x0000)
+// 0x0100 (0x0100 - 0x0000)
 struct ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ETeam                                         Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              K2Node_Event_oldPlayer;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_isCompletingObjective;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBObjectiveActorComponent*             CallFunc_GetComponentByClass_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolValue_ReturnValue;                 // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            Temp_struct_Variable;                              // 0x0008(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0030(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0058(0x0028)()
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetBoolValue_ReturnValue;                 // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X;                          // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y;                          // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              K2Node_Event_oldPlayer;                            // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBPlayer*                              K2Node_Event_newPlayer;                            // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETeam                                         CallFunc_GetTeam_ReturnValue;                      // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_Select_Default;                             // 0x00C0(0x0028)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBObjectiveActorComponent*             CallFunc_GetComponentByClass_ReturnValue;          // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAdversarialGameMode_ReturnValue;        // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld) == 0x000008, "Wrong alignment on ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld");
-static_assert(sizeof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld) == 0x000048, "Wrong size on ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld");
+static_assert(sizeof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld) == 0x000100, "Wrong size on ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld");
 static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, EntryPoint) == 0x000000, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_Event_IsDesignTime) == 0x000004, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000010, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_BreakVector2D_X) == 0x000018, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_BreakVector2D_Y) == 0x00001C, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_Event_oldPlayer) == 0x000020, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_Event_oldPlayer' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_Event_newPlayer) == 0x000028, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_Event_newPlayer' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_CustomEvent_isCompletingObjective) == 0x000030, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_CustomEvent_isCompletingObjective' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_GetComponentByClass_ReturnValue) == 0x000038, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_GetBoolValue_ReturnValue) == 0x000040, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_GetBoolValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_IsValid_ReturnValue_1) == 0x000041, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000044, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-
-// Function ObjectiveInWorld.ObjectiveInWorld_C.OnCompletingObjectiveChanged
-// 0x0001 (0x0001 - 0x0000)
-struct ObjectiveInWorld_C_OnCompletingObjectiveChanged final
-{
-public:
-	bool                                          IsCompletingObjective;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ObjectiveInWorld_C_OnCompletingObjectiveChanged) == 0x000001, "Wrong alignment on ObjectiveInWorld_C_OnCompletingObjectiveChanged");
-static_assert(sizeof(ObjectiveInWorld_C_OnCompletingObjectiveChanged) == 0x000001, "Wrong size on ObjectiveInWorld_C_OnCompletingObjectiveChanged");
-static_assert(offsetof(ObjectiveInWorld_C_OnCompletingObjectiveChanged, IsCompletingObjective) == 0x000000, "Member 'ObjectiveInWorld_C_OnCompletingObjectiveChanged::IsCompletingObjective' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, Temp_byte_Variable) == 0x000004, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, Temp_struct_Variable) == 0x000008, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_MakeStruct_SlateColor) == 0x000030, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_MakeStruct_SlateColor_1) == 0x000058, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_Event_IsDesignTime) == 0x000080, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_GetBoolValue_ReturnValue) == 0x000081, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_GetBoolValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000088, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000090, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000098, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_BreakVector2D_X) == 0x0000A0, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_BreakVector2D_Y) == 0x0000A4, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_Event_oldPlayer) == 0x0000A8, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_Event_oldPlayer' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_Event_newPlayer) == 0x0000B0, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_Event_newPlayer' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_GetTeam_ReturnValue) == 0x0000B8, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_GetTeam_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, K2Node_Select_Default) == 0x0000C0, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_IsValid_ReturnValue) == 0x0000E8, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_GetComponentByClass_ReturnValue) == 0x0000F0, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_IsValid_ReturnValue_1) == 0x0000F8, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld, CallFunc_IsAdversarialGameMode_ReturnValue) == 0x0000F9, "Member 'ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld::CallFunc_IsAdversarialGameMode_ReturnValue' has a wrong offset!");
 
 // Function ObjectiveInWorld.ObjectiveInWorld_C.Event_OnWatchedPlayerChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -214,36 +219,61 @@ static_assert(sizeof(ObjectiveInWorld_C_UpdateIconImage) == 0x000001, "Wrong siz
 static_assert(offsetof(ObjectiveInWorld_C_UpdateIconImage, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ObjectiveInWorld_C_UpdateIconImage::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ObjectiveInWorld.ObjectiveInWorld_C.Event_DrawHudUpdate
-// 0x0078 (0x0078 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct ObjectiveInWorld_C_Event_DrawHudUpdate final
 {
 public:
 	struct FRBWorldIconUpdateContext              UpdateContext;                                     // 0x0000(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference)
-	bool                                          Temp_bool_Variable;                                // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ShouldShow_ReturnValue;                   // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsOwningActorPinged_ReturnValue;          // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_66[0x2];                                       // 0x0066(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_BoolToFloat_ReturnValue_1;           // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_BoolToFloat_ReturnValue_2;           // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0070(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0088(0x0040)(HasGetValueTypeHash)
+	bool                                          CallFunc_IsAdversarialGameMode_ReturnValue;        // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00D0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E0(0x0018)()
+	bool                                          CallFunc_ShouldShow_ReturnValue;                   // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsOwningActorPinged_ReturnValue;          // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FB[0x1];                                       // 0x00FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_BoolToFloat_ReturnValue_1;           // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_BoolToFloat_ReturnValue_2;           // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ObjectiveInWorld_C_Event_DrawHudUpdate) == 0x000008, "Wrong alignment on ObjectiveInWorld_C_Event_DrawHudUpdate");
-static_assert(sizeof(ObjectiveInWorld_C_Event_DrawHudUpdate) == 0x000078, "Wrong size on ObjectiveInWorld_C_Event_DrawHudUpdate");
+static_assert(sizeof(ObjectiveInWorld_C_Event_DrawHudUpdate) == 0x000110, "Wrong size on ObjectiveInWorld_C_Event_DrawHudUpdate");
 static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, UpdateContext) == 0x000000, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::UpdateContext' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, Temp_bool_Variable) == 0x000060, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, Temp_byte_Variable) == 0x000061, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, Temp_byte_Variable_1) == 0x000062, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_ShouldShow_ReturnValue) == 0x000063, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_ShouldShow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_IsOwningActorPinged_ReturnValue) == 0x000064, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_IsOwningActorPinged_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, K2Node_Select_Default) == 0x000065, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000068, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Conv_BoolToFloat_ReturnValue_1) == 0x00006C, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Conv_BoolToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000070, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Conv_BoolToFloat_ReturnValue_2) == 0x000074, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Conv_BoolToFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, Temp_byte_Variable) == 0x000060, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, Temp_byte_Variable_1) == 0x000061, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, Temp_bool_Variable) == 0x000062, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, Temp_byte_Variable_2) == 0x000063, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, Temp_byte_Variable_3) == 0x000064, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, Temp_bool_Variable_1) == 0x000065, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, K2Node_Select_Default) == 0x000066, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000068, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00006C, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Conv_FloatToText_ReturnValue) == 0x000070, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, K2Node_MakeStruct_FormatArgumentData) == 0x000088, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_IsAdversarialGameMode_ReturnValue) == 0x0000C8, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_IsAdversarialGameMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, K2Node_MakeArray_Array) == 0x0000D0, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Format_ReturnValue) == 0x0000E0, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_ShouldShow_ReturnValue) == 0x0000F8, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_ShouldShow_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_IsOwningActorPinged_ReturnValue) == 0x0000F9, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_IsOwningActorPinged_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, K2Node_Select_Default_1) == 0x0000FA, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x0000FC, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Conv_BoolToFloat_ReturnValue_1) == 0x000100, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Conv_BoolToFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000104, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ObjectiveInWorld_C_Event_DrawHudUpdate, CallFunc_Conv_BoolToFloat_ReturnValue_2) == 0x000108, "Member 'ObjectiveInWorld_C_Event_DrawHudUpdate::CallFunc_Conv_BoolToFloat_ReturnValue_2' has a wrong offset!");
 
 // Function ObjectiveInWorld.ObjectiveInWorld_C.ProcessOpacity
 // 0x0068 (0x0068 - 0x0000)

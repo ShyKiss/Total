@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "OPP_structs.hpp"
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -158,6 +158,23 @@ static_assert(alignof(ControllerMappingMenu_C_RefreshGamepadType) == 0x000008, "
 static_assert(sizeof(ControllerMappingMenu_C_RefreshGamepadType) == 0x000010, "Wrong size on ControllerMappingMenu_C_RefreshGamepadType");
 static_assert(offsetof(ControllerMappingMenu_C_RefreshGamepadType, K2Node_DynamicCast_AsControl_Scheme_Layer) == 0x000000, "Member 'ControllerMappingMenu_C_RefreshGamepadType::K2Node_DynamicCast_AsControl_Scheme_Layer' has a wrong offset!");
 static_assert(offsetof(ControllerMappingMenu_C_RefreshGamepadType, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'ControllerMappingMenu_C_RefreshGamepadType::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
+// Function ControllerMappingMenu.ControllerMappingMenu_C.OnFocusReceived
+// 0x01B0 (0x01B0 - 0x0000)
+struct ControllerMappingMenu_C_OnFocusReceived final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x00B8)()
+};
+static_assert(alignof(ControllerMappingMenu_C_OnFocusReceived) == 0x000008, "Wrong alignment on ControllerMappingMenu_C_OnFocusReceived");
+static_assert(sizeof(ControllerMappingMenu_C_OnFocusReceived) == 0x0001B0, "Wrong size on ControllerMappingMenu_C_OnFocusReceived");
+static_assert(offsetof(ControllerMappingMenu_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'ControllerMappingMenu_C_OnFocusReceived::MyGeometry' has a wrong offset!");
+static_assert(offsetof(ControllerMappingMenu_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'ControllerMappingMenu_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
+static_assert(offsetof(ControllerMappingMenu_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'ControllerMappingMenu_C_OnFocusReceived::ReturnValue' has a wrong offset!");
+static_assert(offsetof(ControllerMappingMenu_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x0000F8, "Member 'ControllerMappingMenu_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 }
 

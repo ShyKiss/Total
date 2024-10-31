@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function ActionIconWidget.ActionIconWidget_C.ExecuteUbergraph_ActionIconWidget
-// 0x00F8 (0x00F8 - 0x0000)
+// 0x0100 (0x0100 - 0x0000)
 struct ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget final
 {
 public:
@@ -64,11 +64,12 @@ public:
 	uint8                                         Pad_D7[0x1];                                       // 0x00D7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBMenuPlayerController*                CallFunc_GetLocalMenuController_ReturnValue;       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName& ActionName, float NewProgress)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x00E4(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue_2;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName& ActionName, float NewProgress)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x00F0(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget) == 0x000008, "Wrong alignment on ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget");
-static_assert(sizeof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget) == 0x0000F8, "Wrong size on ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget");
+static_assert(sizeof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget) == 0x000100, "Wrong size on ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget");
 static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, EntryPoint) == 0x000000, "Member 'ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, CallFunc_GetMenuManager_ReturnValue) == 0x000008, "Member 'ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -98,7 +99,8 @@ static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, Cal
 static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0000D6, "Member 'ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, CallFunc_GetLocalMenuController_ReturnValue) == 0x0000D8, "Member 'ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget::CallFunc_GetLocalMenuController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, CallFunc_IsValid_ReturnValue_5) == 0x0000E0, "Member 'ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000E4, "Member 'ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, CallFunc_GetMenuManager_ReturnValue_2) == 0x0000E8, "Member 'ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget::CallFunc_GetMenuManager_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000F0, "Member 'ActionIconWidget_C_ExecuteUbergraph_ActionIconWidget::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 
 // Function ActionIconWidget.ActionIconWidget_C.OnHudActionProgressChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -157,13 +159,15 @@ struct ActionIconWidget_C_SetActionName final
 public:
 	class FName                                   NewActionName;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Value;                                             // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bForceSecondaryBinding;                            // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ActionIconWidget_C_SetActionName) == 0x000004, "Wrong alignment on ActionIconWidget_C_SetActionName");
 static_assert(sizeof(ActionIconWidget_C_SetActionName) == 0x000010, "Wrong size on ActionIconWidget_C_SetActionName");
 static_assert(offsetof(ActionIconWidget_C_SetActionName, NewActionName) == 0x000000, "Member 'ActionIconWidget_C_SetActionName::NewActionName' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_SetActionName, Value) == 0x000008, "Member 'ActionIconWidget_C_SetActionName::Value' has a wrong offset!");
-static_assert(offsetof(ActionIconWidget_C_SetActionName, CallFunc_NotEqual_NameName_ReturnValue) == 0x00000C, "Member 'ActionIconWidget_C_SetActionName::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActionIconWidget_C_SetActionName, bForceSecondaryBinding) == 0x00000C, "Member 'ActionIconWidget_C_SetActionName::bForceSecondaryBinding' has a wrong offset!");
+static_assert(offsetof(ActionIconWidget_C_SetActionName, CallFunc_NotEqual_NameName_ReturnValue) == 0x00000D, "Member 'ActionIconWidget_C_SetActionName::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
 
 // Function ActionIconWidget.ActionIconWidget_C.RefreshActionIcon
 // 0x0108 (0x0108 - 0x0000)
@@ -179,7 +183,7 @@ public:
 	bool                                          CallFunc_IsWiderInputTexture_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Key_IsMouseButton_ReturnValue;            // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FInputActionKeyMapping                 CallFunc_GetInputBinding_ReturnValue;              // 0x0028(0x0028)()
+	struct FInputActionKeyMapping                 CallFunc_GetInputMapping_ReturnValue;              // 0x0028(0x0028)()
 	bool                                          CallFunc_IsActionMappingValid_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputAxisKeyMapping                   K2Node_MakeStruct_InputAxisKeyMapping;             // 0x0058(0x0028)()
@@ -231,7 +235,7 @@ static_assert(offsetof(ActionIconWidget_C_RefreshActionIcon, CallFunc_BooleanOR_
 static_assert(offsetof(ActionIconWidget_C_RefreshActionIcon, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00001C, "Member 'ActionIconWidget_C_RefreshActionIcon::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_RefreshActionIcon, CallFunc_IsWiderInputTexture_ReturnValue) == 0x000020, "Member 'ActionIconWidget_C_RefreshActionIcon::CallFunc_IsWiderInputTexture_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_RefreshActionIcon, CallFunc_Key_IsMouseButton_ReturnValue) == 0x000021, "Member 'ActionIconWidget_C_RefreshActionIcon::CallFunc_Key_IsMouseButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActionIconWidget_C_RefreshActionIcon, CallFunc_GetInputBinding_ReturnValue) == 0x000028, "Member 'ActionIconWidget_C_RefreshActionIcon::CallFunc_GetInputBinding_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActionIconWidget_C_RefreshActionIcon, CallFunc_GetInputMapping_ReturnValue) == 0x000028, "Member 'ActionIconWidget_C_RefreshActionIcon::CallFunc_GetInputMapping_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_RefreshActionIcon, CallFunc_IsActionMappingValid_ReturnValue) == 0x000050, "Member 'ActionIconWidget_C_RefreshActionIcon::CallFunc_IsActionMappingValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_RefreshActionIcon, K2Node_MakeStruct_InputAxisKeyMapping) == 0x000058, "Member 'ActionIconWidget_C_RefreshActionIcon::K2Node_MakeStruct_InputAxisKeyMapping' has a wrong offset!");
 static_assert(offsetof(ActionIconWidget_C_RefreshActionIcon, CallFunc_IsAxisMappingValid_ReturnValue) == 0x000080, "Member 'ActionIconWidget_C_RefreshActionIcon::CallFunc_IsAxisMappingValid_ReturnValue' has a wrong offset!");

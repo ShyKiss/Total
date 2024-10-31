@@ -177,21 +177,6 @@ static_assert(offsetof(FieldSystemComponent_ApplyUniformVectorFalloffForce, Dire
 static_assert(offsetof(FieldSystemComponent_ApplyUniformVectorFalloffForce, Radius) == 0x00001C, "Member 'FieldSystemComponent_ApplyUniformVectorFalloffForce::Radius' has a wrong offset!");
 static_assert(offsetof(FieldSystemComponent_ApplyUniformVectorFalloffForce, Magnitude) == 0x000020, "Member 'FieldSystemComponent_ApplyUniformVectorFalloffForce::Magnitude' has a wrong offset!");
 
-// Function FieldSystemEngine.RadialVector.SetRadialVector
-// 0x0018 (0x0018 - 0x0000)
-struct RadialVector_SetRadialVector final
-{
-public:
-	float                                         Magnitude_0;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Position_0;                                        // 0x0004(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class URadialVector*                          ReturnValue;                                       // 0x0010(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RadialVector_SetRadialVector) == 0x000008, "Wrong alignment on RadialVector_SetRadialVector");
-static_assert(sizeof(RadialVector_SetRadialVector) == 0x000018, "Wrong size on RadialVector_SetRadialVector");
-static_assert(offsetof(RadialVector_SetRadialVector, Magnitude_0) == 0x000000, "Member 'RadialVector_SetRadialVector::Magnitude_0' has a wrong offset!");
-static_assert(offsetof(RadialVector_SetRadialVector, Position_0) == 0x000004, "Member 'RadialVector_SetRadialVector::Position_0' has a wrong offset!");
-static_assert(offsetof(RadialVector_SetRadialVector, ReturnValue) == 0x000010, "Member 'RadialVector_SetRadialVector::ReturnValue' has a wrong offset!");
-
 // Function FieldSystemEngine.FieldSystemMetaDataIteration.SetMetaDataIteration
 // 0x0010 (0x0010 - 0x0000)
 struct FieldSystemMetaDataIteration_SetMetaDataIteration final
@@ -233,33 +218,6 @@ static_assert(alignof(FieldSystemMetaDataFilter_SetMetaDataFilterType) == 0x0000
 static_assert(sizeof(FieldSystemMetaDataFilter_SetMetaDataFilterType) == 0x000010, "Wrong size on FieldSystemMetaDataFilter_SetMetaDataFilterType");
 static_assert(offsetof(FieldSystemMetaDataFilter_SetMetaDataFilterType, FilterType_0) == 0x000000, "Member 'FieldSystemMetaDataFilter_SetMetaDataFilterType::FilterType_0' has a wrong offset!");
 static_assert(offsetof(FieldSystemMetaDataFilter_SetMetaDataFilterType, ReturnValue) == 0x000008, "Member 'FieldSystemMetaDataFilter_SetMetaDataFilterType::ReturnValue' has a wrong offset!");
-
-// Function FieldSystemEngine.ToFloatField.SetToFloatField
-// 0x0010 (0x0010 - 0x0000)
-struct ToFloatField_SetToFloatField final
-{
-public:
-	const class UFieldNodeInt*                    IntegerField;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UToFloatField*                          ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ToFloatField_SetToFloatField) == 0x000008, "Wrong alignment on ToFloatField_SetToFloatField");
-static_assert(sizeof(ToFloatField_SetToFloatField) == 0x000010, "Wrong size on ToFloatField_SetToFloatField");
-static_assert(offsetof(ToFloatField_SetToFloatField, IntegerField) == 0x000000, "Member 'ToFloatField_SetToFloatField::IntegerField' has a wrong offset!");
-static_assert(offsetof(ToFloatField_SetToFloatField, ReturnValue) == 0x000008, "Member 'ToFloatField_SetToFloatField::ReturnValue' has a wrong offset!");
-
-// Function FieldSystemEngine.RandomVector.SetRandomVector
-// 0x0010 (0x0010 - 0x0000)
-struct RandomVector_SetRandomVector final
-{
-public:
-	float                                         Magnitude_0;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URandomVector*                          ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RandomVector_SetRandomVector) == 0x000008, "Wrong alignment on RandomVector_SetRandomVector");
-static_assert(sizeof(RandomVector_SetRandomVector) == 0x000010, "Wrong size on RandomVector_SetRandomVector");
-static_assert(offsetof(RandomVector_SetRandomVector, Magnitude_0) == 0x000000, "Member 'RandomVector_SetRandomVector::Magnitude_0' has a wrong offset!");
-static_assert(offsetof(RandomVector_SetRandomVector, ReturnValue) == 0x000008, "Member 'RandomVector_SetRandomVector::ReturnValue' has a wrong offset!");
 
 // Function FieldSystemEngine.UniformInteger.SetUniformInteger
 // 0x0010 (0x0010 - 0x0000)
@@ -449,6 +407,35 @@ static_assert(offsetof(UniformVector_SetUniformVector, Magnitude_0) == 0x000000,
 static_assert(offsetof(UniformVector_SetUniformVector, Direction_0) == 0x000004, "Member 'UniformVector_SetUniformVector::Direction_0' has a wrong offset!");
 static_assert(offsetof(UniformVector_SetUniformVector, ReturnValue) == 0x000010, "Member 'UniformVector_SetUniformVector::ReturnValue' has a wrong offset!");
 
+// Function FieldSystemEngine.RadialVector.SetRadialVector
+// 0x0018 (0x0018 - 0x0000)
+struct RadialVector_SetRadialVector final
+{
+public:
+	float                                         Magnitude_0;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Position_0;                                        // 0x0004(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class URadialVector*                          ReturnValue;                                       // 0x0010(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RadialVector_SetRadialVector) == 0x000008, "Wrong alignment on RadialVector_SetRadialVector");
+static_assert(sizeof(RadialVector_SetRadialVector) == 0x000018, "Wrong size on RadialVector_SetRadialVector");
+static_assert(offsetof(RadialVector_SetRadialVector, Magnitude_0) == 0x000000, "Member 'RadialVector_SetRadialVector::Magnitude_0' has a wrong offset!");
+static_assert(offsetof(RadialVector_SetRadialVector, Position_0) == 0x000004, "Member 'RadialVector_SetRadialVector::Position_0' has a wrong offset!");
+static_assert(offsetof(RadialVector_SetRadialVector, ReturnValue) == 0x000010, "Member 'RadialVector_SetRadialVector::ReturnValue' has a wrong offset!");
+
+// Function FieldSystemEngine.RandomVector.SetRandomVector
+// 0x0010 (0x0010 - 0x0000)
+struct RandomVector_SetRandomVector final
+{
+public:
+	float                                         Magnitude_0;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URandomVector*                          ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RandomVector_SetRandomVector) == 0x000008, "Wrong alignment on RandomVector_SetRandomVector");
+static_assert(sizeof(RandomVector_SetRandomVector) == 0x000010, "Wrong size on RandomVector_SetRandomVector");
+static_assert(offsetof(RandomVector_SetRandomVector, Magnitude_0) == 0x000000, "Member 'RandomVector_SetRandomVector::Magnitude_0' has a wrong offset!");
+static_assert(offsetof(RandomVector_SetRandomVector, ReturnValue) == 0x000008, "Member 'RandomVector_SetRandomVector::ReturnValue' has a wrong offset!");
+
 // Function FieldSystemEngine.OperatorField.SetOperatorField
 // 0x0028 (0x0028 - 0x0000)
 struct OperatorField_SetOperatorField final
@@ -482,6 +469,19 @@ static_assert(alignof(ToIntegerField_SetToIntegerField) == 0x000008, "Wrong alig
 static_assert(sizeof(ToIntegerField_SetToIntegerField) == 0x000010, "Wrong size on ToIntegerField_SetToIntegerField");
 static_assert(offsetof(ToIntegerField_SetToIntegerField, FloatField_0) == 0x000000, "Member 'ToIntegerField_SetToIntegerField::FloatField_0' has a wrong offset!");
 static_assert(offsetof(ToIntegerField_SetToIntegerField, ReturnValue) == 0x000008, "Member 'ToIntegerField_SetToIntegerField::ReturnValue' has a wrong offset!");
+
+// Function FieldSystemEngine.ToFloatField.SetToFloatField
+// 0x0010 (0x0010 - 0x0000)
+struct ToFloatField_SetToFloatField final
+{
+public:
+	const class UFieldNodeInt*                    IntegerField;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UToFloatField*                          ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ToFloatField_SetToFloatField) == 0x000008, "Wrong alignment on ToFloatField_SetToFloatField");
+static_assert(sizeof(ToFloatField_SetToFloatField) == 0x000010, "Wrong size on ToFloatField_SetToFloatField");
+static_assert(offsetof(ToFloatField_SetToFloatField, IntegerField) == 0x000000, "Member 'ToFloatField_SetToFloatField::IntegerField' has a wrong offset!");
+static_assert(offsetof(ToFloatField_SetToFloatField, ReturnValue) == 0x000008, "Member 'ToFloatField_SetToFloatField::ReturnValue' has a wrong offset!");
 
 // Function FieldSystemEngine.CullingField.SetCullingField
 // 0x0020 (0x0020 - 0x0000)

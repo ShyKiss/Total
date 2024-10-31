@@ -22,7 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABlindFogger_SkillItem_BP_C*            K2Node_DynamicCast_AsBlind_Fogger_Skill_Item_BP;   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ADoorBlocker_SkillItem_BP_C*            K2Node_DynamicCast_AsDoor_Blocker_Skill_Item_BP;   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_PlayLoopingSoundOnActor_ReturnValue;      // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,7 +31,7 @@ static_assert(alignof(DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_
 static_assert(sizeof(DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP) == 0x000018, "Wrong size on DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP");
 static_assert(offsetof(DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP, EntryPoint) == 0x000000, "Member 'DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP::EntryPoint' has a wrong offset!");
 static_assert(offsetof(DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP, K2Node_DynamicCast_AsBlind_Fogger_Skill_Item_BP) == 0x000008, "Member 'DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP::K2Node_DynamicCast_AsBlind_Fogger_Skill_Item_BP' has a wrong offset!");
+static_assert(offsetof(DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP, K2Node_DynamicCast_AsDoor_Blocker_Skill_Item_BP) == 0x000008, "Member 'DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP::K2Node_DynamicCast_AsDoor_Blocker_Skill_Item_BP' has a wrong offset!");
 static_assert(offsetof(DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP, CallFunc_PlayLoopingSoundOnActor_ReturnValue) == 0x000014, "Member 'DoorBlocker_ActiveSkill_BP_C_ExecuteUbergraph_DoorBlocker_ActiveSkill_BP::CallFunc_PlayLoopingSoundOnActor_ReturnValue' has a wrong offset!");
 

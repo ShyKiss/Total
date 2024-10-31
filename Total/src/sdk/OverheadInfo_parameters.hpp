@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -59,7 +59,7 @@ static_assert(offsetof(OverheadInfo_C_UpdateTradeItem, CallFunc_IsValid_ReturnVa
 static_assert(offsetof(OverheadInfo_C_UpdateTradeItem, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00001B, "Member 'OverheadInfo_C_UpdateTradeItem::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function OverheadInfo.OverheadInfo_C.SetImposterName
-// 0x0118 (0x0118 - 0x0000)
+// 0x01C0 (0x01C0 - 0x0000)
 struct OverheadInfo_C_SetImposterName final
 {
 public:
@@ -69,70 +69,90 @@ public:
 	TArray<class FString>                         ImposterName;                                      // 0x0018(0x0010)(Edit, BlueprintVisible)
 	TArray<int32>                                 RandomIndexes;                                     // 0x0028(0x0010)(Edit, BlueprintVisible)
 	TArray<class FString>                         CallFunc_GetCharacterArrayFromString_ReturnValue;  // 0x0038(0x0010)(ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_JoinStringArray_ReturnValue;              // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_FormatPlayerDisplayName_formatedDisplayName; // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0080(0x0018)()
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_LevelRandomIntRange_ReturnValue;          // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FFloor_ReturnValue;                       // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GenerateDeterministicRandomString_ReturnValue; // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item;                           // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         CallFunc_GetCharacterArrayFromString_ReturnValue_1; // 0x00E0(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FString                                 CallFunc_JoinStringArray_ReturnValue;              // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_FormatPlayerDisplayName_formatedDisplayName; // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0070(0x0018)()
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FImposterOverheadDetails               Temp_struct_Variable;                              // 0x00A0(0x0030)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00D0(0x0018)()
+	bool                                          Temp_bool_Variable;                                // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IRBPlayerDisguiseOwner> K2Node_DynamicCast_AsRB_Player_Disguise_Owner;     // 0x00F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IRBPlayerDisguiseOwner> K2Node_DynamicCast_AsRB_Player_Disguise_Owner_1;   // 0x0108(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_ShouldApplyNameRandomization_ReturnValue; // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11A[0x6];                                      // 0x011A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FImposterOverheadDetails               CallFunc_GetOverheadDetails_ReturnValue;           // 0x0120(0x0030)()
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_LevelRandomIntRange_ReturnValue;          // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FFloor_ReturnValue;                       // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GenerateDeterministicRandomString_ReturnValue; // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item;                           // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         CallFunc_GetCharacterArrayFromString_ReturnValue_1; // 0x0188(0x0010)(ReferenceParm)
+	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x0198(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B1[0x3];                                      // 0x01B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(OverheadInfo_C_SetImposterName) == 0x000008, "Wrong alignment on OverheadInfo_C_SetImposterName");
-static_assert(sizeof(OverheadInfo_C_SetImposterName) == 0x000118, "Wrong size on OverheadInfo_C_SetImposterName");
+static_assert(sizeof(OverheadInfo_C_SetImposterName) == 0x0001C0, "Wrong size on OverheadInfo_C_SetImposterName");
 static_assert(offsetof(OverheadInfo_C_SetImposterName, CopiedName) == 0x000000, "Member 'OverheadInfo_C_SetImposterName::CopiedName' has a wrong offset!");
 static_assert(offsetof(OverheadInfo_C_SetImposterName, RandomTriesCounter) == 0x000010, "Member 'OverheadInfo_C_SetImposterName::RandomTriesCounter' has a wrong offset!");
 static_assert(offsetof(OverheadInfo_C_SetImposterName, ImposterName) == 0x000018, "Member 'OverheadInfo_C_SetImposterName::ImposterName' has a wrong offset!");
 static_assert(offsetof(OverheadInfo_C_SetImposterName, RandomIndexes) == 0x000028, "Member 'OverheadInfo_C_SetImposterName::RandomIndexes' has a wrong offset!");
 static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_GetCharacterArrayFromString_ReturnValue) == 0x000038, "Member 'OverheadInfo_C_SetImposterName::CallFunc_GetCharacterArrayFromString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, Temp_int_Array_Index_Variable) == 0x000048, "Member 'OverheadInfo_C_SetImposterName::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, Temp_int_Loop_Counter_Variable) == 0x00004C, "Member 'OverheadInfo_C_SetImposterName::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_JoinStringArray_ReturnValue) == 0x000050, "Member 'OverheadInfo_C_SetImposterName::CallFunc_JoinStringArray_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_FormatPlayerDisplayName_formatedDisplayName) == 0x000068, "Member 'OverheadInfo_C_SetImposterName::CallFunc_FormatPlayerDisplayName_formatedDisplayName' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Length_ReturnValue_1) == 0x000078, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Conv_StringToText_ReturnValue) == 0x000080, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Subtract_IntInt_ReturnValue) == 0x000098, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Add_IntInt_ReturnValue) == 0x00009C, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, Temp_int_Variable) == 0x0000A0, "Member 'OverheadInfo_C_SetImposterName::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000A4, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000A8, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x0000B0, "Member 'OverheadInfo_C_SetImposterName::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_LevelRandomIntRange_ReturnValue) == 0x0000B8, "Member 'OverheadInfo_C_SetImposterName::CallFunc_LevelRandomIntRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Multiply_IntFloat_ReturnValue) == 0x0000BC, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_FFloor_ReturnValue) == 0x0000C0, "Member 'OverheadInfo_C_SetImposterName::CallFunc_FFloor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_GenerateDeterministicRandomString_ReturnValue) == 0x0000C8, "Member 'OverheadInfo_C_SetImposterName::CallFunc_GenerateDeterministicRandomString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_GetCharacterArrayFromString_ReturnValue_1) == 0x0000E0, "Member 'OverheadInfo_C_SetImposterName::CallFunc_GetCharacterArrayFromString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Get_Item_1) == 0x0000F0, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_AddUnique_ReturnValue) == 0x000100, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Length_ReturnValue_2) == 0x000104, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Less_IntInt_ReturnValue) == 0x000108, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Length_ReturnValue_3) == 0x00010C, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Less_IntInt_ReturnValue_1) == 0x000110, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_JoinStringArray_ReturnValue) == 0x000048, "Member 'OverheadInfo_C_SetImposterName::CallFunc_JoinStringArray_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_FormatPlayerDisplayName_formatedDisplayName) == 0x000058, "Member 'OverheadInfo_C_SetImposterName::CallFunc_FormatPlayerDisplayName_formatedDisplayName' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Conv_StringToText_ReturnValue) == 0x000070, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Length_ReturnValue_1) == 0x000088, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, Temp_int_Loop_Counter_Variable) == 0x00008C, "Member 'OverheadInfo_C_SetImposterName::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Subtract_IntInt_ReturnValue) == 0x000090, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Add_IntInt_ReturnValue) == 0x000094, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, Temp_int_Array_Index_Variable) == 0x000098, "Member 'OverheadInfo_C_SetImposterName::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, Temp_struct_Variable) == 0x0000A0, "Member 'OverheadInfo_C_SetImposterName::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0000D0, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, Temp_bool_Variable) == 0x0000E8, "Member 'OverheadInfo_C_SetImposterName::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, Temp_int_Variable) == 0x0000EC, "Member 'OverheadInfo_C_SetImposterName::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, K2Node_DynamicCast_AsRB_Player_Disguise_Owner) == 0x0000F0, "Member 'OverheadInfo_C_SetImposterName::K2Node_DynamicCast_AsRB_Player_Disguise_Owner' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'OverheadInfo_C_SetImposterName::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, K2Node_DynamicCast_AsRB_Player_Disguise_Owner_1) == 0x000108, "Member 'OverheadInfo_C_SetImposterName::K2Node_DynamicCast_AsRB_Player_Disguise_Owner_1' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, K2Node_DynamicCast_bSuccess_1) == 0x000118, "Member 'OverheadInfo_C_SetImposterName::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_ShouldApplyNameRandomization_ReturnValue) == 0x000119, "Member 'OverheadInfo_C_SetImposterName::CallFunc_ShouldApplyNameRandomization_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_GetOverheadDetails_ReturnValue) == 0x000120, "Member 'OverheadInfo_C_SetImposterName::CallFunc_GetOverheadDetails_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Add_IntInt_ReturnValue_1) == 0x000150, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_LevelRandomIntRange_ReturnValue) == 0x000154, "Member 'OverheadInfo_C_SetImposterName::CallFunc_LevelRandomIntRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Add_IntInt_ReturnValue_2) == 0x000158, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000160, "Member 'OverheadInfo_C_SetImposterName::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000168, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_FFloor_ReturnValue) == 0x00016C, "Member 'OverheadInfo_C_SetImposterName::CallFunc_FFloor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_GenerateDeterministicRandomString_ReturnValue) == 0x000170, "Member 'OverheadInfo_C_SetImposterName::CallFunc_GenerateDeterministicRandomString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Get_Item) == 0x000180, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_GetCharacterArrayFromString_ReturnValue_1) == 0x000188, "Member 'OverheadInfo_C_SetImposterName::CallFunc_GetCharacterArrayFromString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Get_Item_1) == 0x000198, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_AddUnique_ReturnValue) == 0x0001A8, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Length_ReturnValue_2) == 0x0001AC, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Less_IntInt_ReturnValue) == 0x0001B0, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Array_Length_ReturnValue_3) == 0x0001B4, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_SetImposterName, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001B8, "Member 'OverheadInfo_C_SetImposterName::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function OverheadInfo.OverheadInfo_C.InithHealthBarVisibility
 // 0x0008 (0x0008 - 0x0000)
@@ -456,15 +476,24 @@ static_assert(offsetof(OverheadInfo_C_Event_PlayerStateUpdated, CallFunc_Conv_St
 static_assert(offsetof(OverheadInfo_C_Event_PlayerStateUpdated, CallFunc_IsValid_ReturnValue_1) == 0x000050, "Member 'OverheadInfo_C_Event_PlayerStateUpdated::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function OverheadInfo.OverheadInfo_C.Event_ImposterUpdated
-// 0x0001 (0x0001 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct OverheadInfo_C_Event_ImposterUpdated final
 {
 public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FImposterOverheadDetails               Temp_struct_Variable;                              // 0x0000(0x0030)()
+	TScriptInterface<class IRBPlayerDisguiseOwner> K2Node_DynamicCast_AsRB_Player_Disguise_Owner;     // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FImposterOverheadDetails               CallFunc_GetOverheadDetails_ReturnValue;           // 0x0048(0x0030)()
 };
-static_assert(alignof(OverheadInfo_C_Event_ImposterUpdated) == 0x000001, "Wrong alignment on OverheadInfo_C_Event_ImposterUpdated");
-static_assert(sizeof(OverheadInfo_C_Event_ImposterUpdated) == 0x000001, "Wrong size on OverheadInfo_C_Event_ImposterUpdated");
-static_assert(offsetof(OverheadInfo_C_Event_ImposterUpdated, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'OverheadInfo_C_Event_ImposterUpdated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(alignof(OverheadInfo_C_Event_ImposterUpdated) == 0x000008, "Wrong alignment on OverheadInfo_C_Event_ImposterUpdated");
+static_assert(sizeof(OverheadInfo_C_Event_ImposterUpdated) == 0x000078, "Wrong size on OverheadInfo_C_Event_ImposterUpdated");
+static_assert(offsetof(OverheadInfo_C_Event_ImposterUpdated, Temp_struct_Variable) == 0x000000, "Member 'OverheadInfo_C_Event_ImposterUpdated::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_Event_ImposterUpdated, K2Node_DynamicCast_AsRB_Player_Disguise_Owner) == 0x000030, "Member 'OverheadInfo_C_Event_ImposterUpdated::K2Node_DynamicCast_AsRB_Player_Disguise_Owner' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_Event_ImposterUpdated, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'OverheadInfo_C_Event_ImposterUpdated::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_Event_ImposterUpdated, CallFunc_IsValid_ReturnValue) == 0x000041, "Member 'OverheadInfo_C_Event_ImposterUpdated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OverheadInfo_C_Event_ImposterUpdated, CallFunc_GetOverheadDetails_ReturnValue) == 0x000048, "Member 'OverheadInfo_C_Event_ImposterUpdated::CallFunc_GetOverheadDetails_ReturnValue' has a wrong offset!");
 
 // Function OverheadInfo.OverheadInfo_C.Event_PlayerHealthChanged
 // 0x0010 (0x0010 - 0x0000)

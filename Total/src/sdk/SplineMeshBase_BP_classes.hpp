@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "SplineMeshData_structs.hpp"
 #include "MeshIndex_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "OPP_classes.hpp"
 
 
@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SplineMeshBase_BP.SplineMeshBase_BP_C
-// 0x0168 (0x0420 - 0x02B8)
+// 0x0160 (0x0418 - 0x02B8)
 class ASplineMeshBase_BP_C : public ARBSplineMeshActor
 {
 public:
@@ -64,20 +64,19 @@ public:
 	struct FVector                                Zero;                                              // 0x03AC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector2D>                      DetailsVoid;                                       // 0x03B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          SkipDetailMesh;                                    // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3C9[0x3];                                      // 0x03C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxDrawDistance;                                   // 0x03CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CastStaticShadow;                                  // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FLightingChannels                      LightingChannels;                                  // 0x03D1(0x0001)(Edit, BlueprintVisible, NoDestructor)
-	ELightmapType                                 LightmapType;                                      // 0x03D2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UseMaterialDynamicDataForUV;                       // 0x03D3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D4[0x4];                                      // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASplineMeshBase_BP_C*                   Target;                                            // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class USplineMeshComponent*>           SpawnedSplineMeshes;                               // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UStaticMeshComponent*>           DetailStaticMeshes;                                // 0x03F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	int32                                         NumberOfPoint;                                     // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        AllPointsPositions;                                // 0x0408(0x0010)(Edit, BlueprintVisible)
-	bool                                          UseReoderPointOnAdd;                               // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CastStaticShadow;                                  // 0x03C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FLightingChannels                      LightingChannels;                                  // 0x03CA(0x0001)(Edit, BlueprintVisible, NoDestructor)
+	ELightmapType                                 LightmapType;                                      // 0x03CB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseMaterialDynamicDataForUV;                       // 0x03CC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3CD[0x3];                                      // 0x03CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASplineMeshBase_BP_C*                   Target;                                            // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class USplineMeshComponent*>           SpawnedSplineMeshes;                               // 0x03D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UStaticMeshComponent*>           DetailStaticMeshes;                                // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	int32                                         NumberOfPoint;                                     // 0x03F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3FC[0x4];                                      // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector>                        AllPointsPositions;                                // 0x0400(0x0010)(Edit, BlueprintVisible)
+	bool                                          UseReoderPointOnAdd;                               // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bVisibleInReflectionCaptures;                      // 0x0411(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_SplineMeshBase_BP(int32 EntryPoint);
@@ -108,7 +107,7 @@ public:
 	}
 };
 static_assert(alignof(ASplineMeshBase_BP_C) == 0x000008, "Wrong alignment on ASplineMeshBase_BP_C");
-static_assert(sizeof(ASplineMeshBase_BP_C) == 0x000420, "Wrong size on ASplineMeshBase_BP_C");
+static_assert(sizeof(ASplineMeshBase_BP_C) == 0x000418, "Wrong size on ASplineMeshBase_BP_C");
 static_assert(offsetof(ASplineMeshBase_BP_C, UberGraphFrame) == 0x0002B8, "Member 'ASplineMeshBase_BP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ASplineMeshBase_BP_C, Billboard) == 0x0002C0, "Member 'ASplineMeshBase_BP_C::Billboard' has a wrong offset!");
 static_assert(offsetof(ASplineMeshBase_BP_C, Meshes) == 0x0002C8, "Member 'ASplineMeshBase_BP_C::Meshes' has a wrong offset!");
@@ -140,17 +139,17 @@ static_assert(offsetof(ASplineMeshBase_BP_C, NewWorldPosition) == 0x0003A0, "Mem
 static_assert(offsetof(ASplineMeshBase_BP_C, Zero) == 0x0003AC, "Member 'ASplineMeshBase_BP_C::Zero' has a wrong offset!");
 static_assert(offsetof(ASplineMeshBase_BP_C, DetailsVoid) == 0x0003B8, "Member 'ASplineMeshBase_BP_C::DetailsVoid' has a wrong offset!");
 static_assert(offsetof(ASplineMeshBase_BP_C, SkipDetailMesh) == 0x0003C8, "Member 'ASplineMeshBase_BP_C::SkipDetailMesh' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, MaxDrawDistance) == 0x0003CC, "Member 'ASplineMeshBase_BP_C::MaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, CastStaticShadow) == 0x0003D0, "Member 'ASplineMeshBase_BP_C::CastStaticShadow' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, LightingChannels) == 0x0003D1, "Member 'ASplineMeshBase_BP_C::LightingChannels' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, LightmapType) == 0x0003D2, "Member 'ASplineMeshBase_BP_C::LightmapType' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, UseMaterialDynamicDataForUV) == 0x0003D3, "Member 'ASplineMeshBase_BP_C::UseMaterialDynamicDataForUV' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, Target) == 0x0003D8, "Member 'ASplineMeshBase_BP_C::Target' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, SpawnedSplineMeshes) == 0x0003E0, "Member 'ASplineMeshBase_BP_C::SpawnedSplineMeshes' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, DetailStaticMeshes) == 0x0003F0, "Member 'ASplineMeshBase_BP_C::DetailStaticMeshes' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, NumberOfPoint) == 0x000400, "Member 'ASplineMeshBase_BP_C::NumberOfPoint' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, AllPointsPositions) == 0x000408, "Member 'ASplineMeshBase_BP_C::AllPointsPositions' has a wrong offset!");
-static_assert(offsetof(ASplineMeshBase_BP_C, UseReoderPointOnAdd) == 0x000418, "Member 'ASplineMeshBase_BP_C::UseReoderPointOnAdd' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, CastStaticShadow) == 0x0003C9, "Member 'ASplineMeshBase_BP_C::CastStaticShadow' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, LightingChannels) == 0x0003CA, "Member 'ASplineMeshBase_BP_C::LightingChannels' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, LightmapType) == 0x0003CB, "Member 'ASplineMeshBase_BP_C::LightmapType' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, UseMaterialDynamicDataForUV) == 0x0003CC, "Member 'ASplineMeshBase_BP_C::UseMaterialDynamicDataForUV' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, Target) == 0x0003D0, "Member 'ASplineMeshBase_BP_C::Target' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, SpawnedSplineMeshes) == 0x0003D8, "Member 'ASplineMeshBase_BP_C::SpawnedSplineMeshes' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, DetailStaticMeshes) == 0x0003E8, "Member 'ASplineMeshBase_BP_C::DetailStaticMeshes' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, NumberOfPoint) == 0x0003F8, "Member 'ASplineMeshBase_BP_C::NumberOfPoint' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, AllPointsPositions) == 0x000400, "Member 'ASplineMeshBase_BP_C::AllPointsPositions' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, UseReoderPointOnAdd) == 0x000410, "Member 'ASplineMeshBase_BP_C::UseReoderPointOnAdd' has a wrong offset!");
+static_assert(offsetof(ASplineMeshBase_BP_C, bVisibleInReflectionCaptures) == 0x000411, "Member 'ASplineMeshBase_BP_C::bVisibleInReflectionCaptures' has a wrong offset!");
 
 }
 

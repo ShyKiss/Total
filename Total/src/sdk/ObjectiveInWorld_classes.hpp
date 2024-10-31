@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
 #include "UMG_structs.hpp"
 
@@ -19,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ObjectiveInWorld.ObjectiveInWorld_C
-// 0x0068 (0x03C0 - 0x0358)
+// 0x0070 (0x03C8 - 0x0358)
 class UObjectiveInWorld_C final : public URBHUDObjectiveInWorld
 {
 public:
@@ -28,20 +29,20 @@ public:
 	class UInvalidationBox*                       InvalidationBox_ObjectiveInWorld;                  // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ObjectiveIcon;                                     // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 PingIcon;                                          // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RippleImage;                                       // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               RippleSize;                                        // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               ObjectiveMaterial;                                 // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FarScalePercentage;                                // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C[0x4];                                      // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               RippleMaterial;                                    // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RippleSizeMultiplier;                              // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TargetOpacity;                                     // 0x03AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBObjectiveActorComponent*             ObjectiveComponent;                                // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TargetScale;                                       // 0x03B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTextBlock*                             ProgressText;                                      // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RippleImage;                                       // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               RippleSize;                                        // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               ObjectiveMaterial;                                 // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FarScalePercentage;                                // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A4[0x4];                                      // 0x03A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               RippleMaterial;                                    // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RippleSizeMultiplier;                              // 0x03B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TargetOpacity;                                     // 0x03B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBObjectiveActorComponent*             ObjectiveComponent;                                // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TargetScale;                                       // 0x03C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ObjectiveInWorld(int32 EntryPoint);
-	void OnCompletingObjectiveChanged(bool IsCompletingObjective);
 	void Event_OnWatchedPlayerChanged(class ARBPlayer* OldPlayer, class ARBPlayer* NewPlayer);
 	void Event_Hide();
 	void Event_Show();
@@ -68,21 +69,22 @@ public:
 	}
 };
 static_assert(alignof(UObjectiveInWorld_C) == 0x000008, "Wrong alignment on UObjectiveInWorld_C");
-static_assert(sizeof(UObjectiveInWorld_C) == 0x0003C0, "Wrong size on UObjectiveInWorld_C");
+static_assert(sizeof(UObjectiveInWorld_C) == 0x0003C8, "Wrong size on UObjectiveInWorld_C");
 static_assert(offsetof(UObjectiveInWorld_C, UberGraphFrame) == 0x000358, "Member 'UObjectiveInWorld_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UObjectiveInWorld_C, IconSize) == 0x000360, "Member 'UObjectiveInWorld_C::IconSize' has a wrong offset!");
 static_assert(offsetof(UObjectiveInWorld_C, InvalidationBox_ObjectiveInWorld) == 0x000368, "Member 'UObjectiveInWorld_C::InvalidationBox_ObjectiveInWorld' has a wrong offset!");
 static_assert(offsetof(UObjectiveInWorld_C, ObjectiveIcon) == 0x000370, "Member 'UObjectiveInWorld_C::ObjectiveIcon' has a wrong offset!");
 static_assert(offsetof(UObjectiveInWorld_C, PingIcon) == 0x000378, "Member 'UObjectiveInWorld_C::PingIcon' has a wrong offset!");
-static_assert(offsetof(UObjectiveInWorld_C, RippleImage) == 0x000380, "Member 'UObjectiveInWorld_C::RippleImage' has a wrong offset!");
-static_assert(offsetof(UObjectiveInWorld_C, RippleSize) == 0x000388, "Member 'UObjectiveInWorld_C::RippleSize' has a wrong offset!");
-static_assert(offsetof(UObjectiveInWorld_C, ObjectiveMaterial) == 0x000390, "Member 'UObjectiveInWorld_C::ObjectiveMaterial' has a wrong offset!");
-static_assert(offsetof(UObjectiveInWorld_C, FarScalePercentage) == 0x000398, "Member 'UObjectiveInWorld_C::FarScalePercentage' has a wrong offset!");
-static_assert(offsetof(UObjectiveInWorld_C, RippleMaterial) == 0x0003A0, "Member 'UObjectiveInWorld_C::RippleMaterial' has a wrong offset!");
-static_assert(offsetof(UObjectiveInWorld_C, RippleSizeMultiplier) == 0x0003A8, "Member 'UObjectiveInWorld_C::RippleSizeMultiplier' has a wrong offset!");
-static_assert(offsetof(UObjectiveInWorld_C, TargetOpacity) == 0x0003AC, "Member 'UObjectiveInWorld_C::TargetOpacity' has a wrong offset!");
-static_assert(offsetof(UObjectiveInWorld_C, ObjectiveComponent) == 0x0003B0, "Member 'UObjectiveInWorld_C::ObjectiveComponent' has a wrong offset!");
-static_assert(offsetof(UObjectiveInWorld_C, TargetScale) == 0x0003B8, "Member 'UObjectiveInWorld_C::TargetScale' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, ProgressText) == 0x000380, "Member 'UObjectiveInWorld_C::ProgressText' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, RippleImage) == 0x000388, "Member 'UObjectiveInWorld_C::RippleImage' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, RippleSize) == 0x000390, "Member 'UObjectiveInWorld_C::RippleSize' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, ObjectiveMaterial) == 0x000398, "Member 'UObjectiveInWorld_C::ObjectiveMaterial' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, FarScalePercentage) == 0x0003A0, "Member 'UObjectiveInWorld_C::FarScalePercentage' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, RippleMaterial) == 0x0003A8, "Member 'UObjectiveInWorld_C::RippleMaterial' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, RippleSizeMultiplier) == 0x0003B0, "Member 'UObjectiveInWorld_C::RippleSizeMultiplier' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, TargetOpacity) == 0x0003B4, "Member 'UObjectiveInWorld_C::TargetOpacity' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, ObjectiveComponent) == 0x0003B8, "Member 'UObjectiveInWorld_C::ObjectiveComponent' has a wrong offset!");
+static_assert(offsetof(UObjectiveInWorld_C, TargetScale) == 0x0003C0, "Member 'UObjectiveInWorld_C::TargetScale' has a wrong offset!");
 
 }
 

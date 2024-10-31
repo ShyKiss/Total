@@ -33,11 +33,11 @@ public:
 	struct FRotator                               HeadRotation;                                      // 0x02A8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void GetFuttermanAnimation(class USkeletalMeshComponent* NewParam, class UAnimSequence** Animation);
-	void SetDrillOn(bool DrillOn, float DrillRate);
 	void UserConstructionScript();
 	void GetCineFaceAnimBP(class UCineFace_AnimBP_C** CineFaceAnimBP);
 	void GetPoseAsset(class UPoseAsset** PoseAsset);
+	void GetFuttermanAnimation(class USkeletalMeshComponent* NewParam, class UAnimSequence** Animation);
+	void SetDrillOn(bool DrillOn, float DrillRate);
 
 public:
 	static class UClass* StaticClass()

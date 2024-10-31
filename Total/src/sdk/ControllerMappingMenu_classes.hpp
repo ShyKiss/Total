@@ -52,6 +52,7 @@ public:
 	void OnPopupConfirm();
 	void BndEvt__ControllerMappingMenu_ResetDefaultsBtn_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class URBMenuButton_C* Button);
 	void RefreshGamepadType();
+	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 
 public:
 	static class UClass* StaticClass()

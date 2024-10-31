@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function Cine_Body_AnimBP.Cine_Body_AnimBP_C.ExecuteUbergraph_Cine_Body_AnimBP
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UCine_Body_AnimBP_C::ExecuteUbergraph_Cine_Body_AnimBP(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cine_Body_AnimBP_C", "ExecuteUbergraph_Cine_Body_AnimBP");
-
-	Params::Cine_Body_AnimBP_C_ExecuteUbergraph_Cine_Body_AnimBP Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Cine_Body_AnimBP.Cine_Body_AnimBP_C.BlueprintInitializeAnimation
-// (Event, Public, BlueprintEvent)
-
-void UCine_Body_AnimBP_C::BlueprintInitializeAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cine_Body_AnimBP_C", "BlueprintInitializeAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Cine_Body_AnimBP.Cine_Body_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -69,6 +35,40 @@ void UCine_Body_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 	if (AnimGraph_0 != nullptr)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+}
+
+
+// Function Cine_Body_AnimBP.Cine_Body_AnimBP_C.BlueprintInitializeAnimation
+// (Event, Public, BlueprintEvent)
+
+void UCine_Body_AnimBP_C::BlueprintInitializeAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cine_Body_AnimBP_C", "BlueprintInitializeAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Cine_Body_AnimBP.Cine_Body_AnimBP_C.ExecuteUbergraph_Cine_Body_AnimBP
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UCine_Body_AnimBP_C::ExecuteUbergraph_Cine_Body_AnimBP(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cine_Body_AnimBP_C", "ExecuteUbergraph_Cine_Body_AnimBP");
+
+	Params::Cine_Body_AnimBP_C_ExecuteUbergraph_Cine_Body_AnimBP Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

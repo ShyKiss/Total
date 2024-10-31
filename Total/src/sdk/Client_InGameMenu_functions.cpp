@@ -37,6 +37,20 @@ void UClient_InGameMenu_C::ExecuteUbergraph_Client_InGameMenu(int32 EntryPoint)
 }
 
 
+// Function Client_InGameMenu.Client_InGameMenu_C.OnLeavePartyShortcutPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UClient_InGameMenu_C::OnLeavePartyShortcutPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Client_InGameMenu_C", "OnLeavePartyShortcutPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__Client_InGameMenu_PartyWidget_K2Node_ComponentBoundEvent_7_OnSocialMenuEntryActionRequested__DelegateSignature
 // (BlueprintEvent)
 // Parameters:

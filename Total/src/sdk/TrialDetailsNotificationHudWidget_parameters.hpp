@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function TrialDetailsNotificationHudWidget.TrialDetailsNotificationHudWidget_C.ExecuteUbergraph_TrialDetailsNotificationHudWidget
-// 0x04E0 (0x04E0 - 0x0000)
+// 0x04D8 (0x04D8 - 0x0000)
 struct TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget final
 {
 public:
@@ -62,19 +62,19 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_Select_Default;                             // 0x0158(0x0018)()
 	class URBGameStructureConfig*                 CallFunc_GetGameStructureConfig_ReturnValue;       // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRBTrialInfoRow                        CallFunc_GetTrialInfo_ReturnValue;                 // 0x0178(0x00F0)(ConstParm)
-	struct FRBProgramInfoRow                      CallFunc_GetProgramInfo_ReturnValue;               // 0x0268(0x01D8)(ConstParm)
-	class FText                                   K2Node_Select_Default_1;                           // 0x0440(0x0018)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0458(0x0028)()
-	TSoftObjectPtr<class UObject>                 K2Node_Select_Default_2;                           // 0x0480(0x0028)(HasGetValueTypeHash)
-	struct FMargin                                K2Node_Select_Default_3;                           // 0x04A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class FText                                   K2Node_Select_Default_4;                           // 0x04B8(0x0018)()
-	ESlateVisibility                              K2Node_Select_Default_5;                           // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x04D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRBTrialInfoRow                        CallFunc_GetTrialInfo_ReturnValue;                 // 0x0178(0x00E8)(ConstParm)
+	struct FRBProgramInfoRow                      CallFunc_GetProgramInfo_ReturnValue;               // 0x0260(0x01D8)(ConstParm)
+	class FText                                   K2Node_Select_Default_1;                           // 0x0438(0x0018)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0450(0x0028)()
+	TSoftObjectPtr<class UObject>                 K2Node_Select_Default_2;                           // 0x0478(0x0028)(HasGetValueTypeHash)
+	struct FMargin                                K2Node_Select_Default_3;                           // 0x04A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   K2Node_Select_Default_4;                           // 0x04B0(0x0018)()
+	ESlateVisibility                              K2Node_Select_Default_5;                           // 0x04C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x04D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget) == 0x000008, "Wrong alignment on TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget");
-static_assert(sizeof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget) == 0x0004E0, "Wrong size on TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget");
+static_assert(sizeof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget) == 0x0004D8, "Wrong size on TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget");
 static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, EntryPoint) == 0x000000, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_CustomEvent_Loaded) == 0x000008, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_CustomEvent_Loaded' has a wrong offset!");
 static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -107,14 +107,14 @@ static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_Tria
 static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default) == 0x000158, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, CallFunc_GetGameStructureConfig_ReturnValue) == 0x000170, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::CallFunc_GetGameStructureConfig_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, CallFunc_GetTrialInfo_ReturnValue) == 0x000178, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::CallFunc_GetTrialInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, CallFunc_GetProgramInfo_ReturnValue) == 0x000268, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::CallFunc_GetProgramInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_1) == 0x000440, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_MakeStruct_SlateColor) == 0x000458, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_2) == 0x000480, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_3) == 0x0004A8, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_4) == 0x0004B8, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_5) == 0x0004D0, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x0004D8, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, CallFunc_GetProgramInfo_ReturnValue) == 0x000260, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::CallFunc_GetProgramInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_1) == 0x000438, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_MakeStruct_SlateColor) == 0x000450, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_2) == 0x000478, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_3) == 0x0004A0, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_4) == 0x0004B0, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_4' has a wrong offset!");
+static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, K2Node_Select_Default_5) == 0x0004C8, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::K2Node_Select_Default_5' has a wrong offset!");
+static_assert(offsetof(TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x0004D0, "Member 'TrialDetailsNotificationHudWidget_C_ExecuteUbergraph_TrialDetailsNotificationHudWidget::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
 
 // Function TrialDetailsNotificationHudWidget.TrialDetailsNotificationHudWidget_C.Show
 // 0x0014 (0x0014 - 0x0000)

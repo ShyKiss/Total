@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HudBarElement_Animated.HudBarElement_Animated_C
-// 0x0088 (0x02E8 - 0x0260)
+// 0x0090 (0x02F0 - 0x0260)
 class UHudBarElement_Animated_C final : public UUserWidget
 {
 public:
@@ -45,17 +45,18 @@ public:
 	float                                         MaxHealth;                                         // 0x02DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PlayerHealthValue;                                 // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PlayerBleedingLeft;                                // 0x02E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TweenSetup;                                        // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void TweenCompleted__DelegateSignature();
 	void BleedoutCompleted__DelegateSignature();
 	void ExecuteUbergraph_HudBarElement_Animated(int32 EntryPoint);
-	void Construct();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void PreConstruct(bool IsDesignTime);
 	void CreateTextures();
 	void StartTween();
-	void Setup_Tints(const struct FLinearColor& Tint, const struct FLinearColor& BgdTint, const struct FLinearColor& GlowTInt);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Construct();
+	void Setup_Tints(const struct FLinearColor& Tint, const struct FLinearColor& BgdTint, const struct FLinearColor& GlowTint);
 	void SetupNewTween(float NewValue, bool IsStartBracket, bool IsFinishBracket);
 	void UpdateTween();
 	void SetEntireBar(bool Fill);
@@ -75,7 +76,7 @@ public:
 	}
 };
 static_assert(alignof(UHudBarElement_Animated_C) == 0x000008, "Wrong alignment on UHudBarElement_Animated_C");
-static_assert(sizeof(UHudBarElement_Animated_C) == 0x0002E8, "Wrong size on UHudBarElement_Animated_C");
+static_assert(sizeof(UHudBarElement_Animated_C) == 0x0002F0, "Wrong size on UHudBarElement_Animated_C");
 static_assert(offsetof(UHudBarElement_Animated_C, UberGraphFrame) == 0x000260, "Member 'UHudBarElement_Animated_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHudBarElement_Animated_C, BleedingBracket) == 0x000268, "Member 'UHudBarElement_Animated_C::BleedingBracket' has a wrong offset!");
 static_assert(offsetof(UHudBarElement_Animated_C, Bracket) == 0x000270, "Member 'UHudBarElement_Animated_C::Bracket' has a wrong offset!");
@@ -94,6 +95,7 @@ static_assert(offsetof(UHudBarElement_Animated_C, MinHealth) == 0x0002D8, "Membe
 static_assert(offsetof(UHudBarElement_Animated_C, MaxHealth) == 0x0002DC, "Member 'UHudBarElement_Animated_C::MaxHealth' has a wrong offset!");
 static_assert(offsetof(UHudBarElement_Animated_C, PlayerHealthValue) == 0x0002E0, "Member 'UHudBarElement_Animated_C::PlayerHealthValue' has a wrong offset!");
 static_assert(offsetof(UHudBarElement_Animated_C, PlayerBleedingLeft) == 0x0002E4, "Member 'UHudBarElement_Animated_C::PlayerBleedingLeft' has a wrong offset!");
+static_assert(offsetof(UHudBarElement_Animated_C, TweenSetup) == 0x0002E8, "Member 'UHudBarElement_Animated_C::TweenSetup' has a wrong offset!");
 
 }
 

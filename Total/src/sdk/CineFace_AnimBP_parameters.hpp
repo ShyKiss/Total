@@ -16,6 +16,17 @@
 namespace SDK::Params
 {
 
+// Function CineFace_AnimBP.CineFace_AnimBP_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct CineFace_AnimBP_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(CineFace_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on CineFace_AnimBP_C_AnimGraph");
+static_assert(sizeof(CineFace_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on CineFace_AnimBP_C_AnimGraph");
+static_assert(offsetof(CineFace_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'CineFace_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+
 // Function CineFace_AnimBP.CineFace_AnimBP_C.ExecuteUbergraph_CineFace_AnimBP
 // 0x0058 (0x0058 - 0x0000)
 struct CineFace_AnimBP_C_ExecuteUbergraph_CineFace_AnimBP final
@@ -50,17 +61,6 @@ static_assert(offsetof(CineFace_AnimBP_C_ExecuteUbergraph_CineFace_AnimBP, CallF
 static_assert(offsetof(CineFace_AnimBP_C_ExecuteUbergraph_CineFace_AnimBP, K2Node_DynamicCast_AsCine_Character_Base_BP_1) == 0x000040, "Member 'CineFace_AnimBP_C_ExecuteUbergraph_CineFace_AnimBP::K2Node_DynamicCast_AsCine_Character_Base_BP_1' has a wrong offset!");
 static_assert(offsetof(CineFace_AnimBP_C_ExecuteUbergraph_CineFace_AnimBP, K2Node_DynamicCast_bSuccess_1) == 0x000048, "Member 'CineFace_AnimBP_C_ExecuteUbergraph_CineFace_AnimBP::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 static_assert(offsetof(CineFace_AnimBP_C_ExecuteUbergraph_CineFace_AnimBP, CallFunc_GetFacialAnimation_Anim) == 0x000050, "Member 'CineFace_AnimBP_C_ExecuteUbergraph_CineFace_AnimBP::CallFunc_GetFacialAnimation_Anim' has a wrong offset!");
-
-// Function CineFace_AnimBP.CineFace_AnimBP_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct CineFace_AnimBP_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(CineFace_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on CineFace_AnimBP_C_AnimGraph");
-static_assert(sizeof(CineFace_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on CineFace_AnimBP_C_AnimGraph");
-static_assert(offsetof(CineFace_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'CineFace_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 }
 

@@ -17,6 +17,28 @@
 namespace SDK::Params
 {
 
+// Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct Cine_Futterman_AnimBP_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(Cine_Futterman_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on Cine_Futterman_AnimBP_C_AnimGraph");
+static_assert(sizeof(Cine_Futterman_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on Cine_Futterman_AnimBP_C_AnimGraph");
+static_assert(offsetof(Cine_Futterman_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'Cine_Futterman_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+
+// Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation");
+static_assert(sizeof(Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation");
+static_assert(offsetof(Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+
 // Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.ExecuteUbergraph_Cine_Futterman_AnimBP
 // 0x0058 (0x0058 - 0x0000)
 struct Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_AnimBP final
@@ -57,28 +79,6 @@ static_assert(offsetof(Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_A
 static_assert(offsetof(Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_AnimBP, CallFunc_Add_FloatFloat_ReturnValue) == 0x000044, "Member 'Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_AnimBP::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_AnimBP, CallFunc_Percent_FloatFloat_ReturnValue) == 0x000048, "Member 'Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_AnimBP::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_AnimBP, CallFunc_MakeRotator_ReturnValue) == 0x00004C, "Member 'Cine_Futterman_AnimBP_C_ExecuteUbergraph_Cine_Futterman_AnimBP::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-
-// Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(sizeof(Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(offsetof(Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'Cine_Futterman_AnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
-
-// Function Cine_Futterman_AnimBP.Cine_Futterman_AnimBP_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct Cine_Futterman_AnimBP_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(Cine_Futterman_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on Cine_Futterman_AnimBP_C_AnimGraph");
-static_assert(sizeof(Cine_Futterman_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on Cine_Futterman_AnimBP_C_AnimGraph");
-static_assert(offsetof(Cine_Futterman_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'Cine_Futterman_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 }
 

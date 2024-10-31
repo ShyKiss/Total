@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "NPCSkinData_structs.hpp"
+#include "Engine_structs.hpp"
+#include "OPP_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "RBNPC_BP_classes.hpp"
 
 
@@ -21,31 +21,31 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass RBNPC_Big_BP.RBNPC_Big_BP_C
-// 0x01C0 (0x5B20 - 0x5960)
+// 0x01C0 (0x5BE0 - 0x5A20)
 class ARBNPC_Big_BP_C final : public ARBNPC_BP_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_RBNPC_Big_BP_C;                     // 0x5960(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USkeletalMeshComponent*                 Head_Mesh_EDITOR;                                  // 0x5968(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 FullBody_Mesh_EDITOR;                              // 0x5970(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 HairMesh;                                          // 0x5978(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 Head_Mesh;                                         // 0x5980(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 FullBody_Mesh;                                     // 0x5988(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TMap<ENPCWeapon, struct FVector>              LargeWeaponScales;                                 // 0x5990(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FString                                 SelectedVoice;                                     // 0x59E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	TArray<struct FNPCSkinData>                   MaleSkins;                                         // 0x59F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UPoseAsset*                             PoseAsset;                                         // 0x5A00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class USkeletalMeshComponent*>         ExtraMeshes;                                       // 0x5A08(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<struct FNPCSkinData>                   FemaleSkins;                                       // 0x5A18(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         MaleVoices;                                        // 0x5A28(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         FemaleVoices;                                      // 0x5A38(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsFemale;                                          // 0x5A48(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5A49[0x7];                                     // 0x5A49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FNPCSkinData                           SelectedSkin;                                      // 0x5A50(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         SelectedMeshIndex;                                 // 0x5B10(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	bool                                          DelayedApplyCustomization;                         // 0x5B14(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5B15[0x3];                                     // 0x5B15(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SelectedVoiceIndex_Server;                         // 0x5B18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_RBNPC_Big_BP_C;                     // 0x5A20(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USkeletalMeshComponent*                 Head_Mesh_EDITOR;                                  // 0x5A28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 FullBody_Mesh_EDITOR;                              // 0x5A30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 HairMesh;                                          // 0x5A38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 Head_Mesh;                                         // 0x5A40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 FullBody_Mesh;                                     // 0x5A48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TMap<ENPCWeapon, struct FVector>              LargeWeaponScales;                                 // 0x5A50(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FString                                 SelectedVoice;                                     // 0x5AA0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	TArray<struct FNPCSkinData>                   MaleSkins;                                         // 0x5AB0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UPoseAsset*                             PoseAsset;                                         // 0x5AC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class USkeletalMeshComponent*>         ExtraMeshes;                                       // 0x5AC8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<struct FNPCSkinData>                   FemaleSkins;                                       // 0x5AD8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class FString>                         MaleVoices;                                        // 0x5AE8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class FString>                         FemaleVoices;                                      // 0x5AF8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsFemale;                                          // 0x5B08(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5B09[0x7];                                     // 0x5B09(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNPCSkinData                           SelectedSkin;                                      // 0x5B10(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         SelectedMeshIndex;                                 // 0x5BD0(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	bool                                          DelayedApplyCustomization;                         // 0x5BD4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5BD5[0x3];                                     // 0x5BD5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SelectedVoiceIndex_Server;                         // 0x5BD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_RBNPC_Big_BP(int32 EntryPoint);
@@ -80,26 +80,26 @@ public:
 	}
 };
 static_assert(alignof(ARBNPC_Big_BP_C) == 0x000010, "Wrong alignment on ARBNPC_Big_BP_C");
-static_assert(sizeof(ARBNPC_Big_BP_C) == 0x005B20, "Wrong size on ARBNPC_Big_BP_C");
-static_assert(offsetof(ARBNPC_Big_BP_C, UberGraphFrame_RBNPC_Big_BP_C) == 0x005960, "Member 'ARBNPC_Big_BP_C::UberGraphFrame_RBNPC_Big_BP_C' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, Head_Mesh_EDITOR) == 0x005968, "Member 'ARBNPC_Big_BP_C::Head_Mesh_EDITOR' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, FullBody_Mesh_EDITOR) == 0x005970, "Member 'ARBNPC_Big_BP_C::FullBody_Mesh_EDITOR' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, HairMesh) == 0x005978, "Member 'ARBNPC_Big_BP_C::HairMesh' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, Head_Mesh) == 0x005980, "Member 'ARBNPC_Big_BP_C::Head_Mesh' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, FullBody_Mesh) == 0x005988, "Member 'ARBNPC_Big_BP_C::FullBody_Mesh' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, LargeWeaponScales) == 0x005990, "Member 'ARBNPC_Big_BP_C::LargeWeaponScales' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, SelectedVoice) == 0x0059E0, "Member 'ARBNPC_Big_BP_C::SelectedVoice' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, MaleSkins) == 0x0059F0, "Member 'ARBNPC_Big_BP_C::MaleSkins' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, PoseAsset) == 0x005A00, "Member 'ARBNPC_Big_BP_C::PoseAsset' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, ExtraMeshes) == 0x005A08, "Member 'ARBNPC_Big_BP_C::ExtraMeshes' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, FemaleSkins) == 0x005A18, "Member 'ARBNPC_Big_BP_C::FemaleSkins' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, MaleVoices) == 0x005A28, "Member 'ARBNPC_Big_BP_C::MaleVoices' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, FemaleVoices) == 0x005A38, "Member 'ARBNPC_Big_BP_C::FemaleVoices' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, IsFemale) == 0x005A48, "Member 'ARBNPC_Big_BP_C::IsFemale' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, SelectedSkin) == 0x005A50, "Member 'ARBNPC_Big_BP_C::SelectedSkin' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, SelectedMeshIndex) == 0x005B10, "Member 'ARBNPC_Big_BP_C::SelectedMeshIndex' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, DelayedApplyCustomization) == 0x005B14, "Member 'ARBNPC_Big_BP_C::DelayedApplyCustomization' has a wrong offset!");
-static_assert(offsetof(ARBNPC_Big_BP_C, SelectedVoiceIndex_Server) == 0x005B18, "Member 'ARBNPC_Big_BP_C::SelectedVoiceIndex_Server' has a wrong offset!");
+static_assert(sizeof(ARBNPC_Big_BP_C) == 0x005BE0, "Wrong size on ARBNPC_Big_BP_C");
+static_assert(offsetof(ARBNPC_Big_BP_C, UberGraphFrame_RBNPC_Big_BP_C) == 0x005A20, "Member 'ARBNPC_Big_BP_C::UberGraphFrame_RBNPC_Big_BP_C' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, Head_Mesh_EDITOR) == 0x005A28, "Member 'ARBNPC_Big_BP_C::Head_Mesh_EDITOR' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, FullBody_Mesh_EDITOR) == 0x005A30, "Member 'ARBNPC_Big_BP_C::FullBody_Mesh_EDITOR' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, HairMesh) == 0x005A38, "Member 'ARBNPC_Big_BP_C::HairMesh' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, Head_Mesh) == 0x005A40, "Member 'ARBNPC_Big_BP_C::Head_Mesh' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, FullBody_Mesh) == 0x005A48, "Member 'ARBNPC_Big_BP_C::FullBody_Mesh' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, LargeWeaponScales) == 0x005A50, "Member 'ARBNPC_Big_BP_C::LargeWeaponScales' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, SelectedVoice) == 0x005AA0, "Member 'ARBNPC_Big_BP_C::SelectedVoice' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, MaleSkins) == 0x005AB0, "Member 'ARBNPC_Big_BP_C::MaleSkins' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, PoseAsset) == 0x005AC0, "Member 'ARBNPC_Big_BP_C::PoseAsset' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, ExtraMeshes) == 0x005AC8, "Member 'ARBNPC_Big_BP_C::ExtraMeshes' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, FemaleSkins) == 0x005AD8, "Member 'ARBNPC_Big_BP_C::FemaleSkins' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, MaleVoices) == 0x005AE8, "Member 'ARBNPC_Big_BP_C::MaleVoices' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, FemaleVoices) == 0x005AF8, "Member 'ARBNPC_Big_BP_C::FemaleVoices' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, IsFemale) == 0x005B08, "Member 'ARBNPC_Big_BP_C::IsFemale' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, SelectedSkin) == 0x005B10, "Member 'ARBNPC_Big_BP_C::SelectedSkin' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, SelectedMeshIndex) == 0x005BD0, "Member 'ARBNPC_Big_BP_C::SelectedMeshIndex' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, DelayedApplyCustomization) == 0x005BD4, "Member 'ARBNPC_Big_BP_C::DelayedApplyCustomization' has a wrong offset!");
+static_assert(offsetof(ARBNPC_Big_BP_C, SelectedVoiceIndex_Server) == 0x005BD8, "Member 'ARBNPC_Big_BP_C::SelectedVoiceIndex_Server' has a wrong offset!");
 
 }
 

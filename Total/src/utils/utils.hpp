@@ -16,6 +16,7 @@ enum RenderingBackend_t {
 namespace Utils {
 
 	inline HWND mainWindow = nullptr;
+	inline HINSTANCE TotalInstance;
 
 	void SetRenderingBackend(RenderingBackend_t eRenderingBackend);
 	RenderingBackend_t GetRenderingBackend( );

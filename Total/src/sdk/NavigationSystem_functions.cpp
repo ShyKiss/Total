@@ -17,31 +17,6 @@
 namespace SDK
 {
 
-// Function NavigationSystem.NavModifierVolume.SetAreaClass
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// TSubclassOf<class UNavArea>             NewAreaClass                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ANavModifierVolume::SetAreaClass(TSubclassOf<class UNavArea> NewAreaClass)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavModifierVolume", "SetAreaClass");
-
-	Params::NavModifierVolume_SetAreaClass Parms{};
-
-	Parms.NewAreaClass = NewAreaClass;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -57,6 +32,31 @@ void UNavRelevantComponent::SetNavigationRelevancy(bool bRelevant)
 	Params::NavRelevantComponent_SetNavigationRelevancy Parms{};
 
 	Parms.bRelevant = bRelevant;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function NavigationSystem.NavModifierVolume.SetAreaClass
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TSubclassOf<class UNavArea>             NewAreaClass                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ANavModifierVolume::SetAreaClass(TSubclassOf<class UNavArea> NewAreaClass)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavModifierVolume", "SetAreaClass");
+
+	Params::NavModifierVolume_SetAreaClass Parms{};
+
+	Parms.NewAreaClass = NewAreaClass;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

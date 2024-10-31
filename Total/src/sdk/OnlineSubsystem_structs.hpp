@@ -46,6 +46,21 @@ enum class EMPMatchOutcome : uint8
 	EMPMatchOutcome_MAX                      = 10,
 };
 
+// ScriptStruct OnlineSubsystem.InAppPurchaseRestoreInfo
+// 0x0030 (0x0030 - 0x0000)
+struct FInAppPurchaseRestoreInfo final
+{
+public:
+	class FString                                 Identifier;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReceiptData;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 TransactionIdentifier;                             // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FInAppPurchaseRestoreInfo) == 0x000008, "Wrong alignment on FInAppPurchaseRestoreInfo");
+static_assert(sizeof(FInAppPurchaseRestoreInfo) == 0x000030, "Wrong size on FInAppPurchaseRestoreInfo");
+static_assert(offsetof(FInAppPurchaseRestoreInfo, Identifier) == 0x000000, "Member 'FInAppPurchaseRestoreInfo::Identifier' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseRestoreInfo, ReceiptData) == 0x000010, "Member 'FInAppPurchaseRestoreInfo::ReceiptData' has a wrong offset!");
+static_assert(offsetof(FInAppPurchaseRestoreInfo, TransactionIdentifier) == 0x000020, "Member 'FInAppPurchaseRestoreInfo::TransactionIdentifier' has a wrong offset!");
+
 // ScriptStruct OnlineSubsystem.InAppPurchaseProductInfo
 // 0x00A8 (0x00A8 - 0x0000)
 struct FInAppPurchaseProductInfo final
@@ -77,21 +92,6 @@ static_assert(offsetof(FInAppPurchaseProductInfo, CurrencySymbol) == 0x000068, "
 static_assert(offsetof(FInAppPurchaseProductInfo, DecimalSeparator) == 0x000078, "Member 'FInAppPurchaseProductInfo::DecimalSeparator' has a wrong offset!");
 static_assert(offsetof(FInAppPurchaseProductInfo, GroupingSeparator) == 0x000088, "Member 'FInAppPurchaseProductInfo::GroupingSeparator' has a wrong offset!");
 static_assert(offsetof(FInAppPurchaseProductInfo, ReceiptData) == 0x000098, "Member 'FInAppPurchaseProductInfo::ReceiptData' has a wrong offset!");
-
-// ScriptStruct OnlineSubsystem.InAppPurchaseRestoreInfo
-// 0x0030 (0x0030 - 0x0000)
-struct FInAppPurchaseRestoreInfo final
-{
-public:
-	class FString                                 Identifier;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReceiptData;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 TransactionIdentifier;                             // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FInAppPurchaseRestoreInfo) == 0x000008, "Wrong alignment on FInAppPurchaseRestoreInfo");
-static_assert(sizeof(FInAppPurchaseRestoreInfo) == 0x000030, "Wrong size on FInAppPurchaseRestoreInfo");
-static_assert(offsetof(FInAppPurchaseRestoreInfo, Identifier) == 0x000000, "Member 'FInAppPurchaseRestoreInfo::Identifier' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseRestoreInfo, ReceiptData) == 0x000010, "Member 'FInAppPurchaseRestoreInfo::ReceiptData' has a wrong offset!");
-static_assert(offsetof(FInAppPurchaseRestoreInfo, TransactionIdentifier) == 0x000020, "Member 'FInAppPurchaseRestoreInfo::TransactionIdentifier' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystem.NamedInterfaceDef
 // 0x0018 (0x0018 - 0x0000)

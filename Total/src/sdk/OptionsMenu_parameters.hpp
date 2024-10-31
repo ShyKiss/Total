@@ -47,7 +47,8 @@ public:
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBMenuOptionsTab*                      K2Node_DynamicCast_AsRB_Menu_Options_Tab_1;        // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsResettingToDefault_ReturnValue;         // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -120,6 +121,7 @@ static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_Dynami
 static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsRB_Menu_Options_Tab_1) == 0x000098, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsRB_Menu_Options_Tab_1' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_1) == 0x0000A0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsResettingToDefault_ReturnValue) == 0x0000A1, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsResettingToDefault_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0000A8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0000B0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsValid_ReturnValue) == 0x0000B8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -378,7 +380,7 @@ static_assert(offsetof(OptionsMenu_C_ConditionalShowApplyDialog, K2Node_CreateDe
 static_assert(offsetof(OptionsMenu_C_ConditionalShowApplyDialog, CallFunc_HasUnsavedChanges_ReturnValue) == 0x000064, "Member 'OptionsMenu_C_ConditionalShowApplyDialog::CallFunc_HasUnsavedChanges_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.CreateOptionTabs
-// 0x0290 (0x0290 - 0x0000)
+// 0x0288 (0x0288 - 0x0000)
 struct OptionsMenu_C_CreateOptionTabs final
 {
 public:
@@ -389,126 +391,126 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOptionsCategory_C*                     CurrentCategory;                                   // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UOptionsTab_C*                          CurrentTab;                                        // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UOptionsCategory_C*                     CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_4;                  // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UOptionsCategory_C*                     CallFunc_Create_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_4;                  // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_4;                   // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	struct FRBOptionTabData                       CallFunc_Array_Get_Item;                           // 0x0090(0x0030)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRBOptionCategoryData                  CallFunc_Array_Get_Item_1;                         // 0x00C8(0x0028)()
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FOptionData                            CallFunc_Array_Get_Item_2;                         // 0x00F8(0x00E0)()
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBOptionsTabMenuButton_C*              CallFunc_Array_Get_Item_3;                         // 0x01E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UOptionsTab_C*                          CallFunc_Create_ReturnValue_1;                     // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRBOptionTabData                       CallFunc_Array_Get_Item;                           // 0x0098(0x0030)()
+	class URBOptionsTabMenuButton_C*              CallFunc_Array_Get_Item_1;                         // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRBOptionCategoryData                  CallFunc_Array_Get_Item_2;                         // 0x00D0(0x0028)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FOptionData                            CallFunc_Array_Get_Item_3;                         // 0x0100(0x00E0)()
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E5[0x3];                                      // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1ED[0x3];                                      // 0x01ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBMenuOptionsEntry*                    CallFunc_Array_Get_Item_4;                         // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x01FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1FD[0x3];                                      // 0x01FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_4;                   // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuOptionsEntry*                    CallFunc_Array_Get_Item_4;                         // 0x0208(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UOptionsTab_C*                          CallFunc_Array_Get_Item_5;                         // 0x0210(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21C[0x4];                                      // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0220(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UOptionsTab_C*                          CallFunc_Array_Get_Item_5;                         // 0x0200(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0210(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_219[0x7];                                      // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot;         // 0x0220(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_229[0x7];                                      // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot;         // 0x0230(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuOptionsEntry*                    CallFunc_CreateOptionEntry_Entry_Created;          // 0x0240(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanBeDisplayed_ReturnValue;               // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_249[0x3];                                      // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class URBMenuOptionsEntry* Entry)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0250(0x0010)(ZeroConstructor, NoDestructor)
-	class URBOptionsTabMenuButton_C*              CallFunc_Create_ReturnValue_2;                     // 0x0260(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0270(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_2;                   // 0x0278(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUniformGridSlot*                       CallFunc_AddChildToUniformGrid_ReturnValue;        // 0x0288(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBMenuOptionsEntry*                    CallFunc_CreateOptionEntry_Entry_Created;          // 0x0230(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CanBeDisplayed_ReturnValue;               // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_23A[0x2];                                      // 0x023A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class URBMenuOptionsEntry* Entry)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0240(0x0010)(ZeroConstructor, NoDestructor)
+	class UOptionsTab_C*                          CallFunc_Create_ReturnValue_1;                     // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBOptionsTabMenuButton_C*              CallFunc_Create_ReturnValue_2;                     // 0x0258(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_264[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0268(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_2;                   // 0x0270(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUniformGridSlot*                       CallFunc_AddChildToUniformGrid_ReturnValue;        // 0x0280(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(OptionsMenu_C_CreateOptionTabs) == 0x000008, "Wrong alignment on OptionsMenu_C_CreateOptionTabs");
-static_assert(sizeof(OptionsMenu_C_CreateOptionTabs) == 0x000290, "Wrong size on OptionsMenu_C_CreateOptionTabs");
+static_assert(sizeof(OptionsMenu_C_CreateOptionTabs) == 0x000288, "Wrong size on OptionsMenu_C_CreateOptionTabs");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, HasOneValidEntry) == 0x000000, "Member 'OptionsMenu_C_CreateOptionTabs::HasOneValidEntry' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CurrentCategoriesEntries) == 0x000008, "Member 'OptionsMenu_C_CreateOptionTabs::CurrentCategoriesEntries' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CurrentTabIndex) == 0x000018, "Member 'OptionsMenu_C_CreateOptionTabs::CurrentTabIndex' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CurrentCategory) == 0x000020, "Member 'OptionsMenu_C_CreateOptionTabs::CurrentCategory' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CurrentTab) == 0x000028, "Member 'OptionsMenu_C_CreateOptionTabs::CurrentTab' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable) == 0x000030, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable) == 0x000034, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Create_ReturnValue) == 0x000040, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable_1) == 0x000048, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue_1) == 0x00004C, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable_1) == 0x000050, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable_2) == 0x000054, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue_2) == 0x000058, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable_2) == 0x00005C, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable_3) == 0x000060, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue_3) == 0x000064, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable_4) == 0x000068, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue_4) == 0x00006C, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable_3) == 0x000070, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable_3' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable) == 0x000030, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable) == 0x000038, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable_1) == 0x00003C, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable_2) == 0x000040, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue_1) == 0x000044, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue_2) == 0x000048, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable_1) == 0x00004C, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable_3) == 0x000050, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue_3) == 0x000054, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable_2) == 0x000058, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Create_ReturnValue) == 0x000060, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable_3) == 0x000068, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable_3' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Loop_Counter_Variable_4) == 0x00006C, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Add_IntInt_ReturnValue_4) == 0x000070, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable_4) == 0x000074, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable_4' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000078, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, K2Node_CreateDelegate_OutputDelegate) == 0x000080, "Member 'OptionsMenu_C_CreateOptionTabs::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item) == 0x000090, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Length_ReturnValue) == 0x0000C0, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Less_IntInt_ReturnValue) == 0x0000C4, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_LastIndex_ReturnValue) == 0x000090, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item) == 0x000098, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item_1) == 0x0000C8, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Length_ReturnValue_1) == 0x0000F0, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item_2) == 0x0000F8, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001D8, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Length_ReturnValue_2) == 0x0001DC, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Less_IntInt_ReturnValue_2) == 0x0001E0, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_LastIndex_ReturnValue) == 0x0001E4, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item_3) == 0x0001E8, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Create_ReturnValue_1) == 0x0001F0, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Create_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item_2) == 0x0000D0, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Length_ReturnValue) == 0x0000F8, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Less_IntInt_ReturnValue) == 0x0000FC, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item_3) == 0x000100, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Length_ReturnValue_1) == 0x0001E0, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001E4, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Length_ReturnValue_2) == 0x0001E8, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Less_IntInt_ReturnValue_2) == 0x0001EC, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item_4) == 0x0001F0, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item_4' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Length_ReturnValue_3) == 0x0001F8, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Less_IntInt_ReturnValue_3) == 0x0001FC, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, Temp_int_Array_Index_Variable_4) == 0x000200, "Member 'OptionsMenu_C_CreateOptionTabs::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item_4) == 0x000208, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item_5) == 0x000210, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Length_ReturnValue_4) == 0x000218, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_AddChild_ReturnValue) == 0x000220, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Less_IntInt_ReturnValue_4) == 0x000228, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, K2Node_DynamicCast_AsWidget_Switcher_Slot) == 0x000230, "Member 'OptionsMenu_C_CreateOptionTabs::K2Node_DynamicCast_AsWidget_Switcher_Slot' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, K2Node_DynamicCast_bSuccess) == 0x000238, "Member 'OptionsMenu_C_CreateOptionTabs::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_CreateOptionEntry_Entry_Created) == 0x000240, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_CreateOptionEntry_Entry_Created' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_CanBeDisplayed_ReturnValue) == 0x000248, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_CanBeDisplayed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Add_ReturnValue) == 0x00024C, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, K2Node_CreateDelegate_OutputDelegate_1) == 0x000250, "Member 'OptionsMenu_C_CreateOptionTabs::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Create_ReturnValue_2) == 0x000260, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Add_ReturnValue_1) == 0x000268, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_AddChild_ReturnValue_1) == 0x000270, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_AddChild_ReturnValue_2) == 0x000278, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_AddChild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Add_ReturnValue_2) == 0x000280, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_AddChildToUniformGrid_ReturnValue) == 0x000288, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_AddChildToUniformGrid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Get_Item_5) == 0x000200, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Get_Item_5' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Length_ReturnValue_4) == 0x000208, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_AddChild_ReturnValue) == 0x000210, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Less_IntInt_ReturnValue_4) == 0x000218, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, K2Node_DynamicCast_AsWidget_Switcher_Slot) == 0x000220, "Member 'OptionsMenu_C_CreateOptionTabs::K2Node_DynamicCast_AsWidget_Switcher_Slot' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, K2Node_DynamicCast_bSuccess) == 0x000228, "Member 'OptionsMenu_C_CreateOptionTabs::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_CreateOptionEntry_Entry_Created) == 0x000230, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_CreateOptionEntry_Entry_Created' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_IsValid_ReturnValue) == 0x000238, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_CanBeDisplayed_ReturnValue) == 0x000239, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_CanBeDisplayed_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Add_ReturnValue) == 0x00023C, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, K2Node_CreateDelegate_OutputDelegate_1) == 0x000240, "Member 'OptionsMenu_C_CreateOptionTabs::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Create_ReturnValue_1) == 0x000250, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Create_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Create_ReturnValue_2) == 0x000258, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Create_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Add_ReturnValue_1) == 0x000260, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_AddChild_ReturnValue_1) == 0x000268, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_AddChild_ReturnValue_2) == 0x000270, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_AddChild_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_Array_Add_ReturnValue_2) == 0x000278, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_CreateOptionTabs, CallFunc_AddChildToUniformGrid_ReturnValue) == 0x000280, "Member 'OptionsMenu_C_CreateOptionTabs::CallFunc_AddChildToUniformGrid_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.CreateOptionEntry
 // 0x0120 (0x0120 - 0x0000)
@@ -586,7 +588,8 @@ public:
 	class UWidget*                                CallFunc_GetActiveWidget_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBMenuOptionsTab*                      K2Node_DynamicCast_AsRB_Menu_Options_Tab;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsResettingToDefault_ReturnValue;         // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOptionsMenu_C*                         K2Node_DynamicCast_AsOptions_Menu;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -607,6 +610,7 @@ static_assert(offsetof(OptionsMenu_C_HandleResetKeyPressed, K2Node_DynamicCast_b
 static_assert(offsetof(OptionsMenu_C_HandleResetKeyPressed, CallFunc_GetActiveWidget_ReturnValue) == 0x000018, "Member 'OptionsMenu_C_HandleResetKeyPressed::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_HandleResetKeyPressed, K2Node_DynamicCast_AsRB_Menu_Options_Tab) == 0x000020, "Member 'OptionsMenu_C_HandleResetKeyPressed::K2Node_DynamicCast_AsRB_Menu_Options_Tab' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_HandleResetKeyPressed, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'OptionsMenu_C_HandleResetKeyPressed::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(OptionsMenu_C_HandleResetKeyPressed, CallFunc_IsResettingToDefault_ReturnValue) == 0x000029, "Member 'OptionsMenu_C_HandleResetKeyPressed::CallFunc_IsResettingToDefault_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_HandleResetKeyPressed, K2Node_DynamicCast_AsOptions_Menu) == 0x000030, "Member 'OptionsMenu_C_HandleResetKeyPressed::K2Node_DynamicCast_AsOptions_Menu' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_HandleResetKeyPressed, K2Node_DynamicCast_bSuccess_2) == 0x000038, "Member 'OptionsMenu_C_HandleResetKeyPressed::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_HandleResetKeyPressed, K2Node_DynamicCast_AsController_Mapping_Menu) == 0x000040, "Member 'OptionsMenu_C_HandleResetKeyPressed::K2Node_DynamicCast_AsController_Mapping_Menu' has a wrong offset!");

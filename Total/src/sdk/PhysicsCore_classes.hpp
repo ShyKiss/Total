@@ -19,6 +19,40 @@
 namespace SDK
 {
 
+// Class PhysicsCore.ChaosPhysicalMaterial
+// 0x0020 (0x0048 - 0x0028)
+class UChaosPhysicalMaterial final : public UObject
+{
+public:
+	float                                         Friction;                                          // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StaticFriction;                                    // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Restitution;                                       // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LinearEtherDrag;                                   // 0x0034(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AngularEtherDrag;                                  // 0x0038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SleepingLinearVelocityThreshold;                   // 0x003C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SleepingAngularVelocityThreshold;                  // 0x0040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ChaosPhysicalMaterial">();
+	}
+	static class UChaosPhysicalMaterial* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UChaosPhysicalMaterial>();
+	}
+};
+static_assert(alignof(UChaosPhysicalMaterial) == 0x000008, "Wrong alignment on UChaosPhysicalMaterial");
+static_assert(sizeof(UChaosPhysicalMaterial) == 0x000048, "Wrong size on UChaosPhysicalMaterial");
+static_assert(offsetof(UChaosPhysicalMaterial, Friction) == 0x000028, "Member 'UChaosPhysicalMaterial::Friction' has a wrong offset!");
+static_assert(offsetof(UChaosPhysicalMaterial, StaticFriction) == 0x00002C, "Member 'UChaosPhysicalMaterial::StaticFriction' has a wrong offset!");
+static_assert(offsetof(UChaosPhysicalMaterial, Restitution) == 0x000030, "Member 'UChaosPhysicalMaterial::Restitution' has a wrong offset!");
+static_assert(offsetof(UChaosPhysicalMaterial, LinearEtherDrag) == 0x000034, "Member 'UChaosPhysicalMaterial::LinearEtherDrag' has a wrong offset!");
+static_assert(offsetof(UChaosPhysicalMaterial, AngularEtherDrag) == 0x000038, "Member 'UChaosPhysicalMaterial::AngularEtherDrag' has a wrong offset!");
+static_assert(offsetof(UChaosPhysicalMaterial, SleepingLinearVelocityThreshold) == 0x00003C, "Member 'UChaosPhysicalMaterial::SleepingLinearVelocityThreshold' has a wrong offset!");
+static_assert(offsetof(UChaosPhysicalMaterial, SleepingAngularVelocityThreshold) == 0x000040, "Member 'UChaosPhysicalMaterial::SleepingAngularVelocityThreshold' has a wrong offset!");
+
 // Class PhysicsCore.PhysicalMaterial
 // 0x0058 (0x0080 - 0x0028)
 class UPhysicalMaterial : public UObject
@@ -99,40 +133,6 @@ static_assert(offsetof(UBodySetupCore, BoneName) == 0x000028, "Member 'UBodySetu
 static_assert(offsetof(UBodySetupCore, PhysicsType) == 0x000030, "Member 'UBodySetupCore::PhysicsType' has a wrong offset!");
 static_assert(offsetof(UBodySetupCore, CollisionTraceFlag) == 0x000031, "Member 'UBodySetupCore::CollisionTraceFlag' has a wrong offset!");
 static_assert(offsetof(UBodySetupCore, CollisionReponse) == 0x000032, "Member 'UBodySetupCore::CollisionReponse' has a wrong offset!");
-
-// Class PhysicsCore.ChaosPhysicalMaterial
-// 0x0020 (0x0048 - 0x0028)
-class UChaosPhysicalMaterial final : public UObject
-{
-public:
-	float                                         Friction;                                          // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StaticFriction;                                    // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Restitution;                                       // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LinearEtherDrag;                                   // 0x0034(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AngularEtherDrag;                                  // 0x0038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SleepingLinearVelocityThreshold;                   // 0x003C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SleepingAngularVelocityThreshold;                  // 0x0040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ChaosPhysicalMaterial">();
-	}
-	static class UChaosPhysicalMaterial* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UChaosPhysicalMaterial>();
-	}
-};
-static_assert(alignof(UChaosPhysicalMaterial) == 0x000008, "Wrong alignment on UChaosPhysicalMaterial");
-static_assert(sizeof(UChaosPhysicalMaterial) == 0x000048, "Wrong size on UChaosPhysicalMaterial");
-static_assert(offsetof(UChaosPhysicalMaterial, Friction) == 0x000028, "Member 'UChaosPhysicalMaterial::Friction' has a wrong offset!");
-static_assert(offsetof(UChaosPhysicalMaterial, StaticFriction) == 0x00002C, "Member 'UChaosPhysicalMaterial::StaticFriction' has a wrong offset!");
-static_assert(offsetof(UChaosPhysicalMaterial, Restitution) == 0x000030, "Member 'UChaosPhysicalMaterial::Restitution' has a wrong offset!");
-static_assert(offsetof(UChaosPhysicalMaterial, LinearEtherDrag) == 0x000034, "Member 'UChaosPhysicalMaterial::LinearEtherDrag' has a wrong offset!");
-static_assert(offsetof(UChaosPhysicalMaterial, AngularEtherDrag) == 0x000038, "Member 'UChaosPhysicalMaterial::AngularEtherDrag' has a wrong offset!");
-static_assert(offsetof(UChaosPhysicalMaterial, SleepingLinearVelocityThreshold) == 0x00003C, "Member 'UChaosPhysicalMaterial::SleepingLinearVelocityThreshold' has a wrong offset!");
-static_assert(offsetof(UChaosPhysicalMaterial, SleepingAngularVelocityThreshold) == 0x000040, "Member 'UChaosPhysicalMaterial::SleepingAngularVelocityThreshold' has a wrong offset!");
 
 // Class PhysicsCore.PhysicalMaterialPropertyBase
 // 0x0000 (0x0028 - 0x0028)

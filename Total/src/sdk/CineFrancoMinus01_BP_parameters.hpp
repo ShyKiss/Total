@@ -14,18 +14,16 @@
 namespace SDK::Params
 {
 
-// Function CineFranco-01_BP.CineFranco-01_BP_C.ExecuteUbergraph_CineFranco-01_BP
+// Function CineFranco-01_BP.CineFranco-01_BP_C.GetPoseAsset
 // 0x0008 (0x0008 - 0x0000)
-struct CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP final
+struct CineFrancoMinus01_BP_C_GetPoseAsset final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPoseAsset*                             PoseAsset;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP) == 0x000004, "Wrong alignment on CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP");
-static_assert(sizeof(CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP) == 0x000008, "Wrong size on CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP");
-static_assert(offsetof(CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP, EntryPoint) == 0x000000, "Member 'CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000004, "Member 'CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(alignof(CineFrancoMinus01_BP_C_GetPoseAsset) == 0x000008, "Wrong alignment on CineFrancoMinus01_BP_C_GetPoseAsset");
+static_assert(sizeof(CineFrancoMinus01_BP_C_GetPoseAsset) == 0x000008, "Wrong size on CineFrancoMinus01_BP_C_GetPoseAsset");
+static_assert(offsetof(CineFrancoMinus01_BP_C_GetPoseAsset, PoseAsset) == 0x000000, "Member 'CineFrancoMinus01_BP_C_GetPoseAsset::PoseAsset' has a wrong offset!");
 
 // Function CineFranco-01_BP.CineFranco-01_BP_C.GetCineFaceAnimBP
 // 0x0020 (0x0020 - 0x0000)
@@ -44,16 +42,18 @@ static_assert(offsetof(CineFrancoMinus01_BP_C_GetCineFaceAnimBP, CallFunc_GetAni
 static_assert(offsetof(CineFrancoMinus01_BP_C_GetCineFaceAnimBP, K2Node_DynamicCast_AsCine_Face_Anim_BP) == 0x000010, "Member 'CineFrancoMinus01_BP_C_GetCineFaceAnimBP::K2Node_DynamicCast_AsCine_Face_Anim_BP' has a wrong offset!");
 static_assert(offsetof(CineFrancoMinus01_BP_C_GetCineFaceAnimBP, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'CineFrancoMinus01_BP_C_GetCineFaceAnimBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-// Function CineFranco-01_BP.CineFranco-01_BP_C.GetPoseAsset
+// Function CineFranco-01_BP.CineFranco-01_BP_C.ExecuteUbergraph_CineFranco-01_BP
 // 0x0008 (0x0008 - 0x0000)
-struct CineFrancoMinus01_BP_C_GetPoseAsset final
+struct CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP final
 {
 public:
-	class UPoseAsset*                             PoseAsset;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CineFrancoMinus01_BP_C_GetPoseAsset) == 0x000008, "Wrong alignment on CineFrancoMinus01_BP_C_GetPoseAsset");
-static_assert(sizeof(CineFrancoMinus01_BP_C_GetPoseAsset) == 0x000008, "Wrong size on CineFrancoMinus01_BP_C_GetPoseAsset");
-static_assert(offsetof(CineFrancoMinus01_BP_C_GetPoseAsset, PoseAsset) == 0x000000, "Member 'CineFrancoMinus01_BP_C_GetPoseAsset::PoseAsset' has a wrong offset!");
+static_assert(alignof(CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP) == 0x000004, "Wrong alignment on CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP");
+static_assert(sizeof(CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP) == 0x000008, "Wrong size on CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP");
+static_assert(offsetof(CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP, EntryPoint) == 0x000000, "Member 'CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP::EntryPoint' has a wrong offset!");
+static_assert(offsetof(CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000004, "Member 'CineFrancoMinus01_BP_C_ExecuteUbergraph_CineFrancoMinus01_BP::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 
 }
 

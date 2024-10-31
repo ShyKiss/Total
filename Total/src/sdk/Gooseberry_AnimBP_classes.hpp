@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass gooseberry_AnimBP.gooseberry_AnimBP_C
-// 0x0000 (0xAE20 - 0xAE20)
+// 0x0000 (0xC5C0 - 0xC5C0)
 class UGooseberry_AnimBP_C final : public UGrunt_AnimBP_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGooseberry_AnimBP_C) == 0x000010, "Wrong alignment on UGooseberry_AnimBP_C");
-static_assert(sizeof(UGooseberry_AnimBP_C) == 0x00AE20, "Wrong size on UGooseberry_AnimBP_C");
+static_assert(sizeof(UGooseberry_AnimBP_C) == 0x00C5C0, "Wrong size on UGooseberry_AnimBP_C");
 
 }
 

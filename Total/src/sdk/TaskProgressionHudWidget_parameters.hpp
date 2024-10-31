@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function TaskProgressionHudWidget.TaskProgressionHudWidget_C.ExecuteUbergraph_TaskProgressionHudWidget
-// 0x02C0 (0x02C0 - 0x0000)
+// 0x02D0 (0x02D0 - 0x0000)
 struct TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget final
 {
 public:
@@ -47,15 +47,15 @@ public:
 	uint8                                         Pad_76[0x2];                                       // 0x0076(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URBTasksConfig*                         CallFunc_GetTasksConfig_ReturnValue;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRBTaskDataRow                         CallFunc_GetTaskData_ReturnValue;                  // 0x0088(0x01A8)(ConstParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0230(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0270(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0280(0x0018)()
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0298(0x0010)(ZeroConstructor, NoDestructor)
-	class FText                                   K2Node_Select_Default_1;                           // 0x02A8(0x0018)(ConstParm)
+	struct FRBTaskDataRow                         CallFunc_GetTaskData_ReturnValue;                  // 0x0088(0x01B8)(ConstParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0240(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0280(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0290(0x0018)()
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x02A8(0x0010)(ZeroConstructor, NoDestructor)
+	class FText                                   K2Node_Select_Default_1;                           // 0x02B8(0x0018)(ConstParm)
 };
 static_assert(alignof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget) == 0x000008, "Wrong alignment on TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget");
-static_assert(sizeof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget) == 0x0002C0, "Wrong size on TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget");
+static_assert(sizeof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget) == 0x0002D0, "Wrong size on TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget");
 static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, EntryPoint) == 0x000000, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, Temp_delegate_Variable) == 0x000020, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::Temp_delegate_Variable' has a wrong offset!");
@@ -76,11 +76,11 @@ static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressi
 static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000078, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, CallFunc_GetTasksConfig_ReturnValue) == 0x000080, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::CallFunc_GetTasksConfig_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, CallFunc_GetTaskData_ReturnValue) == 0x000088, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::CallFunc_GetTaskData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, K2Node_MakeStruct_FormatArgumentData) == 0x000230, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, K2Node_MakeArray_Array) == 0x000270, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, CallFunc_Format_ReturnValue) == 0x000280, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000298, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, K2Node_Select_Default_1) == 0x0002A8, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, K2Node_MakeStruct_FormatArgumentData) == 0x000240, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, K2Node_MakeArray_Array) == 0x000280, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, CallFunc_Format_ReturnValue) == 0x000290, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, K2Node_CreateDelegate_OutputDelegate) == 0x0002A8, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget, K2Node_Select_Default_1) == 0x0002B8, "Member 'TaskProgressionHudWidget_C_ExecuteUbergraph_TaskProgressionHudWidget::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function TaskProgressionHudWidget.TaskProgressionHudWidget_C.Show
 // 0x0010 (0x0010 - 0x0000)

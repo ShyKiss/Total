@@ -37,32 +37,35 @@ void UInputBindingsMenu_C::ExecuteUbergraph_InputBindingsMenu(int32 EntryPoint)
 }
 
 
-// Function InputBindingsMenu.InputBindingsMenu_C.Event_DuplicateBindingFound
+// Function InputBindingsMenu.InputBindingsMenu_C.Event_DuplicateMappingFound
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class URBMenuControlBindingEntry*       DuplicateEntry                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class URBMenuControlMappingEntry*       DuplicateEntry                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bReplacingPrimaryKey                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UInputBindingsMenu_C::Event_DuplicateBindingFound(class URBMenuControlBindingEntry* DuplicateEntry)
+void UInputBindingsMenu_C::Event_DuplicateMappingFound(class URBMenuControlMappingEntry* DuplicateEntry, bool bReplacingPrimaryKey)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InputBindingsMenu_C", "Event_DuplicateBindingFound");
+		Func = Class->GetFunction("InputBindingsMenu_C", "Event_DuplicateMappingFound");
 
-	Params::InputBindingsMenu_C_Event_DuplicateBindingFound Parms{};
+	Params::InputBindingsMenu_C_Event_DuplicateMappingFound Parms{};
 
 	Parms.DuplicateEntry = DuplicateEntry;
+	Parms.bReplacingPrimaryKey = bReplacingPrimaryKey;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
 // Function InputBindingsMenu.InputBindingsMenu_C.Event_UpdateRebindStatus
-// (Event, Public, BlueprintEvent)
+// (BlueprintEvent)
 // Parameters:
 // bool                                    IsRebindInProgress                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsRebindingPrimaryKey                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UInputBindingsMenu_C::Event_UpdateRebindStatus(bool IsRebindInProgress)
+void UInputBindingsMenu_C::Event_UpdateRebindStatus(bool IsRebindInProgress, bool bIsRebindingPrimaryKey)
 {
 	static class UFunction* Func = nullptr;
 
@@ -72,6 +75,7 @@ void UInputBindingsMenu_C::Event_UpdateRebindStatus(bool IsRebindInProgress)
 	Params::InputBindingsMenu_C_Event_UpdateRebindStatus Parms{};
 
 	Parms.IsRebindInProgress = IsRebindInProgress;
+	Parms.bIsRebindingPrimaryKey = bIsRebindingPrimaryKey;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

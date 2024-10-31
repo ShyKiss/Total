@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SocialMenu_Entry_Link.SocialMenu_Entry_Link_C
-// 0x0030 (0x04A0 - 0x0470)
+// 0x0038 (0x04A8 - 0x0470)
 class USocialMenu_Entry_Link_C final : public URBSocialMenuEntry
 {
 public:
@@ -31,6 +31,7 @@ public:
 	bool                                          bFocused;                                          // 0x0492(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_493[0x5];                                      // 0x0493(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class USocialMenu_ContextualMenu_C*           ContextualMenu;                                    // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnabled;                                          // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_SocialMenu_Entry_Link(int32 EntryPoint);
@@ -59,7 +60,7 @@ public:
 	}
 };
 static_assert(alignof(USocialMenu_Entry_Link_C) == 0x000008, "Wrong alignment on USocialMenu_Entry_Link_C");
-static_assert(sizeof(USocialMenu_Entry_Link_C) == 0x0004A0, "Wrong size on USocialMenu_Entry_Link_C");
+static_assert(sizeof(USocialMenu_Entry_Link_C) == 0x0004A8, "Wrong size on USocialMenu_Entry_Link_C");
 static_assert(offsetof(USocialMenu_Entry_Link_C, UberGraphFrame) == 0x000470, "Member 'USocialMenu_Entry_Link_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USocialMenu_Entry_Link_C, BackgroundImage) == 0x000478, "Member 'USocialMenu_Entry_Link_C::BackgroundImage' has a wrong offset!");
 static_assert(offsetof(USocialMenu_Entry_Link_C, InteractionButton) == 0x000480, "Member 'USocialMenu_Entry_Link_C::InteractionButton' has a wrong offset!");
@@ -68,6 +69,7 @@ static_assert(offsetof(USocialMenu_Entry_Link_C, bIsGamepad) == 0x000490, "Membe
 static_assert(offsetof(USocialMenu_Entry_Link_C, bHovered) == 0x000491, "Member 'USocialMenu_Entry_Link_C::bHovered' has a wrong offset!");
 static_assert(offsetof(USocialMenu_Entry_Link_C, bFocused) == 0x000492, "Member 'USocialMenu_Entry_Link_C::bFocused' has a wrong offset!");
 static_assert(offsetof(USocialMenu_Entry_Link_C, ContextualMenu) == 0x000498, "Member 'USocialMenu_Entry_Link_C::ContextualMenu' has a wrong offset!");
+static_assert(offsetof(USocialMenu_Entry_Link_C, bEnabled) == 0x0004A0, "Member 'USocialMenu_Entry_Link_C::bEnabled' has a wrong offset!");
 
 }
 

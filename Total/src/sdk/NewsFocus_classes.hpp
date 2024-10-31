@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "OPP_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -56,25 +56,25 @@ public:
 	bool                                          HasBeenInit;                                       // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void TransmitFocus();
-	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
-	void UpdateDots();
-	void Event_NextItem();
-	void Event_Refresh();
-	void OnDotButtonClicked(int32 Index_0);
-	void BndEvt__NewsFocus_Button_351_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__NewsFocus_NextNewsButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__NewsFocus_RemoveFocusButton_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__NewsFocus_NextNewsButton_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
-	void BndEvt__NewsFocus_PreviousNewsButton_K2Node_ComponentBoundEvent_8_OnButtonHoverEvent__DelegateSignature();
-	void BndEvt__NewsFocus_NextNewsButton_K2Node_ComponentBoundEvent_9_OnButtonHoverEvent__DelegateSignature();
-	void BndEvt__NewsFocus_PreviousNewsButton_K2Node_ComponentBoundEvent_10_OnButtonHoverEvent__DelegateSignature();
-	void Construct();
-	void Event_ShowNothing();
-	void ExecuteUbergraph_NewsFocus(int32 EntryPoint);
-	void QuitFocusRequested__DelegateSignature();
 	void ActiveItemSet__DelegateSignature(int32 Index_0);
+	void QuitFocusRequested__DelegateSignature();
+	void ExecuteUbergraph_NewsFocus(int32 EntryPoint);
+	void Event_ShowNothing();
+	void Construct();
+	void BndEvt__NewsFocus_PreviousNewsButton_K2Node_ComponentBoundEvent_10_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__NewsFocus_NextNewsButton_K2Node_ComponentBoundEvent_9_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__NewsFocus_PreviousNewsButton_K2Node_ComponentBoundEvent_8_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__NewsFocus_NextNewsButton_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__NewsFocus_RemoveFocusButton_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__NewsFocus_NextNewsButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__NewsFocus_Button_351_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void OnDotButtonClicked(int32 Index_0);
+	void Event_Refresh();
+	void Event_NextItem();
+	void UpdateDots();
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
+	void TransmitFocus();
 
 public:
 	static class UClass* StaticClass()

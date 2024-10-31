@@ -8,7 +8,10 @@
 
 // Package: CoreUObject
 
-#include "../pch.h"
+#include "Basic.hpp"
+
+#include "CoreUObject_classes.hpp"
+#include "CoreUObject_parameters.hpp"
 
 
 namespace SDK

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SocialMenu_PartyWidget.SocialMenu_PartyWidget_C
-// 0x00A0 (0x0410 - 0x0370)
+// 0x00A8 (0x0418 - 0x0370)
 class USocialMenu_PartyWidget_C final : public URBSocialMenuPartyWidget
 {
 public:
@@ -34,19 +34,22 @@ public:
 	class UGridPanel*                             Grid;                                              // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USocialMenu_PartyOption_C*              IgnoreInviteRequestsOption;                        // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UExperimentBoardActionButton_C*         LeavePartyBtn;                                     // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                Line;                                              // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULoadingVideoWidget_C*                  LoadingVideoWidget;                                // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           OptionsBox;                                        // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USocialMenu_PartyOption_C*              PartyMembersCanInviteOption;                       // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USocialMenu_PartyOption_C*              PrivacyOption;                                     // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Title;                                             // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   EmptyText;                                         // 0x03E8(0x0018)(Edit, BlueprintVisible)
-	bool                                          bIsInSocialMenu;                                   // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_401[0x7];                                      // 0x0401(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBPopUpConfirmCancelWidget*            LeaveGroupPopup;                                   // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UScaleBox*                              LeavePartyScaleBox;                                // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                Line;                                              // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULoadingVideoWidget_C*                  LoadingVideoWidget;                                // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           OptionsBox;                                        // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USocialMenu_PartyOption_C*              PartyMembersCanInviteOption;                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USocialMenu_PartyOption_C*              PrivacyOption;                                     // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Title;                                             // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   EmptyText;                                         // 0x03F0(0x0018)(Edit, BlueprintVisible)
+	bool                                          bIsInSocialMenu;                                   // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBPopUpConfirmCancelWidget*            LeaveGroupPopup;                                   // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_SocialMenu_PartyWidget(int32 EntryPoint);
+	void LeavePartyShortcutPressed();
+	void Event_InputSourceChanged(bool bIsGamepad);
 	void OnLeaveGroupConfirmed();
 	void Event_EntriesUpdated();
 	void BndEvt__SocialMenu_PartyWidget_LeavePartyBtn_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
@@ -83,7 +86,7 @@ public:
 	}
 };
 static_assert(alignof(USocialMenu_PartyWidget_C) == 0x000008, "Wrong alignment on USocialMenu_PartyWidget_C");
-static_assert(sizeof(USocialMenu_PartyWidget_C) == 0x000410, "Wrong size on USocialMenu_PartyWidget_C");
+static_assert(sizeof(USocialMenu_PartyWidget_C) == 0x000418, "Wrong size on USocialMenu_PartyWidget_C");
 static_assert(offsetof(USocialMenu_PartyWidget_C, UberGraphFrame) == 0x000370, "Member 'USocialMenu_PartyWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USocialMenu_PartyWidget_C, ShowContent) == 0x000378, "Member 'USocialMenu_PartyWidget_C::ShowContent' has a wrong offset!");
 static_assert(offsetof(USocialMenu_PartyWidget_C, HideLoading) == 0x000380, "Member 'USocialMenu_PartyWidget_C::HideLoading' has a wrong offset!");
@@ -93,15 +96,16 @@ static_assert(offsetof(USocialMenu_PartyWidget_C, CrossplayOption) == 0x000398, 
 static_assert(offsetof(USocialMenu_PartyWidget_C, Grid) == 0x0003A0, "Member 'USocialMenu_PartyWidget_C::Grid' has a wrong offset!");
 static_assert(offsetof(USocialMenu_PartyWidget_C, IgnoreInviteRequestsOption) == 0x0003A8, "Member 'USocialMenu_PartyWidget_C::IgnoreInviteRequestsOption' has a wrong offset!");
 static_assert(offsetof(USocialMenu_PartyWidget_C, LeavePartyBtn) == 0x0003B0, "Member 'USocialMenu_PartyWidget_C::LeavePartyBtn' has a wrong offset!");
-static_assert(offsetof(USocialMenu_PartyWidget_C, Line) == 0x0003B8, "Member 'USocialMenu_PartyWidget_C::Line' has a wrong offset!");
-static_assert(offsetof(USocialMenu_PartyWidget_C, LoadingVideoWidget) == 0x0003C0, "Member 'USocialMenu_PartyWidget_C::LoadingVideoWidget' has a wrong offset!");
-static_assert(offsetof(USocialMenu_PartyWidget_C, OptionsBox) == 0x0003C8, "Member 'USocialMenu_PartyWidget_C::OptionsBox' has a wrong offset!");
-static_assert(offsetof(USocialMenu_PartyWidget_C, PartyMembersCanInviteOption) == 0x0003D0, "Member 'USocialMenu_PartyWidget_C::PartyMembersCanInviteOption' has a wrong offset!");
-static_assert(offsetof(USocialMenu_PartyWidget_C, PrivacyOption) == 0x0003D8, "Member 'USocialMenu_PartyWidget_C::PrivacyOption' has a wrong offset!");
-static_assert(offsetof(USocialMenu_PartyWidget_C, Title) == 0x0003E0, "Member 'USocialMenu_PartyWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(USocialMenu_PartyWidget_C, EmptyText) == 0x0003E8, "Member 'USocialMenu_PartyWidget_C::EmptyText' has a wrong offset!");
-static_assert(offsetof(USocialMenu_PartyWidget_C, bIsInSocialMenu) == 0x000400, "Member 'USocialMenu_PartyWidget_C::bIsInSocialMenu' has a wrong offset!");
-static_assert(offsetof(USocialMenu_PartyWidget_C, LeaveGroupPopup) == 0x000408, "Member 'USocialMenu_PartyWidget_C::LeaveGroupPopup' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, LeavePartyScaleBox) == 0x0003B8, "Member 'USocialMenu_PartyWidget_C::LeavePartyScaleBox' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, Line) == 0x0003C0, "Member 'USocialMenu_PartyWidget_C::Line' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, LoadingVideoWidget) == 0x0003C8, "Member 'USocialMenu_PartyWidget_C::LoadingVideoWidget' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, OptionsBox) == 0x0003D0, "Member 'USocialMenu_PartyWidget_C::OptionsBox' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, PartyMembersCanInviteOption) == 0x0003D8, "Member 'USocialMenu_PartyWidget_C::PartyMembersCanInviteOption' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, PrivacyOption) == 0x0003E0, "Member 'USocialMenu_PartyWidget_C::PrivacyOption' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, Title) == 0x0003E8, "Member 'USocialMenu_PartyWidget_C::Title' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, EmptyText) == 0x0003F0, "Member 'USocialMenu_PartyWidget_C::EmptyText' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, bIsInSocialMenu) == 0x000408, "Member 'USocialMenu_PartyWidget_C::bIsInSocialMenu' has a wrong offset!");
+static_assert(offsetof(USocialMenu_PartyWidget_C, LeaveGroupPopup) == 0x000410, "Member 'USocialMenu_PartyWidget_C::LeaveGroupPopup' has a wrong offset!");
 
 }
 

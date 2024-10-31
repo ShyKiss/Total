@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "OPP_classes.hpp"
 #include "Slate_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "OPP_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -21,38 +21,38 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OptionsTab.OptionsTab_C
-// 0x00E8 (0x03E8 - 0x0300)
+// 0x00E8 (0x03F0 - 0x0308)
 class UOptionsTab_C final : public URBMenuOptionsTab
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UOptionsEntry_C*                        AntiAliasingEntry;                                 // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        AutoDetectEntry;                                   // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        BrightnessEntry;                                   // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        EffectsEntry;                                      // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        HDRCalibrationEntry;                               // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        HDREnabledEntry;                                   // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image;                                             // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_146;                                         // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsCategory_C*                     OptionsCategory;                                   // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsCategory_C*                     OptionsCategory_1;                                 // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsCategory_C*                     OptionsCategory_2;                                 // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        QualityPresetEntry;                                // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        ReflectionsEntry;                                  // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        RefreshRateEntry;                                  // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        ResolutionEntry;                                   // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        ResolutionScaleEntry;                              // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                ScrollDown;                                        // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                ScrollUp;                                          // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        ShadowsEntry;                                      // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        TextureEntry;                                      // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        ViewDistanceEntry;                                 // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        VolumetricsEntry;                                  // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        VSyncEntry;                                        // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        WindowModeEntry;                                   // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnEntrySubButtonClicked;                           // 0x03C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UMicTestOptionsWidget_C*                MicTestEntry;                                      // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UOptionsEntry_C*                        BenchmarkOptionsEntry;                             // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UOptionsEntry_C*                        AntiAliasingEntry;                                 // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        AutoDetectEntry;                                   // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        BrightnessEntry;                                   // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        EffectsEntry;                                      // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        HDRCalibrationEntry;                               // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        HDREnabledEntry;                                   // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image;                                             // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_146;                                         // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsCategory_C*                     OptionsCategory;                                   // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsCategory_C*                     OptionsCategory_1;                                 // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsCategory_C*                     OptionsCategory_2;                                 // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        QualityPresetEntry;                                // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        ReflectionsEntry;                                  // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        RefreshRateEntry;                                  // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        ResolutionEntry;                                   // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        ResolutionScaleEntry;                              // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                ScrollDown;                                        // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                ScrollUp;                                          // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        ShadowsEntry;                                      // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        TextureEntry;                                      // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        ViewDistanceEntry;                                 // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        VolumetricsEntry;                                  // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        VSyncEntry;                                        // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        WindowModeEntry;                                   // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnEntrySubButtonClicked;                           // 0x03D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UMicTestOptionsWidget_C*                MicTestEntry;                                      // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UOptionsEntry_C*                        BenchmarkOptionsEntry;                             // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void OnEntrySubButtonClicked__DelegateSignature(class URBMenuOptionsEntry* Entry);
@@ -84,35 +84,35 @@ public:
 	}
 };
 static_assert(alignof(UOptionsTab_C) == 0x000008, "Wrong alignment on UOptionsTab_C");
-static_assert(sizeof(UOptionsTab_C) == 0x0003E8, "Wrong size on UOptionsTab_C");
-static_assert(offsetof(UOptionsTab_C, UberGraphFrame) == 0x000300, "Member 'UOptionsTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, AntiAliasingEntry) == 0x000308, "Member 'UOptionsTab_C::AntiAliasingEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, AutoDetectEntry) == 0x000310, "Member 'UOptionsTab_C::AutoDetectEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, BrightnessEntry) == 0x000318, "Member 'UOptionsTab_C::BrightnessEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, EffectsEntry) == 0x000320, "Member 'UOptionsTab_C::EffectsEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, HDRCalibrationEntry) == 0x000328, "Member 'UOptionsTab_C::HDRCalibrationEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, HDREnabledEntry) == 0x000330, "Member 'UOptionsTab_C::HDREnabledEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, Image) == 0x000338, "Member 'UOptionsTab_C::Image' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, Image_146) == 0x000340, "Member 'UOptionsTab_C::Image_146' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, OptionsCategory) == 0x000348, "Member 'UOptionsTab_C::OptionsCategory' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, OptionsCategory_1) == 0x000350, "Member 'UOptionsTab_C::OptionsCategory_1' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, OptionsCategory_2) == 0x000358, "Member 'UOptionsTab_C::OptionsCategory_2' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, QualityPresetEntry) == 0x000360, "Member 'UOptionsTab_C::QualityPresetEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, ReflectionsEntry) == 0x000368, "Member 'UOptionsTab_C::ReflectionsEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, RefreshRateEntry) == 0x000370, "Member 'UOptionsTab_C::RefreshRateEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, ResolutionEntry) == 0x000378, "Member 'UOptionsTab_C::ResolutionEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, ResolutionScaleEntry) == 0x000380, "Member 'UOptionsTab_C::ResolutionScaleEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, ScrollDown) == 0x000388, "Member 'UOptionsTab_C::ScrollDown' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, ScrollUp) == 0x000390, "Member 'UOptionsTab_C::ScrollUp' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, ShadowsEntry) == 0x000398, "Member 'UOptionsTab_C::ShadowsEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, TextureEntry) == 0x0003A0, "Member 'UOptionsTab_C::TextureEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, ViewDistanceEntry) == 0x0003A8, "Member 'UOptionsTab_C::ViewDistanceEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, VolumetricsEntry) == 0x0003B0, "Member 'UOptionsTab_C::VolumetricsEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, VSyncEntry) == 0x0003B8, "Member 'UOptionsTab_C::VSyncEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, WindowModeEntry) == 0x0003C0, "Member 'UOptionsTab_C::WindowModeEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, OnEntrySubButtonClicked) == 0x0003C8, "Member 'UOptionsTab_C::OnEntrySubButtonClicked' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, MicTestEntry) == 0x0003D8, "Member 'UOptionsTab_C::MicTestEntry' has a wrong offset!");
-static_assert(offsetof(UOptionsTab_C, BenchmarkOptionsEntry) == 0x0003E0, "Member 'UOptionsTab_C::BenchmarkOptionsEntry' has a wrong offset!");
+static_assert(sizeof(UOptionsTab_C) == 0x0003F0, "Wrong size on UOptionsTab_C");
+static_assert(offsetof(UOptionsTab_C, UberGraphFrame) == 0x000308, "Member 'UOptionsTab_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, AntiAliasingEntry) == 0x000310, "Member 'UOptionsTab_C::AntiAliasingEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, AutoDetectEntry) == 0x000318, "Member 'UOptionsTab_C::AutoDetectEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, BrightnessEntry) == 0x000320, "Member 'UOptionsTab_C::BrightnessEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, EffectsEntry) == 0x000328, "Member 'UOptionsTab_C::EffectsEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, HDRCalibrationEntry) == 0x000330, "Member 'UOptionsTab_C::HDRCalibrationEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, HDREnabledEntry) == 0x000338, "Member 'UOptionsTab_C::HDREnabledEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, Image) == 0x000340, "Member 'UOptionsTab_C::Image' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, Image_146) == 0x000348, "Member 'UOptionsTab_C::Image_146' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, OptionsCategory) == 0x000350, "Member 'UOptionsTab_C::OptionsCategory' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, OptionsCategory_1) == 0x000358, "Member 'UOptionsTab_C::OptionsCategory_1' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, OptionsCategory_2) == 0x000360, "Member 'UOptionsTab_C::OptionsCategory_2' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, QualityPresetEntry) == 0x000368, "Member 'UOptionsTab_C::QualityPresetEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, ReflectionsEntry) == 0x000370, "Member 'UOptionsTab_C::ReflectionsEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, RefreshRateEntry) == 0x000378, "Member 'UOptionsTab_C::RefreshRateEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, ResolutionEntry) == 0x000380, "Member 'UOptionsTab_C::ResolutionEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, ResolutionScaleEntry) == 0x000388, "Member 'UOptionsTab_C::ResolutionScaleEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, ScrollDown) == 0x000390, "Member 'UOptionsTab_C::ScrollDown' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, ScrollUp) == 0x000398, "Member 'UOptionsTab_C::ScrollUp' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, ShadowsEntry) == 0x0003A0, "Member 'UOptionsTab_C::ShadowsEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, TextureEntry) == 0x0003A8, "Member 'UOptionsTab_C::TextureEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, ViewDistanceEntry) == 0x0003B0, "Member 'UOptionsTab_C::ViewDistanceEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, VolumetricsEntry) == 0x0003B8, "Member 'UOptionsTab_C::VolumetricsEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, VSyncEntry) == 0x0003C0, "Member 'UOptionsTab_C::VSyncEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, WindowModeEntry) == 0x0003C8, "Member 'UOptionsTab_C::WindowModeEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, OnEntrySubButtonClicked) == 0x0003D0, "Member 'UOptionsTab_C::OnEntrySubButtonClicked' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, MicTestEntry) == 0x0003E0, "Member 'UOptionsTab_C::MicTestEntry' has a wrong offset!");
+static_assert(offsetof(UOptionsTab_C, BenchmarkOptionsEntry) == 0x0003E8, "Member 'UOptionsTab_C::BenchmarkOptionsEntry' has a wrong offset!");
 
 }
 

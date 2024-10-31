@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -83,7 +83,7 @@ public:
 	class USizeBox*                               TrialInfos;                                        // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TrialTitle;                                        // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             VariatorDescription;                               // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         VariatorHBox;                                      // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUniformGridPanel*                      VariatorUniformGrid;                               // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWorkInProgressOverlay_C*               WorkInProgressOverlay;                             // 0x0500(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         SelectedTabIndex;                                  // 0x0508(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_50C[0x4];                                      // 0x050C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -95,6 +95,7 @@ public:
 
 public:
 	void ExecuteUbergraph_Client_InGameMenu(int32 EntryPoint);
+	void OnLeavePartyShortcutPressed();
 	void BndEvt__Client_InGameMenu_PartyWidget_K2Node_ComponentBoundEvent_7_OnSocialMenuEntryActionRequested__DelegateSignature(class URBSocialMenuEntry* Entry, ERBSocialMenuEntryAction Action);
 	void OnVariatorUnhovered();
 	void OnVariatorHovered(const class FText& Description);
@@ -209,7 +210,7 @@ static_assert(offsetof(UClient_InGameMenu_C, TasksBtn) == 0x0004D8, "Member 'UCl
 static_assert(offsetof(UClient_InGameMenu_C, TrialInfos) == 0x0004E0, "Member 'UClient_InGameMenu_C::TrialInfos' has a wrong offset!");
 static_assert(offsetof(UClient_InGameMenu_C, TrialTitle) == 0x0004E8, "Member 'UClient_InGameMenu_C::TrialTitle' has a wrong offset!");
 static_assert(offsetof(UClient_InGameMenu_C, VariatorDescription) == 0x0004F0, "Member 'UClient_InGameMenu_C::VariatorDescription' has a wrong offset!");
-static_assert(offsetof(UClient_InGameMenu_C, VariatorHBox) == 0x0004F8, "Member 'UClient_InGameMenu_C::VariatorHBox' has a wrong offset!");
+static_assert(offsetof(UClient_InGameMenu_C, VariatorUniformGrid) == 0x0004F8, "Member 'UClient_InGameMenu_C::VariatorUniformGrid' has a wrong offset!");
 static_assert(offsetof(UClient_InGameMenu_C, WorkInProgressOverlay) == 0x000500, "Member 'UClient_InGameMenu_C::WorkInProgressOverlay' has a wrong offset!");
 static_assert(offsetof(UClient_InGameMenu_C, SelectedTabIndex) == 0x000508, "Member 'UClient_InGameMenu_C::SelectedTabIndex' has a wrong offset!");
 static_assert(offsetof(UClient_InGameMenu_C, QuitToDesktopPopup) == 0x000510, "Member 'UClient_InGameMenu_C::QuitToDesktopPopup' has a wrong offset!");

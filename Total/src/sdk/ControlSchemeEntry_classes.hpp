@@ -18,16 +18,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ControlSchemeEntry.ControlSchemeEntry_C
-// 0x0030 (0x03A8 - 0x0378)
+// 0x0038 (0x03B0 - 0x0378)
 class UControlSchemeEntry_C final : public UBaseOptionsEntry_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_ControlSchemeEntry_C;               // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCommonTextBlock*                       OptionValue;                                       // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UValueCounter_C*                        ValueCounter;                                      // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               ValueSelectionArrows;                              // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UArrowButton_C*                         VS_LeftArrowBtn;                                   // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UArrowButton_C*                         VS_RightArrowBtn;                                  // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                GamepadFocusHolder;                                // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       OptionValue;                                       // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UValueCounter_C*                        ValueCounter;                                      // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               ValueSelectionArrows;                              // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UArrowButton_C*                         VS_LeftArrowBtn;                                   // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UArrowButton_C*                         VS_RightArrowBtn;                                  // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ControlSchemeEntry(int32 EntryPoint);
@@ -41,6 +42,7 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void RefreshCounter();
 	void SetupCounter();
+	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 	void GetArrowBtn(bool Left, class UArrowButton_C** ArrowButton);
 
 public:
@@ -54,13 +56,14 @@ public:
 	}
 };
 static_assert(alignof(UControlSchemeEntry_C) == 0x000008, "Wrong alignment on UControlSchemeEntry_C");
-static_assert(sizeof(UControlSchemeEntry_C) == 0x0003A8, "Wrong size on UControlSchemeEntry_C");
+static_assert(sizeof(UControlSchemeEntry_C) == 0x0003B0, "Wrong size on UControlSchemeEntry_C");
 static_assert(offsetof(UControlSchemeEntry_C, UberGraphFrame_ControlSchemeEntry_C) == 0x000378, "Member 'UControlSchemeEntry_C::UberGraphFrame_ControlSchemeEntry_C' has a wrong offset!");
-static_assert(offsetof(UControlSchemeEntry_C, OptionValue) == 0x000380, "Member 'UControlSchemeEntry_C::OptionValue' has a wrong offset!");
-static_assert(offsetof(UControlSchemeEntry_C, ValueCounter) == 0x000388, "Member 'UControlSchemeEntry_C::ValueCounter' has a wrong offset!");
-static_assert(offsetof(UControlSchemeEntry_C, ValueSelectionArrows) == 0x000390, "Member 'UControlSchemeEntry_C::ValueSelectionArrows' has a wrong offset!");
-static_assert(offsetof(UControlSchemeEntry_C, VS_LeftArrowBtn) == 0x000398, "Member 'UControlSchemeEntry_C::VS_LeftArrowBtn' has a wrong offset!");
-static_assert(offsetof(UControlSchemeEntry_C, VS_RightArrowBtn) == 0x0003A0, "Member 'UControlSchemeEntry_C::VS_RightArrowBtn' has a wrong offset!");
+static_assert(offsetof(UControlSchemeEntry_C, GamepadFocusHolder) == 0x000380, "Member 'UControlSchemeEntry_C::GamepadFocusHolder' has a wrong offset!");
+static_assert(offsetof(UControlSchemeEntry_C, OptionValue) == 0x000388, "Member 'UControlSchemeEntry_C::OptionValue' has a wrong offset!");
+static_assert(offsetof(UControlSchemeEntry_C, ValueCounter) == 0x000390, "Member 'UControlSchemeEntry_C::ValueCounter' has a wrong offset!");
+static_assert(offsetof(UControlSchemeEntry_C, ValueSelectionArrows) == 0x000398, "Member 'UControlSchemeEntry_C::ValueSelectionArrows' has a wrong offset!");
+static_assert(offsetof(UControlSchemeEntry_C, VS_LeftArrowBtn) == 0x0003A0, "Member 'UControlSchemeEntry_C::VS_LeftArrowBtn' has a wrong offset!");
+static_assert(offsetof(UControlSchemeEntry_C, VS_RightArrowBtn) == 0x0003A8, "Member 'UControlSchemeEntry_C::VS_RightArrowBtn' has a wrong offset!");
 
 }
 

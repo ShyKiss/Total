@@ -208,19 +208,6 @@ static_assert(alignof(FBehaviorInfo) == 0x000008, "Wrong alignment on FBehaviorI
 static_assert(sizeof(FBehaviorInfo) == 0x000020, "Wrong size on FBehaviorInfo");
 static_assert(offsetof(FBehaviorInfo, Behavior) == 0x000000, "Member 'FBehaviorInfo::Behavior' has a wrong offset!");
 
-// ScriptStruct InteractiveToolsFramework.GizmoVec2ParameterChange
-// 0x0010 (0x0010 - 0x0000)
-struct FGizmoVec2ParameterChange final
-{
-public:
-	struct FVector2D                              InitialValue;                                      // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              CurrentValue;                                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FGizmoVec2ParameterChange) == 0x000004, "Wrong alignment on FGizmoVec2ParameterChange");
-static_assert(sizeof(FGizmoVec2ParameterChange) == 0x000010, "Wrong size on FGizmoVec2ParameterChange");
-static_assert(offsetof(FGizmoVec2ParameterChange, InitialValue) == 0x000000, "Member 'FGizmoVec2ParameterChange::InitialValue' has a wrong offset!");
-static_assert(offsetof(FGizmoVec2ParameterChange, CurrentValue) == 0x000008, "Member 'FGizmoVec2ParameterChange::CurrentValue' has a wrong offset!");
-
 // ScriptStruct InteractiveToolsFramework.InputRayHit
 // 0x0028 (0x0028 - 0x0000)
 struct alignas(0x08) FInputRayHit final
@@ -253,6 +240,19 @@ static_assert(alignof(FGizmoFloatParameterChange) == 0x000004, "Wrong alignment 
 static_assert(sizeof(FGizmoFloatParameterChange) == 0x000008, "Wrong size on FGizmoFloatParameterChange");
 static_assert(offsetof(FGizmoFloatParameterChange, InitialValue) == 0x000000, "Member 'FGizmoFloatParameterChange::InitialValue' has a wrong offset!");
 static_assert(offsetof(FGizmoFloatParameterChange, CurrentValue) == 0x000004, "Member 'FGizmoFloatParameterChange::CurrentValue' has a wrong offset!");
+
+// ScriptStruct InteractiveToolsFramework.GizmoVec2ParameterChange
+// 0x0010 (0x0010 - 0x0000)
+struct FGizmoVec2ParameterChange final
+{
+public:
+	struct FVector2D                              InitialValue;                                      // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              CurrentValue;                                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FGizmoVec2ParameterChange) == 0x000004, "Wrong alignment on FGizmoVec2ParameterChange");
+static_assert(sizeof(FGizmoVec2ParameterChange) == 0x000010, "Wrong size on FGizmoVec2ParameterChange");
+static_assert(offsetof(FGizmoVec2ParameterChange, InitialValue) == 0x000000, "Member 'FGizmoVec2ParameterChange::InitialValue' has a wrong offset!");
+static_assert(offsetof(FGizmoVec2ParameterChange, CurrentValue) == 0x000008, "Member 'FGizmoVec2ParameterChange::CurrentValue' has a wrong offset!");
 
 }
 

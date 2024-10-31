@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "LevelSequence_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "DeveloperSettings_classes.hpp"
 #include "Engine_classes.hpp"
+#include "LevelSequence_structs.hpp"
 #include "UMG_classes.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
@@ -46,6 +46,44 @@ static_assert(sizeof(UAnimSequenceLevelSequenceLink) == 0x000050, "Wrong size on
 static_assert(offsetof(UAnimSequenceLevelSequenceLink, SkelTrackGuid) == 0x000028, "Member 'UAnimSequenceLevelSequenceLink::SkelTrackGuid' has a wrong offset!");
 static_assert(offsetof(UAnimSequenceLevelSequenceLink, PathToLevelSequence) == 0x000038, "Member 'UAnimSequenceLevelSequenceLink::PathToLevelSequence' has a wrong offset!");
 
+// Class LevelSequence.LevelSequenceAnimSequenceLink
+// 0x0010 (0x0038 - 0x0028)
+class ULevelSequenceAnimSequenceLink final : public UAssetUserData
+{
+public:
+	TArray<struct FLevelSequenceAnimSequenceLinkItem> AnimSequenceLinks;                                 // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"LevelSequenceAnimSequenceLink">();
+	}
+	static class ULevelSequenceAnimSequenceLink* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULevelSequenceAnimSequenceLink>();
+	}
+};
+static_assert(alignof(ULevelSequenceAnimSequenceLink) == 0x000008, "Wrong alignment on ULevelSequenceAnimSequenceLink");
+static_assert(sizeof(ULevelSequenceAnimSequenceLink) == 0x000038, "Wrong size on ULevelSequenceAnimSequenceLink");
+static_assert(offsetof(ULevelSequenceAnimSequenceLink, AnimSequenceLinks) == 0x000028, "Member 'ULevelSequenceAnimSequenceLink::AnimSequenceLinks' has a wrong offset!");
+
+// Class LevelSequence.LevelSequenceMetaData
+// 0x0000 (0x0028 - 0x0028)
+class ILevelSequenceMetaData final : public IInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"LevelSequenceMetaData">();
+	}
+	static class ILevelSequenceMetaData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ILevelSequenceMetaData>();
+	}
+};
+static_assert(alignof(ILevelSequenceMetaData) == 0x000008, "Wrong alignment on ILevelSequenceMetaData");
+static_assert(sizeof(ILevelSequenceMetaData) == 0x000028, "Wrong size on ILevelSequenceMetaData");
+
 // Class LevelSequence.DefaultLevelSequenceInstanceData
 // 0x0048 (0x0070 - 0x0028)
 class UDefaultLevelSequenceInstanceData final : public UObject
@@ -70,23 +108,6 @@ static_assert(alignof(UDefaultLevelSequenceInstanceData) == 0x000010, "Wrong ali
 static_assert(sizeof(UDefaultLevelSequenceInstanceData) == 0x000070, "Wrong size on UDefaultLevelSequenceInstanceData");
 static_assert(offsetof(UDefaultLevelSequenceInstanceData, TransformOriginActor) == 0x000030, "Member 'UDefaultLevelSequenceInstanceData::TransformOriginActor' has a wrong offset!");
 static_assert(offsetof(UDefaultLevelSequenceInstanceData, TransformOrigin) == 0x000040, "Member 'UDefaultLevelSequenceInstanceData::TransformOrigin' has a wrong offset!");
-
-// Class LevelSequence.LevelSequenceMetaData
-// 0x0000 (0x0028 - 0x0028)
-class ILevelSequenceMetaData final : public IInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LevelSequenceMetaData">();
-	}
-	static class ILevelSequenceMetaData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ILevelSequenceMetaData>();
-	}
-};
-static_assert(alignof(ILevelSequenceMetaData) == 0x000008, "Wrong alignment on ILevelSequenceMetaData");
-static_assert(sizeof(ILevelSequenceMetaData) == 0x000028, "Wrong size on ILevelSequenceMetaData");
 
 // Class LevelSequence.LevelSequence
 // 0x0168 (0x01C8 - 0x0060)
@@ -238,27 +259,6 @@ static_assert(offsetof(ALevelSequenceActor, BindingOverrides) == 0x000290, "Memb
 static_assert(offsetof(ALevelSequenceActor, DefaultInstanceData) == 0x0002A0, "Member 'ALevelSequenceActor::DefaultInstanceData' has a wrong offset!");
 static_assert(offsetof(ALevelSequenceActor, BurnInInstance) == 0x0002A8, "Member 'ALevelSequenceActor::BurnInInstance' has a wrong offset!");
 static_assert(offsetof(ALevelSequenceActor, bShowBurnin) == 0x0002B0, "Member 'ALevelSequenceActor::bShowBurnin' has a wrong offset!");
-
-// Class LevelSequence.LevelSequenceAnimSequenceLink
-// 0x0010 (0x0038 - 0x0028)
-class ULevelSequenceAnimSequenceLink final : public UAssetUserData
-{
-public:
-	TArray<struct FLevelSequenceAnimSequenceLinkItem> AnimSequenceLinks;                                 // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LevelSequenceAnimSequenceLink">();
-	}
-	static class ULevelSequenceAnimSequenceLink* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULevelSequenceAnimSequenceLink>();
-	}
-};
-static_assert(alignof(ULevelSequenceAnimSequenceLink) == 0x000008, "Wrong alignment on ULevelSequenceAnimSequenceLink");
-static_assert(sizeof(ULevelSequenceAnimSequenceLink) == 0x000038, "Wrong size on ULevelSequenceAnimSequenceLink");
-static_assert(offsetof(ULevelSequenceAnimSequenceLink, AnimSequenceLinks) == 0x000028, "Member 'ULevelSequenceAnimSequenceLink::AnimSequenceLinks' has a wrong offset!");
 
 // Class LevelSequence.LevelSequenceBurnIn
 // 0x00C0 (0x0320 - 0x0260)

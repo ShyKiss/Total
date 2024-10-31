@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ESOPBarricadeState_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ESOPBarricadeState_structs.hpp"
 
 
 namespace SDK::Params

@@ -36,18 +36,18 @@ public:
 	class UCine_Body_AnimBP_C*                    In_Animation_Mode;                                 // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_CineCharacterBase_BP(int32 EntryPoint);
-	void OnAsyncDataLoaded_Event_0(class URBTrialAsyncData* AsyncData);
-	void ReceiveBeginPlay();
-	void UserConstructionScript();
-	void Play(class UAnimationAsset* NewAnimToPlay);
-	void NewFunction_0();
-	void PreviewSequence();
-	void SetPreviewSequenceData(class UAnimSequence* Anim_0, float Time_0);
-	void GetCineFaceAnimBP(class UCineFace_AnimBP_C** CineFaceAnimBP);
-	void GetPoseAsset(class UPoseAsset** PoseAsset);
-	void GetBodyAnimation(class USkeletalMeshComponent* Mesh, class UAnimSequence** Anim_0);
 	void GetFacialAnimation(class USkeletalMeshComponent* Mesh, class UAnimSequence** Anim_0);
+	void GetBodyAnimation(class USkeletalMeshComponent* Mesh, class UAnimSequence** Anim_0);
+	void GetPoseAsset(class UPoseAsset** PoseAsset);
+	void GetCineFaceAnimBP(class UCineFace_AnimBP_C** CineFaceAnimBP);
+	void SetPreviewSequenceData(class UAnimSequence* Anim_0, float Time_0);
+	void PreviewSequence();
+	void NewFunction_0();
+	void Play(class UAnimationAsset* NewAnimToPlay);
+	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void OnAsyncDataLoaded_Event_0(class URBTrialAsyncData* AsyncData);
+	void ExecuteUbergraph_CineCharacterBase_BP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

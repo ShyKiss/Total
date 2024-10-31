@@ -17,67 +17,97 @@
 namespace SDK
 {
 
-// Function MainMenuButton.MainMenuButton_C.OnFocusReceived
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// struct FFocusEvent                      InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+// Function MainMenuButton.MainMenuButton_C.Event_Clicked__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
 
-struct FEventReply UMainMenuButton_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
+void UMainMenuButton_C::Event_Clicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "OnFocusReceived");
+		Func = Class->GetFunction("MainMenuButton_C", "Event_Clicked__DelegateSignature");
 
-	Params::MainMenuButton_C_OnFocusReceived Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InFocusEvent = std::move(InFocusEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function MainMenuButton.MainMenuButton_C.Get Button Enabled
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function MainMenuButton.MainMenuButton_C.ExecuteUbergraph_MainMenuButton
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    Enabled                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainMenuButton_C::Get_Button_Enabled(bool* Enabled)
+void UMainMenuButton_C::ExecuteUbergraph_MainMenuButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "Get Button Enabled");
+		Func = Class->GetFunction("MainMenuButton_C", "ExecuteUbergraph_MainMenuButton");
 
-	Params::MainMenuButton_C_Get_Button_Enabled Parms{};
+	Params::MainMenuButton_C_ExecuteUbergraph_MainMenuButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Enabled != nullptr)
-		*Enabled = Parms.Enabled;
 }
 
 
-// Function MainMenuButton.MainMenuButton_C.SetText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             Text_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function MainMenuButton.MainMenuButton_C.BndEvt__Button_32_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
 
-void UMainMenuButton_C::SetText(const class FText& Text_0)
+void UMainMenuButton_C::BndEvt__Button_32_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "SetText");
+		Func = Class->GetFunction("MainMenuButton_C", "BndEvt__Button_32_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature");
 
-	Params::MainMenuButton_C_SetText Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Text_0 = std::move(Text_0);
+
+// Function MainMenuButton.MainMenuButton_C.BndEvt__Button_32_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UMainMenuButton_C::BndEvt__Button_32_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenuButton_C", "BndEvt__Button_32_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenuButton.MainMenuButton_C.BndEvt__Button_32_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UMainMenuButton_C::BndEvt__Button_32_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenuButton_C", "BndEvt__Button_32_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenuButton.MainMenuButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UMainMenuButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenuButton_C", "PreConstruct");
+
+	Params::MainMenuButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -103,147 +133,44 @@ void UMainMenuButton_C::Set_Button_Enabled(bool IsEnabled)
 }
 
 
-// Function MainMenuButton.MainMenuButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function MainMenuButton.MainMenuButton_C.SetText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText                             Text_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UMainMenuButton_C::PreConstruct(bool IsDesignTime)
+void UMainMenuButton_C::SetText(const class FText& Text_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "PreConstruct");
+		Func = Class->GetFunction("MainMenuButton_C", "SetText");
 
-	Params::MainMenuButton_C_PreConstruct Parms{};
+	Params::MainMenuButton_C_SetText Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.Text_0 = std::move(Text_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function MainMenuButton.MainMenuButton_C.BndEvt__Button_32_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenuButton_C::BndEvt__Button_32_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "BndEvt__Button_32_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenuButton.MainMenuButton_C.BndEvt__Button_32_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenuButton_C::BndEvt__Button_32_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "BndEvt__Button_32_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenuButton.MainMenuButton_C.BndEvt__Button_32_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UMainMenuButton_C::BndEvt__Button_32_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "BndEvt__Button_32_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenuButton.MainMenuButton_C.HighlighButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UMainMenuButton_C::HighlighButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "HighlighButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenuButton.MainMenuButton_C.DownplayButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UMainMenuButton_C::DownplayButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "DownplayButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenuButton.MainMenuButton_C.OnRemovedFromFocusPath
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function MainMenuButton.MainMenuButton_C.Get Button Enabled
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFocusEvent                      InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// bool                                    Enabled                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainMenuButton_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
+void UMainMenuButton_C::Get_Button_Enabled(bool* Enabled)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "OnRemovedFromFocusPath");
+		Func = Class->GetFunction("MainMenuButton_C", "Get Button Enabled");
 
-	Params::MainMenuButton_C_OnRemovedFromFocusPath Parms{};
-
-	Parms.InFocusEvent = std::move(InFocusEvent);
+	Params::MainMenuButton_C_Get_Button_Enabled Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function MainMenuButton.MainMenuButton_C.ExecuteUbergraph_MainMenuButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainMenuButton_C::ExecuteUbergraph_MainMenuButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "ExecuteUbergraph_MainMenuButton");
-
-	Params::MainMenuButton_C_ExecuteUbergraph_MainMenuButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainMenuButton.MainMenuButton_C.Event_Clicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UMainMenuButton_C::Event_Clicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuButton_C", "Event_Clicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
+	if (Enabled != nullptr)
+		*Enabled = Parms.Enabled;
 }
 
 }

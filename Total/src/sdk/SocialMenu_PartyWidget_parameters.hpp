@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "OPP_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -19,53 +19,80 @@ namespace SDK::Params
 {
 
 // Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.ExecuteUbergraph_SocialMenu_PartyWidget
-// 0x0070 (0x0070 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBUserWidget*                          K2Node_Event_entry_1;                              // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBUserWidget*                          K2Node_Event_entry;                                // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_column;                               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_row;                                  // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoveChild_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bIsDataPending;                       // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_value_2;                // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_value_1;                // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_value;                  // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBPopUpConfirmCancelWidget*            CallFunc_CreatePopUpConfirmCancel_ReturnValue;     // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBUserWidget*                          K2Node_Event_entry_1;                              // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBUserWidget*                          K2Node_Event_entry;                                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_column;                               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_row;                                  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoveChild_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bIsDataPending;                       // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B[0x5];                                       // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_value_2;                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_value_1;                // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_value;                  // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBPopUpConfirmCancelWidget*            CallFunc_CreatePopUpConfirmCancel_ReturnValue;     // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsGamepad;                           // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BP_IsUsingGamepad_ReturnValue;            // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget) == 0x000008, "Wrong alignment on SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget");
-static_assert(sizeof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget) == 0x000070, "Wrong size on SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget");
+static_assert(sizeof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget) == 0x000090, "Wrong size on SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget");
 static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, EntryPoint) == 0x000000, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_GetChildrenCount_ReturnValue) == 0x000004, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_GetChildAt_ReturnValue) == 0x000008, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x000010, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_entry_1) == 0x000028, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_entry_1' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_entry) == 0x000030, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_entry' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_column) == 0x000038, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_column' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_row) == 0x00003C, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_row' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_RemoveChild_ReturnValue) == 0x000040, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_RemoveChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_IsDesignTime) == 0x000041, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_bIsDataPending) == 0x000042, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_bIsDataPending' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_PlayAnimationForward_ReturnValue) == 0x000048, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000050, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_ComponentBoundEvent_value_2) == 0x000058, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_ComponentBoundEvent_value_2' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_ComponentBoundEvent_value_1) == 0x00005C, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_ComponentBoundEvent_value_1' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_ComponentBoundEvent_value) == 0x000060, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_ComponentBoundEvent_value' has a wrong offset!");
-static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_CreatePopUpConfirmCancel_ReturnValue) == 0x000068, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_CreatePopUpConfirmCancel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, Temp_bool_Variable) == 0x000004, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, Temp_byte_Variable) == 0x000018, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, Temp_byte_Variable_1) == 0x000019, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_entry_1) == 0x000020, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_entry_1' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_entry) == 0x000028, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_entry' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_column) == 0x000030, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_column' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_row) == 0x000034, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_row' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_RemoveChild_ReturnValue) == 0x000038, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_RemoveChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_IsDesignTime) == 0x000039, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_bIsDataPending) == 0x00003A, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_bIsDataPending' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_PlayAnimationForward_ReturnValue) == 0x000040, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000048, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_ComponentBoundEvent_value_2) == 0x000050, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_ComponentBoundEvent_value_2' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_ComponentBoundEvent_value_1) == 0x000054, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_ComponentBoundEvent_value_1' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_ComponentBoundEvent_value) == 0x000058, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_ComponentBoundEvent_value' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_CreatePopUpConfirmCancel_ReturnValue) == 0x000060, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_CreatePopUpConfirmCancel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Event_bIsGamepad) == 0x000068, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Event_bIsGamepad' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_GetChildrenCount_ReturnValue) == 0x00006C, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_GetChildAt_ReturnValue) == 0x000070, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x000078, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_GetMenuManager_ReturnValue) == 0x000080, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, CallFunc_BP_IsUsingGamepad_ReturnValue) == 0x000088, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::CallFunc_BP_IsUsingGamepad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget, K2Node_Select_Default) == 0x000089, "Member 'SocialMenu_PartyWidget_C_ExecuteUbergraph_SocialMenu_PartyWidget::K2Node_Select_Default' has a wrong offset!");
+
+// Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.Event_InputSourceChanged
+// 0x0001 (0x0001 - 0x0000)
+struct SocialMenu_PartyWidget_C_Event_InputSourceChanged final
+{
+public:
+	bool                                          bIsGamepad;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(SocialMenu_PartyWidget_C_Event_InputSourceChanged) == 0x000001, "Wrong alignment on SocialMenu_PartyWidget_C_Event_InputSourceChanged");
+static_assert(sizeof(SocialMenu_PartyWidget_C_Event_InputSourceChanged) == 0x000001, "Wrong size on SocialMenu_PartyWidget_C_Event_InputSourceChanged");
+static_assert(offsetof(SocialMenu_PartyWidget_C_Event_InputSourceChanged, bIsGamepad) == 0x000000, "Member 'SocialMenu_PartyWidget_C_Event_InputSourceChanged::bIsGamepad' has a wrong offset!");
 
 // Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.BndEvt__IgnoreInviteRequestsOption_K2Node_ComponentBoundEvent_2_OnValueUpdated__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)

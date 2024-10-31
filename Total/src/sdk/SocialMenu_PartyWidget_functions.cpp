@@ -37,6 +37,40 @@ void USocialMenu_PartyWidget_C::ExecuteUbergraph_SocialMenu_PartyWidget(int32 En
 }
 
 
+// Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.LeavePartyShortcutPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void USocialMenu_PartyWidget_C::LeavePartyShortcutPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SocialMenu_PartyWidget_C", "LeavePartyShortcutPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.Event_InputSourceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGamepad                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void USocialMenu_PartyWidget_C::Event_InputSourceChanged(bool bIsGamepad)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SocialMenu_PartyWidget_C", "Event_InputSourceChanged");
+
+	Params::SocialMenu_PartyWidget_C_Event_InputSourceChanged Parms{};
+
+	Parms.bIsGamepad = bIsGamepad;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function SocialMenu_PartyWidget.SocialMenu_PartyWidget_C.OnLeaveGroupConfirmed
 // (BlueprintCallable, BlueprintEvent)
 

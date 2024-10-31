@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "OPP_structs.hpp"
 
 
@@ -19,41 +18,33 @@ namespace SDK::Params
 {
 
 // Function PlayerGameSessionTransitionWidget.PlayerGameSessionTransitionWidget_C.ExecuteUbergraph_PlayerGameSessionTransitionWidget
-// 0x0090 (0x0090 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0004(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_PostEventGlobal_ReturnValue;              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1;                          // 0x0028(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_PostEventGlobal_ReturnValue_1;            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetTransitionText_ReturnValue;            // 0x0068(0x0018)()
-	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetTransitionText_ReturnValue;            // 0x0040(0x0018)()
+	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget) == 0x000008, "Wrong alignment on PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget");
-static_assert(sizeof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget) == 0x000090, "Wrong size on PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget");
+static_assert(sizeof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget) == 0x000068, "Wrong size on PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget");
 static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, EntryPoint) == 0x000000, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, Temp_delegate_Variable) == 0x000004, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::Temp_delegate_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_PostEventGlobal_ReturnValue) == 0x000024, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_PostEventGlobal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, Temp_delegate_Variable_1) == 0x000028, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::Temp_delegate_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_PostEventGlobal_ReturnValue_1) == 0x000038, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_PostEventGlobal_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, K2Node_CreateDelegate_OutputDelegate_1) == 0x00003C, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_PlayAnimation_ReturnValue) == 0x000050, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_PlayAnimation_ReturnValue_1) == 0x000058, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000060, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_GetTransitionText_ReturnValue) == 0x000068, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_GetTransitionText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_GetRBGameState_ReturnValue) == 0x000080, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_GetRBGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_IsValid_ReturnValue) == 0x000088, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_PlayAnimation_ReturnValue_1) == 0x000030, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000038, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_GetTransitionText_ReturnValue) == 0x000040, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_GetTransitionText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_GetRBGameState_ReturnValue) == 0x000058, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_GetRBGameState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'PlayerGameSessionTransitionWidget_C_ExecuteUbergraph_PlayerGameSessionTransitionWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function PlayerGameSessionTransitionWidget.PlayerGameSessionTransitionWidget_C.GetTransitionText
 // 0x0028 (0x0028 - 0x0000)

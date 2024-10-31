@@ -483,98 +483,6 @@ enum class EAkWindowsAudioAPI : uint8
 	EAkWindowsAudioAPI_MAX                   = 3,
 };
 
-// ScriptStruct AkAudio.AKWaapiJsonObject
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FAKWaapiJsonObject final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAKWaapiJsonObject) == 0x000008, "Wrong alignment on FAKWaapiJsonObject");
-static_assert(sizeof(FAKWaapiJsonObject) == 0x000010, "Wrong size on FAKWaapiJsonObject");
-
-// ScriptStruct AkAudio.AkAmbSoundCheckpointRecord
-// 0x0001 (0x0001 - 0x0000)
-struct FAkAmbSoundCheckpointRecord final
-{
-public:
-	bool                                          bCurrentlyPlaying;                                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAkAmbSoundCheckpointRecord) == 0x000001, "Wrong alignment on FAkAmbSoundCheckpointRecord");
-static_assert(sizeof(FAkAmbSoundCheckpointRecord) == 0x000001, "Wrong size on FAkAmbSoundCheckpointRecord");
-static_assert(offsetof(FAkAmbSoundCheckpointRecord, bCurrentlyPlaying) == 0x000000, "Member 'FAkAmbSoundCheckpointRecord::bCurrentlyPlaying' has a wrong offset!");
-
-// ScriptStruct AkAudio.MovieSceneTangentDataSerializationHelper
-// 0x0014 (0x0014 - 0x0000)
-struct FMovieSceneTangentDataSerializationHelper final
-{
-public:
-	float                                         ArriveTangent;                                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LeaveTangent;                                      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERichCurveTangentWeightMode                   TangentWeightMode;                                 // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ArriveTangentWeight;                               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LeaveTangentWeight;                                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMovieSceneTangentDataSerializationHelper) == 0x000004, "Wrong alignment on FMovieSceneTangentDataSerializationHelper");
-static_assert(sizeof(FMovieSceneTangentDataSerializationHelper) == 0x000014, "Wrong size on FMovieSceneTangentDataSerializationHelper");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, ArriveTangent) == 0x000000, "Member 'FMovieSceneTangentDataSerializationHelper::ArriveTangent' has a wrong offset!");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, LeaveTangent) == 0x000004, "Member 'FMovieSceneTangentDataSerializationHelper::LeaveTangent' has a wrong offset!");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, TangentWeightMode) == 0x000008, "Member 'FMovieSceneTangentDataSerializationHelper::TangentWeightMode' has a wrong offset!");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, ArriveTangentWeight) == 0x00000C, "Member 'FMovieSceneTangentDataSerializationHelper::ArriveTangentWeight' has a wrong offset!");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, LeaveTangentWeight) == 0x000010, "Member 'FMovieSceneTangentDataSerializationHelper::LeaveTangentWeight' has a wrong offset!");
-
-// ScriptStruct AkAudio.MovieSceneFloatValueSerializationHelper
-// 0x001C (0x001C - 0x0000)
-struct FMovieSceneFloatValueSerializationHelper final
-{
-public:
-	float                                         Value;                                             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERichCurveInterpMode                          InterpMode;                                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERichCurveTangentMode                         TangentMode;                                       // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMovieSceneTangentDataSerializationHelper Tangent;                                           // 0x0008(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMovieSceneFloatValueSerializationHelper) == 0x000004, "Wrong alignment on FMovieSceneFloatValueSerializationHelper");
-static_assert(sizeof(FMovieSceneFloatValueSerializationHelper) == 0x00001C, "Wrong size on FMovieSceneFloatValueSerializationHelper");
-static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, Value) == 0x000000, "Member 'FMovieSceneFloatValueSerializationHelper::Value' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, InterpMode) == 0x000004, "Member 'FMovieSceneFloatValueSerializationHelper::InterpMode' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, TangentMode) == 0x000005, "Member 'FMovieSceneFloatValueSerializationHelper::TangentMode' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, Tangent) == 0x000008, "Member 'FMovieSceneFloatValueSerializationHelper::Tangent' has a wrong offset!");
-
-// ScriptStruct AkAudio.MovieSceneFloatChannelSerializationHelper
-// 0x0030 (0x0030 - 0x0000)
-struct FMovieSceneFloatChannelSerializationHelper final
-{
-public:
-	ERichCurveExtrapolation                       PreInfinityExtrap;                                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERichCurveExtrapolation                       PostInfinityExtrap;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 Times;                                             // 0x0008(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FMovieSceneFloatValueSerializationHelper> Values;                                            // 0x0018(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	float                                         DefaultValue;                                      // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHasDefaultValue;                                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMovieSceneFloatChannelSerializationHelper) == 0x000008, "Wrong alignment on FMovieSceneFloatChannelSerializationHelper");
-static_assert(sizeof(FMovieSceneFloatChannelSerializationHelper) == 0x000030, "Wrong size on FMovieSceneFloatChannelSerializationHelper");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, PreInfinityExtrap) == 0x000000, "Member 'FMovieSceneFloatChannelSerializationHelper::PreInfinityExtrap' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, PostInfinityExtrap) == 0x000001, "Member 'FMovieSceneFloatChannelSerializationHelper::PostInfinityExtrap' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, Times) == 0x000008, "Member 'FMovieSceneFloatChannelSerializationHelper::Times' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, Values) == 0x000018, "Member 'FMovieSceneFloatChannelSerializationHelper::Values' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, DefaultValue) == 0x000028, "Member 'FMovieSceneFloatChannelSerializationHelper::DefaultValue' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, bHasDefaultValue) == 0x00002C, "Member 'FMovieSceneFloatChannelSerializationHelper::bHasDefaultValue' has a wrong offset!");
-
-// ScriptStruct AkAudio.AkWaapiSubscriptionId
-// 0x0008 (0x0008 - 0x0000)
-struct alignas(0x08) FAkWaapiSubscriptionId final
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAkWaapiSubscriptionId) == 0x000008, "Wrong alignment on FAkWaapiSubscriptionId");
-static_assert(sizeof(FAkWaapiSubscriptionId) == 0x000008, "Wrong size on FAkWaapiSubscriptionId");
-
 // ScriptStruct AkAudio.AkAdvancedSpatialAudioSettings
 // 0x0008 (0x0008 - 0x0000)
 struct FAkAdvancedSpatialAudioSettings final
@@ -648,6 +556,36 @@ static_assert(alignof(FAkAndroidAdvancedInitializationSettings) == 0x000004, "Wr
 static_assert(sizeof(FAkAndroidAdvancedInitializationSettings) == 0x00003C, "Wrong size on FAkAndroidAdvancedInitializationSettings");
 static_assert(offsetof(FAkAndroidAdvancedInitializationSettings, RoundFrameSizeToHardwareSize) == 0x000038, "Member 'FAkAndroidAdvancedInitializationSettings::RoundFrameSizeToHardwareSize' has a wrong offset!");
 
+// ScriptStruct AkAudio.AkCommunicationSettings
+// 0x0020 (0x0020 - 0x0000)
+struct FAkCommunicationSettings
+{
+public:
+	uint32                                        PoolSize;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint16                                        DiscoveryBroadcastPort;                            // 0x0004(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint16                                        CommandPort;                                       // 0x0006(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint16                                        NotificationPort;                                  // 0x0008(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 NetworkName;                                       // 0x0010(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAkCommunicationSettings) == 0x000008, "Wrong alignment on FAkCommunicationSettings");
+static_assert(sizeof(FAkCommunicationSettings) == 0x000020, "Wrong size on FAkCommunicationSettings");
+static_assert(offsetof(FAkCommunicationSettings, PoolSize) == 0x000000, "Member 'FAkCommunicationSettings::PoolSize' has a wrong offset!");
+static_assert(offsetof(FAkCommunicationSettings, DiscoveryBroadcastPort) == 0x000004, "Member 'FAkCommunicationSettings::DiscoveryBroadcastPort' has a wrong offset!");
+static_assert(offsetof(FAkCommunicationSettings, CommandPort) == 0x000006, "Member 'FAkCommunicationSettings::CommandPort' has a wrong offset!");
+static_assert(offsetof(FAkCommunicationSettings, NotificationPort) == 0x000008, "Member 'FAkCommunicationSettings::NotificationPort' has a wrong offset!");
+static_assert(offsetof(FAkCommunicationSettings, NetworkName) == 0x000010, "Member 'FAkCommunicationSettings::NetworkName' has a wrong offset!");
+
+// ScriptStruct AkAudio.AKWaapiJsonObject
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FAKWaapiJsonObject final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAKWaapiJsonObject) == 0x000008, "Wrong alignment on FAKWaapiJsonObject");
+static_assert(sizeof(FAKWaapiJsonObject) == 0x000010, "Wrong size on FAKWaapiJsonObject");
+
 // ScriptStruct AkAudio.AkExternalSourceInfo
 // 0x0028 (0x0028 - 0x0000)
 struct FAkExternalSourceInfo final
@@ -663,6 +601,53 @@ static_assert(sizeof(FAkExternalSourceInfo) == 0x000028, "Wrong size on FAkExter
 static_assert(offsetof(FAkExternalSourceInfo, ExternalSrcName) == 0x000000, "Member 'FAkExternalSourceInfo::ExternalSrcName' has a wrong offset!");
 static_assert(offsetof(FAkExternalSourceInfo, CodecID) == 0x000010, "Member 'FAkExternalSourceInfo::CodecID' has a wrong offset!");
 static_assert(offsetof(FAkExternalSourceInfo, Filename) == 0x000018, "Member 'FAkExternalSourceInfo::Filename' has a wrong offset!");
+
+// ScriptStruct AkAudio.AkMidiEventBase
+// 0x0002 (0x0002 - 0x0000)
+struct FAkMidiEventBase
+{
+public:
+	EAkMidiEventType                              Type;                                              // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Chan;                                              // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAkMidiEventBase) == 0x000001, "Wrong alignment on FAkMidiEventBase");
+static_assert(sizeof(FAkMidiEventBase) == 0x000002, "Wrong size on FAkMidiEventBase");
+static_assert(offsetof(FAkMidiEventBase, Type) == 0x000000, "Member 'FAkMidiEventBase::Type' has a wrong offset!");
+static_assert(offsetof(FAkMidiEventBase, Chan) == 0x000001, "Member 'FAkMidiEventBase::Chan' has a wrong offset!");
+
+// ScriptStruct AkAudio.AkMidiNoteOnOff
+// 0x0002 (0x0004 - 0x0002)
+struct FAkMidiNoteOnOff final : public FAkMidiEventBase
+{
+public:
+	uint8                                         Note;                                              // 0x0002(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Velocity;                                          // 0x0003(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAkMidiNoteOnOff) == 0x000001, "Wrong alignment on FAkMidiNoteOnOff");
+static_assert(sizeof(FAkMidiNoteOnOff) == 0x000004, "Wrong size on FAkMidiNoteOnOff");
+static_assert(offsetof(FAkMidiNoteOnOff, Note) == 0x000002, "Member 'FAkMidiNoteOnOff::Note' has a wrong offset!");
+static_assert(offsetof(FAkMidiNoteOnOff, Velocity) == 0x000003, "Member 'FAkMidiNoteOnOff::Velocity' has a wrong offset!");
+
+// ScriptStruct AkAudio.AkWaapiSubscriptionId
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) FAkWaapiSubscriptionId final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAkWaapiSubscriptionId) == 0x000008, "Wrong alignment on FAkWaapiSubscriptionId");
+static_assert(sizeof(FAkWaapiSubscriptionId) == 0x000008, "Wrong size on FAkWaapiSubscriptionId");
+
+// ScriptStruct AkAudio.AkAmbSoundCheckpointRecord
+// 0x0001 (0x0001 - 0x0000)
+struct FAkAmbSoundCheckpointRecord final
+{
+public:
+	bool                                          bCurrentlyPlaying;                                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAkAmbSoundCheckpointRecord) == 0x000001, "Wrong alignment on FAkAmbSoundCheckpointRecord");
+static_assert(sizeof(FAkAmbSoundCheckpointRecord) == 0x000001, "Wrong size on FAkAmbSoundCheckpointRecord");
+static_assert(offsetof(FAkAmbSoundCheckpointRecord, bCurrentlyPlaying) == 0x000000, "Member 'FAkAmbSoundCheckpointRecord::bCurrentlyPlaying' has a wrong offset!");
 
 // ScriptStruct AkAudio.AkSegmentInfo
 // 0x0024 (0x0024 - 0x0000)
@@ -690,19 +675,6 @@ static_assert(offsetof(FAkSegmentInfo, BeatDuration) == 0x000014, "Member 'FAkSe
 static_assert(offsetof(FAkSegmentInfo, BarDuration) == 0x000018, "Member 'FAkSegmentInfo::BarDuration' has a wrong offset!");
 static_assert(offsetof(FAkSegmentInfo, GridDuration) == 0x00001C, "Member 'FAkSegmentInfo::GridDuration' has a wrong offset!");
 static_assert(offsetof(FAkSegmentInfo, GridOffset) == 0x000020, "Member 'FAkSegmentInfo::GridOffset' has a wrong offset!");
-
-// ScriptStruct AkAudio.AkMidiEventBase
-// 0x0002 (0x0002 - 0x0000)
-struct FAkMidiEventBase
-{
-public:
-	EAkMidiEventType                              Type;                                              // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Chan;                                              // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAkMidiEventBase) == 0x000001, "Wrong alignment on FAkMidiEventBase");
-static_assert(sizeof(FAkMidiEventBase) == 0x000002, "Wrong size on FAkMidiEventBase");
-static_assert(offsetof(FAkMidiEventBase, Type) == 0x000000, "Member 'FAkMidiEventBase::Type' has a wrong offset!");
-static_assert(offsetof(FAkMidiEventBase, Chan) == 0x000001, "Member 'FAkMidiEventBase::Chan' has a wrong offset!");
 
 // ScriptStruct AkAudio.AkMidiProgramChange
 // 0x0001 (0x0003 - 0x0002)
@@ -766,19 +738,6 @@ static_assert(alignof(FAkMidiCc) == 0x000001, "Wrong alignment on FAkMidiCc");
 static_assert(sizeof(FAkMidiCc) == 0x000004, "Wrong size on FAkMidiCc");
 static_assert(offsetof(FAkMidiCc, Cc) == 0x000002, "Member 'FAkMidiCc::Cc' has a wrong offset!");
 static_assert(offsetof(FAkMidiCc, Value) == 0x000003, "Member 'FAkMidiCc::Value' has a wrong offset!");
-
-// ScriptStruct AkAudio.AkMidiNoteOnOff
-// 0x0002 (0x0004 - 0x0002)
-struct FAkMidiNoteOnOff final : public FAkMidiEventBase
-{
-public:
-	uint8                                         Note;                                              // 0x0002(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Velocity;                                          // 0x0003(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAkMidiNoteOnOff) == 0x000001, "Wrong alignment on FAkMidiNoteOnOff");
-static_assert(sizeof(FAkMidiNoteOnOff) == 0x000004, "Wrong size on FAkMidiNoteOnOff");
-static_assert(offsetof(FAkMidiNoteOnOff, Note) == 0x000002, "Member 'FAkMidiNoteOnOff::Note' has a wrong offset!");
-static_assert(offsetof(FAkMidiNoteOnOff, Velocity) == 0x000003, "Member 'FAkMidiNoteOnOff::Velocity' has a wrong offset!");
 
 // ScriptStruct AkAudio.AkMidiGeneric
 // 0x0002 (0x0004 - 0x0002)
@@ -891,26 +850,6 @@ public:
 static_assert(alignof(FAkCommonInitializationSettingsWithSampleRate) == 0x000008, "Wrong alignment on FAkCommonInitializationSettingsWithSampleRate");
 static_assert(sizeof(FAkCommonInitializationSettingsWithSampleRate) == 0x000068, "Wrong size on FAkCommonInitializationSettingsWithSampleRate");
 static_assert(offsetof(FAkCommonInitializationSettingsWithSampleRate, SampleRate) == 0x000060, "Member 'FAkCommonInitializationSettingsWithSampleRate::SampleRate' has a wrong offset!");
-
-// ScriptStruct AkAudio.AkCommunicationSettings
-// 0x0020 (0x0020 - 0x0000)
-struct FAkCommunicationSettings
-{
-public:
-	uint32                                        PoolSize;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint16                                        DiscoveryBroadcastPort;                            // 0x0004(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint16                                        CommandPort;                                       // 0x0006(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint16                                        NotificationPort;                                  // 0x0008(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 NetworkName;                                       // 0x0010(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAkCommunicationSettings) == 0x000008, "Wrong alignment on FAkCommunicationSettings");
-static_assert(sizeof(FAkCommunicationSettings) == 0x000020, "Wrong size on FAkCommunicationSettings");
-static_assert(offsetof(FAkCommunicationSettings, PoolSize) == 0x000000, "Member 'FAkCommunicationSettings::PoolSize' has a wrong offset!");
-static_assert(offsetof(FAkCommunicationSettings, DiscoveryBroadcastPort) == 0x000004, "Member 'FAkCommunicationSettings::DiscoveryBroadcastPort' has a wrong offset!");
-static_assert(offsetof(FAkCommunicationSettings, CommandPort) == 0x000006, "Member 'FAkCommunicationSettings::CommandPort' has a wrong offset!");
-static_assert(offsetof(FAkCommunicationSettings, NotificationPort) == 0x000008, "Member 'FAkCommunicationSettings::NotificationPort' has a wrong offset!");
-static_assert(offsetof(FAkCommunicationSettings, NetworkName) == 0x000010, "Member 'FAkCommunicationSettings::NetworkName' has a wrong offset!");
 
 // ScriptStruct AkAudio.AkCommunicationSettingsWithCommSelection
 // 0x0008 (0x0028 - 0x0020)
@@ -1053,6 +992,67 @@ public:
 static_assert(alignof(FAkWaapiFieldNames) == 0x000008, "Wrong alignment on FAkWaapiFieldNames");
 static_assert(sizeof(FAkWaapiFieldNames) == 0x000010, "Wrong size on FAkWaapiFieldNames");
 static_assert(offsetof(FAkWaapiFieldNames, FieldName) == 0x000000, "Member 'FAkWaapiFieldNames::FieldName' has a wrong offset!");
+
+// ScriptStruct AkAudio.MovieSceneTangentDataSerializationHelper
+// 0x0014 (0x0014 - 0x0000)
+struct FMovieSceneTangentDataSerializationHelper final
+{
+public:
+	float                                         ArriveTangent;                                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LeaveTangent;                                      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERichCurveTangentWeightMode                   TangentWeightMode;                                 // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ArriveTangentWeight;                               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LeaveTangentWeight;                                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FMovieSceneTangentDataSerializationHelper) == 0x000004, "Wrong alignment on FMovieSceneTangentDataSerializationHelper");
+static_assert(sizeof(FMovieSceneTangentDataSerializationHelper) == 0x000014, "Wrong size on FMovieSceneTangentDataSerializationHelper");
+static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, ArriveTangent) == 0x000000, "Member 'FMovieSceneTangentDataSerializationHelper::ArriveTangent' has a wrong offset!");
+static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, LeaveTangent) == 0x000004, "Member 'FMovieSceneTangentDataSerializationHelper::LeaveTangent' has a wrong offset!");
+static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, TangentWeightMode) == 0x000008, "Member 'FMovieSceneTangentDataSerializationHelper::TangentWeightMode' has a wrong offset!");
+static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, ArriveTangentWeight) == 0x00000C, "Member 'FMovieSceneTangentDataSerializationHelper::ArriveTangentWeight' has a wrong offset!");
+static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, LeaveTangentWeight) == 0x000010, "Member 'FMovieSceneTangentDataSerializationHelper::LeaveTangentWeight' has a wrong offset!");
+
+// ScriptStruct AkAudio.MovieSceneFloatValueSerializationHelper
+// 0x001C (0x001C - 0x0000)
+struct FMovieSceneFloatValueSerializationHelper final
+{
+public:
+	float                                         Value;                                             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERichCurveInterpMode                          InterpMode;                                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERichCurveTangentMode                         TangentMode;                                       // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMovieSceneTangentDataSerializationHelper Tangent;                                           // 0x0008(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FMovieSceneFloatValueSerializationHelper) == 0x000004, "Wrong alignment on FMovieSceneFloatValueSerializationHelper");
+static_assert(sizeof(FMovieSceneFloatValueSerializationHelper) == 0x00001C, "Wrong size on FMovieSceneFloatValueSerializationHelper");
+static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, Value) == 0x000000, "Member 'FMovieSceneFloatValueSerializationHelper::Value' has a wrong offset!");
+static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, InterpMode) == 0x000004, "Member 'FMovieSceneFloatValueSerializationHelper::InterpMode' has a wrong offset!");
+static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, TangentMode) == 0x000005, "Member 'FMovieSceneFloatValueSerializationHelper::TangentMode' has a wrong offset!");
+static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, Tangent) == 0x000008, "Member 'FMovieSceneFloatValueSerializationHelper::Tangent' has a wrong offset!");
+
+// ScriptStruct AkAudio.MovieSceneFloatChannelSerializationHelper
+// 0x0030 (0x0030 - 0x0000)
+struct FMovieSceneFloatChannelSerializationHelper final
+{
+public:
+	ERichCurveExtrapolation                       PreInfinityExtrap;                                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERichCurveExtrapolation                       PostInfinityExtrap;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 Times;                                             // 0x0008(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FMovieSceneFloatValueSerializationHelper> Values;                                            // 0x0018(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         DefaultValue;                                      // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHasDefaultValue;                                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FMovieSceneFloatChannelSerializationHelper) == 0x000008, "Wrong alignment on FMovieSceneFloatChannelSerializationHelper");
+static_assert(sizeof(FMovieSceneFloatChannelSerializationHelper) == 0x000030, "Wrong size on FMovieSceneFloatChannelSerializationHelper");
+static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, PreInfinityExtrap) == 0x000000, "Member 'FMovieSceneFloatChannelSerializationHelper::PreInfinityExtrap' has a wrong offset!");
+static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, PostInfinityExtrap) == 0x000001, "Member 'FMovieSceneFloatChannelSerializationHelper::PostInfinityExtrap' has a wrong offset!");
+static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, Times) == 0x000008, "Member 'FMovieSceneFloatChannelSerializationHelper::Times' has a wrong offset!");
+static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, Values) == 0x000018, "Member 'FMovieSceneFloatChannelSerializationHelper::Values' has a wrong offset!");
+static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, DefaultValue) == 0x000028, "Member 'FMovieSceneFloatChannelSerializationHelper::DefaultValue' has a wrong offset!");
+static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, bHasDefaultValue) == 0x00002C, "Member 'FMovieSceneFloatChannelSerializationHelper::bHasDefaultValue' has a wrong offset!");
 
 // ScriptStruct AkAudio.AkWaapiUri
 // 0x0010 (0x0010 - 0x0000)

@@ -42,6 +42,7 @@ public:
 
 public:
 	void ExecuteUbergraph_VariableSizeBlocker_DoorBlockableActor_BP(int32 EntryPoint);
+	void Event_OnResetStage();
 	void BndEvt__VariableSizeBlocker_DoorBlockableActor_BP_DamageableComponent_K2Node_ComponentBoundEvent_0_OnDamageableDamaged__DelegateSignature(class URBDamageableComponent* DamageableComponent_0, bool IsDestroyed);
 	void OnBashCompleted(class ARBPawn* Pawn);
 	void OnBashDoAction(class ARBPawn* Pawn);

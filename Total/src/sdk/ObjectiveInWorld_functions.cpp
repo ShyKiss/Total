@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function ObjectiveInWorld.ObjectiveInWorld_C.ExecuteUbergraph_ObjectiveInWorld
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -32,26 +32,6 @@ void UObjectiveInWorld_C::ExecuteUbergraph_ObjectiveInWorld(int32 EntryPoint)
 	Params::ObjectiveInWorld_C_ExecuteUbergraph_ObjectiveInWorld Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ObjectiveInWorld.ObjectiveInWorld_C.OnCompletingObjectiveChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsCompletingObjective                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UObjectiveInWorld_C::OnCompletingObjectiveChanged(bool IsCompletingObjective)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ObjectiveInWorld_C", "OnCompletingObjectiveChanged");
-
-	Params::ObjectiveInWorld_C_OnCompletingObjectiveChanged Parms{};
-
-	Parms.IsCompletingObjective = IsCompletingObjective;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -224,7 +204,7 @@ void UObjectiveInWorld_C::UpdateIconImage()
 
 
 // Function ObjectiveInWorld.ObjectiveInWorld_C.Event_DrawHudUpdate
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FRBWorldIconUpdateContext        UpdateContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference)
 

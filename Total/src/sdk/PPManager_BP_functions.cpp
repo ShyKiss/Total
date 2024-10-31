@@ -583,7 +583,7 @@ void APPManager_BP_C::Remove_PP_Override()
 }
 
 
-// Function PPManager_BP.PPManager_BP_C.debug
+// Function PPManager_BP.PPManager_BP_C.Debug
 // (Public, BlueprintCallable, BlueprintEvent)
 
 void APPManager_BP_C::Debug()
@@ -591,7 +591,7 @@ void APPManager_BP_C::Debug()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPManager_BP_C", "debug");
+		Func = Class->GetFunction("PPManager_BP_C", "Debug");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

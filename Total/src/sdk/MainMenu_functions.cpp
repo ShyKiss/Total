@@ -716,6 +716,34 @@ void UMainMenu_C::RefreshCyclePromptDisplay()
 }
 
 
+// Function MainMenu.MainMenu_C.BindNewsCycling
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UMainMenu_C::BindNewsCycling()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenu_C", "BindNewsCycling");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenu.MainMenu_C.UnbindNewsCycling
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UMainMenu_C::UnbindNewsCycling()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenu_C", "UnbindNewsCycling");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function MainMenu.MainMenu_C.SequenceEvent__ENTRYPOINTMainMenu_0
 // (Public, BlueprintCallable, BlueprintEvent)
 

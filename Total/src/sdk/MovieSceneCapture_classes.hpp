@@ -196,77 +196,6 @@ public:
 static_assert(alignof(UImageSequenceProtocol) == 0x000008, "Wrong alignment on UImageSequenceProtocol");
 static_assert(sizeof(UImageSequenceProtocol) == 0x0000D8, "Wrong size on UImageSequenceProtocol");
 
-// Class MovieSceneCapture.MovieSceneCapture
-// 0x0200 (0x0228 - 0x0028)
-class UMovieSceneCapture : public UObject
-{
-public:
-	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoftClassPath                         ImageCaptureProtocolType;                          // 0x0038(0x0018)(Edit, ZeroConstructor, Config, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftClassPath                         AudioCaptureProtocolType;                          // 0x0050(0x0018)(Edit, ZeroConstructor, Config, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMovieSceneImageCaptureProtocolBase*    ImageCaptureProtocol;                              // 0x0068(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMovieSceneAudioCaptureProtocolBase*    AudioCaptureProtocol;                              // 0x0070(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMovieSceneCaptureSettings             Settings;                                          // 0x0078(0x0070)(Edit, BlueprintVisible, Config, NativeAccessSpecifierPublic)
-	bool                                          bUseSeparateProcess;                               // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCloseEditorWhenCaptureStarts;                     // 0x00E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA[0x6];                                       // 0x00EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AdditionalCommandLineArguments;                    // 0x00F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 InheritedCommandLineArguments;                     // 0x0100(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Transient, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_110[0x118];                                    // 0x0110(0x0118)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	class UMovieSceneCaptureProtocolBase* GetAudioCaptureProtocol();
-	class UMovieSceneCaptureProtocolBase* GetImageCaptureProtocol();
-	void SetAudioCaptureProtocolType(TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType);
-	void SetImageCaptureProtocolType(TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MovieSceneCapture">();
-	}
-	static class UMovieSceneCapture* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieSceneCapture>();
-	}
-};
-static_assert(alignof(UMovieSceneCapture) == 0x000008, "Wrong alignment on UMovieSceneCapture");
-static_assert(sizeof(UMovieSceneCapture) == 0x000228, "Wrong size on UMovieSceneCapture");
-static_assert(offsetof(UMovieSceneCapture, ImageCaptureProtocolType) == 0x000038, "Member 'UMovieSceneCapture::ImageCaptureProtocolType' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, AudioCaptureProtocolType) == 0x000050, "Member 'UMovieSceneCapture::AudioCaptureProtocolType' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, ImageCaptureProtocol) == 0x000068, "Member 'UMovieSceneCapture::ImageCaptureProtocol' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, AudioCaptureProtocol) == 0x000070, "Member 'UMovieSceneCapture::AudioCaptureProtocol' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, Settings) == 0x000078, "Member 'UMovieSceneCapture::Settings' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, bUseSeparateProcess) == 0x0000E8, "Member 'UMovieSceneCapture::bUseSeparateProcess' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, bCloseEditorWhenCaptureStarts) == 0x0000E9, "Member 'UMovieSceneCapture::bCloseEditorWhenCaptureStarts' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, AdditionalCommandLineArguments) == 0x0000F0, "Member 'UMovieSceneCapture::AdditionalCommandLineArguments' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, InheritedCommandLineArguments) == 0x000100, "Member 'UMovieSceneCapture::InheritedCommandLineArguments' has a wrong offset!");
-
-// Class MovieSceneCapture.LevelCapture
-// 0x0020 (0x0248 - 0x0228)
-class ULevelCapture final : public UMovieSceneCapture
-{
-public:
-	bool                                          bAutoStartCapture;                                 // 0x0228(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_229[0xB];                                      // 0x0229(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  PrerequisiteActorId;                               // 0x0234(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LevelCapture">();
-	}
-	static class ULevelCapture* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULevelCapture>();
-	}
-};
-static_assert(alignof(ULevelCapture) == 0x000008, "Wrong alignment on ULevelCapture");
-static_assert(sizeof(ULevelCapture) == 0x000248, "Wrong size on ULevelCapture");
-static_assert(offsetof(ULevelCapture, bAutoStartCapture) == 0x000228, "Member 'ULevelCapture::bAutoStartCapture' has a wrong offset!");
-static_assert(offsetof(ULevelCapture, PrerequisiteActorId) == 0x000234, "Member 'ULevelCapture::PrerequisiteActorId' has a wrong offset!");
-
 // Class MovieSceneCapture.CompressedImageSequenceProtocol
 // 0x0008 (0x00E0 - 0x00D8)
 class UCompressedImageSequenceProtocol : public UImageSequenceProtocol
@@ -340,31 +269,6 @@ public:
 static_assert(alignof(UImageSequenceProtocol_JPG) == 0x000008, "Wrong alignment on UImageSequenceProtocol_JPG");
 static_assert(sizeof(UImageSequenceProtocol_JPG) == 0x0000E0, "Wrong size on UImageSequenceProtocol_JPG");
 
-// Class MovieSceneCapture.VideoCaptureProtocol
-// 0x0018 (0x0080 - 0x0068)
-class UVideoCaptureProtocol final : public UFrameGrabberProtocol
-{
-public:
-	bool                                          bUseCompression;                                   // 0x0068(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CompressionQuality;                                // 0x006C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_70[0x10];                                      // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"VideoCaptureProtocol">();
-	}
-	static class UVideoCaptureProtocol* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UVideoCaptureProtocol>();
-	}
-};
-static_assert(alignof(UVideoCaptureProtocol) == 0x000008, "Wrong alignment on UVideoCaptureProtocol");
-static_assert(sizeof(UVideoCaptureProtocol) == 0x000080, "Wrong size on UVideoCaptureProtocol");
-static_assert(offsetof(UVideoCaptureProtocol, bUseCompression) == 0x000068, "Member 'UVideoCaptureProtocol::bUseCompression' has a wrong offset!");
-static_assert(offsetof(UVideoCaptureProtocol, CompressionQuality) == 0x00006C, "Member 'UVideoCaptureProtocol::CompressionQuality' has a wrong offset!");
-
 // Class MovieSceneCapture.ImageSequenceProtocol_EXR
 // 0x0010 (0x00E8 - 0x00D8)
 class UImageSequenceProtocol_EXR final : public UImageSequenceProtocol
@@ -405,6 +309,77 @@ public:
 };
 static_assert(alignof(IMovieSceneCaptureInterface) == 0x000008, "Wrong alignment on IMovieSceneCaptureInterface");
 static_assert(sizeof(IMovieSceneCaptureInterface) == 0x000028, "Wrong size on IMovieSceneCaptureInterface");
+
+// Class MovieSceneCapture.MovieSceneCapture
+// 0x0200 (0x0228 - 0x0028)
+class UMovieSceneCapture : public UObject
+{
+public:
+	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoftClassPath                         ImageCaptureProtocolType;                          // 0x0038(0x0018)(Edit, ZeroConstructor, Config, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         AudioCaptureProtocolType;                          // 0x0050(0x0018)(Edit, ZeroConstructor, Config, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieSceneImageCaptureProtocolBase*    ImageCaptureProtocol;                              // 0x0068(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieSceneAudioCaptureProtocolBase*    AudioCaptureProtocol;                              // 0x0070(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMovieSceneCaptureSettings             Settings;                                          // 0x0078(0x0070)(Edit, BlueprintVisible, Config, NativeAccessSpecifierPublic)
+	bool                                          bUseSeparateProcess;                               // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCloseEditorWhenCaptureStarts;                     // 0x00E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EA[0x6];                                       // 0x00EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 AdditionalCommandLineArguments;                    // 0x00F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InheritedCommandLineArguments;                     // 0x0100(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Transient, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_110[0x118];                                    // 0x0110(0x0118)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	class UMovieSceneCaptureProtocolBase* GetAudioCaptureProtocol();
+	class UMovieSceneCaptureProtocolBase* GetImageCaptureProtocol();
+	void SetAudioCaptureProtocolType(TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType);
+	void SetImageCaptureProtocolType(TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"MovieSceneCapture">();
+	}
+	static class UMovieSceneCapture* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieSceneCapture>();
+	}
+};
+static_assert(alignof(UMovieSceneCapture) == 0x000008, "Wrong alignment on UMovieSceneCapture");
+static_assert(sizeof(UMovieSceneCapture) == 0x000228, "Wrong size on UMovieSceneCapture");
+static_assert(offsetof(UMovieSceneCapture, ImageCaptureProtocolType) == 0x000038, "Member 'UMovieSceneCapture::ImageCaptureProtocolType' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, AudioCaptureProtocolType) == 0x000050, "Member 'UMovieSceneCapture::AudioCaptureProtocolType' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, ImageCaptureProtocol) == 0x000068, "Member 'UMovieSceneCapture::ImageCaptureProtocol' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, AudioCaptureProtocol) == 0x000070, "Member 'UMovieSceneCapture::AudioCaptureProtocol' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, Settings) == 0x000078, "Member 'UMovieSceneCapture::Settings' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, bUseSeparateProcess) == 0x0000E8, "Member 'UMovieSceneCapture::bUseSeparateProcess' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, bCloseEditorWhenCaptureStarts) == 0x0000E9, "Member 'UMovieSceneCapture::bCloseEditorWhenCaptureStarts' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, AdditionalCommandLineArguments) == 0x0000F0, "Member 'UMovieSceneCapture::AdditionalCommandLineArguments' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, InheritedCommandLineArguments) == 0x000100, "Member 'UMovieSceneCapture::InheritedCommandLineArguments' has a wrong offset!");
+
+// Class MovieSceneCapture.LevelCapture
+// 0x0020 (0x0248 - 0x0228)
+class ULevelCapture final : public UMovieSceneCapture
+{
+public:
+	bool                                          bAutoStartCapture;                                 // 0x0228(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_229[0xB];                                      // 0x0229(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  PrerequisiteActorId;                               // 0x0234(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"LevelCapture">();
+	}
+	static class ULevelCapture* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULevelCapture>();
+	}
+};
+static_assert(alignof(ULevelCapture) == 0x000008, "Wrong alignment on ULevelCapture");
+static_assert(sizeof(ULevelCapture) == 0x000248, "Wrong size on ULevelCapture");
+static_assert(offsetof(ULevelCapture, bAutoStartCapture) == 0x000228, "Member 'ULevelCapture::bAutoStartCapture' has a wrong offset!");
+static_assert(offsetof(ULevelCapture, PrerequisiteActorId) == 0x000234, "Member 'ULevelCapture::PrerequisiteActorId' has a wrong offset!");
 
 // Class MovieSceneCapture.MovieSceneCaptureEnvironment
 // 0x0000 (0x0028 - 0x0028)
@@ -501,6 +476,31 @@ static_assert(sizeof(UUserDefinedImageCaptureProtocol) == 0x0000E0, "Wrong size 
 static_assert(offsetof(UUserDefinedImageCaptureProtocol, Format) == 0x0000D8, "Member 'UUserDefinedImageCaptureProtocol::Format' has a wrong offset!");
 static_assert(offsetof(UUserDefinedImageCaptureProtocol, bEnableCompression) == 0x0000D9, "Member 'UUserDefinedImageCaptureProtocol::bEnableCompression' has a wrong offset!");
 static_assert(offsetof(UUserDefinedImageCaptureProtocol, CompressionQuality) == 0x0000DC, "Member 'UUserDefinedImageCaptureProtocol::CompressionQuality' has a wrong offset!");
+
+// Class MovieSceneCapture.VideoCaptureProtocol
+// 0x0018 (0x0080 - 0x0068)
+class UVideoCaptureProtocol final : public UFrameGrabberProtocol
+{
+public:
+	bool                                          bUseCompression;                                   // 0x0068(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CompressionQuality;                                // 0x006C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_70[0x10];                                      // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"VideoCaptureProtocol">();
+	}
+	static class UVideoCaptureProtocol* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UVideoCaptureProtocol>();
+	}
+};
+static_assert(alignof(UVideoCaptureProtocol) == 0x000008, "Wrong alignment on UVideoCaptureProtocol");
+static_assert(sizeof(UVideoCaptureProtocol) == 0x000080, "Wrong size on UVideoCaptureProtocol");
+static_assert(offsetof(UVideoCaptureProtocol, bUseCompression) == 0x000068, "Member 'UVideoCaptureProtocol::bUseCompression' has a wrong offset!");
+static_assert(offsetof(UVideoCaptureProtocol, CompressionQuality) == 0x00006C, "Member 'UVideoCaptureProtocol::CompressionQuality' has a wrong offset!");
 
 }
 

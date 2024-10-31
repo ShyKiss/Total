@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -60,10 +60,10 @@ public:
 	bool                                          NewVar_0;                                          // 0x0F55(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void ExecuteUbergraph_Cine_Futterman_AnimBP(int32 EntryPoint);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void BlueprintInitializeAnimation();
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void BlueprintInitializeAnimation();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void ExecuteUbergraph_Cine_Futterman_AnimBP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

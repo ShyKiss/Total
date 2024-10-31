@@ -37,6 +37,62 @@ void UGrunt_AnimBP_C::ExecuteUbergraph_grunt_AnimBP(int32 EntryPoint)
 }
 
 
+// Function grunt_AnimBP.grunt_AnimBP_C.AnimNotify_OnReloadCompleted
+// (BlueprintCallable, BlueprintEvent)
+
+void UGrunt_AnimBP_C::AnimNotify_OnReloadCompleted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("grunt_AnimBP_C", "AnimNotify_OnReloadCompleted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function grunt_AnimBP.grunt_AnimBP_C.AnimNotify_OnReloadOut
+// (BlueprintCallable, BlueprintEvent)
+
+void UGrunt_AnimBP_C::AnimNotify_OnReloadOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("grunt_AnimBP_C", "AnimNotify_OnReloadOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function grunt_AnimBP.grunt_AnimBP_C.Update Aiming Float
+// (BlueprintCallable, BlueprintEvent)
+
+void UGrunt_AnimBP_C::Update_Aiming_Float()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("grunt_AnimBP_C", "Update Aiming Float");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function grunt_AnimBP.grunt_AnimBP_C.Update NH Layer Weight
+// (BlueprintCallable, BlueprintEvent)
+
+void UGrunt_AnimBP_C::Update_NH_Layer_Weight()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("grunt_AnimBP_C", "Update NH Layer Weight");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function grunt_AnimBP.grunt_AnimBP_C.AnimNotify_ResetEnterLight
 // (BlueprintCallable, BlueprintEvent)
 
@@ -208,6 +264,41 @@ void UGrunt_AnimBP_C::ShouldAimWeapon(bool* AimWeapon)
 
 	if (AimWeapon != nullptr)
 		*AimWeapon = Parms.AimWeapon;
+}
+
+
+// Function grunt_AnimBP.grunt_AnimBP_C.Update Right Hand Pose Override
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UGrunt_AnimBP_C::Update_Right_Hand_Pose_Override()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("grunt_AnimBP_C", "Update Right Hand Pose Override");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function grunt_AnimBP.grunt_AnimBP_C.Check_RightHandPoseOverride_Conditions
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ConditionsFulfilled                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UGrunt_AnimBP_C::Check_RightHandPoseOverride_Conditions(bool* ConditionsFulfilled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("grunt_AnimBP_C", "Check_RightHandPoseOverride_Conditions");
+
+	Params::Grunt_AnimBP_C_Check_RightHandPoseOverride_Conditions Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ConditionsFulfilled != nullptr)
+		*ConditionsFulfilled = Parms.ConditionsFulfilled;
 }
 
 

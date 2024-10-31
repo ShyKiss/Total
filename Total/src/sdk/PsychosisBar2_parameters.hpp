@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "OPP_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "OPP_structs.hpp"
 
 
 namespace SDK::Params
@@ -165,7 +165,7 @@ static_assert(offsetof(PsychosisBar2_C_ChainTweens, CallFunc_NotEqual_IntInt_Ret
 static_assert(offsetof(PsychosisBar2_C_ChainTweens, CallFunc_IsValid_ReturnValue) == 0x00003A, "Member 'PsychosisBar2_C_ChainTweens::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function PsychosisBar2.PsychosisBar2_C.ProcessPsychosisEvent
-// 0x01D8 (0x01D8 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct PsychosisBar2_C_ProcessPsychosisEvent final
 {
 public:
@@ -204,15 +204,14 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5E[0x2];                                       // 0x005E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_6;                              // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_7;                              // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_6;                              // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              CallFunc_GetWatchedPlayer_ReturnValue;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_8;                              // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_7;                              // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsConsideredKnockedDown_ReturnValue;      // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBHallucinationManager*                CallFunc_GetHallucinationManager_ReturnValue_1;    // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -248,64 +247,63 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue_3;            // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_4;            // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default_2;                           // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_1;                         // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default_3;                           // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x012C(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_13D[0x3];                                      // 0x013D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_1;                         // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default_2;                           // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0128(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default_3;                           // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_4;                           // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default_5;                           // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_149[0x3];                                      // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_5;            // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_153[0x5];                                      // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_2;                         // 0x0158(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default_6;                           // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_16A[0x2];                                      // 0x016A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select_Default_7;                           // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default_8;                           // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_6;            // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_4;            // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_4;          // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBHallucinationManager*                CallFunc_GetHallucinationManager_ReturnValue_3;    // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetMaxBracketAmount_ReturnValue_2;        // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBHallucinationManager*                CallFunc_GetHallucinationManager_ReturnValue_4;    // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_5;            // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetMaxBracketAmount_ReturnValue_3;        // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_5;          // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_6;            // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_6;          // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_145[0x3];                                      // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_4;            // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x014D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x014E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_14F[0x1];                                      // 0x014F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHudBarElement_Animated_C*              CallFunc_Array_Get_Item_2;                         // 0x0150(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default_5;                           // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_162[0x2];                                      // 0x0162(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default_6;                           // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default_7;                           // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_5;            // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_4;            // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_4;          // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBHallucinationManager*                CallFunc_GetHallucinationManager_ReturnValue_3;    // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetMaxBracketAmount_ReturnValue_2;        // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBHallucinationManager*                CallFunc_GetHallucinationManager_ReturnValue_4;    // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_5;            // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetMaxBracketAmount_ReturnValue_3;        // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_5;          // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_6;            // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_6;          // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1AD[0x3];                                      // 0x01AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_7;          // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B5[0x3];                                      // 0x01B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_7;          // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1BD[0x3];                                      // 0x01BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_8;          // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue_1;                      // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_8;          // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue_1;                      // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PsychosisBar2_C_ProcessPsychosisEvent) == 0x000008, "Wrong alignment on PsychosisBar2_C_ProcessPsychosisEvent");
-static_assert(sizeof(PsychosisBar2_C_ProcessPsychosisEvent) == 0x0001D8, "Wrong size on PsychosisBar2_C_ProcessPsychosisEvent");
+static_assert(sizeof(PsychosisBar2_C_ProcessPsychosisEvent) == 0x0001D0, "Wrong size on PsychosisBar2_C_ProcessPsychosisEvent");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, NewValue) == 0x000000, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::NewValue' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, OldValue) == 0x000004, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::OldValue' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, SkipAnims) == 0x000008, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::SkipAnims' has a wrong offset!");
@@ -335,13 +333,12 @@ static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_EqualEqua
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x00005C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x00005D, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Subtract_IntInt_ReturnValue) == 0x000060, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_bool_Variable_6) == 0x000064, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000068, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_bool_Variable_7) == 0x00006C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_int_Array_Index_Variable_1) == 0x000070, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default) == 0x000074, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000064, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_bool_Variable_6) == 0x000068, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_bool_Variable_6' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_int_Array_Index_Variable_1) == 0x00006C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default) == 0x000070, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetWatchedPlayer_ReturnValue) == 0x000078, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetWatchedPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_bool_Variable_8) == 0x000080, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_bool_Variable_8' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_bool_Variable_7) == 0x000080, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_bool_Variable_7' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_IsConsideredKnockedDown_ReturnValue) == 0x000081, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_IsConsideredKnockedDown_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetHallucinationManager_ReturnValue_1) == 0x000088, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetHallucinationManager_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_1) == 0x000090, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_1' has a wrong offset!");
@@ -371,51 +368,49 @@ static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_Fl
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Conv_IntToFloat_ReturnValue_3) == 0x0000F8, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Conv_IntToFloat_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x0000FC, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000100, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Subtract_IntInt_ReturnValue_4) == 0x000104, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Subtract_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_2) == 0x000108, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_int_Variable_1) == 0x00010C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Array_Get_Item_1) == 0x000110, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_3) == 0x000118, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_int_Loop_Counter_Variable_1) == 0x00011C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Add_IntInt_ReturnValue_1) == 0x000120, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_1) == 0x000124, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Add_IntInt_ReturnValue_2) == 0x000128, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_CreateDelegate_OutputDelegate) == 0x00012C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Greater_IntInt_ReturnValue) == 0x00013C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Array_Get_Item_1) == 0x000108, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_int_Variable_1) == 0x000110, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, Temp_int_Loop_Counter_Variable_1) == 0x000114, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_2) == 0x000118, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Add_IntInt_ReturnValue_1) == 0x00011C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_1) == 0x000120, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Add_IntInt_ReturnValue_2) == 0x000124, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_CreateDelegate_OutputDelegate) == 0x000128, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Greater_IntInt_ReturnValue) == 0x000138, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_3) == 0x00013C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_3' has a wrong offset!");
 static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_4) == 0x000140, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_5) == 0x000144, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_2) == 0x000148, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Subtract_IntInt_ReturnValue_5) == 0x00014C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Subtract_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000150, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000151, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_3) == 0x000152, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Array_Get_Item_2) == 0x000158, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_6) == 0x000160, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Array_Length_ReturnValue_1) == 0x000164, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_4) == 0x000168, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000169, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_7) == 0x00016C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_8) == 0x000170, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_8' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Subtract_IntInt_ReturnValue_6) == 0x000174, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Subtract_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_5) == 0x000178, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Conv_IntToFloat_ReturnValue_4) == 0x00017C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Conv_IntToFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_4) == 0x000180, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetHallucinationManager_ReturnValue_3) == 0x000188, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetHallucinationManager_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetMaxBracketAmount_ReturnValue_2) == 0x000190, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetMaxBracketAmount_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetHallucinationManager_ReturnValue_4) == 0x000198, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetHallucinationManager_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Conv_IntToFloat_ReturnValue_5) == 0x0001A0, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Conv_IntToFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetMaxBracketAmount_ReturnValue_3) == 0x0001A4, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetMaxBracketAmount_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_5) == 0x0001A8, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Conv_IntToFloat_ReturnValue_6) == 0x0001AC, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Conv_IntToFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_6) == 0x0001B0, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x0001B4, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_7) == 0x0001B8, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_BooleanOR_ReturnValue_2) == 0x0001BC, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_FTrunc_ReturnValue) == 0x0001C0, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Clamp_ReturnValue) == 0x0001C4, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_8) == 0x0001C8, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_FTrunc_ReturnValue_1) == 0x0001CC, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Clamp_ReturnValue_1) == 0x0001D0, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Clamp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_2) == 0x000144, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Subtract_IntInt_ReturnValue_4) == 0x000148, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Subtract_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00014C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00014D, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_3) == 0x00014E, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Array_Get_Item_2) == 0x000150, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_5) == 0x000158, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_5' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Array_Length_ReturnValue_1) == 0x00015C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_4) == 0x000160, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000161, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_6) == 0x000164, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_6' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, K2Node_Select_Default_7) == 0x000168, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::K2Node_Select_Default_7' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Subtract_IntInt_ReturnValue_5) == 0x00016C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Subtract_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Less_IntInt_ReturnValue_5) == 0x000170, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Conv_IntToFloat_ReturnValue_4) == 0x000174, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Conv_IntToFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_4) == 0x000178, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetHallucinationManager_ReturnValue_3) == 0x000180, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetHallucinationManager_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetMaxBracketAmount_ReturnValue_2) == 0x000188, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetMaxBracketAmount_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetHallucinationManager_ReturnValue_4) == 0x000190, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetHallucinationManager_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Conv_IntToFloat_ReturnValue_5) == 0x000198, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Conv_IntToFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_GetMaxBracketAmount_ReturnValue_3) == 0x00019C, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_GetMaxBracketAmount_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_5) == 0x0001A0, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Conv_IntToFloat_ReturnValue_6) == 0x0001A4, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Conv_IntToFloat_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_6) == 0x0001A8, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x0001AC, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_7) == 0x0001B0, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_BooleanOR_ReturnValue_2) == 0x0001B4, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_FTrunc_ReturnValue) == 0x0001B8, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Clamp_ReturnValue) == 0x0001BC, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Clamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Divide_FloatFloat_ReturnValue_8) == 0x0001C0, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Divide_FloatFloat_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_FTrunc_ReturnValue_1) == 0x0001C4, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PsychosisBar2_C_ProcessPsychosisEvent, CallFunc_Clamp_ReturnValue_1) == 0x0001C8, "Member 'PsychosisBar2_C_ProcessPsychosisEvent::CallFunc_Clamp_ReturnValue_1' has a wrong offset!");
 
 // Function PsychosisBar2.PsychosisBar2_C.UpdateIcon
 // 0x0038 (0x0038 - 0x0000)

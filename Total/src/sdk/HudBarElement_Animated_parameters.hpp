@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function HudBarElement_Animated.HudBarElement_Animated_C.ExecuteUbergraph_HudBarElement_Animated
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated final
 {
 public:
@@ -31,27 +31,33 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Select_Default;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0068(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B[0x1];                                       // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x001C(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default;                             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x009E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9F[0x1];                                       // 0x009F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue_1; // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated) == 0x000008, "Wrong alignment on HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated");
-static_assert(sizeof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated) == 0x0000A8, "Wrong size on HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated");
+static_assert(sizeof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated) == 0x0000B8, "Wrong size on HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, EntryPoint) == 0x000000, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_bool_Variable) == 0x000004, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_name_Variable) == 0x000008, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_name_Variable' has a wrong offset!");
@@ -59,21 +65,37 @@ static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_A
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_bool_Variable_1) == 0x000018, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_byte_Variable) == 0x000019, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, Temp_byte_Variable_1) == 0x00001A, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_GetDisplayName_ReturnValue) == 0x000020, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Concat_StrStr_ReturnValue) == 0x000030, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Select_Default) == 0x000040, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Conv_StringToName_ReturnValue) == 0x000048, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000050, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000058, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000060, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Not_PreBool_ReturnValue) == 0x000061, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_BooleanAND_ReturnValue) == 0x000062, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Select_Default_1) == 0x000063, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_IsValid_ReturnValue) == 0x000064, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Not_PreBool_ReturnValue_1) == 0x000065, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_IsDesignTime) == 0x000066, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_MyGeometry) == 0x000068, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_InDeltaTime) == 0x0000A0, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_MyGeometry) == 0x00001C, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_InDeltaTime) == 0x000054, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_GetDisplayName_ReturnValue) == 0x000058, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Concat_StrStr_ReturnValue) == 0x000068, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Select_Default) == 0x000078, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Conv_StringToName_ReturnValue) == 0x000080, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000088, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000090, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000098, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Not_PreBool_ReturnValue) == 0x000099, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_BooleanAND_ReturnValue) == 0x00009A, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Select_Default_1) == 0x00009B, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_IsValid_ReturnValue) == 0x00009C, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Not_PreBool_ReturnValue_1) == 0x00009D, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, K2Node_Event_IsDesignTime) == 0x00009E, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_RandomFloat_ReturnValue) == 0x0000A0, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000A4, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_IsValid_ReturnValue_1) == 0x0000A8, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_K2_GetScalarParameterValue_ReturnValue_1) == 0x0000AC, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_K2_GetScalarParameterValue_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x0000B0, "Member 'HudBarElement_Animated_C_ExecuteUbergraph_HudBarElement_Animated::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function HudBarElement_Animated.HudBarElement_Animated_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct HudBarElement_Animated_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(HudBarElement_Animated_C_PreConstruct) == 0x000001, "Wrong alignment on HudBarElement_Animated_C_PreConstruct");
+static_assert(sizeof(HudBarElement_Animated_C_PreConstruct) == 0x000001, "Wrong size on HudBarElement_Animated_C_PreConstruct");
+static_assert(offsetof(HudBarElement_Animated_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HudBarElement_Animated_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function HudBarElement_Animated.HudBarElement_Animated_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -88,17 +110,6 @@ static_assert(sizeof(HudBarElement_Animated_C_Tick) == 0x00003C, "Wrong size on 
 static_assert(offsetof(HudBarElement_Animated_C_Tick, MyGeometry) == 0x000000, "Member 'HudBarElement_Animated_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_Tick, InDeltaTime) == 0x000038, "Member 'HudBarElement_Animated_C_Tick::InDeltaTime' has a wrong offset!");
 
-// Function HudBarElement_Animated.HudBarElement_Animated_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct HudBarElement_Animated_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(HudBarElement_Animated_C_PreConstruct) == 0x000001, "Wrong alignment on HudBarElement_Animated_C_PreConstruct");
-static_assert(sizeof(HudBarElement_Animated_C_PreConstruct) == 0x000001, "Wrong size on HudBarElement_Animated_C_PreConstruct");
-static_assert(offsetof(HudBarElement_Animated_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HudBarElement_Animated_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
 // Function HudBarElement_Animated.HudBarElement_Animated_C.Setup Tints
 // 0x0030 (0x0030 - 0x0000)
 struct HudBarElement_Animated_C_Setup_Tints final
@@ -106,13 +117,13 @@ struct HudBarElement_Animated_C_Setup_Tints final
 public:
 	struct FLinearColor                           Tint;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           BgdTint;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           GlowTInt;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           GlowTint;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HudBarElement_Animated_C_Setup_Tints) == 0x000004, "Wrong alignment on HudBarElement_Animated_C_Setup_Tints");
 static_assert(sizeof(HudBarElement_Animated_C_Setup_Tints) == 0x000030, "Wrong size on HudBarElement_Animated_C_Setup_Tints");
 static_assert(offsetof(HudBarElement_Animated_C_Setup_Tints, Tint) == 0x000000, "Member 'HudBarElement_Animated_C_Setup_Tints::Tint' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_Setup_Tints, BgdTint) == 0x000010, "Member 'HudBarElement_Animated_C_Setup_Tints::BgdTint' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_Setup_Tints, GlowTInt) == 0x000020, "Member 'HudBarElement_Animated_C_Setup_Tints::GlowTInt' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_Setup_Tints, GlowTint) == 0x000020, "Member 'HudBarElement_Animated_C_Setup_Tints::GlowTint' has a wrong offset!");
 
 // Function HudBarElement_Animated.HudBarElement_Animated_C.SetupNewTween
 // 0x0048 (0x0048 - 0x0000)
@@ -133,16 +144,15 @@ public:
 	bool                                          Temp_bool_Variable_2;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                         K2Node_Select_Default;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F[0x1];                                       // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue_1;          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -167,13 +177,13 @@ static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, Temp_float_Variab
 static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, Temp_bool_Variable_2) == 0x000014, "Member 'HudBarElement_Animated_C_SetupNewTween::Temp_bool_Variable_2' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, Temp_byte_Variable_2) == 0x000015, "Member 'HudBarElement_Animated_C_SetupNewTween::Temp_byte_Variable_2' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, Temp_byte_Variable_3) == 0x000016, "Member 'HudBarElement_Animated_C_SetupNewTween::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_Not_PreBool_ReturnValue) == 0x000017, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, K2Node_Select_Default) == 0x000018, "Member 'HudBarElement_Animated_C_SetupNewTween::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_Not_PreBool_ReturnValue) == 0x00001C, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_Not_PreBool_ReturnValue_1) == 0x00001D, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_BooleanAND_ReturnValue) == 0x00001E, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_Not_PreBool_ReturnValue_1) == 0x00001C, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_BooleanAND_ReturnValue) == 0x00001D, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000020, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000024, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, K2Node_Select_Default_1) == 0x000028, "Member 'HudBarElement_Animated_C_SetupNewTween::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, K2Node_Select_Default_1) == 0x000024, "Member 'HudBarElement_Animated_C_SetupNewTween::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000028, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_MakeVector2D_ReturnValue) == 0x00002C, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x000034, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(HudBarElement_Animated_C_SetupNewTween, CallFunc_MakeVector2D_ReturnValue_1) == 0x000038, "Member 'HudBarElement_Animated_C_SetupNewTween::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");

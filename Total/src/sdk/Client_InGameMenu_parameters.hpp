@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "OPP_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -20,147 +20,151 @@ namespace SDK::Params
 {
 
 // Function Client_InGameMenu.Client_InGameMenu_C.ExecuteUbergraph_Client_InGameMenu
-// 0x0198 (0x0198 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBLobbyPlayerController*               CallFunc_GetLocalLobbyPlayerController_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuWidget*                          CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBMenuWithTabsWidget*                  K2Node_DynamicCast_AsRB_Menu_with_Tabs_Widget;     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B[0x1];                                       // 0x002B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x002C(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          Temp_bool_Variable_2;                              // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_AreCheatsEnabled_ReturnValue;             // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuTabButton*                       K2Node_ComponentBoundEvent_Button_3;               // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBMenuTabButton*                       K2Node_ComponentBoundEvent_Button_2;               // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBSocialMenuManager*                   CallFunc_GetSocialMenuManager_ReturnValue;         // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UQuitMenu_C*                            CallFunc_Create_ReturnValue_1;                     // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBController*                          CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsConsole_ReturnValue;                    // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          Temp_bool_Variable_2;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B[0x1];                                       // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_AreCheatsEnabled_ReturnValue;             // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBMenuTabButton*                       K2Node_ComponentBoundEvent_Button_3;               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBMenuTabButton*                       K2Node_ComponentBoundEvent_Button_2;               // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBSocialMenuManager*                   CallFunc_GetSocialMenuManager_ReturnValue;         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UQuitMenu_C*                            CallFunc_Create_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBController*                          CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsConsole_ReturnValue;                    // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue;          // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_8A[0x6];                                       // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue;          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBPopUpConfirmCancelWidget*            CallFunc_CreatePopUpConfirmCancel_ReturnValue;     // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBController*                          CallFunc_GetLocalPlayerController_ReturnValue_1;   // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBackToLobbyMenu_C*                     CallFunc_Create_ReturnValue_2;                     // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue_1;        // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bShouldHide;                          // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D3[0x5];                                       // 0x00D3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button_1;               // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBUserWidget*                          CallFunc_GetCurrentFocusedWidget_FocusedWidget;    // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x00EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EB[0x5];                                       // 0x00EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            K2Node_Select_Default_1;                           // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsGamepad;                           // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsVisible_ReturnValue_2;                  // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue;           // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_FB[0x1];                                       // 0x00FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x00FC(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInTutorialStage_ReturnValue;            // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11B[0x5];                                      // 0x011B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0120(0x0018)()
-	class FText                                   CallFunc_FormatTextForDecorator_ReturnValue;       // 0x0138(0x0018)()
-	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_CustomEvent_Description;                    // 0x0158(0x0018)()
-	class URBSocialMenuEntry*                     K2Node_ComponentBoundEvent_entry;                  // 0x0170(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERBSocialMenuEntryAction                      K2Node_ComponentBoundEvent_action;                 // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBPopUpConfirmCancelWidget*            CallFunc_CreatePopUpConfirmCancel_ReturnValue;     // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBController*                          CallFunc_GetLocalPlayerController_ReturnValue_1;   // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBackToLobbyMenu_C*                     CallFunc_Create_ReturnValue_1;                     // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue_1;        // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bShouldHide;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C3[0x5];                                       // 0x00C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button_1;               // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBUserWidget*                          CallFunc_GetCurrentFocusedWidget_FocusedWidget;    // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x00DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_DB[0x5];                                       // 0x00DB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            K2Node_Select_Default_1;                           // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsGamepad;                           // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue_2;                  // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CheckFeatureSwitch_ReturnValue;           // 0x00EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_EB[0x1];                                       // 0x00EB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x00EC(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBMenuButton_C*                        K2Node_ComponentBoundEvent_Button;                 // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInTutorialStage_ReturnValue;            // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x010A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_10B[0x5];                                      // 0x010B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0110(0x0018)()
+	class FText                                   CallFunc_FormatTextForDecorator_ReturnValue;       // 0x0128(0x0018)()
+	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_CustomEvent_Description;                    // 0x0148(0x0018)()
+	class URBSocialMenuEntry*                     K2Node_ComponentBoundEvent_entry;                  // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERBSocialMenuEntryAction                      K2Node_ComponentBoundEvent_action;                 // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UOptionsMenu_C*                         CallFunc_Create_ReturnValue_2;                     // 0x0170(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UOptionsMenu_C*                         CallFunc_Create_ReturnValue_3;                     // 0x0180(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBMenuManager*                         CallFunc_GetMenuManager_ReturnValue;               // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBLobbyPlayerController*               CallFunc_GetLocalLobbyPlayerController_ReturnValue; // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsListeningForInputAction_ReturnValue;    // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBMenuWidget*                          CallFunc_Create_ReturnValue_3;                     // 0x0198(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URBMenuWithTabsWidget*                  K2Node_DynamicCast_AsRB_Menu_with_Tabs_Widget;     // 0x01A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu) == 0x000008, "Wrong alignment on Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu");
-static_assert(sizeof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu) == 0x000198, "Wrong size on Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu");
+static_assert(sizeof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu) == 0x0001B0, "Wrong size on Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu");
 static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, EntryPoint) == 0x000000, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetLocalLobbyPlayerController_ReturnValue) == 0x000008, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetLocalLobbyPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_bool_Variable) == 0x000010, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_byte_Variable) == 0x000011, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Create_ReturnValue) == 0x000018, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_DynamicCast_AsRB_Menu_with_Tabs_Widget) == 0x000020, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_DynamicCast_AsRB_Menu_with_Tabs_Widget' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_byte_Variable_1) == 0x000029, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_bool_Variable_1) == 0x00002A, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_CreateDelegate_OutputDelegate) == 0x00002C, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_bool_Variable_2) == 0x00003C, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_byte_Variable_2) == 0x00003D, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_byte_Variable_3) == 0x00003E, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_AreCheatsEnabled_ReturnValue) == 0x00003F, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_AreCheatsEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x000040, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Event_IsDesignTime) == 0x000050, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_Button_3) == 0x000058, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_Button_2) == 0x000060, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetSocialMenuManager_ReturnValue) == 0x000068, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetSocialMenuManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Create_ReturnValue_1) == 0x000070, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000078, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetLocalPlayerController_ReturnValue) == 0x000080, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue) == 0x000088, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsConsole_ReturnValue) == 0x000089, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsConsole_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetRBGameStateLobby_ReturnValue) == 0x000090, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetRBGameStateLobby_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Not_PreBool_ReturnValue) == 0x000098, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue_1) == 0x000099, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_CreatePopUpConfirmCancel_ReturnValue) == 0x0000A0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_CreatePopUpConfirmCancel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_BooleanAND_ReturnValue) == 0x0000A8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetLocalPlayerController_ReturnValue_1) == 0x0000B0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetLocalPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Create_ReturnValue_2) == 0x0000B8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue_2) == 0x0000C0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetRBGameStateLobby_ReturnValue_1) == 0x0000C8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetRBGameStateLobby_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue_3) == 0x0000D0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Event_bShouldHide) == 0x0000D1, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Event_bShouldHide' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Select_Default) == 0x0000D2, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_Button_1) == 0x0000D8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetCurrentFocusedWidget_FocusedWidget) == 0x0000E0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetCurrentFocusedWidget_FocusedWidget' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsVisible_ReturnValue) == 0x0000E8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsVisible_ReturnValue_1) == 0x0000E9, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue_4) == 0x0000EA, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Select_Default_1) == 0x0000F0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Event_bIsGamepad) == 0x0000F8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Event_bIsGamepad' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsVisible_ReturnValue_2) == 0x0000F9, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsVisible_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_CheckFeatureSwitch_ReturnValue) == 0x0000FA, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_CheckFeatureSwitch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000FC, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_Button) == 0x000110, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsInTutorialStage_ReturnValue) == 0x000118, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsInTutorialStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Not_PreBool_ReturnValue_1) == 0x000119, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_BooleanAND_ReturnValue_1) == 0x00011A, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_MakeLiteralText_ReturnValue) == 0x000120, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_FormatTextForDecorator_ReturnValue) == 0x000138, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_FormatTextForDecorator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Select_Default_2) == 0x000150, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_CustomEvent_Description) == 0x000158, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_CustomEvent_Description' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_entry) == 0x000170, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_entry' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_action) == 0x000178, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_action' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Create_ReturnValue_3) == 0x000180, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Create_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000188, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetMenuManager_ReturnValue) == 0x000190, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_bool_Variable) == 0x000004, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_byte_Variable) == 0x000005, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_byte_Variable_1) == 0x000006, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_bool_Variable_1) == 0x000007, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_bool_Variable_2) == 0x000018, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_byte_Variable_2) == 0x000019, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, Temp_byte_Variable_3) == 0x00001A, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_AreCheatsEnabled_ReturnValue) == 0x00002C, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_AreCheatsEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_CreateDelegate_OutputDelegate_2) == 0x000030, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Event_IsDesignTime) == 0x000040, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_Button_3) == 0x000048, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_Button_2) == 0x000050, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetSocialMenuManager_ReturnValue) == 0x000058, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetSocialMenuManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Create_ReturnValue) == 0x000060, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000068, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetLocalPlayerController_ReturnValue) == 0x000070, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetLocalPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsConsole_ReturnValue) == 0x000079, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsConsole_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetRBGameStateLobby_ReturnValue) == 0x000080, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetRBGameStateLobby_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Not_PreBool_ReturnValue) == 0x000088, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue_1) == 0x000089, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_CreatePopUpConfirmCancel_ReturnValue) == 0x000090, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_CreatePopUpConfirmCancel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_BooleanAND_ReturnValue) == 0x000098, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetLocalPlayerController_ReturnValue_1) == 0x0000A0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetLocalPlayerController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Create_ReturnValue_1) == 0x0000A8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Create_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue_2) == 0x0000B0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetRBGameStateLobby_ReturnValue_1) == 0x0000B8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetRBGameStateLobby_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue_3) == 0x0000C0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Event_bShouldHide) == 0x0000C1, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Event_bShouldHide' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Select_Default) == 0x0000C2, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_Button_1) == 0x0000C8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetCurrentFocusedWidget_FocusedWidget) == 0x0000D0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetCurrentFocusedWidget_FocusedWidget' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsVisible_ReturnValue) == 0x0000D8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsVisible_ReturnValue_1) == 0x0000D9, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsValid_ReturnValue_4) == 0x0000DA, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Select_Default_1) == 0x0000E0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Event_bIsGamepad) == 0x0000E8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Event_bIsGamepad' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsVisible_ReturnValue_2) == 0x0000E9, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsVisible_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_CheckFeatureSwitch_ReturnValue) == 0x0000EA, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_CheckFeatureSwitch_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000EC, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_Button) == 0x000100, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsInTutorialStage_ReturnValue) == 0x000108, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsInTutorialStage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Not_PreBool_ReturnValue_1) == 0x000109, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_BooleanAND_ReturnValue_1) == 0x00010A, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_MakeLiteralText_ReturnValue) == 0x000110, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_FormatTextForDecorator_ReturnValue) == 0x000128, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_FormatTextForDecorator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_Select_Default_2) == 0x000140, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_CustomEvent_Description) == 0x000148, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_CustomEvent_Description' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_entry) == 0x000160, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_entry' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_ComponentBoundEvent_action) == 0x000168, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_ComponentBoundEvent_action' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Create_ReturnValue_2) == 0x000170, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Create_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000178, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetMenuManager_ReturnValue) == 0x000180, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetMenuManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_GetLocalLobbyPlayerController_ReturnValue) == 0x000188, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_GetLocalLobbyPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_IsListeningForInputAction_ReturnValue) == 0x000190, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_IsListeningForInputAction_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, CallFunc_Create_ReturnValue_3) == 0x000198, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::CallFunc_Create_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_DynamicCast_AsRB_Menu_with_Tabs_Widget) == 0x0001A0, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_DynamicCast_AsRB_Menu_with_Tabs_Widget' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu, K2Node_DynamicCast_bSuccess) == 0x0001A8, "Member 'Client_InGameMenu_C_ExecuteUbergraph_Client_InGameMenu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function Client_InGameMenu.Client_InGameMenu_C.BndEvt__Client_InGameMenu_PartyWidget_K2Node_ComponentBoundEvent_7_OnSocialMenuEntryActionRequested__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -322,112 +326,117 @@ static_assert(sizeof(Client_InGameMenu_C_GetQuitFacilityButtonsEnabled) == 0x000
 static_assert(offsetof(Client_InGameMenu_C_GetQuitFacilityButtonsEnabled, ReturnValue) == 0x000000, "Member 'Client_InGameMenu_C_GetQuitFacilityButtonsEnabled::ReturnValue' has a wrong offset!");
 
 // Function Client_InGameMenu.Client_InGameMenu_C.SetupVariators
-// 0x0220 (0x0220 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct Client_InGameMenu_C_SetupVariators final
 {
 public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInGameMenuVariatorEntry_C*             CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class FText Description)>      K2Node_CreateDelegate_OutputDelegate_1;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_ShouldDisplayVariators_bShouldDisplayVariators; // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URBGameStructureConfig*                 CallFunc_GetGameStructureConfig_ReturnValue;       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBVariatorManager*                     CallFunc_GetVariatorManager_ReturnValue;           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVariatorUniqueTypeActive_ReturnValue;   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsVariatorUniqueTypeActive_ReturnValue_1; // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGameStructureConfig*                 CallFunc_GetGameStructureConfig_ReturnValue_1;     // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBVariatorManager*                     CallFunc_GetVariatorManager_ReturnValue_1;         // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class URBVariatorInfo*>                CallFunc_GetCurrentVariatorConfigs_ReturnValue;    // 0x0090(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBVariatorInfo*                        CallFunc_Array_Get_Item;                           // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EProgramDifficulty                            CallFunc_GetProgramDifficulty_ReturnValue;         // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BA[0x2];                                       // 0x00BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetProgramId_ReturnValue;                 // 0x00BC(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetTrialId_ReturnValue;                   // 0x00C4(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           CallFunc_GetTrialVariators_ReturnValue;            // 0x00D0(0x0010)(ReferenceParm)
-	TArray<class URBVariatorInfo*>                CallFunc_GetVariatorInfos_ReturnValue;             // 0x00E0(0x0010)(ReferenceParm)
-	struct FRBTrialInfoRow                        CallFunc_GetTrialInfo_ReturnValue;                 // 0x00F0(0x00F0)(ConstParm)
-	class URBVariatorInfo*                        CallFunc_Array_Get_Item_1;                         // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class URBVariatorAction*>              CallFunc_GetActions_ReturnValue;                   // 0x01E8(0x0010)(ConstParm, ReferenceParm)
-	class URBVariatorAction*                      CallFunc_Array_Get_Item_2;                         // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBVariatorAction_UniqueVariatorType*   K2Node_DynamicCast_AsUnique_Variator_Type;         // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0212(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_213[0x1];                                      // 0x0213(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         VisibleVariatorCount;                              // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInGameMenuVariatorEntry_C*             CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUniformGridSlot*                       CallFunc_AddChildToUniformGrid_ReturnValue;        // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0044(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class FText Description)>      K2Node_CreateDelegate_OutputDelegate_1;            // 0x0054(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_ShouldDisplayVariators_bShouldDisplayVariators; // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGameStructureConfig*                 CallFunc_GetGameStructureConfig_ReturnValue;       // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBVariatorManager*                     CallFunc_GetVariatorManager_ReturnValue;           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVariatorUniqueTypeActive_ReturnValue;   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsVariatorUniqueTypeActive_ReturnValue_1; // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0083(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARBVariatorManager*                     CallFunc_GetVariatorManager_ReturnValue_1;         // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class URBVariatorInfo*>                CallFunc_GetCurrentVariatorConfigs_ReturnValue;    // 0x0098(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBVariatorInfo*                        CallFunc_Array_Get_Item;                           // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EProgramDifficulty                            CallFunc_GetProgramDifficulty_ReturnValue;         // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C2[0x2];                                       // 0x00C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetProgramId_ReturnValue;                 // 0x00C4(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetTrialId_ReturnValue;                   // 0x00CC(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           CallFunc_GetTrialVariators_ReturnValue;            // 0x00D8(0x0010)(ReferenceParm)
+	TArray<class URBVariatorInfo*>                CallFunc_GetVariatorInfos_ReturnValue;             // 0x00E8(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBVariatorInfo*                        CallFunc_Array_Get_Item_1;                         // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class URBVariatorAction*>              CallFunc_GetActions_ReturnValue;                   // 0x0110(0x0010)(ConstParm, ReferenceParm)
+	class URBVariatorAction*                      CallFunc_Array_Get_Item_2;                         // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBVariatorAction_UniqueVariatorType*   K2Node_DynamicCast_AsUnique_Variator_Type;         // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x013A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Client_InGameMenu_C_SetupVariators) == 0x000008, "Wrong alignment on Client_InGameMenu_C_SetupVariators");
-static_assert(sizeof(Client_InGameMenu_C_SetupVariators) == 0x000220, "Wrong size on Client_InGameMenu_C_SetupVariators");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Array_Index_Variable) == 0x000000, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Loop_Counter_Variable_1) == 0x00000C, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Add_IntInt_ReturnValue_1) == 0x000010, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Array_Index_Variable_1) == 0x000014, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Array_Index_Variable_2) == 0x000018, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Create_ReturnValue) == 0x000020, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Loop_Counter_Variable_2) == 0x000028, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Add_IntInt_ReturnValue_2) == 0x00002C, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_CreateDelegate_OutputDelegate_1) == 0x000040, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_ShouldDisplayVariators_bShouldDisplayVariators) == 0x000050, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_ShouldDisplayVariators_bShouldDisplayVariators' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000058, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetGameStructureConfig_ReturnValue) == 0x000060, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetGameStructureConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetVariatorManager_ReturnValue) == 0x000068, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetVariatorManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_IsVariatorUniqueTypeActive_ReturnValue) == 0x000070, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_IsVariatorUniqueTypeActive_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_IsVariatorUniqueTypeActive_ReturnValue_1) == 0x000071, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_IsVariatorUniqueTypeActive_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Not_PreBool_ReturnValue) == 0x000072, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Not_PreBool_ReturnValue_1) == 0x000073, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetGameStructureConfig_ReturnValue_1) == 0x000078, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetGameStructureConfig_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetVariatorManager_ReturnValue_1) == 0x000080, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetVariatorManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetRBGameState_ReturnValue) == 0x000088, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetRBGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetCurrentVariatorConfigs_ReturnValue) == 0x000090, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetCurrentVariatorConfigs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_IsValid_ReturnValue) == 0x0000A0, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_IsValid_ReturnValue_1) == 0x0000B0, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Length_ReturnValue) == 0x0000B4, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetProgramDifficulty_ReturnValue) == 0x0000B8, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetProgramDifficulty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Less_IntInt_ReturnValue) == 0x0000B9, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetProgramId_ReturnValue) == 0x0000BC, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetProgramId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetTrialId_ReturnValue) == 0x0000C4, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetTrialId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetTrialVariators_ReturnValue) == 0x0000D0, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetTrialVariators_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetVariatorInfos_ReturnValue) == 0x0000E0, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetVariatorInfos_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetTrialInfo_ReturnValue) == 0x0000F0, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetTrialInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Get_Item_1) == 0x0001E0, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetActions_ReturnValue) == 0x0001E8, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetActions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Get_Item_2) == 0x0001F8, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Length_ReturnValue_1) == 0x000200, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_DynamicCast_AsUnique_Variator_Type) == 0x000208, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_DynamicCast_AsUnique_Variator_Type' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_DynamicCast_bSuccess) == 0x000210, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Less_IntInt_ReturnValue_1) == 0x000211, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_SwitchEnum_CmpSuccess) == 0x000212, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Length_ReturnValue_2) == 0x000214, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Less_IntInt_ReturnValue_2) == 0x000218, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(sizeof(Client_InGameMenu_C_SetupVariators) == 0x000140, "Wrong size on Client_InGameMenu_C_SetupVariators");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, VisibleVariatorCount) == 0x000000, "Member 'Client_InGameMenu_C_SetupVariators::VisibleVariatorCount' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Array_Index_Variable) == 0x000004, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Loop_Counter_Variable_1) == 0x000010, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Loop_Counter_Variable_2) == 0x000014, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Add_IntInt_ReturnValue_1) == 0x000018, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Add_IntInt_ReturnValue_2) == 0x00001C, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Array_Index_Variable_1) == 0x000020, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Create_ReturnValue) == 0x000028, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Array_Index_Variable_2) == 0x000030, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_AddChildToUniformGrid_ReturnValue) == 0x000038, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_AddChildToUniformGrid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Add_IntInt_ReturnValue_3) == 0x000040, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_CreateDelegate_OutputDelegate) == 0x000044, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_CreateDelegate_OutputDelegate_1) == 0x000054, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_ShouldDisplayVariators_bShouldDisplayVariators) == 0x000064, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_ShouldDisplayVariators_bShouldDisplayVariators' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, Temp_int_Variable) == 0x000068, "Member 'Client_InGameMenu_C_SetupVariators::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetGameStructureConfig_ReturnValue) == 0x000070, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetGameStructureConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetVariatorManager_ReturnValue) == 0x000078, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetVariatorManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_IsVariatorUniqueTypeActive_ReturnValue) == 0x000080, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_IsVariatorUniqueTypeActive_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_IsVariatorUniqueTypeActive_ReturnValue_1) == 0x000081, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_IsVariatorUniqueTypeActive_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Not_PreBool_ReturnValue) == 0x000082, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Not_PreBool_ReturnValue_1) == 0x000083, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetVariatorManager_ReturnValue_1) == 0x000088, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetVariatorManager_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetRBGameState_ReturnValue) == 0x000090, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetRBGameState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetCurrentVariatorConfigs_ReturnValue) == 0x000098, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetCurrentVariatorConfigs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Get_Item) == 0x0000B0, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_IsValid_ReturnValue_1) == 0x0000B8, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Length_ReturnValue) == 0x0000BC, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetProgramDifficulty_ReturnValue) == 0x0000C0, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetProgramDifficulty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Less_IntInt_ReturnValue) == 0x0000C1, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetProgramId_ReturnValue) == 0x0000C4, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetProgramId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetTrialId_ReturnValue) == 0x0000CC, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetTrialId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetTrialVariators_ReturnValue) == 0x0000D8, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetTrialVariators_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetVariatorInfos_ReturnValue) == 0x0000E8, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetVariatorInfos_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Length_ReturnValue_1) == 0x0000F8, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Get_Item_1) == 0x000100, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Less_IntInt_ReturnValue_1) == 0x000108, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_GetActions_ReturnValue) == 0x000110, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_GetActions_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Get_Item_2) == 0x000120, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Array_Length_ReturnValue_2) == 0x000128, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_DynamicCast_AsUnique_Variator_Type) == 0x000130, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_DynamicCast_AsUnique_Variator_Type' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_DynamicCast_bSuccess) == 0x000138, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, CallFunc_Less_IntInt_ReturnValue_2) == 0x000139, "Member 'Client_InGameMenu_C_SetupVariators::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupVariators, K2Node_SwitchEnum_CmpSuccess) == 0x00013A, "Member 'Client_InGameMenu_C_SetupVariators::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function Client_InGameMenu.Client_InGameMenu_C.OnMouseButtonDown
 // 0x0220 (0x0220 - 0x0000)
@@ -626,7 +635,7 @@ static_assert(offsetof(Client_InGameMenu_C_Setup_Loadout, CallFunc_Array_Length_
 static_assert(offsetof(Client_InGameMenu_C_Setup_Loadout, CallFunc_Less_IntInt_ReturnValue_1) == 0x000644, "Member 'Client_InGameMenu_C_Setup_Loadout::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function Client_InGameMenu.Client_InGameMenu_C.SetupTrialInfos
-// 0x05E0 (0x05E0 - 0x0000)
+// 0x05F8 (0x05F8 - 0x0000)
 struct Client_InGameMenu_C_SetupTrialInfos final
 {
 public:
@@ -653,26 +662,26 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x010A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_10B[0x5];                                      // 0x010B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class URBGameStructureConfig*                 CallFunc_GetGameStructureConfig_ReturnValue;       // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRBGameStageInfo                       CallFunc_GetGameStageInfo_ReturnValue;             // 0x0118(0x00A8)()
-	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue;          // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x01D0(0x0018)()
-	struct FRBTrialInfoRow                        CallFunc_GetTrialInfo_ReturnValue;                 // 0x01E8(0x00F0)(ConstParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x02D8(0x0040)(HasGetValueTypeHash)
-	struct FRBProgramInfoRow                      CallFunc_GetProgramInfo_ReturnValue;               // 0x0318(0x01D8)(ConstParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x04F0(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0530(0x0010)(ReferenceParm)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0540(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_541[0x7];                                      // 0x0541(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0548(0x0018)()
-	class FText                                   K2Node_Select_Default_1;                           // 0x0560(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0578(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x05B8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x05C8(0x0018)()
+	struct FRBGameStageInfo                       CallFunc_GetGameStageInfo_ReturnValue;             // 0x0118(0x00C8)()
+	class ARBGameStateLobby*                      CallFunc_GetRBGameStateLobby_ReturnValue;          // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x01F0(0x0018)()
+	struct FRBTrialInfoRow                        CallFunc_GetTrialInfo_ReturnValue;                 // 0x0208(0x00E8)(ConstParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x02F0(0x0040)(HasGetValueTypeHash)
+	struct FRBProgramInfoRow                      CallFunc_GetProgramInfo_ReturnValue;               // 0x0330(0x01D8)(ConstParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0508(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0548(0x0010)(ReferenceParm)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0558(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_559[0x7];                                      // 0x0559(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0560(0x0018)()
+	class FText                                   K2Node_Select_Default_1;                           // 0x0578(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0590(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x05D0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x05E0(0x0018)()
 };
 static_assert(alignof(Client_InGameMenu_C_SetupTrialInfos) == 0x000008, "Wrong alignment on Client_InGameMenu_C_SetupTrialInfos");
-static_assert(sizeof(Client_InGameMenu_C_SetupTrialInfos) == 0x0005E0, "Wrong size on Client_InGameMenu_C_SetupTrialInfos");
+static_assert(sizeof(Client_InGameMenu_C_SetupTrialInfos) == 0x0005F8, "Wrong size on Client_InGameMenu_C_SetupTrialInfos");
 static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, Temp_byte_Variable) == 0x000000, "Member 'Client_InGameMenu_C_SetupTrialInfos::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, Temp_text_Variable) == 0x000008, "Member 'Client_InGameMenu_C_SetupTrialInfos::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, Temp_text_Variable_1) == 0x000020, "Member 'Client_InGameMenu_C_SetupTrialInfos::Temp_text_Variable_1' has a wrong offset!");
@@ -692,20 +701,20 @@ static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_IsInTutoria
 static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_BooleanOR_ReturnValue) == 0x00010A, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_GetGameStructureConfig_ReturnValue) == 0x000110, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_GetGameStructureConfig_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_GetGameStageInfo_ReturnValue) == 0x000118, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_GetGameStageInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_GetRBGameStateLobby_ReturnValue) == 0x0001C0, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_GetRBGameStateLobby_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_IsValid_ReturnValue) == 0x0001C8, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_Select_Default) == 0x0001D0, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_GetTrialInfo_ReturnValue) == 0x0001E8, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_GetTrialInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeStruct_FormatArgumentData_1) == 0x0002D8, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_GetProgramInfo_ReturnValue) == 0x000318, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_GetProgramInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeStruct_FormatArgumentData_2) == 0x0004F0, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeArray_Array_1) == 0x000530, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_TextIsEmpty_ReturnValue) == 0x000540, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_Format_ReturnValue_1) == 0x000548, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_Select_Default_1) == 0x000560, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeStruct_FormatArgumentData_3) == 0x000578, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeArray_Array_2) == 0x0005B8, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_Format_ReturnValue_2) == 0x0005C8, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_Format_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_GetRBGameStateLobby_ReturnValue) == 0x0001E0, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_GetRBGameStateLobby_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_IsValid_ReturnValue) == 0x0001E8, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_Select_Default) == 0x0001F0, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_GetTrialInfo_ReturnValue) == 0x000208, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_GetTrialInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeStruct_FormatArgumentData_1) == 0x0002F0, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_GetProgramInfo_ReturnValue) == 0x000330, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_GetProgramInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeStruct_FormatArgumentData_2) == 0x000508, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeArray_Array_1) == 0x000548, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_TextIsEmpty_ReturnValue) == 0x000558, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_Format_ReturnValue_1) == 0x000560, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_Select_Default_1) == 0x000578, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeStruct_FormatArgumentData_3) == 0x000590, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, K2Node_MakeArray_Array_2) == 0x0005D0, "Member 'Client_InGameMenu_C_SetupTrialInfos::K2Node_MakeArray_Array_2' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_SetupTrialInfos, CallFunc_Format_ReturnValue_2) == 0x0005E0, "Member 'Client_InGameMenu_C_SetupTrialInfos::CallFunc_Format_ReturnValue_2' has a wrong offset!");
 
 // Function Client_InGameMenu.Client_InGameMenu_C.OnFocusReceived
 // 0x01B8 (0x01B8 - 0x0000)
@@ -803,11 +812,12 @@ public:
 	bool                                          Temp_bool_Variable_14;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_15;                             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_16;                             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable_17;                             // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBGameState*                           CallFunc_GetRBGameState_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsTrialChainingMetaActive_ReturnValue;    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Select_Default;                             // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARBPlayer*                              CallFunc_GetLocalPawn_ReturnValue;                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -835,10 +845,11 @@ static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, Temp_bool_Var
 static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, Temp_bool_Variable_14) == 0x000010, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::Temp_bool_Variable_14' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, Temp_bool_Variable_15) == 0x000011, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::Temp_bool_Variable_15' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, Temp_bool_Variable_16) == 0x000012, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::Temp_bool_Variable_16' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, Temp_bool_Variable_17) == 0x000013, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::Temp_bool_Variable_17' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, CallFunc_GetRBGameState_ReturnValue) == 0x000018, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::CallFunc_GetRBGameState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, CallFunc_IsTrialChainingMetaActive_ReturnValue) == 0x000020, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::CallFunc_IsTrialChainingMetaActive_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, K2Node_Select_Default) == 0x000021, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, CallFunc_Not_PreBool_ReturnValue) == 0x000022, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, CallFunc_Not_PreBool_ReturnValue) == 0x000021, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, K2Node_Select_Default) == 0x000022, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, CallFunc_GetLocalPawn_ReturnValue) == 0x000028, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::CallFunc_GetLocalPawn_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Client_InGameMenu_C_ShouldDisplayVariators, CallFunc_IsInSAS_ReturnValue) == 0x000031, "Member 'Client_InGameMenu_C_ShouldDisplayVariators::CallFunc_IsInSAS_ReturnValue' has a wrong offset!");

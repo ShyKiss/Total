@@ -170,8 +170,9 @@ void UActionIconWidget_C::PreConstruct(bool IsDesignTime)
 // Parameters:
 // class FName                             NewActionName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bForceSecondaryBinding                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UActionIconWidget_C::SetActionName(class FName NewActionName, int32 Value)
+void UActionIconWidget_C::SetActionName(class FName NewActionName, int32 Value, bool bForceSecondaryBinding)
 {
 	static class UFunction* Func = nullptr;
 
@@ -182,6 +183,7 @@ void UActionIconWidget_C::SetActionName(class FName NewActionName, int32 Value)
 
 	Parms.NewActionName = NewActionName;
 	Parms.Value = Value;
+	Parms.bForceSecondaryBinding = bForceSecondaryBinding;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
