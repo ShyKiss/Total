@@ -34,6 +34,7 @@ namespace DX11 {
     inline ID3D11ShaderResourceView*    DOCUMENT_TEX = NULL;
     inline ID3D11ShaderResourceView*    EVIDENCE_TEX = NULL;
     inline ID3D11ShaderResourceView*    OBJECTIVE_TEX = NULL;
+    inline ID3D11ShaderResourceView*    POSTER_TEX = NULL;
 
 
 

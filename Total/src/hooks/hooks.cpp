@@ -1,4 +1,4 @@
-#include "../pch.h"
+#include "../PCH/PCH.h"
 
 static HWND g_hWindow = NULL;
 static std::mutex g_mReinitHooksGuard;
@@ -8,9 +8,9 @@ static DWORD WINAPI ReinitializeGraphicalHooks(LPVOID lpParam) {
 
     LOG("[!] Hooks will reinitialize!\n");
 
-    HWND hNewWindow = U::GetProcessWindow( );
+    HWND hNewWindow = Utils::GetProcessWindow( );
     while (hNewWindow == reinterpret_cast<HWND>(lpParam)) {
-        hNewWindow = U::GetProcessWindow( );
+        hNewWindow = Utils::GetProcessWindow( );
     }
 
     H::bShuttingDown = true;
@@ -19,6 +19,8 @@ static DWORD WINAPI ReinitializeGraphicalHooks(LPVOID lpParam) {
     H::Init( );
 
     H::bShuttingDown = false;
+
+    Utils::TexturesLoaded = false;
 
     return 0;
 }
@@ -37,8 +39,11 @@ static LRESULT WINAPI WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM 
         } else if (wParam == VK_DELETE) {
             H::bShuttingDown = true;
             //Console::Free( );
-            U::UnloadDLL( );
+            Utils::UnloadDLL( );
             return 0;
+        }
+        else if (wParam == VK_OEM_MINUS) {
+            Menu::Total_ForceExitToMenu();
         }
     } else if (uMsg == WM_DESTROY) {
         HANDLE hHandle = CreateThread(NULL, 0, ReinitializeGraphicalHooks, hWnd, 0, NULL);
@@ -56,9 +61,11 @@ static LRESULT WINAPI WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM 
 
 namespace Hooks {
     void Init( ) {
-        g_hWindow = U::GetProcessWindow( );
+        g_hWindow = Utils::GetProcessWindow( );
 
-        RenderingBackend_t eRenderingBackend = U::GetRenderingBackend( );
+        Config::ParseConfig();
+
+        RenderingBackend_t eRenderingBackend = Utils::GetRenderingBackend( );
         switch (eRenderingBackend) {
             case DIRECTX11:
                 DX11::Hook(g_hWindow);
@@ -79,7 +86,7 @@ namespace Hooks {
         MH_DisableHook(MH_ALL_HOOKS);
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
         ;
-        RenderingBackend_t eRenderingBackend = U::GetRenderingBackend( );
+        RenderingBackend_t eRenderingBackend = Utils::GetRenderingBackend( );
         switch (eRenderingBackend) {
             case DIRECTX11:
                 DX11::Unhook( );

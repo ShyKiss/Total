@@ -1,22 +1,21 @@
 #pragma once
-#include "../pch.h"
+#include "../PCH/PCH.h"
+
+#define GET_VARIABLE_NAME(Variable) (#Variable)
+#define MACRO_VARIABLE_TO_STRING(Variable) (void(Variable),#Variable)
 
 enum RenderingBackend_t {
 	NONE = 0,
 
-	DIRECTX9,
-	DIRECTX10,
 	DIRECTX11,
 	DIRECTX12,
-
-	OPENGL,
-	VULKAN,
 };
 
 namespace Utils {
 
 	inline HWND mainWindow = nullptr;
 	inline HINSTANCE TotalInstance;
+	inline bool TexturesLoaded = false;
 
 	void SetRenderingBackend(RenderingBackend_t eRenderingBackend);
 	RenderingBackend_t GetRenderingBackend( );
@@ -29,5 +28,3 @@ namespace Utils {
 
 	int GetCorrectDXGIFormat(int eCurrentFormat);
 }
-
-namespace U = Utils;

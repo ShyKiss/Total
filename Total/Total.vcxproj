@@ -82,8 +82,8 @@
     <OutDir>.\bin\</OutDir>
     <IntDir>.\obj\$(Configuration) $(Platform)\</IntDir>
     <TargetName>$(ProjectName)-$(Platform)</TargetName>
-    <IncludePath>$(VULKAN_SDK)\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(VULKAN_SDK)\Lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <IncludePath>$(ProjectDir)\src\Dependencies\freetype;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Visual\FreeType;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
     <LinkIncremental>
     </LinkIncremental>
     <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
@@ -159,17 +159,18 @@
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>ImTextureID=ImU64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>ImTextureID=ImU64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>./src/PCH/PCH.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>None</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -178,206 +179,292 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <DelayLoadDLLs>d3d12.dll;d3d11.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalOptions>/NODEFAULTLIB:libcmt.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\pch.cpp">
+    <ClCompile Include="src\Config\Config.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\Console\Console.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\HImGuiAnimation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\imgui.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\imgui_demo.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\imgui_draw.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\imgui_freetype.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../PCH/PCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\imgui_impl_dx11.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\imgui_impl_dx12.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\imgui_impl_win32.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\imgui_tables.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\ImGui\imgui_widgets.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\MinHook\buffer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\MinHook\hde\hde32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\MinHook\hde\hde64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\MinHook\hook.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\Dependencies\MinHook\trampoline.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\PCH\PCH.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PCH.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="src\console\console.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
-    </ClCompile>
-    <ClCompile Include="src\dependencies\imgui\imgui.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    <ClCompile Include="src\SDK\SDK\Basic.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../PCH/PCH.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\dependencies\imgui\imgui_demo.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    <ClCompile Include="src\SDK\SDK\CoreUObject_functions.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../PCH/PCH.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\dependencies\imgui\imgui_draw.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    <ClCompile Include="src\SDK\SDK\Engine_functions.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../PCH/PCH.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\dependencies\imgui\imgui_impl_dx11.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    <ClCompile Include="src\SDK\SDK\OPP_functions.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../PCH/PCH.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\dependencies\imgui\imgui_impl_dx12.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    <ClCompile Include="src\Total.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PCH/PCH.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="src\dependencies\imgui\imgui_impl_win32.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    <ClCompile Include="src\Hooks\Backend\DX11\Hook_DirectX11.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../PCH/PCH.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="src\dependencies\imgui\imgui_tables.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="src\dependencies\imgui\imgui_widgets.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="src\dependencies\minhook\buffer.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
-    </ClCompile>
-    <ClCompile Include="src\dependencies\minhook\hde\hde32.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../pch.h</PrecompiledHeaderFile>
-    </ClCompile>
-    <ClCompile Include="src\dependencies\minhook\hde\hde64.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../pch.h</PrecompiledHeaderFile>
-    </ClCompile>
-    <ClCompile Include="src\dependencies\minhook\hook.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
-    </ClCompile>
-    <ClCompile Include="src\dependencies\minhook\trampoline.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
-    </ClCompile>
-    <ClCompile Include="src\dllmain.cpp" />
-    <ClCompile Include="src\hooks\backend\dx11\hook_directx11.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../pch.h</PrecompiledHeaderFile>
-    </ClCompile>
-    <ClCompile Include="src\hooks\backend\dx12\hook_directx12.cpp">
+    <ClCompile Include="src\Hooks\Backend\DX12\Hook_DirectX12.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </ExcludedFromBuild>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../PCH/PCH.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="src\hooks\hooks.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    <ClCompile Include="src\Hooks\Hooks.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="src\menu\menu.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    <ClCompile Include="src\Menu\Menu.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="src\sdk\Basic.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="src\sdk\CoreUObject_functions.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="src\sdk\Engine_functions.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="src\sdk\OPP_functions.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="src\utils\utils.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    <ClCompile Include="src\Utils\Utils.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource.h" />
-    <ClInclude Include="src\backend.hpp" />
-    <ClInclude Include="src\console\console.hpp" />
-    <ClInclude Include="src\dependencies\imgui\imconfig.h" />
-    <ClInclude Include="src\dependencies\imgui\imgui.h" />
-    <ClInclude Include="src\dependencies\imgui\imgui_impl_dx11.h" />
-    <ClInclude Include="src\dependencies\imgui\imgui_impl_dx12.h" />
-    <ClInclude Include="src\dependencies\imgui\imgui_impl_win32.h" />
-    <ClInclude Include="src\dependencies\imgui\imgui_internal.h" />
-    <ClInclude Include="src\dependencies\imgui\imstb_rectpack.h" />
-    <ClInclude Include="src\dependencies\imgui\imstb_textedit.h" />
-    <ClInclude Include="src\dependencies\imgui\imstb_truetype.h" />
-    <ClInclude Include="src\dependencies\minhook\buffer.h" />
-    <ClInclude Include="src\dependencies\minhook\hde\hde32.h" />
-    <ClInclude Include="src\dependencies\minhook\hde\hde64.h" />
-    <ClInclude Include="src\dependencies\minhook\hde\pstdint.h" />
-    <ClInclude Include="src\dependencies\minhook\hde\table32.h" />
-    <ClInclude Include="src\dependencies\minhook\hde\table64.h" />
-    <ClInclude Include="src\dependencies\minhook\MinHook.h" />
-    <ClInclude Include="src\dependencies\minhook\trampoline.h" />
-    <ClInclude Include="src\hooks\backend\dx11\hook_directx11.hpp" />
-    <ClInclude Include="src\hooks\backend\dx12\hook_directx12.hpp" />
-    <ClInclude Include="src\hooks\hooks.hpp" />
-    <ClInclude Include="src\menu\menu.hpp" />
-    <ClInclude Include="src\PropertyFixup.hpp" />
-    <ClInclude Include="src\SDK.hpp" />
-    <ClInclude Include="src\sdk\Basic.hpp" />
-    <ClInclude Include="src\sdk\CoreUObject_classes.hpp" />
-    <ClInclude Include="src\sdk\CoreUObject_parameters.hpp" />
-    <ClInclude Include="src\sdk\CoreUObject_structs.hpp" />
-    <ClInclude Include="src\sdk\Engine_classes.hpp" />
-    <ClInclude Include="src\sdk\Engine_parameters.hpp" />
-    <ClInclude Include="src\sdk\Engine_structs.hpp" />
-    <ClInclude Include="src\sdk\OPP_classes.hpp" />
-    <ClInclude Include="src\sdk\OPP_parameters.hpp" />
-    <ClInclude Include="src\sdk\OPP_structs.hpp" />
-    <ClInclude Include="src\UnrealContainers.hpp" />
-    <ClInclude Include="src\utils\stb_image.h" />
-    <ClInclude Include="src\utils\utils.hpp" />
-    <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\Config\Config.hpp" />
+    <ClInclude Include="src\Console\Console.hpp" />
+    <ClInclude Include="src\Dependencies\freetype\config\ftheader.h" />
+    <ClInclude Include="src\Dependencies\freetype\config\ftmodule.h" />
+    <ClInclude Include="src\Dependencies\freetype\config\ftoption.h" />
+    <ClInclude Include="src\Dependencies\freetype\config\ftstdlib.h" />
+    <ClInclude Include="src\Dependencies\freetype\config\integer-types.h" />
+    <ClInclude Include="src\Dependencies\freetype\config\mac-support.h" />
+    <ClInclude Include="src\Dependencies\freetype\config\public-macros.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\config\ftconfig.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\config\ftheader.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\config\ftmodule.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\config\ftoption.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\config\ftstdlib.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\config\integer-types.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\config\mac-support.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\config\public-macros.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\freetype.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftadvanc.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftbbox.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftbdf.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftbitmap.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftbzip2.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftcache.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftchapters.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftcid.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftcolor.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftdriver.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\fterrdef.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\fterrors.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftfntfmt.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftgasp.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftglyph.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftgxval.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftgzip.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftimage.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftincrem.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftlcdfil.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftlist.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftlogging.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftlzw.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftmac.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftmm.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftmodapi.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftmoderr.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftotval.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftoutln.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftparams.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftpfr.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftrender.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftsizes.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftsnames.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftstroke.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftsynth.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftsystem.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\fttrigon.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\fttypes.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ftwinfnt.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\otsvg.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\t1tables.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\ttnameid.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\tttables.h" />
+    <ClInclude Include="src\Dependencies\freetype\freetype\tttags.h" />
+    <ClInclude Include="src\Dependencies\freetype\ft2build.h" />
+    <ClInclude Include="src\Dependencies\ImGui\HImGuiAnimation.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imconfig.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imgui.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imgui_freetype.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imgui_impl_dx12.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imgui_internal.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imstb_textedit.h" />
+    <ClInclude Include="src\Dependencies\ImGui\imstb_truetype.h" />
+    <ClInclude Include="src\Dependencies\inih\ini.h" />
+    <ClInclude Include="src\Dependencies\MinHook\buffer.h" />
+    <ClInclude Include="src\Dependencies\MinHook\hde\hde32.h" />
+    <ClInclude Include="src\Dependencies\MinHook\hde\hde64.h" />
+    <ClInclude Include="src\Dependencies\MinHook\hde\pstdint.h" />
+    <ClInclude Include="src\Dependencies\MinHook\hde\table32.h" />
+    <ClInclude Include="src\Dependencies\MinHook\hde\table64.h" />
+    <ClInclude Include="src\Dependencies\MinHook\MinHook.h" />
+    <ClInclude Include="src\Dependencies\MinHook\trampoline.h" />
+    <ClInclude Include="src\Dependencies\tomlplusplus\toml.hpp" />
+    <ClInclude Include="src\Hooks\Backend\DX11\Hook_DirectX11.hpp" />
+    <ClInclude Include="src\Hooks\Backend\DX12\Hook_DirectX12.hpp" />
+    <ClInclude Include="src\Hooks\Hooks.hpp" />
+    <ClInclude Include="src\Menu\Menu.hpp" />
+    <ClInclude Include="src\Resources\Font\Ubuntu.hpp" />
+    <ClInclude Include="src\Resources\Resource.h" />
+    <ClInclude Include="src\SDK\PropertyFixup.hpp" />
+    <ClInclude Include="src\SDK\SDK.hpp" />
+    <ClInclude Include="src\SDK\SDK\Basic.hpp" />
+    <ClInclude Include="src\SDK\SDK\CoreUObject_classes.hpp" />
+    <ClInclude Include="src\SDK\SDK\CoreUObject_parameters.hpp" />
+    <ClInclude Include="src\SDK\SDK\CoreUObject_structs.hpp" />
+    <ClInclude Include="src\SDK\SDK\Engine_classes.hpp" />
+    <ClInclude Include="src\SDK\SDK\Engine_parameters.hpp" />
+    <ClInclude Include="src\SDK\SDK\Engine_structs.hpp" />
+    <ClInclude Include="src\SDK\SDK\OPP_classes.hpp" />
+    <ClInclude Include="src\SDK\SDK\OPP_parameters.hpp" />
+    <ClInclude Include="src\SDK\SDK\OPP_structs.hpp" />
+    <ClInclude Include="src\SDK\UnrealContainers.hpp" />
+    <ClInclude Include="src\Utils\magic_enum\magic_enum.hpp" />
+    <ClInclude Include="src\Utils\magic_enum\magic_enum_all.hpp" />
+    <ClInclude Include="src\Utils\magic_enum\magic_enum_containers.hpp" />
+    <ClInclude Include="src\Utils\magic_enum\magic_enum_flags.hpp" />
+    <ClInclude Include="src\Utils\magic_enum\magic_enum_format.hpp" />
+    <ClInclude Include="src\Utils\magic_enum\magic_enum_fuse.hpp" />
+    <ClInclude Include="src\Utils\magic_enum\magic_enum_iostream.hpp" />
+    <ClInclude Include="src\Utils\magic_enum\magic_enum_switch.hpp" />
+    <ClInclude Include="src\Utils\magic_enum\magic_enum_utility.hpp" />
+    <ClInclude Include="src\Utils\stb_image.h" />
+    <ClInclude Include="src\Utils\Str.h" />
+    <ClInclude Include="src\Utils\Utils.hpp" />
+    <ClInclude Include="src\PCH\PCH.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\NameCollisions.inl" />
+    <Image Include="src\Icons\inventory\bloody_heart.png" />
+    <Image Include="src\Icons\inventory\item_antidote_psy.png" />
+    <Image Include="src\Icons\inventory\item_bandage.png" />
+    <Image Include="src\Icons\inventory\item_battery.png" />
+    <Image Include="src\Icons\inventory\item_battery_small.png" />
+    <Image Include="src\Icons\inventory\item_bottle.png" />
+    <Image Include="src\Icons\inventory\item_brick.png" />
+    <Image Include="src\Icons\inventory\item_heal_drink.png" />
+    <Image Include="src\Icons\inventory\item_lockpick.png" />
+    <Image Include="src\Icons\inventory\item_masterlockpick.png" />
+    <Image Include="src\Icons\inventory\item_maxstamina.png" />
+    <Image Include="src\Icons\inventory\item_pill.png" />
+    <Image Include="src\Icons\inventory\item_pills.png" />
+    <Image Include="src\Icons\inventory\item_skillcharge.png" />
+    <Image Include="src\Icons\inventory\item_super_battery.png" />
+    <Image Include="src\Icons\inventory\item_super_heal_drink.png" />
+    <Image Include="src\Icons\inventory\item_syringe.png" />
+    <Image Include="src\Icons\inventory\item_temp_heal_drink.png" />
+    <Image Include="src\Icons\inventory\key.png" />
+    <Image Include="src\Icons\inventory\key_A.png" />
+    <Image Include="src\Icons\inventory\key_B.png" />
+    <Image Include="src\Icons\inventory\key_bunny.png" />
+    <Image Include="src\Icons\inventory\key_C.png" />
+    <Image Include="src\Icons\inventory\key_club.png" />
+    <Image Include="src\Icons\inventory\key_crown.png" />
+    <Image Include="src\Icons\inventory\key_D.png" />
+    <Image Include="src\Icons\inventory\key_diamond.png" />
+    <Image Include="src\Icons\inventory\key_eye.png" />
+    <Image Include="src\Icons\inventory\key_fire.png" />
+    <Image Include="src\Icons\inventory\key_heart.png" />
+    <Image Include="src\Icons\inventory\key_moon.png" />
+    <Image Include="src\Icons\inventory\key_pawn.png" />
+    <Image Include="src\Icons\inventory\key_spades.png" />
+    <Image Include="src\Icons\inventory\key_star.png" />
+    <Image Include="src\Icons\inventory\ticket.png" />
+    <Image Include="src\Icons\largepickups\gas_canister.png" />
+    <Image Include="src\Icons\largepickups\item_acidbottle.png" />
+    <Image Include="src\Icons\largepickups\item_acidbucket.png" />
+    <Image Include="src\Icons\largepickups\item_diapo.png" />
+    <Image Include="src\Icons\largepickups\item_kids.png" />
+    <Image Include="src\Icons\largepickups\item_object.png" />
+    <Image Include="src\Icons\other\item_enemy.png" />
+    <Image Include="src\Icons\other\item_evidence.png" />
+    <Image Include="src\Icons\other\item_Mk_folder.png" />
+    <Image Include="src\Icons\other\item_poster.png" />
+    <Image Include="src\Icons\other\item_valve.png" />
+    <Image Include="src\Icons\other\objectif_base_03.png" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="src\icons\inventory\bloody_heart.png" />
-    <Image Include="src\icons\inventory\bodypart_leg.png" />
-    <Image Include="src\icons\inventory\category_tool.png" />
-    <Image Include="src\icons\inventory\DetectorIcon.png" />
-    <Image Include="src\icons\inventory\item_antidote_psy.png" />
-    <Image Include="src\icons\inventory\item_bandage.png" />
-    <Image Include="src\icons\inventory\item_battery.png" />
-    <Image Include="src\icons\inventory\item_battery_small.png" />
-    <Image Include="src\icons\inventory\item_bottle.png" />
-    <Image Include="src\icons\inventory\item_brick.png" />
-    <Image Include="src\icons\inventory\item_brick_02.png" />
-    <Image Include="src\icons\inventory\item_brick_03.png" />
-    <Image Include="src\icons\inventory\item_heal_drink.png" />
-    <Image Include="src\icons\inventory\item_lockpick.png" />
-    <Image Include="src\icons\inventory\item_masterlockpick.png" />
-    <Image Include="src\icons\inventory\item_maxstamina.png" />
-    <Image Include="src\icons\inventory\item_pill.png" />
-    <Image Include="src\icons\inventory\item_pills.png" />
-    <Image Include="src\icons\inventory\item_skillcharge.png" />
-    <Image Include="src\icons\inventory\item_super_battery.png" />
-    <Image Include="src\icons\inventory\item_super_heal_drink.png" />
-    <Image Include="src\icons\inventory\item_syringe.png" />
-    <Image Include="src\icons\inventory\item_temp_heal_drink.png" />
-    <Image Include="src\icons\inventory\key.png" />
-    <Image Include="src\icons\inventory\key_A.png" />
-    <Image Include="src\icons\inventory\key_B.png" />
-    <Image Include="src\icons\inventory\key_bunny.png" />
-    <Image Include="src\icons\inventory\key_C.png" />
-    <Image Include="src\icons\inventory\key_club.png" />
-    <Image Include="src\icons\inventory\key_crown.png" />
-    <Image Include="src\icons\inventory\key_D.png" />
-    <Image Include="src\icons\inventory\key_diamond.png" />
-    <Image Include="src\icons\inventory\key_eye.png" />
-    <Image Include="src\icons\inventory\key_fire.png" />
-    <Image Include="src\icons\inventory\key_heart.png" />
-    <Image Include="src\icons\inventory\key_moon.png" />
-    <Image Include="src\icons\inventory\key_pawn.png" />
-    <Image Include="src\icons\inventory\key_spades.png" />
-    <Image Include="src\icons\inventory\key_star.png" />
-    <Image Include="src\icons\inventory\ticket.png" />
-    <Image Include="src\icons\inventory\transmitter.png" />
-    <Image Include="src\icons\inventory\TriggerIcon.png" />
-    <Image Include="src\icons\largepickups\gas_canister.png" />
-    <Image Include="src\icons\largepickups\item_acidbottle.png" />
-    <Image Include="src\icons\largepickups\item_acidbucket.png" />
-    <Image Include="src\icons\largepickups\item_diapo.png" />
-    <Image Include="src\icons\largepickups\item_kids.png" />
-    <Image Include="src\icons\largepickups\item_object.png" />
-    <Image Include="src\icons\other\item_enemy.png" />
-    <Image Include="src\icons\other\item_evidence.png" />
-    <Image Include="src\icons\other\item_Mk_folder.png" />
-    <Image Include="src\icons\other\item_valve.png" />
-    <Image Include="src\icons\other\objectif_base_03.png" />
+    <ResourceCompile Include="src\Resources\Resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Resource.rc" />
+    <None Include="src\SDK\NameCollisions.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

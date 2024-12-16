@@ -1,4 +1,4 @@
-#include "../pch.h"
+#include "../PCH/PCH.h"
 
 #define RB2STR(x) case x: return #x
 
@@ -40,13 +40,8 @@ namespace Utils {
 		RenderingBackend_t eRenderingBackend = GetRenderingBackend( );
 
 		switch (eRenderingBackend) {
-			RB2STR(DIRECTX9);
-			RB2STR(DIRECTX10);
 			RB2STR(DIRECTX11);
 			RB2STR(DIRECTX12);
-
-			RB2STR(OPENGL);
-			RB2STR(VULKAN);
 		}
 
 		return "NONE/UNKNOWN";

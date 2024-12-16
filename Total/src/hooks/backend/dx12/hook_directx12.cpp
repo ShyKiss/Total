@@ -1,11 +1,12 @@
-#include "../../../pch.h"
+#include "../../../PCH/PCH.h"
 
 #ifdef ENABLE_BACKEND_DX12
 
 #pragma comment(lib, "d3d12.lib")
 #pragma comment(lib, "dxgi.lib")
 
-#include "../../../utils/stb_image.h"
+#include "../../../Utils/stb_image.h"
+#include "../../../Resources/Font/Ubuntu.hpp"
 
 // Data
 static int const NUM_BACK_BUFFERS = 3;
@@ -190,6 +191,34 @@ static bool LoadTextureFromDll(int name, ID3D12Device* d3d_device, D3D12_CPU_DES
     return true;
 }
 
+static void LoadTextures() {
+    LoadTextureFromDll(IDB_BOTTLE,              g_pd3dDevice, DX12::BOTTLE_CPU              );
+    LoadTextureFromDll(IDB_KEY,                 g_pd3dDevice, DX12::KEY_CPU                 );
+    LoadTextureFromDll(IDB_BRICK,               g_pd3dDevice, DX12::BRICK_CPU               );
+    LoadTextureFromDll(IDB_ANTIDOTE,            g_pd3dDevice, DX12::ANTIDOTE_CPU            );
+    LoadTextureFromDll(IDB_SKILLCHARGE,         g_pd3dDevice, DX12::SKILLCHARGE_CPU         );
+    LoadTextureFromDll(IDB_BATTERY,             g_pd3dDevice, DX12::BATTERY_CPU             );
+    LoadTextureFromDll(IDB_SMALL_BATTERY,       g_pd3dDevice, DX12::SMALL_BATTERY_CPU       );
+    LoadTextureFromDll(IDB_HEAL,                g_pd3dDevice, DX12::HEAL_CPU                );
+    LoadTextureFromDll(IDB_HEART,               g_pd3dDevice, DX12::HEART_CPU               );
+    LoadTextureFromDll(IDB_ADRENALINE,          g_pd3dDevice, DX12::ADRENALINE_CPU          );
+    LoadTextureFromDll(IDB_TICKET,              g_pd3dDevice, DX12::TICKET_CPU              );
+    LoadTextureFromDll(IDB_SMALL_HEAL,          g_pd3dDevice, DX12::SMALL_HEAL_CPU          );
+    LoadTextureFromDll(IDB_BANDAGE,             g_pd3dDevice, DX12::BANDAGE_CPU             );
+    LoadTextureFromDll(IDB_LOCKPICK,            g_pd3dDevice, DX12::LOCKPICK_CPU            );
+    LoadTextureFromDll(IDB_VALVE,               g_pd3dDevice, DX12::VALVE_CPU               );
+    LoadTextureFromDll(IDB_DIAPO,               g_pd3dDevice, DX12::DIAPO_CPU               );
+    LoadTextureFromDll(IDB_ENEMY,               g_pd3dDevice, DX12::ENEMY_CPU               );
+    LoadTextureFromDll(IDB_KIDS,                g_pd3dDevice, DX12::KIDS_CPU                );
+    LoadTextureFromDll(IDB_ACID_BOTTLE,         g_pd3dDevice, DX12::ACID_BOTTLE_CPU         );
+    LoadTextureFromDll(IDB_ACID_BUCKET,         g_pd3dDevice, DX12::ACID_BUCKET_CPU         );
+    LoadTextureFromDll(IDB_CANISTER,            g_pd3dDevice, DX12::CANISTER_CPU            );
+    LoadTextureFromDll(IDB_DOCUMENT,            g_pd3dDevice, DX12::DOCUMENT_CPU            );
+    LoadTextureFromDll(IDB_EVIDENCE,            g_pd3dDevice, DX12::EVIDENCE_CPU            );
+    LoadTextureFromDll(IDB_OBJECTIVE,           g_pd3dDevice, DX12::OBJECTIVE_CPU           );
+    LoadTextureFromDll(IDB_POSTER,              g_pd3dDevice, DX12::POSTER_CPU              );
+    LoadTextureFromDll(IDB_MATERIAL_OBJECT,     g_pd3dDevice, DX12::MATERIAL_OBJECT_CPU     );
+}
 
 static bool CreateDeviceD3D12(HWND hWnd) {
     // Setup swap chain
@@ -350,10 +379,10 @@ namespace DX12 {
             return;
         }
     
-        LOG("[+] DirectX12: g_pd3dDevice: 0x%p\n", g_pd3dDevice);
-        LOG("[+] DirectX12: g_dxgiFactory: 0x%p\n", g_dxgiFactory);
-        LOG("[+] DirectX12: g_pd3dCommandQueue: 0x%p\n", g_pd3dCommandQueue);
-        LOG("[+] DirectX12: g_pSwapChain: 0x%p\n", g_pSwapChain);
+        LOG("DirectX12: g_pd3dDevice: 0x%p\n", g_pd3dDevice);
+        LOG("DirectX12: g_dxgiFactory: 0x%p\n", g_dxgiFactory);
+        LOG("DirectX12: g_pd3dCommandQueue: 0x%p\n", g_pd3dCommandQueue);
+        LOG("DirectX12: g_pSwapChain: 0x%p\n", g_pSwapChain);
 
 
         if (g_pd3dDevice) {
@@ -474,7 +503,11 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
             {
                 ImGui::GetIO( ).WantCaptureMouse || ImGui::GetIO( ).WantTextInput || ImGui::GetIO( ).WantCaptureKeyboard;
                 ImGui::GetIO( ).ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
-                ImGui::GetIO( ).Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\Consolab.ttf", 12.0f, NULL, ImGui::GetIO( ).Fonts->GetGlyphRangesCyrillic( ));
+
+                ImFontConfig cfg;
+                cfg.FontDataOwnedByAtlas = false;
+                cfg.FontBuilderFlags |= ImGuiFreeTypeBuilderFlags::ImGuiFreeTypeBuilderFlags_ForceAutoHint;
+                ImGui::GetIO( ).Fonts->AddFontFromMemoryCompressedBase85TTF(ubuntu_compressed_data_base85, 14.0f, &cfg, ImGui::GetIO().Fonts->GetGlyphRangesCyrillic());
                 ImGui::GetIO( ).Fonts->Build( );
 
                 D3D12_DESCRIPTOR_HEAP_DESC desc = { };
@@ -520,7 +553,7 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
             static_assert(sizeof(ImTextureID) >= sizeof(D3D12_CPU_DESCRIPTOR_HANDLE), "D3D12_CPU_DESCRIPTOR_HANDLE is too large to fit in an ImTextureID");
             UINT handle_increment = g_pd3dDevice->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV);
 
-            DX12::BOTTLE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart( );
+            DX12::BOTTLE_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart();
             DX12::BOTTLE_CPU.ptr += (handle_increment * 2);
             DX12::BOTTLE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
             DX12::BOTTLE_GPU.ptr += (handle_increment * 2);
@@ -644,6 +677,11 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
             DX12::OBJECTIVE_CPU.ptr += (handle_increment * 27);
             DX12::OBJECTIVE_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart( );
             DX12::OBJECTIVE_GPU.ptr += (handle_increment * 27);
+
+            DX12::POSTER_CPU = g_pd3dSrvDescHeap->GetCPUDescriptorHandleForHeapStart();
+            DX12::POSTER_CPU.ptr += (handle_increment * 28);
+            DX12::POSTER_GPU = g_pd3dSrvDescHeap->GetGPUDescriptorHandleForHeapStart();
+            DX12::POSTER_GPU.ptr += (handle_increment * 28);
         }
     }
 
@@ -653,38 +691,10 @@ static void RenderImGui_DX12(IDXGISwapChain3* pSwapChain) {
         }
 
         if (ImGui::GetCurrentContext( ) && g_pd3dCommandQueue && g_mainRenderTargetResource[0]) {
-
-            if (HalfInt < 24) {
-                switch (HalfInt) {
-                    case 0:     LoadTextureFromDll(IDB_BOTTLE,              g_pd3dDevice, DX12::BOTTLE_CPU              );  break;
-                    case 1:     LoadTextureFromDll(IDB_KEY,                 g_pd3dDevice, DX12::KEY_CPU                 );  break;
-                    case 2:     LoadTextureFromDll(IDB_BRICK,               g_pd3dDevice, DX12::BRICK_CPU               );  break;
-                    case 3:     LoadTextureFromDll(IDB_ANTIDOTE,            g_pd3dDevice, DX12::ANTIDOTE_CPU            );  break;
-                    case 4:     LoadTextureFromDll(IDB_SKILLCHARGE,         g_pd3dDevice, DX12::SKILLCHARGE_CPU         );  break;
-                    case 5:     LoadTextureFromDll(IDB_BATTERY,             g_pd3dDevice, DX12::BATTERY_CPU             );  break;
-                    case 6:     LoadTextureFromDll(IDB_SMALL_BATTERY,       g_pd3dDevice, DX12::SMALL_BATTERY_CPU       );  break;
-                    case 7:     LoadTextureFromDll(IDB_HEAL,                g_pd3dDevice, DX12::HEAL_CPU                );  break;
-                    case 8:     LoadTextureFromDll(IDB_HEART,               g_pd3dDevice, DX12::HEART_CPU               );  break;
-                    case 9:     LoadTextureFromDll(IDB_ADRENALINE,          g_pd3dDevice, DX12::ADRENALINE_CPU          );  break;
-                    case 10:    LoadTextureFromDll(IDB_TICKET,              g_pd3dDevice, DX12::TICKET_CPU              );  break;
-                    case 11:    LoadTextureFromDll(IDB_SMALL_HEAL,          g_pd3dDevice, DX12::SMALL_HEAL_CPU          );  break;
-                    case 12:    LoadTextureFromDll(IDB_BANDAGE,             g_pd3dDevice, DX12::BANDAGE_CPU             );  break;
-                    case 13:    LoadTextureFromDll(IDB_LOCKPICK,            g_pd3dDevice, DX12::LOCKPICK_CPU            );  break;
-                    case 14:    LoadTextureFromDll(IDB_VALVE,               g_pd3dDevice, DX12::VALVE_CPU               );  break;
-                    case 15:    LoadTextureFromDll(IDB_DIAPO,               g_pd3dDevice, DX12::DIAPO_CPU               );  break;
-                    case 16:    LoadTextureFromDll(IDB_ENEMY,               g_pd3dDevice, DX12::ENEMY_CPU               );  break;
-                    case 17:    LoadTextureFromDll(IDB_KIDS,                g_pd3dDevice, DX12::KIDS_CPU                );  break;
-                    case 18:    LoadTextureFromDll(IDB_ACID_BOTTLE,         g_pd3dDevice, DX12::ACID_BOTTLE_CPU         );  break;
-                    case 19:    LoadTextureFromDll(IDB_ACID_BUCKET,         g_pd3dDevice, DX12::ACID_BUCKET_CPU         );  break;
-                    case 20:    LoadTextureFromDll(IDB_CANISTER,            g_pd3dDevice, DX12::CANISTER_CPU            );  break;
-                    case 21:    LoadTextureFromDll(IDB_DOCUMENT,            g_pd3dDevice, DX12::DOCUMENT_CPU            );  break;
-                    case 22:    LoadTextureFromDll(IDB_EVIDENCE,            g_pd3dDevice, DX12::EVIDENCE_CPU            );  break;
-                    case 23:    LoadTextureFromDll(IDB_OBJECTIVE,           g_pd3dDevice, DX12::OBJECTIVE_CPU           );  break;
-                    case 24:    LoadTextureFromDll(IDB_MATERIAL_OBJECT,     g_pd3dDevice, DX12::MATERIAL_OBJECT_CPU     );  break;
-                }
-                HalfInt++;
+            if (!Utils::TexturesLoaded) {
+                LoadTextures();
+                Utils::TexturesLoaded = true;
             }
-                
 
             ImGui_ImplDX12_NewFrame( );
             ImGui_ImplWin32_NewFrame( );
