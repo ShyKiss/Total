@@ -16,19 +16,23 @@ namespace Config {
 		
 		bShowGlobalHud				= config["bShowGlobalHud"]				.value_or(true);
 		bShowItems					= config["bShowItems"]					.value_or(false);
-		bShowLargeItems				= config["bShowLargeItems"]				.value_or(false);
+		bShowLargeItems				= config["bShowLargeItems"]				.value_or(true);
 		bShowLargeItems				= config["bShowNPCs"]					.value_or(false);
-		bShowObjectiveActors		= config["bShowObjectiveActors"]		.value_or(false);
+		bShowObjectiveActors		= config["bShowObjectiveActors"]		.value_or(true);
 		bShowPrimaryObjectiveActors	= config["bShowPrimaryObjectiveActors"]	.value_or(false);
 		bShowPlayers				= config["bShowPlayers"]				.value_or(false);
-		bShowStamina				= config["bShowStamina"]				.value_or(false);
-									  
+		bShowStamina				= config["bShowStamina"]				.value_or(true);
+		bSuperlight					= config["bSuperlight"]					.value_or(false);
+
 		fShowItems					= config["fShowItems"]					.value_or(150.f);
 		fShowLargeItems				= config["fShowLargeItems"]				.value_or(300.f);
 		fShowNPCs					= config["fShowNPCs"]					.value_or(300.f);
 		fShowPrimaryObjectiveActors	= config["fShowPrimaryObjectiveActors"]	.value_or(300.f);
 		fShowObjectiveActors		= config["fShowObjectiveActors"]		.value_or(300.f);
 		fShowPlayers				= config["fShowPlayers"]				.value_or(150.f);
+		fSuperlightRadius			= config["fSuperlightRadius"]			.value_or(32768.f);
+		fSuperlightIntensity		= config["fSuperlightIntensity"]		.value_or(20.f);
+		fSuperlightAngle			= config["fSuperlightAngle"]			.value_or(90.f);
 
 		if (toml::array* arr = config["AllowedItems"].as_array()) {
 			if (!arr->empty())
@@ -55,12 +59,16 @@ namespace Config {
 		config.insert_or_assign("bShowPrimaryObjectiveActors",	bShowPrimaryObjectiveActors	);
 		config.insert_or_assign("bShowPlayers",					bShowPlayers				);
 		config.insert_or_assign("bShowStamina",					bShowStamina				);
+		config.insert_or_assign("bSuperlight",					bSuperlight					);
 
 		config.insert_or_assign("fShowItems",					fShowItems					);
 		config.insert_or_assign("fShowLargeItems",				fShowLargeItems				);
 		config.insert_or_assign("fShowPrimaryObjectiveActors",	fShowPrimaryObjectiveActors	);
 		config.insert_or_assign("fShowObjectiveActors",			fShowObjectiveActors		);
 		config.insert_or_assign("fShowPlayers",					fShowPlayers				);
+		config.insert_or_assign("fSuperlightRadius",			fSuperlightRadius			);
+		config.insert_or_assign("fSuperlightIntensity",			fSuperlightIntensity		);
+		config.insert_or_assign("fSuperlightAngle",				fSuperlightAngle			);
 
 		config.insert_or_assign("AllowedItems",			toml::array());
 		if (toml::array* arr = config["AllowedItems"].as_array()) {

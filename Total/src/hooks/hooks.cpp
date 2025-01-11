@@ -42,7 +42,7 @@ static LRESULT WINAPI WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM 
             Utils::UnloadDLL( );
             return 0;
         }
-        else if (wParam == VK_OEM_MINUS) {
+        else if (Menu::bShowMenu && wParam == VK_OEM_MINUS) {
             Menu::Total_ForceExitToMenu();
         }
     } else if (uMsg == WM_DESTROY) {

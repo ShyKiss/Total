@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function Wire-01_BP.Wire-01_BP_C.ExecuteUbergraph_Wire-01_BP
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function Wire-01_BP.Wire-01_BP_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void AWireMinus01_BP_C::ExecuteUbergraph_WireMinus01_BP(int32 EntryPoint)
+void AWireMinus01_BP_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Wire-01_BP_C", "ExecuteUbergraph_Wire-01_BP");
+		Func = Class->GetFunction("Wire-01_BP_C", "UserConstructionScript");
 
-	Params::WireMinus01_BP_C_ExecuteUbergraph_WireMinus01_BP Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void AWireMinus01_BP_C::ReceiveBeginPlay()
 }
 
 
-// Function Wire-01_BP.Wire-01_BP_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function Wire-01_BP.Wire-01_BP_C.ExecuteUbergraph_Wire-01_BP
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AWireMinus01_BP_C::UserConstructionScript()
+void AWireMinus01_BP_C::ExecuteUbergraph_WireMinus01_BP(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Wire-01_BP_C", "UserConstructionScript");
+		Func = Class->GetFunction("Wire-01_BP_C", "ExecuteUbergraph_Wire-01_BP");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WireMinus01_BP_C_ExecuteUbergraph_WireMinus01_BP Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

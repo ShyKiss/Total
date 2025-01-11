@@ -65,26 +65,6 @@ void USecondaryObjectiveWidget_C::Event_ProgressChanged(class ARBBaseObjectiveCo
 }
 
 
-// Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.HandleVisibilityEvent
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void USecondaryObjectiveWidget_C::HandleVisibilityEvent(bool IsVisible_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SecondaryObjectiveWidget_C", "HandleVisibilityEvent");
-
-	Params::SecondaryObjectiveWidget_C_HandleVisibilityEvent Parms{};
-
-	Parms.IsVisible_0 = IsVisible_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.GetFadeInAnimation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -135,6 +115,26 @@ void USecondaryObjectiveWidget_C::Initialize(class ARBBaseObjectiveCoordinator* 
 	Params::SecondaryObjectiveWidget_C_Initialize Parms{};
 
 	Parms.Coordinator = Coordinator;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.HandleVisibilityEvent
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void USecondaryObjectiveWidget_C::HandleVisibilityEvent(bool IsVisible_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SecondaryObjectiveWidget_C", "HandleVisibilityEvent");
+
+	Params::SecondaryObjectiveWidget_C_HandleVisibilityEvent Parms{};
+
+	Parms.IsVisible_0 = IsVisible_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

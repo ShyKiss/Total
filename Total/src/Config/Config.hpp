@@ -16,6 +16,7 @@ namespace Config {
     inline bool     bShowPrimaryObjectiveActors;
     inline bool     bShowPlayers;
     inline bool     bShowStamina;
+    inline bool     bSuperlight;
 
     inline float    fShowItems;
     inline float    fShowNPCs;
@@ -23,6 +24,9 @@ namespace Config {
     inline float    fShowObjectiveActors;
     inline float    fShowPrimaryObjectiveActors;
     inline float    fShowPlayers;
+    inline float    fSuperlightRadius;
+    inline float    fSuperlightIntensity;
+    inline float    fSuperlightAngle;
 
     inline bool AllowedItems[(int)SDK::EItemType::Max];
 

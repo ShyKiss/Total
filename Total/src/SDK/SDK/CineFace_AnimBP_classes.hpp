@@ -47,9 +47,9 @@ public:
 	class UAnimSequence*                          FaceForScreenshots;                                // 0x0BA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_CineFace_AnimBP(int32 EntryPoint);
-	void BlueprintInitializeAnimation();
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void BlueprintInitializeAnimation();
+	void ExecuteUbergraph_CineFace_AnimBP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

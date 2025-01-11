@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass NPC_Weapon_BaseBP.NPC_Weapon_BaseBP_C
 // 0x0008 (0x0430 - 0x0428)
-class ANPC_Weapon_BaseBP_C final : public ARBNPCWeapon
+class ANPC_Weapon_BaseBP_C : public ARBNPCWeapon
 {
 public:
 	class USceneComponent*                        BloodEffectLocator;                                // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)

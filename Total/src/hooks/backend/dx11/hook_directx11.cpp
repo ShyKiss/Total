@@ -14,10 +14,6 @@ static ID3D11DeviceContext* g_pd3dDeviceContext = NULL;
 static ID3D11RenderTargetView* g_pd3dRenderTarget = NULL;
 static IDXGISwapChain* g_pSwapChain = NULL;
 
-static int HalfInt = 0;
-
-
-
 static void CleanupDeviceD3D11( );
 static void CleanupRenderTarget( );
 static void RenderImGui_DX11(IDXGISwapChain* pSwapChain);
@@ -71,32 +67,33 @@ bool LoadTextureFromDll(int name, ID3D11ShaderResourceView** out_srv) {
 }
 
 static void LoadTextures() {
-    LoadTextureFromDll(IDB_BOTTLE,              &DX11::BOTTLE_TEX);
-    LoadTextureFromDll(IDB_KEY,                 &DX11::KEY_TEX);
-    LoadTextureFromDll(IDB_BRICK,               &DX11::BRICK_TEX);
-    LoadTextureFromDll(IDB_ANTIDOTE,            &DX11::ANTIDOTE_TEX);
-    LoadTextureFromDll(IDB_SKILLCHARGE,         &DX11::SKILLCHARGE_TEX);
-    LoadTextureFromDll(IDB_BATTERY,             &DX11::BATTERY_TEX);
-    LoadTextureFromDll(IDB_SMALL_BATTERY,       &DX11::SMALL_BATTERY_TEX);
-    LoadTextureFromDll(IDB_HEAL,                &DX11::HEAL_TEX);
-    LoadTextureFromDll(IDB_HEART,               &DX11::HEART_TEX);
-    LoadTextureFromDll(IDB_ADRENALINE,          &DX11::ADRENALINE_TEX);
-    LoadTextureFromDll(IDB_TICKET,              &DX11::TICKET_TEX);
-    LoadTextureFromDll(IDB_SMALL_HEAL,          &DX11::SMALL_HEAL_TEX);
-    LoadTextureFromDll(IDB_BANDAGE,             &DX11::BANDAGE_TEX);
-    LoadTextureFromDll(IDB_LOCKPICK,            &DX11::LOCKPICK_TEX);
-    LoadTextureFromDll(IDB_VALVE,               &DX11::VALVE_TEX);
-    LoadTextureFromDll(IDB_DIAPO,               &DX11::DIAPO_TEX);
-    LoadTextureFromDll(IDB_ENEMY,               &DX11::ENEMY_TEX);
-    LoadTextureFromDll(IDB_KIDS,                &DX11::KIDS_TEX);
-    LoadTextureFromDll(IDB_ACID_BOTTLE,         &DX11::ACID_BOTTLE_TEX);
-    LoadTextureFromDll(IDB_ACID_BUCKET,         &DX11::ACID_BUCKET_TEX);
-    LoadTextureFromDll(IDB_CANISTER,            &DX11::CANISTER_TEX);
-    LoadTextureFromDll(IDB_DOCUMENT,            &DX11::DOCUMENT_TEX);
-    LoadTextureFromDll(IDB_EVIDENCE,            &DX11::EVIDENCE_TEX);
-    LoadTextureFromDll(IDB_OBJECTIVE,           &DX11::OBJECTIVE_TEX);
-    LoadTextureFromDll(IDB_POSTER,              &DX11::POSTER_TEX);
-    LoadTextureFromDll(IDB_MATERIAL_OBJECT,     &DX11::MATERIAL_OBJECT_TEX);
+    Timer timer;
+    timer.add(std::chrono::milliseconds(0),     []() { LoadTextureFromDll(IDB_BOTTLE,           &DX11::BOTTLE_TEX            );}, true);
+    timer.add(std::chrono::milliseconds(100),   []() { LoadTextureFromDll(IDB_KEY,              &DX11::KEY_TEX               );}, true);
+    timer.add(std::chrono::milliseconds(200),   []() { LoadTextureFromDll(IDB_BRICK,            &DX11::BRICK_TEX             );}, true);
+    timer.add(std::chrono::milliseconds(300),   []() { LoadTextureFromDll(IDB_ANTIDOTE,         &DX11::ANTIDOTE_TEX          );}, true);
+    timer.add(std::chrono::milliseconds(400),   []() { LoadTextureFromDll(IDB_SKILLCHARGE,      &DX11::SKILLCHARGE_TEX       );}, true);
+    timer.add(std::chrono::milliseconds(500),   []() { LoadTextureFromDll(IDB_BATTERY,          &DX11::BATTERY_TEX           );}, true);
+    timer.add(std::chrono::milliseconds(600),   []() { LoadTextureFromDll(IDB_SMALL_BATTERY,    &DX11::SMALL_BATTERY_TEX     );}, true);
+    timer.add(std::chrono::milliseconds(700),   []() { LoadTextureFromDll(IDB_HEAL,             &DX11::HEAL_TEX              );}, true);
+    timer.add(std::chrono::milliseconds(800),   []() { LoadTextureFromDll(IDB_HEART,            &DX11::HEART_TEX             );}, true);
+    timer.add(std::chrono::milliseconds(900),   []() { LoadTextureFromDll(IDB_ADRENALINE,       &DX11::ADRENALINE_TEX        );}, true);
+    timer.add(std::chrono::milliseconds(1000),  []() { LoadTextureFromDll(IDB_TICKET,           &DX11::TICKET_TEX            );}, true);
+    timer.add(std::chrono::milliseconds(1100),  []() { LoadTextureFromDll(IDB_SMALL_HEAL,       &DX11::SMALL_HEAL_TEX        );}, true);
+    timer.add(std::chrono::milliseconds(1200),  []() { LoadTextureFromDll(IDB_BANDAGE,          &DX11::BANDAGE_TEX           );}, true);
+    timer.add(std::chrono::milliseconds(1300),  []() { LoadTextureFromDll(IDB_LOCKPICK,         &DX11::LOCKPICK_TEX          );}, true);
+    timer.add(std::chrono::milliseconds(1400),  []() { LoadTextureFromDll(IDB_VALVE,            &DX11::VALVE_TEX             );}, true);
+    timer.add(std::chrono::milliseconds(1500),  []() { LoadTextureFromDll(IDB_DIAPO,            &DX11::DIAPO_TEX             );}, true);
+    timer.add(std::chrono::milliseconds(1600),  []() { LoadTextureFromDll(IDB_ENEMY,            &DX11::ENEMY_TEX             );}, true);
+    timer.add(std::chrono::milliseconds(1700),  []() { LoadTextureFromDll(IDB_KIDS,             &DX11::KIDS_TEX              );}, true);
+    timer.add(std::chrono::milliseconds(1800),  []() { LoadTextureFromDll(IDB_ACID_BOTTLE,      &DX11::ACID_BOTTLE_TEX       );}, true);
+    timer.add(std::chrono::milliseconds(1900),  []() { LoadTextureFromDll(IDB_ACID_BUCKET,      &DX11::ACID_BUCKET_TEX       );}, true);
+    timer.add(std::chrono::milliseconds(2000),  []() { LoadTextureFromDll(IDB_CANISTER,         &DX11::CANISTER_TEX          );}, true);
+    timer.add(std::chrono::milliseconds(2100),  []() { LoadTextureFromDll(IDB_DOCUMENT,         &DX11::DOCUMENT_TEX          );}, true);
+    timer.add(std::chrono::milliseconds(2200),  []() { LoadTextureFromDll(IDB_EVIDENCE,         &DX11::EVIDENCE_TEX          );}, true);
+    timer.add(std::chrono::milliseconds(2300),  []() { LoadTextureFromDll(IDB_OBJECTIVE,        &DX11::OBJECTIVE_TEX         );}, true);
+    timer.add(std::chrono::milliseconds(2400),  []() { LoadTextureFromDll(IDB_POSTER,           &DX11::POSTER_TEX            );}, true);
+    timer.add(std::chrono::milliseconds(2500),  []() { LoadTextureFromDll(IDB_MATERIAL_OBJECT,  &DX11::MATERIAL_OBJECT_TEX   );}, true);
 }
 
 static bool CreateDeviceD3D11(HWND hWnd) {

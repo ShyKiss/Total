@@ -59,17 +59,6 @@ static_assert(offsetof(SecondaryObjectiveWidget_C_Event_ProgressChanged, IsPosit
 static_assert(offsetof(SecondaryObjectiveWidget_C_Event_ProgressChanged, ObjectiveText_0) == 0x000010, "Member 'SecondaryObjectiveWidget_C_Event_ProgressChanged::ObjectiveText_0' has a wrong offset!");
 static_assert(offsetof(SecondaryObjectiveWidget_C_Event_ProgressChanged, bForceShow) == 0x000028, "Member 'SecondaryObjectiveWidget_C_Event_ProgressChanged::bForceShow' has a wrong offset!");
 
-// Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.HandleVisibilityEvent
-// 0x0001 (0x0001 - 0x0000)
-struct SecondaryObjectiveWidget_C_HandleVisibilityEvent final
-{
-public:
-	bool                                          IsVisible_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(SecondaryObjectiveWidget_C_HandleVisibilityEvent) == 0x000001, "Wrong alignment on SecondaryObjectiveWidget_C_HandleVisibilityEvent");
-static_assert(sizeof(SecondaryObjectiveWidget_C_HandleVisibilityEvent) == 0x000001, "Wrong size on SecondaryObjectiveWidget_C_HandleVisibilityEvent");
-static_assert(offsetof(SecondaryObjectiveWidget_C_HandleVisibilityEvent, IsVisible_0) == 0x000000, "Member 'SecondaryObjectiveWidget_C_HandleVisibilityEvent::IsVisible_0' has a wrong offset!");
-
 // Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.GetFadeInAnimation
 // 0x0008 (0x0008 - 0x0000)
 struct SecondaryObjectiveWidget_C_GetFadeInAnimation final
@@ -106,6 +95,17 @@ static_assert(sizeof(SecondaryObjectiveWidget_C_Initialize) == 0x000020, "Wrong 
 static_assert(offsetof(SecondaryObjectiveWidget_C_Initialize, Coordinator) == 0x000000, "Member 'SecondaryObjectiveWidget_C_Initialize::Coordinator' has a wrong offset!");
 static_assert(offsetof(SecondaryObjectiveWidget_C_Initialize, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'SecondaryObjectiveWidget_C_Initialize::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(SecondaryObjectiveWidget_C_Initialize, CallFunc_GetObjectiveWidgetIcon_ReturnValue) == 0x000018, "Member 'SecondaryObjectiveWidget_C_Initialize::CallFunc_GetObjectiveWidgetIcon_ReturnValue' has a wrong offset!");
+
+// Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.HandleVisibilityEvent
+// 0x0001 (0x0001 - 0x0000)
+struct SecondaryObjectiveWidget_C_HandleVisibilityEvent final
+{
+public:
+	bool                                          IsVisible_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(SecondaryObjectiveWidget_C_HandleVisibilityEvent) == 0x000001, "Wrong alignment on SecondaryObjectiveWidget_C_HandleVisibilityEvent");
+static_assert(sizeof(SecondaryObjectiveWidget_C_HandleVisibilityEvent) == 0x000001, "Wrong size on SecondaryObjectiveWidget_C_HandleVisibilityEvent");
+static_assert(offsetof(SecondaryObjectiveWidget_C_HandleVisibilityEvent, IsVisible_0) == 0x000000, "Member 'SecondaryObjectiveWidget_C_HandleVisibilityEvent::IsVisible_0' has a wrong offset!");
 
 // Function SecondaryObjectiveWidget.SecondaryObjectiveWidget_C.ShouldShow
 // 0x0028 (0x0028 - 0x0000)

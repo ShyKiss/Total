@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "BaseFogger_SkillItem_BP_classes.hpp"
+#include "AkAudio_structs.hpp"
 
 
 namespace SDK

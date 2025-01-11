@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "PlayerVisualDamageStruct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PlayerVisualDamageStruct_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"

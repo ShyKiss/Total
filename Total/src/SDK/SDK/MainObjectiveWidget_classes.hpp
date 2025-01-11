@@ -58,11 +58,11 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void Construct();
 	void Finished_8A3EC16D4EBA343192A93F85CA6E35E3();
+	void GetFadeInAnimation(class UWidgetAnimation** FadeInAnimation);
 	void SetIsMakingPositiveProgress(bool IsMakingPositiveProgress_0);
 	void SetProgressRatio(float Ratio);
-	void UpdateIntermediateObjectives();
-	void GetFadeInAnimation(class UWidgetAnimation** FadeInAnimation);
 	void Initialize(class ARBBaseObjectiveCoordinator* Coordinator);
+	void UpdateIntermediateObjectives();
 	void GetRemoveAnimation(class UWidgetAnimation** RemoveAnimation_0);
 
 	bool ShouldShow() const;

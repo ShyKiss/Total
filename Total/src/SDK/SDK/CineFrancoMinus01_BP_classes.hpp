@@ -35,14 +35,14 @@ public:
 	class UTimelineComponent*                     MuzzleLight_TL;                                    // 0x02B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_CineFrancoMinus01_BP(int32 EntryPoint);
-	void Shoot();
-	void MuzzleLight_TL__UpdateFunc();
-	void MuzzleLight_TL__FinishedFunc();
-	void ReceiveBeginPlay();
-	void UserConstructionScript();
-	void GetCineFaceAnimBP(class UCineFace_AnimBP_C** CineFaceAnimBP);
 	void GetPoseAsset(class UPoseAsset** PoseAsset);
+	void GetCineFaceAnimBP(class UCineFace_AnimBP_C** CineFaceAnimBP);
+	void UserConstructionScript();
+	void MuzzleLight_TL__FinishedFunc();
+	void MuzzleLight_TL__UpdateFunc();
+	void ReceiveBeginPlay();
+	void Shoot();
+	void ExecuteUbergraph_CineFrancoMinus01_BP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

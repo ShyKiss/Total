@@ -37,9 +37,9 @@ public:
 	struct FLinearColor                           Spark_Light_Color;                                 // 0x0444(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WireMinus01_BP(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_WireMinus01_BP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

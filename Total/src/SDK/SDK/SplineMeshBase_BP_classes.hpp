@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "MeshIndex_structs.hpp"
 #include "SplineMeshData_structs.hpp"
+#include "MeshIndex_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "OPP_classes.hpp"
 
@@ -79,20 +79,20 @@ public:
 	bool                                          bVisibleInReflectionCaptures;                      // 0x0411(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void ExecuteUbergraph_SplineMeshBase_BP(int32 EntryPoint);
-	void PostToggled(bool bToggleEnabled);
-	void UserConstructionScript();
-	void AddDetailsMeshes(float Distance, const struct FVector& Location, const struct FRotator& Relative_Transform_Rotation);
-	void AddStaticMesh(const struct FVector& StartPos, const struct FVector& StartTangent, const struct FVector& EndPos, const struct FVector& EndTangent, class UStaticMesh* NewMesh, int32 Index_0);
-	void FindClosetMeshes(int32 A, class USplineComponent* Target_0, TArray<struct FSplineMeshData>& Meshes_0, int32* Index_0);
-	void SnapPointOnGrid(class USplineComponent* Spline_0);
-	void Construct_Spline_Meshes();
-	void ClearGeneratedMeshes();
-	void SetSplinePosition();
-	void FlattenTangent(class USplineComponent* Spline_0);
-	void Snap();
-	void Reorder_Point();
 	void GetAllPointsPositions();
+	void Reorder_Point();
+	void Snap();
+	void FlattenTangent(class USplineComponent* Spline_0);
+	void SetSplinePosition();
+	void ClearGeneratedMeshes();
+	void Construct_Spline_Meshes();
+	void SnapPointOnGrid(class USplineComponent* Spline_0);
+	void FindClosetMeshes(int32 A, class USplineComponent* Target_0, TArray<struct FSplineMeshData>& Meshes_0, int32* Index_0);
+	void AddStaticMesh(const struct FVector& StartPos, const struct FVector& StartTangent, const struct FVector& EndPos, const struct FVector& EndTangent, class UStaticMesh* NewMesh, int32 Index_0);
+	void AddDetailsMeshes(float Distance, const struct FVector& Location, const struct FRotator& Relative_Transform_Rotation);
+	void UserConstructionScript();
+	void PostToggled(bool bToggleEnabled);
+	void ExecuteUbergraph_SplineMeshBase_BP(int32 EntryPoint);
 
 	bool IsTogglingStaticShadowComponentAllowed() const;
 

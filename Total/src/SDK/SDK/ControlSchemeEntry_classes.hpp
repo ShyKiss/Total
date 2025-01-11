@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BaseOptionsEntry_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BaseOptionsEntry_classes.hpp"
 
 
 namespace SDK

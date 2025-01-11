@@ -32,6 +32,7 @@
   <ItemGroup>
     <None Include="bin\Total-x64.dll" />
     <None Include="bin\FileManager.exe" />
+    <None Include="..\Total\bin\Total-x64.dll" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Startal.ico">

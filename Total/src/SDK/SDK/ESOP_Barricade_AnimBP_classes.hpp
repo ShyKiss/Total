@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "ESOPBarricadeState_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ESOPBarricadeState_structs.hpp"
 
 
 namespace SDK

@@ -17,109 +17,125 @@
 namespace SDK
 {
 
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.ExecuteUbergraph_SplineMeshBase_BP
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.getAllPointsPositions
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ASplineMeshBase_BP_C::ExecuteUbergraph_SplineMeshBase_BP(int32 EntryPoint)
+void ASplineMeshBase_BP_C::GetAllPointsPositions()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "ExecuteUbergraph_SplineMeshBase_BP");
-
-	Params::SplineMeshBase_BP_C_ExecuteUbergraph_SplineMeshBase_BP Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.PostToggled
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bToggleEnabled                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ASplineMeshBase_BP_C::PostToggled(bool bToggleEnabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "PostToggled");
-
-	Params::SplineMeshBase_BP_C_PostToggled Parms{};
-
-	Parms.bToggleEnabled = bToggleEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ASplineMeshBase_BP_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "UserConstructionScript");
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "getAllPointsPositions");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.AddDetailsMeshes
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRotator                         Relative_Transform_Rotation                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.Reorder Point
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ASplineMeshBase_BP_C::AddDetailsMeshes(float Distance, const struct FVector& Location, const struct FRotator& Relative_Transform_Rotation)
+void ASplineMeshBase_BP_C::Reorder_Point()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "AddDetailsMeshes");
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "Reorder Point");
 
-	Params::SplineMeshBase_BP_C_AddDetailsMeshes Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Distance = Distance;
-	Parms.Location = std::move(Location);
-	Parms.Relative_Transform_Rotation = std::move(Relative_Transform_Rotation);
+
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.Snap
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ASplineMeshBase_BP_C::Snap()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "Snap");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.FlattenTangent
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USplineComponent*                 Spline_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASplineMeshBase_BP_C::FlattenTangent(class USplineComponent* Spline_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "FlattenTangent");
+
+	Params::SplineMeshBase_BP_C_FlattenTangent Parms{};
+
+	Parms.Spline_0 = Spline_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.AddStaticMesh
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.SetSplinePosition
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                          StartPos                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          StartTangent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          EndPos                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          EndTangent                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UStaticMesh*                      NewMesh                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASplineMeshBase_BP_C::AddStaticMesh(const struct FVector& StartPos, const struct FVector& StartTangent, const struct FVector& EndPos, const struct FVector& EndTangent, class UStaticMesh* NewMesh, int32 Index_0)
+void ASplineMeshBase_BP_C::SetSplinePosition()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "AddStaticMesh");
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "SetSplinePosition");
 
-	Params::SplineMeshBase_BP_C_AddStaticMesh Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.StartPos = std::move(StartPos);
-	Parms.StartTangent = std::move(StartTangent);
-	Parms.EndPos = std::move(EndPos);
-	Parms.EndTangent = std::move(EndTangent);
-	Parms.NewMesh = NewMesh;
-	Parms.Index_0 = Index_0;
+
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.ClearGeneratedMeshes
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ASplineMeshBase_BP_C::ClearGeneratedMeshes()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "ClearGeneratedMeshes");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.Construct Spline Meshes
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ASplineMeshBase_BP_C::Construct_Spline_Meshes()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "Construct Spline Meshes");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.SnapPointOnGrid
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USplineComponent*                 Spline_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASplineMeshBase_BP_C::SnapPointOnGrid(class USplineComponent* Spline_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "SnapPointOnGrid");
+
+	Params::SplineMeshBase_BP_C_SnapPointOnGrid Parms{};
+
+	Parms.Spline_0 = Spline_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -155,127 +171,111 @@ void ASplineMeshBase_BP_C::FindClosetMeshes(int32 A, class USplineComponent* Tar
 }
 
 
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.SnapPointOnGrid
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.AddStaticMesh
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USplineComponent*                 Spline_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          StartPos                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          StartTangent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          EndPos                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          EndTangent                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UStaticMesh*                      NewMesh                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASplineMeshBase_BP_C::SnapPointOnGrid(class USplineComponent* Spline_0)
+void ASplineMeshBase_BP_C::AddStaticMesh(const struct FVector& StartPos, const struct FVector& StartTangent, const struct FVector& EndPos, const struct FVector& EndTangent, class UStaticMesh* NewMesh, int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "SnapPointOnGrid");
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "AddStaticMesh");
 
-	Params::SplineMeshBase_BP_C_SnapPointOnGrid Parms{};
+	Params::SplineMeshBase_BP_C_AddStaticMesh Parms{};
 
-	Parms.Spline_0 = Spline_0;
+	Parms.StartPos = std::move(StartPos);
+	Parms.StartTangent = std::move(StartTangent);
+	Parms.EndPos = std::move(EndPos);
+	Parms.EndTangent = std::move(EndTangent);
+	Parms.NewMesh = NewMesh;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.Construct Spline Meshes
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.AddDetailsMeshes
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ASplineMeshBase_BP_C::Construct_Spline_Meshes()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "Construct Spline Meshes");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.ClearGeneratedMeshes
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ASplineMeshBase_BP_C::ClearGeneratedMeshes()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "ClearGeneratedMeshes");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.SetSplinePosition
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ASplineMeshBase_BP_C::SetSplinePosition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "SetSplinePosition");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.FlattenTangent
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USplineComponent*                 Spline_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator                         Relative_Transform_Rotation                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ASplineMeshBase_BP_C::FlattenTangent(class USplineComponent* Spline_0)
+void ASplineMeshBase_BP_C::AddDetailsMeshes(float Distance, const struct FVector& Location, const struct FRotator& Relative_Transform_Rotation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "FlattenTangent");
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "AddDetailsMeshes");
 
-	Params::SplineMeshBase_BP_C_FlattenTangent Parms{};
+	Params::SplineMeshBase_BP_C_AddDetailsMeshes Parms{};
 
-	Parms.Spline_0 = Spline_0;
+	Parms.Distance = Distance;
+	Parms.Location = std::move(Location);
+	Parms.Relative_Transform_Rotation = std::move(Relative_Transform_Rotation);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.Snap
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ASplineMeshBase_BP_C::Snap()
+void ASplineMeshBase_BP_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "Snap");
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.Reorder Point
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.PostToggled
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bToggleEnabled                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ASplineMeshBase_BP_C::Reorder_Point()
+void ASplineMeshBase_BP_C::PostToggled(bool bToggleEnabled)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "Reorder Point");
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "PostToggled");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::SplineMeshBase_BP_C_PostToggled Parms{};
+
+	Parms.bToggleEnabled = bToggleEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function SplineMeshBase_BP.SplineMeshBase_BP_C.getAllPointsPositions
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function SplineMeshBase_BP.SplineMeshBase_BP_C.ExecuteUbergraph_SplineMeshBase_BP
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASplineMeshBase_BP_C::GetAllPointsPositions()
+void ASplineMeshBase_BP_C::ExecuteUbergraph_SplineMeshBase_BP(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SplineMeshBase_BP_C", "getAllPointsPositions");
+		Func = Class->GetFunction("SplineMeshBase_BP_C", "ExecuteUbergraph_SplineMeshBase_BP");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::SplineMeshBase_BP_C_ExecuteUbergraph_SplineMeshBase_BP Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

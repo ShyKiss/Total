@@ -38,7 +38,6 @@ namespace Utils {
 
 	const char* RenderingBackendToStr( ) {
 		RenderingBackend_t eRenderingBackend = GetRenderingBackend( );
-
 		switch (eRenderingBackend) {
 			RB2STR(DIRECTX11);
 			RB2STR(DIRECTX12);
@@ -48,20 +47,7 @@ namespace Utils {
 	}
 
 	HWND GetProcessWindow( ) {
-            /*HWND hwnd = nullptr;
-		EnumWindows(::EnumWindowsCallback, reinterpret_cast<LPARAM>(&hwnd));
-
-		while (!hwnd) {
-			EnumWindows(::EnumWindowsCallback, reinterpret_cast<LPARAM>(&hwnd));
-			LOG("[!] Waiting for window to appear.\n");
-			std::this_thread::sleep_for(std::chrono::milliseconds(200));
-		}
-
-		char name[128];
-		GetWindowTextA(hwnd, name, RTL_NUMBER_OF(name));
-		LOG("[+] Got window with name: '%s'\n", name);
-		*/
-            return (HWND)FindWindow(0, "The Outlast Trials  ");
+		return (HWND)FindWindow(0, "\x0054\x0068\x0065\x0020\x004f\x0075\x0074\x006c\x0061\x0073\x0074\x0020\x0054\x0072\x0069\x0061\x006c\x0073\x0020\x0020");
 	}
 
 	void UnloadDLL( ) {

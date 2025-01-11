@@ -139,6 +139,17 @@ static_assert(alignof(MainObjectiveWidget_C_PreConstruct) == 0x000001, "Wrong al
 static_assert(sizeof(MainObjectiveWidget_C_PreConstruct) == 0x000001, "Wrong size on MainObjectiveWidget_C_PreConstruct");
 static_assert(offsetof(MainObjectiveWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'MainObjectiveWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
+// Function MainObjectiveWidget.MainObjectiveWidget_C.GetFadeInAnimation
+// 0x0008 (0x0008 - 0x0000)
+struct MainObjectiveWidget_C_GetFadeInAnimation final
+{
+public:
+	class UWidgetAnimation*                       FadeInAnimation;                                   // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(MainObjectiveWidget_C_GetFadeInAnimation) == 0x000008, "Wrong alignment on MainObjectiveWidget_C_GetFadeInAnimation");
+static_assert(sizeof(MainObjectiveWidget_C_GetFadeInAnimation) == 0x000008, "Wrong size on MainObjectiveWidget_C_GetFadeInAnimation");
+static_assert(offsetof(MainObjectiveWidget_C_GetFadeInAnimation, FadeInAnimation) == 0x000000, "Member 'MainObjectiveWidget_C_GetFadeInAnimation::FadeInAnimation' has a wrong offset!");
+
 // Function MainObjectiveWidget.MainObjectiveWidget_C.SetIsMakingPositiveProgress
 // 0x0030 (0x0030 - 0x0000)
 struct MainObjectiveWidget_C_SetIsMakingPositiveProgress final
@@ -207,6 +218,46 @@ static_assert(offsetof(MainObjectiveWidget_C_SetProgressRatio, CallFunc_Add_Floa
 static_assert(offsetof(MainObjectiveWidget_C_SetProgressRatio, CallFunc_BreakVector2D_X) == 0x00000C, "Member 'MainObjectiveWidget_C_SetProgressRatio::CallFunc_BreakVector2D_X' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_SetProgressRatio, CallFunc_BreakVector2D_Y) == 0x000010, "Member 'MainObjectiveWidget_C_SetProgressRatio::CallFunc_BreakVector2D_Y' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_SetProgressRatio, CallFunc_MakeVector2D_ReturnValue) == 0x000014, "Member 'MainObjectiveWidget_C_SetProgressRatio::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+
+// Function MainObjectiveWidget.MainObjectiveWidget_C.Initialize
+// 0x0050 (0x0050 - 0x0000)
+struct MainObjectiveWidget_C_Initialize final
+{
+public:
+	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             CallFunc_GetObjectiveWidgetIcon_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBObjectiveManager*                    CallFunc_GetRBObjectiveManager_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_BP_GetIntroObjectiveIcon_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               K2Node_Select_Default_1;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(MainObjectiveWidget_C_Initialize) == 0x000008, "Wrong alignment on MainObjectiveWidget_C_Initialize");
+static_assert(sizeof(MainObjectiveWidget_C_Initialize) == 0x000050, "Wrong size on MainObjectiveWidget_C_Initialize");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, Coordinator) == 0x000000, "Member 'MainObjectiveWidget_C_Initialize::Coordinator' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_bool_Variable) == 0x000008, "Member 'MainObjectiveWidget_C_Initialize::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_GetObjectiveWidgetIcon_ReturnValue) == 0x000010, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_GetObjectiveWidgetIcon_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_byte_Variable) == 0x000019, "Member 'MainObjectiveWidget_C_Initialize::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_byte_Variable_1) == 0x00001A, "Member 'MainObjectiveWidget_C_Initialize::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_bool_Variable_1) == 0x00001B, "Member 'MainObjectiveWidget_C_Initialize::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_GetRBObjectiveManager_ReturnValue) == 0x000020, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_GetRBObjectiveManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_BP_GetIntroObjectiveIcon_ReturnValue) == 0x000028, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_BP_GetIntroObjectiveIcon_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_IsValid_ReturnValue_1) == 0x000030, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, K2Node_Select_Default) == 0x000031, "Member 'MainObjectiveWidget_C_Initialize::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000038, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, K2Node_Select_Default_1) == 0x000040, "Member 'MainObjectiveWidget_C_Initialize::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_IsValid_ReturnValue_2) == 0x000048, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
 // Function MainObjectiveWidget.MainObjectiveWidget_C.UpdateIntermediateObjectives
 // 0x00D8 (0x00D8 - 0x0000)
@@ -287,57 +338,6 @@ static_assert(offsetof(MainObjectiveWidget_C_UpdateIntermediateObjectives, CallF
 static_assert(offsetof(MainObjectiveWidget_C_UpdateIntermediateObjectives, CallFunc_Array_Length_ReturnValue_1) == 0x0000CC, "Member 'MainObjectiveWidget_C_UpdateIntermediateObjectives::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_UpdateIntermediateObjectives, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D0, "Member 'MainObjectiveWidget_C_UpdateIntermediateObjectives::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(MainObjectiveWidget_C_UpdateIntermediateObjectives, CallFunc_Array_Length_ReturnValue_2) == 0x0000D4, "Member 'MainObjectiveWidget_C_UpdateIntermediateObjectives::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-
-// Function MainObjectiveWidget.MainObjectiveWidget_C.GetFadeInAnimation
-// 0x0008 (0x0008 - 0x0000)
-struct MainObjectiveWidget_C_GetFadeInAnimation final
-{
-public:
-	class UWidgetAnimation*                       FadeInAnimation;                                   // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(MainObjectiveWidget_C_GetFadeInAnimation) == 0x000008, "Wrong alignment on MainObjectiveWidget_C_GetFadeInAnimation");
-static_assert(sizeof(MainObjectiveWidget_C_GetFadeInAnimation) == 0x000008, "Wrong size on MainObjectiveWidget_C_GetFadeInAnimation");
-static_assert(offsetof(MainObjectiveWidget_C_GetFadeInAnimation, FadeInAnimation) == 0x000000, "Member 'MainObjectiveWidget_C_GetFadeInAnimation::FadeInAnimation' has a wrong offset!");
-
-// Function MainObjectiveWidget.MainObjectiveWidget_C.Initialize
-// 0x0050 (0x0050 - 0x0000)
-struct MainObjectiveWidget_C_Initialize final
-{
-public:
-	class ARBBaseObjectiveCoordinator*            Coordinator;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             CallFunc_GetObjectiveWidgetIcon_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBObjectiveManager*                    CallFunc_GetRBObjectiveManager_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             CallFunc_BP_GetIntroObjectiveIcon_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class URBGlobalUIConfig*                      CallFunc_GetGlobalUIConfig_ReturnValue;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               K2Node_Select_Default_1;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(MainObjectiveWidget_C_Initialize) == 0x000008, "Wrong alignment on MainObjectiveWidget_C_Initialize");
-static_assert(sizeof(MainObjectiveWidget_C_Initialize) == 0x000050, "Wrong size on MainObjectiveWidget_C_Initialize");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, Coordinator) == 0x000000, "Member 'MainObjectiveWidget_C_Initialize::Coordinator' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_bool_Variable) == 0x000008, "Member 'MainObjectiveWidget_C_Initialize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_GetObjectiveWidgetIcon_ReturnValue) == 0x000010, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_GetObjectiveWidgetIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_byte_Variable) == 0x000019, "Member 'MainObjectiveWidget_C_Initialize::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_byte_Variable_1) == 0x00001A, "Member 'MainObjectiveWidget_C_Initialize::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, Temp_bool_Variable_1) == 0x00001B, "Member 'MainObjectiveWidget_C_Initialize::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_GetRBObjectiveManager_ReturnValue) == 0x000020, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_GetRBObjectiveManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_BP_GetIntroObjectiveIcon_ReturnValue) == 0x000028, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_BP_GetIntroObjectiveIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_IsValid_ReturnValue_1) == 0x000030, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, K2Node_Select_Default) == 0x000031, "Member 'MainObjectiveWidget_C_Initialize::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_GetGlobalUIConfig_ReturnValue) == 0x000038, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_GetGlobalUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, K2Node_Select_Default_1) == 0x000040, "Member 'MainObjectiveWidget_C_Initialize::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(MainObjectiveWidget_C_Initialize, CallFunc_IsValid_ReturnValue_2) == 0x000048, "Member 'MainObjectiveWidget_C_Initialize::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
 // Function MainObjectiveWidget.MainObjectiveWidget_C.GetRemoveAnimation
 // 0x0008 (0x0008 - 0x0000)

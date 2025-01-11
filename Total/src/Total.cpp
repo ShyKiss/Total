@@ -29,8 +29,9 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved) {
 
 DWORD WINAPI OnProcessAttach(LPVOID lpParam) {
     Console::Alloc( );
+    Console::Hide();
 
-    Utils::mainWindow = (HWND)FindWindow(0, "The Outlast Trials  ");
+    Utils::mainWindow = Utils::GetProcessWindow();
     SetFocus(Utils::mainWindow);
     SetForegroundWindow(Utils::mainWindow);
     

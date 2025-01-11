@@ -8,6 +8,10 @@
 #endif
 
 namespace Console {
+	inline bool IsOpened;
+
 	void Alloc( );
 	void Free( );
+	void Show();
+	void Hide();
 }

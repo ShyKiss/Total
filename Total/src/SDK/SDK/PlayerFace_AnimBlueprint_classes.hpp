@@ -12,10 +12,10 @@
 
 #include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "Shared_Face_BaseEmotion_Enum_structs.hpp"
 #include "Player_Face_States_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
+#include "Shared_Face_BaseEmotion_Enum_structs.hpp"
 
 
 namespace SDK

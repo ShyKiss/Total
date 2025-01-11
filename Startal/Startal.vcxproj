@@ -150,6 +150,7 @@
     <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Total\bin\Total-x64.dll" />
     <None Include="bin\FileManager.exe" />
     <None Include="bin\Total-x64.dll" />
   </ItemGroup>

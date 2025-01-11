@@ -83,7 +83,7 @@
     <IntDir>.\obj\$(Configuration) $(Platform)\</IntDir>
     <TargetName>$(ProjectName)-$(Platform)</TargetName>
     <IncludePath>$(ProjectDir)\src\Dependencies\freetype;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Visual\FreeType;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <LibraryPath>$(ProjectDir)\src\Dependencies\freetype\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
     <LinkIncremental>
     </LinkIncremental>
     <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
@@ -190,9 +190,6 @@
     <ClCompile Include="src\Console\Console.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="src\Dependencies\ImGui\HImGuiAnimation.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="src\Dependencies\ImGui\imgui.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -249,6 +246,12 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="src\Menu\MenuUtils.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\Menu\Style.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
     <ClCompile Include="src\PCH\PCH.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PCH.h</PrecompiledHeaderFile>
@@ -261,12 +264,24 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../PCH/PCH.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\SDK\SDK\DebugMenu_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="src\SDK\SDK\Engine_functions.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../PCH/PCH.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\SDK\SDK\OPP_functions.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../PCH/PCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\SDK\SDK\PasscodeTriggerable_Base_BP_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\SDK\SDK\ProjectionSymbol_BP_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\SDK\SDK\UMG_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\Total.cpp">
@@ -287,6 +302,10 @@
     </ClCompile>
     <ClCompile Include="src\Menu\Menu.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Timer.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\Utils\Utils.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../PCH/PCH.h</PrecompiledHeaderFile>
@@ -357,7 +376,6 @@
     <ClInclude Include="src\Dependencies\freetype\freetype\tttables.h" />
     <ClInclude Include="src\Dependencies\freetype\freetype\tttags.h" />
     <ClInclude Include="src\Dependencies\freetype\ft2build.h" />
-    <ClInclude Include="src\Dependencies\ImGui\HImGuiAnimation.h" />
     <ClInclude Include="src\Dependencies\ImGui\imconfig.h" />
     <ClInclude Include="src\Dependencies\ImGui\imgui.h" />
     <ClInclude Include="src\Dependencies\ImGui\imgui_freetype.h" />
@@ -382,6 +400,8 @@
     <ClInclude Include="src\Hooks\Backend\DX12\Hook_DirectX12.hpp" />
     <ClInclude Include="src\Hooks\Hooks.hpp" />
     <ClInclude Include="src\Menu\Menu.hpp" />
+    <ClInclude Include="src\Menu\MenuUtils.hpp" />
+    <ClInclude Include="src\Menu\Style.hpp" />
     <ClInclude Include="src\Resources\Font\Ubuntu.hpp" />
     <ClInclude Include="src\Resources\Resource.h" />
     <ClInclude Include="src\SDK\PropertyFixup.hpp" />
@@ -390,12 +410,21 @@
     <ClInclude Include="src\SDK\SDK\CoreUObject_classes.hpp" />
     <ClInclude Include="src\SDK\SDK\CoreUObject_parameters.hpp" />
     <ClInclude Include="src\SDK\SDK\CoreUObject_structs.hpp" />
+    <ClInclude Include="src\SDK\SDK\DebugMenu_classes.hpp" />
+    <ClInclude Include="src\SDK\SDK\DebugMenu_parameters.hpp" />
     <ClInclude Include="src\SDK\SDK\Engine_classes.hpp" />
     <ClInclude Include="src\SDK\SDK\Engine_parameters.hpp" />
     <ClInclude Include="src\SDK\SDK\Engine_structs.hpp" />
     <ClInclude Include="src\SDK\SDK\OPP_classes.hpp" />
     <ClInclude Include="src\SDK\SDK\OPP_parameters.hpp" />
     <ClInclude Include="src\SDK\SDK\OPP_structs.hpp" />
+    <ClInclude Include="src\SDK\SDK\PasscodeTriggerable_Base_BP_classes.hpp" />
+    <ClInclude Include="src\SDK\SDK\PasscodeTriggerable_Base_BP_parameters.hpp" />
+    <ClInclude Include="src\SDK\SDK\ProjectionSymbol_BP_classes.hpp" />
+    <ClInclude Include="src\SDK\SDK\ProjectionSymbol_BP_parameters.hpp" />
+    <ClInclude Include="src\SDK\SDK\UMG_classes.hpp" />
+    <ClInclude Include="src\SDK\SDK\UMG_parameters.hpp" />
+    <ClInclude Include="src\SDK\SDK\UMG_structs.hpp" />
     <ClInclude Include="src\SDK\UnrealContainers.hpp" />
     <ClInclude Include="src\Utils\magic_enum\magic_enum.hpp" />
     <ClInclude Include="src\Utils\magic_enum\magic_enum_all.hpp" />
@@ -408,6 +437,7 @@
     <ClInclude Include="src\Utils\magic_enum\magic_enum_utility.hpp" />
     <ClInclude Include="src\Utils\stb_image.h" />
     <ClInclude Include="src\Utils\Str.h" />
+    <ClInclude Include="src\Utils\Timer.hpp" />
     <ClInclude Include="src\Utils\Utils.hpp" />
     <ClInclude Include="src\PCH\PCH.h" />
   </ItemGroup>

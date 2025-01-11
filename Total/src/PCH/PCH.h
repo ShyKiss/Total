@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Windows.h>
+#include <algorithm>
 #include <tlhelp32.h>
 #include <iostream>
 #include <string>
@@ -14,7 +15,6 @@
 #include "../Dependencies/ImGui/imgui_impl_win32.h"
 #include "../Dependencies/ImGui/imgui_impl_dx11.h"
 #include "../Dependencies/ImGui/imgui_impl_dx12.h"
-#include "../Dependencies/ImGui/HImGuiAnimation.h"
 
 // MINHOOK
 
@@ -40,7 +40,11 @@ typedef hde64s HDE;
 #include "../SDK/SDK/Basic.hpp"
 #include "../SDK/SDK/CoreUObject_classes.hpp"
 #include "../SDK/SDK/Engine_classes.hpp"
+#include "../SDK/SDK/UMG_classes.hpp"
 #include "../SDK/SDK/OPP_classes.hpp"
+#include "../SDK/SDK/ProjectionSymbol_BP_classes.hpp"
+#include "../SDK/SDK/PasscodeTriggerable_Base_BP_classes.hpp"
+#include "../SDK/SDK/DebugMenu_classes.hpp"
 #include "../SDK/UnrealContainers.hpp"
 #include "../SDK/NameCollisions.inl"
 #include "../SDK/PropertyFixup.hpp"
@@ -50,8 +54,11 @@ typedef hde64s HDE;
 #include "../Utils/magic_enum/magic_enum.hpp"
 #include "../Utils/magic_enum/magic_enum_iostream.hpp"
 #include "../Utils/Utils.hpp"
+#include "../Utils/Timer.hpp"
 #include "../Config/Config.hpp"
 #include "../Hooks/Hooks.hpp"
 #include "../Console/Console.hpp"
+#include "../Menu/Style.hpp"
 #include "../Menu/Menu.hpp"
+#include "../Menu/MenuUtils.hpp"
 #include "../Resources/Resource.h"

@@ -22,7 +22,7 @@ struct Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsActive;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_isActive;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_bFullEffect;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -42,7 +42,7 @@ public:
 static_assert(alignof(Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP) == 0x000008, "Wrong alignment on Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP");
 static_assert(sizeof(Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP) == 0x000050, "Wrong size on Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP");
 static_assert(offsetof(Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP, EntryPoint) == 0x000000, "Member 'Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP, K2Node_Event_IsActive) == 0x000004, "Member 'Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP::K2Node_Event_IsActive' has a wrong offset!");
+static_assert(offsetof(Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP, K2Node_Event_isActive) == 0x000004, "Member 'Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP::K2Node_Event_isActive' has a wrong offset!");
 static_assert(offsetof(Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP, K2Node_Event_bFullEffect) == 0x000005, "Member 'Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP::K2Node_Event_bFullEffect' has a wrong offset!");
 static_assert(offsetof(Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP, CallFunc_IsValid_ReturnValue) == 0x000006, "Member 'Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP, CallFunc_IsLocallyControlled_ReturnValue) == 0x000007, "Member 'Spectra_ActiveSkill_BP_C_ExecuteUbergraph_Spectra_ActiveSkill_BP::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");

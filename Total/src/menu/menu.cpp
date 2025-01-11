@@ -7,15 +7,6 @@ namespace ig = ImGui;
 static ImGuiTextFilter filter;
 
 namespace Menu {
-
-    float lightIntensity = 20.f;
-    float lightRadius = 32768.f;
-    float lightAngle = 90.f;
-    bool lightBool = false;
-    bool bFail = false;
-    bool bShow = false;
-    bool bFreeCamera = false;
-
     void InitializeContext(HWND hwnd) {
         if (ig::GetCurrentContext( ))
             return;
@@ -27,295 +18,268 @@ namespace Menu {
     }
 
     void Render( ) {
-
-        ImVec4* colors = ig::GetStyle( ).Colors;
         ImGuiIO& io = ig::GetIO( );
         (void)io;
 
-        colors[ImGuiCol_WindowBg] = ImVec4(0, 0, 0, 0);
-        colors[ImGuiCol_Border] = ImVec4(0, 0, 0, 0);
-        colors[ImGuiCol_BorderShadow] = ImVec4(0, 0, 0, 0);
+        Style::Apply();
 
+        if (!InitGlobals()) return;
 
-        //----------------------------------------- GLOBALS -----------------------------------------
-#pragma region GLOBALS
-        RBEngine = static_cast<SDK::UOPPEngine*>(SDK::UOPPEngine::GetEngine());
-        RBWorld = SDK::URBBlueprintLibrary::GetRBWorld();
+        Total_ShowFPSAndPing();
+        Total_ShowLevelSeed();
+        Total_ShowStageTime();
+        Total_ShowScore();
+        Total_ShowPasscodes                     (RBWorld->Rooms);
 
-        if (!Total_GlobalAssert()) return;
+        if (IsLookInput()) {
+            SDK::TArray<SDK::ARBBaseObjectiveCoordinator*> ObjectiveCoordinators;
 
-        TotalPlayer = SDK::URBBlueprintLibrary::GetControlledPlayer();
-        TotalController = SDK::URBBlueprintLibrary::GetLocalMenuController();
+            GetObjectiveCoordinators(&ObjectiveCoordinators);
 
-        GlobalInfoText.clear();
-
-        if (!IsValid(RBEngine->GameViewport->ViewportConsole) || (IsValid(RBEngine->GameViewport->ViewportConsole) && SDK::UInputSettings::GetDefaultObj()->ConsoleKeys[0].KeyName.ToString() != "F2")) Total_EnableConsole();
-        
-        SDK::ARBGameState* GameState = SDK::URBBlueprintLibrary::GetRBGameState();
-
-        bTotalPlayerAlive       =       IsValid(TotalPlayer);
-        bTotalControllerAlive   =       bTotalPlayerAlive ? IsValid(TotalController) : false;
-
-        bIsLoading              =       SDK::URBUIBlueprintLibrary::IsShowingLoadingScreen();
-        bNoLookInput            =       bTotalControllerAlive ? TotalController->IsLookInputIgnored( ) : false;
-
-        bTotalPlayerAlive && IsValid(TotalPlayer->GetRBPlayerState()) ? fPlayerPing = TotalPlayer->GetRBPlayerState()->Ping : fPlayerPing = 0;
-
-        GlobalInfoText.appendf("F/P: %.0f/%.0f\n", io.Framerate, fPlayerPing);
-
-        if (IsValid(GameState)) {
-            LevelSeed = GameState->LevelSeed;
-            fStageTime = GameState->IsStageStarted() ? SDK::URBBlueprintLibrary::GetServerTime() - GameState->StageStartedServerTime : 0; // - GameState->StageStartedServerTime;
-
-            GlobalInfoText.appendf("Seed: %d\nStage Time: %s\n", LevelSeed, utf8_encode(SDK::URBBlueprintLibrary::FormatTimeFromFloat(fStageTime).ToWString()).c_str());
+            Total_ShowItems                     (RBWorld->GetRBPickups(), ObjectiveCoordinators);
+            Total_ShowDecodableCodes            (RBWorld->Decodables, ObjectiveCoordinators);
+            Total_ShowLargeItems                (RBWorld->GetRBLargePickups());
+            Total_ShowPlayers                   (RBWorld->GetRBPlayers());
+            Total_ShowNPCs                      (RBWorld->GetNPCs());
+            Total_ShowObjectiveActors           (ObjectiveCoordinators);
+            Total_ShowPrimaryObjectiveActors    (ObjectiveCoordinators);
+            //Total_ShowDoorTraps               (OPPWorld->GetDoors());
         }
 
-        if (bTotalPlayerAlive) {
-            TotalPlayer->NVComponent->SetLightColor(SDK::FLinearColor(NVColor.x, NVColor.y, NVColor.z, NVColor.w), false);
-        }
-#pragma endregion GLOBALS
-        //-------------------------------------------------------------------------------------------
+        Total_PlayerBrightnessBoost();
+        Total_EnableConsole();
+        Total_SetNightVisionColor();
 
-
-        if (!bIsLoading && bTotalPlayerAlive && bTotalControllerAlive && IsValid(SDK::URBBlueprintLibrary::GetRBGameInstance())) {
-            SDK::TArray<SDK::ARBBaseObjectiveCoordinator*> ObjectiveCoordinators = SDK::URBBlueprintLibrary::GetRBGameInstance()->ObjectiveManager->ObjectiveCoordinators;
-
-            // Player
-
-            if (IsValid(TotalPlayer->GetRBPlayerState())) {
-                if (IsValid(GameState) && GameState->IsStageStarted()) {
-                    PlayerScore = TotalPlayer->GetRBPlayerState()->Score;
-                    CalculatedPlayerScore = 0.0000833333f * (10000 + PlayerScore);
-                    PlayerRating = CalcRatingFromScore(CalculatedPlayerScore);
-
-                    GlobalInfoText.appendf("Score: %.0f (%s)\n", PlayerScore, PlayerRating);
-                }
-            }
-
-            IsValid(SDK::URBBlueprintLibrary::GetRBGameMode()) ? fPlayerIdleTime = SDK::URBBlueprintLibrary::GetRBGameMode()->InactivePlayerStateLifeSpan : fPlayerIdleTime = 1337;
-
-            Total_PlayerBrightnessBoost();
-
-            // Shows
-
-            if (Config::bShowItems && !bNoLookInput)
-                Total_ShowItems(RBWorld->GetRBPickups(), ObjectiveCoordinators);
-            if (Config::bShowLargeItems && !bNoLookInput)
-                Total_ShowLargeItems(RBWorld->GetRBLargePickups());
-
-            if (Config::bShowPlayers && !bNoLookInput)
-                Total_ShowPlayers(RBWorld->GetRBPlayers());
-
-            //Total_ShowDoorTraps(OPPWorld->GetDoors( ));
-
-            if (Config::bShowNPCs && !bNoLookInput)
-                Total_ShowNPCs(RBWorld->GetNPCs());
-
-            if (Config::bShowObjectiveActors && bTotalControllerAlive && !bNoLookInput) {
-                Total_ShowObjectiveActors(ObjectiveCoordinators);
-            }
-            if (Config::bShowPrimaryObjectiveActors && bTotalControllerAlive && !bNoLookInput) {
-                Total_ShowPrimaryObjectiveActors(ObjectiveCoordinators);
-            }
-            Total_ShowDecodables(RBWorld->Decodables);
-            Total_ShowPuzzles(RBWorld->Rooms);
-
-            if (!Passcode.empty()) {
-                GlobalInfoText.appendf("Passcode: %s\n", Passcode);
-            }
-
-            if (!DecodableCodes.empty()) {
-                GlobalInfoText.appendf("Codes: %s\n", DecodableCodes);
-            }
-           
-        }
+        //----------------------------------------- OVERLAY -----------------------------------------
 
         if (Config::bShowGlobalHud) {
-            if (ig::Begin("Overlay", &Config::bShowGlobalHud, ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration))
+            if (ig::Begin("Overlay", &Config::bShowGlobalHud, ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground))
             {
                 ig::SetWindowSize(ImVec2(io.DisplaySize.x, io.DisplaySize.y), ImGuiCond_FirstUseEver);
                 ig::SetWindowPos(ImVec2(0, 0), ImGuiCond_FirstUseEver);
 
                 ig::TextColored(ImVec4(1.f, 0.3f, 0.3f, 1.f), "[Total]");
+                ImVec2 TempVec = ImVec2(ig::GetItemRectMin().x - 5, ig::GetItemRectMin().y - 5);
                 ig::Text(GlobalInfoText.c_str());
+                ig::GetBackgroundDrawList()->AddRectFilled(TempVec, ImVec2(ig::GetItemRectMax().x + 5, ig::GetItemRectMax().y + 5), ImColor(0, 0, 0, 125), 8);
 
-                if (bTotalControllerAlive && !bNoLookInput && Config::bShowStamina) {
-                    ig::SetCursorPos(ImVec2((io.DisplaySize.x / 2) - (ig::CalcTextSize((const char*)(std::to_string(bTotalPlayerAlive ? int(round(TotalPlayer->Stamina)) : 0).c_str())).x / 2), io.DisplaySize.y / 2 + 20));
+                if (bTotalControllerAlive && IsLookInput() && Config::bShowStamina) {
+                    ig::SetCursorPos(ImVec2((io.DisplaySize.x / 2) - (ig::CalcTextSize((const char*)(std::to_string(bTotalPlayerAlive ? int(round(TotalPlayer->Stamina)) : 0).c_str())).x / 2), io.DisplaySize.y / 2 + 30));
                     ig::Text("%.0f", bTotalPlayerAlive ? TotalPlayer->Stamina : 0);
-                    ig::SetCursorPos(ImVec2((io.DisplaySize.x / 2) - (ig::CalcTextSize((const char*)(std::to_string(int(round(TotalPlayer->Stamina))).c_str())).x / 2), io.DisplaySize.y / 2 + 30));
                 }
                 ig::End();
             }
         }
-        
-        colors[ImGuiCol_TitleBg] = ImVec4(0.05f, 0.05f, 0.05f, 1.00f);
-        colors[ImGuiCol_TitleBgActive] = ImVec4(0.05f, 0.05f, 0.05f, 1.00f);
-        colors[ImGuiCol_TitleBgCollapsed] = ImVec4(0.05f, 0.05f, 0.05f, 1.00f);
-        colors[ImGuiCol_WindowBg] = ImVec4(0.00f, 0.00f, 0.00f, 0.83f);
-        colors[ImGuiCol_Border] = ImVec4(0.43f, 0.43f, 0.50f, 0.50f);
-        colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
+
+        //-------------------------------------------------------------------------------------------
+
         io.MouseDrawCursor = bShowMenu;
 
-
+        //----------------------------------------- MENU -----------------------------------------
 
         if (bShowMenu) {
-            ig::Begin("Total", &bShowMenu);
-            ig::SetWindowPos(ImVec2(io.DisplaySize.x / 4, io.DisplaySize.y / 4), ImGuiCond_FirstUseEver);
-            ig::SetWindowSize(ImVec2(450, 600), ImGuiCond_FirstUseEver);
+            if (ig::Begin("Total", &bShowMenu, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoTitleBar)) {
+                ig::SetWindowPos(ImVec2(io.DisplaySize.x / 4, io.DisplaySize.y / 4), ImGuiCond_FirstUseEver);
+                ig::SetWindowSize(ImVec2(450, 600), ImGuiCond_FirstUseEver);
 
-            {
-                ImVec2 Temp = ig::GetCursorPos();
 
-                ig::SetCursorPos(ImVec2((ig::GetWindowSize().x - 300) * 0.5f, (ig::GetWindowSize().y - 300) * 0.5f));
-                ig::Image(
-                    H::IsD3D12 ? (ImTextureID)DX12::OBJECTIVE_GPU.ptr : (ImTextureID)(void*)DX11::OBJECTIVE_TEX,
-                    ImVec2(300, 300));
-                ig::SetCursorPos(Temp);
-            }
+                ig::BeginChild("TotalTitlebar", ImVec2(0, 30));
 
-            if (ig::Button("Detach me")) {
-                Utils::UnloadDLL( );
-            }
-            ig::SetItemTooltip("Unhook Total (DEL key)");
-            ig::SameLine( );
-            if (ig::Button("Get CheatManager")) {
-                Total_GetCheatManager();
-            }
-            ig::SetItemTooltip("!!! Crashes after changing the map");
-            ig::SameLine();
-            if (ig::Button("Toggle Hud")) {
-                Config::bShowGlobalHud = !Config::bShowGlobalHud;
-                Config::SaveConfig();
-            }
-            ig::SetItemTooltip("Toggles Main Background Hud");
+                ig::SetCursorPos(ImVec2((ig::GetWindowWidth() - ig::CalcTextSize("Total").x) * 0.5f, (ig::GetWindowHeight() - ig::CalcTextSize("Total").y) * 0.5f));
+                ig::Text("Total");
 
-            if(ig::TreeNode("Shows"))
-            {
-                if (ig::Checkbox("Show Items", &Config::bShowItems)) Config::SaveConfig();
-                ig::SameLine( );
-                if(ig::SliderFloat("##Distance1", &Config::fShowItems, 1.0f, 300.0f)) Config::SaveConfig();
+                ig::EndChild();
 
-                if (ig::Checkbox("Show Large Items", &Config::bShowLargeItems)) Config::SaveConfig();
-                ig::SameLine( );
-                if (ig::SliderFloat("##Distance2", &Config::fShowLargeItems, 1.0f, 300.0f)) Config::SaveConfig();
+                ig::Separator();
 
-                if (ig::Checkbox("Show NPCs", &Config::bShowNPCs)) Config::SaveConfig();
-                ig::SameLine();
-                if (ig::SliderFloat("##Distance3", &Config::fShowNPCs, 1.0f, 300.0f)) Config::SaveConfig();
+                if (ig::BeginTabBar("Tabs")) {
+                    if (ig::BeginTabItem("Shows")) {
+                        ig::BeginChild("#ShowsChild", ImVec2(0,0), ImGuiChildFlags_AlwaysUseWindowPadding);
+                        if (ig::BeginTable("##ShowsTable", 2, ImGuiTableFlags_SizingStretchSame)) {
+                            ig::TableSetupColumn("#Header", ImGuiTableColumnFlags_WidthFixed);
+                            ig::TableNextColumn();
 
-                if (ig::Checkbox("Show Objective Actors", &Config::bShowObjectiveActors)) Config::SaveConfig();
-                ig::SameLine( );
-                if (ig::SliderFloat("##Distance4", &Config::fShowObjectiveActors, 1.0f, 300.0f)) Config::SaveConfig();
+                            Total_Checkbox("Show Overlay",                  "Toggles main background hud",                      &Config::bShowGlobalHud);
+                            ig::TableNextRow();
+                            ig::TableNextColumn();
+                            Total_Checkbox("Show Items",                    "Bottles, adrenalines, antidotes... etc.",          &Config::bShowItems);
+                            ig::TableNextColumn();
+                            Total_Slider("#ShowItemsDistance",              &Config::fShowItems, 1.0f, 300.0f);
+                            ig::TableNextColumn();
+                            Total_Checkbox("Show Large Items",              "Canisters, boxes, reels... etc.",                  &Config::bShowLargeItems);
+                            ig::TableNextColumn();
+                            Total_Slider("#ShowLargeItemsDistance",         &Config::fShowLargeItems, 1.0f, 300.0f);
+                            ig::TableNextColumn();
+                            Total_Checkbox("Show NPCs",                     "NPC names + their skeleton",                       &Config::bShowNPCs);
+                            ig::TableNextColumn();
+                            Total_Slider("##ShowNPCsDistance",              &Config::fShowNPCs, 1.0f, 300.0f);
+                            ig::TableNextColumn();
+                            Total_Checkbox("Show Players",                  "Players nicknames + their skeleton",               &Config::bShowPlayers);
+                            ig::TableNextColumn();
+                            Total_Slider("##ShowPlayersDistance",           &Config::fShowPlayers, 1.0f, 300.0f);
+                            ig::TableNextColumn();
+                            Total_Checkbox("Show Objective Actors",         "Objects related to the main objectives",           &Config::bShowObjectiveActors);
+                            ig::TableNextColumn();
+                            Total_Slider("##ShowObjectiveActorsDistance",   &Config::fShowObjectiveActors, 1.0f, 300.0f);
+                            ig::TableNextColumn();
+                            Total_Checkbox("Show Primary Actors",           "Objects related to the primary objectives",        &Config::bShowPrimaryObjectiveActors);
+                            ig::TableNextColumn();
+                            Total_Slider("##ShowPrimaryActorsDistance",     &Config::fShowPrimaryObjectiveActors, 1.0f, 300.0f);
+                            ig::TableNextColumn();
+                            Total_Checkbox("Show Stamina",                  "Stamina in numerical view under the crosshair",    &Config::bShowStamina);
 
-                if (ig::Checkbox("Show Primary Actors", &Config::bShowPrimaryObjectiveActors)) Config::SaveConfig();
-                ig::SameLine();
-                if (ig::SliderFloat("##Distance5", &Config::fShowPrimaryObjectiveActors, 1.0f, 300.0f)) Config::SaveConfig();
+                            ig::EndTable();
+                        }
 
-                if (ig::Checkbox("Show Players", &Config::bShowPlayers)) Config::SaveConfig();
-                ig::SameLine( );
-                if (ig::SliderFloat("##Distance6", &Config::fShowPlayers, 1.0f, 300.0f)) Config::SaveConfig();
+                        ig::Spacing();
+                        ig::Separator();
+                        ig::Spacing();
 
-                ig::Spacing( );
-                ig::TreePop( );
-            }
-            ig::Separator( );
+                        if (Config::bShowItems) {
+                            ig::Text("Show Items List:");
+                            ig::Spacing();
+                            ig::BeginChild("#ShowItemsChild", ImVec2(0, 0));
+                            if (ig::BeginTable("#ShowItemsTable", 1)) {
+                                ig::TableNextColumn();
 
-            if (ig::Checkbox("Show Stamina", &Config::bShowStamina)) Config::SaveConfig();
-            //if (ig::Checkbox("Show Actors", &bShow));
-            ig::Checkbox("Light?", &lightBool);
-            ig::SliderFloat("Icon Size", &IconSize, 1.0f, 128.0f);
-            ig::SliderFloat("Light Radius", &lightRadius, 0.0f, 100000.0f);
-            ig::SliderFloat("Light Intensity", &lightIntensity, 0.0f, 100.0f);
-            ig::SliderFloat("Light Angle", &lightAngle, 0.0f, 360.0f);
-            ig::ColorEdit3("Light Color##1", (float*)&NVColor);
+                                for (int i = 2; i < (int)SDK::EItemType::Max; i++) {
+                                    if (ig::Selectable({ magic_enum::enum_name(magic_enum::enum_value<SDK::EItemType>(i)).data() }, &Config::AllowedItems[i])) Config::SaveConfig();
+                                }
+                                ig::EndTable();
+                            }
+                            ig::EndChild();
+                        }
+                        ig::EndChild();
+                        ig::EndTabItem();
+                    }
 
-            if (ig::TreeNode("Allowed Items")) {
-                for (int i = 2; i < (int)SDK::EItemType::Max; i++) {
-                    if (ig::Selectable({magic_enum::enum_name(magic_enum::enum_value<SDK::EItemType>(i)).data()}, &Config::AllowedItems[i])) Config::SaveConfig();
-                    //std::cout << magic_enum::enum_name(magic_enum::enum_value<SDK::EItemType>(i)) << std::endl;
+                    if (ig::BeginTabItem("Superlight")) {
+                        ig::BeginChild("#SuperlightChild", ImVec2(0, 0), ImGuiChildFlags_AlwaysUseWindowPadding);
+
+                        ig::Checkbox("Enable Superlight", &Config::bSuperlight);
+
+                        ig::Separator();
+
+                        if (!Config::bSuperlight) {
+                            ig::PushItemFlag(ImGuiItemFlags_Disabled, true);
+                            ig::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
+                        }
+
+                        ig::SliderFloat("Light Radius", &Config::fSuperlightRadius, 0.0f, 100000.0f);
+                        ig::SliderFloat("Light Intensity", &Config::fSuperlightIntensity, 0.0f, 100.0f);
+                        ig::SliderFloat("Light Angle", &Config::fSuperlightAngle, 0.0f, 360.0f);
+                        ig::ColorEdit4("Light Color##1", (float*)&NVColor);
+
+                        if (!Config::bSuperlight) {
+                            ig::PopItemFlag();
+                            ig::PopStyleVar();
+                        }
+
+                        ig::EndChild();
+                        ig::EndTabItem();
+                    }
+
+                    if (ig::BeginTabItem("Other")) {
+                        ig::BeginChild("#OtherChild", ImVec2(0, 0), ImGuiChildFlags_AlwaysUseWindowPadding);
+
+                        if (ig::Button("Detach me")) {
+                            Utils::UnloadDLL();
+                        }
+                        ig::SetItemTooltip("Unhook Total (DEL key)");
+
+                        if (ig::Button("Get CheatManager")) {
+                            Total_GetCheatManager();
+                        }
+                        ig::SetItemTooltip("!!! Crashes after changing the map");
+
+                        if (ig::Button("Show Console")) {
+                            Console::IsOpened ? Console::Hide() : Console::Show();
+                        }
+
+                        ig::EndChild();
+                        ig::EndTabItem();
+                    }
+                    ig::EndTabBar();
                 }
-
-                ig::Spacing();
-                ig::TreePop();
             }
+            ig::End();
 
-            ig::End( );
-
-            colors[ImGuiCol_TableHeaderBg] = ImVec4(0.00f, 0.00f, 0.00f, 0.83f);
             //ig::ShowDemoWindow(&bShowMenu);
         }
     } //void Render()
-
-    void Total_ShowNPCs(UC::TArray<SDK::ARBNPC*> NPCs) {
-        for (int i = 0; i < NPCs.Num(); i++) {
-            SDK::ARBNPC* Obj = NPCs[i];
+    void Total_ShowObjectiveActors(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Coordinators) {
+        if (!Config::bShowObjectiveActors) return;
+        for (int i = 0; i < Coordinators.Num( ); i++) {
+            SDK::ARBBaseObjectiveCoordinator* Obj = Coordinators[i];
 
             if (!Obj)
                 continue;
             if (!IsValid(Obj))
                 continue;
-
-            SDK::USkeletalMeshComponent* Mesh = static_cast<SDK::USkeletalMeshComponent*>(Obj->GetComponentByClass(SDK::USkeletalMeshComponent::StaticClass()));
-
-            if (!IsValid(Mesh))
+            if (!Obj->bIsMainObjective)
+                continue;
+            if (Obj->IsCompleted())
                 continue;
 
-            SDK::FVector Location = GetLocation(Obj);
-            SDK::FVector2D Location2D;
-            float DistanceToPlayer = CalcDistanceToPlayer(Obj);
-            std::string Name = GenerateNameWithDistance(std::string{ magic_enum::enum_name(Obj->NPCType) }, DistanceToPlayer);
+            if (Obj->IsA(SDK::ARBLargeInteractObjectiveCoordinator::StaticClass( ))) {
+                UC::TArray<SDK::AActor*> Locks = static_cast<SDK::ARBLargeInteractObjectiveCoordinator*>(Obj)->LockingLargePickupsActors;
 
-
-            for (int d = 0; d < BoneGroups.size(); d++) {
-                SDK::FVector Bone1 = Mesh->GetSocketLocation(Mesh->GetSocketBoneName(SDK::UKismetStringLibrary::Conv_StringToName(BoneGroups[d][0])));
-                SDK::FVector Bone2 = Mesh->GetSocketLocation(Mesh->GetSocketBoneName(SDK::UKismetStringLibrary::Conv_StringToName(BoneGroups[d][1])));
-
-                SDK::FVector2D Location2D_Bone1;
-                SDK::FVector2D Location2D_Bone2;
-
-                
-
-                bool InsideScreen = WorldToScreen(Bone1, &Location2D_Bone1) && WorldToScreen(Bone2, &Location2D_Bone2);
-
-                if (InsideScreen && DistanceToPlayer <= Config::fShowNPCs * 100) {
-                    ig::GetBackgroundDrawList()->AddLine({ Location2D_Bone1.X, Location2D_Bone1.Y }, { Location2D_Bone2.X, Location2D_Bone2.Y }, ig::ColorConvertFloat4ToU32(ImVec4(1, 1, 1, 1)), 1.0f);
+                for (int k = 0; k < Locks.Num( ); k++) {
+                    SDK::AActor* ObjAct = Locks[k];
+                    if (IsValid(ObjAct->GetComponentByClass(SDK::URBInteractibleComponent::StaticClass( ))) && static_cast<SDK::URBInteractibleComponent*>(ObjAct->GetComponentByClass(SDK::URBInteractibleComponent::StaticClass( )))->bCurrentlyEnabled) {
+                        SDK::FVector Location = GetLocation(ObjAct);
+                        float DistanceToPlayer = CalcDistanceToPlayer(ObjAct);
+                        std::string Name = GenerateName(Obj->ObjectiveLevelText, DistanceToPlayer);
+                        SDK::FVector2D Location2D;
+                        bool InsideScreen = WorldToScreen(Location, &Location2D);
+                        if (InsideScreen && DistanceToPlayer <= Config::fShowObjectiveActors * 100) {
+                            AddImage(H::IsD3D12 ? (ImTextureID)DX12::OBJECTIVE_GPU.ptr : (ImTextureID)(void*)DX11::OBJECTIVE_TEX, Location2D);
+                            AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), true);
+                        }
+                    }
                 }
             }
+            if (Obj->IsA(SDK::ARBToyMachineLargeObjectCoordinator::StaticClass( )) && false) {
+                UC::TArray<SDK::ARBLargePickup*> Larges = static_cast<SDK::ARBToyMachineLargeObjectCoordinator*>(Obj)->ObjectiveLargePickups_Server;
 
-            bool InsideScreen = WorldToScreen(Location, &Location2D);
+                for (int k = 0; k < Larges.Num( ); k++) {
+                    SDK::ARBLargePickup* ObjAct = Larges[k];
+                    SDK::FVector Location = GetLocation(ObjAct);
+                    float DistanceToPlayer = CalcDistanceToPlayer(ObjAct);
+                    std::string Name = GenerateName(static_cast<SDK::ARBToyMachineLargeObjectCoordinator*>(Obj)->SpecificObjectiveComponentTag, DistanceToPlayer);
+                    SDK::FVector2D Location2D;
+                    bool InsideScreen = WorldToScreen(Location, &Location2D);
+                    if (InsideScreen && DistanceToPlayer <= Config::fShowObjectiveActors * 100) {
+                        AddImage(H::IsD3D12 ? (ImTextureID)DX12::OBJECTIVE_GPU.ptr : (ImTextureID)(void*)DX11::OBJECTIVE_TEX, Location2D);
+                        AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), true);
+                    }
+                }
+            }
+            else {
+                for (int d = 0; d < Obj->ObjectiveActorsInitialized.Num(); d++) {
+                    SDK::AActor* ObjAct = Obj->ObjectiveActorsInitialized[d];
 
-            if (InsideScreen && DistanceToPlayer <= Config::fShowNPCs * 100) {
-                AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), false);
+                    if (ObjAct->IsA(SDK::AVolume::StaticClass()))
+                        continue;
+                    if (ObjAct->IsA(SDK::ARBBaseObjectiveCoordinator::StaticClass()))
+                        continue;
+
+                    SDK::FVector Location = GetLocation(ObjAct);
+                    std::string Name;
+                    float DistanceToPlayer = CalcDistanceToPlayer(ObjAct);
+                    Name = GenerateName(Obj->ObjectiveTitle, DistanceToPlayer);
+                    SDK::FVector2D Location2D;
+                    bool InsideScreen = WorldToScreen(Location, &Location2D);
+                    if (InsideScreen && DistanceToPlayer <= Config::fShowObjectiveActors * 100) {
+                        AddImage(H::IsD3D12 ? (ImTextureID)DX12::OBJECTIVE_GPU.ptr : (ImTextureID)(void*)DX11::OBJECTIVE_TEX, Location2D);
+                        AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), true);
+                    }
+                }
             }
         }
     }
-
-    void Total_ShowDecodables(UC::TArray<SDK::UObject*> Decodables) {
-        DecodableCodes = "";
-        for (int i = 0; i < Decodables.Num(); i++) {
-            SDK::UObject* Obj = Decodables[i];
-
-            if (!Obj)
-                continue;
-            if (!IsValid(Obj))
-                continue;
-            if (!Obj->IsA(SDK::ARBCodeProjector::StaticClass()))
-                continue;
-
-            SDK::ARBCodeProjector* Decodable = static_cast<SDK::ARBCodeProjector*>(Obj);
-
-            if (Decodable->Passcode.Num() == 0)
-                continue;
-
-            //DecodableCodes.append(utf8_encode(SDK::UKismetStringLibrary::Conv_NameToString(Decodable->LinkedContainerClue).ToWString()).c_str()).append(": ");
-            for (int d = 0; d < Decodable->Passcode.Num(); d++) {
-                DecodableCodes.append(std::to_string(Decodable->Passcode[d]));
-            }
-            DecodableCodes.append(" ");
-        }
-    }
-
     void Total_ShowPrimaryObjectiveActors(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Coordinators) {
+        if (!Config::bShowPrimaryObjectiveActors) return;
         for (int i = 0; i < Coordinators.Num(); i++) {
             SDK::ARBBaseObjectiveCoordinator* Obj = Coordinators[i];
 
@@ -348,7 +312,7 @@ namespace Menu {
                 //SDK::FVector Location = ObjAct->IsA(SDK::ARBPickup::StaticClass()) ? GetLocation(ObjAct) : GetLocation(ObjAct) + SDK::FVector(0,0,160);
                 std::string Name;
                 float DistanceToPlayer = CalcDistanceToPlayer(ObjAct);
-                Name = GenerateNameWithDistance(Obj->ObjectiveTitle, DistanceToPlayer);
+                Name = GenerateName(Obj->ObjectiveTitle, DistanceToPlayer);
                 SDK::FVector2D Location2D;
                 bool InsideScreen = WorldToScreen(Location, &Location2D);
                 if (InsideScreen && DistanceToPlayer <= Config::fShowPrimaryObjectiveActors * 100) {
@@ -358,79 +322,7 @@ namespace Menu {
             }
         }
     }
-
-    void Total_ShowObjectiveActors(UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Coordinators) {
-        for (int i = 0; i < Coordinators.Num( ); i++) {
-            SDK::ARBBaseObjectiveCoordinator* Obj = Coordinators[i]; // URBInteractionZoneComponent URBUnlockableLargePickupRequirement
-
-            if (!Obj)
-                continue;
-            if (!IsValid(Obj))
-                continue;
-            if (!Obj->bIsMainObjective)
-                continue;
-            if (Obj->IsCompleted())
-                continue;
-
-            if (Obj->IsA(SDK::ARBLargeInteractObjectiveCoordinator::StaticClass( ))) {
-                UC::TArray<SDK::AActor*> Locks = static_cast<SDK::ARBLargeInteractObjectiveCoordinator*>(Obj)->LockingLargePickupsActors;
-
-                for (int k = 0; k < Locks.Num( ); k++) {
-                    SDK::AActor* ObjAct = Locks[k];
-                    if (IsValid(ObjAct->GetComponentByClass(SDK::URBInteractibleComponent::StaticClass( ))) && static_cast<SDK::URBInteractibleComponent*>(ObjAct->GetComponentByClass(SDK::URBInteractibleComponent::StaticClass( )))->bCurrentlyEnabled) {
-                        SDK::FVector Location = GetLocation(ObjAct);
-                        float DistanceToPlayer = CalcDistanceToPlayer(ObjAct);
-                        std::string Name = GenerateNameWithDistance(Obj->ObjectiveLevelText, DistanceToPlayer);
-                        SDK::FVector2D Location2D;
-                        bool InsideScreen = WorldToScreen(Location, &Location2D);
-                        if (InsideScreen && DistanceToPlayer <= Config::fShowObjectiveActors * 100) {
-                            AddImage(H::IsD3D12 ? (ImTextureID)DX12::OBJECTIVE_GPU.ptr : (ImTextureID)(void*)DX11::OBJECTIVE_TEX, Location2D);
-                            AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), true);
-                        }
-                    }
-                }
-            }
-            if (Obj->IsA(SDK::ARBToyMachineLargeObjectCoordinator::StaticClass( )) && false) {
-                UC::TArray<SDK::ARBLargePickup*> Larges = static_cast<SDK::ARBToyMachineLargeObjectCoordinator*>(Obj)->ObjectiveLargePickups_Server;
-
-                for (int k = 0; k < Larges.Num( ); k++) {
-                    SDK::ARBLargePickup* ObjAct = Larges[k];
-                    SDK::FVector Location = GetLocation(ObjAct);
-                    float DistanceToPlayer = CalcDistanceToPlayer(ObjAct);
-                    std::string Name = GenerateNameWithDistance(static_cast<SDK::ARBToyMachineLargeObjectCoordinator*>(Obj)->SpecificObjectiveComponentTag, DistanceToPlayer);
-                    SDK::FVector2D Location2D;
-                    bool InsideScreen = WorldToScreen(Location, &Location2D);
-                    if (InsideScreen && DistanceToPlayer <= Config::fShowObjectiveActors * 100) {
-                        AddImage(H::IsD3D12 ? (ImTextureID)DX12::OBJECTIVE_GPU.ptr : (ImTextureID)(void*)DX11::OBJECTIVE_TEX, Location2D);
-                        AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), true);
-                    }
-                }
-            }
-
-            for (int d = 0; d < Obj->ObjectiveActorsInitialized.Num( ); d++) {
-                SDK::AActor* ObjAct = Obj->ObjectiveActorsInitialized[d];
-                
-                if (ObjAct->IsA(SDK::AVolume::StaticClass()))
-                    continue;
-                if (ObjAct->IsA(SDK::ARBBaseObjectiveCoordinator::StaticClass()))
-                    continue;
-
-                //std::cout << ObjAct->GetFullName() << std::endl;
-
-                SDK::FVector Location = GetLocation(ObjAct);
-                std::string Name;
-                float DistanceToPlayer = CalcDistanceToPlayer(ObjAct);
-                Name = GenerateNameWithDistance(Obj->ObjectiveTitle, DistanceToPlayer);
-                SDK::FVector2D Location2D;
-                bool InsideScreen = WorldToScreen(Location, &Location2D);
-                if (InsideScreen && DistanceToPlayer <= Config::fShowObjectiveActors * 100) {
-                    AddImage(H::IsD3D12 ? (ImTextureID)DX12::OBJECTIVE_GPU.ptr : (ImTextureID)(void*)DX11::OBJECTIVE_TEX, Location2D);
-                    AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), true);
-                }
-            }
-        }
-    }
-    void Total_ShowPuzzles(UC::TArray<SDK::ARBRoom*> Puzzles) {
+    void Total_ShowPasscodes(UC::TArray<SDK::ARBRoom*> Puzzles) {
         float currentClosestDistance = 0;
         Passcode = "";
 
@@ -454,18 +346,49 @@ namespace Menu {
                     currentClosestDistance = Distance;
                     Passcode = tempp.c_str( );
                 }
+
+            if (!Passcode.empty()) {
+                GlobalInfoText.appendf("Passcode: %s\n", Passcode);
+            }
+
+            if (!Config::bShowObjectiveActors || !IsLookInput()) return;
             
             SDK::FVector Location = GetLocation(Obj);
             SDK::FVector2D Location2D;
             bool InsideScreen = WorldToScreen(Location, &Location2D);
             if (InsideScreen)
-                ig::GetBackgroundDrawList( )->AddText(
-                    ImVec2(Location2D.X - (ig::CalcTextSize((const char*)tempp.c_str( )).x / 2), Location2D.Y),
-                    ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)),
-                    (const char*)tempp.c_str( ));
+                AddText(Passcode, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), false);
         }
-    } // void Total_ShowPuzzles()
+    }
+    void Total_ShowDecodableCodes(UC::TArray<SDK::UObject*> Decodables) {
+        DecodableCodes = "";
+        for (int i = 0; i < Decodables.Num(); i++) {
+            SDK::UObject* Obj = Decodables[i];
+
+            if (!Obj)
+                continue;
+            if (!IsValid(Obj))
+                continue;
+            if (!Obj->IsA(SDK::AProjectionSymbol_BP_C::StaticClass()))
+                continue;
+
+            SDK::AProjectionSymbol_BP_C* Decodable = static_cast<SDK::AProjectionSymbol_BP_C*>(Obj);
+
+            if (Decodable->Passcode.Num() == 0)
+                continue;
+
+            for (int d = 0; d < Decodable->Passcode.Num(); d++) {
+                DecodableCodes.append(std::to_string(Decodable->Passcode[d]));
+            }
+            DecodableCodes.append(" ");
+        }
+
+        if (!DecodableCodes.empty()) {
+            GlobalInfoText.appendf("Codes: %s\n", DecodableCodes);
+        }
+    }
     void Total_ShowPlayers(UC::TArray<SDK::ARBPlayer*> Players) {
+        if (!Config::bShowPlayers || !bTotalPlayerAlive) return;
         for (int i = 0; i < Players.Num( ); i++) {
             SDK::ARBPlayer* Obj = Players[i];
 
@@ -484,7 +407,7 @@ namespace Menu {
             SDK::FVector Location = GetLocation(Obj);
             SDK::FVector2D Location2D;
             float DistanceToPlayer = CalcDistanceToPlayer(Obj);
-            std::string Name = GenerateNameWithDistance(utf8_encode(Obj->GetGamePlayerName().ToWString()), DistanceToPlayer);
+            std::string Name = GenerateName(utf8_encode(Obj->GetGamePlayerName().ToWString()), DistanceToPlayer);
 
             for (int d = 0; d < BoneGroups.size(); d++) {
                 SDK::FVector Bone1 = Mesh->GetSocketLocation(Mesh->GetSocketBoneName(SDK::UKismetStringLibrary::Conv_StringToName(BoneGroups[d][0])));
@@ -508,6 +431,50 @@ namespace Menu {
                 AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), false);
         }
     }
+    void Total_ShowNPCs(UC::TArray<SDK::ARBNPC*> NPCs) {
+        if (!Config::bShowNPCs) return;
+        for (int i = 0; i < NPCs.Num(); i++) {
+            SDK::ARBNPC* Obj = NPCs[i];
+
+            if (!Obj)
+                continue;
+            if (!IsValid(Obj))
+                continue;
+
+            SDK::USkeletalMeshComponent* Mesh = static_cast<SDK::USkeletalMeshComponent*>(Obj->GetComponentByClass(SDK::USkeletalMeshComponent::StaticClass()));
+
+            if (!IsValid(Mesh))
+                continue;
+
+            SDK::FVector Location = GetLocation(Obj);
+            SDK::FVector2D Location2D;
+            float DistanceToPlayer = CalcDistanceToPlayer(Obj);
+            std::string Name = GenerateName(std::string{ magic_enum::enum_name(Obj->NPCType) }, DistanceToPlayer);
+
+
+            for (int d = 0; d < BoneGroups.size(); d++) {
+                SDK::FVector Bone1 = Mesh->GetSocketLocation(Mesh->GetSocketBoneName(SDK::UKismetStringLibrary::Conv_StringToName(BoneGroups[d][0])));
+                SDK::FVector Bone2 = Mesh->GetSocketLocation(Mesh->GetSocketBoneName(SDK::UKismetStringLibrary::Conv_StringToName(BoneGroups[d][1])));
+
+                SDK::FVector2D Location2D_Bone1;
+                SDK::FVector2D Location2D_Bone2;
+
+
+
+                bool InsideScreen = WorldToScreen(Bone1, &Location2D_Bone1) && WorldToScreen(Bone2, &Location2D_Bone2);
+
+                if (InsideScreen && DistanceToPlayer <= Config::fShowNPCs * 100) {
+                    ig::GetBackgroundDrawList()->AddLine({ Location2D_Bone1.X, Location2D_Bone1.Y }, { Location2D_Bone2.X, Location2D_Bone2.Y }, ig::ColorConvertFloat4ToU32(ImVec4(1, 1, 1, 1)), 1.0f);
+                }
+            }
+
+            bool InsideScreen = WorldToScreen(Location, &Location2D);
+
+            if (InsideScreen && DistanceToPlayer <= Config::fShowNPCs * 100) {
+                AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), false);
+            }
+        }
+    }
     void Total_ShowDoorTraps(UC::TArray<SDK::ARBDoor*> Doors) {
         for (int i = 0; i < Doors.Num( ); i++) {
             SDK::ARBDoor* Door = Doors[i];
@@ -527,8 +494,9 @@ namespace Menu {
             if (InsideScreen)
                 ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X, Location2D.Y - 50), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), Name.append(" (").append(std::to_string(int(round(DistanceToPlayer / 100))).append("m").c_str( )).append(")").c_str( ));
         }
-    } // void Total_ShowTrapDoors()
+    }
     void Total_ShowItems(UC::TArray<SDK::ARBPickup*> Pickups, UC::TArray<SDK::ARBBaseObjectiveCoordinator*> Coords) {
+        if (!Config::bShowItems) return;
         for (int i = 0; i < Pickups.Num( ); i++) {
             SDK::ARBPickup* Obj = Pickups[i];
 
@@ -545,7 +513,7 @@ namespace Menu {
                 ImTextureID TEX;
                 SDK::FVector Location = GetLocation(Obj);
                 float DistanceToPlayer = CalcDistanceToPlayer(Obj);
-                std::string Name = GenerateNameWithDistanceAndCaps(Obj->DisplayName, DistanceToPlayer);
+                std::string Name = GenerateNameWithCaps(Obj->DisplayName, DistanceToPlayer);
                 SDK::FVector2D Location2D;
                 bool InsideScreen = WorldToScreen(Location, &Location2D);
 
@@ -573,8 +541,9 @@ namespace Menu {
                 }
             }
         }
-    } // void Total_ShowItems()
+    }
     void Total_ShowLargeItems(UC::TArray<SDK::ARBLargePickup*> LargePickups) {
+        if (!Config::bShowLargeItems || !bTotalPlayerAlive) return;
         for (int i = 0; i < LargePickups.Num( ); i++) {
             SDK::ARBLargePickup* Obj = LargePickups[i];
 
@@ -584,155 +553,74 @@ namespace Menu {
                 continue;
             if (!Obj->IsInteractible.CurrentValue)
                 continue;
-            if (Obj->HoldingPawn.CurrentValue)
+            if (Obj->HoldingPawn.CurrentValue == TotalPlayer)
                 continue;
 
             if (Obj->bTrapped == false && Obj->bForceTrapped == false && Obj->LargeObjectType == SDK::ELargeObjectType::MaterialBox || Obj->LargeObjectType != SDK::ELargeObjectType::MaterialBox) {
                 SDK::FVector Location = GetLocation(Obj);
                 float DistanceToPlayer = CalcDistanceToPlayer(Obj);
                 SDK::FVector2D Location2D;
-                std::string Name = GenerateNameWithDistance(LargeObjectToChar(Obj->LargeObjectType), DistanceToPlayer);
+                std::string Name = GenerateName(LargeObjectToChar(Obj->LargeObjectType), DistanceToPlayer);
                 bool InsideScreen = WorldToScreen(Location, &Location2D);
                 if (InsideScreen && DistanceToPlayer <= Config::fShowLargeItems * 100) {
                     AddText(Name, Location2D, ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0), false);
-                    //ig::GetBackgroundDrawList( )->AddText(ImVec2(Location2D.X - (ig::CalcTextSize(Name.c_str(), ig::ColorConvertFloat4ToU32(ImVec4(255 / 255.0, 255 / 255.0, 255 / 255.0, 255 / 255.0)), (const char*)((const char*)LargeObjectToChar(Obj->LargeObjectType).append(" (").append(std::to_string(int(round(DistanceToPlayer / 100))).c_str()).append("m").append(")").c_str()));
                 }
             }
         }
-    } // void Total_ShowLargeItems()
-    void Total_PlayerBrightnessBoost() {
-        if (lightBool) {
-            TotalPlayer->ProximityLight->SetAttenuationRadius(lightRadius);
-            TotalPlayer->ProximityLight->SetIntensity(lightIntensity);
-            TotalPlayer->ProximityLight->SetInnerConeAngle(lightAngle - 1);
-            TotalPlayer->ProximityLight->SetOuterConeAngle(lightAngle);
+    }
+    void Total_ShowFPSAndPing() {
+        fPlayerPing = bTotalPlayerAlive && IsValid(TotalPlayer->GetRBPlayerState()) ? TotalPlayer->GetRBPlayerState()->Ping : 0;
+        GlobalInfoText.appendf("F/P: %.0f/%.0f\n", ig::GetIO().Framerate, fPlayerPing);
+    }
+    void Total_ShowLevelSeed() {
+        if (IsValid(GameState)) {
+            LevelSeed = GameState->LevelSeed;
+            GlobalInfoText.appendf("Seed: %d\n", LevelSeed);
         }
-    } // void Total_PlayerBrightnessBoost()
+    }
+    void Total_ShowStageTime() {
+        if (IsValid(GameState)) {
+            fStageTime = GameState->IsStageStarted() ? SDK::URBBlueprintLibrary::GetServerTime() - GameState->StageStartedServerTime : 0;
+            GlobalInfoText.appendf("Stage Time: %s\n", utf8_encode(SDK::URBBlueprintLibrary::FormatTimeFromFloat(fStageTime).ToWString()).c_str());
+        }
+    }
+    void Total_ShowScore() {
+        if (bTotalPlayerAlive && IsValid(TotalPlayer->GetRBPlayerState()) && IsValid(GameState) && GameState->IsStageStarted()) {
+            PlayerScore = TotalPlayer->GetRBPlayerState()->Score;
+            CalculatedPlayerScore = 0.0000833333f * (10000 + PlayerScore);
+            PlayerRating = CalcRatingFromScore(CalculatedPlayerScore);
+
+            GlobalInfoText.appendf("Score: %.0f (%s)\n", PlayerScore, PlayerRating);
+        }
+    }
+    void Total_SetNightVisionColor() {
+        if (bTotalPlayerAlive) {
+            TotalPlayer->NVComponent->SetLightColor(SDK::FLinearColor(NVColor.x, NVColor.y, NVColor.z, NVColor.w), false);
+        }
+    }
+    void Total_PlayerBrightnessBoost() {
+        if (Config::bSuperlight && bTotalPlayerAlive) {
+            TotalPlayer->ProximityLight->SetAttenuationRadius(Config::fSuperlightRadius);
+            TotalPlayer->ProximityLight->SetIntensity(Config::fSuperlightIntensity);
+            TotalPlayer->ProximityLight->SetOuterConeAngle(Config::fSuperlightAngle);
+        }
+        else if (bTotalPlayerAlive) {
+            TotalPlayer->ProximityLight->SetAttenuationRadius(200);
+            TotalPlayer->ProximityLight->SetIntensity(0.75f);
+            TotalPlayer->ProximityLight->SetOuterConeAngle(60.f);
+        }
+    }
     void Total_GetCheatManager() {
         SDK::URBBlueprintLibrary::GetLocalMenuController()->CheatManager = static_cast<SDK::URBCheatManager*>(SDK::UGameplayStatics::SpawnObject(SDK::URBBlueprintLibrary::GetLocalMenuController()->CheatClass, SDK::URBBlueprintLibrary::GetLocalMenuController()));
-        //SDK::UGameplayStatics::SpawnObject(TotalController->CheatClass, SDK::URBBlueprintLibrary::GetLocalMenuController());
-        //static_cast<SDK::URBCheatManager*>(SDK::URBBlueprintLibrary::GetLocalMenuController()->CheatManager)->ToggleDebugMenu();
-        //std::cout << TotalController->CheatManager << std::endl;
-        //SDK::UWorld::GetWorld()->Destroy
-        // 
-        //TotalController->CheatManager = static_cast<SDK::URBCheatManager*>(CheatManager);
-        //
-        //static_cast<SDK::URBCheatManager*>(TotalController->CheatManager)->bCheatsEnabled = true;
-
     }
-
     void Total_EnableConsole() {
+        if (IsValid(RBEngine->GameViewport->ViewportConsole) && (IsValid(RBEngine->GameViewport->ViewportConsole) && SDK::UInputSettings::GetDefaultObj()->ConsoleKeys[0].KeyName.ToString() == "F2")) return;
         SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(RBEngine->ConsoleClass, RBEngine->GameViewport);
 
-        bConsoleEnabled = true;
         SDK::UInputSettings::GetDefaultObj( )->ConsoleKeys[0].KeyName = SDK::UKismetStringLibrary::Conv_StringToName(L"F2");
         RBEngine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
-    } // void Total_EnableConsole()
-
-    void Total_OpenDebugMenu() {
-
     }
-
     void Total_ForceExitToMenu() {
         if (bTotalControllerAlive) TotalController->ExitToMainMenu();
-    } // void Total_ForceExitToMenu()
-
-    std::string CalcRatingFromScore(float Score) {
-        switch (SDK::URBUIBlueprintLibrary::NormalizedScoreToRating(Score)) {
-            case SDK::EPlayerTrialRating::F:        return "F";
-            case SDK::EPlayerTrialRating::D:        return "D";
-            case SDK::EPlayerTrialRating::DPlus:    return "D+";
-            case SDK::EPlayerTrialRating::CMinus:   return "C-";
-            case SDK::EPlayerTrialRating::C:        return "C";
-            case SDK::EPlayerTrialRating::CPlus:    return "C+";
-            case SDK::EPlayerTrialRating::BMinus:   return "B-";
-            case SDK::EPlayerTrialRating::B:        return "B";
-            case SDK::EPlayerTrialRating::BPlus:    return "B+";
-            case SDK::EPlayerTrialRating::AMinus:   return "A-";
-            case SDK::EPlayerTrialRating::A:        return "A";
-            case SDK::EPlayerTrialRating::APlus:    return "A+";
-            default:                                return "?";
-        }
-    }
-
-    void AddImage(ImU64 Texture, SDK::FVector2D Position) {
-        ig::GetBackgroundDrawList()->AddImage(Texture, ImVec2(Position.X - IconSize, Position.Y - IconSize), ImVec2(Position.X + IconSize, Position.Y + IconSize), ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
-    }
-
-    void AddText(std::string Text, SDK::FVector2D Position, ImVec4 Color, bool WithIcon) {
-        ig::GetBackgroundDrawList()->AddText(ImVec2(Position.X - (ig::CalcTextSize((const char*)Text.c_str()).x / 2), Position.Y + (WithIcon ? IconSize + IconSize / 2 : 0)), ig::ColorConvertFloat4ToU32(Color), (const char*)Text.c_str());
-    }
-
-    bool IsAllowedItem(SDK::EItemType Item) {
-        return Config::AllowedItems[(int)Item];
-    }
-
-    bool IsValid(const SDK::UObject* Object) {
-        return SDK::UKismetSystemLibrary::IsValid(Object);
-    }
-
-    std::string GenerateAllowedItemName(SDK::EItemType Item) {
-        SDK::FText Name, Description;
-        SDK::URBUIBlueprintLibrary::GetPickupItemNameAndDescription(Item, &Name, &Description);
-        return utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(Name).ToWString( )).c_str( );
-    }
-
-    SDK::FVector GetLocation(SDK::AActor* Actor) {
-        return Actor->K2_GetActorLocation( );
-    }
-
-    SDK::FRotator GetRotation(SDK::AActor* Actor) {
-        return Actor->K2_GetActorRotation( );
-    }
-
-    bool WorldToScreen(SDK::FVector Location, SDK::FVector2D* Location2D) {
-        return TotalController->ProjectWorldLocationToScreen(Location, Location2D, false);
-    }
-
-    float CalcDistanceToPlayer(SDK::AActor* Actor) {
-        return Actor->K2_GetActorLocation( ).GetDistanceTo(TotalPlayer->K2_GetActorLocation( ));
-    }
-
-    std::string GenerateName(SDK::FText Name) {
-        return utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(Name).ToWString( )).c_str( );
-    }
-    std::string GenerateNameWithDistance(SDK::FText Name, float DistanceToPlayer) {
-        return utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(Name).ToWString( )).append(" (").append(std::to_string(int(round(DistanceToPlayer / 100))).append("m")).append(")").c_str( );
-    }
-    std::string GenerateNameWithDistance(SDK::FName Name, float DistanceToPlayer) {
-        return utf8_encode(SDK::UKismetStringLibrary::Conv_NameToString(Name).ToWString( )).append(" (").append(std::to_string(int(round(DistanceToPlayer / 100))).append("m")).append(")").c_str( );
-    }
-    std::string GenerateNameWithDistance(std::string Name, float DistanceToPlayer) {
-        return Name.append(" (").append(std::to_string(int(round(DistanceToPlayer / 100))).append("m")).append(")").c_str();
-    }
-    std::string GenerateNameWithDistanceAndCaps(SDK::FText Name, float DistanceToPlayer) {
-        std::wstring TempName = SDK::UKismetTextLibrary::Conv_TextToString(Name).ToWString( );
-        std::use_facet<std::ctype<wchar_t>>(std::locale( )).toupper(&TempName[0], &TempName[0] + TempName.size( ));
-        return utf8_encode(TempName).append(" (").append(std::to_string(int(round(DistanceToPlayer / 100))).append("m")).append(")").c_str( );
-    }
-
-    std::string LargeObjectToChar(SDK::ELargeObjectType LargeObjectType) {
-       return std::string{ magic_enum::enum_name(LargeObjectType) };
-    }
-
-    std::string utf8_encode(const std::wstring& wstr) {
-        if (wstr.empty( ))
-            return std::string( );
-        int size_needed = WideCharToMultiByte(CP_UTF8, 0, &wstr[0], (int)wstr.size( ), NULL, 0, NULL, NULL);
-        std::string strTo(size_needed, 0);
-        WideCharToMultiByte(CP_UTF8, 0, &wstr[0], (int)wstr.size( ), &strTo[0], size_needed, NULL, NULL);
-        return strTo;
-    }
-    std::string RandomString(int Length) {
-        int range = 126 - 33 + 1;
-        int num = rand( ) % range + 33;
-        std::string result = "";
-
-        for (int i = 0; i < Length; i++) result += (char)(rand( ) % range + 33); 
-        return result;
-    }
-
-    bool Total_GlobalAssert() {
-        return IsValid(RBEngine) && IsValid(RBWorld);
     }
 } // namespace Menu

@@ -169,6 +169,27 @@ void UMainObjectiveWidget_C::Finished_8A3EC16D4EBA343192A93F85CA6E35E3()
 }
 
 
+// Function MainObjectiveWidget.MainObjectiveWidget_C.GetFadeInAnimation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidgetAnimation*                 FadeInAnimation                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainObjectiveWidget_C::GetFadeInAnimation(class UWidgetAnimation** FadeInAnimation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainObjectiveWidget_C", "GetFadeInAnimation");
+
+	Params::MainObjectiveWidget_C_GetFadeInAnimation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (FadeInAnimation != nullptr)
+		*FadeInAnimation = Parms.FadeInAnimation;
+}
+
+
 // Function MainObjectiveWidget.MainObjectiveWidget_C.SetIsMakingPositiveProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -209,41 +230,6 @@ void UMainObjectiveWidget_C::SetProgressRatio(float Ratio)
 }
 
 
-// Function MainObjectiveWidget.MainObjectiveWidget_C.UpdateIntermediateObjectives
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UMainObjectiveWidget_C::UpdateIntermediateObjectives()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainObjectiveWidget_C", "UpdateIntermediateObjectives");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainObjectiveWidget.MainObjectiveWidget_C.GetFadeInAnimation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidgetAnimation*                 FadeInAnimation                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainObjectiveWidget_C::GetFadeInAnimation(class UWidgetAnimation** FadeInAnimation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainObjectiveWidget_C", "GetFadeInAnimation");
-
-	Params::MainObjectiveWidget_C_GetFadeInAnimation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (FadeInAnimation != nullptr)
-		*FadeInAnimation = Parms.FadeInAnimation;
-}
-
-
 // Function MainObjectiveWidget.MainObjectiveWidget_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -261,6 +247,20 @@ void UMainObjectiveWidget_C::Initialize(class ARBBaseObjectiveCoordinator* Coord
 	Parms.Coordinator = Coordinator;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainObjectiveWidget.MainObjectiveWidget_C.UpdateIntermediateObjectives
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UMainObjectiveWidget_C::UpdateIntermediateObjectives()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainObjectiveWidget_C", "UpdateIntermediateObjectives");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

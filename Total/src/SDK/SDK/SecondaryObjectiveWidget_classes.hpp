@@ -34,10 +34,10 @@ public:
 public:
 	void ExecuteUbergraph_SecondaryObjectiveWidget(int32 EntryPoint);
 	void Event_ProgressChanged(class ARBBaseObjectiveCoordinator* Coordinator, float Progress, bool IsPositiveProgress, const class FText& ObjectiveText_0, bool bForceShow);
-	void HandleVisibilityEvent(bool IsVisible_0);
 	void GetFadeInAnimation(class UWidgetAnimation** FadeInAnimation);
 	void SetCompleted();
 	void Initialize(class ARBBaseObjectiveCoordinator* Coordinator);
+	void HandleVisibilityEvent(bool IsVisible_0);
 
 	bool ShouldShow() const;
 

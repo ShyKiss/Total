@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "NPCSkinData_structs.hpp"
-#include "RBNPC_BP_classes.hpp"
 #include "Engine_structs.hpp"
+#include "NPCSkinData_structs.hpp"
 #include "OPP_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "RBNPC_BP_classes.hpp"
 
 
 namespace SDK

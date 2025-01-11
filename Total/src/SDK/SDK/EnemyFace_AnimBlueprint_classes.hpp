@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Shared_Face_Expression_Struct_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "Shared_Face_BaseEmotion_Struct_structs.hpp"
+#include "Shared_Face_Expression_Struct_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Face_AllList_Enum_structs.hpp"
+#include "Shared_Face_BaseEmotion_Struct_structs.hpp"
 #include "OPP_structs.hpp"
 #include "OPP_classes.hpp"
 
